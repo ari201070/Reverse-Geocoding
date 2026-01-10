@@ -1,0 +1,153 @@
+:root {
+  --bg: #f6f8fa;
+  --panel: #ffffff;
+  --accent: #2b7cff;
+  --muted: #666;
+  --gap: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  padding: 18px;
+}
+
+header {
+  margin-bottom: 12px;
+}
+h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.panel {
+  background: var(--panel);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-bottom: 12px;
+}
+
+.control-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.control-row label {
+  min-width: 200px;
+}
+.control-row input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.control-row input[type="file"] {
+  flex: 1;
+}
+.control-row button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  gap: 12px;
+}
+
+#photosPane {
+  width: 360px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 520px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+.photoItem {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  align-items: flex-start;
+}
+.photoThumb {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+.photoMeta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.metaRow {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.rowButtons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.btn {
+  background: #eee;
+  border: 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.placeItem {
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.placeInfo {
+  flex: 1;
+  margin-right: 8px;
+}
+.placeName {
+  font-weight: 600;
+}
+.placeTypes {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.small {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
