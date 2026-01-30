@@ -4,10 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Reverse Geocoding - App independiente</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📍</text></svg>">
   <link rel="stylesheet" href="/src/styles.css" />
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    crossorigin=""/>
+  <!-- Google Maps JS API (Async Loader) -->
+  <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?(console.warn(p+" only loads once. Ignoring:",g),r.add(g.libraries)):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+      key: "AIzaSyD182OZ7oW1WYe5-TzoJaM2wHyglq6-YIU",
+      v: "weekly",
+      loading: "async"
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -24,32 +30,39 @@
         <input id="anonymize" type="checkbox" />
         <label for="stripExif">Eliminar EXIF al exportar/descargar:</label>
         <input id="stripExif" type="checkbox" />
+        <label for="usePicarta">✨ Usar Picarta AI (Experimental):</label>
+        <input id="usePicarta" type="checkbox" />
       </div>
 
       <div class="control-row">
-        <label for="radiusRange">Radio búsqueda (m): <span id="radiusValue">500</span></label>
-        <input id="radiusRange" type="range" min="50" max="5000" step="50" value="500"/>
+        <label for="radiusRange">Radio búsqueda (m): <span id="radiusValue">20</span></label>
+        <input id="radiusRange" type="range" min="1" max="50" step="1" value="20"/>
       </div>
 
       <div class="control-row">
-        <label for="imagesInput">Subir imágenes (con EXIF):</label>
-        <input id="imagesInput" type="file" accept="image/*" multiple />
+        <button id="importBatchBtn" class="btn primary">📚 Importar Lote</button>
+        <span style="opacity:0.5">o</span>
+        <label for="imagesInput" class="btn">📷 Seleccionar imágenes</label>
+        <input id="imagesInput" type="file" accept="image/*" multiple style="display:none" />
       </div>
     </section>
 
     <section id="content">
-      <aside id="photosPane" class="panel">
-        <h2>Fotos</h2>
-        <div id="photosList" class="list"></div>
-      </aside>
+      <div id="sidePane">
+        <aside id="photosPane" class="panel">
+          <h2>Fotos</h2>
+          <div id="photosList" class="list"></div>
+        </aside>
 
-      <section id="mapPane">
-        <div id="map" style="height:520px; border-radius:8px; border:1px solid #ddd;"></div>
-        <div id="placeDetails" class="panel">
+        <section id="placeDetails" class="panel">
           <h3>Detalles</h3>
           <div id="selectedInfo">Seleccioná una foto con coordenadas.</div>
           <div id="placesList"></div>
-        </div>
+        </section>
+      </div>
+
+      <section id="mapPane">
+        <div id="map"></div>
       </section>
     </section>
   </main>
@@ -58,12 +71,41 @@
     <small>App independiente — en producción guardá la API Key en variables de entorno del backend (Vercel).</small>
   </footer>
 
-  <!-- Exifr para EXIF -->
+  <!-- Modal Importación Lote -->
+  <div id="batchModal" class="modal">
+    <div class="modal-content panel">
+      <div class="modal-header">
+        <h2>Importar Múltiples Fotos</h2>
+        <button id="closeBatchBtn" class="delete-btn" style="opacity:1; position:static">×</button>
+      </div>
+      
+      <div id="dropZone" class="drop-zone">
+        <div class="drop-zone-content">
+          <span class="icon">☁️</span>
+          <p>Arrastra fotos aquí o haz clic para seleccionar</p>
+          <small>(Se extraerán automáticamente fecha, ubicación y lugar)</small>
+        </div>
+        <input type="file" id="batchFileInput" multiple accept="image/*" style="display:none" />
+      </div>
+
+      <div id="batchPreview" class="batch-preview list">
+        <!-- Las fotos cargadas aparecerán aquí -->
+      </div>
+
+      <div class="batch-footer">
+        <div class="control-row">
+          <label for="commonDesc">Descripción Común (Opcional):</label>
+          <input type="text" id="commonDesc" placeholder="Ej: Cena en Mendoza" style="flex:1" />
+        </div>
+        <div class="rowButtons" style="justify-content: flex-end; margin-top:20px;">
+          <button id="cancelBatchBtn" class="btn">Cancelar</button>
+          <button id="saveBatchBtn" class="btn primary" disabled>Guardar Todo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://unpkg.com/exifr/dist/full.umd.js"></script>
-
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-
   <script type="module" src="/src/app.js"></script>
 </body>
 </html>

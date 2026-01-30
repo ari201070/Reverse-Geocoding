@@ -125,46 +125,101 @@ export default async function handler(req, res) {
     }
 
     // 2) Nearby searches by types using rankby=distance (no radius)
-    const typesToTry = ['park','point_of_interest','tourist_attraction','establishment','restaurant','museum','lodging'];
-    for (const type of typesToTry) {
+    // Eliminamos 'establishment' de la lista principal para evitar paradas de bus o direcciones genéricas
+    let typesToTry = ['park','tourist_attraction','museum','art_gallery','zoo','aquarium'];
+    
+    const kLower = keywords ? keywords.toLowerCase() : "";
+    const isNature = kLower.includes('leisure') || kLower.includes('tree') || kLower.includes('natural') || kLower.includes('nature') || kLower.includes('outdoor') || kLower.includes('plant') || kLower.includes('grass') || kLower.includes('landscape') || kLower.includes('white') || kLower.includes('flat') || kLower.includes('snow') || kLower.includes('winter');
+    const isCulture = kLower.includes('sculpture') || kLower.includes('statue') || kLower.includes('art') || kLower.includes('monument') || kLower.includes('landmark');
+    
+    // Prioritizing based on detected context
+    if (kLower.includes('food') || kLower.includes('dish') || kLower.includes('cuisine') || kLower.includes('meal')) {
+      typesToTry = ['restaurant', 'cafe', 'bakery', 'bar', ...typesToTry];
+    } else if (isCulture) {
+      typesToTry = ['tourist_attraction', 'museum', 'art_gallery', 'park', 'place_of_worship'];
+    } else if (isNature) {
+      // For nature, we also want natural_feature which covers things like "Salinas Grandes"
+      typesToTry = ['natural_feature', 'park', 'zoo', 'aquarium', 'tourist_attraction', 'point_of_interest'];
+    }
+    
+    const fallbackTypes = ['point_of_interest', 'establishment', 'lodging'];
+    const allTypes = [...typesToTry, ...fallbackTypes];
+
+    let bestResult = null;
+
+    for (const type of allTypes) {
       const nearUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&rankby=distance&type=${encodeURIComponent(type)}&key=${apiKey}&language=es`;
       const nearResp = await getJson(nearUrl);
       if (nearResp.ok && Array.isArray(nearResp.json.results) && nearResp.json.results.length > 0) {
-        for (const r of nearResp.json.results) {
+        const filteredResults = nearResp.json.results.filter(r => {
+           const types = r.types || [];
+           if (types.includes('transit_station') || types.includes('bus_stop')) {
+             return isCulture === false && isNature === false && type === 'transit_station'; 
+           }
+           return true;
+        });
+
+        if (filteredResults.length === 0) continue;
+
+        for (const r of filteredResults) {
           const loc = r.geometry && r.geometry.location;
           if (!loc) continue;
           const d = distanceMeters(lat, lng, loc.lat, loc.lng);
-          if (d <= Math.max(radius, POI_DISTANCE_THRESHOLD_M)) {
-            // place details
+          
+          // Dynamic radius: expand for parks, natural features, or known vast areas
+          const isVast = isNature || type === 'park' || type === 'natural_feature' || (r.types || []).some(t => ['park', 'natural_feature', 'tourist_attraction'].includes(t));
+          const effectiveRadius = isVast ? Math.max(radius, 1000) : radius;
+
+          if (d <= effectiveRadius) {
             if (r.place_id) {
-              const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${r.place_id}&fields=name,formatted_address,geometry,types&key=${apiKey}&language=es`;
+              const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${r.place_id}&fields=name,formatted_address,geometry,types,plus_code&key=${apiKey}&language=es`;
               const detResp = await getJson(detUrl);
               if (detResp.ok && detResp.json.result) {
-                const place = detResp.json.result;
-                cache.set(ckey, { ts: nowMs(), value: { place, distanceMeters: Math.round(d) } });
-                res.status(200).json({ source: 'nearby_place_details', typeSearched: type, distanceMeters: Math.round(d), place });
-                return;
+                const resData = detResp.json.result;
+                bestResult = { 
+                  source: `nearby_${type}`, 
+                  distanceMeters: Math.round(d), 
+                  place: resData,
+                  plus_code: resData.plus_code || r.plus_code // capture plus code
+                };
+                break;
               }
             }
-            // fallback nearby basic
-            const placeBasic = { name: r.name, vicinity: r.vicinity, geometry: r.geometry, types: r.types };
-            cache.set(ckey, { ts: nowMs(), value: { place: placeBasic, distanceMeters: Math.round(d) } });
-            res.status(200).json({ source: 'nearby_basic', typeSearched: type, distanceMeters: Math.round(d), place: placeBasic });
-            return;
+            bestResult = { 
+              source: `nearby_${type}_basic`, 
+              distanceMeters: Math.round(d), 
+              place: r,
+              plus_code: r.plus_code 
+            };
+            break;
           }
         }
       }
+      if (bestResult) break;
+    }
+
+    if (bestResult) {
+      cache.set(ckey, { ts: nowMs(), value: bestResult });
+      res.status(200).json(bestResult);
+      return;
     }
 
     // 3) Fallback Reverse Geocode
     const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${apiKey}&language=es`;
     const geoResp = await getJson(geocodeUrl);
     if (geoResp.ok && Array.isArray(geoResp.json.results) && geoResp.json.results.length > 0) {
-      const poi = geoResp.json.results.find(r => (r.types || []).some(t => ['point_of_interest','establishment','park','tourist_attraction'].includes(t)));
+      const poi = geoResp.json.results.find(r => (r.types || []).some(t => ['point_of_interest','establishment','park','tourist_attraction', 'natural_feature'].includes(t)));
       const best = poi || geoResp.json.results[0];
-      const place = { formatted_address: best.formatted_address, types: best.types, address_components: best.address_components, geometry: best.geometry };
-      cache.set(ckey, { ts: nowMs(), value: { place, distanceMeters: null } });
-      res.status(200).json({ source: 'reverse_geocode', place });
+      const place = { 
+        name: best.formatted_address, 
+        formatted_address: best.formatted_address, 
+        types: best.types, 
+        geometry: best.geometry,
+        plus_code: best.plus_code 
+      };
+      const finalRes = { source: 'reverse_geocode', place, plus_code: best.plus_code };
+      cache.set(ckey, { ts: nowMs(), value: finalRes });
+      res.status(200).json(finalRes);
       return;
     }
 
