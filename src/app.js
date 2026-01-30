@@ -1,6 +1,51 @@
 // Cliente: maneja UI, EXIF, mapa y llama al endpoint /api/find-poi (serverless)
 // Migrado de Leaflet a Google Maps JS API y modernizado con Advanced Markers
 
+let translations = {};
+let currentLanguage = localStorage.getItem("language") || "es";
+
+async function initI18n() {
+  try {
+    const response = await fetch(`/locales/${currentLanguage}.json`);
+    translations = await response.json();
+    applyTranslations();
+  } catch (error) {
+    console.error("Error loading translations:", error);
+  }
+}
+
+function t(key) {
+  return translations[key] || key;
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-t]").forEach(el => {
+    const key = el.getAttribute("data-t");
+    if (el.tagName === "INPUT" && el.getAttribute("placeholder")) {
+      el.placeholder = t(key);
+    } else {
+      el.textContent = t(key);
+    }
+  });
+  document.documentElement.lang = currentLanguage;
+  document.documentElement.dir = currentLanguage === "he" ? "rtl" : "ltr";
+}
+
+async function setLanguage(lang) {
+  currentLanguage = lang;
+  localStorage.setItem("language", lang);
+  await initI18n();
+}
+
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW Registered', reg))
+      .catch(err => console.error('SW Registration failed', err));
+  });
+}
+
 const el = {
   consent: document.getElementById("consent"),
   anonymize: document.getElementById("anonymize"),
@@ -23,6 +68,7 @@ const el = {
   commonDesc: document.getElementById("commonDesc"),
   imagesInput: document.getElementById("imagesInput"),
   usePicarta: document.getElementById("usePicarta"),
+  langSelector: document.getElementById("langSelector"),
 };
 
 let batchFiles = []; // To store current batch files and their metadata
@@ -80,9 +126,9 @@ async function processBatchFiles(files) {
     itemEl.innerHTML = `
       <img src="${URL.createObjectURL(file)}" />
       <div class="batch-item-fields">
-        <input type="text" class="batch-title" value="${file.name}" placeholder="Título..." />
-        <input type="text" class="batch-date" placeholder="Fecha/Hora..." />
-        <div class="batch-coords small" style="opacity:0.6; font-size:0.7rem">Extrayendo GPS...</div>
+        <input type="text" class="batch-title" value="${file.name}" placeholder="${t('app_title')}..." />
+        <input type="text" class="batch-date" placeholder="${t('status_analyzing')}..." />
+        <div class="batch-coords small" style="opacity:0.6; font-size:0.7rem">${t('status_searching_poi')}...</div>
       </div>
       <div class="batch-item-fields">
         <div style="display:flex; gap:5px">
@@ -115,24 +161,24 @@ async function processBatchFiles(files) {
         coordsDiv.textContent = `${batchItem.lat.toFixed(6)}, ${batchItem.lng.toFixed(6)}`;
         
         // 1. Analyze with Vision AI first
-        statusMsg.textContent = "Analizando imagen...";
+        statusMsg.textContent = t("status_analyzing");
         const visionDiv = itemEl.querySelector(".vision-tags");
         try {
            const labels = await analyzeImage(file);
            if (labels && labels.length > 0) {
              batchItem.visionLabels = labels;
-             visionDiv.textContent = "🔍 Vision: " + labels.slice(0, 3).join(", ");
+             visionDiv.textContent = t("vision_detected") + " " + labels.slice(0, 3).join(", ");
            }
         } catch (vErr) { console.warn("Vision err in batch", vErr); }
 
         // 2. Search POI with keywords
-        statusMsg.textContent = "Buscando POI...";
+        statusMsg.textContent = t("status_searching_poi");
         await performSearch(batchItem, poiInput, statusMsg);
       } else {
         // Fallback Level 3: Picarta AI
         let picartaSuccess = false;
         if (el.usePicarta.checked) {
-           statusMsg.textContent = "Picarta AI...";
+           statusMsg.textContent = t("status_analyzing") + " (Picarta)...";
            const picartaLoc = await localizeWithPicarta(file);
            if (picartaLoc) {
               batchItem.lat = picartaLoc.lat;
@@ -150,19 +196,19 @@ async function processBatchFiles(files) {
               coordsDiv.textContent = `${batchItem.lat.toFixed(6)}, ${batchItem.lng.toFixed(6)}`;
               
               // Proceed to search POI
-              statusMsg.textContent = "Buscando POI...";
+              statusMsg.textContent = t("status_searching_poi");
               await performSearch(batchItem, poiInput, statusMsg);
               picartaSuccess = true;
            }
         }
 
         if (!picartaSuccess) {
-            coordsDiv.innerHTML = `Sin GPS <button class="btn-mini btn-manual-geo" title="Marcar en mapa">📍</button>`;
-            statusMsg.textContent = "No se detectaron coordenadas.";
+            coordsDiv.innerHTML = `${t('status_found_geocoder').split('(')[0]} <button class="btn-mini btn-manual-geo" title="${t('btn_manual_geo')}">📍</button>`;
+            statusMsg.textContent = t("status_no_coords");
             
             // Manual geo button logic
             coordsDiv.querySelector(".btn-manual-geo").onclick = () => {
-              alert("Hacé click en el mapa principal para asignar ubicación a esta foto.");
+              alert(t("manual_geo_alert"));
               window.pendingManualGeo = { batchItem, itemEl, coordsDiv, statusMsg, poiInput, file };
               el.batchModal.style.display = "none"; // Hide to let user click
             };
@@ -201,7 +247,7 @@ async function performSearch(batchItem, poiInput, statusMsg) {
     if (poiData && poiData.place) {
       batchItem.poi = poiData.place.name || poiData.place.formatted_address;
       poiInput.value = batchItem.poi;
-      statusMsg.textContent = `Encontrado (Backend)`;
+      statusMsg.textContent = t("status_found_backend");
       applyConsensus();
       return;
     }
@@ -211,7 +257,7 @@ async function performSearch(batchItem, poiInput, statusMsg) {
 
   // 2. Fallback: Google Places Service (Nearby Search)
   if (window.google && window.google.maps && window.google.maps.places) {
-    statusMsg.textContent = "Buscando (Google Places Local)...";
+    statusMsg.textContent = t("status_searching_local");
     
     try {
       // Create a temporary div for the PlacesService
@@ -244,7 +290,7 @@ async function performSearch(batchItem, poiInput, statusMsg) {
 
             batchItem.poi = best.name;
             poiInput.value = best.name;
-            statusMsg.textContent = "Encontrado (Google Places)";
+            statusMsg.textContent = t("status_found_google");
             applyConsensus();
           } else {
             useGeocoderFallback(batchItem, poiInput, statusMsg);
@@ -265,10 +311,10 @@ async function performSearch(batchItem, poiInput, statusMsg) {
 
 function useGeocoderFallback(batchItem, poiInput, statusMsg) {
   if (!window.google || !window.google.maps) {
-    statusMsg.textContent = "Error: Google no cargado.";
+    statusMsg.textContent = "Error: Google API.";
     return;
   }
-  statusMsg.textContent = "Buscando (Google Geocoder)...";
+  statusMsg.textContent = t("status_searching_local") + " (Geocoder)...";
   const geocoder = new google.maps.Geocoder();
   geocoder.geocode({ location: { lat: batchItem.lat, lng: batchItem.lng } }, (results, status) => {
     if (status === "OK" && results && results.length > 0) {
@@ -289,7 +335,7 @@ function useGeocoderFallback(batchItem, poiInput, statusMsg) {
 
       batchItem.poi = name;
       poiInput.value = name;
-      statusMsg.textContent = "Encontrado (Geocoder)";
+      statusMsg.textContent = t("status_found_geocoder");
       applyConsensus();
     } else {
       statusMsg.textContent = "No se encontraron resultados.";
@@ -323,7 +369,7 @@ function applyConsensus() {
         bf.consensus = true;
         
         const consensusArea = bf.el.querySelector(".consensus-area");
-        consensusArea.innerHTML = `<span class="consensus-badge">🤝 Consenso detectado</span>`;
+        consensusArea.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
       }
     });
   }
@@ -387,7 +433,7 @@ async function initMap() {
   
   // Clean start
   if (!el.mapDiv.innerHTML) {
-     el.mapDiv.innerHTML = '<div style="color:white; padding:20px;">Cargando mapa...</div>';
+     el.mapDiv.innerHTML = `<div style="color:white; padding:20px;">${t('loading_map')}</div>`;
   }
 
   try {
@@ -445,7 +491,7 @@ async function initMap() {
       }
 
       if (!currentSelected) {
-        alert("Seleccioná una foto primero.");
+        alert(t("select_photo_first"));
         return;
       }
       updateMarkerAndCircle(lat, lng);
@@ -453,7 +499,7 @@ async function initMap() {
     });
   } catch (error) {
     console.error("Error initializing map:", error);
-    if (el.mapDiv) el.mapDiv.innerHTML = '<div style="color:white; padding:20px;">Error al cargar el mapa. Verifica tu conexión o API Key.</div>';
+    if (el.mapDiv) el.mapDiv.innerHTML = `<div style="color:white; padding:20px;">${t('map_error')}</div>`;
   }
 }
 
@@ -541,7 +587,7 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
       photoMarker = null;
       radiusCircle = null;
       currentSelected = null;
-      el.selectedInfo.textContent = "Seleccioná una foto con coordenadas.";
+      el.selectedInfo.textContent = t("select_photo_msg");
       el.placesList.innerHTML = "";
     }
     item.remove();
@@ -562,21 +608,21 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
 
   const useBtn = document.createElement("button");
   useBtn.className = "btn primary";
-  useBtn.textContent = "Usar ubicación";
+  useBtn.textContent = t("btn_use_location");
   useBtn.disabled = true;
 
   const manualBtn = document.createElement("button");
   manualBtn.className = "btn";
-  manualBtn.textContent = "Marcar manualmente";
+  manualBtn.textContent = t("btn_manual_geo");
 
   const saveBtn = document.createElement("button");
   saveBtn.className = "btn primary";
-  saveBtn.textContent = "Guardar sugerido";
+  saveBtn.textContent = t("btn_save_suggested");
 
   // Check if already saved in localStorage
   const savedData = JSON.parse(localStorage.getItem("rg_saved_captions_v1") || "{}");
   if (savedData[id]) {
-    saveBtn.textContent = "✅ Guardado";
+    saveBtn.textContent = "✅ " + t("badge_saved");
     saveBtn.style.opacity = "0.7";
     item.dataset.selectedCaption = savedData[id].caption;
     title.textContent = savedData[id].caption;
@@ -587,7 +633,7 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
     badge.style.position = "absolute";
     badge.style.top = "8px";
     badge.style.left = "8px";
-    badge.textContent = "SAVED";
+    badge.textContent = t("badge_saved");
     item.appendChild(badge);
   }
 
@@ -640,7 +686,7 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
         const labelsTag = document.createElement("div");
         labelsTag.className = "small";
         labelsTag.style.color = "var(--accent)";
-        labelsTag.textContent = "🔍 Detectado: " + labels.slice(0, 3).join(', ');
+        labelsTag.textContent = t("vision_detected") + " " + labels.slice(0, 3).join(', ');
         meta.insertBefore(labelsTag, title);
       }
     }).catch(e => { console.warn("Vision API skipped", e); });
@@ -656,21 +702,21 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
 
   manualBtn.addEventListener("click", () => {
     currentSelected = { id, lat: null, lng: null, itemEl: item };
-    alert("Hacé click en el mapa para establecer ubicación.");
+    alert(t("manual_geo_alert"));
     highlightSelectedPhoto(item);
   });
 
   saveBtn.addEventListener("click", () => {
     const caption = item.dataset.selectedCaption;
     if (!caption) {
-      alert("No hay sugerencia seleccionada (buscá un POI primero).");
+      alert(t("select_photo_first"));
       return;
     }
     const saved = JSON.parse(localStorage.getItem("rg_saved_captions_v1") || "{}");
     saved[id] = { caption, ts: Date.now() };
     localStorage.setItem("rg_saved_captions_v1", JSON.stringify(saved));
     
-    saveBtn.textContent = "✅ Guardado";
+    saveBtn.textContent = "✅ " + t("badge_saved");
     saveBtn.style.opacity = "0.7";
     
     // Feedback visual en la foto
@@ -680,7 +726,7 @@ async function createPhotoItem(file, preCaption = null, preLat = null, preLng = 
     badge.style.position = "absolute";
     badge.style.top = "8px";
     badge.style.left = "8px";
-    badge.textContent = "SAVED";
+    badge.textContent = t("badge_saved");
     item.appendChild(badge);
   });
 }
@@ -719,7 +765,7 @@ async function analyzeImage(file) {
 }
 
 async function handleFindPoi(lat, lng, itemEl) {
-  el.selectedInfo.textContent = "Buscando POI...";
+  el.selectedInfo.textContent = t("status_searching_poi");
   el.placesList.innerHTML = "";
 
   const anonymize = el.anonymize.checked;
@@ -775,7 +821,7 @@ async function handlePlacesLocalFallback(lat, lng, itemEl, keywords) {
     return;
   }
 
-  el.selectedInfo.textContent = "Buscando (Google Local)...";
+  el.selectedInfo.textContent = t("status_searching_local");
   const radius = Math.max(Number(el.radiusRange.value) || 20, 500); 
   const service = new google.maps.places.PlacesService(el.mapDiv);
   const request = {
@@ -815,7 +861,7 @@ async function handlePlacesLocalFallback(lat, lng, itemEl, keywords) {
         };
         renderPoiResult(data, itemEl);
       } else {
-        el.selectedInfo.textContent = "No se encontraron lugares cercanos.";
+        el.selectedInfo.textContent = t("status_no_coords");
       }
     } catch (e) {
       el.selectedInfo.textContent = "Error en el buscador local.";
@@ -833,7 +879,7 @@ function renderPoiResult(data, itemEl) {
     info.className = "placeInfo";
     const name = document.createElement("div");
     name.className = "placeName";
-    name.textContent = p.name || p.formatted_address || "Sin nombre";
+    name.textContent = p.name || p.formatted_address || t("status_no_coords");
     
     const metaInfo = document.createElement("div");
     metaInfo.className = "placeTypes";
@@ -881,11 +927,15 @@ function renderPoiResult(data, itemEl) {
       pcLabel.textContent = `📍 ${plusCode}`;
       if (!pcLabel.parentNode) itemEl.querySelector('.photoMeta').insertBefore(pcLabel, itemEl.querySelector('.rowButtons'));
     }
-    el.selectedInfo.textContent = "Lugar detectado:";
+    el.selectedInfo.textContent = t("pane_details") + ":";
 }
 
 // Inicializar al cargar
 window.onload = async () => {
+  await initI18n(); // Load translations first
+  el.langSelector.value = currentLanguage;
+  el.langSelector.addEventListener("change", (e) => setLanguage(e.target.value));
+
   await initMap();
   el.radiusValue.textContent = el.radiusRange.value;
   el.imagesInput.addEventListener("change", async (ev) => {

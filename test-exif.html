@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba EXIF - Foto del Puerto</title>
+    <script src="https://cdn.jsdelivr.net/npm/exifr/dist/lite.umd.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #4f46e5;
+        margin-bottom: 20px;
+      }
+      .upload-area {
+        border: 3px dashed #4f46e5;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-bottom: 20px;
+      }
+      .upload-area:hover {
+        background: #eef2ff;
+        border-color: #6366f1;
+      }
+      .results {
+        display: none;
+        margin-top: 20px;
+      }
+      .metadata-item {
+        padding: 15px;
+        background: #f3f4f6;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #4f46e5;
+      }
+      .metadata-item strong {
+        color: #4f46e5;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .success {
+        color: #10b981;
+        font-weight: bold;
+      }
+      .warning {
+        color: #f59e0b;
+        font-weight: bold;
+      }
+      .error {
+        color: #ef4444;
+        font-weight: bold;
+      }
+      .preview-img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔍 Prueba de Extracción EXIF</h1>
+      <p>Sube la foto del puerto para ver qué metadatos contiene</p>
+
+      <div class="upload-area" id="uploadArea">
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          style="display: none"
+        />
+        <p style="font-size: 48px; margin: 0">📸</p>
+        <p style="margin: 10px 0; font-size: 18px">
+          Haz clic o arrastra la foto aquí
+        </p>
+      </div>
+
+      <div class="results" id="results">
+        <h2>Resultados:</h2>
+        <div id="metadataContainer"></div>
+        <img id="preview" class="preview-img" alt="Preview" />
+      </div>
+    </div>
+
+    <script>
+      const uploadArea = document.getElementById("uploadArea");
+      const fileInput = document.getElementById("fileInput");
+      const results = document.getElementById("results");
+      const metadataContainer = document.getElementById("metadataContainer");
+      const preview = document.getElementById("preview");
+
+      uploadArea.addEventListener("click", () => fileInput.click());
+
+      uploadArea.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        uploadArea.style.background = "#EEF2FF";
+      });
+
+      uploadArea.addEventListener("dragleave", () => {
+        uploadArea.style.background = "white";
+      });
+
+      uploadArea.addEventListener("drop", (e) => {
+        e.preventDefault();
+        uploadArea.style.background = "white";
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith("image/")) {
+          processFile(file);
+        }
+      });
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          processFile(file);
+        }
+      });
+
+      async function processFile(file) {
+        console.log("Processing file:", file.name);
+
+        // Show preview
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          preview.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+
+        try {
+          // Extract EXIF
+          const exif = await exifr.parse(file, {
+            gps: true,
+            exif: true,
+            ifd0: true,
+          });
+
+          console.log("EXIF data:", exif);
+
+          let html = "";
+
+          if (!exif) {
+            html = `<div class="metadata-item">
+                        <strong class="warning">⚠️ Sin Metadatos EXIF</strong>
+                        Esta foto no contiene información EXIF (puede ser un screenshot o foto editada)
+                    </div>`;
+          } else {
+            // Date
+            if (exif.DateTimeOriginal || exif.DateTime) {
+              const date = exif.DateTimeOriginal || exif.DateTime;
+              html += `<div class="metadata-item">
+                            <strong class="success">✅ Fecha de Captura</strong>
+                            ${date.toLocaleString("es-ES")}
+                        </div>`;
+            } else {
+              html += `<div class="metadata-item">
+                            <strong class="warning">⚠️ Sin Fecha</strong>
+                            No se encontró fecha de captura
+                        </div>`;
+            }
+
+            // GPS
+            if (exif.latitude && exif.longitude) {
+              const city = suggestCity(exif.latitude, exif.longitude);
+              html += `<div class="metadata-item">
+                            <strong class="success">✅ Ubicación GPS</strong>
+                            Latitud: ${exif.latitude.toFixed(6)}<br>
+                            Longitud: ${exif.longitude.toFixed(6)}<br>
+                            <strong>Ciudad Sugerida: ${
+                              city || "Ninguna (fuera de rango)"
+                            }</strong>
+                        </div>`;
+            } else {
+              html += `<div class="metadata-item">
+                            <strong class="warning">⚠️ Sin GPS</strong>
+                            La foto no contiene coordenadas GPS
+                        </div>`;
+            }
+
+            // Camera
+            if (exif.Make || exif.Model) {
+              html += `<div class="metadata-item">
+                            <strong>📷 Cámara</strong>
+                            ${exif.Make || ""} ${exif.Model || ""}
+                        </div>`;
+            }
+          }
+
+          metadataContainer.innerHTML = html;
+          results.style.display = "block";
+        } catch (error) {
+          console.error("Error extracting EXIF:", error);
+          metadataContainer.innerHTML = `<div class="metadata-item">
+                    <strong class="error">❌ Error</strong>
+                    No se pudo leer los metadatos: ${error.message}
+                </div>`;
+          results.style.display = "block";
+        }
+      }
+
+      function suggestCity(lat, lon) {
+        const cities = {
+          "Buenos Aires": { lat: -34.6037, lon: -58.3816 },
+          Rosario: { lat: -32.9468, lon: -60.6393 },
+          Bariloche: { lat: -41.1335, lon: -71.3103 },
+          Mendoza: { lat: -32.8895, lon: -68.8458 },
+          Malargüe: { lat: -35.4756, lon: -69.5847 },
+          Jujuy: { lat: -24.1858, lon: -65.2995 },
+          Iguazú: { lat: -25.6953, lon: -54.4367 },
+          Corrientes: { lat: -27.4692, lon: -58.8306 },
+        };
+
+        let closestCity = null;
+        let minDistance = Infinity;
+
+        for (const [name, coords] of Object.entries(cities)) {
+          const distance = getDistance(lat, lon, coords.lat, coords.lon);
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestCity = name;
+          }
+        }
+
+        return minDistance < 100 ? closestCity : null;
+      }
+
+      function getDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; // km
+        const dLat = ((lat2 - lat1) * Math.PI) / 180;
+        const dLon = ((lon2 - lon1) * Math.PI) / 180;
+        const a =
+          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos((lat1 * Math.PI) / 180) *
+            Math.cos((lat2 * Math.PI) / 180) *
+            Math.sin(dLon / 2) *
+            Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+      }
+    </script>
+  </body>
+</html>
