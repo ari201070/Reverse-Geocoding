@@ -156,8 +156,11 @@ async function processBatchFiles(files) {
       if (coords) {
         batchItem.lat = coords.lat;
         batchItem.lng = coords.lng;
-        batchItem.date = fullMeta.DateTimeOriginal || fullMeta.DateTime || "";
-        itemEl.querySelector(".batch-date").value = batchItem.date;
+        // Normalize date to timestamp
+        const d = fullMeta.DateTimeOriginal || fullMeta.DateTime || null;
+        batchItem.date = d instanceof Date ? d.getTime() : (typeof d === 'number' ? d : file.lastModified);
+        
+        itemEl.querySelector(".batch-date").value = d instanceof Date ? d.toLocaleString() : new Date(batchItem.date).toLocaleString();
         coordsDiv.textContent = `${batchItem.lat.toFixed(6)}, ${batchItem.lng.toFixed(6)}`;
         
         // 1. Analyze with Vision AI first
@@ -273,19 +276,24 @@ async function performSearch(batchItem, poiInput, statusMsg) {
       service.nearbySearch(request, (results, status) => {
         try {
           if (status === google.maps.places.PlacesServiceStatus.OK && results && results.length > 0) {
-            // Ranking logic: tourist attractions and malls first, then others
-            const best = results.sort((a, b) => {
+            // Filtrar nombres genéricos y priorizar por tipo + cercanía
+            const validResults = results.filter(r => !isGenericName(r.name));
+            const pool = validResults.length > 0 ? validResults : results;
+
+            const best = pool.sort((a, b) => {
+              const distA = calculateDistance(batchItem.lat, batchItem.lng, a.geometry.location.lat(), a.geometry.location.lng());
+              const distB = calculateDistance(batchItem.lat, batchItem.lng, b.geometry.location.lat(), b.geometry.location.lng());
+              
               const score = (r) => {
                 let s = 0;
-                if (r.types.includes('tourist_attraction')) s += 10;
-                if (r.types.includes('shopping_mall')) s += 9;
-                if (r.types.includes('park')) s += 8;
-                if (r.types.includes('museum')) s += 8;
-                if (r.types.includes('point_of_interest')) s += 5;
-                if (r.types.includes('establishment')) s += 2;
+                if (r.types.includes('tourist_attraction')) s += 100;
+                if (r.types.includes('museum')) s += 95;
+                if (r.types.includes('park')) s += 90;
+                if (r.types.includes('establishment')) s += 50;
                 return s;
               };
-              return score(b) - score(a);
+              // Priorizar score pero penalizar distancia (distancia en metros / 10)
+              return (score(b) - distB/10) - (score(a) - distA/10);
             })[0];
 
             batchItem.poi = best.name;
@@ -318,61 +326,92 @@ function useGeocoderFallback(batchItem, poiInput, statusMsg) {
   const geocoder = new google.maps.Geocoder();
   geocoder.geocode({ location: { lat: batchItem.lat, lng: batchItem.lng } }, (results, status) => {
     if (status === "OK" && results && results.length > 0) {
-      const poi = results.find(r => 
-        r.types.includes("point_of_interest") || 
-        r.types.includes("establishment") || 
-        r.types.includes("park") ||
-        r.types.includes("tourist_attraction")
+      // Priorizar POIs específicos
+      const poiResult = results.find(r => 
+        r.types.includes('point_of_interest') || 
+        r.types.includes('establishment') || 
+        r.types.includes('premise') ||
+        r.types.includes('tourist_attraction')
       );
-      const best = poi || results[0];
-      let name = best.formatted_address;
-      // If it's an address, try to get street name + number instead of just index 0
-      if (!poi && best.address_components.length > 1) {
-         const street = best.address_components.find(c => c.types.includes("route"))?.long_name;
-         const num = best.address_components.find(c => c.types.includes("street_number"))?.long_name;
-         if (street) name = street + (num ? " " + num : "");
-      }
+      
+      const best = poiResult || results[0];
+      let name = best.formatted_address.split(',')[0];
 
+      // Si el geocoder solo devuelve una calle y NO es un POI claro,
+      // ya lo habremos intentado en performSearch, así que lo aceptamos como el mejor esfuerzo.
       batchItem.poi = name;
       poiInput.value = name;
       statusMsg.textContent = t("status_found_geocoder");
       applyConsensus();
     } else {
-      statusMsg.textContent = "No se encontraron resultados.";
+      statusMsg.textContent = t("status_no_coords");
     }
   });
 }
 
 // --- Consensus Logic ---
+// --- Consensus Logic (Master Pattern: Spatio-Temporal Clustering) ---
 function applyConsensus() {
-  const counts = {};
-  let bestPoi = null;
-  let maxCount = 0;
-
-  batchFiles.forEach(bf => {
-    if (bf.poi && bf.poi.trim().length > 0) {
-      counts[bf.poi] = (counts[bf.poi] || 0) + 1;
-      if (counts[bf.poi] > maxCount) {
-        maxCount = counts[bf.poi];
-        bestPoi = bf.poi;
+  const clusters = clusterPhotosByContext(batchFiles);
+  
+  clusters.forEach(cluster => {
+    if (cluster.length > 0) {
+      const consensusCaption = getMostCommonCaption(cluster);
+      if (consensusCaption) {
+        cluster.forEach(bf => {
+          // Si no tiene POI o ya es parte de un consenso previo, actualizar
+          const pi = bf.el.querySelector(".batch-poi");
+          if (!bf.poi || bf.poi === "" || bf.consensus || (pi && !pi.value.trim())) {
+            bf.poi = consensusCaption;
+            bf.consensus = true;
+            if (pi) pi.value = consensusCaption;
+            
+            const ca = bf.el.querySelector(".consensus-area");
+            if (ca) ca.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
+          }
+        });
       }
     }
   });
+}
 
-  // If > 2 photos have the same POI, apply consensus to others ONLY IF THEY ARE EMPTY
-  if (maxCount >= 2 && bestPoi) {
-    batchFiles.forEach(bf => {
-      const poiInput = bf.el.querySelector(".batch-poi");
-      if (!poiInput.value.trim()) {
-        bf.poi = bestPoi;
-        poiInput.value = bestPoi;
-        bf.consensus = true;
-        
-        const consensusArea = bf.el.querySelector(".consensus-area");
-        consensusArea.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
+function clusterPhotosByContext(photos) {
+  const clusters = [];
+  const processed = new Set();
+  
+  for (const photo of photos) {
+    if (processed.has(photo)) continue;
+    const cluster = [photo];
+    processed.add(photo);
+    
+    for (const other of photos) {
+      if (processed.has(other)) continue;
+      if (!photo.lat || !photo.lng || !other.lat || !other.lng) continue;
+
+      // < 5 mins AND < 25 meters
+      const timeDiff = Math.abs((photo.date || 0) - (other.date || 0));
+      const dist = calculateDistance(photo.lat, photo.lng, other.lat, other.lng);
+      
+      if (timeDiff < (5 * 60 * 1000) && dist < 25) { 
+        cluster.push(other);
+        processed.add(other);
       }
-    });
+    }
+    clusters.push(cluster);
   }
+  return clusters;
+}
+
+function getMostCommonCaption(photos) {
+  const counts = new Map();
+  photos.forEach(p => {
+    if (p.poi && p.poi.trim().length > 0) {
+      counts.set(p.poi, (counts.get(p.poi) || 0) + 1);
+    }
+  });
+  let max = 0, best = null;
+  counts.forEach((v, k) => { if (v > max) { max = v; best = k; } });
+  return max >= 1 ? best : null;
 }
 
 async function findPoiBackend(lat, lng, radius = 500, keywords = "") {
@@ -1035,13 +1074,35 @@ async function localizeWithPicarta(file) {
   });
 }
 
-// Global hook for manual geocoding from modal
+/**
+ * Filtra nombres genéricos (calles, números, plus codes) para priorizar POIs
+ */
+function isGenericName(name) {
+  if (!name) return true;
+  const n = name.trim();
+  // 1. Plus Code detection
+  if (/^[A-Z0-9]{2,8}\+[A-Z0-9]{2,5}$/.test(n) || n.includes('+')) return true;
+  
+  // 2. Street Address patterns (Av., Calle, Ruta...)
+  const startsWithStreetType = /^(Av\.|Avenida|Calle|Ruta|Camino|Bv\.|Boulevard|Autopista|Pasaje|Diagonal)\s/i.test(n);
+  const endsWithNumber = /\s\d+$/.test(n);
+  const isHistoricalDate = /^\d+\sde\s/i.test(n); // Like "25 de Mayo"
+  
+  return startsWithStreetType || (endsWithNumber && !isHistoricalDate);
+}
 
-window.addEventListener("click", (e) => {
-  if (window.pendingManualGeo && typeof map !== 'undefined') {
-    // Si hay un geoposicionamiento pendiente y se hizo clic en el mapa
-    // Esto se maneja mejor integrándolo en el listener de clic del mapa mismo
-  }
-});
+/**
+ * Calcula la distancia Haversine en metros
+ */
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371000; // Radio de la Tierra en metros
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
 
 initMap();

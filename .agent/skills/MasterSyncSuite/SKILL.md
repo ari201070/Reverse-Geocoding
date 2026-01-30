@@ -4,26 +4,18 @@ Esta Skill encapsula las "Reglas Maestras" y la lógica de sincronización globa
 
 ## 📜 Reglas de Desarrollo (Lean Agent)
 
-Basado en `RULES_FOR_AI.md`:
+El núcleo de comportamiento del agente reside en los recursos internos del skill:
 
-- **Planning Primero**: Siempre generar un `implementation_plan.md` antes de codificar.
-- **Eficiencia de Tokens**: Minimizar pasos de razonamiento y evitar bucles de autorreflexión.
-- **Contexto bajo demanda**: Consultar archivos de reglas locales antes de realizar cambios estructurales.
+- **[RULES_FOR_AI.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/RULES_FOR_AI.md)**: Estrategia de tokens, modo lean y protocolos de procesamiento.
+- **[GLOBAL_AI_SETUP.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/GLOBAL_AI_SETUP.md)**: Configuración del IDE y la plataforma.
 
 ## 🗝️ Gestión de API Keys (Guía Maestra)
 
-Basado en `GUIA_API_KEYS.md`:
-
-- **Consistencia de Nombres**: Usar `VITE_GOOGLE_API_KEY` para servicios de Mapas/Places.
-- **Manejo Seguro**: Las claves deben residir en `.env` (no trackeado) con fallbacks configurados en Firebase si aplica.
+- **[GUIA_API_KEYS.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/GUIA_API_KEYS.md)**: Consistencia en nombres (ej. `VITE_GOOGLE_API_KEY`) y manejo seguro en `.env`.
 
 ## 🔄 Lógica de Sincronización (Firebase)
 
-Basado en `EXPLICACION_SINCRONIZACION.md`:
-
-- **Firestore**: Para metadatos de fotos (títulos, fechas, coordenadas) y listas (equipaje).
-- **Storage**: Para los archivos binarios de las imágenes.
-- **Auth**: Gestión de sesiones de usuario para asegurar que solo la familia acceda a los datos.
+- **[EXPLICACION_SINCRONIZACION.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/EXPLICACION_SINCRONIZACION.md)**: Estrategia para migrar de `localStorage` a Firestore/Storage asegurando persistencia multi-dispositivo.
 
 ## 🌍 Bilingüismo y RTL
 

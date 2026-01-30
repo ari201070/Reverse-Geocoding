@@ -1,19 +1,24 @@
-# ExifDataSuite
+# Skill: ExifDataSuite
 
 Skill especializada en el procesamiento avanzado de metadatos de imagen para aplicaciones geoespaciales.
 
-## Instrucciones
+## 🛠️ Capacidades Técnicas
 
-Esta skill debe usarse cuando el usuario necesite extraer coordenadas GPS, orientación o timestamps de fotografías de manera precisa y con fallbacks robustos.
+### 📡 Extracción en Cascada (Cascading GPS)
 
-### Herramientas Disponibles
+Esta skill prioriza la extracción de coordenadas de múltiples fuentes para maximizar el éxito en imágenes editadas o compartidas:
 
-- `extract_location_context`: Extrae lat/lng, bearing y altitude.
-- `format_for_api`: Convierte coordenadas DMS a Decimal y prepara el objeto de contexto.
-- `validate_exif_integrity`: Verifica la presencia de etiquetas GPS mínimas.
+1.  **EXIF nativo**: `latitude`, `longitude`.
+2.  **XMP (Adobe/Google Photos)**: `GPSLatitude`, `GPSLongitude`.
+3.  **IPTC Core**: Metadatos de ubicación descriptiva.
 
-## Mejores Prácticas
+### 📅 Datación Multipunto
 
-- Utilizar `exifr` con la opción `{ gps: true }`.
-- Validar siempre si las coordenadas son `0,0` (a veces indicativo de error o privacidad).
-- Redondear coordenadas para búsquedas de caché de POIs (4 decimales sugerido).
+- Prioriza `DateTimeOriginal`.
+- Fallback a `DateTime` o metadatos de sistema si es necesario.
+
+## 🚀 Mejores Prácticas
+
+- **Normalización**: Redondear coordenadas a 4 decimales (~11m de precisión) para optimizar la búsqueda de POIs y la privacidad (anonymization).
+- **Consistencia**: Utilizar `exifr` con la opción `{ gps: true, exif: true, xmp: true }` para una vista holística.
+- **Fail-safe**: Si fallan todos los metadatos, activar el flujo de geolocalización visual (Picarta AI) o manual.
