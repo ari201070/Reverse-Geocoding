@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "vercel-dev": "vercel dev",
+    "dev-chrome": "start chrome http://localhost:3000 & vercel dev",
     "build": "vite build",
-    "preview": "vite preview",
-    "vercel-dev": "vercel dev"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "exifr": "^7.1.0"
+    "dotenv": "^17.2.3",
+    "exifr": "^7.1.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "vite": "^5.0.0"

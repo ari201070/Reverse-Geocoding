@@ -95,46 +95,52 @@ export default async function handler(req, res) {
     // 1) If keywords provided try Text Search nearby (radius)
     if (keywords && keywords.trim().length > 0) {
       const q = encodeURIComponent(keywords.trim());
-      const textUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${q}&location=${lat},${lng}&radius=${radius}&key=${apiKey}&language=es`;
+      // For specific and important keywords, we expand search slightly
+      const searchRadius = Math.max(radius, 1000); 
+      const textUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${q}&location=${lat},${lng}&radius=${searchRadius}&key=${apiKey}&language=es`;
       const textResp = await getJson(textUrl);
+
       if (textResp.ok && Array.isArray(textResp.json.results) && textResp.json.results.length > 0) {
-        for (const r of textResp.json.results) {
-          const loc = r.geometry && r.geometry.location;
-          if (!loc) continue;
-          const d = distanceMeters(lat, lng, loc.lat, loc.lng);
-          if (d <= POI_DISTANCE_THRESHOLD_M) {
-            // Get details if possible
-            if (r.place_id) {
-              const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${r.place_id}&fields=name,formatted_address,geometry,types&key=${apiKey}&language=es`;
-              const detResp = await getJson(detUrl);
-              if (detResp.ok && detResp.json.result) {
-                const place = detResp.json.result;
-                cache.set(ckey, { ts: nowMs(), value: { place, distanceMeters: Math.round(d) } });
-                res.status(200).json({ source: 'text_search_place_details', distanceMeters: Math.round(d), place });
-                return;
-              }
+        // Sort by distance to favor local matches, but return anything within 1.5km
+        const filteredResults = textResp.json.results
+          .map(r => ({ ...r, dist: distanceMeters(lat, lng, r.geometry.location.lat, r.geometry.location.lng) }))
+          .filter(r => r.dist <= 1500)
+          .sort((a,b) => a.dist - b.dist);
+
+        if (filteredResults.length > 0) {
+          const r = filteredResults[0];
+          const d = r.dist;
+          
+          if (r.place_id) {
+            const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${r.place_id}&fields=name,formatted_address,geometry,types,plus_code&key=${apiKey}&language=es`;
+            const detResp = await getJson(detUrl);
+            if (detResp.ok && detResp.json.result) {
+              const place = detResp.json.result;
+              cache.set(ckey, { ts: nowMs(), value: { place, distanceMeters: Math.round(d) } });
+              res.status(200).json({ source: 'text_search_place_details', distanceMeters: Math.round(d), place });
+              return;
             }
-            // fallback basic
-            const placeBasic = { name: r.name, formatted_address: r.formatted_address, geometry: r.geometry, types: r.types };
-            cache.set(ckey, { ts: nowMs(), value: { place: placeBasic, distanceMeters: Math.round(d) } });
-            res.status(200).json({ source: 'text_search_basic', distanceMeters: Math.round(d), place: placeBasic });
-            return;
           }
+          // fallback basic
+          const placeBasic = { name: r.name, formatted_address: r.formatted_address, geometry: r.geometry, types: r.types, plus_code: r.plus_code };
+          cache.set(ckey, { ts: nowMs(), value: { place: placeBasic, distanceMeters: Math.round(d) } });
+          res.status(200).json({ source: 'text_search_basic', distanceMeters: Math.round(d), place: placeBasic });
+          return;
         }
       }
     }
 
     // 2) Nearby searches by types using rankby=distance (no radius)
-    // Eliminamos 'establishment' de la lista principal para evitar paradas de bus o direcciones genéricas
     let typesToTry = ['park','tourist_attraction','museum','art_gallery','zoo','aquarium'];
     
     const kLower = keywords ? keywords.toLowerCase() : "";
     const isNature = kLower.includes('leisure') || kLower.includes('tree') || kLower.includes('natural') || kLower.includes('nature') || kLower.includes('outdoor') || kLower.includes('plant') || kLower.includes('grass') || kLower.includes('landscape') || kLower.includes('white') || kLower.includes('flat') || kLower.includes('snow') || kLower.includes('winter');
     const isCulture = kLower.includes('sculpture') || kLower.includes('statue') || kLower.includes('art') || kLower.includes('monument') || kLower.includes('landmark');
+    const isFood = kLower.includes('food') || kLower.includes('dish') || kLower.includes('cuisine') || kLower.includes('meal') || kLower.includes('tableware') || kLower.includes('ingredient') || kLower.includes('restaurant') || kLower.includes('cafe');
     
     // Prioritizing based on detected context
-    if (kLower.includes('food') || kLower.includes('dish') || kLower.includes('cuisine') || kLower.includes('meal')) {
-      typesToTry = ['restaurant', 'cafe', 'bakery', 'bar', ...typesToTry];
+    if (isFood) {
+      typesToTry = ['restaurant', 'cafe', 'bakery', 'bar', 'food', ...typesToTry];
     } else if (isCulture) {
       typesToTry = ['tourist_attraction', 'museum', 'art_gallery', 'park', 'place_of_worship'];
     } else if (isNature) {
@@ -143,64 +149,92 @@ export default async function handler(req, res) {
     }
     
     const fallbackTypes = ['point_of_interest', 'establishment', 'lodging'];
-    const allTypes = [...typesToTry, ...fallbackTypes];
+    const allTypesToSearch = [...new Set([...typesToTry, ...fallbackTypes])];
 
-    let bestResult = null;
+    let candidates = [];
 
-    for (const type of allTypes) {
+    // Collect candidates from multiple types
+    for (const type of allTypesToSearch) {
       const nearUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&rankby=distance&type=${encodeURIComponent(type)}&key=${apiKey}&language=es`;
       const nearResp = await getJson(nearUrl);
-      if (nearResp.ok && Array.isArray(nearResp.json.results) && nearResp.json.results.length > 0) {
-        const filteredResults = nearResp.json.results.filter(r => {
-           const types = r.types || [];
-           if (types.includes('transit_station') || types.includes('bus_stop')) {
-             return isCulture === false && isNature === false && type === 'transit_station'; 
-           }
-           return true;
-        });
-
-        if (filteredResults.length === 0) continue;
-
-        for (const r of filteredResults) {
-          const loc = r.geometry && r.geometry.location;
-          if (!loc) continue;
-          const d = distanceMeters(lat, lng, loc.lat, loc.lng);
+      if (nearResp.ok && Array.isArray(nearResp.json.results)) {
+        for (const r of nearResp.json.results) {
+          // Deduplicate
+          if (candidates.some(c => c.place_id === r.place_id)) continue;
           
-          // Dynamic radius: expand for parks, natural features, or known vast areas
-          const isVast = isNature || type === 'park' || type === 'natural_feature' || (r.types || []).some(t => ['park', 'natural_feature', 'tourist_attraction'].includes(t));
-          const effectiveRadius = isVast ? Math.max(radius, 1000) : radius;
-
-          if (d <= effectiveRadius) {
-            if (r.place_id) {
-              const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${r.place_id}&fields=name,formatted_address,geometry,types,plus_code&key=${apiKey}&language=es`;
-              const detResp = await getJson(detUrl);
-              if (detResp.ok && detResp.json.result) {
-                const resData = detResp.json.result;
-                bestResult = { 
-                  source: `nearby_${type}`, 
-                  distanceMeters: Math.round(d), 
-                  place: resData,
-                  plus_code: resData.plus_code || r.plus_code // capture plus code
-                };
-                break;
-              }
-            }
-            bestResult = { 
-              source: `nearby_${type}_basic`, 
-              distanceMeters: Math.round(d), 
-              place: r,
-              plus_code: r.plus_code 
-            };
-            break;
+          const d = distanceMeters(lat, lng, r.geometry.location.lat, r.geometry.location.lng);
+          
+          // Basic distance check (generous for keywords, tight for generic)
+          const isVast = (r.types || []).some(t => ['park', 'natural_feature', 'tourist_attraction'].includes(t));
+          const maxDist = isVast ? Math.max(radius, 1200) : radius;
+          
+          if (d <= maxDist) {
+            candidates.push({ ...r, dist: d });
           }
         }
       }
-      if (bestResult) break;
+      if (candidates.length > 15) break; 
     }
 
-    if (bestResult) {
-      cache.set(ckey, { ts: nowMs(), value: bestResult });
-      res.status(200).json(bestResult);
+    if (candidates.length > 0) {
+      // RANKING LOGIC
+      const ranked = candidates.sort((a,b) => {
+        const score = (res) => {
+          let s = 1000 - (res.dist / 2); // Base score by proximity
+          
+          const name = res.name.toLowerCase();
+          const types = res.types || [];
+          
+          // 1. Keyword bonus (The most powerful signal)
+          if (keywords) {
+            const keys = keywords.toLowerCase().split(' ').filter(k => k.length > 3);
+            keys.forEach(k => {
+              if (name.includes(k)) s += 1000; // Found detected text in name!
+            });
+          }
+          
+          // 2. Type relevance
+          if (types.includes('tourist_attraction')) s += 200;
+          if (types.includes('amusement_park')) s += 500; // Big boost for theme parks
+          if (types.includes('park')) s += 50;
+          
+          // 3. Penalty for generic names (using regex or substring)
+          const genericTerms = ['costanera', 'avenida', 'calle', 'ruta', 'plaza'];
+          genericTerms.forEach(t => { if (name.includes(t)) s -= 300; });
+
+          return s;
+        };
+        return score(b) - score(a);
+      });
+
+      const best = ranked[0];
+      
+      // Get details for the winner
+      if (best.place_id) {
+        const detUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${best.place_id}&fields=name,formatted_address,geometry,types,plus_code&key=${apiKey}&language=es`;
+        const detResp = await getJson(detUrl);
+        if (detResp.ok && detResp.json.result) {
+          const resData = detResp.json.result;
+          const finalCandidate = { 
+            source: 'ranked_nearby_details', 
+            distanceMeters: Math.round(best.dist), 
+            place: resData,
+            plus_code: resData.plus_code || best.plus_code
+          };
+          cache.set(ckey, { ts: nowMs(), value: finalCandidate });
+          res.status(200).json(finalCandidate);
+          return;
+        }
+      }
+
+      const basicCandidate = { 
+        source: 'ranked_nearby_basic', 
+        distanceMeters: Math.round(best.dist), 
+        place: best,
+        plus_code: best.plus_code 
+      };
+      cache.set(ckey, { ts: nowMs(), value: basicCandidate });
+      res.status(200).json(basicCandidate);
       return;
     }
 

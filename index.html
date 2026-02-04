@@ -9,14 +9,7 @@
   <!-- PWA Manifest placeholder -->
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#0f172a" />
-  <!-- Google Maps JS API (Async Loader) -->
-  <script>
-    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?(console.warn(p+" only loads once. Ignoring:",g),r.add(g.libraries)):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-      key: "AIzaSyD182OZ7oW1WYe5-TzoJaM2wHyglq6-YIU",
-      v: "weekly",
-      loading: "async"
-    });
-  </script>
+  <!-- Google Maps JS API will be loaded dynamically in app.js for security -->
 </head>
 <body>
   <nav id="topBar" class="top-bar">
@@ -36,20 +29,65 @@
 
   <main>
     <section id="controls" class="panel">
-      <div class="control-row">
-        <label for="consent" data-t="consent_label">Usar ubicación EXIF para sugerencias:</label>
-        <input id="consent" type="checkbox" checked />
-        <label for="anonymize" data-t="anonymize_label">Anonymizar al guardar (redondear coords):</label>
-        <input id="anonymize" type="checkbox" />
-        <label for="stripExif" data-t="strip_exif_label">Eliminar EXIF al exportar/descargar:</label>
-        <input id="stripExif" type="checkbox" />
-        <label for="usePicarta" data-t="use_picarta_label">✨ Usar Picarta AI (Experimental):</label>
-        <input id="usePicarta" type="checkbox" />
+      <!-- Intelligence & Discovery -->
+      <div class="control-group">
+        <h3 class="group-title">🧠 Inteligencia & Descubrimiento</h3>
+        <div class="control-row">
+          <div class="control-item">
+            <label class="switch">
+              <input id="consent" type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="consent_label">Usar ubicación EXIF</strong>
+              <small>Usa las coordenadas reales de la foto para sugerir lugares.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <label class="switch">
+              <input id="usePicarta" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="use_picarta_label">✨ Picarta AI (Experimental)</strong>
+              <small>Si la foto no tiene GPS, la IA intenta adivinar el lugar por el paisaje.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <div class="control-text">
+              <label for="radiusRange"><strong data-t="search_radius_label">Radio de búsqueda:</strong> <span id="radiusValue">20</span>m</label>
+              <input id="radiusRange" type="range" min="1" max="100" step="1" value="20"/>
+              <small>Precisión del círculo de búsqueda alrededor de la foto.</small>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="control-row">
-        <label for="radiusRange"><span data-t="search_radius_label">Radio búsqueda (m):</span> <span id="radiusValue">20</span></label>
-        <input id="radiusRange" type="range" min="1" max="50" step="1" value="20"/>
+      <!-- Privacy & Protection -->
+      <div class="control-group">
+        <h3 class="group-title">🛡️ Privacidad & Protección</h3>
+        <div class="control-row">
+          <div class="control-item">
+            <label class="switch">
+              <input id="anonymize" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="anonymize_label">Anonimizar Coordenadas</strong>
+              <small>Redondea la ubicación exacta para proteger tu privacidad.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <label class="switch">
+              <input id="stripExif" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="strip_exif_label">Eliminar Metadatos</strong>
+              <small>Borra toda la información técnica (GPS, fecha) al descargar.</small>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="control-row">

@@ -27,7 +27,9 @@ export default async function handler(req, res) {
         {
           image: { content: image_base64 },
           features: [
-            { type: 'LABEL_DETECTION', maxResults: 10 }
+            { type: 'LABEL_DETECTION', maxResults: 15 },
+            { type: 'LANDMARK_DETECTION', maxResults: 5 },
+            { type: 'TEXT_DETECTION', maxResults: 5 }
           ]
         }
       ]
@@ -48,10 +50,12 @@ export default async function handler(req, res) {
     if (data.responses && data.responses[0] && data.responses[0].error) {
        throw new Error(`Vision API Logic Error: ${data.responses[0].error.message}`);
     }
-    const annotations = data.responses[0]?.labelAnnotations || [];
-    const labels = annotations.map(a => a.description);
+    const res0 = data.responses[0];
+    const labels = (res0.labelAnnotations || []).map(a => a.description);
+    const landmarks = (res0.landmarkAnnotations || []).map(a => a.description);
+    const texts = (res0.textAnnotations || []).map(a => a.description);
 
-    res.status(200).json({ labels });
+    res.status(200).json({ labels, landmarks, texts });
   } catch (err) {
     console.error('analyze-image error', err);
     res.status(500).json({ error: err.message || String(err) });
