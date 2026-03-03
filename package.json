@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "vercel-dev": "vercel dev",
-    "dev-chrome": "start chrome http://localhost:3000 & vercel dev",
+    "vercel-dev": "vercel dev --listen 3000",
     "build": "vite build",
     "preview": "vite preview"
   },

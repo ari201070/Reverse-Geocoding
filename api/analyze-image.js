@@ -1,23 +1,20 @@
-// api/analyze-image.js
-// Recibe POST { image_base64 }
-// Retorna { labels: [string] }
+// api/analyze-image.js - Cloud Vision API integration (CommonJS for Vercel consistency)
+// Receives POST { image_base64 }
+// Returns { labels: [string], landmarks: [string], texts: [string] }
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    res.status(405).json({ error: 'Method not allowed' });
-    return;
+module.exports = async (req, res) => {
+  if (req.method && req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
   const { image_base64 } = req.body;
   if (!image_base64) {
-    res.status(400).json({ error: 'image_base64 required' });
-    return;
+    return res.status(400).json({ error: 'image_base64 required' });
   }
 
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY; // Usamos la misma Key que suele tener Vision habilitada
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   if (!apiKey) {
-    res.status(500).json({ error: 'API Key not configured' });
-    return;
+    return res.status(500).json({ error: 'API Key not configured' });
   }
 
   try {
@@ -47,17 +44,18 @@ export default async function handler(req, res) {
     }
 
     const data = await visionRes.json();
-    if (data.responses && data.responses[0] && data.responses[0].error) {
-       throw new Error(`Vision API Logic Error: ${data.responses[0].error.message}`);
+    if (data.responses?.[0]?.error) {
+      throw new Error(`Vision API Logic Error: ${data.responses[0].error.message}`);
     }
-    const res0 = data.responses[0];
-    const labels = (res0.labelAnnotations || []).map(a => a.description);
-    const landmarks = (res0.landmarkAnnotations || []).map(a => a.description);
-    const texts = (res0.textAnnotations || []).map(a => a.description);
 
-    res.status(200).json({ labels, landmarks, texts });
+    const res0 = data.responses[0];
+    const labels    = (res0.labelAnnotations    || []).map(a => a.description);
+    const landmarks = (res0.landmarkAnnotations || []).map(a => a.description);
+    const texts     = (res0.textAnnotations     || []).map(a => a.description);
+
+    return res.status(200).json({ labels, landmarks, texts });
   } catch (err) {
-    console.error('analyze-image error', err);
-    res.status(500).json({ error: err.message || String(err) });
+    console.error('analyze-image error:', err);
+    return res.status(500).json({ error: err.message || String(err) });
   }
-}
+};

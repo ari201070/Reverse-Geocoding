@@ -31,10 +31,31 @@ function applyTranslations() {
   document.documentElement.dir = currentLanguage === "he" ? "rtl" : "ltr";
 }
 
-async function setLanguage(lang) {
-  currentLanguage = lang;
-  localStorage.setItem("language", lang);
-  await initI18n();
+const GLOBAL_MEMORY_KEY = "rg_global_poi_memory_v1";
+
+function getGlobalMemory() {
+  try {
+    return JSON.parse(localStorage.getItem(GLOBAL_MEMORY_KEY) || "{}");
+  } catch (e) { return {}; }
+}
+
+function saveToGlobalMemory(lat, lng, poi) {
+  if (!lat || !lng || !poi || isGenericName(poi)) return;
+  const memory = getGlobalMemory();
+  // Geohash aproximado (4 decimales = ~11 metros de precisión)
+  const key = `${lat.toFixed(4)},${lng.toFixed(4)}`;
+  memory[key] = {
+    poi: poi,
+    ts: Date.now()
+  };
+  localStorage.setItem(GLOBAL_MEMORY_KEY, JSON.stringify(memory));
+}
+
+function findInGlobalMemory(lat, lng) {
+  if (!lat || !lng) return null;
+  const memory = getGlobalMemory();
+  const key = `${lat.toFixed(4)},${lng.toFixed(4)}`;
+  return memory[key] ? memory[key].poi : null;
 }
 
 let _gMapsPromise = null;
@@ -96,6 +117,7 @@ const el = {
   radiusValue: document.getElementById("radiusValue"),
   mapDiv: document.getElementById("map"),
   photosList: document.getElementById("photosList"),
+  albumGallery: document.getElementById("albumGallery"),
   placeDetails: document.getElementById("placeDetails"),
   selectedInfo: document.getElementById("selectedInfo"),
   placesList: document.getElementById("placesList"),
@@ -116,6 +138,7 @@ const el = {
 
 let batchFiles = []; // To store current batch files and their metadata
 let map, photoMarker, radiusCircle;
+let albumMarkers = []; // v4.6: For multiple album markers
 let AdvancedMarkerElement;
 let currentSelected = null;
 
@@ -161,24 +184,25 @@ async function processBatchFiles(files) {
 
   // --- Phase 0: Immediate UI Skeleton ---
   for (const file of fileArray) {
+    const isImage = file.type.startsWith("image/");
     const id = `${file.name}-${file.size}-${file.lastModified}`;
     const batchItem = {
-      file, id, title: file.name, lat: null, lng: null, date: "", poi: null, consensus: false, visionLabels: []
+      file, id, title: file.name, lat: null, lng: null, date: 0, poi: null, consensus: false, visionLabels: [], isImage
     };
 
     const itemEl = document.createElement("div");
     itemEl.className = "batch-item";
     itemEl.innerHTML = `
-      <img src="${URL.createObjectURL(file)}" />
+      <img src="${isImage ? URL.createObjectURL(file) : 'https://img.icons8.com/color/96/000000/video.png'}" />
       <div class="batch-item-fields">
         <input type="text" class="batch-title" value="${file.name}" placeholder="${t('app_title')}..." />
-        <input type="text" class="batch-date" placeholder="${t('status_analyzing')}..." />
-        <div class="batch-coords small" style="opacity:0.6; font-size:0.7rem">${t('status_searching_poi')}...</div>
+        <input type="text" class="batch-date" placeholder="${isImage ? t('status_analyzing') : 'Formato no soportado'}..." />
+        <div class="batch-coords small" style="opacity:0.6; font-size:0.7rem">${isImage ? t('status_searching_poi') : 'Sube solo imágenes'}...</div>
       </div>
       <div class="batch-item-fields">
         <div style="display:flex; gap:5px">
-          <input type="text" class="batch-poi" placeholder="Lugar (POI)..." style="flex:1" />
-          <button class="btn btn-search" title="Buscar de nuevo">🔍</button>
+          <input type="text" class="batch-poi" placeholder="Lugar (POI)..." style="flex:1" ${!isImage ? 'disabled' : ''} />
+          <button class="btn btn-search" title="Buscar de nuevo" ${!isImage ? 'disabled' : ''}>🔍</button>
         </div>
         <div class="consensus-area"></div>
         <div class="status-msg small" style="color:var(--accent); font-size:0.7rem"></div>
@@ -209,96 +233,165 @@ async function processBatchFiles(files) {
     batchFiles.push(itm);
   }
 
-  // --- Phase 1: FAST Parallel Metadata/Vision (Global Signal First) ---
-  // This allows any photo to share its findings with others immediately
+  // --- Phase 1: EXIF Extraction & Global Memory Check ---
   await Promise.all(items.map(async (itm) => {
+    if (!itm.isImage) return; 
     try {
       itm.statusMsg.textContent = t("status_analyzing");
-      
-      // EXIF Parallel
-      const fullMeta = await window.exifr.parse(itm.file, { gps: true, exif: true, xmp: true, iptc: true });
+      const fullMeta = await window.exifr.parse(itm.file, { gps: true, exif: true, xmp: true, iptc: true }); // iptc for captions
       const coords = extractGpsCascading(fullMeta);
+      
+      // Extract Date Robustly
+      const d = fullMeta?.DateTimeOriginal || fullMeta?.DateTime || fullMeta?.CreateDate || itm.file.lastModified;
+      itm.date = d instanceof Date ? d.getTime() : (typeof d === 'number' ? d : new Date(d).getTime() || itm.file.lastModified);
+      
+      // Update Date UI
+      const dateStr = new Date(itm.date).toLocaleString();
+      itm.el.querySelector(".batch-date").value = dateStr;
+
       if (coords) {
         itm.lat = coords.lat;
         itm.lng = coords.lng;
-        const d = fullMeta.DateTimeOriginal || fullMeta.DateTime || null;
-        itm.date = d instanceof Date ? d.getTime() : (typeof d === 'number' ? d : itm.file.lastModified);
-        itm.el.querySelector(".batch-date").value = d instanceof Date ? d.toLocaleString() : new Date(itm.date).toLocaleString();
         itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
-      }
-
-      // Vision Parallel
-      const visionData = await analyzeImage(itm.file);
-      if (visionData) {
-        const { labels, landmarks, texts } = visionData;
-        itm.visionLabels = labels;
-        itm.visionLandmarks = landmarks;
-        itm.visionTexts = texts;
         
-        const primaryTag = landmarks[0] || texts[0] || labels[0] || "";
-        if (primaryTag) {
-          itm.visionDiv.textContent = "🔍 " + t("vision_detected") + ": " + primaryTag;
-          if (landmarks[0] || (texts[0] && texts[0].length > 3)) {
-            itm.poiInput.value = landmarks[0] || texts[0];
-            itm.poi = landmarks[0] || texts[0];
-            itm.poiKeywords = landmarks[0] || texts[0];
-          }
+        // v4.0: MEMORIA GLOBAL FIRST
+        const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
+        if (rememberedPoi) {
+           itm.poi = rememberedPoi;
+           itm.poiInput.value = rememberedPoi;
+           itm.statusMsg.textContent = "✓ Memoria Local";
         }
       }
-      
-      // Proactive consensus after each quick signal to propagate landmarks ASAP
-      applyConsensus();
-    } catch (err) {
-      console.warn("Signal extraction failed for item", itm.id, err);
+    } catch (e) {
+      console.warn("EXIF failed", e);
+      // Fallback date
+      itm.date = itm.file.lastModified;
+      itm.el.querySelector(".batch-date").value = new Date(itm.date).toLocaleString();
     }
   }));
 
-  // --- Phase 2: Deep Search & Fallbacks ---
-  // Now that we have all metadata and initial consensus, we search or fallback
-  for (const itm of items) {
-    if (itm.poi && !isGenericName(itm.poi) && itm.consensus) {
-       // already has a strong name from neighborhood consensus
-       itm.statusMsg.textContent = t("status_found_backend");
-       continue; 
-    }
+  // --- Phase 2: Spatio-Temporal Consensus (Zero-Lag) ---
+  // Run TWICE to ensure propagation chains (A->B->C) work in one go
+  propagateLocationsByTime(items);
+  // propagateLocationsByTime(items); // Optional second pass if needed
 
-    if (itm.lat && itm.lng) {
-      itm.statusMsg.textContent = t("status_searching_poi");
-      await performSearch(itm, itm.poiInput, itm.statusMsg);
-    } else {
-      // Final Fallback: Picarta
-      if (el.usePicarta.checked) {
-        itm.statusMsg.textContent = t("status_analyzing") + " (Picarta)...";
-        const aiLoadingBadge = document.createElement("span");
-        aiLoadingBadge.className = "badge ai-loading-pulse";
-        aiLoadingBadge.textContent = "✨ AI GEOLOCATING...";
-        aiLoadingBadge.style.background = "var(--purple-600)";
-        itm.el.querySelector(".batch-item-fields").appendChild(aiLoadingBadge);
+  // --- Phase 3: Vision AI (Throttled) ---
+  const pendingItems = items.filter(itm => itm.isImage && !itm.lat && !itm.poi);
+  
+  // Custom chunker to avoid timeout storms
+  const chunk = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
+  const itemChunks = chunk(pendingItems, 2); // Process 2 at a time (conservative)
 
-        const picartaLoc = await localizeWithPicarta(itm.file);
-        aiLoadingBadge.remove();
+  for (const batch of itemChunks) {
+    await Promise.all(batch.map(async (itm) => {
+      // LAST CHECK: If consensus filled it in meanwhile (unlikely in sequential, but safe)
+      if (itm.lat && itm.lng) return;
 
-        if (picartaLoc) {
-          itm.lat = picartaLoc.lat;
-          itm.lng = picartaLoc.lng;
-          itm.source = 'picarta';
-          itm.isEstimated = true;
-          
-          const pBadge = document.createElement("span");
-          pBadge.className = "ai-badge-premium";
-          pBadge.innerHTML = `✨ AI: ${picartaLoc.city || 'Ubicación'} (${picartaLoc.country || 'Estimada'})`;
-          itm.el.querySelector(".batch-item-fields").appendChild(pBadge);
-          itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
-          
-          itm.statusMsg.textContent = t("status_searching_poi");
-          await performSearch(itm, itm.poiInput, itm.statusMsg);
-        } else {
-          showManualGeoFallback(itm);
+      try {
+        const withTimeout = (promise, ms) => Promise.race([
+          promise,
+          new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), ms))
+        ]);
+
+        // Attempt Vision (Cloud + Local)
+        itm.statusMsg.textContent = "👁️ Analizando imagen...";
+        
+        let visionData = null;
+        try {
+           visionData = await withTimeout(analyzeImage(itm.file), 10000);
+        } catch(e) { console.warn("Cloud vision timeout", itm.id); }
+
+        let localVisionData = null;
+        try {
+           localVisionData = await withTimeout(analyzeImageWithOllama(itm.file), 15000);
+        } catch(e) { console.warn("Local vision timeout", itm.id); }
+
+        if (visionData || localVisionData) {
+            const labels = [...(visionData?.labels || []), ...(localVisionData?.labels || [])];
+            const landmarks = [...(visionData?.landmarks || []), ...(localVisionData?.landmarks || [])];
+            const texts = [...(visionData?.texts || [])]; 
+            
+            itm.visionLabels = [...new Set(labels)];
+            itm.visionLandmarks = [...new Set(landmarks)];
+            itm.visionTexts = texts;
+            
+            const primaryTag = itm.visionLandmarks[0] || texts[0] || itm.visionLabels[0] || "";
+            if (primaryTag) {
+              itm.visionDiv.textContent = "🔍 " + t("vision_detected") + ": " + primaryTag;
+              if (!itm.poi) { // Only overwrite if empty
+                 itm.poiInput.value = primaryTag;
+                 itm.poi = primaryTag;
+              }
+            }
         }
-      } else {
-        showManualGeoFallback(itm);
+      } catch (err) {
+        console.warn("Vision failed for item", itm.id, err);
       }
+    }));
+  }
+  
+  // Re-run consensus after AI potentially found landmarks
+  propagateLocationsByTime(items);
+
+  // --- Phase 4: Backend Consenso & Orchestration (Resolve Puzzle) ---
+  // Update all items to show loading state
+  items.forEach(itm => { if (itm.isImage) itm.statusMsg.textContent = '🧩 Resolviendo lote...'; });
+  
+  try {
+    const puzzleData = await fetch('/api/resolve-puzzle', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        photos: items.map(p => ({
+          id: p.id,
+          lat: p.lat,
+          lng: p.lng,
+          timestamp: p.date,
+          visionLabels: (p.visionLabels || []).map(l => ({ name: l, isLandmark: (p.visionLandmarks || []).includes(l) })),
+          ocrText: p.visionTexts ? p.visionTexts.join(' ') : ''
+        }))
+      })
+    });
+    
+    if (puzzleData.ok) {
+      const puzzleResults = await puzzleData.json();
+      console.log('[Puzzle] Batch results:', puzzleResults);
+      
+      // Apply collective intelligence to each batch item
+      items.forEach(itm => {
+        const result = puzzleResults.results?.find(r => r.photoId === itm.id);
+        if (!result) return;
+
+        if (result.name) {
+          itm.poi = result.name;
+          itm.poiInput.value = result.name;
+        }
+
+        // --- Evidence Badges ---
+        const badges = [];
+        if (result.evidence === 'ANCHOR_PHOTO')  badges.push({ cls: 'badge-gps',       icon: '⚓', label: 'Ancla' });
+        else if (result.evidence === 'GPS')      badges.push({ cls: 'badge-gps',       icon: '📍', label: 'GPS' });
+        else if (result.evidence === 'TIME_PROXIMITY') badges.push({ cls: 'badge-inherited', icon: '⚡', label: 'Heredado' });
+
+        if (result.source === 'SPATIAL_MEMORY') badges.push({ cls: 'badge-memory', icon: '🧠', label: 'Memoria' });
+        if (itm.visionLandmarks?.length)        badges.push({ cls: 'badge-vision', icon: '👁', label: 'Hito' });
+        if (itm.visionTexts?.length)            badges.push({ cls: 'badge-ocr',    icon: '🔤', label: 'OCR' });
+
+        const evidenceArea = itm.el.querySelector('.consensus-area');
+        if (evidenceArea) {
+          evidenceArea.innerHTML = `<div class="evidence-badges">${
+            badges.map(b => `<span class="badge ${b.cls}">${b.icon} ${b.label}</span>`).join('')
+          }</div>`;
+        }
+
+        // Status message & anchor styling
+        itm.statusMsg.textContent = `✓ ${result.evidence === 'ANCHOR_PHOTO' ? '⚓ Ancla del lote' : result.evidence || 'Listo'}`;
+        if (result.isAnchor) itm.el.classList.add('anchor-photo');
+      });
     }
+  } catch (e) {
+    console.warn('[Puzzle] Backend failed, using local consensus only:', e.message);
+    // Legacy path: performSearch is already done in Phase 3, consensus is applied
   }
 }
 
@@ -452,42 +545,127 @@ function useGeocoderFallback(batchItem, poiInput, statusMsg) {
 // (consolidated helper used below)
 
 // --- Consensus Logic (Master Pattern: Spatio-Temporal Clustering) ---
+// --- Consensus Logic (Master Pattern: Spatio-Temporal Clustering v5.0) ---
+import { renderPuzzleSummary } from './components/PuzzleSummary.js';
+
 function applyConsensus() {
   const clusters = clusterPhotosByContext(batchFiles);
   
   clusters.forEach(cluster => {
-    if (cluster.length > 1) { // Only consensus if more than 1
+    if (cluster.length > 1) { 
+      // 1. Determine best POI name in cluster
       const result = getMostCommonCaption(cluster);
       const consensusCaption = result.winner;
       const scores = result.scores;
       
-      if (consensusCaption) {
-        cluster.forEach(bf => {
-          const pi = bf.el.querySelector(".batch-poi");
-          const inputVal = pi ? pi.value.trim() : "";
-          
-          // Scoring logic (v2.2):
-          // 1. If consensusCaption is a landmark and inputVal is just an establishment, consensus wins.
-          // 2. If consensusCaption has a significantly higher score (e.g. 2x) than inputVal, consensus wins.
-          const consensusScore = scores.get(consensusCaption) || 0;
-          const inputScore = scores.get(inputVal) || 0;
+      // 2. Determine best Location (Lat/Lng) in cluster
+      let bestLat = null;
+      let bestLng = null;
+      // Prefer items with Source=GPS/Manual over estimated
+      const sourcePriority = { 'gps': 3, 'manual': 2, 'consensus': 1, 'picarta': 0 };
+      
+      const locProvider = cluster.sort((a,b) => (sourcePriority[b.source] || 0) - (sourcePriority[a.source] || 0))
+                                 .find(p => p.lat && p.lng);
+      
+      if (locProvider) {
+         bestLat = locProvider.lat;
+         bestLng = locProvider.lng;
+      }
 
-          const isConsensusLandmark = /jardin|jardín|parque|museo|monumento|plaza|palacio|recoleta|tigre/i.test(consensusCaption);
-          const isInputEstablishment = !isConsensusLandmark && inputVal.length > 0;
+      // 3. Identify ANCHOR PHOTO & Confidence Score
+      let maxConfidence = 0;
+      let anchorId = null;
 
-          const isBetter = (!isGenericName(consensusCaption) && isGenericName(inputVal)) || 
-                           (isConsensusLandmark && isInputEstablishment) ||
-                           (consensusScore > (inputScore * 1.5) && consensusScore > 5);
-          
-          if (!inputVal || bf.consensus || isBetter) {
+      cluster.forEach(p => {
+         let score = 0;
+         if (p.lat && p.lng) score += 0.4;
+         if (p.visionLandmarks && p.visionLandmarks.length > 0) score += 0.4;
+         if (p.poi && !isGenericName(p.poi)) score += 0.2;
+         
+         // Mark roles for UI
+         p.role = null; 
+         if (score > maxConfidence) {
+            maxConfidence = score;
+            anchorId = p.id;
+         }
+      });
+      
+      // Set Anchor
+      const anchorPhoto = cluster.find(p => p.id === anchorId);
+      if (anchorPhoto) anchorPhoto.role = 'ANCHOR_VISUAL';
+
+      // 4. Propagate to all in cluster
+      cluster.forEach(bf => {
+         // Propagate Location if missing
+         if ((!bf.lat || !bf.lng) && bestLat && bestLng) {
+             bf.lat = bestLat;
+             bf.lng = bestLng;
+             bf.isConsensus = true;
+             bf.source = 'consensus';
+             bf.coordsDiv.innerHTML = `<span style="color:var(--accent-success)">⚡ ${bf.lat.toFixed(4)}, ${bf.lng.toFixed(4)} (Heredado)</span>`;
+             bf.statusMsg.textContent = "⚡ GPS Heredado";
+             console.log(`[Consensus] ⚡ Propagating GPS to ${bf.title}`);
+         }
+
+         // Propagate POI Name
+         const pi = bf.el.querySelector(".batch-poi");
+         const inputVal = pi ? pi.value.trim() : "";
+         
+         if (consensusCaption && (!inputVal || bf.consensus || bf.poi === "Ubicación por Cercanía Temporal")) {
              bf.poi = consensusCaption;
              bf.consensus = true;
              if (pi) pi.value = consensusCaption;
              
+             // Visual badge
              const ca = bf.el.querySelector(".consensus-area");
              if (ca) ca.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
-          }
-        });
+         }
+      });
+
+      // 5. Render Puzzle UI
+      const consensusContainer = document.getElementById("consensus-summary-area");
+      if (!consensusContainer) {
+          const newDiv = document.createElement("div");
+          newDiv.id = "consensus-summary-area";
+          el.batchPreview.prepend(newDiv); // Show at top of batch list
+          renderPuzzleSummary(newDiv, {
+             consensus_result: {
+                place_name: consensusCaption || "Ubicación por determinar",
+                confidence_score: maxConfidence,
+                match_reason: `Consenso de ${cluster.length} fotos (Ventana: 30min)`
+             },
+             images: cluster.map(p => ({
+                id: p.title,
+                url: URL.createObjectURL(p.file),
+                role: p.role,
+                exif: { has_gps: !!(p.lat && p.lng) },
+                vision_analysis: {
+                   landmark: p.visionLandmarks && p.visionLandmarks.length > 0,
+                   ocr_text: p.visionTexts && p.visionTexts.length > 0
+                },
+                source_text: p.poi
+             }))
+          });
+      } else {
+        // Update existing
+         renderPuzzleSummary(consensusContainer, {
+             consensus_result: {
+                place_name: consensusCaption || "Ubicación por determinar",
+                confidence_score: maxConfidence,
+                match_reason: `Consenso de ${cluster.length} fotos (Ventana: 30min)`
+             },
+             images: cluster.map(p => ({
+                id: p.title,
+                url: URL.createObjectURL(p.file),
+                role: p.role,
+                exif: { has_gps: !!(p.lat && p.lng) },
+                vision_analysis: {
+                   landmark: p.visionLandmarks && p.visionLandmarks.length > 0,
+                   ocr_text: p.visionTexts && p.visionTexts.length > 0
+                },
+                source_text: p.poi
+             }))
+          });
       }
     }
   });
@@ -496,21 +674,39 @@ function applyConsensus() {
 function clusterPhotosByContext(photos) {
   const clusters = [];
   const processed = new Set();
-  
+  // Expanded window for "Zero-Lag" rule
+  const TIME_WINDOW = 30 * 60 * 1000; 
+
   for (const photo of photos) {
     if (processed.has(photo)) continue;
     const cluster = [photo];
     processed.add(photo);
     
+    const pTime = photo.date || 0;
+
     for (const other of photos) {
       if (processed.has(other)) continue;
-      if (!photo.lat || !photo.lng || !other.lat || !other.lng) continue;
-
-      // Group: < 10 mins AND < 150 meters (More generous for large parks/attractions)
-      const timeDiff = Math.abs((photo.date || 0) - (other.date || 0));
-      const dist = calculateDistance(photo.lat, photo.lng, other.lat, other.lng);
       
-      if (timeDiff < (10 * 60 * 1000) && dist < 150) { 
+      const oTime = other.date || 0;
+      const timeDiff = Math.abs(pTime - oTime);
+      
+      // RULE: If time is close, they are related. 
+      // Distance check ONLY applies if BOTH have GPS.
+      // If one is missing GPS, we assume it's same place due to time proximity.
+      let isRelated = false;
+
+      if (timeDiff < TIME_WINDOW) {
+         if (photo.lat && photo.lng && other.lat && other.lng) {
+            // Both have GPS: Verify distance (max 300m for safety)
+            const dist = calculateDistance(photo.lat, photo.lng, other.lat, other.lng);
+            if (dist < 300) isRelated = true;
+         } else {
+            // One or both missing GPS: Assume related by time (The Golden Rule)
+            isRelated = true;
+         }
+      }
+
+      if (isRelated) { 
         cluster.push(other);
         processed.add(other);
       }
@@ -657,9 +853,21 @@ el.saveBatchBtn.addEventListener("click", () => {
     // Save to localStorage
     const saved = JSON.parse(localStorage.getItem("rg_saved_captions_v1") || "{}");
     const saveId = `${bf.file.name}-${bf.file.size}-${bf.file.lastModified}`;
-    saved[saveId] = { caption: finalCaption, ts: Date.now() };
+    saved[saveId] = { 
+      caption: finalCaption, 
+      ts: Date.now(),
+      lat: bf.lat,
+      lng: bf.lng,
+      date: bf.date
+    };
     localStorage.setItem("rg_saved_captions_v1", JSON.stringify(saved));
+
+    // v4.0: Alimentar Memoria Global con el éxito actual
+    if (bf.lat && bf.lng && poiVal) {
+      saveToGlobalMemory(bf.lat, bf.lng, poiVal);
+    }
   });
+  updateAlbumGallery();
   closeModal();
 });
 
@@ -684,7 +892,7 @@ async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     console.log("Map library imported");
     // @ts-ignore
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    ({ AdvancedMarkerElement } = await google.maps.importLibrary("marker"));
     // @ts-ignore
     const { Place } = await google.maps.importLibrary("places"); // Pre-load places
 
@@ -1086,27 +1294,22 @@ async function handlePlacesLocalFallback(lat, lng, itemEl, keywords) {
     // Modern Search (v4)
     const { Place } = await google.maps.importLibrary("places");
     const request = {
-      locationRestricted: {
+      locationRestriction: {
         center: { lat, lng },
         radius: radius
       },
       fields: ['displayName', 'formattedAddress', 'location', 'types', 'plusCode']
     };
 
-    // If we have keywords, we use them to bias the search
-    // Note: searchNearby v4 doesn't have a direct 'keyword' field like textSearch,
-    // but we can filter/rank results or use textSearch if keywords are present.
-    // For now, let's stick to nearby and rank results by keyword match.
-
     const { places } = await Place.searchNearby(request);
 
     if (places && places.length > 0) {
       // Logic: Rank by specificity and keyword match
       const ranked = places.map(p => ({
-        name: p.displayName,
+        name: p.displayName, // displayName is already the string or handles toString in v4
         formatted_address: p.formattedAddress,
         geometry: { location: { lat: p.location.lat(), lng: p.location.lng() } },
-        types: p.types,
+        types: p.types || [],
         plus_code: p.plusCode
       })).sort((a, b) => {
         const score = (r) => {
@@ -1206,6 +1409,7 @@ window.onload = async () => {
   el.langSelector.addEventListener("change", (e) => setLanguage(e.target.value));
 
   await initMap();
+  updateAlbumGallery(); // v4.6: Populate albums on start
   el.radiusValue.textContent = el.radiusRange.value;
   el.imagesInput.addEventListener("change", async (ev) => {
     const files = Array.from(ev.target.files || []);
@@ -1352,3 +1556,199 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 }
 
 initMap();
+
+// --- Global Scope Functions (Moved from processBatchFiles) ---
+
+
+// v5.0: Spatio-Temporal Clustering (Contextual Shared Memory)
+function propagateLocationsByTime(items) {
+  console.log("[Consensus] 🏁 Starting Spatio-Temporal Consensus...");
+  
+  // Sort items by detected timestamp
+  const sorted = [...items].sort((a,b) => {
+     const da = a.date || 0;
+     const db = b.date || 0;
+     return da - db;
+  });
+
+  const TIME_WINDOW = 30 * 60 * 1000; // 30 minutes window (Expanded for user request)
+
+  let propagatedCount = 0;
+
+  sorted.forEach(target => {
+     // Skip if already has GPS or Global Memory hit
+     if ((target.lat && target.lng) || target.poi) return;
+
+     const targetTime = target.date || 0;
+     if (!targetTime) {
+        console.warn(`[Consensus] ⚠️ Item ${target.file.name} has no valid date. Skipping.`);
+        return;
+     }
+
+     // Find best neighbor: closest in time that DOES have GPS
+     let bestNeighbor = null;
+     let minDiff = Infinity;
+
+     sorted.forEach(n => {
+        if (!n.lat || !n.lng || !n.date) return;
+        if (n === target) return;
+
+        const nTime = n.date;
+        const diff = Math.abs(nTime - targetTime);
+        
+        if (diff <= TIME_WINDOW && diff < minDiff) {
+           minDiff = diff;
+           bestNeighbor = n;
+        }
+     });
+
+     if (bestNeighbor) {
+        console.log(`[Consensus] ⚡ Propagating location from ${bestNeighbor.file.name} to ${target.file.name} (Diff: ${Math.round(minDiff/1000)}s)`);
+        
+        target.lat = bestNeighbor.lat;
+        target.lng = bestNeighbor.lng;
+        // COPY NEIGHBOR'S POI ONLY IF IT EXISTS. DO NOT USE PLACEHOLDER.
+        // If neighbor has no name yet, leave target.poi empty so performSearch triggers later.
+        if (bestNeighbor.poi && bestNeighbor.poi !== "Ubicación por Cercanía Temporal") {
+            target.poi = bestNeighbor.poi;
+            // Visual Feedback for Name
+            if (target.poiInput) target.poiInput.value = target.poi;
+        }
+
+        target.isConsensus = true;
+
+        // Visual Feedback for GPS (Always)
+        if (target.coordsDiv) target.coordsDiv.innerHTML = `<span style="color:var(--accent-success)">⚡ ${target.lat.toFixed(4)}, ${target.lng.toFixed(4)} (Heredado)</span>`;
+        if (target.statusMsg) target.statusMsg.textContent = "⚡ GPS Heredado";
+        
+        propagatedCount++;
+     }
+   });
+   
+   console.log(`[Consensus] ✅ Finished. Propagated to ${propagatedCount} items.`);
+}
+
+
+function updateAlbumGallery() {
+  const saved = JSON.parse(localStorage.getItem("rg_saved_captions_v1") || "{}");
+  const albums = {};
+  
+  Object.entries(saved).forEach(([id, photo]) => {
+    // Group strictly by POI Title (Merge different dates)
+    const title = photo.caption.split(',').pop().trim();
+    if (!title) return; 
+    
+    // Validate timestamp
+    const ts = photo.date || photo.ts || Date.now();
+    
+    if (!albums[title]) {
+      albums[title] = { 
+        title, 
+        count: 0, 
+        photos: [], 
+        preview: null,
+        minTs: ts,
+        maxTs: ts
+      };
+    }
+    
+    const album = albums[title];
+    album.count++;
+    album.photos.push({ id, ...photo });
+    album.minTs = Math.min(album.minTs, ts);
+    album.maxTs = Math.max(album.maxTs, ts);
+    
+    // Use first valid photo as preview
+    if (!album.preview) {
+      const thumb = document.querySelector(`.photoItem[data-id="${id}"] img`);
+      if (thumb) album.preview = thumb.src;
+    }
+  });
+
+  if (!el.albumGallery) return;
+  el.albumGallery.innerHTML = "";
+  
+  // Show All / Reset Button
+  if (Object.keys(albums).length > 0) {
+     const resetCard = document.createElement("button");
+     resetCard.className = "btn";
+     resetCard.style.marginBottom = "10px";
+     resetCard.textContent = "📑 Mostrar Todo / Reset";
+     resetCard.onclick = () => filterByAlbum(null);
+     el.albumGallery.appendChild(resetCard);
+  }
+
+  Object.entries(albums).forEach(([title, album]) => {
+    const card = document.createElement("div");
+    card.className = "album-card";
+    const bgStyle = album.preview ? `background-image: url(${album.preview}); background-size: cover;` : `background: linear-gradient(45deg, var(--accent), var(--accent-secondary));`;
+    
+    // Format Date Range
+    const d1 = new Date(album.minTs);
+    const d2 = new Date(album.maxTs);
+    const m1 = d1.toLocaleDateString(currentLanguage, { month: 'long', year: 'numeric' });
+    const m2 = d2.toLocaleDateString(currentLanguage, { month: 'long', year: 'numeric' });
+    const dateDisplay = (m1 === m2) ? m1 : `${m1} - ${m2}`;
+    
+    card.innerHTML = `
+      <div class="album-cover-stack" style="${bgStyle}">
+        <div class="album-count-badge">${album.count} fotos</div>
+      </div>
+      <div class="album-info">
+        <div class="album-title">${album.title}</div>
+        <div class="album-meta">${dateDisplay}</div>
+      </div>
+    `;
+    card.onclick = () => filterByAlbum(album.title, album.photos);
+    el.albumGallery.appendChild(card);
+  });
+}
+
+function filterByAlbum(title, albumPhotos = []) {
+   console.log("Filtrando por:", title);
+   
+   // 1. Limpiar markers previos del álbum
+   if (albumMarkers) {
+      albumMarkers.forEach(m => m.map = null);
+      albumMarkers = [];
+   } else {
+     albumMarkers = [];
+   }
+
+   if (!title) {
+     // RESET: Mostrar todo
+     document.querySelectorAll(".photoItem").forEach(item => item.style.display = "flex");
+     if (photoMarker) photoMarker.map = map;
+     return;
+   }
+
+   // 2. Filtrar lista de fotos en UI
+   const idsInAlbum = new Set(albumPhotos.map(p => p.id));
+   document.querySelectorAll(".photoItem").forEach(item => {
+     const id = item.dataset.id;
+     item.style.display = idsInAlbum.has(id) ? "flex" : "none";
+   });
+
+   // 3. Crear markers para el álbum
+   const bounds = new google.maps.LatLngBounds();
+   let hasCoords = false;
+
+   albumPhotos.forEach(p => {
+     if (p.lat && p.lng) {
+       const pos = { lat: Number(p.lat), lng: Number(p.lng) };
+       const marker = new google.maps.marker.AdvancedMarkerElement({
+         position: pos,
+         map: map,
+         title: p.caption
+       });
+       albumMarkers.push(marker);
+       bounds.extend(pos);
+       hasCoords = true;
+     }
+   });
+
+   if (hasCoords) {
+     map.fitBounds(bounds);
+     if (map.getZoom() > 18) map.setZoom(17);
+   }
+}

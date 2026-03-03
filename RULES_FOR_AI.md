@@ -4,6 +4,18 @@ Copia el siguiente bloque y pégalo en tus "Instrucciones Personalizadas" (Custo
 
 ---
 
+## 🤖 SELECCIÓN DE MODELO (Política de Eficiencia)
+
+| Situación                             | Modelo Recomendado                     | Razón                                               |
+| ------------------------------------- | -------------------------------------- | --------------------------------------------------- |
+| Código iterativo / debug rutinario    | **Gemini 2.0 Flash**                   | Rápido, barato en tokens, suficiente para ediciones |
+| Planificación compleja / arquitectura | **Gemini 2.5 Pro** o **Claude Sonnet** | Mejor razonamiento profundo                         |
+| Error 503 / sin capacidad             | Cambiar a Flash inmediatamente         | Los modelos grandes se saturan en horas pico        |
+
+> **Regla de oro:** Si el modelo actual devuelve un error 503 `MODEL_CAPACITY_EXHAUSTED`, el agente DEBE avisar al usuario que cambie a **Gemini 2.0 Flash** en el selector de modelo antes de continuar.
+
+---
+
 ## 🚀 MODO LEAN AGENT: ESTRATEGIA DE TOKENS
 
 ### ⚓ PROMPT ÁNCORA (Obligatorio en primer mensaje)

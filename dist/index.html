@@ -5,59 +5,117 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Reverse Geocoding - App independiente</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📍</text></svg>">
-  <!-- Google Maps JS API (Async Loader) -->
-  <script>
-    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?(console.warn(p+" only loads once. Ignoring:",g),r.add(g.libraries)):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-      key: "AIzaSyD182OZ7oW1WYe5-TzoJaM2wHyglq6-YIU",
-      v: "weekly",
-      // Use a Map ID for Advanced Markers (DEMO_MAP_ID is for public use/testing)
-      mapId: "DEMO_MAP_ID",
-      loading: "async"
-    });
-  </script>
-  <script type="module" crossorigin src="/assets/index-B34jPHkF.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-v_hDGu5q.css">
+  <!-- PWA Manifest placeholder -->
+  <link rel="manifest" href="/assets/manifest-BTBMFoOb.json" />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Google Maps JS API will be loaded dynamically in app.js for security -->
+  <script type="module" crossorigin src="/assets/index-C3-khapo.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-6zHP8cNg.css">
 </head>
 <body>
+  <nav id="topBar" class="top-bar">
+    <div class="logo">📍 <span data-t="app_title">Reverse Geocoding</span></div>
+    <div class="nav-controls">
+      <select id="langSelector" class="btn-mini">
+        <option value="es" data-t="lang_es">Español</option>
+        <option value="he" data-t="lang_he">עברית</option>
+      </select>
+    </div>
+  </nav>
+
   <header>
-    <h1>Reverse Geocoding — Fotos & POIs</h1>
-    <p class="subtitle">Subí fotos, extraé coordenadas (EXIF), buscá POIs cercanos y sugerí captions.</p>
+    <h1 data-t="app_title">Reverse Geocoding — Fotos & POIs</h1>
+    <p class="subtitle" data-t="app_subtitle">Subí fotos, extraé coordenadas (EXIF), buscá POIs cercanos y sugerí captions.</p>
   </header>
 
   <main>
     <section id="controls" class="panel">
-      <div class="control-row">
-        <label for="consent">Usar ubicación EXIF para sugerencias:</label>
-        <input id="consent" type="checkbox" checked />
-        <label for="anonymize">Anonymizar al guardar (redondear coords):</label>
-        <input id="anonymize" type="checkbox" />
-        <label for="stripExif">Eliminar EXIF al exportar/descargar:</label>
-        <input id="stripExif" type="checkbox" />
+      <!-- Intelligence & Discovery -->
+      <div class="control-group">
+        <h3 class="group-title">🧠 Inteligencia & Descubrimiento</h3>
+        <div class="control-row">
+          <div class="control-item">
+            <label class="switch">
+              <input id="consent" type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="consent_label">Usar ubicación EXIF</strong>
+              <small>Usa las coordenadas reales de la foto para sugerir lugares.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <label class="switch">
+              <input id="usePicarta" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="use_picarta_label">✨ Picarta AI (Experimental)</strong>
+              <small>Si la foto no tiene GPS, la IA intenta adivinar el lugar por el paisaje.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <div class="control-text">
+              <label for="radiusRange"><strong data-t="search_radius_label">Radio de búsqueda:</strong> <span id="radiusValue">20</span>m</label>
+              <input id="radiusRange" type="range" min="1" max="100" step="1" value="20"/>
+              <small>Precisión del círculo de búsqueda alrededor de la foto.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Privacy & Protection -->
+      <div class="control-group">
+        <h3 class="group-title">🛡️ Privacidad & Protección</h3>
+        <div class="control-row">
+          <div class="control-item">
+            <label class="switch">
+              <input id="anonymize" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="anonymize_label">Anonimizar Coordenadas</strong>
+              <small>Redondea la ubicación exacta para proteger tu privacidad.</small>
+            </div>
+          </div>
+          <div class="control-item">
+            <label class="switch">
+              <input id="stripExif" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <div class="control-text">
+              <strong data-t="strip_exif_label">Eliminar Metadatos</strong>
+              <small>Borra toda la información técnica (GPS, fecha) al descargar.</small>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="control-row">
-        <label for="radiusRange">Radio búsqueda (m): <span id="radiusValue">20</span></label>
-        <input id="radiusRange" type="range" min="1" max="50" step="1" value="20"/>
-      </div>
-
-      <div class="control-row">
-        <button id="importBatchBtn" class="btn primary">📚 Importar Lote</button>
-        <span style="opacity:0.5">o</span>
-        <label for="imagesInput" class="btn">📷 Seleccionar imágenes</label>
+        <button id="importBatchBtn" class="btn primary" data-t="btn_import_batch">📚 Importar Lote</button>
+        <span style="opacity:0.5" data-t="or_separator">o</span>
+        <label for="imagesInput" class="btn" data-t="btn_select_images">📷 Seleccionar imágenes</label>
         <input id="imagesInput" type="file" accept="image/*" multiple style="display:none" />
+      </div>
+    </section>
+
+    <section id="albumSection" class="panel">
+      <h2 data-t="albums_title">Álbumes Sugeridos</h2>
+      <div id="albumGallery" class="album-grid">
+        <!-- Generado dinámicamente -->
       </div>
     </section>
 
     <section id="content">
       <div id="sidePane">
         <aside id="photosPane" class="panel">
-          <h2>Fotos</h2>
+          <h2 data-t="pane_photos">Fotos</h2>
           <div id="photosList" class="list"></div>
         </aside>
 
         <section id="placeDetails" class="panel">
-          <h3>Detalles</h3>
-          <div id="selectedInfo">Seleccioná una foto con coordenadas.</div>
+          <h3 data-t="pane_details">Detalles</h3>
+          <div id="selectedInfo" data-t="select_photo_msg">Seleccioná una foto con coordenadas.</div>
           <div id="placesList"></div>
         </section>
       </div>
@@ -69,22 +127,22 @@
   </main>
 
   <footer class="panel">
-    <small>App independiente — en producción guardá la API Key en variables de entorno del backend (Vercel).</small>
+    <small data-t="footer_note">App independiente — en producción guardá la API Key en variables de entorno del backend (Vercel).</small>
   </footer>
 
   <!-- Modal Importación Lote -->
   <div id="batchModal" class="modal">
     <div class="modal-content panel">
       <div class="modal-header">
-        <h2>Importar Múltiples Fotos</h2>
+        <h2 data-t="modal_batch_title">Importar Múltiples Fotos</h2>
         <button id="closeBatchBtn" class="delete-btn" style="opacity:1; position:static">×</button>
       </div>
       
       <div id="dropZone" class="drop-zone">
         <div class="drop-zone-content">
           <span class="icon">☁️</span>
-          <p>Arrastra fotos aquí o haz clic para seleccionar</p>
-          <small>(Se extraerán automáticamente fecha, ubicación y lugar)</small>
+          <p data-t="drop_zone_text">Arrastra fotos aquí o haz clic para seleccionar</p>
+          <small data-t="drop_zone_subtext">(Se extraerán automáticamente fecha, ubicación y lugar)</small>
         </div>
         <input type="file" id="batchFileInput" multiple accept="image/*" style="display:none" />
       </div>
@@ -95,12 +153,12 @@
 
       <div class="batch-footer">
         <div class="control-row">
-          <label for="commonDesc">Descripción Común (Opcional):</label>
+          <label for="commonDesc" data-t="common_desc_label">Descripción Común (Opcional):</label>
           <input type="text" id="commonDesc" placeholder="Ej: Cena en Mendoza" style="flex:1" />
         </div>
         <div class="rowButtons" style="justify-content: flex-end; margin-top:20px;">
-          <button id="cancelBatchBtn" class="btn">Cancelar</button>
-          <button id="saveBatchBtn" class="btn primary" disabled>Guardar Todo</button>
+          <button id="cancelBatchBtn" class="btn" data-t="btn_cancel">Cancelar</button>
+          <button id="saveBatchBtn" class="btn primary" data-t="btn_save_all" disabled>Guardar Todo</button>
         </div>
       </div>
     </div>

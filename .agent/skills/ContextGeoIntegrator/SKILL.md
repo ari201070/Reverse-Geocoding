@@ -24,6 +24,15 @@ El consenso no es solo una mayoría simple, es una **búsqueda de la verdad espe
 - **Puntuación Landmark-First**: Los nombres que contienen términos de lugares públicos (Jardín, Parque, Museo) tienen un peso multiplicador (x10) frente a negocios locales.
 - **Propagación Agresiva**: Un nombre de alta calidad (Landmark detectado por AI) DEBE sobrescribir nombres genéricos o específicos de baja relevancia en todo el lote automáticamente.
 
+### 3. Visual Evidence & Puzzle UI (Transparencia)
+
+El sistema no debe ser una "caja negra". Debe visualizar su proceso de decisión:
+
+- **Estrategia de Puzzle**: Mostrar el lote como piezas que se unen.
+- **Anchor Photo**: Identificar visualmente la foto que proveyó la "Pista Maestra" (GPS/Landmark) con un borde o badge especial.
+- **Badges de Evidencia**: Cada foto debe mostrar qué aportó al consenso (GPS, OCR, Hito Visual).
+- **Nivel de Confianza**: Mostrar un % de certeza basado en la convergencia de pruebas.
+
 ## 🛡️ Estabilidad y Manejo de Errores (Master Patterns)
 
 Para evitar fallos en lote y errores de ejecución:

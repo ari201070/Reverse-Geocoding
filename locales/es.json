@@ -37,5 +37,6 @@
   "loading_map": "Cargando mapa...",
   "map_error": "Error al cargar el mapa. Verifica tu conexión o API Key.",
   "manual_geo_alert": "Hacé click en el mapa principal para asignar ubicación a esta foto.",
-  "select_photo_first": "Seleccioná una foto primero."
+  "select_photo_first": "Seleccioná una foto primero.",
+  "albums_title": "Álbumes Sugeridos"
 }
