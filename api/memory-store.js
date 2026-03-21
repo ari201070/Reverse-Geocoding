@@ -1,5 +1,6 @@
-const { Pool } = require('pg');
-const h3 = require('h3-js');
+import pg from 'pg';
+const { Pool } = pg;
+import * as h3 from 'h3-js';
 
 const pool = new Pool({
     // Configuración de base de datos desde variables de entorno
@@ -16,9 +17,10 @@ class MemoryStore {
     async findMatch(lat, lng) {
         try {
             // Conversión antes de la base de datos (resolución 9)
-            // Aseguramos el redondeo en memoria también (4 decimales para mayor consistencia de cluster)
             const roundedLat = Math.round(lat * 10000) / 10000;
             const roundedLng = Math.round(lng * 10000) / 10000;
+            
+            // h3-js v4 uses latLngToCell
             const hexId = h3.latLngToCell(roundedLat, roundedLng, 9);
             
             const query = `
@@ -28,11 +30,9 @@ class MemoryStore {
                 LIMIT 1
             `;
             
-            // Match exacto operando sobre índice B-Tree (10 veces más rápido que ST_Distance)
             const { rows } = await pool.query(query, [hexId]);
             
             if (rows.length > 0) {
-                // Resolución de Costo $0
                 return rows[0]; 
             }
             return null;
@@ -41,6 +41,11 @@ class MemoryStore {
             return null;
         }
     }
+
+    addCluster(item) {
+        // Implementación pendiente para persistencia real
+        console.log('[MemoryStore] Mock addCluster:', item.name);
+    }
 }
 
-module.exports = new MemoryStore();
+export default new MemoryStore();

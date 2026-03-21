@@ -1,14 +1,13 @@
 // api/resolve-puzzle.js - Batch Consensus Orchestrator (Modo Puzzle)
 // Identifies "Anchor Photos" and propagates context across a cluster.
-
-const memoryStore = require('./memory-store');
-const findPoiHandler = require('./find-poi');
+import memoryStore from './memory-store.js';
+import findPoiHandler from './find-poi.js';
 
 /**
  * POST /api/resolve-puzzle
  * Body: { photos: [{ id, lat, lng, timestamp, visionLabels: [{name, isLandmark}], ocrText }] }
  */
-module.exports = async (req, res) => {
+export default async function (req, res) {
     if (req.method && req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
@@ -53,7 +52,7 @@ module.exports = async (req, res) => {
     // 3. Check spatial memory for the master location
     let memoryResult = null;
     if (masterLat && masterLng) {
-        memoryResult = memoryStore.findMatch(masterLat, masterLng, Date.now());
+        memoryResult = await memoryStore.findMatch(masterLat, masterLng);
         if (memoryResult && !masterContext) {
             masterContext = memoryResult.name;
         }
@@ -122,4 +121,4 @@ module.exports = async (req, res) => {
         anchorCount: anchorPhotos.length,
         results: processedPhotos
     });
-};
+}

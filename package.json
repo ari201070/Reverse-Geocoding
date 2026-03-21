@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "vercel-dev": "vercel dev --listen 3000",
+    "api-server": "node api-server.nodejs.js",
+    "local-dev": "concurrently \"npm run dev\" \"npm run api-server\" \"python microservice/main.py\"",
     "build": "vite build",
     "preview": "vite preview",
     "serve": "opencode serve"
@@ -14,9 +16,11 @@
     "dotenv": "^17.2.3",
     "exifr": "^7.1.0",
     "h3-js": "^4.4.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.3"
   },
   "devDependencies": {
+    "concurrently": "^8.0.0",
     "vite": "^5.0.0"
   }
 }

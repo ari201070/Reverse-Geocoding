@@ -1,8 +1,8 @@
-// api/analyze-image.js - Cloud Vision API integration (CommonJS for Vercel consistency)
+// api/analyze-image.js - Cloud Vision API integration (ESM)
 // Receives POST { image_base64 }
 // Returns { labels: [string], landmarks: [string], texts: [string] }
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   if (req.method && req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }

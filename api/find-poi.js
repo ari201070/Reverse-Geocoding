@@ -1,8 +1,6 @@
 // api/find-poi.js - Real Google Places API (New), OpenCage, and Vision integration cascade
-// Incorporates proper response format and environment variables
-
-require('dotenv').config();
-const memoryStore = require('./memory-store');
+import 'dotenv/config';
+import memoryStore from './memory-store.js';
 
 // Helper for standard response
 function formatResponse(name, address, lat, lng, source, confidence, placeId, isCached, timestamp) {
@@ -40,7 +38,7 @@ function isGenericName(name) {
  * POST /api/find-poi
  * Body: { lat, lng, timestamp, keywords, landmarkFromVision, radius }
  */
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
     if (req.method && req.method !== 'POST') {
         return res.status(405).json({ success: false, error: 'Method not allowed' });
     }
@@ -56,7 +54,7 @@ module.exports = async (req, res) => {
     const OPENCAGE_API_KEY = process.env.VITE_OPENCAGE_API_KEY || process.env.OPENCAGE_API_KEY;
 
     // 1. Check Spatial Memory first (fast, free)
-    const remembered = memoryStore.findMatch(lat, lng, timestamp);
+    const remembered = await memoryStore.findMatch(lat, lng, timestamp);
     if (remembered) {
         return res.json(formatResponse(
             remembered.name, remembered.address, remembered.lat, remembered.lng,
@@ -73,8 +71,6 @@ module.exports = async (req, res) => {
     // 2. OpenCage Geocoding (economical fallback for address/basic location)
     if (OPENCAGE_API_KEY) {
         try {
-            // Important: OpenCage recommends explicit lat/lng or proper URL encoding.
-            // Using precise URL encoding `q=lat%2Clng` (+ is space in URLs, so don't use it)
             const queryRaw = `${lat},${lng}`;
             const opencageUrl = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(queryRaw)}&key=${OPENCAGE_API_KEY}`;
             const ocRes = await fetch(opencageUrl);
@@ -170,7 +166,7 @@ module.exports = async (req, res) => {
         ));
     }
 
-    // 5. Fallback AI (NotebookLM Autoprompter 2000 GIS Engine)
+    // 5. Fallback AI (Ollama GIS Engine)
     if (!bestName) {
         try {
             const prompt = `Actúa como motor GIS de alta precisión. Convierte las coordenadas ${lat}, ${lng} en una dirección estructurada siguiendo este esquema JSON: {'calle': 'string', 'numero': 'string', 'ciudad': 'string', 'cp': 'string'}. Prioriza precisión de nivel 'ROOFTOP' y, ante ambigüedad, selecciona el acceso vial más cercano. Devuelve exclusivamente el código JSON, sin preámbulos.`;
@@ -211,4 +207,4 @@ module.exports = async (req, res) => {
     return res.json(formatResponse(
         fallbackName, bestAddress || "Unknown", lat, lng, 'COORDINATES_ONLY', 0.1, null, false, timestamp
     ));
-};
+}
