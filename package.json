@@ -1,16 +1,19 @@
 {
   "name": "reverse-geocoding-independent-app",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
     "vercel-dev": "vercel dev --listen 3000",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "opencode serve"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
     "exifr": "^7.1.0",
+    "h3-js": "^4.4.0",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {

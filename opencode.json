@@ -1,0 +1,23 @@
+{
+  "$schema": "./opencode.schema.json",
+  "mcp": {
+    "reverse-geocoding-api": {
+      "type": "local",
+      "command": [
+        "opencode",
+        "serve"
+      ]
+    }
+  },
+  "command": {
+    "master-prompt": {
+      "template": "Actúa como un Ingeniero de Prompts especializado en sistemas GIS y Reverse-Geocoding avanzado. Tu objetivo es utilizar exclusivamente la documentación técnica de NotebookLM y las fuentes para generar prompts maestros que optimicen las llamadas a la API.",
+      "description": "Utiliza la técnica Autoprompter 2000 desde NotebookLM."
+    },
+    "master-sync": {
+      "template": "node ../notebooklm-mcp/sync-requested-notebook.mjs",
+      "description": "Sincroniza el estado actual leyendo y aplicando el script de NotebookLM"
+    }
+  },
+  "model": "ollama/phi3"
+}

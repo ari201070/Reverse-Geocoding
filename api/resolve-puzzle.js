@@ -13,6 +13,11 @@ module.exports = async (req, res) => {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
+    /**
+     * Sanitiza nombres según la regla de NotebookLM.
+     */
+    const sanitize = (val) => typeof val === 'string' ? val.replace(/'/g, "''") : val;
+
     const { photos } = req.body;
     if (!photos || !Array.isArray(photos) || photos.length === 0) {
         return res.status(400).json({ error: 'photos array is required' });
@@ -25,21 +30,25 @@ module.exports = async (req, res) => {
 
     // 2. Determine master context from the best anchor
     let masterContext = null;
-    let masterLat = null, masterLng = null;
+    let masterLat = null, masterLng = null, masterTimestamp = null;
 
     if (anchorPhotos.length > 0) {
         const anchor = anchorPhotos[0];
         masterContext = anchor.visionLabels?.find(l => l.isLandmark)?.name || anchor.ocrText || null;
         masterLat = anchor.lat;
         masterLng = anchor.lng;
+        masterTimestamp = anchor.timestamp;
     } else {
         // Fallback: use the first photo with GPS as anchor
         const gpsAnchor = photos.find(p => p.lat && p.lng);
         if (gpsAnchor) {
             masterLat = gpsAnchor.lat;
             masterLng = gpsAnchor.lng;
+            masterTimestamp = gpsAnchor.timestamp;
         }
     }
+    
+    masterContext = sanitize(masterContext);
 
     // 3. Check spatial memory for the master location
     let memoryResult = null;
@@ -88,17 +97,20 @@ module.exports = async (req, res) => {
                 source: poiResult?.source || 'UNKNOWN'
             };
         } else {
-            // Photos without GPS: inherit master context (Time Proximity rule)
+            // Photos without GPS: inherit master context (Time Proximity rule: 15 min)
+            const timeDiff = masterTimestamp ? Math.abs(photo.timestamp - masterTimestamp) : Infinity;
+            const validInheritance = timeDiff < (15 * 60 * 1000);
+
             return {
                 photoId: photo.id,
-                evidence: 'TIME_PROXIMITY',
+                evidence: validInheritance ? 'TIME_PROXIMITY' : 'NONE',
                 isAnchor: false,
-                name: masterContext || null,
+                name: validInheritance ? sanitize(masterContext) : null,
                 address: null,
-                lat: masterLat,
-                lng: masterLng,
-                source: 'INHERITED_FROM_CLUSTER',
-                inherited: true
+                lat: validInheritance ? masterLat : null,
+                lng: validInheritance ? masterLng : null,
+                source: validInheritance ? 'INHERITED_FROM_CLUSTER' : 'UNKNOWN',
+                inherited: validInheritance
             };
         }
     }));

@@ -26,7 +26,9 @@ Cada vez que inicies un chat, pega esto:
 
 ### 🛠️ REGLAS DE EJECUCIÓN
 
-- **NO EXPLORAR**: No uses `list_dir` o `grep_search` a menos que falte información crítica para el paso actual.
+- **FUENTE MAESTRA (NotebookLM)**: Tienes que usar la conexión a NotebookLM (`notebooklm-mcp`) TODO EL TIEMPO como fuente maestra de verdad para leer la documentación de las carpetas. Conéctate automáticamente sin que el usuario te lo recuerde.
+- **OPENCODE SERVER**: El proyecto ya está estructurado como servidor OpenCode. Inicia los comandos de servidor correspondientes (`opencode serve`) y asume esta estructura automáticamente en cada sesión.
+- **NO EXPLORAR**: No uses `list_dir` o `grep_search` a menos que falte información crítica para el paso actual. Si necesitas información del contexto del proyecto, consulta primero NotebookLM.
 - **EARLY STOP**: Si una solución ya es funcional, detén el agente. No busques perfección "extra" que queme tokens.
 - **LIMIT STEP**: Máximo 3-5 pasos por tarea.
 

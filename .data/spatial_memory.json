@@ -7,6 +7,21 @@
       "name": "Carlos Pellegrini",
       "landmark": null,
       "address": "Carlos Pellegrini, C1010 Cdad. Autónoma de Buenos Aires, Argentina"
+    },
+    {
+      "lat": -34.570412599722225,
+      "lng": -58.4119765,
+      "timestamp": 1758962104000,
+      "name": "Avenida Sarmiento",
+      "landmark": null,
+      "address": "Avenida Sarmiento, C1425 Cdad. Autónoma de Buenos Aires, Argentina"
+    },
+    {
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "timestamp": 1772987894010,
+      "name": "Friedrich-Ebert-Straße",
+      "address": "Chance e.V., Friedrich-Ebert-Straße 7, 48153 Münster, Deutschland"
     }
   ]
 }

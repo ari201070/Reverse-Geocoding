@@ -238,14 +238,12 @@ async function processBatchFiles(files) {
     if (!itm.isImage) return; 
     try {
       itm.statusMsg.textContent = t("status_analyzing");
-      const fullMeta = await window.exifr.parse(itm.file, { gps: true, exif: true, xmp: true, iptc: true }); // iptc for captions
+      const fullMeta = await window.exifr.parse(itm.file, { gps: true, exif: true, xmp: true, iptc: true });
       const coords = extractGpsCascading(fullMeta);
       
-      // Extract Date Robustly
       const d = fullMeta?.DateTimeOriginal || fullMeta?.DateTime || fullMeta?.CreateDate || itm.file.lastModified;
       itm.date = d instanceof Date ? d.getTime() : (typeof d === 'number' ? d : new Date(d).getTime() || itm.file.lastModified);
       
-      // Update Date UI
       const dateStr = new Date(itm.date).toLocaleString();
       itm.el.querySelector(".batch-date").value = dateStr;
 
@@ -254,7 +252,6 @@ async function processBatchFiles(files) {
         itm.lng = coords.lng;
         itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
         
-        // v4.0: MEMORIA GLOBAL FIRST
         const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
         if (rememberedPoi) {
            itm.poi = rememberedPoi;
@@ -264,61 +261,42 @@ async function processBatchFiles(files) {
       }
     } catch (e) {
       console.warn("EXIF failed", e);
-      // Fallback date
       itm.date = itm.file.lastModified;
       itm.el.querySelector(".batch-date").value = new Date(itm.date).toLocaleString();
     }
   }));
 
-  // --- Phase 2: Spatio-Temporal Consensus (Zero-Lag) ---
-  // Run TWICE to ensure propagation chains (A->B->C) work in one go
-  propagateLocationsByTime(items);
-  // propagateLocationsByTime(items); // Optional second pass if needed
-
-  // --- Phase 3: Vision AI (Throttled) ---
-  const pendingItems = items.filter(itm => itm.isImage && !itm.lat && !itm.poi);
+  // --- Phase 2: Vision AI (Throttled) ---
+  const pendingItems = items.filter(itm => itm.isImage); // Analyze all for landmarks/ocr
   
-  // Custom chunker to avoid timeout storms
   const chunk = (arr, size) => Array.from({ length: Math.ceil(arr.length / size) }, (v, i) => arr.slice(i * size, i * size + size));
-  const itemChunks = chunk(pendingItems, 2); // Process 2 at a time (conservative)
+  const itemChunks = chunk(pendingItems, 2);
 
   for (const batch of itemChunks) {
     await Promise.all(batch.map(async (itm) => {
-      // LAST CHECK: If consensus filled it in meanwhile (unlikely in sequential, but safe)
-      if (itm.lat && itm.lng) return;
-
       try {
         const withTimeout = (promise, ms) => Promise.race([
           promise,
           new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), ms))
         ]);
 
-        // Attempt Vision (Cloud + Local)
         itm.statusMsg.textContent = "👁️ Analizando imagen...";
         
+        // Try Cloud Vision
         let visionData = null;
         try {
            visionData = await withTimeout(analyzeImage(itm.file), 10000);
         } catch(e) { console.warn("Cloud vision timeout", itm.id); }
 
-        let localVisionData = null;
-        try {
-           localVisionData = await withTimeout(analyzeImageWithOllama(itm.file), 15000);
-        } catch(e) { console.warn("Local vision timeout", itm.id); }
-
-        if (visionData || localVisionData) {
-            const labels = [...(visionData?.labels || []), ...(localVisionData?.labels || [])];
-            const landmarks = [...(visionData?.landmarks || []), ...(localVisionData?.landmarks || [])];
-            const texts = [...(visionData?.texts || [])]; 
+        if (visionData) {
+            itm.visionLabels = [...new Set(visionData.labels || [])];
+            itm.visionLandmarks = [...new Set(visionData.landmarks || [])];
+            itm.visionTexts = visionData.texts || [];
             
-            itm.visionLabels = [...new Set(labels)];
-            itm.visionLandmarks = [...new Set(landmarks)];
-            itm.visionTexts = texts;
-            
-            const primaryTag = itm.visionLandmarks[0] || texts[0] || itm.visionLabels[0] || "";
+            const primaryTag = itm.visionLandmarks[0] || itm.visionTexts[0] || itm.visionLabels[0] || "";
             if (primaryTag) {
               itm.visionDiv.textContent = "🔍 " + t("vision_detected") + ": " + primaryTag;
-              if (!itm.poi) { // Only overwrite if empty
+              if (!itm.poi) {
                  itm.poiInput.value = primaryTag;
                  itm.poi = primaryTag;
               }
@@ -329,12 +307,11 @@ async function processBatchFiles(files) {
       }
     }));
   }
-  
-  // Re-run consensus after AI potentially found landmarks
-  propagateLocationsByTime(items);
 
-  // --- Phase 4: Backend Consenso & Orchestration (Resolve Puzzle) ---
-  // Update all items to show loading state
+  // --- Phase 3: Spatio-Temporal Consensus (Zero-Lag) ---
+  applyConsensus();
+  
+  // --- Phase 4: Backend Consenso & Orchestration ---
   items.forEach(itm => { if (itm.isImage) itm.statusMsg.textContent = '🧩 Resolviendo lote...'; });
   
   try {
@@ -549,133 +526,127 @@ function useGeocoderFallback(batchItem, poiInput, statusMsg) {
 import { renderPuzzleSummary } from './components/PuzzleSummary.js';
 
 function applyConsensus() {
-  const clusters = clusterPhotosByContext(batchFiles);
+  // RULE: 30-minute window for the batch cluster
+  const clusters = clusterPhotosByContext(batchFiles, 30 * 60 * 1000);
   
   clusters.forEach(cluster => {
     if (cluster.length > 1) { 
-      // 1. Determine best POI name in cluster
-      const result = getMostCommonCaption(cluster);
-      const consensusCaption = result.winner;
-      const scores = result.scores;
+      // 1. Identify ANCHOR and calculate Confidence
+      const { anchor, confidence } = analyzeClusterIntelligence(cluster);
       
-      // 2. Determine best Location (Lat/Lng) in cluster
-      let bestLat = null;
-      let bestLng = null;
-      // Prefer items with Source=GPS/Manual over estimated
-      const sourcePriority = { 'gps': 3, 'manual': 2, 'consensus': 1, 'picarta': 0 };
-      
-      const locProvider = cluster.sort((a,b) => (sourcePriority[b.source] || 0) - (sourcePriority[a.source] || 0))
-                                 .find(p => p.lat && p.lng);
-      
-      if (locProvider) {
-         bestLat = locProvider.lat;
-         bestLng = locProvider.lng;
-      }
-
-      // 3. Identify ANCHOR PHOTO & Confidence Score
-      let maxConfidence = 0;
-      let anchorId = null;
+      // 2. Inheritance (RULE: 15-minute window from Anchor)
+      const bestLat = anchor.lat;
+      const bestLng = anchor.lng;
+      const bestPoi = (anchor.poi && !isGenericName(anchor.poi)) ? anchor.poi : getMostCommonCaption(cluster).winner;
 
       cluster.forEach(p => {
-         let score = 0;
-         if (p.lat && p.lng) score += 0.4;
-         if (p.visionLandmarks && p.visionLandmarks.length > 0) score += 0.4;
-         if (p.poi && !isGenericName(p.poi)) score += 0.2;
-         
-         // Mark roles for UI
-         p.role = null; 
-         if (score > maxConfidence) {
-            maxConfidence = score;
-            anchorId = p.id;
-         }
-      });
-      
-      // Set Anchor
-      const anchorPhoto = cluster.find(p => p.id === anchorId);
-      if (anchorPhoto) anchorPhoto.role = 'ANCHOR_VISUAL';
+        const timeDiff = Math.abs((p.date || 0) - (anchor.date || 0));
+        
+        // Mark Roles
+        p.role = (p.id === anchor.id) ? 'ANCHOR_VISUAL' : null;
 
-      // 4. Propagate to all in cluster
-      cluster.forEach(bf => {
-         // Propagate Location if missing
-         if ((!bf.lat || !bf.lng) && bestLat && bestLng) {
-             bf.lat = bestLat;
-             bf.lng = bestLng;
-             bf.isConsensus = true;
-             bf.source = 'consensus';
-             bf.coordsDiv.innerHTML = `<span style="color:var(--accent-success)">⚡ ${bf.lat.toFixed(4)}, ${bf.lng.toFixed(4)} (Heredado)</span>`;
-             bf.statusMsg.textContent = "⚡ GPS Heredado";
-             console.log(`[Consensus] ⚡ Propagating GPS to ${bf.title}`);
-         }
+        // Inherit Location (15 min rule)
+        if ((!p.lat || !p.lng) && bestLat && bestLng && timeDiff <= 15 * 60 * 1000) {
+           p.lat = bestLat;
+           p.lng = bestLng;
+           p.source = 'consensus';
+           p.isConsensus = true;
+           if (p.coordsDiv) p.coordsDiv.innerHTML = `<span style="color:var(--accent-success)">⚡ ${p.lat.toFixed(4)}, ${p.lng.toFixed(4)} (Heredado)</span>`;
+           if (p.statusMsg) p.statusMsg.textContent = "⚡ GPS Heredado";
+        }
 
-         // Propagate POI Name
-         const pi = bf.el.querySelector(".batch-poi");
-         const inputVal = pi ? pi.value.trim() : "";
-         
-         if (consensusCaption && (!inputVal || bf.consensus || bf.poi === "Ubicación por Cercanía Temporal")) {
-             bf.poi = consensusCaption;
-             bf.consensus = true;
-             if (pi) pi.value = consensusCaption;
-             
-             // Visual badge
-             const ca = bf.el.querySelector(".consensus-area");
-             if (ca) ca.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
-         }
+        // Inherit POI Name if empty or generic
+        if (bestPoi && (!p.poi || isGenericName(p.poi) || p.consensus)) {
+           p.poi = bestPoi;
+           p.consensus = true;
+           if (p.poiInput) p.poiInput.value = bestPoi;
+           
+           const ca = p.el.querySelector(".consensus-area");
+           if (ca) ca.innerHTML = `<span class="consensus-badge">${t('consensus_badge')}</span>`;
+        }
+
+        // --- Evidence Badges ---
+        updateEvidenceBadges(p);
       });
 
-      // 5. Render Puzzle UI
-      const consensusContainer = document.getElementById("consensus-summary-area");
-      if (!consensusContainer) {
-          const newDiv = document.createElement("div");
-          newDiv.id = "consensus-summary-area";
-          el.batchPreview.prepend(newDiv); // Show at top of batch list
-          renderPuzzleSummary(newDiv, {
-             consensus_result: {
-                place_name: consensusCaption || "Ubicación por determinar",
-                confidence_score: maxConfidence,
-                match_reason: `Consenso de ${cluster.length} fotos (Ventana: 30min)`
+      // 3. Render Puzzle UI
+      const container = document.getElementById("consensus-summary-area") || (() => {
+          const div = document.createElement("div");
+          div.id = "consensus-summary-area";
+          el.batchPreview.prepend(div);
+          return div;
+      })();
+
+      renderPuzzleSummary(container, {
+          consensus_result: {
+             place_name: bestPoi || "Buscando...",
+             confidence_score: confidence,
+             match_reason: `Consenso de ${cluster.length} fotos (Ventana: 30min)`
+          },
+          images: cluster.map(p => ({
+             id: p.title,
+             url: URL.createObjectURL(p.file),
+             role: p.role,
+             exif: { has_gps: !!(p.lat && p.lng) },
+             vision_analysis: {
+                landmark: p.visionLandmarks && p.visionLandmarks.length > 0,
+                ocr_text: p.visionTexts && p.visionTexts.length > 0
              },
-             images: cluster.map(p => ({
-                id: p.title,
-                url: URL.createObjectURL(p.file),
-                role: p.role,
-                exif: { has_gps: !!(p.lat && p.lng) },
-                vision_analysis: {
-                   landmark: p.visionLandmarks && p.visionLandmarks.length > 0,
-                   ocr_text: p.visionTexts && p.visionTexts.length > 0
-                },
-                source_text: p.poi
-             }))
-          });
-      } else {
-        // Update existing
-         renderPuzzleSummary(consensusContainer, {
-             consensus_result: {
-                place_name: consensusCaption || "Ubicación por determinar",
-                confidence_score: maxConfidence,
-                match_reason: `Consenso de ${cluster.length} fotos (Ventana: 30min)`
-             },
-             images: cluster.map(p => ({
-                id: p.title,
-                url: URL.createObjectURL(p.file),
-                role: p.role,
-                exif: { has_gps: !!(p.lat && p.lng) },
-                vision_analysis: {
-                   landmark: p.visionLandmarks && p.visionLandmarks.length > 0,
-                   ocr_text: p.visionTexts && p.visionTexts.length > 0
-                },
-                source_text: p.poi
-             }))
-          });
+             source_text: p.poi
+          }))
+      });
+
+      // 4. Human-In-The-Loop: Trigger if confidence is low
+      if (confidence < 0.75) {
+         const sm = cluster.find(p => p.statusMsg);
+         if (sm) sm.statusMsg.innerHTML = `<span style="color:var(--danger)">⚠️ Baja confianza. Verifica el lugar.</span>`;
       }
     }
   });
 }
 
-function clusterPhotosByContext(photos) {
+function analyzeClusterIntelligence(cluster) {
+   let maxScore = -1;
+   let anchor = cluster[0];
+   
+   cluster.forEach(p => {
+      let score = 0;
+      if (p.lat && p.lng) score += 50; // GPS is strong
+      if (p.visionLandmarks?.length) score += 40; // Recognizable landmark
+      if (p.visionTexts?.length) score += 20; // OCR data
+      if (p.poi && !isGenericName(p.poi)) score += 10;
+      
+      if (score > maxScore) {
+         maxScore = score;
+         anchor = p;
+      }
+   });
+
+   const confidence = Math.min(maxScore / 100, 1); 
+   return { anchor, confidence };
+}
+
+function updateEvidenceBadges(p) {
+  const badges = [];
+  if (p.role === 'ANCHOR_VISUAL') badges.push({ cls: 'badge-gps', icon: '⚓', label: 'Ancla' });
+  else if (p.source === 'consensus') badges.push({ cls: 'badge-inherited', icon: '⚡', label: 'Heredado' });
+  else if (p.lat && p.lng) badges.push({ cls: 'badge-gps', icon: '📍', label: 'GPS' });
+
+  if (p.visionLandmarks?.length) badges.push({ cls: 'badge-vision', icon: '👁', label: 'Hito' });
+  if (p.visionTexts?.length) badges.push({ cls: 'badge-ocr', icon: '🔤', label: 'OCR' });
+  if (p.source === 'spatial_memory') badges.push({ cls: 'badge-memory', icon: '🧠', label: 'Memoria' });
+
+  const evidenceArea = p.el.querySelector('.consensus-area');
+  if (evidenceArea) {
+    evidenceArea.innerHTML = `<div class="evidence-badges">${
+      badges.map(b => `<span class="badge ${b.cls}">${b.icon} ${b.label}</span>`).join('')
+    }</div>`;
+  }
+}
+
+function clusterPhotosByContext(photos, windowSize = 30 * 60 * 1000) {
   const clusters = [];
   const processed = new Set();
-  // Expanded window for "Zero-Lag" rule
-  const TIME_WINDOW = 30 * 60 * 1000; 
 
   for (const photo of photos) {
     if (processed.has(photo)) continue;
@@ -690,23 +661,7 @@ function clusterPhotosByContext(photos) {
       const oTime = other.date || 0;
       const timeDiff = Math.abs(pTime - oTime);
       
-      // RULE: If time is close, they are related. 
-      // Distance check ONLY applies if BOTH have GPS.
-      // If one is missing GPS, we assume it's same place due to time proximity.
-      let isRelated = false;
-
-      if (timeDiff < TIME_WINDOW) {
-         if (photo.lat && photo.lng && other.lat && other.lng) {
-            // Both have GPS: Verify distance (max 300m for safety)
-            const dist = calculateDistance(photo.lat, photo.lng, other.lat, other.lng);
-            if (dist < 300) isRelated = true;
-         } else {
-            // One or both missing GPS: Assume related by time (The Golden Rule)
-            isRelated = true;
-         }
-      }
-
-      if (isRelated) { 
+      if (timeDiff < windowSize) {
         cluster.push(other);
         processed.add(other);
       }
@@ -722,14 +677,21 @@ function getMostCommonCaption(photos) {
     if (p.poi && p.poi.trim().length > 0) {
       const name = p.poi.trim();
       const l = name.toLowerCase();
-      // Scoring (v2.2): 
+      // Scoring (v5.0 - NotebookLM Alignment): 
       let points = 1;
       const isGeneric = isGenericName(name);
-      if (!isGeneric) points += 50; // Gran bonus por no ser genérico/ruido
       
-      const isLandmarkString = /jardin|jardín|parque|museo|monumento|plaza|palacio|recoleta|tigre|plazoleta/i.test(l);
-      if (isLandmarkString) points += 100; // Landmark es ley (x100)
+      // Sanitización para evitar errores con apóstrofos (Regla NotebookLM)
+      const sanitizedName = sanitizeLocationName(name);
       
+      if (!isGeneric) points += 50; 
+      
+      const isLandmarkString = /jardin|jardín|parque|museo|monumento|plaza|palacio|recoleta|tigre|plazoleta|estación|terminal/i.test(l);
+      if (isLandmarkString) points += 120; // Plus para hitos/parques
+      
+      // Prioridad absoluta a nombres que NO son calles
+      if (/^calle|avenida|av\.|pje|pasaje/i.test(l)) points -= 40;
+
       // AI Signal boost (Pistas de Visión)
       if (p.visionLandmarks && p.visionLandmarks.includes(name)) points += 200;
       else if (p.visionLandmarks && p.visionLandmarks.length > 0) points += 20;
@@ -751,6 +713,15 @@ function getMostCommonCaption(photos) {
     }
   });
   return { winner: best, scores };
+}
+
+/**
+ * Sanitiza nombres de ubicaciones para evitar errores (como el bug de apóstrofos).
+ */
+function sanitizeLocationName(name) {
+  if (!name) return "";
+  // Escapa apóstrofos simples para seguridad (Regla NotebookLM)
+  return name.replace(/'/g, "''");
 }
 
 async function findPoiBackend(lat, lng, radius = 500, keywords = "") {
