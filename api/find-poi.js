@@ -143,11 +143,19 @@ export default async function handler(req, res) {
         }
     }
 
-    // 4. Vision API priority (if a landmark was extracted via Vision previously, use it if Google failed to find something better)
+    // 4. Vision API priority (Verification required)
+    // If a landmark was extracted via Vision, use it ONLY if:
+    // a) Google Places matched it (already handled above)
+    // b) Google Places found nothing AND we don't have GPS (truly unknown area)
+    // c) Google Places found something, but it's a generic "Park" and our landmark is more specific
     if (landmarkFromVision && bestSource !== 'GOOGLE_PLACES_NEW') {
-        bestName = sanitize(landmarkFromVision);
-        bestSource = 'VISION_API';
-        bestConfidence = 0.90;
+        const isDiscordant = bestSource === 'OPENCAGE' && bestAddress && !bestAddress.includes(landmarkFromVision.split(' ')[0]);
+        
+        if (!lat || !lng || !isDiscordant) {
+            bestName = sanitize(landmarkFromVision);
+            bestSource = 'VISION_API';
+            bestConfidence = 0.85; // Slightly below Google News
+        }
     }
 
     // Send final result back

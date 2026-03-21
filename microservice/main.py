@@ -60,6 +60,17 @@ def analyze_exif():
 
     result['timestamp'] = str(tags.get('EXIF DateTimeOriginal', ''))
     result['gps_accuracy'] = str(tags.get('GPS GPSHPositioningError', ''))
+    
+    # Extract Image Direction (v3.2)
+    dir_tag = tags.get('GPS GPSImgDirection')
+    if dir_tag:
+        try:
+            val = float(dir_tag.values[0].num) / float(dir_tag.values[0].den)
+            result['direction'] = round(val, 2)
+        except:
+            result['direction'] = None
+    else:
+        result['direction'] = None
 
     return jsonify(result), 200
 

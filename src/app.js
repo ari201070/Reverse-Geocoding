@@ -250,14 +250,25 @@ async function processBatchFiles(files) {
       if (coords) {
         itm.lat = coords.lat;
         itm.lng = coords.lng;
-        itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
-        
-        const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
-        if (rememberedPoi) {
-           itm.poi = rememberedPoi;
-           itm.poiInput.value = rememberedPoi;
-           itm.statusMsg.textContent = "✓ Memoria Local";
-        }
+      // Phase 1: Signal Extraction (Metadata)
+      const exifData = await analyzeExif(itm.file);
+      if (exifData) {
+          itm.lat = exifData.lat;
+          itm.lng = exifData.lng;
+          itm.date = exifData.timestamp ? new Date(exifData.timestamp).getTime() : itm.file.lastModified;
+          itm.gpsAccuracy = exifData.gps_accuracy; // New in v3.2
+          itm.direction = exifData.direction; // New in v3.2
+          
+          if (itm.lat && itm.lng) {
+            itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
+            
+            const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
+            if (rememberedPoi) {
+               itm.poi = rememberedPoi;
+               itm.poiInput.value = rememberedPoi;
+               itm.statusMsg.textContent = "✓ Memoria Local";
+            }
+          }
       }
     } catch (e) {
       console.warn("EXIF failed", e);
@@ -327,6 +338,8 @@ async function processBatchFiles(files) {
           lat: p.lat,
           lng: p.lng,
           timestamp: p.date,
+          gpsAccuracy: p.gpsAccuracy, // New: used for tie-breaking
+          direction: p.direction, // New: orientation awareness
           visionLabels: (p.visionLabels || []).map(l => ({ name: l, isLandmark: (p.visionLandmarks || []).includes(l) })),
           ocrText: p.visionTexts ? p.visionTexts.join(' ') : ''
         }))

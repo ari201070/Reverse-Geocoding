@@ -1,12 +1,12 @@
 // api/resolve-puzzle.js - Batch Consensus Orchestrator (Modo Puzzle)
-// Identifies "Anchor Photos" and propagates context using Weighted Scoring & Ollama Cleanup.
+// Identifies "Anchor Photos" and propagates context using Rules from NotebookLM (v3.2)
 import memoryStore from './memory-store.js';
 import findPoiHandler from './find-poi.js';
 import { sanitizeString as sanitize } from './python-service.js';
 
 /**
  * POST /api/resolve-puzzle
- * Body: { photos: [{ id, lat, lng, timestamp, visionLabels: [{name, isLandmark}], ocrText }] }
+ * Body: { photos: [{ id, lat, lng, timestamp, visionLabels: [{name, isLandmark}], ocrText, gpsAccuracy }] }
  */
 export default async function (req, res) {
     if (req.method && req.method !== 'POST') {
@@ -18,66 +18,74 @@ export default async function (req, res) {
         return res.status(400).json({ error: 'photos array is required' });
     }
 
-    // --- Phase 1: Weighted Anchor Ranking ---
-    // Rules from ContextGeoIntegrator & Stress Tests: Landmarks > OCR > Labels
+    // --- Phase 1: Weighted Anchor Ranking (NotebookLM Rules) ---
     const scoredPhotos = photos.map(p => {
         let score = 0;
         let bestToken = null;
+        let pType = 'NONE';
 
         // 1. Landmark (Master Clue) - 1.0
         const landmark = p.visionLabels?.find(l => l.isLandmark);
         if (landmark) {
             score = 1.0;
             bestToken = landmark.name;
+            pType = 'LANDMARK';
         } 
-        // 2. OCR (Short/Clean) - 0.8
-        else if (p.ocrText && p.ocrText.trim().length > 3) {
-            const cleanOcr = p.ocrText.trim();
-            if (cleanOcr.length < 60) {
-                score = 0.8;
-                bestToken = cleanOcr;
-            } else {
-                // 3. OCR (Long/Noise) - 0.3
-                score = 0.3;
-                bestToken = cleanOcr;
-            }
+        // 2. Short OCR (<60 characters) - 0.8
+        else if (p.ocrText && p.ocrText.trim().length > 3 && p.ocrText.trim().length < 60) {
+            score = 0.8;
+            bestToken = p.ocrText.trim();
+            pType = 'OCR_SHORT';
         }
-        // 4. Labels / GPS - 0.1
-        else if (p.visionLabels?.length > 0) {
-            score = 0.1;
-            bestToken = p.visionLabels[0].name;
+        // 3. Long OCR / Ollama Required - 0.4
+        else if (p.ocrText && p.ocrText.trim().length >= 60) {
+            score = 0.4;
+            bestToken = p.ocrText.trim();
+            pType = 'OCR_LONG';
+        }
+        // 4. GPS Only - 0.2
+        else if (p.lat && p.lng) {
+            score = 0.2;
+            pType = 'GPS_ONLY';
         }
 
-        return { ...p, score, bestToken };
+        // Accuracy tie-breaker: convert to numeric (lower is better)
+        const accuracy = parseFloat(p.gpsAccuracy) || 9999;
+
+        return { ...p, score, bestToken, type: pType, accuracy };
     });
 
-    // Pick the absolute best anchor in the whole batch
+    // Pick the absolute best anchor
+    // Rule: Lowest Accuracy is the secondary sort key for same score
     const sortedAnchors = scoredPhotos
         .filter(p => p.score > 0)
-        .sort((a, b) => b.score - a.score || (a.timestamp - b.timestamp)); // Higher score, then earlier time
+        .sort((a, b) => {
+            if (b.score !== a.score) return b.score - a.score;
+            return a.accuracy - b.accuracy; // Tie-break: lowest accuracy meters first
+        });
 
-    let masterAnchor = sortedAnchors[0] || scoredPhotos.find(p => p.lat && p.lng);
+    const masterAnchor = sortedAnchors[0];
     let masterContext = masterAnchor?.bestToken || null;
     let masterLat = masterAnchor?.lat || null;
     let masterLng = masterAnchor?.lng || null;
     let masterTimestamp = masterAnchor?.timestamp || null;
 
     // --- Phase 2: Intelligence - Ollama Context Cleanup ---
-    // If masterContext is a "wall of text" (likely a bio), ask Ollama to extract the POI name.
-    if (masterContext && masterContext.length > 80) {
+    // Rule: Use phi3 for OCR_LONG (Score 0.4)
+    if (masterAnchor?.type === 'OCR_LONG' && masterContext) {
         try {
             const ollamaRes = await fetch('http://localhost:3000/api/ollama', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     model: 'phi3',
-                    prompt: `Eres un experto en geolocalización. Dado el siguiente texto extraído de una foto por OCR, identifica el NOMBRE DEL LUGAR (ej: 'Teatro Colón', 'Rock & Feller's'). Si no puedes identificar un lugar específico, responde 'Desconocido'. Solo responde el nombre o 'Desconocido'. No agregues explicaciones.\n\nTexto: "${masterContext}"`,
+                    prompt: `Eres un experto en geolocalización. Dado el siguiente texto extraído de una foto por OCR, identifica el NOMBRE DEL LUGAR (ej: 'Teatro Colón', 'Rock & Feller\'s'). Si no puedes identificar un lugar específico, responde 'Desconocido'. Solo responde el nombre o 'Desconocido'. No agregues explicaciones.\n\nTexto: "${masterContext}"`,
                     stream: false
                 })
             });
 
             if (ollamaRes.ok) {
-                const ollamaData = await ollamaRes.ok ? await ollamaRes.json() : null;
+                const ollamaData = await ollamaRes.json();
                 const cleaned = ollamaData?.response?.trim();
                 if (cleaned && cleaned !== 'Desconocido') {
                     masterContext = cleaned;
@@ -97,7 +105,7 @@ export default async function (req, res) {
     }
 
     // --- Phase 4: Cluster Processing & Propagation ---
-    const INHERIT_WINDOW_MS = 15 * 60 * 1000; // 15 min rule from stress test
+    const INHERIT_WINDOW_MS = 15 * 60 * 1000; // 15 min rule from NotebookLM
 
     const results = await Promise.all(scoredPhotos.map(async (photo) => {
         const isAnchor = photo.id === masterAnchor?.id;
@@ -121,8 +129,8 @@ export default async function (req, res) {
                     lat: finalLat,
                     lng: finalLng,
                     timestamp: photo.timestamp,
-                    keywords: masterContext || '',
-                    landmarkFromVision: isAnchor ? photo.bestToken : masterContext,
+                    keywords: (isAnchor || canInherit) ? masterContext : '',
+                    landmarkFromVision: isAnchor ? photo.bestToken : (canInherit ? masterContext : null),
                     radius: 300
                 }
             };
@@ -147,7 +155,8 @@ export default async function (req, res) {
         };
     }));
 
-    // Calculate overall confidence score (v2.4)
+    // Calculate overall confidence score
+    // Rule: Confidence > 75% to proceed automatically
     const anchorScore = masterAnchor?.score || 0.1;
     const consistencyBonus = results.filter(r => r.name && r.name === results[0]?.name).length / results.length;
     const finalConfidence = Math.min(0.99, (anchorScore * 0.7) + (consistencyBonus * 0.3));
@@ -158,7 +167,7 @@ export default async function (req, res) {
         clusterName: masterContext || 'Ubicación Desconocida',
         confidence_score: finalConfidence,
         requiresManualValidation: finalConfidence < 0.75, // Rule: Halt if < 75%
-        anchorCount: sortedAnchors.length,
+        anchorCount: 1, // Focus on THE anchor
         results
     });
 }
