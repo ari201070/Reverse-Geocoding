@@ -1,11 +1,11 @@
 import { latLngToCell } from 'h3-js';
 
-const TIME_WINDOW_S = 3600;      // 60 minutos: ventana de agrupamiento
-const INHERIT_WINDOW_S = 900;    // 15 minutos: herencia de ubicación para fotos sin GPS
+const TIME_WINDOW_S = 3600;      // 60 minutos: ventana de agrupamiento (Stress Test Rule)
+const INHERIT_WINDOW_S = 900;    // 15 minutos: herencia de ubicación para fotos sin GPS (Stress Test Rule)
 const H3_RESOLUTION = 9;         // ~170m hexágonos
 
 /**
- * Redondea coordenadas a 4 decimales (~11m) para privacidad y cache hits.
+ * Redondea coordenadas a 4 decimales (~11m) para privacidad y cache hits (Stress Test Rule).
  */
 function roundCoord(val) {
   return Math.round(val * 10000) / 10000;
@@ -13,21 +13,28 @@ function roundCoord(val) {
 
 /**
  * Selecciona la mejor foto ancla del grupo:
- * - Prioriza confianza OCR/Hitos > 90%
- * - Luego menor radio de precisión EXIF (GPSHPositioningError)
+ * - Prioriza Landmarks > OCR > Labels
  */
 function pickAnchor(photos) {
   const withGps = photos.filter(p => p.lat != null && p.lng != null);
-  if (!withGps.length) return null;
+  
+  // Si no hay GPS, buscamos la mejor señal visual en el lote
+  const candidates = photos.filter(p => p.visionLandmarks?.length > 0 || p.visionTexts?.length > 0 || p.visionLabels?.length > 0);
+  
+  if (!candidates.length && !withGps.length) return null;
 
-  // Prioridad 1: OCR/Hitos con confianza > 90%
-  const highConf = withGps.filter(p => (p.ocrConfidence || 0) > 0.9 || (p.landmarkConfidence || 0) > 0.9);
-  if (highConf.length) {
-    return highConf.reduce((best, p) => ((p.gpsAccuracy || Infinity) < (best.gpsAccuracy || Infinity) ? p : best));
-  }
+  // Sistema de puntuación (v3.2)
+  const scored = (candidates.length ? candidates : withGps).map(p => {
+    let score = 0;
+    if (p.visionLandmarks?.length > 0) score = 100;
+    else if (p.visionTexts?.length > 0 && p.visionTexts[0].length < 60) score = 80;
+    else if (p.lat != null) score = 50;
+    else if (p.visionLabels?.length > 0) score = 10;
+    
+    return { ...p, internalScore: score };
+  });
 
-  // Prioridad 2: Mejor precisión EXIF
-  return withGps.reduce((best, p) => ((p.gpsAccuracy || Infinity) < (best.gpsAccuracy || Infinity) ? p : best));
+  return scored.sort((a, b) => b.internalScore - a.internalScore || (a.timestamp - b.timestamp))[0];
 }
 
 /**
@@ -55,7 +62,7 @@ export function clusterPhotos(photos) {
     const prev = sorted[i - 1];
     const timeDiff = Math.abs(photo.timestamp - prev.timestamp) / 1000;
 
-    // Ruptura temporal
+    // Ruptura temporal (60 min)
     if (timeDiff > TIME_WINDOW_S) {
       clusters.push(finalizeCluster(current));
       current = [photo];
@@ -65,7 +72,7 @@ export function clusterPhotos(photos) {
       continue;
     }
 
-    // Ruptura espacial: si la foto tiene GPS y su H3 difiere del ancla
+    // Ruptura espacial (H3 Res 9)
     if (photo.lat != null && anchorH3) {
       const photoH3 = latLngToCell(roundCoord(photo.lat), roundCoord(photo.lng), H3_RESOLUTION);
       if (photoH3 !== anchorH3) {
@@ -76,7 +83,6 @@ export function clusterPhotos(photos) {
       }
     }
 
-    // Actualizar ancla H3 si la foto actual tiene GPS y no había ancla
     if (photo.lat != null && !anchorH3) {
       anchorH3 = latLngToCell(roundCoord(photo.lat), roundCoord(photo.lng), H3_RESOLUTION);
     }
@@ -88,14 +94,10 @@ export function clusterPhotos(photos) {
   return clusters;
 }
 
-/**
- * Finaliza un clúster: elige ancla, hereda ubicación a fotos sin GPS.
- */
 function finalizeCluster(photos) {
   const anchor = pickAnchor(photos);
 
-  // Herencia: fotos sin GPS heredan del ancla si están a <15 min
-  if (anchor) {
+  if (anchor && anchor.lat != null) {
     for (const p of photos) {
       if (p.lat == null && p.lng == null) {
         const diff = Math.abs(p.timestamp - anchor.timestamp) / 1000;
@@ -103,6 +105,7 @@ function finalizeCluster(photos) {
           p.lat = anchor.lat;
           p.lng = anchor.lng;
           p.inherited = true;
+          p.inheritanceSource = anchor.id;
         }
       }
     }
@@ -110,7 +113,7 @@ function finalizeCluster(photos) {
 
   return {
     anchor,
-    h3Index: anchor ? latLngToCell(roundCoord(anchor.lat), roundCoord(anchor.lng), H3_RESOLUTION) : null,
+    h3Index: anchor && anchor.lat != null ? latLngToCell(roundCoord(anchor.lat), roundCoord(anchor.lng), H3_RESOLUTION) : null,
     photos,
     count: photos.length,
   };

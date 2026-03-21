@@ -285,15 +285,18 @@ async function processBatchFiles(files) {
         // Try Cloud Vision
         let visionData = null;
         try {
-           visionData = await withTimeout(analyzeImage(itm.file), 10000);
+           visionData = await withTimeout(analyzeImage(itm.file), 25000); // v3.1: Increased to 25s
         } catch(e) { console.warn("Cloud vision timeout", itm.id); }
 
         if (visionData) {
             itm.visionLabels = [...new Set(visionData.labels || [])];
             itm.visionLandmarks = [...new Set(visionData.landmarks || [])];
-            itm.visionTexts = visionData.texts || [];
+            itm.visionTexts = (visionData.texts || []).map(t => typeof t === 'string' ? t.replace(/'/g, "''") : t);
             
-            const primaryTag = itm.visionLandmarks[0] || itm.visionTexts[0] || itm.visionLabels[0] || "";
+            const rawTag = itm.visionLandmarks[0] || itm.visionTexts[0] || itm.visionLabels[0] || "";
+            // Truncate for UI display (v3.1)
+            const primaryTag = rawTag.length > 50 ? rawTag.substring(0, 47) + "..." : rawTag;
+            
             if (primaryTag) {
               itm.visionDiv.textContent = "🔍 " + t("vision_detected") + ": " + primaryTag;
               if (!itm.poi) {
@@ -311,7 +314,7 @@ async function processBatchFiles(files) {
   // --- Phase 3: Spatio-Temporal Consensus (Zero-Lag) ---
   applyConsensus();
   
-  // --- Phase 4: Backend Consenso & Orchestration ---
+      // --- Phase 4: Backend Consenso & Orchestration ---
   items.forEach(itm => { if (itm.isImage) itm.statusMsg.textContent = '🧩 Resolviendo lote...'; });
   
   try {
@@ -333,6 +336,36 @@ async function processBatchFiles(files) {
     if (puzzleData.ok) {
       const puzzleResults = await puzzleData.json();
       console.log('[Puzzle] Batch results:', puzzleResults);
+
+      // Render Puzzle Summary (New in v6.0 / 6:41 PM Discussion)
+      if (typeof renderPuzzleSummary === 'function') {
+        const summaryContainer = document.getElementById('puzzle-summary-container');
+        if (summaryContainer) {
+          summaryContainer.style.display = 'block';
+          renderPuzzleSummary(summaryContainer, {
+            consensus_result: {
+              place_name: puzzleResults.clusterName,
+              confidence_score: puzzleResults.confidence_score,
+              match_reason: puzzleResults.requiresManualValidation 
+                 ? "⚠️ Se requiere validación manual (Confianza < 75%)" 
+                 : `Consenso de ${puzzleResults.anchorCount} fotos`,
+              is_warning: puzzleResults.requiresManualValidation
+            },
+            images: items.map(p => {
+               const res = puzzleResults.results?.find(r => r.photoId === p.id);
+               return {
+                 url: p.previewUrl,
+                 role: res?.isAnchor ? 'ANCHOR_VISUAL' : 'MEMBER',
+                 exif: { has_gps: !!p.lat },
+                 vision_analysis: { 
+                    landmark: p.visionLandmarks?.length > 0, 
+                    ocr_text: p.visionTexts?.length > 0 
+                 }
+               };
+            })
+          });
+        }
+      }
       
       // Apply collective intelligence to each batch item
       items.forEach(itm => {

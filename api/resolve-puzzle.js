@@ -1,7 +1,8 @@
 // api/resolve-puzzle.js - Batch Consensus Orchestrator (Modo Puzzle)
-// Identifies "Anchor Photos" and propagates context across a cluster.
+// Identifies "Anchor Photos" and propagates context using Weighted Scoring & Ollama Cleanup.
 import memoryStore from './memory-store.js';
 import findPoiHandler from './find-poi.js';
+import { sanitizeString as sanitize } from './python-service.js';
 
 /**
  * POST /api/resolve-puzzle
@@ -12,70 +13,116 @@ export default async function (req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    /**
-     * Sanitiza nombres según la regla de NotebookLM.
-     */
-    const sanitize = (val) => typeof val === 'string' ? val.replace(/'/g, "''") : val;
-
     const { photos } = req.body;
     if (!photos || !Array.isArray(photos) || photos.length === 0) {
         return res.status(400).json({ error: 'photos array is required' });
     }
 
-    // 1. Identify "Anchor Photos" — those with Landmarks or high-confidence OCR
-    const anchorPhotos = photos.filter(p =>
-        p.visionLabels?.some(l => l.isLandmark) || (p.ocrText && p.ocrText.trim().length > 3)
-    );
+    // --- Phase 1: Weighted Anchor Ranking ---
+    // Rules from ContextGeoIntegrator & Stress Tests: Landmarks > OCR > Labels
+    const scoredPhotos = photos.map(p => {
+        let score = 0;
+        let bestToken = null;
 
-    // 2. Determine master context from the best anchor
-    let masterContext = null;
-    let masterLat = null, masterLng = null, masterTimestamp = null;
+        // 1. Landmark (Master Clue) - 1.0
+        const landmark = p.visionLabels?.find(l => l.isLandmark);
+        if (landmark) {
+            score = 1.0;
+            bestToken = landmark.name;
+        } 
+        // 2. OCR (Short/Clean) - 0.8
+        else if (p.ocrText && p.ocrText.trim().length > 3) {
+            const cleanOcr = p.ocrText.trim();
+            if (cleanOcr.length < 60) {
+                score = 0.8;
+                bestToken = cleanOcr;
+            } else {
+                // 3. OCR (Long/Noise) - 0.3
+                score = 0.3;
+                bestToken = cleanOcr;
+            }
+        }
+        // 4. Labels / GPS - 0.1
+        else if (p.visionLabels?.length > 0) {
+            score = 0.1;
+            bestToken = p.visionLabels[0].name;
+        }
 
-    if (anchorPhotos.length > 0) {
-        const anchor = anchorPhotos[0];
-        masterContext = anchor.visionLabels?.find(l => l.isLandmark)?.name || anchor.ocrText || null;
-        masterLat = anchor.lat;
-        masterLng = anchor.lng;
-        masterTimestamp = anchor.timestamp;
-    } else {
-        // Fallback: use the first photo with GPS as anchor
-        const gpsAnchor = photos.find(p => p.lat && p.lng);
-        if (gpsAnchor) {
-            masterLat = gpsAnchor.lat;
-            masterLng = gpsAnchor.lng;
-            masterTimestamp = gpsAnchor.timestamp;
+        return { ...p, score, bestToken };
+    });
+
+    // Pick the absolute best anchor in the whole batch
+    const sortedAnchors = scoredPhotos
+        .filter(p => p.score > 0)
+        .sort((a, b) => b.score - a.score || (a.timestamp - b.timestamp)); // Higher score, then earlier time
+
+    let masterAnchor = sortedAnchors[0] || scoredPhotos.find(p => p.lat && p.lng);
+    let masterContext = masterAnchor?.bestToken || null;
+    let masterLat = masterAnchor?.lat || null;
+    let masterLng = masterAnchor?.lng || null;
+    let masterTimestamp = masterAnchor?.timestamp || null;
+
+    // --- Phase 2: Intelligence - Ollama Context Cleanup ---
+    // If masterContext is a "wall of text" (likely a bio), ask Ollama to extract the POI name.
+    if (masterContext && masterContext.length > 80) {
+        try {
+            const ollamaRes = await fetch('http://localhost:3000/api/ollama', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    model: 'phi3',
+                    prompt: `Eres un experto en geolocalización. Dado el siguiente texto extraído de una foto por OCR, identifica el NOMBRE DEL LUGAR (ej: 'Teatro Colón', 'Rock & Feller's'). Si no puedes identificar un lugar específico, responde 'Desconocido'. Solo responde el nombre o 'Desconocido'. No agregues explicaciones.\n\nTexto: "${masterContext}"`,
+                    stream: false
+                })
+            });
+
+            if (ollamaRes.ok) {
+                const ollamaData = await ollamaRes.ok ? await ollamaRes.json() : null;
+                const cleaned = ollamaData?.response?.trim();
+                if (cleaned && cleaned !== 'Desconocido') {
+                    masterContext = cleaned;
+                }
+            }
+        } catch (e) {
+            console.warn('[Puzzle] Ollama cleanup failed:', e.message);
         }
     }
-    
+
     masterContext = sanitize(masterContext);
 
-    // 3. Check spatial memory for the master location
-    let memoryResult = null;
-    if (masterLat && masterLng) {
-        memoryResult = await memoryStore.findMatch(masterLat, masterLng);
-        if (memoryResult && !masterContext) {
-            masterContext = memoryResult.name;
-        }
+    // --- Phase 3: Spatial Memory lookup ---
+    if (masterLat && masterLng && !masterContext) {
+        const memoryResult = await memoryStore.findMatch(masterLat, masterLng);
+        if (memoryResult) masterContext = memoryResult.name;
     }
 
-    // 4. Process each photo — call find-poi for those with GPS, propagate to others
-    const processedPhotos = await Promise.all(photos.map(async (photo) => {
-        const isAnchor = anchorPhotos.includes(photo);
+    // --- Phase 4: Cluster Processing & Propagation ---
+    const INHERIT_WINDOW_MS = 15 * 60 * 1000; // 15 min rule from stress test
 
-        // Photos with GPS: do an actual POI lookup
-        if (photo.lat && photo.lng) {
-            // Use internal call pattern instead of HTTP to find-poi
+    const results = await Promise.all(scoredPhotos.map(async (photo) => {
+        const isAnchor = photo.id === masterAnchor?.id;
+        const timeDiff = masterTimestamp ? Math.abs(photo.timestamp - masterTimestamp) : Infinity;
+        const canInherit = timeDiff <= INHERIT_WINDOW_MS;
+
+        let finalLat = photo.lat || (canInherit ? masterLat : null);
+        let finalLng = photo.lng || (canInherit ? masterLng : null);
+        let evidence = 'NONE';
+        let name = null;
+
+        if (isAnchor) evidence = 'ANCHOR_PHOTO';
+        else if (photo.lat && photo.lng) evidence = 'GPS';
+        else if (canInherit) evidence = 'TIME_PROXIMITY';
+
+        // Perform POI search for any photo with coords (original or inherited)
+        if (finalLat && finalLng) {
             let poiResult = null;
             const mockReq = {
-                method: 'POST',
                 body: {
-                    lat: photo.lat,
-                    lng: photo.lng,
-                    timestamp: photo.timestamp || Date.now(),
+                    lat: finalLat,
+                    lng: finalLng,
+                    timestamp: photo.timestamp,
                     keywords: masterContext || '',
-                    landmarkFromVision: isAnchor
-                        ? (photo.visionLabels?.find(l => l.isLandmark)?.name || photo.ocrText)
-                        : masterContext,
+                    landmarkFromVision: isAnchor ? photo.bestToken : masterContext,
                     radius: 300
                 }
             };
@@ -84,41 +131,34 @@ export default async function (req, res) {
                 json: (data) => { poiResult = data; }
             };
             await findPoiHandler(mockReq, mockRes);
-
-            return {
-                photoId: photo.id,
-                evidence: isAnchor ? 'ANCHOR_PHOTO' : 'GPS',
-                isAnchor,
-                name: poiResult?.data?.name || masterContext || null,
-                address: poiResult?.data?.address || null,
-                lat: photo.lat,
-                lng: photo.lng,
-                source: poiResult?.source || 'UNKNOWN'
-            };
+            name = poiResult?.data?.name || masterContext;
         } else {
-            // Photos without GPS: inherit master context (Time Proximity rule: 15 min)
-            const timeDiff = masterTimestamp ? Math.abs(photo.timestamp - masterTimestamp) : Infinity;
-            const validInheritance = timeDiff < (15 * 60 * 1000);
-
-            return {
-                photoId: photo.id,
-                evidence: validInheritance ? 'TIME_PROXIMITY' : 'NONE',
-                isAnchor: false,
-                name: validInheritance ? sanitize(masterContext) : null,
-                address: null,
-                lat: validInheritance ? masterLat : null,
-                lng: validInheritance ? masterLng : null,
-                source: validInheritance ? 'INHERITED_FROM_CLUSTER' : 'UNKNOWN',
-                inherited: validInheritance
-            };
+            name = masterContext;
         }
+
+        return {
+            photoId: photo.id,
+            evidence,
+            isAnchor,
+            name: sanitize(name),
+            lat: finalLat,
+            lng: finalLng,
+            source: isAnchor ? 'MASTER_SEÑAL' : (canInherit ? 'INHERITED' : 'INDIVIDUAL')
+        };
     }));
+
+    // Calculate overall confidence score (v2.4)
+    const anchorScore = masterAnchor?.score || 0.1;
+    const consistencyBonus = results.filter(r => r.name && r.name === results[0]?.name).length / results.length;
+    const finalConfidence = Math.min(0.99, (anchorScore * 0.7) + (consistencyBonus * 0.3));
 
     return res.json({
         status: 'SUCCESS',
         batchId: `batch_${Date.now()}`,
-        clusterName: masterContext || 'Cluster sin identificar',
-        anchorCount: anchorPhotos.length,
-        results: processedPhotos
+        clusterName: masterContext || 'Ubicación Desconocida',
+        confidence_score: finalConfidence,
+        requiresManualValidation: finalConfidence < 0.75, // Rule: Halt if < 75%
+        anchorCount: sortedAnchors.length,
+        results
     });
 }
