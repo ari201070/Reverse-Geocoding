@@ -1,5 +1,4 @@
-// Cliente: maneja UI, EXIF, mapa y llama al endpoint /api/find-poi (serverless)
-// Migrado de Leaflet a Google Maps JS API y modernizado con Advanced Markers
+import { renderPuzzleSummary } from './components/PuzzleSummary.js';
 
 let translations = {};
 let currentLanguage = localStorage.getItem("language") || "es";
@@ -250,25 +249,27 @@ async function processBatchFiles(files) {
       if (coords) {
         itm.lat = coords.lat;
         itm.lng = coords.lng;
-      // Phase 1: Signal Extraction (Metadata)
-      const exifData = await analyzeExif(itm.file);
-      if (exifData) {
-          itm.lat = exifData.lat;
-          itm.lng = exifData.lng;
-          itm.date = exifData.timestamp ? new Date(exifData.timestamp).getTime() : itm.file.lastModified;
-          itm.gpsAccuracy = exifData.gps_accuracy; // New in v3.2
-          itm.direction = exifData.direction; // New in v3.2
+        
+        // Phase 1: Signal Extraction (Metadata via Python Bridge)
+        const exifData = await analyzeExif(itm.file);
+        if (exifData) {
+            itm.lat = exifData.lat || itm.lat;
+            itm.lng = exifData.lng || itm.lng;
+            itm.date = exifData.timestamp ? new Date(exifData.timestamp).getTime() : itm.date;
+            itm.gpsAccuracy = exifData.gps_accuracy; // New in v3.2
+            itm.direction = exifData.direction; // New in v3.2
+        }
+
+        if (itm.lat && itm.lng) {
+          itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
           
-          if (itm.lat && itm.lng) {
-            itm.coordsDiv.textContent = `${itm.lat.toFixed(6)}, ${itm.lng.toFixed(6)}`;
-            
-            const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
-            if (rememberedPoi) {
-               itm.poi = rememberedPoi;
-               itm.poiInput.value = rememberedPoi;
-               itm.statusMsg.textContent = "✓ Memoria Local";
-            }
+          const rememberedPoi = findInGlobalMemory(itm.lat, itm.lng);
+          if (rememberedPoi) {
+             itm.poi = rememberedPoi;
+             itm.poiInput.value = rememberedPoi;
+             itm.statusMsg.textContent = "✓ Memoria Local";
           }
+        }
       }
     } catch (e) {
       console.warn("EXIF failed", e);
@@ -567,9 +568,7 @@ function useGeocoderFallback(batchItem, poiInput, statusMsg) {
 // --- Consensus Logic ---
 // (consolidated helper used below)
 
-// --- Consensus Logic (Master Pattern: Spatio-Temporal Clustering) ---
 // --- Consensus Logic (Master Pattern: Spatio-Temporal Clustering v5.0) ---
-import { renderPuzzleSummary } from './components/PuzzleSummary.js';
 
 function applyConsensus() {
   // RULE: 30-minute window for the batch cluster
@@ -1209,6 +1208,21 @@ function highlightSelectedPhoto(itemEl) {
   if (itemEl) itemEl.style.boxShadow = "0 0 0 2px var(--accent)";
 }
 
+async function analyzeExif(file) {
+  const formData = new FormData();
+  formData.append('image', file);
+  try {
+    const res = await fetch("/api/analyze-exif", {
+      method: "POST",
+      body: formData
+    });
+    if (res.ok) return await res.json();
+  } catch (e) {
+    console.warn("analyzeExif failed", e);
+  }
+  return null;
+}
+
 async function analyzeImage(file) {
   return new Promise((resolve) => {
     const reader = new FileReader();
@@ -1572,7 +1586,6 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   return R * c;
 }
 
-initMap();
 
 // --- Global Scope Functions (Moved from processBatchFiles) ---
 
