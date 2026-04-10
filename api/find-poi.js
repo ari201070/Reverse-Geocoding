@@ -1,9 +1,10 @@
-// api/find-poi.js - Real Google Places API (New), OpenCage, and Vision integration cascade
+// api/find-poi.js - Geocoding Cascade Orchestrator (Levels 1, 2, 3)
 import 'dotenv/config';
 import memoryStore from './memory-store.js';
+import * as h3 from 'h3-js';
 
-// Helper for standard response
-function formatResponse(name, address, lat, lng, source, confidence, placeId, isCached, timestamp) {
+// Helper for standardized response
+function formatResponse(name, address, lat, lng, source, confidence, placeId, isCached) {
     return {
         success: true,
         data: {
@@ -16,203 +17,138 @@ function formatResponse(name, address, lat, lng, source, confidence, placeId, is
         },
         meta: {
             cached: isCached,
-            timestamp: new Date(timestamp || Date.now()).toISOString()
+            timestamp: new Date().toISOString()
         }
     };
 }
 
 /**
- * Filters out generic/noise names from API results.
- */
-function isGenericName(name) {
-    if (!name) return true;
-    const GENERIC_PATTERNS = [
-        /^calle\s/i, /^avenida\s/i, /^av\.\s/i, /^ruta\s/i,
-        /^\d+$/, /^ruta nacional/i, /^autopista/i,
-        /\d{2}\/\d{2}/, // dates
-    ];
-    return GENERIC_PATTERNS.some(p => p.test(name.trim()));
-}
-
-/**
  * POST /api/find-poi
- * Body: { lat, lng, timestamp, keywords, landmarkFromVision, radius }
+ * Body: { lat, lng, radius }
  */
 export default async function handler(req, res) {
     if (req.method && req.method !== 'POST') {
         return res.status(405).json({ success: false, error: 'Method not allowed' });
     }
 
-    const { lat, lng, timestamp, keywords, landmarkFromVision, radius = 500 } = req.body;
-    const sanitize = (val) => typeof val === 'string' ? val.replace(/'/g, "''") : val;
+    const { latitude, longitude, lat, lng, radius = 500 } = req.body;
+    
+    // Normalize input
+    const targetLat = parseFloat(latitude || lat);
+    const targetLng = parseFloat(longitude || lng);
 
-    if (!lat || !lng) {
-        return res.status(400).json({ success: false, error: 'lat and lng are required' });
+    console.log(`[QA DEBUG] Received Coord: ${targetLat}, ${targetLng}`);
+
+    if (isNaN(targetLat) || isNaN(targetLng)) {
+        return res.status(400).json({ success: false, error: 'Invalid coordinates' });
     }
 
-    const GOOGLE_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
-    const OPENCAGE_API_KEY = process.env.VITE_OPENCAGE_API_KEY || process.env.OPENCAGE_API_KEY;
+    // --- STEP 0: Rounding & H3 Indexing (v4.0) ---
+    const roundedLat = Math.round(targetLat * 10000) / 10000;
+    const roundedLng = Math.round(targetLng * 10000) / 10000;
+    const h3Index = h3.latLngToCell(roundedLat, roundedLng, 9);
+    
+    console.log(`[QA DEBUG] H3 Index (Res 9): ${h3Index}`);
 
-    // 1. Check Spatial Memory first (fast, free)
-    const remembered = await memoryStore.findMatch(lat, lng, timestamp);
-    if (remembered) {
-        return res.json(formatResponse(
-            remembered.name, remembered.address, remembered.lat, remembered.lng,
-            'SPATIAL_MEMORY', 1.0, remembered.place_id, true, remembered.timestamp
-        ));
-    }
+    let result = null;
 
-    let bestName = null;
-    let bestAddress = null;
-    let bestSource = null;
-    let bestConfidence = 0;
-    let bestPlaceId = null;
-
-    // 2. OpenCage Geocoding (economical fallback for address/basic location)
-    if (OPENCAGE_API_KEY) {
-        try {
-            const queryRaw = `${lat},${lng}`;
-            const opencageUrl = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(queryRaw)}&key=${OPENCAGE_API_KEY}`;
-            const ocRes = await fetch(opencageUrl);
-            if (ocRes.ok) {
-                const ocData = await ocRes.json();
-                if (ocData.results && ocData.results.length > 0) {
-                    const best = ocData.results[0];
-                    bestAddress = best.formatted;
-                    bestName = best.components.tourism || best.components.pedestrian || best.components.road || "Ubicación genérica";
-                    bestSource = 'OPENCAGE';
-                    bestConfidence = (best.confidence || 0) / 10;
-                }
+    // --- LEVEL 1: PostGIS/H3 Cache (FREE & FAST) ---
+    try {
+        if (!process.env.DATABASE_URL) {
+            console.warn('[QA WARN] DATABASE_URL no definida. Saltando Nivel 1 (Caché).');
+        } else {
+            const cachedPlace = await memoryStore.findMatch(h3Index);
+            if (cachedPlace) {
+                console.log(`[QA] Level 1 Hit (Cache): ${cachedPlace.name}`);
+                return res.json(formatResponse(
+                    cachedPlace.name, null, targetLat, targetLng, 'LOCAL_CACHE_H3', 1.0, cachedPlace.place_id, true
+                ));
             }
-        } catch (err) {
-            console.error('OpenCage API error:', err.message);
         }
+    } catch (e) {
+        console.warn('[QA] Level 1 Cache Failure:', e.message);
     }
 
-    // 3. Google Places (New) - High precision semantic data
-    if (GOOGLE_API_KEY) {
+    // --- LEVEL 2: Google Places API New (HIGH PRECISION - NOW PRIMARY FALLBACK) ---
+    const GOOGLE_KEY = process.env.GOOGLE_MAPS_API_KEY;
+    let googleSuccess = false;
+    if (GOOGLE_KEY) {
         try {
-            const searchKeyword = landmarkFromVision || keywords || '';
             const placesUrl = 'https://places.googleapis.com/v1/places:searchNearby';
             const payload = {
-                includedTypes: ['tourist_attraction', 'museum', 'park', 'landmark', 'establishment'],
-                maxResultCount: 5,
                 locationRestriction: {
-                    circle: { center: { latitude: parseFloat(lat), longitude: parseFloat(lng) }, radius: radius }
-                }
+                    circle: { center: { latitude: targetLat, longitude: targetLng }, radius: radius }
+                },
+                maxResultCount: 1
             };
-
-            if (searchKeyword) payload.rankPreference = 'RELEVANCE';
 
             const placesRes = await fetch(placesUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-Goog-FieldMask': 'places.displayName,places.formattedAddress,places.types,places.id',
-                    'X-Goog-Api-Key': GOOGLE_API_KEY
+                    'X-Goog-Api-Key': GOOGLE_KEY,
+                    'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.types'
                 },
                 body: JSON.stringify(payload)
             });
 
             if (placesRes.ok) {
                 const data = await placesRes.json();
-                const places = data.places || [];
+                const place = data.places?.[0];
 
-                if (places.length > 0) {
-                    const PRIORITY = { tourist_attraction: 120, museum: 110, park: 100, landmark: 90, point_of_interest: 80, establishment: 50 };
-                    
-                    const best = places
-                        .filter(p => !isGenericName(p.displayName?.text))
-                        .sort((a, b) => {
-                            const scoreA = Math.max(...(a.types || []).map(t => PRIORITY[t] || 10));
-                            const scoreB = Math.max(...(b.types || []).map(t => PRIORITY[t] || 10));
-                            return scoreB - scoreA;
-                        })[0] || places[0];
-                    
-                    if (best && best.displayName?.text) {
-                        bestName = sanitize(best.displayName.text);
-                        bestAddress = best.formattedAddress || bestAddress;
-                        bestPlaceId = best.id;
-                        bestSource = 'GOOGLE_PLACES_NEW';
-                        bestConfidence = 0.95; // Google places is very confident
-                    }
-                }
-            }
-        } catch (err) {
-            console.error('Google Places API error:', err.message);
-        }
-    }
+                if (place && place.displayName?.text) {
+                    const name = place.displayName.text;
+                    const address = place.formattedAddress;
+                    const resultId = place.id;
+                    const type = place.types?.[0] || 'establishment';
 
-    // 4. Vision API priority (Verification required)
-    // If a landmark was extracted via Vision, use it ONLY if:
-    // a) Google Places matched it (already handled above)
-    // b) Google Places found nothing AND we don't have GPS (truly unknown area)
-    // c) Google Places found something, but it's a generic "Park" and our landmark is more specific
-    if (landmarkFromVision && bestSource !== 'GOOGLE_PLACES_NEW') {
-        const isDiscordant = bestSource === 'OPENCAGE' && bestAddress && !bestAddress.includes(landmarkFromVision.split(' ')[0]);
-        
-        if (!lat || !lng || !isDiscordant) {
-            bestName = sanitize(landmarkFromVision);
-            bestSource = 'VISION_API';
-            bestConfidence = 0.85; // Slightly below Google News
-        }
-    }
+                    // PERSISTENCE (v4.0)
+                    await memoryStore.savePlace(resultId, name, type, targetLat, targetLng);
+                    googleSuccess = true;
 
-    // Send final result back
-    if (bestName && bestSource) {
-        const resultItem = {
-            name: bestName,
-            address: bestAddress,
-            lat, lng,
-            timestamp: timestamp || Date.now(),
-            place_id: bestPlaceId
-        };
-        memoryStore.addCluster(resultItem);
-
-        return res.json(formatResponse(
-            bestName, bestAddress, lat, lng, bestSource, bestConfidence, bestPlaceId, false, timestamp
-        ));
-    }
-
-    // 5. Fallback AI (Ollama GIS Engine)
-    if (!bestName) {
-        try {
-            const prompt = `Actúa como motor GIS de alta precisión. Convierte las coordenadas ${lat}, ${lng} en una dirección estructurada siguiendo este esquema JSON: {'calle': 'string', 'numero': 'string', 'ciudad': 'string', 'cp': 'string'}. Prioriza precisión de nivel 'ROOFTOP' y, ante ambigüedad, selecciona el acceso vial más cercano. Devuelve exclusivamente el código JSON, sin preámbulos.`;
-            
-            const ollamaRes = await fetch('http://localhost:11434/api/generate', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    model: 'phi3', // Leader model for this local setup
-                    prompt: prompt,
-                    stream: false,
-                    format: 'json'
-                })
-            });
-
-            if (ollamaRes.ok) {
-                const ollamaData = await ollamaRes.json();
-                const aiResult = JSON.parse(ollamaData.response);
-                if (aiResult && aiResult.calle) {
-                    bestAddress = `${aiResult.calle} ${aiResult.numero || ''}, ${aiResult.ciudad || ''}`;
-                    bestName = bestAddress.trim();
-                    bestSource = 'OLLAMA_GIS_ENGINE';
-                    bestConfidence = 0.85;
-
-                    const resultItem = { name: bestName, address: bestAddress, lat, lng, timestamp: timestamp || Date.now(), place_id: null };
-                    memoryStore.addCluster(resultItem);
-
-                    return res.json(formatResponse(bestName, bestAddress, lat, lng, bestSource, bestConfidence, null, false, timestamp));
+                    return res.json(formatResponse(
+                        name, address, targetLat, targetLng, 'GOOGLE_PLACES_NEW', 0.99, resultId, false
+                    ));
                 }
             }
         } catch (e) {
-            console.error('Ollama GIS engine fallback failed:', e.message);
+            console.error('[QA] Level 2 Google Places Failure:', e.message);
         }
     }
 
-    // 6. Fallback: Coordinates only
-    const fallbackName = `${parseFloat(lat).toFixed(4)}, ${parseFloat(lng).toFixed(4)}`;
+    // --- LEVEL 3: OpenCage Fallback (ECONOMICAL - SECONDARY) ---
+    const OPENCAGE_KEY = process.env.OPENCAGE_API_KEY || process.env.VITE_OPENCAGE_API_KEY;
+    if (!googleSuccess && OPENCAGE_KEY) {
+        try {
+            const ocRes = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${roundedLat},${roundedLng}&key=${OPENCAGE_KEY}&language=es&no_annotations=1`);
+            if (ocRes.ok) {
+                const ocData = await ocRes.json();
+                if (ocData.results && ocData.results.length > 0) {
+                    const best = ocData.results[0];
+                    const ocConfidence = (best.confidence || 0) / 10;
+                    
+                    const name = best.components.tourism || best.components.landscape || best.components.pedestrian || best.formatted;
+
+                    // WARNING: If it returns "Münster", it's likely a sandbox/tier issue
+                    if (name.includes("Münster")) {
+                        console.warn('[QA] OpenCage returned Münster. Ignoring as likely sandbox limitation.');
+                    } else {
+                        // PERSISTENCE (v4.0)
+                        await memoryStore.savePlace('oc_' + (best.annotations?.MGRS || Date.now()), name, 'point_of_interest', targetLat, targetLng);
+                        
+                        return res.json(formatResponse(
+                            name, best.formatted, targetLat, targetLng, 'OPENCAGE', ocConfidence, null, false
+                        ));
+                    }
+                }
+            }
+        } catch (e) {
+            console.warn('[QA] Level 3 OpenCage Failure:', e.message);
+        }
+    }
+
+    // --- FINAL FALLBACK: Coordinates Only ---
     return res.json(formatResponse(
-        fallbackName, bestAddress || "Unknown", lat, lng, 'COORDINATES_ONLY', 0.1, null, false, timestamp
+        `${roundedLat}, ${roundedLng}`, "Coordenadas puras (Sin resultados)", targetLat, targetLng, 'COORDINATES_ONLY', 0.1, null, false
     ));
 }

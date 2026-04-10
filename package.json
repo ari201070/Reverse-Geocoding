@@ -13,6 +13,7 @@
     "serve": "opencode serve"
   },
   "dependencies": {
+    "busboy": "^1.6.0",
     "dotenv": "^17.2.3",
     "exifr": "^7.1.0",
     "h3-js": "^4.4.0",

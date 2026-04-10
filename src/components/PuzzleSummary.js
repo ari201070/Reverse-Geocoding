@@ -62,8 +62,11 @@ export function renderPuzzleSummary(container, batchData) {
       </div>
       
       ${isWarning ? `
-        <div class="mt-3 p-2 bg-amber-100/50 rounded text-[11px] text-amber-800 flex items-center border border-amber-200">
-          ${icons.alert} <span><strong>Sugerencia:</strong> El sistema tiene dudas. Revisa las fotos sin "Ancla" o agrega una manualmente.</span>
+        <div class="mt-3 p-2 bg-amber-100/50 rounded text-[11px] text-amber-800 flex flex-col gap-1 border border-amber-200">
+          <div class="flex items-center">
+            ${icons.alert} <strong>Sugerencia de Validación:</strong>
+          </div>
+          <p class="ml-5">Faltan señales claras en algunas fotos. Para resolver el lote, identifica una foto clave como <strong>"Ancla"</strong> o escribe el nombre del lugar manualmente en el editor de arriba.</p>
         </div>
       ` : ''}
     </div>

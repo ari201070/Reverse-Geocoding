@@ -46,24 +46,27 @@ const server = http.createServer(async (req, res) => {
                 const handler = module.default || module; // Soporte CJS/ESM
                 
                 // Leer body solo si hay datos (POST/PUT)
-                let body = '';
+                let chunks = [];
                 await new Promise((resolve) => {
-                    req.on('data', chunk => { body += chunk; });
+                    req.on('data', chunk => { chunks.push(chunk); });
                     req.on('end', resolve);
                 });
+                const rawBody = Buffer.concat(chunks);
 
                 let parsedBody = {};
-                if (body) {
+                const contentType = req.headers['content-type'] || '';
+                if (contentType.includes('application/json') && rawBody.length > 0) {
                     try {
-                        parsedBody = JSON.parse(body);
+                        parsedBody = JSON.parse(rawBody.toString());
                     } catch (e) {
-                        console.warn(`[API] No se pudo parsear el body como JSON: ${body.substring(0, 100)}`);
+                        console.warn(`[API] No se pudo parsear el body como JSON`);
                     }
                 }
 
                 const vercelReq = {
                     ...req,
                     body: parsedBody,
+                    rawBody: rawBody, // Preservar para multipart
                     query: parsedUrl.query,
                     method: req.method,
                     headers: req.headers
