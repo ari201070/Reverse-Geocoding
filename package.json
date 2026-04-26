@@ -13,12 +13,14 @@
     "serve": "opencode serve"
   },
   "dependencies": {
+    "@openrouter/agent": "^0.4.0",
     "busboy": "^1.6.0",
     "dotenv": "^17.2.3",
     "exifr": "^7.1.0",
     "h3-js": "^4.4.0",
     "node-fetch": "^3.3.2",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "concurrently": "^8.0.0",

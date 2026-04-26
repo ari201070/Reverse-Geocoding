@@ -654,12 +654,29 @@ function analyzeClusterIntelligence(cluster) {
    let maxScore = -1;
    let anchor = cluster[0];
    
+   // Prioridad 1: GPS preciso (no 0,0)
+   
    cluster.forEach(p => {
       let score = 0;
-      if (p.lat && p.lng) score += 50; // GPS is strong
-      if (p.visionLandmarks?.length) score += 40; // Recognizable landmark
-      if (p.visionTexts?.length) score += 20; // OCR data
-      if (p.poi && !isGenericName(p.poi)) score += 10;
+      
+      // GPS solo cuenta si es real (no 0,0)
+      if (p.lat && p.lng && Math.abs(p.lat) > 0.001 && Math.abs(p.lng) > 0.001) {
+         score += 100; // GPS real es lo primero
+         
+         // Bonus por precision de GPS EXIF (si existe)
+         if (p.gpsAccuracy && p.gpsAccuracy < 50) score += 20;
+      }
+      
+      // Prioridad 2: Nombre válido (no genérico)
+      if (p.poi && !isGenericName(p.poi)) {
+         score += 50;
+      }
+      
+      // Prioridad 3: Landmarks visuales
+      if (p.visionLandmarks?.length) score += 30;
+      
+      // Prioridad 4: OCR texto (ruido ya se filtra en backend)
+      if (p.visionTexts?.length) score += 10;
       
       if (score > maxScore) {
          maxScore = score;
@@ -1474,7 +1491,7 @@ async function reverseGeocodeOpenCage(lat, lng) {
   if (!apiKey) return null;
   
   try {
-    const url = `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lng}&key=${apiKey}&language=es&no_annotations=1`;
+    const url = `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lng}&key=${apiKey}&language=es&no_annotations=1&no_record=true`;
     const res = await fetch(url);
     const data = await res.json();
     if (data.results && data.results.length > 0) {

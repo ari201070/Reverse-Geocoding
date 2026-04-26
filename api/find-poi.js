@@ -120,7 +120,7 @@ export default async function handler(req, res) {
     const OPENCAGE_KEY = process.env.OPENCAGE_API_KEY || process.env.VITE_OPENCAGE_API_KEY;
     if (!googleSuccess && OPENCAGE_KEY) {
         try {
-            const ocRes = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${roundedLat},${roundedLng}&key=${OPENCAGE_KEY}&language=es&no_annotations=1`);
+            const ocRes = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${roundedLat},${roundedLng}&key=${OPENCAGE_KEY}&language=es&no_annotations=1&no_record=true`);
             if (ocRes.ok) {
                 const ocData = await ocRes.json();
                 if (ocData.results && ocData.results.length > 0) {
