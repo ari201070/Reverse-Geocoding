@@ -4,8 +4,10 @@ export default async (req, res) => {
     return res.status(405).json({ error: 'Method not allowed' });
   }
   
-  // Only expose the Maps key (restrict it by domain in Google Cloud Console)
+  // Do NOT expose the raw Maps key to the frontend.
+  // Return only a presence flag so the client knows whether a key is configured.
   return res.status(200).json({
-    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || ''
+    googleMapsKeyPresent: !!process.env.GOOGLE_MAPS_API_KEY,
+    nodeEnv: process.env.NODE_ENV || 'development'
   });
 };
