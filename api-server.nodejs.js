@@ -116,6 +116,50 @@ const server = http.createServer(async (req, res) => {
             res.end(JSON.stringify({ error: `Not Found: ${filePath}` }));
         }
     } else {
+        // Try to serve static files from ./dist (built frontend). If not found,
+        // fallback to returning ./dist/index.html so SPA routing works.
+        const distDir = path.join(process.cwd(), 'dist');
+        let assetPath = pathname === '/' ? '/index.html' : pathname;
+        // Prevent directory traversal
+        assetPath = assetPath.replace(/\.{2,}/g, '');
+        const filePath = path.join(distDir, assetPath);
+
+        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            const mimeTypes = {
+                '.html': 'text/html; charset=utf-8',
+                '.js': 'application/javascript; charset=utf-8',
+                '.css': 'text/css; charset=utf-8',
+                '.json': 'application/json; charset=utf-8',
+                '.svg': 'image/svg+xml',
+                '.png': 'image/png',
+                '.jpg': 'image/jpeg',
+                '.jpeg': 'image/jpeg',
+                '.webp': 'image/webp',
+                '.ico': 'image/x-icon',
+                '.woff': 'font/woff',
+                '.woff2': 'font/woff2',
+                '.ttf': 'font/ttf'
+            };
+            const mime = mimeTypes[ext] || 'application/octet-stream';
+            res.setHeader('Content-Type', mime);
+            const stream = fs.createReadStream(filePath);
+            stream.pipe(res);
+            stream.on('error', () => {
+                res.statusCode = 500;
+                res.end('Internal Server Error');
+            });
+            return;
+        }
+
+        // If file not found, try serving index.html for SPA routes
+        const indexFile = path.join(distDir, 'index.html');
+        if (fs.existsSync(indexFile)) {
+            res.setHeader('Content-Type', 'text/html; charset=utf-8');
+            fs.createReadStream(indexFile).pipe(res);
+            return;
+        }
+
         res.statusCode = 404;
         res.end('Not Found');
     }
