@@ -116,6 +116,24 @@ const server = http.createServer(async (req, res) => {
             res.end(JSON.stringify({ error: `Not Found: ${filePath}` }));
         }
     } else {
+        // First, serve some well-known root assets (sw.js, manifest.json, locales)
+        // from the project root when they are not part of the build output.
+        const rootFileCandidates = ['sw.js', 'manifest.json'];
+        if (pathname === '/sw.js' || pathname === '/manifest.json' || pathname.startsWith('/locales/')) {
+            const rootPath = path.join(process.cwd(), pathname === '/' ? '' : pathname);
+            if (fs.existsSync(rootPath) && fs.statSync(rootPath).isFile()) {
+                const ext = path.extname(rootPath).toLowerCase();
+                const mimeTypesRoot = {
+                    '.js': 'application/javascript; charset=utf-8',
+                    '.json': 'application/json; charset=utf-8',
+                    '.html': 'text/html; charset=utf-8'
+                };
+                res.setHeader('Content-Type', mimeTypesRoot[ext] || 'application/octet-stream');
+                fs.createReadStream(rootPath).pipe(res);
+                return;
+            }
+        }
+
         // Try to serve static files from ./dist (built frontend). If not found,
         // fallback to returning ./dist/index.html so SPA routing works.
         const distDir = path.join(process.cwd(), 'dist');
