@@ -3,9 +3,10 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   server: {
     strictPort: false,
+    // Allow overriding HMR host/protocol via env for tunnel compatibility
     hmr: {
-      protocol: 'ws',
-      host: 'localhost',
+      protocol: process.env.VITE_HMR_PROTOCOL || 'ws',
+      host: process.env.VITE_HMR_HOST || 'localhost',
     },
     proxy: {
       '/api': {
