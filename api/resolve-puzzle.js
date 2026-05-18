@@ -4,7 +4,7 @@ import findPoiHandler from './find-poi.js';
 import { sanitizeString as sanitize } from './python-service.js';
 import { latLngToCell } from 'h3-js';
 import crypto from 'crypto';
-import { callModel, tool, createInitialState, buildTurnContext, Agent } from '@openrouter/agent';
+import { callModel, tool, createInitialState, buildTurnContext } from '@openrouter/agent';
 import { z } from 'zod';
 import { loadSkill, listAvailableSkills } from './utils/skill-loader.js';
 import { MASTER_PROMPTS, cleanJSONResponse } from './utils/prompts.js';
@@ -222,7 +222,6 @@ async function performGeocodingCascade(lat, lng, radius, keywords) {
     }
 
     const OPENCAGE_KEY = process.env.OPENCAGE_API_KEY || process.env.VITE_OPENCAGE_API_KEY;
-    // Preferir la clave de backend OPENCAGE_API_KEY; VITE_OPENCAGE_API_KEY funciona como fallback local/dev.
     if (OPENCAGE_KEY) {
         try {
             const res = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${roundedLat},${roundedLng}&key=${OPENCAGE_KEY}&language=es&no_annotations=1&no_record=true`);
