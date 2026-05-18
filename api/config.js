@@ -9,13 +9,10 @@ export default async (req, res) => {
   // configured; all calls requiring the key should be proxied through
   // server endpoints.
   const key = process.env.GOOGLE_MAPS_API_KEY || '';
-  // Only expose the key in non-production when explicitly allowed via
-  // DEV_EXPOSE_KEY=true. This prevents accidental leakage but allows
-  // local testing when the developer opts in.
-  const exposeKey = (process.env.NODE_ENV || 'development') !== 'production' && process.env.DEV_EXPOSE_KEY === 'true';
 
   return res.status(200).json({
-    googleMapsApiKey: exposeKey ? key : '',
+    // always empty to avoid any accidental leakage
+    googleMapsApiKey: '',
     // boolean flag so frontend can know whether backend has a key configured
     googleMapsKeyPresent: !!key,
     nodeEnv: process.env.NODE_ENV || 'development'
