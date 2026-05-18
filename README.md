@@ -44,6 +44,8 @@ Despliegue en Vercel (sugerido):
 1. Crear un nuevo proyecto en Vercel y conectar el repo.
 2. En Settings → Environment Variables, agregar:
    - GOOGLE_MAPS_API_KEY = <tu clave>
+   - OPENCAGE_API_KEY = <tu clave si usas OpenCage como fallback>
+   - PICARTA_API_TOKEN = <tu token Picarta>
 3. Push a GitHub; Vercel hará build/deploy automáticamente. La función serverless quedará disponible en /api/find-poi.
 
 Notas de privacidad y seguridad:
@@ -57,3 +59,31 @@ Siguientes pasos recomendados:
 - Si deseas reconocimiento visual (Vision API / Gemini Vision) y combinarlo con geocoding, implementa un endpoint backend separado que invoque Vision (no usar la API Key desde el cliente).
 - Ajustar `POI_DISTANCE_THRESHOLD_M` según la precisión de tus fotos.
 - Añadir limitación por usuario y logging si la app quedará pública.
+
+**Prueba: Exponer temporalmente la clave (solo local)**
+
+Si quieres probar rápidamente cómo se vería la clave desde `api/config.js` sin tocar `main`, crea una rama temporal, aplica el cambio localmente, reinicia el servidor y verifica. Pasos sugeridos:
+
+1. Crear y cambiar a una rama temporal:
+
+```
+git checkout -b temp/expose-key
+```
+
+2. Editar `api/config.js` y reemplazar la línea `googleMapsApiKey: ''` por `googleMapsApiKey: key` (solo para desarrollo).
+
+3. Reiniciar el servidor API local y comprobar la respuesta:
+
+```
+npm run api-server &
+curl -s http://localhost:3000/api/config | jq .
+```
+
+4. Cuando termines, vuelve a `main` y borra la rama temporal:
+
+```
+git checkout main
+git branch -D temp/expose-key
+```
+
+Advertencia: no expongas la clave en `main` ni la subas a repositorios públicos. Usa esta prueba solo en un entorno local y temporal.
