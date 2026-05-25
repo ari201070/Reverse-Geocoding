@@ -38,5 +38,21 @@
   "map_error": "שגיאה בטעינת המפה. בדוק את החיבור או את מפתח ה-API.",
   "manual_geo_alert": "לחץ על המפה הראשית כדי לקבוע מיקום לתמונה זו.",
   "select_photo_first": "בחר תמונה תחילה.",
-  "albums_title": "אלבומים מוצעים"
+  "albums_title": "אלבומים מוצעים",
+  "hitl_title": "לוח בקרת הסכמה אנושית (HITL)",
+  "hitl_subtitle": "תור ביקורת אנושית לרשומות הממתינות לאימות ברמת אמון בינונית (40% - 75%).",
+  "hitl_empty": "אין רשומות הממתינות לביקורת בתור.",
+  "hitl_col_place": "מקום מוצע",
+  "hitl_col_coords": "קואורדינטות (אנונימי)",
+  "hitl_col_confidence": "רמת אמון",
+  "hitl_col_evidence": "ראיות / וטו",
+  "hitl_col_actions": "פעולות ביקורת",
+  "hitl_btn_approve": "אשר 🤝",
+  "hitl_btn_reject": "דחה ❌",
+  "hitl_btn_edit": "ערוך ✏️",
+  "hitl_edit_modal_title": "תקן מקום וקואורדינטות",
+  "hitl_edit_modal_name": "שם מתוקן:",
+  "hitl_edit_modal_lat": "קו רוחב:",
+  "hitl_edit_modal_lng": "קו אורך:",
+  "hitl_edit_modal_save": "שמור ואשר"
 }

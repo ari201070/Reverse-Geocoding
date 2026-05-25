@@ -84,4 +84,27 @@ async function reconcileName(ocrText, officialName) {
   return res.json();
 }
 
-export { checkHealth, analyzeExif, reconcileName };
+/**
+ * Envía datos al microservicio Python para calcular el puntaje de consenso ponderado de Antigravity 2.0 y veto solar.
+ * @param {object} params - { lat, lng, timestamp, ocr_score, landmark_score, observed_shadow_direction }
+ * @returns {{ confidence_score: number, review_status: string, solar_divergence: number, evidence: string }}
+ */
+async function calculateConsensus(params) {
+  const res = await fetch(`${PYTHON_SERVICE_URL}/calculate-consensus`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      lat: params.lat,
+      lng: params.lng,
+      timestamp: params.timestamp,
+      ocr_score: params.ocr_score,
+      landmark_score: params.landmark_score,
+      observed_shadow_direction: params.observed_shadow_direction
+    }),
+  });
+
+  if (!res.ok) throw new Error(`Consensus service error: ${res.status}`);
+  return res.json();
+}
+
+export { checkHealth, analyzeExif, reconcileName, calculateConsensus };

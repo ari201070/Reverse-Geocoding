@@ -133,6 +133,18 @@ const el = {
   imagesInput: document.getElementById("imagesInput"),
   usePicarta: document.getElementById("usePicarta"),
   langSelector: document.getElementById("langSelector"),
+  // HITL (Human-in-the-Loop) Queue Elements
+  hitlSection: document.getElementById("hitlSection"),
+  hitlQueueBody: document.getElementById("hitlQueueBody"),
+  refreshHitlBtn: document.getElementById("refreshHitlBtn"),
+  hitlEditModal: document.getElementById("hitlEditModal"),
+  closeHitlEditBtn: document.getElementById("closeHitlEditBtn"),
+  cancelHitlEditBtn: document.getElementById("cancelHitlEditBtn"),
+  saveHitlEditBtn: document.getElementById("saveHitlEditBtn"),
+  hitlEditId: document.getElementById("hitlEditId"),
+  hitlEditName: document.getElementById("hitlEditName"),
+  hitlEditLat: document.getElementById("hitlEditLat"),
+  hitlEditLng: document.getElementById("hitlEditLng"),
 };
 
 let batchFiles = []; // To store current batch files and their metadata
@@ -840,38 +852,6 @@ Responde ÚNICAMENTE en JSON con este formato: {"poi": "Nombre del lugar", "reas
   }
 }
 
-async function analyzeImageWithOllama(file) {
-  // Convertir file a base64
-  return new Promise((resolve) => {
-    const reader = new FileReader();
-    reader.onloadend = async () => {
-      const base64 = reader.result.split(',')[1];
-      try {
-        const res = await fetch('/api/ollama', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'moondream',
-            prompt: "Describe this image in 3-5 keywords, focus on landmarks if visible.",
-            images: [base64]
-          })
-        });
-
-        if (!res.ok) return resolve(null);
-        const data = await res.json();
-        const keywords = data.response.split(',').map(k => k.trim());
-        resolve({
-          labels: keywords,
-          landmarks: [] 
-        });
-      } catch (e) {
-        console.warn("Ollama Vision failed:", e);
-        resolve(null);
-      }
-    };
-    reader.readAsDataURL(file);
-  });
-}
 el.saveBatchBtn.addEventListener("click", () => {
   const commonStr = el.commonDesc.value.trim();
   batchFiles.forEach(bf => {
@@ -1463,6 +1443,9 @@ window.onload = async () => {
     const files = Array.from(ev.target.files || []);
     for (const file of files) await createPhotoItem(file);
   });
+
+  // Load Human-in-the-Loop Queue (Antigravity 2.0)
+  await loadHitlQueue();
 };
 /**
  * Intenta extraer GPS de múltiples fuentes (EXIF, XMP, IPTC)
@@ -1794,8 +1777,261 @@ function filterByAlbum(title, albumPhotos = []) {
      }
    });
 
-   if (hasCoords) {
-     map.fitBounds(bounds);
-     if (map.getZoom() > 18) map.setZoom(17);
-   }
+    if (hasCoords) {
+      map.fitBounds(bounds);
+      if (map.getZoom() > 18) map.setZoom(17);
+    }
 }
+
+// --- Missing Language & HITL queue (Antigravity 2.0) ---
+
+async function setLanguage(lang) {
+  currentLanguage = lang;
+  localStorage.setItem("language", lang);
+  await initI18n();
+  // Also load the HITL queue to refresh the translation labels in real-time!
+  await loadHitlQueue();
+}
+
+// Global variable for current edit item ID in modal
+let activeHitlEditId = null;
+
+async function loadHitlQueue() {
+  if (!el.hitlQueueBody) return;
+  
+  try {
+    const res = await fetch('/api/operator-queue');
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    const pendingItems = await res.json();
+    
+    // Clear dynamic queue body
+    el.hitlQueueBody.innerHTML = "";
+    
+    if (pendingItems.length === 0) {
+      el.hitlQueueBody.innerHTML = `
+        <tr>
+          <td colspan="5" class="py-6 text-center text-slate-400 italic" data-t="hitl_empty">
+            ${t('hitl_empty')}
+          </td>
+        </tr>
+      `;
+      return;
+    }
+    
+    pendingItems.forEach(item => {
+      const row = document.createElement("tr");
+      row.className = "border-b border-white/5 hover:bg-white/[0.02] transition-colors";
+      row.dataset.id = item.id;
+      
+      // Parse confidence to score percentage and HSL color
+      const score = item.confidence_score !== null ? parseFloat(item.confidence_score) : 0.50;
+      const pct = Math.round(score * 100);
+      // HSL tailored color: red at 0%, orange at 40%, green/teal at 100%
+      const hue = Math.round(score * 120); // 0 (red) to 120 (green)
+      const scoreStyle = `background-color: hsla(${hue}, 80%, 40%, 0.15); color: hsl(${hue}, 85%, 70%); border: 1px solid hsla(${hue}, 80%, 40%, 0.3);`;
+      
+      // Extract evidence or metadata
+      let evidenceText = "";
+      if (item.metadata_evidence) {
+        if (typeof item.metadata_evidence === "object") {
+          evidenceText = item.metadata_evidence.evidence || JSON.stringify(item.metadata_evidence);
+        } else {
+          try {
+            const parsed = JSON.parse(item.metadata_evidence);
+            evidenceText = parsed.evidence || item.metadata_evidence;
+          } catch(e) {
+            evidenceText = item.metadata_evidence;
+          }
+        }
+      } else {
+        evidenceText = t("status_analyzing");
+      }
+      
+      // Render columns
+      row.innerHTML = `
+        <td class="py-3.5 px-4 font-semibold text-white">
+          <div class="flex flex-col gap-0.5">
+            <span>${item.name}</span>
+            <span class="text-[10px] text-slate-400 font-mono tracking-wider">H3: ${item.h3_res9}</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 font-mono text-xs text-teal-400/80">
+          ${parseFloat(item.lat).toFixed(4)}, ${parseFloat(item.lng).toFixed(4)}
+        </td>
+        <td class="py-3.5 px-4">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold font-mono tracking-tight" style="${scoreStyle}">
+            ${pct}%
+          </span>
+        </td>
+        <td class="py-3.5 px-4 text-xs text-slate-300 max-w-xs truncate" title="${evidenceText}">
+          ${evidenceText}
+        </td>
+        <td class="py-3.5 px-4 text-center">
+          <div class="flex items-center justify-center gap-2">
+            <button class="btn btn-mini btn-approve bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-black font-semibold transition-all duration-200 py-1 px-2.5 rounded text-xs border border-emerald-500/20 shadow-sm" data-id="${item.id}" data-t="hitl_btn_approve">
+              ${t('hitl_btn_approve')}
+            </button>
+            <button class="btn btn-mini btn-reject bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-black font-semibold transition-all duration-200 py-1 px-2.5 rounded text-xs border border-red-500/20 shadow-sm" data-id="${item.id}" data-t="hitl_btn_reject">
+              ${t('hitl_btn_reject')}
+            </button>
+            <button class="btn btn-mini btn-edit bg-teal-500/10 text-teal-400 hover:bg-teal-500 hover:text-black font-semibold transition-all duration-200 py-1 px-2.5 rounded text-xs border border-teal-500/20 shadow-sm" data-id="${item.id}" data-name="${item.name}" data-lat="${item.lat}" data-lng="${item.lng}" data-t="hitl_btn_edit">
+              ${t('hitl_btn_edit')}
+            </button>
+          </div>
+        </td>
+      `;
+      
+      // Wire button click handlers in the row
+      row.querySelector('.btn-approve').onclick = () => resolveHitlQueue(item.id, 'APPROVE');
+      row.querySelector('.btn-reject').onclick = () => resolveHitlQueue(item.id, 'REJECT');
+      row.querySelector('.btn-edit').onclick = (e) => {
+        const btn = e.currentTarget;
+        openHitlEditModal(
+          btn.dataset.id,
+          btn.dataset.name,
+          btn.dataset.lat,
+          btn.dataset.lng
+        );
+      };
+      
+      el.hitlQueueBody.appendChild(row);
+    });
+  } catch (error) {
+    console.error("[HITL] Error loading queue:", error);
+    if (el.hitlQueueBody) {
+      el.hitlQueueBody.innerHTML = `
+        <tr>
+          <td colspan="5" class="py-6 text-center text-red-400 italic">
+            Error al conectar con la cola: ${error.message}
+          </td>
+        </tr>
+      `;
+    }
+  }
+}
+
+async function resolveHitlQueue(id, action, correctedData = null) {
+  try {
+    const res = await fetch('/api/operator-queue', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, action, correctedData })
+    });
+    
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error || `Server error: ${res.status}`);
+    }
+    
+    const data = await res.json();
+    
+    // Provide gorgeous floating toast notification
+    if (action === 'APPROVE') {
+      showToast(currentLanguage === 'he' ? 'רשומה אושרה בהצלחה 🤝' : '¡Registro aprobado con éxito! 🤝', 'success');
+    } else if (action === 'REJECT') {
+      showToast(currentLanguage === 'he' ? 'רשומה נדחתה בהצלחה ❌' : '¡Registro rechazado con éxito! ❌', 'danger');
+    } else {
+      showToast(currentLanguage === 'he' ? 'רשומה עודכנה ואושרה ✏️' : '¡Registro corregido y aprobado! ✏️', 'info');
+    }
+    
+    // Refresh queue and list
+    await loadHitlQueue();
+    updateAlbumGallery();
+  } catch (error) {
+    console.error("[HITL] Error resolving review:", error);
+    showToast(`Error: ${error.message}`, 'danger');
+  }
+}
+
+function openHitlEditModal(id, name, lat, lng) {
+  if (!el.hitlEditModal) return;
+  activeHitlEditId = id;
+  
+  if (el.hitlEditId) el.hitlEditId.value = id;
+  if (el.hitlEditName) el.hitlEditName.value = name || '';
+  if (el.hitlEditLat) el.hitlEditLat.value = parseFloat(lat).toFixed(4);
+  if (el.hitlEditLng) el.hitlEditLng.value = parseFloat(lng).toFixed(4);
+  
+  el.hitlEditModal.style.display = "block";
+}
+
+function closeHitlEditModal() {
+  if (el.hitlEditModal) {
+    el.hitlEditModal.style.display = "none";
+  }
+  activeHitlEditId = null;
+}
+
+function showToast(message, type = 'success') {
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type} fixed bottom-5 right-5 px-4 py-3 rounded-lg shadow-xl text-white font-medium z-[9999] transition-all duration-300 transform translate-y-10 opacity-0`;
+  
+  // HSL customized gradient styles for WOW effect
+  if (type === 'success') {
+    toast.style.background = 'linear-gradient(135deg, #10b981, #059669)'; // Emerald
+    toast.style.border = '1px solid rgba(16, 185, 129, 0.2)';
+    toast.style.boxShadow = '0 10px 15px -3px rgba(16, 185, 129, 0.4), 0 4px 6px -2px rgba(16, 185, 129, 0.2)';
+  } else if (type === 'danger') {
+    toast.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)'; // Red
+    toast.style.border = '1px solid rgba(239, 68, 68, 0.2)';
+    toast.style.boxShadow = '0 10px 15px -3px rgba(239, 68, 68, 0.4), 0 4px 6px -2px rgba(239, 68, 68, 0.2)';
+  } else {
+    toast.style.background = 'linear-gradient(135deg, #06b6d4, #0891b2)'; // Cyan/Teal
+    toast.style.border = '1px solid rgba(6, 182, 212, 0.2)';
+    toast.style.boxShadow = '0 10px 15px -3px rgba(6, 182, 212, 0.4), 0 4px 6px -2px rgba(6, 182, 212, 0.2)';
+  }
+  
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  
+  // CSS Entry micro-animation
+  setTimeout(() => {
+    toast.classList.remove('translate-y-10', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+  }, 10);
+  
+  // Exit and removal
+  setTimeout(() => {
+    toast.classList.remove('translate-y-0', 'opacity-100');
+    toast.classList.add('translate-y-10', 'opacity-0');
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+// Initialize event listeners for HITL
+if (el.refreshHitlBtn) {
+  el.refreshHitlBtn.onclick = () => loadHitlQueue();
+}
+if (el.closeHitlEditBtn) {
+  el.closeHitlEditBtn.onclick = () => closeHitlEditModal();
+}
+if (el.cancelHitlEditBtn) {
+  el.cancelHitlEditBtn.onclick = () => closeHitlEditModal();
+}
+if (el.saveHitlEditBtn) {
+  el.saveHitlEditBtn.onclick = async () => {
+    const id = el.hitlEditId.value;
+    const name = el.hitlEditName.value.trim();
+    const lat = parseFloat(el.hitlEditLat.value);
+    const lng = parseFloat(el.hitlEditLng.value);
+    
+    if (!name) {
+      showToast(currentLanguage === 'he' ? 'אנא הזן שם מקום תקין' : 'Por favor ingresá un nombre válido.', 'danger');
+      return;
+    }
+    if (isNaN(lat) || isNaN(lng)) {
+      showToast(currentLanguage === 'he' ? 'אנא הזן קואורדינטות תקינות' : 'Por favor ingresá coordenadas válidas.', 'danger');
+      return;
+    }
+    
+    await resolveHitlQueue(id, 'EDIT', { name, lat, lng });
+    closeHitlEditModal();
+  };
+}
+
+// Close HITL edit modal when clicking outside
+window.addEventListener("click", (e) => {
+  if (e.target === el.hitlEditModal) {
+    closeHitlEditModal();
+  }
+});

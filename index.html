@@ -107,6 +107,38 @@
       </div>
     </section>
 
+    <section id="hitlSection" class="panel mt-6 transition-all duration-300 shadow-lg hover:shadow-2xl">
+      <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+        <div>
+          <h2 class="text-xl font-extrabold bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent flex items-center gap-2" data-t="hitl_title">
+            Panel de Auditoría de Consenso (HITL) <span class="animate-ping inline-flex h-2.5 w-2.5 rounded-full bg-teal-400 opacity-75"></span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1" data-t="hitl_subtitle">Cola de revisión humana para registros pendientes de validación de confianza media (40% - 75%).</p>
+        </div>
+        <button id="refreshHitlBtn" class="btn btn-mini bg-teal-500/20 text-teal-400 hover:bg-teal-500 hover:text-black font-semibold transition-all">🔄 Refresh</button>
+      </div>
+      
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-sm text-left border-collapse">
+          <thead>
+            <tr class="border-b border-white/10 text-slate-300 font-semibold">
+              <th class="py-3 px-4" data-t="hitl_col_place">Lugar sugerido</th>
+              <th class="py-3 px-4" data-t="hitl_col_coords">Coordenadas (Anon)</th>
+              <th class="py-3 px-4" data-t="hitl_col_confidence">Confianza</th>
+              <th class="py-3 px-4" data-t="hitl_col_evidence">Evidencia / Veto</th>
+              <th class="py-3 px-4 text-center" data-t="hitl_col_actions">Acciones de Auditoría</th>
+            </tr>
+          </thead>
+          <tbody id="hitlQueueBody" class="divide-y divide-white/5 text-slate-200">
+            <!-- Cargado dinámicamente -->
+            <tr>
+              <td colspan="5" class="py-6 text-center text-slate-400 italic" data-t="hitl_empty">No hay registros pendientes de revisión en la cola.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <section id="content">
       <div id="sidePane">
         <aside id="photosPane" class="panel">
@@ -160,6 +192,37 @@
         <div class="rowButtons" style="justify-content: flex-end; margin-top:20px;">
           <button id="cancelBatchBtn" class="btn" data-t="btn_cancel">Cancelar</button>
           <button id="saveBatchBtn" class="btn primary" data-t="btn_save_all" disabled>Guardar Todo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edición HITL -->
+  <div id="hitlEditModal" class="modal">
+    <div class="modal-content panel max-w-md mx-auto mt-20">
+      <div class="modal-header border-b border-white/10 pb-3 mb-4">
+        <h2 class="text-lg font-bold text-teal-400" data-t="hitl_edit_modal_title">Corregir Lugar y Coordenadas</h2>
+        <button id="closeHitlEditBtn" class="delete-btn" style="opacity:1; position:static">×</button>
+      </div>
+      <div class="flex flex-col gap-4 text-sm">
+        <input type="hidden" id="hitlEditId" />
+        <div class="flex flex-col gap-2">
+          <label class="text-slate-300" data-t="hitl_edit_modal_name">Nombre corregido:</label>
+          <input type="text" id="hitlEditName" class="w-full bg-slate-950 border border-white/10 rounded-lg p-2.5 text-white focus:border-teal-500 focus:outline-none" />
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col gap-2">
+            <label class="text-slate-300" data-t="hitl_edit_modal_lat">Latitud:</label>
+            <input type="number" id="hitlEditLat" step="0.0001" class="w-full bg-slate-950 border border-white/10 rounded-lg p-2.5 text-white focus:border-teal-500 focus:outline-none" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-slate-300" data-t="hitl_edit_modal_lng">Longitud:</label>
+            <input type="number" id="hitlEditLng" step="0.0001" class="w-full bg-slate-950 border border-white/10 rounded-lg p-2.5 text-white focus:border-teal-500 focus:outline-none" />
+          </div>
+        </div>
+        <div class="flex justify-end gap-3 mt-4 border-t border-white/10 pt-4">
+          <button id="cancelHitlEditBtn" class="btn bg-slate-800 hover:bg-slate-700" data-t="btn_cancel">Cancelar</button>
+          <button id="saveHitlEditBtn" class="btn primary bg-teal-500 text-black font-semibold hover:bg-teal-400" data-t="hitl_edit_modal_save">Guardar y Aprobar</button>
         </div>
       </div>
     </div>

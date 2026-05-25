@@ -38,5 +38,21 @@
   "map_error": "Error al cargar el mapa. Verifica tu conexión o API Key.",
   "manual_geo_alert": "Hacé click en el mapa principal para asignar ubicación a esta foto.",
   "select_photo_first": "Seleccioná una foto primero.",
-  "albums_title": "Álbumes Sugeridos"
+  "albums_title": "Álbumes Sugeridos",
+  "hitl_title": "Panel de Auditoría de Consenso (HITL)",
+  "hitl_subtitle": "Cola de revisión humana para registros pendientes de validación de confianza media (40% - 75%).",
+  "hitl_empty": "No hay registros pendientes de revisión en la cola.",
+  "hitl_col_place": "Lugar sugerido",
+  "hitl_col_coords": "Coordenadas (Anon)",
+  "hitl_col_confidence": "Confianza",
+  "hitl_col_evidence": "Evidencia / Veto",
+  "hitl_col_actions": "Acciones de Auditoría",
+  "hitl_btn_approve": "Aprobar 🤝",
+  "hitl_btn_reject": "Rechazar ❌",
+  "hitl_btn_edit": "Editar ✏️",
+  "hitl_edit_modal_title": "Corregir Lugar y Coordenadas",
+  "hitl_edit_modal_name": "Nombre corregido:",
+  "hitl_edit_modal_lat": "Latitud:",
+  "hitl_edit_modal_lng": "Longitud:",
+  "hitl_edit_modal_save": "Guardar y Aprobar"
 }
