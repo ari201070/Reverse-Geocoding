@@ -6,6 +6,7 @@ import { exec } from "child_process";
 import { initDatabase, insertAnchor, generateAnchorId, closeDatabase } from "./src/db.js";
 import { getH3Index, checkLocationCache, updateSpatialCache } from "./src/spatial_cache.js";
 import { generateContentWithRetry, formatGeminiError } from "./src/gemini.js";
+import { PDFParse } from "pdf-parse";
 
 const LOCAL_VOUCHER_SERVICE = process.env.LOCAL_VOUCHER_SERVICE || "http://localhost:8000";
 
@@ -165,6 +166,223 @@ async function checkLocalServiceHealth(): Promise<boolean> {
   }
 }
 
+// PDF Extraction & Local Llama 3.2 (Ollama) Processing Helpers
+async function extractTextFromPDF(pdfBuffer: Buffer): Promise<string> {
+  try {
+    const parser = new PDFParse({ data: pdfBuffer });
+    await (parser as any).load();
+    const pdfData = await parser.getText();
+    const text = pdfData.text || "";
+    parser.destroy();
+    return text;
+  } catch (err: any) {
+    console.warn("[PDFParse] Fallback usando importación dinámica de pdf-parse:", err.message);
+    try {
+      const pdfModule = await import("pdf-parse");
+      const parseFunc = (pdfModule as any).default || pdfModule;
+      if (typeof parseFunc === "function") {
+        const data = await parseFunc(pdfBuffer);
+        return data.text || "";
+      }
+    } catch (fallbackErr: any) {
+      console.error("[PDFParse] Falló la extracción de PDF:", fallbackErr.message);
+    }
+    return "";
+  }
+}
+
+async function analyzeTextWithLlama(text: string): Promise<{
+  location_name?: string;
+  datetime?: string;
+  amount?: number | string;
+  currency?: string;
+}> {
+  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
+  const prompt = `Analiza este texto extraído de un documento de viaje y extrae estrictamente un objeto JSON con los siguientes campos:
+- 'location_name': nombre del hotel, aerolínea, parque o lugar del evento.
+- 'datetime': fecha y hora del evento (YYYY-MM-DD HH:MM).
+- 'amount': monto total de la transacción.
+- 'currency': moneda utilizada (ARS, USD, EUR, etc.).
+Responde ÚNICAMENTE con el objeto JSON, sin introducciones ni bloques de código.
+
+Texto del documento:
+${text.slice(0, 15000)}`;
+
+  const modelsToTry = ["llama3.2:latest", "llama3.2", "llama3.2:3b", "qwen2.5-coder:7b"];
+  
+  let rawResponse = "";
+  let lastError = "";
+
+  for (const model of modelsToTry) {
+    try {
+      console.log(`[Ollama] Consultando modelo ${model}...`);
+      const res = await fetch(`${ollamaBaseUrl}/api/generate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model,
+          prompt,
+          stream: false,
+          format: "json"
+        }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data.response) {
+          rawResponse = data.response;
+          console.log(`[Ollama] Respuesta obtenida exitosamente con modelo ${model}`);
+          break;
+        }
+      } else {
+        lastError = `Status ${res.status}: ${await res.text()}`;
+      }
+    } catch (err: any) {
+      lastError = err.message;
+      console.warn(`[Ollama] Error al conectar con ${model}:`, err.message);
+    }
+  }
+
+  if (!rawResponse) {
+    throw new Error(`No se pudo obtener inferencia de Ollama (Llama 3.2). Verifique que Ollama esté ejecutándose en el puerto 11434. (${lastError})`);
+  }
+
+  let cleanJson = rawResponse.trim();
+  if (cleanJson.startsWith("```")) {
+    cleanJson = cleanJson.replace(/^```(?:json)?/i, "").replace(/```$/, "").trim();
+  }
+
+  try {
+    return JSON.parse(cleanJson);
+  } catch (parseErr) {
+    console.error("[Ollama] Error parseando JSON devuelto por Llama:", rawResponse);
+    return {
+      location_name: undefined,
+      datetime: undefined,
+      amount: undefined,
+      currency: undefined
+    };
+  }
+}
+
+async function resolveLocationGeocoding(locationName: string) {
+  if (!locationName) return { coordinates: null, h3_index: null };
+  
+  try {
+    const cached = checkLocationCache(locationName);
+    if (cached) {
+      const lat = cached.latitude;
+      const lng = cached.longitude;
+      const h3 = getH3Index(lat, lng);
+      return { coordinates: { lat, lng }, h3_index: h3 };
+    }
+
+    const geoResponse = await fetch(`${GEOCODE_API_URL}?address=${encodeURIComponent(locationName)}`);
+    if (geoResponse.ok) {
+      const geoData = await geoResponse.json();
+      if (geoData.lat && geoData.lng) {
+        const lat = parseFloat(Number(geoData.lat).toFixed(4));
+        const lng = parseFloat(Number(geoData.lng).toFixed(4));
+        const h3 = getH3Index(lat, lng);
+        updateSpatialCache(h3, locationName, lat, lng);
+        return { coordinates: { lat, lng }, h3_index: h3 };
+      }
+    }
+  } catch (geoErr: any) {
+    console.warn("[Geocoding] No se pudo geocodificar la ubicación:", geoErr.message);
+  }
+
+  return { coordinates: null, h3_index: null };
+}
+
+function parseDatetime(datetimeStr?: string | null): { startDate: string | null; startTime: string | null } {
+  if (!datetimeStr || typeof datetimeStr !== 'string') {
+    return { startDate: null, startTime: null };
+  }
+  const trimmed = datetimeStr.trim();
+  const match = trimmed.match(/^(\d{4}-\d{2}-\d{2})[T\s]?(\d{2}:\d{2})?/);
+  if (match) {
+    return {
+      startDate: match[1] || null,
+      startTime: match[2] || null
+    };
+  }
+  const dateMatch = trimmed.match(/\d{4}-\d{2}-\d{2}/);
+  const timeMatch = trimmed.match(/\d{2}:\d{2}/);
+  return {
+    startDate: dateMatch ? dateMatch[0] : null,
+    startTime: timeMatch ? timeMatch[0] : null
+  };
+}
+
+function parseAmount(amountVal: any): number | null {
+  if (amountVal === null || amountVal === undefined) return null;
+  if (typeof amountVal === 'number') return amountVal;
+  if (typeof amountVal === 'string') {
+    const cleaned = amountVal.replace(/[^0-9.,]/g, '').replace(',', '.');
+    const num = parseFloat(cleaned);
+    return isNaN(num) ? null : num;
+  }
+  return null;
+}
+
+async function processPdfDocument(fileBuffer: Buffer, fileName: string): Promise<any> {
+  console.log(`[PDF Pipeline] Extrayendo texto plano de PDF: "${fileName}"`);
+  
+  const pdfText = await extractTextFromPDF(fileBuffer);
+  if (!pdfText || pdfText.trim().length === 0) {
+    throw new Error("No se pudo extraer texto del PDF (archivo vacío o imagen escaneada sin capa de texto)");
+  }
+
+  console.log(`[PDF Pipeline] Texto extraído (${pdfText.length} chars). Enviando a Llama 3.2 en Ollama...`);
+
+  const llamaResult = await analyzeTextWithLlama(pdfText);
+  const locationName = llamaResult.location_name || fileName.replace(/\.pdf$/i, '');
+  const { startDate, startTime } = parseDatetime(llamaResult.datetime);
+  const amount = parseAmount(llamaResult.amount);
+  const currency = llamaResult.currency || "USD";
+
+  const { coordinates, h3_index } = await resolveLocationGeocoding(locationName);
+
+  const parsedResult = {
+    isTravelDocument: true,
+    category: "activity",
+    supplier: locationName,
+    title: locationName,
+    startDate,
+    startTime,
+    endDate: null,
+    endTime: null,
+    confirmationNumber: null,
+    location: locationName,
+    coordinates,
+    h3_index,
+    extraction_notes: "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    passengerOrGuestName: null,
+    price: amount,
+    currency,
+    details: null,
+    summary: `Voucher detectado: ${locationName}`,
+  };
+
+  try {
+    const anchorId = generateAnchorId(fileName);
+    insertAnchor({
+      id: anchorId,
+      location: locationName,
+      latitude: coordinates?.lat,
+      longitude: coordinates?.lng,
+      is_travel_document: true,
+      h3_index,
+      raw_json: JSON.stringify(parsedResult),
+    });
+  } catch (dbErr: any) {
+    console.warn("[DB] Error guardando anchor de PDF:", dbErr.message);
+  }
+
+  return parsedResult;
+}
+
 // Analyze document endpoint — proxies to local voucher service
 app.post("/api/analyze-doc", async (req, res) => {
   try {
@@ -275,7 +493,36 @@ app.post("/api/analyze-local", async (req, res) => {
 
     console.log(`[Local] Analyzing local file: "${name}" (${mimeType})`);
 
-    // Check local service availability first
+    const fileBuffer = Buffer.from(base64Data, 'base64');
+
+    const isPdf = mimeType === 'application/pdf' || name.toLowerCase().endsWith('.pdf');
+    if (isPdf) {
+      try {
+        const pdfResult = await processPdfDocument(fileBuffer, name);
+        if (exifData) {
+          if (exifData.lat && exifData.lng) {
+            pdfResult.coordinates = { lat: exifData.lat, lng: exifData.lng };
+            pdfResult.extraction_notes += " (Coordenadas EXIF preservadas)";
+          }
+          if (exifData.date) {
+            const datePart = exifData.date.split('T')[0];
+            const timePart = exifData.date.split('T')[1]?.substring(0, 5);
+            if (datePart) pdfResult.startDate = datePart;
+            if (timePart) pdfResult.startTime = timePart;
+            pdfResult.extraction_notes += " (Fecha EXIF preservada)";
+          }
+        }
+        return res.json(pdfResult);
+      } catch (pdfErr: any) {
+        console.error("[PDF Pipeline] Error:", pdfErr.message);
+        return res.status(500).json({
+          error: "Error en el análisis de PDF",
+          details: pdfErr.message,
+        });
+      }
+    }
+
+    // Check local service availability first (solo no-PDF → moondream :8000)
     const isHealthy = await checkLocalServiceHealth();
     if (!isHealthy) {
       return res.status(503).json({
@@ -284,8 +531,6 @@ app.post("/api/analyze-local", async (req, res) => {
         code: "LOCAL_SERVICE_UNAVAILABLE",
       });
     }
-
-    const fileBuffer = Buffer.from(base64Data, 'base64');
 
     const serviceResponse = await callLocalVoucherService(fileBuffer, name, mimeType);
 
@@ -447,6 +692,13 @@ app.post("/api/batch-analyze", async (req, res) => {
           fileBuffer = Buffer.from(file.fileBuffer);
         } else {
           throw new Error("No file content provided (base64Data or fileBuffer required)");
+        }
+
+        const isPdf = file.mimeType === 'application/pdf' || (file.name || '').toLowerCase().endsWith('.pdf');
+        if (isPdf) {
+          const pdfResult = await processPdfDocument(fileBuffer, file.name);
+          results.push({ file: file.name, success: true, ...pdfResult });
+          continue;
         }
 
         const serviceResponse = await callLocalVoucherService(fileBuffer, file.name, file.mimeType);
