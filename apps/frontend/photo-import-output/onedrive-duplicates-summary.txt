@@ -1,0 +1,11 @@
+=== REPORTE DE DUPLICADOS EN ONEDRIVE ===
+
+Fecha: 17.7.2026, 17:10:32
+Total archivos escaneados: 5032
+Total duplicados encontrados: 0 (están seguros en tu backup F:/G:)
+Total archivos únicos en OneDrive: 0 (NO borrar - solo están aquí)
+Espacio total escaneado: 5119.25 MB
+Espacio que puedes liberar de la nube: 0 MB (0.00%)
+
+--- MUESTRA DE DUPLICADOS QUE SE PUEDEN BORRAR DE ONEDRIVE ---
+

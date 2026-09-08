@@ -1,0 +1,644 @@
+{
+  "total": 34992,
+  "initial_with_trip": 8025,
+  "initial_without_trip": 26967,
+  "propagated": 3118,
+  "final_with_trip": 11143,
+  "final_without_trip": 23849,
+  "trip_distribution": [
+    {
+      "trip_name": "argentina-2011",
+      "cnt": 3406
+    },
+    {
+      "trip_name": "argentina-2025",
+      "cnt": 2830
+    },
+    {
+      "trip_name": "slovenia-2015",
+      "cnt": 1923
+    },
+    {
+      "trip_name": "italy-2023",
+      "cnt": 1315
+    },
+    {
+      "trip_name": "crete-2013",
+      "cnt": 800
+    },
+    {
+      "trip_name": "bosnia-2023",
+      "cnt": 566
+    },
+    {
+      "trip_name": "denmark-2024",
+      "cnt": 179
+    },
+    {
+      "trip_name": "croatia-montenegro-2010",
+      "cnt": 124
+    }
+  ],
+  "propagation_details": [
+    {
+      "photo_id": 57273,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57376,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57426,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57454,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57455,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57522,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57524,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57528,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57537,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57553,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57718,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57741,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57790,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57816,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 57930,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58025,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58061,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58151,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58198,
+      "from_folder": "F:\\2011\\Noviembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58357,
+      "from_folder": "F:\\.Papelera_Deduplicacion\\2011\\Diciembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58414,
+      "from_folder": "F:\\2011\\Diciembre",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58444,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58445,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58468,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58490,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58504,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58556,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58578,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58581,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58582,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58598,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58612,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58617,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58649,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58674,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58680,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58689,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58690,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58699,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58700,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58770,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58776,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58788,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58796,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58808,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58825,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58851,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58870,
+      "from_folder": "F:\\2012\\Enero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58876,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58879,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58880,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58881,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58882,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58883,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58884,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58885,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58886,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58887,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58888,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58889,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58890,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58891,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58892,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58893,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58894,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58895,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58896,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58897,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58898,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58899,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58900,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58901,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58902,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58903,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58904,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58905,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58906,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58907,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 58908,
+      "from_folder": "F:\\2012\\Febrero",
+      "propagated_trip": "argentina-2011",
+      "propagated_country": "Argentina"
+    },
+    {
+      "photo_id": 61515,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61516,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61517,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61518,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61519,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61520,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61587,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61588,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61589,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61590,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61591,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61896,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61897,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61898,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61899,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61900,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61901,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61902,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61903,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61904,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    },
+    {
+      "photo_id": 61905,
+      "from_folder": "F:\\2013\\Julio",
+      "propagated_trip": "crete-2013",
+      "propagated_country": "Crete"
+    }
+  ]
+}

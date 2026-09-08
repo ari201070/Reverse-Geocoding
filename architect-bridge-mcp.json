@@ -1,0 +1,27 @@
+{
+  "name": "architect-bridge-mcp",
+  "version": "1.0.0",
+  "description": "Puente MCP para consultas directas al Arquitecto de Reverse Geocoding",
+  "tools": [
+    {
+      "name": "consult_architect_llm",
+      "description": "Permite enviar un prompt estructurado con código al Arquitecto cuando hay dudas sobre diseño de sistemas o errores complejos de lógica.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "El fragmento o archivo de código relevante para la consulta"
+          },
+          "question": {
+            "type": "string",
+            "description": "La pregunta técnica o duda de diseño sobre el sistema"
+          }
+        },
+        "required": [
+          "question"
+        ]
+      }
+    }
+  ]
+}

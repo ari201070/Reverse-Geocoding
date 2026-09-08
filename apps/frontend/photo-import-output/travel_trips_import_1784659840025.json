@@ -1,0 +1,66 @@
+[
+  {
+    "id": "argentina-2011",
+    "name": "Argentina 2011-2012",
+    "destination": "Buenos Aires",
+    "startDate": "2011-11-07",
+    "endDate": "2012-02-06",
+    "color": "indigo"
+  },
+  {
+    "id": "slovenia-2015",
+    "name": "Eslovenia 2015",
+    "destination": "Bled",
+    "startDate": "2015-07-02",
+    "endDate": "2015-07-06",
+    "color": "indigo"
+  },
+  {
+    "id": "croatia-montenegro-2010",
+    "name": "Croacia+Montenegro 2010",
+    "destination": "Dubrovnik",
+    "startDate": "2010-06-24",
+    "endDate": "2010-06-30",
+    "color": "indigo"
+  },
+  {
+    "id": "crete-2013",
+    "name": "Creta 2013",
+    "destination": "Chersonissos",
+    "startDate": "2013-07-23",
+    "endDate": "2013-07-27",
+    "color": "indigo"
+  },
+  {
+    "id": "italy-2023",
+    "name": "Italia 2023",
+    "destination": "Florence",
+    "startDate": "2023-10-03",
+    "endDate": "2023-10-11",
+    "color": "indigo"
+  },
+  {
+    "id": "bosnia-2023",
+    "name": "Bosnia 2023",
+    "destination": "Sarajevo",
+    "startDate": "2023-05-01",
+    "endDate": "2023-05-05",
+    "color": "indigo"
+  },
+  {
+    "id": "argentina-2025",
+    "name": "Argentina 2025",
+    "destination": "Buenos Aires",
+    "startDate": "2025-09-26",
+    "endDate": "2025-10-30",
+    "color": "indigo"
+  },
+  {
+    "id": "denmark-2024",
+    "name": "Dinamarca 2024",
+    "destination": "Copenhagen",
+    "startDate": "2024-09-15",
+    "endDate": "2024-09-20",
+    "color": "indigo"
+  }
+]

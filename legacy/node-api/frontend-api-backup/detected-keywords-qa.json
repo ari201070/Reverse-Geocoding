@@ -1,0 +1,17 @@
+﻿{
+  "correcciones": [
+    { "location_name": "Puerto Pirámides", "lat": -42.435, "lng": -64.279 },
+    { "location_name": "Caleta Valdés", "lat": -42.635, "lng": -63.612 },
+    { "location_name": "Caleta Valdez", "lat": -42.635, "lng": -63.612 },
+    { "location_name": "Glaciar Perito Moreno", "lat": -50.47, "lng": -73.03 },
+    { "location_name": "Cueva de las Manos", "lat": -47.153, "lng": -70.665 },
+    { "location_name": "Los Antiguos", "lat": -46.547, "lng": -71.628 },
+    { "location_name": "Lago Puelo", "lat": -42.091, "lng": -71.616 },
+    { "location_name": "Trevelin", "lat": -43.085, "lng": -71.463 },
+    { "location_name": "Gobernador Costa", "lat": -44.05, "lng": -70.59 },
+    { "location_name": "Esquel", "lat": -42.902, "lng": -71.318 },
+    { "location_name": "Cerro Campanario", "lat": -41.132, "lng": -71.442 },
+    { "location_name": "Bariloche", "lat": -41.133, "lng": -71.31 },
+    { "location_name": "El Bolsón", "lat": -41.954, "lng": -71.556 }
+  ]
+}

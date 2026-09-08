@@ -1,0 +1,176 @@
+{
+  "total": 34992,
+  "assigned": 8025,
+  "not_assigned": 26967,
+  "by_trip": {
+    "argentina-2011": 2903,
+    "crete-2013": 26,
+    "slovenia-2015": 1129,
+    "italy-2023": 781,
+    "denmark-2024": 136,
+    "argentina-2025": 2773,
+    "bosnia-2023": 271,
+    "croatia-montenegro-2010": 6
+  },
+  "by_country": {
+    "Israel": 21231,
+    "Bosnia and Herzegovina": 1191,
+    "Croatia": 245,
+    "Argentina": 6600,
+    "Greece": 1066,
+    "Slovenia": 2080,
+    "Italy": 1935,
+    "Cyprus": 103,
+    "Denmark": 226,
+    "Montenegro": 315
+  },
+  "errors": [],
+  "trip_distribution": [
+    {
+      "trip_id": "argentina-2011",
+      "cnt": 2903
+    },
+    {
+      "trip_id": "argentina-2025",
+      "cnt": 2773
+    },
+    {
+      "trip_id": "slovenia-2015",
+      "cnt": 1129
+    },
+    {
+      "trip_id": "italy-2023",
+      "cnt": 781
+    },
+    {
+      "trip_id": "bosnia-2023",
+      "cnt": 271
+    },
+    {
+      "trip_id": "denmark-2024",
+      "cnt": 136
+    },
+    {
+      "trip_id": "crete-2013",
+      "cnt": 26
+    },
+    {
+      "trip_id": "croatia-montenegro-2010",
+      "cnt": 6
+    }
+  ],
+  "samples": [
+    {
+      "id": 57274,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 1.jpg",
+      "date_taken": "2011-11-14 12:10:32",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57275,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 10.jpg",
+      "date_taken": "2011-11-14 13:08:01",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57276,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 11_tagged.jpg",
+      "date_taken": "2011-11-14 13:09:54",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57277,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 12.jpg",
+      "date_taken": "2011-11-14 13:10:16",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57278,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 13.jpg",
+      "date_taken": "2011-11-14 13:10:29",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57279,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 14.jpg",
+      "date_taken": "2011-11-14 13:10:41",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57280,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 15.jpg",
+      "date_taken": "2011-11-14 13:11:58",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57281,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 16.jpg",
+      "date_taken": "2011-11-14 13:12:10",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57282,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 17.jpg",
+      "date_taken": "2011-11-14 13:12:15",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    },
+    {
+      "id": 57283,
+      "filename": "(Lago Puelo)בדרך ללאגו פואלו 18.jpg",
+      "date_taken": "2011-11-14 13:20:44",
+      "country": "Argentina",
+      "trip_id": "argentina-2011"
+    }
+  ],
+  "no_trip_by_country": [
+    {
+      "country": "Israel",
+      "cnt": 21231
+    },
+    {
+      "country": "Italy",
+      "cnt": 1154
+    },
+    {
+      "country": "Greece",
+      "cnt": 1040
+    },
+    {
+      "country": "Slovenia",
+      "cnt": 951
+    },
+    {
+      "country": "Argentina",
+      "cnt": 924
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "cnt": 920
+    },
+    {
+      "country": "Montenegro",
+      "cnt": 309
+    },
+    {
+      "country": "Croatia",
+      "cnt": 245
+    },
+    {
+      "country": "Cyprus",
+      "cnt": 103
+    },
+    {
+      "country": "Denmark",
+      "cnt": 90
+    }
+  ]
+}

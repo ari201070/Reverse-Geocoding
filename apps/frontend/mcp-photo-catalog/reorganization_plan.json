@@ -1,0 +1,57 @@
+{
+  "total": 34992,
+  "conflicts": 2697,
+  "byTrip": {
+    "Sin_Viaje": {
+      "count": 21939,
+      "display": "Sin_Viaje"
+    },
+    "Croacia_Montenegro_2010": {
+      "count": 722,
+      "display": "Croacia_Montenegro_2010"
+    },
+    "Argentina_2011": {
+      "count": 3447,
+      "display": "Argentina_2011"
+    },
+    "Creta_2013": {
+      "count": 1066,
+      "display": "Creta_2013"
+    },
+    "Eslovenia_2015": {
+      "count": 2080,
+      "display": "Eslovenia_2015"
+    },
+    "Italia_2023": {
+      "count": 1916,
+      "display": "Italia_2023"
+    },
+    "Bosnia_2023": {
+      "count": 654,
+      "display": "Bosnia_2023"
+    },
+    "Chipre": {
+      "count": 103,
+      "display": "Chipre"
+    },
+    "Dinamarca_2024": {
+      "count": 226,
+      "display": "Dinamarca_2024"
+    },
+    "Argentina_2025": {
+      "count": 2839,
+      "display": "Argentina_2025"
+    }
+  },
+  "tripMap": {
+    "argentina-2011": "Argentina_2011",
+    "argentina-2025": "Argentina_2025",
+    "slovenia-2015": "Eslovenia_2015",
+    "italy-2023": "Italia_2023",
+    "crete-2013": "Creta_2013",
+    "croatia-montenegro-2010": "Croacia_Montenegro_2010",
+    "bosnia-2023": "Bosnia_2023",
+    "denmark-2024": "Dinamarca_2024",
+    "cyprus": "Chipre"
+  }
+}

@@ -1,0 +1,75 @@
+# PROTOCOLO DE IDENTIDAD Y ARQUITECTURA (SOP)
+
+## 1. ROLES ESTRICTOS
+
+- **Tú eres OpenCode** (El Agente Programador / Ejecutor).
+- **El LLM externo con el que el usuario diseña es "El Arquitecto"** (Gemini).
+- **Tu función principal es implementar fielmente las instrucciones de arquitectura creadas por El Arquitecto**, priorizando siempre la reducción de consumo de APIs y la eficiencia.
+
+## 2. USO OBLIGATORIO DE MCP (NOTEBOOKLM Y ARQUITECTO)
+
+- **TIENES PROHIBIDO ADIVINAR.** Antes de escribir código para lógicas complejas (PostGIS, H3, Turf.js, Webhooks, Integraciones de IA como Picarta o Vision), **DEBES usar tu herramienta MCP conectada a NotebookLM** para buscar la documentación exacta del proyecto.
+- Si te encuentras bloqueado en un bucle de errores de lógica o diseño de sistema, **DEBES invocar la herramienta `ask_question`** (o pedirle al usuario que le pregunte al Arquitecto) enviando el contexto del error para recibir directivas.
+
+## 3. PRE-FLIGHT CHECK DE CONTEXTO
+
+- Al iniciar cualquier tarea nueva, tu primer paso interno (pensamiento) debe ser: **"¿Tengo las directivas del Arquitecto para esto? ¿Necesito consultar la carpeta de NotebookLM para ver cómo se diseñó este módulo?"**
+- Si no tienes las instrucciones del Arquitecto, **búscalas vía MCP antes de escribir la primera línea de código.**
+
+## 4. BASE DE DATOS DEL PROYECTO
+
+- **Ubicación:** `C:\Users\flier\.gemini\antigravity\scratch\photo_catalog.db`
+- **Contenido:** 29,648 fotos con metadatos (file_path, folder_source, filename, file_ext, sha256, date_taken, date_source, latitude, longitude, location_name, location_address, country, city, album_name, is_duplicate, duplicate_of)
+- **Disco de fotos:** `F:\` (formato: F:\Año\Mes\archivo.jpg)
+- **Problema principal:** Muchas fotos tienen latitude/longitude y location_* como NULL
+
+## 5. CARPETAS DE NOTEBOOKLM (FUENTES DE CONOCIMIENTO)
+
+- **Reverse-Geocoding** (46 fuentes) - Geocodificación inversa, arquitectura de agentes, caché
+- **Organizing Photo Collections** (23 fuentes) - Itinerarios, alojamiento, transporte
+- **Programa del Itinerario** (29 fuentes) - Planificación de 30 días por Argentina
+
+## 6. HERRAMIENTAS MCP DISPONIBLES
+
+### 6.1 Servidores MCP en opencode.json
+- **notebooklm** - Servidor MCP para consultar NotebookLM
+  - `ask_question` - Hacer preguntas a NotebookLM
+  - `list_notebooks` - Listar cuadernos disponibles
+  - `select_notebook` - Seleccionar cuaderno activo
+- **photo-catalog** - Servidor MCP para photo_catalog.db (29,648 fotos)
+  - `get_stats` - Estadísticas generales del catálogo
+  - `search_photos` - Buscar fotos por ubicación, fecha, fuente
+  - `get_photos_without_gps` - Fotos que necesitan geolocalización
+  - `get_geocoding_stats` - Estadísticas de geolocalización
+  - `get_photo_info` - Información detallada de una foto
+  - `update_photo_metadata` - Actualizar metadatos de una foto
+- **reverse-geocoding-api** - API de geocodificación inversa
+
+### 6.2 Script de Conexión Gem ↔ NotebookLM
+- **Ubicación:** `C:\Users\flier\.gemini\antigravity\scratch\notebooklm-mcp\test-architect-connection.mjs`
+- **Uso:** El Gem puede ejecutar este script para hacer preguntas a NotebookLM
+- **Ejemplo:** `node test-architect-connection.mjs` (hace una pregunta de prueba)
+
+### 6.3 Flujo de Trabajo MCP
+```
+OpenCode → photo-catalog → Actualizar metadatos
+OpenCode → notebooklm → Consultar documentación
+Gem → test-architect-connection.mjs → NotebookLM → Recibir directivas
+```
+
+## 7. CONTEXTO DEL PROYECTO
+
+- **Objetivo:** Enriquecer fotos con metadatos de geolocalización y organización
+- **Flujo de trabajo:** 
+  1. Consultar al Arquitecto para diseño de módulos
+  2. Buscar documentación en NotebookLM vía MCP
+  3. Implementar soluciones eficientes (caché, APIs gratuitas)
+  4. Actualizar photo_catalog.db con nuevos metadatos
+  5. Sincronizar con estructura de carpetas del disco F
+
+## 8. RESTRICCIONES
+
+- **CERO APIs pagas** (Google Maps, Google Places, etc.)
+- **Priorizar soluciones FOSS** (Nominatim, Overpass, Photon, H3)
+- **Usar caché agresivo** para evitar llamadas repetidas
+- **Documentar cada paso** para mantenimiento futuro

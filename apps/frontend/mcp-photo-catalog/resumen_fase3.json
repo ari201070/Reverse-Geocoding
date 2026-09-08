@@ -1,0 +1,84 @@
+{
+  "folder_updates": 0,
+  "temporal_updates": 876,
+  "total_before": 34992,
+  "with_trip_before": 11143,
+  "total_after": 34992,
+  "with_trip_after": 12019,
+  "trip_distribution": [
+    {
+      "trip_name": "argentina-2011",
+      "cnt": 3406
+    },
+    {
+      "trip_name": "argentina-2025",
+      "cnt": 2852
+    },
+    {
+      "trip_name": "slovenia-2015",
+      "cnt": 1923
+    },
+    {
+      "trip_name": "italy-2023",
+      "cnt": 1315
+    },
+    {
+      "trip_name": "croatia-montenegro-2010",
+      "cnt": 971
+    },
+    {
+      "trip_name": "crete-2013",
+      "cnt": 800
+    },
+    {
+      "trip_name": "bosnia-2023",
+      "cnt": 572
+    },
+    {
+      "trip_name": "denmark-2024",
+      "cnt": 180
+    }
+  ],
+  "no_trip_by_country": [
+    {
+      "country": "Israel",
+      "cnt": 20721
+    },
+    {
+      "country": "Italy",
+      "cnt": 601
+    },
+    {
+      "country": "Argentina",
+      "cnt": 375
+    },
+    {
+      "country": "Greece",
+      "cnt": 266
+    },
+    {
+      "country": "Montenegro",
+      "cnt": 245
+    },
+    {
+      "country": "Croatia",
+      "cnt": 245
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "cnt": 213
+    },
+    {
+      "country": "Slovenia",
+      "cnt": 157
+    },
+    {
+      "country": "Cyprus",
+      "cnt": 103
+    },
+    {
+      "country": "Denmark",
+      "cnt": 47
+    }
+  ]
+}

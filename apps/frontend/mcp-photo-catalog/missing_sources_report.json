@@ -1,0 +1,176 @@
+{
+  "totalFaltantes": 2400,
+  "porUnidad": {
+    "F:\\": 2400
+  },
+  "porViaje": {
+    "Sin_Viaje": {
+      "F:\\": 1087
+    },
+    "croatia-montenegro-2010": {
+      "F:\\": 351
+    },
+    "argentina-2011": {
+      "F:\\": 837
+    },
+    "crete-2013": {
+      "F:\\": 1
+    },
+    "slovenia-2015": {
+      "F:\\": 7
+    },
+    "italy-2023": {
+      "F:\\": 71
+    },
+    "denmark-2024": {
+      "F:\\": 36
+    },
+    "argentina-2025": {
+      "F:\\": 10
+    }
+  },
+  "top20CarpetasOrigen": [
+    {
+      "path": "F:\\2011\\Noviembre",
+      "count": 456,
+      "trips": {
+        "argentina-2011": 456
+      }
+    },
+    {
+      "path": "F:\\2012\\Enero",
+      "count": 370,
+      "trips": {
+        "argentina-2011": 370
+      }
+    },
+    {
+      "path": "F:\\2010\\Junio",
+      "count": 351,
+      "trips": {
+        "croatia-montenegro-2010": 351
+      }
+    },
+    {
+      "path": "F:\\2014\\ינואר_מרץ",
+      "count": 284,
+      "trips": {
+        "Sin_Viaje": 284
+      }
+    },
+    {
+      "path": "F:\\2008\\Diciembre",
+      "count": 82,
+      "trips": {
+        "Sin_Viaje": 82
+      }
+    },
+    {
+      "path": "F:\\2010\\Enero",
+      "count": 79,
+      "trips": {
+        "Sin_Viaje": 79
+      }
+    },
+    {
+      "path": "F:\\2010\\Octubre",
+      "count": 72,
+      "trips": {
+        "Sin_Viaje": 72
+      }
+    },
+    {
+      "path": "F:\\2020\\Marzo",
+      "count": 64,
+      "trips": {
+        "Sin_Viaje": 64
+      }
+    },
+    {
+      "path": "F:\\2010\\Noviembre",
+      "count": 57,
+      "trips": {
+        "Sin_Viaje": 57
+      }
+    },
+    {
+      "path": "F:\\2008\\Noviembre",
+      "count": 40,
+      "trips": {
+        "Sin_Viaje": 40
+      }
+    },
+    {
+      "path": "F:\\2024\\Julio",
+      "count": 36,
+      "trips": {
+        "denmark-2024": 36
+      }
+    },
+    {
+      "path": "F:\\2013\\Noviembre",
+      "count": 35,
+      "trips": {
+        "Sin_Viaje": 35
+      }
+    },
+    {
+      "path": "F:\\2013\\Diciembre",
+      "count": 31,
+      "trips": {
+        "Sin_Viaje": 31
+      }
+    },
+    {
+      "path": "F:\\2025\\Septiembre",
+      "count": 30,
+      "trips": {
+        "Sin_Viaje": 27,
+        "argentina-2025": 3
+      }
+    },
+    {
+      "path": "F:\\2025\\Octubre",
+      "count": 28,
+      "trips": {
+        "italy-2023": 21,
+        "argentina-2025": 7
+      }
+    },
+    {
+      "path": "F:\\2023\\Octubre",
+      "count": 26,
+      "trips": {
+        "italy-2023": 26
+      }
+    },
+    {
+      "path": "F:\\2023\\Noviembre",
+      "count": 24,
+      "trips": {
+        "italy-2023": 24
+      }
+    },
+    {
+      "path": "F:\\2021\\Agosto",
+      "count": 22,
+      "trips": {
+        "Sin_Viaje": 22
+      }
+    },
+    {
+      "path": "F:\\2009\\Agosto",
+      "count": 21,
+      "trips": {
+        "Sin_Viaje": 21
+      }
+    },
+    {
+      "path": "F:\\2013\\Octubre",
+      "count": 20,
+      "trips": {
+        "Sin_Viaje": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+899:         .timeline-section-header {
+907:         .timeline-section-title {
+913:         .timeline-grid {
+920:         .timeline-grid::after {
+959:         .timeline-card {
+972:         .timeline-card::before {
+987:         .timeline-card.focused-card {
+994:         .timeline-card.focused-card::before {
+1169:         .booking-grid {
+1181:         .booking-item {
+1189:         .booking-item:last-child {
+1337:         .timeline-card.theme-israel::before { border-color: var(--c-israel); }
+1338:         .timeline-card.theme-buenos-aires::before { border-color: var(--c-buenos-aires); }
+1339:         .timeline-card.theme-patagonia::before { border-color: var(--c-patagonia); }
+1340:         .timeline-card.theme-mendoza::before { border-color: var(--c-mendoza); }
+1341:         .timeline-card.theme-norte::before { border-color: var(--c-norte); }
+1342:         .timeline-card.theme-iguazu::before { border-color: var(--c-iguazu); }
+1343:         .timeline-card.theme-corrientes::before { border-color: var(--c-corrientes); }
+2320:             document.querySelectorAll('.timeline-card').forEach(card => {
+2386:         document.querySelectorAll('.timeline-card').forEach(card => {

@@ -1,0 +1,22 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-60.6545, -32.9468]
+  },
+  "properties": {
+    "h3_index": "892a100d2b3ffff",
+    "place_id": "ChIJ...",
+    "name": "Rapanui - Rosario",
+    "confidence": 0.92,
+    "camera_heading": 45.0,
+    "utc_timestamp": "2026-05-30T14:00:00Z",
+    "ocr_evidence": "Franuí, Rapanui, Blvd. Oroño",
+    "physiognomy_signature": {
+      "furniture": "sillas negras, mesas blancas",
+      "texture": "vitrinas de vidrio",
+      "style": "art-nouveau"
+    },
+    "solar_divergence": 2.4
+  }
+}

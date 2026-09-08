@@ -1,0 +1,2 @@
+# Regla de Cooldown contra Saturación
+Para evitar bloqueos por Rate Limit y saturación de cuota en la API, el agente tiene prohibido encadenar llamadas o herramientas en bucle continuo. Es obligatorio implementar una pausa o delay de entre 15 y 30 segundos entre cada ejecución secuencial de comandos o consultas al modelo. El bienestar del flujo de trabajo depende de este respiro.

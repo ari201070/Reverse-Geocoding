@@ -1,0 +1,18 @@
+{
+  "fecha_ejecucion": "2026-07-23T15:26:44.508Z",
+  "estadisticas": {
+    "total_fotos_db": 34992,
+    "fotos_con_gps": 6754,
+    "fotos_pendientes_location": 9
+  },
+  "resultados_enriquecimiento": {
+    "clusters_procesados": 6,
+    "clusters_con_poi": 2,
+    "clusters_sin_poi": 4,
+    "fotos_actualizadas": 3
+  },
+  "estado_final": {
+    "fotos_con_location_name": 34986,
+    "fotos_sin_location_name": 6
+  }
+}

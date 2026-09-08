@@ -1,0 +1,67 @@
+{
+  "resumenGlobal": {
+    "totalArchivosPrevistos": 12950,
+    "completados": 11636,
+    "pendientes": 0,
+    "incompletos": 1,
+    "faltantesEnOrigen": 1313
+  },
+  "porViaje": {
+    "croatia-montenegro-2010": {
+      "completados": 371,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 351,
+      "total": 722
+    },
+    "argentina-2011": {
+      "completados": 2609,
+      "pendientes": 0,
+      "incompletos": 1,
+      "faltantesSrc": 837,
+      "total": 3447
+    },
+    "crete-2013": {
+      "completados": 1065,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 1,
+      "total": 1066
+    },
+    "slovenia-2015": {
+      "completados": 2073,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 7,
+      "total": 2080
+    },
+    "italy-2023": {
+      "completados": 1845,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 71,
+      "total": 1916
+    },
+    "bosnia-2023": {
+      "completados": 654,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 0,
+      "total": 654
+    },
+    "denmark-2024": {
+      "completados": 190,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 36,
+      "total": 226
+    },
+    "argentina-2025": {
+      "completados": 2829,
+      "pendientes": 0,
+      "incompletos": 0,
+      "faltantesSrc": 10,
+      "total": 2839
+    }
+  }
+}

@@ -1,0 +1,196 @@
+=== RESUMEN DE VIAJES ===
+
+Generado: 2026-07-21T18:50:40.024Z
+Total fotos procesadas: 6754
+Fotos enriquecidas: 6754
+Micro-actividades: 146
+Viajes detectados: 30
+Actividades generadas: 146
+Fotos no asignadas: 1284
+Tiempo de procesamiento: 484ms
+Caché espacial: 0.0% hits
+
+--- VIAJES ---
+
+Argentina 2011-2012
+  Fechas: 2011-11-07 - 2012-02-06
+  Países: Argentina
+  Actividades: 0
+  Total fotos: 1997
+
+Eslovenia 2015
+  Fechas: 2015-07-02 - 2015-07-06
+  Países: Slovenia
+  Actividades: 0
+  Total fotos: 355
+
+Croacia+Montenegro 2010
+  Fechas: 2010-06-24 - 2010-06-30
+  Países: Croatia, Montenegro
+  Actividades: 0
+  Total fotos: 157
+
+Creta 2013
+  Fechas: 2013-07-23 - 2013-07-27
+  Países: Crete
+  Actividades: 0
+  Total fotos: 8
+
+Italia 2023
+  Fechas: 2023-10-03 - 2023-10-11
+  Países: Italy
+  Actividades: 0
+  Total fotos: 70
+
+Bosnia 2023
+  Fechas: 2023-05-01 - 2023-05-05
+  Países: Bosnia and Herzegovina
+  Actividades: 0
+  Total fotos: 1
+
+Argentina 2025
+  Fechas: 2025-09-26 - 2025-10-30
+  Países: Argentina
+  Actividades: 0
+  Total fotos: 2780
+
+Dinamarca 2024
+  Fechas: 2024-09-15 - 2024-09-20
+  Países: Denmark
+  Actividades: 0
+  Total fotos: 0
+
+Israel 2008 - Actividad
+  Fechas: 2008-12-06 - 2008-12-06
+  Países: Israel
+  Actividades: 2
+  Total fotos: 27
+
+Israel 2025 - Actividad
+  Fechas: 2025-09-01 - 2025-09-06
+  Países: Israel
+  Actividades: 5
+  Total fotos: 15
+
+Israel 2025 - Actividad
+  Fechas: 2025-09-13 - 2025-09-19
+  Países: Israel
+  Actividades: 3
+  Total fotos: 12
+
+Unknown 2009 - Actividad
+  Fechas: 2009-12-04 - 2009-12-04
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 21
+
+Unknown 2010 - Actividad
+  Fechas: 2010-01-15 - 2010-01-15
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 4
+
+Unknown 2010 - Actividad
+  Fechas: 2010-06-24 - 2010-06-30
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 145
+
+Unknown 2015 - Actividad
+  Fechas: 2015-06-30 - 2015-07-06
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 640
+
+Unknown 2015 - Actividad
+  Fechas: 2015-11-13 - 2015-11-14
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 7
+
+Unknown 2017 - Actividad
+  Fechas: 2017-08-24 - 2017-08-25
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 23
+
+Unknown 2017 - Actividad
+  Fechas: 2017-09-20 - 2017-09-23
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 71
+
+Unknown 2017 - Actividad
+  Fechas: 2017-10-04 - 2017-10-05
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 4
+
+Unknown 2020 - Actividad
+  Fechas: 2020-01-17 - 2020-01-18
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 11
+
+Unknown 2020 - Actividad
+  Fechas: 2020-11-27 - 2020-11-28
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 3
+
+Unknown 2020 - Actividad
+  Fechas: 2020-12-19 - 2020-12-21
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 7
+
+Unknown 2021 - Actividad
+  Fechas: 2021-01-23 - 2021-01-27
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 17
+
+Unknown 2021 - Actividad
+  Fechas: 2021-02-05 - 2021-02-08
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 2
+
+Unknown 2023 - Actividad
+  Fechas: 2023-09-30 - 2023-09-30
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 14
+
+Unknown 2023 - Actividad
+  Fechas: 2023-10-06 - 2023-10-08
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 57
+
+Unknown 2023 - Actividad
+  Fechas: 2023-12-01 - 2023-12-03
+  Países: Unknown
+  Actividades: 0
+  Total fotos: 3
+
+Montenegro 2010 - Actividad
+  Fechas: 2010-05-31 - 2010-05-31
+  Países: Montenegro
+  Actividades: 3
+  Total fotos: 4
+
+Argentina 2012 - Actividad
+  Fechas: 2012-02-18 - 2012-02-18
+  Países: Argentina
+  Actividades: 2
+  Total fotos: 2
+
+Argentina 2026 - Actividad
+  Fechas: 2026-01-03 - 2026-01-03
+  Países: Argentina
+  Actividades: 4
+  Total fotos: 42
+
+--- FOTOS NO ASIGNADAS ---
+1284 fotos no pudieron ser asignadas a ningún viaje.

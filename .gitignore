@@ -1,0 +1,21 @@
+node_modules
+.env
+.vercel
+
+# Python virtual environment and cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local scratch and playgrounds
+scratch/
+test-*.js
+read-last-transcript.js
+Historial de Colecciones Autoguardadas/
+
+# OS and log files
+*.log
+.DS_Store
+Thumbs.db
+*.lnk

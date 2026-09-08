@@ -1,0 +1,53 @@
+{
+  "argentina_2025": 0,
+  "denmark_2020": 0,
+  "denmark_2024": 47,
+  "argentina_2011_rescue": 43,
+  "italy_direct": 601,
+  "greece_direct": 266,
+  "cyprus_direct": 103,
+  "slovenia_direct": 157,
+  "balkans_direct": 327,
+  "qa_incoherencias": 510,
+  "total_after": 34992,
+  "with_trip_after": 13053,
+  "local_photos": 21231,
+  "trip_distribution": [
+    {
+      "trip_name": "argentina-2011",
+      "cnt": 3447
+    },
+    {
+      "trip_name": "argentina-2025",
+      "cnt": 2839
+    },
+    {
+      "trip_name": "slovenia-2015",
+      "cnt": 2080
+    },
+    {
+      "trip_name": "italy-2023",
+      "cnt": 1916
+    },
+    {
+      "trip_name": "crete-2013",
+      "cnt": 1066
+    },
+    {
+      "trip_name": "croatia-montenegro-2010",
+      "cnt": 722
+    },
+    {
+      "trip_name": "bosnia-2023",
+      "cnt": 654
+    },
+    {
+      "trip_name": "denmark-2024",
+      "cnt": 226
+    },
+    {
+      "trip_name": "cyprus",
+      "cnt": 103
+    }
+  ]
+}

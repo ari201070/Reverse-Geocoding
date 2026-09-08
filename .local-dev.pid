@@ -1,0 +1,1 @@
+$! ; sleep 8; echo "App: http://localhost:5173/"; echo "API config:"; curl -s http://localhost:5173/api/config 

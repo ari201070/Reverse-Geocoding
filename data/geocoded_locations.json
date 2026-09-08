@@ -1,0 +1,1338 @@
+[
+  {
+    "lat_round": -43.249,
+    "lng_round": -65.307,
+    "name": "Abraham Matthews",
+    "address": "Abraham Matthews 47, Trelew, U9100, Argentina",
+    "country": "Argentina",
+    "city": "Trelew"
+  },
+  {
+    "lat_round": 29.875,
+    "lng_round": 35.044,
+    "name": "הערבה",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 41.277,
+    "lng_round": 28.73,
+    "name": "Radar Yolu",
+    "address": "Arnavutköy, 34277, Türkiye",
+    "country": "Türkiye",
+    "city": "Arnavutköy"
+  },
+  {
+    "lat_round": 43.82,
+    "lng_round": 18.337,
+    "name": "Car & Bus Parking Mico",
+    "address": "Tuneli, MZ Donji Kotorac, 71214, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "MZ Donji Kotorac"
+  },
+  {
+    "lat_round": 43.819,
+    "lng_round": 18.269,
+    "name": "Restaurant Labud",
+    "address": "Vrelo bosne, Ilidža, 71101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Ilidža"
+  },
+  {
+    "lat_round": 43.651,
+    "lng_round": 17.963,
+    "name": "Stari most",
+    "address": "Stari most, Konjic, 88400, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Konjic"
+  },
+  {
+    "lat_round": 43.635,
+    "lng_round": 17.993,
+    "name": "Gornje polje",
+    "address": "Zagorice, 88400, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Zagorice"
+  },
+  {
+    "lat_round": 43.852,
+    "lng_round": 18.407,
+    "name": "Gabrielle Moreno Locatelli",
+    "address": "Gabrielle Moreno Locatelli 9, Sarajevo, 71144, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.859,
+    "lng_round": 18.433,
+    "name": "Brodac",
+    "address": "Sarajevo, 71200, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.856,
+    "lng_round": 18.415,
+    "name": "Ambasada Grčke",
+    "address": "Obala Maka Dizdara 1, Sarajevo, 71000, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.856,
+    "lng_round": 18.435,
+    "name": "Hostel Lucky",
+    "address": "Mehmeda Mujezinovića 12, Sarajevo, 71000, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.856,
+    "lng_round": 18.413,
+    "name": "Hamze Hume",
+    "address": "Sarajevo, 71144, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.856,
+    "lng_round": 18.434,
+    "name": "Deny Prom",
+    "address": "Hrvatin, Sarajevo, 71200, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.838,
+    "lng_round": 18.453,
+    "name": "Hotel Pino",
+    "address": "Sarajevo, 71144, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Sarajevo"
+  },
+  {
+    "lat_round": 43.655,
+    "lng_round": 17.761,
+    "name": "1. mart",
+    "address": "Jablanica, 88420, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Jablanica"
+  },
+  {
+    "lat_round": 43.343,
+    "lng_round": 17.807,
+    "name": "Gimnazija Mostar",
+    "address": "Španjolski trg 1, Mostar, 88000, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Mostar"
+  },
+  {
+    "lat_round": 43.337,
+    "lng_round": 17.815,
+    "name": "Lasta",
+    "address": "Oneščukova, 88000, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Grad Mostar"
+  },
+  {
+    "lat_round": 43.257,
+    "lng_round": 17.903,
+    "name": "Blagaj Tekke",
+    "address": "Dračevice, 88201, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Dračevice"
+  },
+  {
+    "lat_round": 43.093,
+    "lng_round": 17.923,
+    "name": "JU Radimlja Stolac",
+    "address": "Poprati, 88360, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Poprati"
+  },
+  {
+    "lat_round": 43.156,
+    "lng_round": 17.608,
+    "name": "Kravica",
+    "address": "Zvirići, 88320, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Zvirići"
+  },
+  {
+    "lat_round": 43.307,
+    "lng_round": 17.802,
+    "name": "Mostarski Sajam",
+    "address": "Rodoč Brod, MZ Rodoč I, 88104, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "MZ Rodoč I"
+  },
+  {
+    "lat_round": 43.781,
+    "lng_round": 17.135,
+    "name": "Bunari",
+    "address": "Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Grad Livno"
+  },
+  {
+    "lat_round": 43.823,
+    "lng_round": 16.998,
+    "name": "Prodaja mliječnih proizvoda - Mljekara Livno",
+    "address": "Splitska 3, Livno, 80101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Livno"
+  },
+  {
+    "lat_round": 44.343,
+    "lng_round": 17.268,
+    "name": "Harmani",
+    "address": "Jajce, 70101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Jajce"
+  },
+  {
+    "lat_round": 44.341,
+    "lng_round": 17.269,
+    "name": "44.341, 17.269",
+    "address": "Jajce, 70101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Jajce"
+  },
+  {
+    "lat_round": 44.338,
+    "lng_round": 17.27,
+    "name": "Pliva",
+    "address": "Jajce, 70101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Jajce"
+  },
+  {
+    "lat_round": 44.346,
+    "lng_round": 17.226,
+    "name": "Plivski Mlinčići",
+    "address": "Ćusine, 70206, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Ćusine"
+  },
+  {
+    "lat_round": 44.882,
+    "lng_round": 15.9,
+    "name": "Kostelski Buk",
+    "address": "Spahići, 77200, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Spahići"
+  },
+  {
+    "lat_round": 44.816,
+    "lng_round": 15.87,
+    "name": "Fethija džamija",
+    "address": "Bosanska, Bihać, 77101, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Bihać"
+  },
+  {
+    "lat_round": 44.698,
+    "lng_round": 16.006,
+    "name": "Golo brdo",
+    "address": "Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Grad Bihać"
+  },
+  {
+    "lat_round": 44.837,
+    "lng_round": 15.757,
+    "name": "Charging station",
+    "address": "Željava, 53233, Hrvatska",
+    "country": "Hrvatska",
+    "city": "Željava"
+  },
+  {
+    "lat_round": 43.343,
+    "lng_round": 17.804,
+    "name": "Sinkromo namještaj",
+    "address": "Kralja Tvrtka, MZ Avenija Kralja Tomislava, 88000, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "MZ Avenija Kralja Tomislava"
+  },
+  {
+    "lat_round": 44.347,
+    "lng_round": 17.226,
+    "name": "Plivski Mlinčići",
+    "address": "Ćusine, 70206, Bosna i Hercegovina / Босна и Херцеговина",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "city": "Ćusine"
+  },
+  {
+    "lat_round": 29.874,
+    "lng_round": 35.043,
+    "name": "הערבה",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.892,
+    "lng_round": 35.059,
+    "name": "לתחנה הפסיכולוגית",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 30.286,
+    "lng_round": 34.745,
+    "name": "פסגת הר כרכום",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 31.746,
+    "lng_round": 35.177,
+    "name": "אי הסיאמנגים",
+    "address": "אהרון שולוב, ירושלים, 9674625, ישראל",
+    "country": "ישראל",
+    "city": "ירושלים"
+  },
+  {
+    "lat_round": 31.748,
+    "lng_round": 35.177,
+    "name": "תוכים",
+    "address": "אהרון שולוב, ירושלים, 9674625, ישראל",
+    "country": "ישראל",
+    "city": "ירושלים"
+  },
+  {
+    "lat_round": 31.747,
+    "lng_round": 35.177,
+    "name": "אי קופי העכביש",
+    "address": "אהרון שולוב, ירושלים, 9674625, ישראל",
+    "country": "ישראל",
+    "city": "ירושלים"
+  },
+  {
+    "lat_round": 42.288,
+    "lng_round": 18.843,
+    "name": "Jadranski put",
+    "address": "Budva, 83510, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Budva"
+  },
+  {
+    "lat_round": 42.825,
+    "lng_round": 19.525,
+    "name": "Dunje Đokić",
+    "address": "Kolašin, 81210, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Kolašin"
+  },
+  {
+    "lat_round": 42.825,
+    "lng_round": 19.523,
+    "name": "Chalet Kolasin",
+    "address": "Junaka Breze, Kolašin, 81210, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Kolašin"
+  },
+  {
+    "lat_round": 42.651,
+    "lng_round": 18.097,
+    "name": "Od gaja",
+    "address": "Od gaja 16, Dubrovnik, 20000, Hrvatska",
+    "country": "Hrvatska",
+    "city": "Dubrovnik"
+  },
+  {
+    "lat_round": 31.469,
+    "lng_round": 55.676,
+    "name": "31.469, 55.676",
+    "address": "Coordenadas directas",
+    "country": "Desconocido",
+    "city": "Desconocido"
+  },
+  {
+    "lat_round": 43.188,
+    "lng_round": 19.062,
+    "name": "Каньон",
+    "address": "no trail marking, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Žabljak"
+  },
+  {
+    "lat_round": 43.15,
+    "lng_round": 19.295,
+    "name": "Most na Tari",
+    "address": "Most na Tari, Đurđevića Tara, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Đurđevića Tara"
+  },
+  {
+    "lat_round": 42.269,
+    "lng_round": 18.851,
+    "name": "Laguna beach",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Budva"
+  },
+  {
+    "lat_round": 42.399,
+    "lng_round": 18.819,
+    "name": "Štirovnik",
+    "address": "Velji Bostur, 85339, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Velji Bostur"
+  },
+  {
+    "lat_round": 43.174,
+    "lng_round": 18.858,
+    "name": "Žuta greda",
+    "address": "Plužine, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Plužine"
+  },
+  {
+    "lat_round": 42.675,
+    "lng_round": 19.031,
+    "name": "42.675, 19.031",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Danilovgrad"
+  },
+  {
+    "lat_round": 42.424,
+    "lng_round": 18.772,
+    "name": "Zanatska ulica",
+    "address": "Zanatska ulica 314, Kotor, 85339, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Kotor"
+  },
+  {
+    "lat_round": 29.652,
+    "lng_round": 34.936,
+    "name": "נחל עמרם",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.653,
+    "lng_round": 34.932,
+    "name": "עמודי עמרם",
+    "address": "נחל עמרם, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 42.445,
+    "lng_round": 19.268,
+    "name": "Crkva Svetog Đorđa",
+    "address": "19. Decembra, Podgorica, 81110, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Podgorica"
+  },
+  {
+    "lat_round": 42.444,
+    "lng_round": 19.269,
+    "name": "Stadion Malih Sportova",
+    "address": "Beogradska, Podgorica, 81110, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Podgorica"
+  },
+  {
+    "lat_round": 42.419,
+    "lng_round": 18.768,
+    "name": "Put Prvoboraca",
+    "address": "Put Prvoboraca, Škaljari, 85339, Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Škaljari"
+  },
+  {
+    "lat_round": 42.898,
+    "lng_round": 19.602,
+    "name": "Educational path",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Kolašin"
+  },
+  {
+    "lat_round": 31.5,
+    "lng_round": 34.75,
+    "name": "ספריית שביל ישראל",
+    "address": "סינגל בית קמה, מועצה אזורית בני שמעון, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית בני שמעון"
+  },
+  {
+    "lat_round": 43.12,
+    "lng_round": 19.043,
+    "name": "Zupci",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Žabljak"
+  },
+  {
+    "lat_round": 43.139,
+    "lng_round": 18.984,
+    "name": "Raklje",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Plužine"
+  },
+  {
+    "lat_round": 43.107,
+    "lng_round": 18.957,
+    "name": "Nerin greda",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Plužine"
+  },
+  {
+    "lat_round": 43.101,
+    "lng_round": 18.968,
+    "name": "Mali Đis",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Plužine"
+  },
+  {
+    "lat_round": 43.109,
+    "lng_round": 19.006,
+    "name": "Duške police",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Plužine"
+  },
+  {
+    "lat_round": -42.061,
+    "lng_round": -71.597,
+    "name": "Turismo Municipalidad Lago Puelo",
+    "address": "Avenida Los Nostros, Lago Puelo, U8431, Argentina",
+    "country": "Argentina",
+    "city": "Lago Puelo"
+  },
+  {
+    "lat_round": -41.075,
+    "lng_round": -71.477,
+    "name": "Confitería",
+    "address": "Avenida Exequiel Bustillo, San Carlos de Bariloche, 8400, Argentina",
+    "country": "Argentina",
+    "city": "San Carlos de Bariloche"
+  },
+  {
+    "lat_round": -50.474,
+    "lng_round": -73.038,
+    "name": "Balcón Inferior",
+    "address": "Paseo Inferior, Argentina",
+    "country": "Argentina",
+    "city": "Lago Argentino"
+  },
+  {
+    "lat_round": -34.61,
+    "lng_round": -58.39,
+    "name": "Plaza del Congreso",
+    "address": "Buenos Aires, Argentina",
+    "country": "Argentina",
+    "city": "Buenos Aires"
+  },
+  {
+    "lat_round": -34.604,
+    "lng_round": -58.387,
+    "name": "Línea B",
+    "address": "Rodríguez Peña, Buenos Aires, C1042AAC, Argentina",
+    "country": "Argentina",
+    "city": "Buenos Aires"
+  },
+  {
+    "lat_round": -34.815,
+    "lng_round": -58.535,
+    "name": "Burger King",
+    "address": "Acceso al Terminal de Exportación Particulares, Aeropuerto Internacional Ezeiza, B1802, Argentina",
+    "country": "Argentina",
+    "city": "Aeropuerto Internacional Ezeiza"
+  },
+  {
+    "lat_round": -43.089,
+    "lng_round": -71.463,
+    "name": "Mimosa",
+    "address": "Mimosa 165, Trevelin, 9203, Argentina",
+    "country": "Argentina",
+    "city": "Trevelin"
+  },
+  {
+    "lat_round": -41.133,
+    "lng_round": -71.31,
+    "name": "Homenaje a Alcorta",
+    "address": "Eduardo May, San Carlos de Bariloche, 8400, Argentina",
+    "country": "Argentina",
+    "city": "San Carlos de Bariloche"
+  },
+  {
+    "lat_round": -41.144,
+    "lng_round": -71.376,
+    "name": "Confitería Giratoria Cerro Otto",
+    "address": "Subida al Cerro Otto, San Carlos de Bariloche, 8400, Argentina",
+    "country": "Argentina",
+    "city": "San Carlos de Bariloche"
+  },
+  {
+    "lat_round": -41.053,
+    "lng_round": -71.531,
+    "name": "Muelle 7",
+    "address": "Circuito Chico \"Arturo Frondizi\", San Carlos de Bariloche, 8400, Argentina",
+    "country": "Argentina",
+    "city": "San Carlos de Bariloche"
+  },
+  {
+    "lat_round": -40.734,
+    "lng_round": -66.618,
+    "name": "-40.734, -66.618",
+    "address": "Coordenadas directas",
+    "country": "Desconocido",
+    "city": "Desconocido"
+  },
+  {
+    "lat_round": -40.784,
+    "lng_round": -71.66,
+    "name": "Sendero Bosque de Arrayanes",
+    "address": "Villa La Angostura, Q8407, Argentina",
+    "country": "Argentina",
+    "city": "Villa La Angostura"
+  },
+  {
+    "lat_round": -40.975,
+    "lng_round": -71.522,
+    "name": "Hosteria Isla Victoria",
+    "address": "Sendero Aurelio Pargade, Argentina",
+    "country": "Argentina",
+    "city": "Departamento Los Lagos"
+  },
+  {
+    "lat_round": -46.549,
+    "lng_round": -71.629,
+    "name": "Patagonia Argentina",
+    "address": "Patagonia Argentina 321, Los Antiguos, 9041, Argentina",
+    "country": "Argentina",
+    "city": "Los Antiguos"
+  },
+  {
+    "lat_round": -47.152,
+    "lng_round": -70.663,
+    "name": "Sendero Cueva de las Manos",
+    "address": "Argentina",
+    "country": "Argentina",
+    "city": "Lago Buenos Aires"
+  },
+  {
+    "lat_round": 29.893,
+    "lng_round": 35.06,
+    "name": "לתחנה הפסיכולוגית",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": -42.57,
+    "lng_round": -64.279,
+    "name": "Cabañas & Lofts - El Canto de la Ballena",
+    "address": "Avenida de las Ballenas 376, Puerto Pirámides, U9121, Argentina",
+    "country": "Argentina",
+    "city": "Puerto Pirámides"
+  },
+  {
+    "lat_round": 0.0,
+    "lng_round": 0.0,
+    "name": "Planifyr",
+    "address": "Área de OpenStreetMap",
+    "country": "Desconocido",
+    "city": "Desconocido"
+  },
+  {
+    "lat_round": 46.37,
+    "lng_round": 14.101,
+    "name": "Restavracija Blejski grad",
+    "address": "Grajska cesta 61, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.368,
+    "lng_round": 14.111,
+    "name": "Ljubljanska cesta",
+    "address": "Ljubljanska cesta 3a, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.367,
+    "lng_round": 14.108,
+    "name": "Lake Bled info center",
+    "address": "Pot okoli jezera, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.369,
+    "lng_round": 14.108,
+    "name": "Ciklama",
+    "address": "Pot okoli jezera, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.385,
+    "lng_round": 14.094,
+    "name": "Cesta v Vintgar",
+    "address": "Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.395,
+    "lng_round": 14.087,
+    "name": "Soteska Vintgar",
+    "address": "Podhom, Podhom, 4273, Slovenija",
+    "country": "Slovenija",
+    "city": "Podhom"
+  },
+  {
+    "lat_round": 46.393,
+    "lng_round": 14.086,
+    "name": "Podhom",
+    "address": "Podhom 80, Zgornje Gorje, 4247, Slovenija",
+    "country": "Slovenija",
+    "city": "Zgornje Gorje"
+  },
+  {
+    "lat_round": 46.393,
+    "lng_round": 14.085,
+    "name": "Soteska Vintgar",
+    "address": "Triglavski narodni park, Podhom, 4273, Slovenija",
+    "country": "Slovenija",
+    "city": "Podhom"
+  },
+  {
+    "lat_round": 46.386,
+    "lng_round": 14.096,
+    "name": "Sebenje",
+    "address": "Sebenje 57a, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.313,
+    "lng_round": 14.063,
+    "name": "Obrne",
+    "address": "Obrne 16, Bohinjska Bela, 4263, Slovenija",
+    "country": "Slovenija",
+    "city": "Bohinjska Bela"
+  },
+  {
+    "lat_round": 46.272,
+    "lng_round": 13.957,
+    "name": "Aquapark & Wellness Bohinj",
+    "address": "Triglavska cesta 17, Bohinjska Bistrica, 4264, Slovenija",
+    "country": "Slovenija",
+    "city": "Bohinjska Bistrica"
+  },
+  {
+    "lat_round": 46.273,
+    "lng_round": 13.957,
+    "name": "Bohinj ECO Hotel",
+    "address": "Triglavska cesta 17, Bohinjska Bistrica, 4264, Slovenija",
+    "country": "Slovenija",
+    "city": "Bohinjska Bistrica"
+  },
+  {
+    "lat_round": 46.364,
+    "lng_round": 14.097,
+    "name": "Blejsko jezero",
+    "address": "Bled, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.362,
+    "lng_round": 14.09,
+    "name": "Potičnica",
+    "address": "Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.369,
+    "lng_round": 14.103,
+    "name": "Grajska čolnarna",
+    "address": "Pot okoli jezera, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.368,
+    "lng_round": 14.109,
+    "name": "Cesta svobode",
+    "address": "Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 46.289,
+    "lng_round": 13.892,
+    "name": "46.289, 13.892",
+    "address": "Stara Fužina, 4265, Slovenija",
+    "country": "Slovenija",
+    "city": "Stara Fužina"
+  },
+  {
+    "lat_round": 46.282,
+    "lng_round": 13.881,
+    "name": "Kramar",
+    "address": "Ribčev Laz, 4265, Slovenija",
+    "country": "Slovenija",
+    "city": "Ribčev Laz"
+  },
+  {
+    "lat_round": 46.282,
+    "lng_round": 13.837,
+    "name": "Kopalno območje Ukanc",
+    "address": "Ukanc, Ukanc, 4265, Slovenija",
+    "country": "Slovenija",
+    "city": "Ukanc"
+  },
+  {
+    "lat_round": 46.368,
+    "lng_round": 14.112,
+    "name": "KRIM",
+    "address": "Ljubljanska cesta 7, Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 31.558,
+    "lng_round": 34.6,
+    "name": "אור הנר/חדר אוכל",
+    "address": "מועצה אזורית שער הנגב, 8720178, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית שער הנגב"
+  },
+  {
+    "lat_round": 32.982,
+    "lng_round": 35.545,
+    "name": "צה\"ל",
+    "address": "חצור הגלילית, 1200000, ישראל",
+    "country": "ישראל",
+    "city": "חצור הגלילית"
+  },
+  {
+    "lat_round": 33.225,
+    "lng_round": 35.624,
+    "name": "דרך אורן",
+    "address": "מועצה אזורית גליל עליון, 1222500, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית גליל עליון"
+  },
+  {
+    "lat_round": 29.896,
+    "lng_round": 35.061,
+    "name": "יטבתה",
+    "address": "לתחנה הפסיכולוגית, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.548,
+    "lng_round": 34.965,
+    "name": "שיפודי הבוסתן",
+    "address": "טיילת השלום, אילת, 8804625, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.548,
+    "lng_round": 34.964,
+    "name": "חוף הזהב",
+    "address": "אילת, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.895,
+    "lng_round": 35.06,
+    "name": "יטבתה",
+    "address": "לתחנה הפסיכולוגית, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.554,
+    "lng_round": 34.962,
+    "name": "dohar",
+    "address": "קאמן, אילת, 8804625, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.765,
+    "lng_round": 35.014,
+    "name": "צומת מכרות תמנע לצפון",
+    "address": "הערבה, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 33.233,
+    "lng_round": 35.623,
+    "name": "חניית פארק שניר",
+    "address": "מועצה אזורית גליל עליון, 1222500, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית גליל עליון"
+  },
+  {
+    "lat_round": 32.321,
+    "lng_round": 34.853,
+    "name": "אחימאיר",
+    "address": "אחימאיר 7, נתניה, 4231204, ישראל",
+    "country": "ישראל",
+    "city": "נתניה"
+  },
+  {
+    "lat_round": 29.894,
+    "lng_round": 35.058,
+    "name": "לתחנה הפסיכולוגית",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 31.895,
+    "lng_round": 35.004,
+    "name": "בית הכנסת היכל אברהם",
+    "address": "נהר הירדן, מודיעין-מכבים-רעות, 7170593, ישראל",
+    "country": "ישראל",
+    "city": "מודיעין-מכבים-רעות"
+  },
+  {
+    "lat_round": 31.896,
+    "lng_round": 35.004,
+    "name": "שדרות החשמונאים",
+    "address": "מודיעין-מכבים-רעות, 7173709, ישראל",
+    "country": "ישראל",
+    "city": "מודיעין-מכבים-רעות"
+  },
+  {
+    "lat_round": 31.896,
+    "lng_round": 35.005,
+    "name": "נחל אלעל",
+    "address": "מודיעין-מכבים-רעות, 7173709, ישראל",
+    "country": "ישראל",
+    "city": "מודיעין-מכבים-רעות"
+  },
+  {
+    "lat_round": 31.895,
+    "lng_round": 35.003,
+    "name": "נחל זוהר",
+    "address": "מודיעין-מכבים-רעות, 7173709, ישראל",
+    "country": "ישראל",
+    "city": "מודיעין-מכבים-רעות"
+  },
+  {
+    "lat_round": 30.988,
+    "lng_round": 35.292,
+    "name": "מעלה תמר",
+    "address": "מועצה אזורית תמר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית תמר"
+  },
+  {
+    "lat_round": 29.894,
+    "lng_round": 35.064,
+    "name": "Yotvata Restaurant",
+    "address": "הערבה, Regional Center Hevel Eilot, ישראל",
+    "country": "ישראל",
+    "city": "Regional Center Hevel Eilot"
+  },
+  {
+    "lat_round": 29.557,
+    "lng_round": 34.948,
+    "name": "האשל",
+    "address": "אילת, 8804625, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.56,
+    "lng_round": 34.95,
+    "name": "מרכז רזין/אילות",
+    "address": "אילות, אילת, 8804625, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.722,
+    "lng_round": 35.002,
+    "name": "DC-4",
+    "address": "הערבה, אילת, 8881000, ישראל",
+    "country": "ישראל",
+    "city": "אילת"
+  },
+  {
+    "lat_round": 29.788,
+    "lng_round": 34.932,
+    "name": "הצלחות",
+    "address": "דרך הנחושת, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.854,
+    "lng_round": 35.031,
+    "name": "הערבה",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.794,
+    "lng_round": 34.933,
+    "name": "הקשת הקטנה",
+    "address": "דרך הנחושת, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.895,
+    "lng_round": 35.059,
+    "name": "יטבתה",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.893,
+    "lng_round": 35.058,
+    "name": "לתחנה הפסיכולוגית",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.892,
+    "lng_round": 35.058,
+    "name": "לתחנה הפסיכולוגית",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.892,
+    "lng_round": 35.061,
+    "name": "הערבה",
+    "address": "מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 29.893,
+    "lng_round": 35.051,
+    "name": "ביה\"ס העל-יסודי \"מעלה שחרות\"",
+    "address": "לתחנה הפסיכולוגית, מועצה אזורית חבל אילות, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חבל אילות"
+  },
+  {
+    "lat_round": 32.013,
+    "lng_round": 34.779,
+    "name": "קניון חולון",
+    "address": "חולון, 5845935, ישראל",
+    "country": "ישראל",
+    "city": "חולון"
+  },
+  {
+    "lat_round": 32.778,
+    "lng_round": 35.545,
+    "name": "חוף גיא",
+    "address": "טבריה, 1424224, ישראל",
+    "country": "ישראל",
+    "city": "טבריה"
+  },
+  {
+    "lat_round": 33.086,
+    "lng_round": 35.113,
+    "name": "דרך הראשונים",
+    "address": "מועצה אזורית מטה אשר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית מטה אשר"
+  },
+  {
+    "lat_round": 32.995,
+    "lng_round": 35.222,
+    "name": "מבצר יחיעם",
+    "address": "מועצה אזורית מעלה יוסף, 2513500, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית מעלה יוסף"
+  },
+  {
+    "lat_round": 43.769,
+    "lng_round": 11.262,
+    "name": "Finisterrae",
+    "address": "Piazza di Santa Croce 12, Firenze, 50122, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.723,
+    "lng_round": 10.396,
+    "name": "Vaso del talento",
+    "address": "Piazza del Duomo, Pisa, 56126, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.723,
+    "lng_round": 10.397,
+    "name": "Piazza del Duomo",
+    "address": "Pisa, 56126, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.723,
+    "lng_round": 10.395,
+    "name": "Piazza del Duomo",
+    "address": "Pisa, 56126, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.724,
+    "lng_round": 10.394,
+    "name": "Porta del Leone",
+    "address": "Mura di Pisa, Pisa, 56127, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.717,
+    "lng_round": 10.4,
+    "name": "ESN Pisa",
+    "address": "Via Curtatone e Montanara 6, Pisa, 56126, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.708,
+    "lng_round": 10.399,
+    "name": "Polizia Ferroviaria",
+    "address": "Piazza della Stazione, Pisa, 56126, Italia",
+    "country": "Italia",
+    "city": "Pisa"
+  },
+  {
+    "lat_round": 43.769,
+    "lng_round": 11.253,
+    "name": "Vicolo dell'Oro",
+    "address": "Vicolo dell'Oro 1b, Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.768,
+    "lng_round": 11.254,
+    "name": "Lungarno degli Archibusieri",
+    "address": "Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.768,
+    "lng_round": 11.253,
+    "name": "Ponte Vecchio",
+    "address": "Ponte Vecchio 30 R, Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.769,
+    "lng_round": 11.254,
+    "name": "Via Por Santa Maria",
+    "address": "Via Por Santa Maria 32 R, Firenze, 50123, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.769,
+    "lng_round": 11.256,
+    "name": "Andrea Orcagna",
+    "address": "Piazzale degli Uffizi, Firenze, 50122, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.77,
+    "lng_round": 11.256,
+    "name": "Piazza della Signoria",
+    "address": "Piazza della Signoria 27 R, Firenze, 50122, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.769,
+    "lng_round": 11.251,
+    "name": "Lungarno degli Acciaioli",
+    "address": "Lungarno degli Acciaioli 70 R, Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.766,
+    "lng_round": 11.25,
+    "name": "Piazza dei Pitti",
+    "address": "Piazza dei Pitti 27 R, Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.765,
+    "lng_round": 11.25,
+    "name": "Galleria Palatina",
+    "address": "Piazza dei Pitti 1, Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 43.766,
+    "lng_round": 11.249,
+    "name": "ZTL Settore O",
+    "address": "Firenze, 50125, Italia",
+    "country": "Italia",
+    "city": "Firenze"
+  },
+  {
+    "lat_round": 55.675,
+    "lng_round": 12.571,
+    "name": "Bag Rådhuset",
+    "address": "Bag Rådhuset 2, København V, 1550, Danmark",
+    "country": "Danmark",
+    "city": "København V"
+  },
+  {
+    "lat_round": 31.322,
+    "lng_round": 35.228,
+    "name": "בית קברות בדואי",
+    "address": "נחל צאלים, מועצה אזורית תמר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית תמר"
+  },
+  {
+    "lat_round": 31.311,
+    "lng_round": 35.363,
+    "name": "Mount Masada Restaurant",
+    "address": "שביל הנחש, מועצה אזורית תמר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית תמר"
+  },
+  {
+    "lat_round": 31.195,
+    "lng_round": 35.341,
+    "name": "מפל בוקק",
+    "address": "מועצה אזורית תמר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית תמר"
+  },
+  {
+    "lat_round": 31.195,
+    "lng_round": 35.34,
+    "name": "מפל בוקק",
+    "address": "מועצה אזורית תמר, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית תמר"
+  },
+  {
+    "lat_round": 43.121,
+    "lng_round": 19.0,
+    "name": "Goveđi do",
+    "address": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "city": "Opština Plužine"
+  },
+  {
+    "lat_round": 35.168,
+    "lng_round": 25.454,
+    "name": "Περιμετρική Οδός Οροπεδίου",
+    "address": "Ψυχρό, 720 52, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Ψυχρό"
+  },
+  {
+    "lat_round": 35.289,
+    "lng_round": 25.365,
+    "name": "Main Pool",
+    "address": "Λιμένα Χερσονήσου - Οροπεδίου, Δημοτική Ενότητα Χερσονήσου, 700 14, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Δημοτική Ενότητα Χερσονήσου"
+  },
+  {
+    "lat_round": 35.163,
+    "lng_round": 25.445,
+    "name": "Σπήλαιο Ψυχρού;Δικταίον Αντρον",
+    "address": "Ψυχροῦ - Δικταίου Ἄνδρου, Ψυχρό, 720 52, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Ψυχρό"
+  },
+  {
+    "lat_round": 35.167,
+    "lng_round": 25.45,
+    "name": "Περιμετρική Οδός Οροπεδίου",
+    "address": "Ψυχρό, 720 52, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Ψυχρό"
+  },
+  {
+    "lat_round": 35.216,
+    "lng_round": 25.461,
+    "name": "Homo Sapiens",
+    "address": "Λιμένα Χερσονήσου - Οροπεδίου, Δημοτική Ενότητα Χερσονήσου, 700 05, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Δημοτική Ενότητα Χερσονήσου"
+  },
+  {
+    "lat_round": 35.343,
+    "lng_round": 25.146,
+    "name": "Western Union",
+    "address": "Νεάρχου, Δημοτική Ενότητα Ηρακλείου, 715 00, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Δημοτική Ενότητα Ηρακλείου"
+  },
+  {
+    "lat_round": 35.307,
+    "lng_round": 25.409,
+    "name": "ALEKO'S garden",
+    "address": "Ειρήνης, Δημοτική Ενότητα Χερσονήσου, 700 14, Ελλάς",
+    "country": "Ελλάς",
+    "city": "Δημοτική Ενότητα Χερσονήσου"
+  },
+  {
+    "lat_round": 46.36,
+    "lng_round": 14.105,
+    "name": "Straža",
+    "address": "Bled, 4260, Slovenija",
+    "country": "Slovenija",
+    "city": "Bled"
+  },
+  {
+    "lat_round": 32.61,
+    "lng_round": 34.916,
+    "name": "בית אל-יחיא",
+    "address": "מועצה אזורית חוף הכרמל, 3092859, ישראל",
+    "country": "ישראל",
+    "city": "מועצה אזורית חוף הכרמל"
+  },
+  {
+    "lat_round": 32.692,
+    "lng_round": 35.0,
+    "name": "The house in Ein Hawd",
+    "address": "عين حوض, ישראל",
+    "country": "ישראל",
+    "city": "عين حوض"
+  }
+]

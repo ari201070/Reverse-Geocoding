@@ -1,0 +1,22 @@
+# DIRECTIVAS CRÍTICAS DE ARQUITECTURA (COSTO $0)
+
+## 1. APIS Y MODELOS PROHIBIDOS
+- Queda ESTRICTAMENTE PROHIBIDO el uso de Vertex AI y Google Maps API debido a bloqueos de facturación.
+- Para el motor de lenguaje, debes configurarte utilizando la capa gratuita de Google AI Studio (Gemini API tradicional) o un endpoint local, NUNCA Vertex AI.
+
+## 2. GEOCODIFICACIÓN INVERSA (OPENSTREETMAP)
+- Toda conversión de coordenadas Lat/Lon a dirección física se hará exclusivamente mediante la API gratuita de Nominatim (OpenStreetMap):
+  URL: https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat={lat}&lon={lon}
+- Regulación de tráfico obligatoria: Añade un retraso (delay) de 1.1 segundos entre peticiones HTTP para respetar sus políticas y evitar bloqueos de IP.
+- Cache primero: Registra y lee todas las consultas en una base de datos local SQLite (`geocache.db`). Redondea las coordenadas a 4 decimales para buscar en la caché.
+
+## 3. COMUNICACIÓN MANUAL CON EL ARQUITECTO (HUMAN-IN-THE-LOOP)
+- Si encuentras un bloqueo de diseño, una duda sobre la base de datos o un error que no puedas resolver, NO entres en un bucle de reintentos.
+- Genera un archivo local llamado `DUDAS_ARQUITECTO.txt` describiendo tu problema y el código afectado.
+- Detén por completo tu ejecución (PAUSA) hasta que el usuario elimine ese archivo o escriba la respuesta dentro de él.
+
+## 4. CONSULTA OBLIGATORIA AL ARQUITECTO (PROCESO FIJO MCP)
+- Es un **PROCESO FIJO Y MANDATORIO** del flujo de trabajo consultar al Arquitecto del proyecto mediante la herramienta MCP `consult_architect_llm` antes de redactar cualquier Plan de Implementación (`implementation_plan.md`) o realizar modificaciones lógicas complejas en el Consensus Truth Engine.
+- Toda consulta técnica debe alinearse con la base de conocimientos de la carpeta `REVERSE_GEOCODING` de NotebookLM, la cual está sincronizada localmente en `MASTER_PROMPTS_V3_GIS_REVERSE_GEOCODING.md` y `NOTEBOOKLM_CONSOLIDATED_NOTES.md`.
+- El agente debe documentar y respetar las directivas de diseño del Arquitecto (Modularidad, Caché Espacial H3 Res 9, Sinergia), incorporando de forma rigurosa la sección "INSTRUCCIÓN PARA EL AGENTE" devuelta por el Arquitecto en el desarrollo final.
+
