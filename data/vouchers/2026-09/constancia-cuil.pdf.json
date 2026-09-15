@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:54:51.970Z",
+  "source_name": "constancia-cuil.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "constancia-cuil",
+    "title": "constancia-cuil",
+    "startDate": null,
+    "startTime": "09:07",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "constancia-cuil",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: constancia-cuil"
+  }
+}

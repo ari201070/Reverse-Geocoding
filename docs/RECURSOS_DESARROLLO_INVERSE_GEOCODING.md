@@ -10,7 +10,7 @@ La ingeniería inversa geográfica reconstruye la "Verdad del Lugar" mediante **
 
 1. **Huella Digital Semántica (OCR e Inferencia)**
    - Cuando no hay coordenadas precisas, usa texto del entorno como identificador único
-   - OCR (Google Cloud Vision) para digitalizar textos manuscritos/murales
+   - OCR local (Ollama `moondream`) para digitalizar textos manuscritos/murales
    - Búsqueda en Knowledge Graph de Google para vincular foto con locales
    - Reconciliación con RapidFuzz (Token Set Ratio)
 
@@ -74,10 +74,10 @@ Las demás fotos del lote heredan coordenadas si:
 - **Consenso automático**: >75% de confianza
 - **Bloqueo de seguridad**: si reconciliación semántica (RapidFuzz) falla
 
-**Lógica de Fallback (Cascada 3 niveles):**
-1. **Nivel 1**: Caché Local (PostGIS)
-2. **Nivel 2**: Google Places API
-3. **Nivel 3**: OpenCage
+**Lógica de Fallback (Cascada FOSS, sin Google pago):**
+1. **Nivel 1**: Caché Local (PostGIS/H3)
+2. **Nivel 2**: Photon / Overpass / Nominatim
+3. **Nivel 3**: Geoapify free → OpenCage free
 
 **Validación Humana:** Si score < 75% → requiresManualValidation
 
@@ -262,8 +262,8 @@ ESTILO:
 
 ### Pregunta 10
 **¿Cuál es el primer nivel en la cascada de fallback del sistema?**
-- a) Google Places API
-- b) OpenCage
+- a) Photon / Overpass / Nominatim
+- b) Geoapify free / OpenCage free
 - c) Caché Local (PostGIS) ✓
 - d) GPS directo
 
@@ -296,7 +296,7 @@ FASE 3: PROCESAMIENTO (Spatial Index)
         ↓
         
 FASE 4: ANÁLISIS (Evidencia Visual)
-├── Cloud Vision API
+├── OCR local (Ollama `moondream`/`llama3.2`)
 │   ├── OCR (texto detectado)
 │   ├── Label Detection (objetos)
 │   └── Landmark Detection (hitos)

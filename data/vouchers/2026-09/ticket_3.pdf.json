@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T17:20:34.574Z",
+  "source_name": "ticket.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Buenos Aires Ministro Pistarini Airport",
+    "title": "Buenos Aires Ministro Pistarini Airport",
+    "startDate": "2025-10-28",
+    "startTime": "21:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Buenos Aires Ministro Pistarini Airport",
+    "coordinates": {
+      "lat": -34.8168,
+      "lng": -58.5474
+    },
+    "h3_index": "89c2e3833d3ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 255,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: Buenos Aires Ministro Pistarini Airport"
+  }
+}

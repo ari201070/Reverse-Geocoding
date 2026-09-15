@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T15:10:27.530Z",
+  "source_name": "boarding-pass-Y0HBMB59-1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Salta to Puerto Iguazü",
+    "title": "Salta to Puerto Iguazü",
+    "startDate": "2025-10-19",
+    "startTime": "14:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Salta to Puerto Iguazü",
+    "coordinates": {
+      "lat": -25.5987,
+      "lng": -54.5883
+    },
+    "h3_index": "89a95ed125bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Salta to Puerto Iguazü"
+  }
+}

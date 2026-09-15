@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:41:01.196Z",
+  "source_name": "Capilla Sixtina y los Museos Vaticanos.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Viale Vaticano, 95, 00192 Roma RM, Italia",
+    "title": "Viale Vaticano, 95, 00192 Roma RM, Italia",
+    "startDate": null,
+    "startTime": "14:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Viale Vaticano, 95, 00192 Roma RM, Italia",
+    "coordinates": {
+      "lat": 41.9074,
+      "lng": 12.455
+    },
+    "h3_index": "891e805058bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 117,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: Viale Vaticano, 95, 00192 Roma RM, Italia"
+  }
+}

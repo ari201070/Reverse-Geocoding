@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:40:12.097Z",
+  "source_name": "Colosseum, Forum, and Palatine Hill Tour.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Arch of Constantine",
+    "title": "Arch of Constantine",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Arch of Constantine",
+    "coordinates": {
+      "lat": 41.8898,
+      "lng": 12.4907
+    },
+    "h3_index": "891e80501a7ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Arch of Constantine"
+  }
+}

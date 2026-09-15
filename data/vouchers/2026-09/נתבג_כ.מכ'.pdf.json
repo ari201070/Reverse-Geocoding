@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:16:44.465Z",
+  "source_name": "נתבג_כ.מכ'.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "טרמינל ארהב הן תל ן ב רב ויג היזטו, ׹יגה הן תהביו",
+    "title": "טרמינל ארהב הן תל ן ב רב ויג היזטו, ׹יגה הן תהביו",
+    "startDate": null,
+    "startTime": "20:04",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "טרמינל ארהב הן תל ן ב רב ויג היזטו, ׹יגה הן תהביו",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: טרמינל ארהב הן תל ן ב רב ויג היזטו, ׹יגה הן תהביו"
+  }
+}

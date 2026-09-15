@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T14:31:28.940Z",
+  "source_name": "Pasaporte.jpg",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Pasaporte.jpg",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Pasaporte.jpg",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Pasaporte.jpg"
+  }
+}

@@ -11,7 +11,7 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const RESUMEN_PATH = path.join(__dirname, 'resumen_proceso.json');
 
 // Overpass API Endpoints (priorizando el endpoint probado más rápido)

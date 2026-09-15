@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:16:16.901Z",
+  "source_name": "B&B Marbò Florence_ אישור.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "B&B Marbò Florence",
+    "title": "B&B Marbò Florence",
+    "startDate": "2023-10-05",
+    "startTime": "13:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "B&B Marbò Florence",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 716,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: B&B Marbò Florence"
+  }
+}

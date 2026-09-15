@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T13:27:26.214Z",
+  "source_name": "לוגו אוטובוס.jpg",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Hotel Actual",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hotel Actual",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Hotel Actual"
+  }
+}

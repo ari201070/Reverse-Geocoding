@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:34:51.942Z",
+  "source_name": "BLeumi_20221218152738_69956142_TeudatNeche.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "SUSANA RUTH FLIER",
+    "title": "SUSANA RUTH FLIER",
+    "startDate": null,
+    "startTime": "19:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "SUSANA RUTH FLIER",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1000,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: SUSANA RUTH FLIER"
+  }
+}

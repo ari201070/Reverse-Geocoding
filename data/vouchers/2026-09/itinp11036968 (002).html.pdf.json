@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:53:40.076Z",
+  "source_name": "itinp11036968 (002).html.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Tel Aviv Ramon Airport",
+    "title": "Tel Aviv Ramon Airport",
+    "startDate": null,
+    "startTime": "15:14",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Tel Aviv Ramon Airport",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 159,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Tel Aviv Ramon Airport"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:14:35.351Z",
+  "source_name": "Montenegro-06.2010.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "דוברובניק",
+    "title": "דוברובניק",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "דוברובניק",
+    "coordinates": {
+      "lat": 42.6491,
+      "lng": 18.094
+    },
+    "h3_index": "891e8db42b7ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: דוברובניק"
+  }
+}

@@ -12,7 +12,7 @@
 import Database from 'better-sqlite3';
 import fs from 'fs';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const OUTPUT_PATH = './resumen_fase2_2.json';
 const CHECKPOINT_PATH = './fase2_2_checkpoint.json';
 const DELAY_MS = 1100; // 1.1 seconds

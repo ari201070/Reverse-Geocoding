@@ -6,16 +6,16 @@ Esta Skill encapsula las "Reglas Maestras" y la lógica de sincronización globa
 
 El núcleo de comportamiento del agente reside en los recursos internos del skill:
 
-- **[RULES_FOR_AI.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/RULES_FOR_AI.md)**: Estrategia de tokens, modo lean y protocolos de procesamiento.
-- **[GLOBAL_AI_SETUP.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/GLOBAL_AI_SETUP.md)**: Configuración del IDE y la plataforma.
+- **[RULES_FOR_AI.md](../../../../docs/RULES_FOR_AI.md)**: Estrategia de tokens, modo lean y protocolos de procesamiento.
+- **[GLOBAL_AI_SETUP.md](../../../../docs/GLOBAL_AI_SETUP.md)**: Configuración del IDE y la plataforma.
 
 ## 🗝️ Gestión de API Keys (Guía Maestra)
 
-- **[GUIA_API_KEYS.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/GUIA_API_KEYS.md)**: Consistencia en nombres (ej. `VITE_GOOGLE_API_KEY`) y manejo seguro en `.env`.
+- **[GUIA_API_KEYS.md](../../../../docs/GUIA_API_KEYS.md)**: Consistencia en nombres (ej. `VITE_GOOGLE_API_KEY`) y manejo seguro en `.env`.
 
 ## 🔄 Lógica de Sincronización (Firebase)
 
-- **[EXPLICACION_SINCRONIZACION.md](file:///C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/.agent/skills/MasterSyncSuite/resources/EXPLICACION_SINCRONIZACION.md)**: Estrategia para migrar de `localStorage` a Firestore/Storage asegurando persistencia multi-dispositivo.
+- **[EXPLICACION_SINCRONIZACION.md](../../../../docs/EXPLICACION_SINCRONIZACION.md)**: Estrategia para migrar de `localStorage` a Firestore/Storage asegurando persistencia multi-dispositivo.
 
 ## 🌍 Bilingüismo y RTL
 

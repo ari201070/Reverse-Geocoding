@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:37:12.990Z",
+  "source_name": "global-services-phone-numbers_230925_173402.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Vatican City State",
+    "title": "Vatican City State",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Vatican City State",
+    "coordinates": {
+      "lat": 41.9034,
+      "lng": 12.4529
+    },
+    "h3_index": "891e80505c7ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 800870866,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Vatican City State"
+  }
+}

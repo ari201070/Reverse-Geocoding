@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:01:24.112Z",
+  "source_name": "Foss - Israeli customer convention (005).pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Hillerod Hotel",
+    "title": "Hillerod Hotel",
+    "startDate": "2021-07-12",
+    "startTime": "18:15",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hillerod Hotel",
+    "coordinates": {
+      "lat": 55.9319,
+      "lng": 12.2975
+    },
+    "h3_index": "891f232a6b7ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Hillerod Hotel"
+  }
+}

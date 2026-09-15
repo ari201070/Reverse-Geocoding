@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:49:36.613Z",
+  "source_name": "caa75838-6d84-44e2-b158-1f018076a2fb_signed.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Pilat Ariel",
+    "title": "Pilat Ariel",
+    "startDate": null,
+    "startTime": "12:01",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Pilat Ariel",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Pilat Ariel"
+  }
+}

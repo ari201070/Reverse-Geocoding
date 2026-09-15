@@ -11,7 +11,7 @@ const Database = require('better-sqlite3');
 const path = require('path');
 const fs = require('fs');
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const OUTPUT_DIR = path.join(__dirname, '..', 'photo-import-output');
 
 // ============ CONFIGURATION ============

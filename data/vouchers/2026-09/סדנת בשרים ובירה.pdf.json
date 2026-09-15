@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T16:30:11.372Z",
+  "source_name": "סדנת בשרים ובירה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "סדנת בשרים ובירה",
+    "title": "סדנת בשרים ובירה",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "סדנת בשרים ובירה",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: סדנת בשרים ובירה"
+  }
+}

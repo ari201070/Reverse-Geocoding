@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:16:47.173Z",
+  "source_name": "24009-אריאל פליאר.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Esteriω",
+    "title": "Esteriω",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Esteriω",
+    "coordinates": {
+      "lat": -21.4692,
+      "lng": -47.0019
+    },
+    "h3_index": "89a8adac223ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 2032,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Esteriω"
+  }
+}

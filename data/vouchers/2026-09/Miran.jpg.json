@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T12:57:47.370Z",
+  "source_name": "Miran.jpg",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Miran.jpg",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Miran.jpg",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Miran.jpg"
+  }
+}

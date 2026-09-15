@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:15:13.128Z",
+  "source_name": "E-Ticket.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "MUNICH MUC",
+    "title": "MUNICH MUC",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "MUNICH MUC",
+    "coordinates": {
+      "lat": 48.0919,
+      "lng": 11.5242
+    },
+    "h3_index": "891f8d7b4abffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: MUNICH MUC"
+  }
+}

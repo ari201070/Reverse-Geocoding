@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:10:01.131Z",
+  "source_name": "BIH 2304 טבלת מלונות וטיסות עבור אריאל פליאר.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Skenderija 1",
+    "title": "Skenderija 1",
+    "startDate": null,
+    "startTime": "08:25",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Skenderija 1",
+    "coordinates": {
+      "lat": 44.5058,
+      "lng": 19.5452
+    },
+    "h3_index": "891ef4a2087ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "null",
+    "details": null,
+    "summary": "Voucher detectado: Skenderija 1"
+  }
+}

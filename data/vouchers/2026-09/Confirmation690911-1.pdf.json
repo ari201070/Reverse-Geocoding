@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:57:58.862Z",
+  "source_name": "Confirmation690911-1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Calmaspa",
+    "title": "Calmaspa",
+    "startDate": null,
+    "startTime": "12:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Calmaspa",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 637.2,
+    "currency": "Shekel",
+    "details": null,
+    "summary": "Voucher detectado: Calmaspa"
+  }
+}

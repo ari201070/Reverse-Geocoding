@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const db = new Database('C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db');
+const db = new Database('C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db');
 
 const noCountry = db.prepare("SELECT file_path, date_taken FROM photos WHERE country IS NULL OR country = ''").all();
 

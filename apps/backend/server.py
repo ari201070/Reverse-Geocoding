@@ -24,7 +24,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DB_PATH = r"F:\photo_catalog.db"
+# Add rate limiter middleware
+from rate_limiter_middleware import RateLimiterMiddleware
+app.add_middleware(RateLimiterMiddleware)
+
+# Startup event to initialize rate limiter database
+@app.on_event("startup")
+async def startup_event():
+    from sqlite_rate_store import init_db
+    await init_db()
+    
+    # Start the cleanup background task
+    from cleanup_service import start_cleanup_task
+    start_cleanup_task()
+    
+    print("[RATE_LIMITER] Initialized and cleanup task started")
+
+DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "photo_catalog.db")
 BOOKINGS_PATH = os.path.join(os.path.dirname(__file__), "src", "data", "initialBookings.json")
 
 # =========================
@@ -167,6 +183,44 @@ def _geocode_nominatim(location_name: str):
     except Exception:
         pass
     return fb
+
+
+# Cuota CERO facturación Gemini (L4 solo con free tier disponible)
+GEMINI_FREE_DAILY_LIMIT = int(os.environ.get("GEMINI_FREE_DAILY_LIMIT", "200"))
+GEMINI_FREE_MONTHLY_LIMIT = int(os.environ.get("GEMINI_FREE_MONTHLY_LIMIT", "3000"))
+_GEMINI_QUOTA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".gemini_quota.json")
+
+
+def _gemini_quota_load():
+    from datetime import date
+    today, month = str(date.today()), str(date.today())[:7]
+    try:
+        with open(_GEMINI_QUOTA_FILE) as f:
+            q = json.load(f)
+    except (OSError, ValueError):
+        q = {}
+    if q.get("day") != today:
+        q = {"day": today, "used_day": 0, "month": month, "used_month": 0}
+    elif q.get("month") != month:
+        q["month"], q["used_month"] = month, 0
+    return q
+
+
+def _gemini_quota_exhausted() -> bool:
+    q = _gemini_quota_load()
+    out = (q["used_day"] >= GEMINI_FREE_DAILY_LIMIT
+           or q["used_month"] >= GEMINI_FREE_MONTHLY_LIMIT)
+    if out:
+        print(f"[CUOTA] Gemini free agotado (día {q['used_day']}/{GEMINI_FREE_DAILY_LIMIT}). Pausa.")
+    return out
+
+
+def _gemini_quota_consume():
+    q = _gemini_quota_load()
+    q["used_day"] += 1
+    q["used_month"] += 1
+    with open(_GEMINI_QUOTA_FILE, "w") as f:
+        json.dump(q, f)
 
 
 @app.get("/favicon.ico", include_in_schema=False)
@@ -355,9 +409,28 @@ async def spatial_cache_save(payload: dict):
     return {"status": "saved", "h3_index": h3_index, "latitude": anon_lat, "longitude": anon_lng}
 
 # =========================
-# Capa 2: VLM Local moondream + Herencia Espacio-Temporal
-# POST /api/extract-voucher - flujo semantico completo
+# Local Vision Pipeline via Ollama (moondream / llama3.2)
+# POST /api/vision/extract - Semantic fingerprint & OCR
 # =========================
+from ollama_vision_pipeline import extract_semantic_fingerprint
+
+@app.post("/api/vision/extract")
+async def vision_extract(file: UploadFile = File(...), model: Optional[str] = "moondream"):
+    suffix = os.path.splitext(file.filename or "upload.jpg")[1] or ".jpg"
+    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
+        data = await file.read()
+        tmp.write(data)
+        tmp_path = tmp.name
+    try:
+        with open(tmp_path, "rb") as f:
+            image_bytes = f.read()
+        result = extract_semantic_fingerprint(image_bytes, model=model or "moondream")
+        return result
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except Exception:
+            pass
 @app.post("/api/extract-voucher")
 async def extract_voucher(file: UploadFile = File(...), datetime_hint: Optional[str] = None):
     suffix = os.path.splitext(file.filename or "upload.jpg")[1] or ".jpg"
@@ -389,75 +462,66 @@ async def extract_voucher(file: UploadFile = File(...), datetime_hint: Optional[
             "{\n  \"location_name\": \"Name of the landmark, hotel, or venue (or null if not identifiable)\",\n"
             "  \"datetime\": \"YYYY-MM-DD HH:MM (extracted date and time, or null if not present/identifiable)\"\n}"
         )
-        gemini_done = False
-        if gemini_key:
-            try:
-                import google.generativeai as genai
-                import PIL.Image as _PIL
-                import io as _io
-                genai.configure(api_key=gemini_key)
-                model = genai.GenerativeModel("gemini-2.5-flash")
-                img = _PIL.Image.open(_io.BytesIO(data))
-                resp = await model.generate_content_async([vlm_prompt, img])
-                txt = getattr(resp, "text", "") or ""
-                if not txt and getattr(resp, "candidates", None):
-                    try: txt = resp.candidates[0].content.parts[0].text
-                    except Exception: pass
-                raw_output = txt.strip()[:2000]
+        # Local primero: moondream (90s, sin eco de plantilla)
+        moondream_url = os.environ.get("MOONDREAM_URL", "http://127.0.0.1:11434/api/generate")
+        vlm_local_prompt = (
+            "Extract the place name and date/time printed on this travel "
+            "document, receipt or voucher. Respond ONLY with JSON like "
+            '{"location_name": "Hotel Actual", "datetime": "2025-10-10 13:00"}. '
+            "Use real values from the image. If not visible write \"UNMAPPED\"."
+        )
+        try:
+            import httpx
+            async with httpx.AsyncClient(timeout=90) as client:
+                r = await client.post(moondream_url, json={"model": "moondream", "prompt": vlm_local_prompt, "stream": False, "options": {"temperature": 0.0, "top_p": 0.1}})
+            if r.status_code == 200:
                 try:
-                    j = json.loads(txt.strip().replace("```json","").replace("```","").strip())
-                    if isinstance(j, dict):
-                        location_name = j.get("location_name") or location_name
-                        extracted_dt = j.get("datetime") or j.get("date") or extracted_dt
-                        raw_output = txt.strip()[:2000]
+                    j = r.json()
+                    txt = j.get("response", "") or j.get("text", "") or r.text or ""
                 except Exception:
-                    pass
+                    txt = r.text or ""
+                raw_output = raw_output or txt.strip()[:2000]
+                try:
+                    jj=json.loads(txt.strip().replace("```json","").replace("```","").strip())
+                    if isinstance(jj, dict) and jj.get("location_name"): location_name=jj.get("location_name")
+                except: pass
                 if not location_name:
                     m = re.search(r'"location_name"\s*:\s*"([^"]+)"', txt, re.I)
-                    if m: location_name = m.group(1).strip()
+                    if m: location_name=m.group(1).strip()
                 if not location_name:
                     m = re.search(r"location_name\s*[:=]\s*([^\n,]+)", txt, re.I)
                     if m: location_name = m.group(1).strip().strip('"').strip("'")
-                if location_name and location_name.lower() in ("null","none","n/a"): location_name=None
-                if not location_name and txt.strip():
-                    try:
-                        tmp_j=json.loads(txt)
-                        location_name=tmp_j.get("location_name")
-                    except: pass
                 m2 = re.search(r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", txt)
                 if m2: extracted_dt = m2.group(1)
-                gemini_done = bool(txt.strip())
-            except Exception as e:
-                raw_output = raw_output or f"Gemini error: {e}"[:500]
-        if not gemini_done:
-            moondream_url = os.environ.get("MOONDREAM_URL", "http://localhost:11434/api/generate")
+        except Exception as e:
+            raw_output = raw_output or f"moondream error: {e}"[:300]
+        if location_name and ("..." in location_name or location_name.strip().upper() == "UNMAPPED"):
+            location_name = None
+        # L4: Gemini REST solo si moondream falló y hay cuota free
+        if not location_name and gemini_key and not _gemini_quota_exhausted():
             try:
-                import httpx
-                async with httpx.AsyncClient(timeout=8) as client:
-                    r = await client.post(moondream_url, json={"model": "moondream", "prompt": vlm_prompt, "stream": False})
-                    if r.status_code == 200:
-                        try:
-                            j = r.json()
-                            txt = j.get("response", "") or j.get("text", "") or r.text or ""
-                        except Exception:
-                            txt = r.text or ""
-                        raw_output = raw_output or txt.strip()[:2000]
-                        try:
-                            jj=json.loads(txt.strip().replace("```json","").replace("```","").strip())
-                            if isinstance(jj, dict) and jj.get("location_name"): location_name=jj.get("location_name")
-                        except: pass
-                        if not location_name:
-                            m = re.search(r'"location_name"\s*:\s*"([^"]+)"', txt, re.I)
-                            if m: location_name=m.group(1).strip()
-                        if not location_name:
-                            m = re.search(r"location_name\s*[:=]\s*([^\n,]+)", txt, re.I)
-                            if m: location_name = m.group(1).strip().strip('"').strip("'")
-                        if not location_name and txt.strip():
-                            location_name = txt.strip().split("\n")[0][:200].strip()
-                        m2 = re.search(r"(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", txt)
-                        if m2: extracted_dt = m2.group(1)
-            except Exception:
-                pass
+                import httpx, base64 as _b64
+                gbody = {"contents": [{"parts": [
+                    {"text": ("Extract ONLY: 1. location_name (specific establishment, hotel, "
+                              "airline or venue, never just a city). 2. datetime (YYYY-MM-DD HH:MM). "
+                              "Respond ONLY with the JSON object.")},
+                    {"inline_data": {"mime_type": "image/jpeg",
+                                     "data": _b64.b64encode(data).decode()}}]}],
+                    "generationConfig": {"temperature": 0.0, "responseMimeType": "application/json"}}
+                async with httpx.AsyncClient(timeout=60) as client:
+                    gr = await client.post(
+                        f"https://generativelanguage.googleapis.com/v1beta/models/{os.environ.get('GEMINI_MODEL','gemini-2.5-flash')}:generateContent?key={gemini_key}",
+                        json=gbody)
+                if gr.status_code == 200:
+                    _gemini_quota_consume()
+                    gtxt = gr.json()["candidates"][0]["content"]["parts"][0]["text"]
+                    raw_output = gtxt.strip()[:2000]
+                    gj = json.loads(gtxt.strip().replace("```json","").replace("```","").strip())
+                    if isinstance(gj, dict) and gj.get("location_name"):
+                        location_name = gj.get("location_name")
+                        extracted_dt = gj.get("datetime") or extracted_dt
+            except Exception as e:
+                raw_output = raw_output or f"Gemini L4 error: {e}"[:300]
         if not raw_output:
             raw_output = location_name or ""
 

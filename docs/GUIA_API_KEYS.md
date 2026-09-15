@@ -11,7 +11,7 @@ Este documento aclara la función de cada clave, dónde se encuentra y cómo se 
 - Proporciona servicios de **Geocoding Inverso** (convertir coordenadas de fotos en nombres de lugares como "Mendoza" o "VIP Rosario").
 - Se usa en el archivo: `src/utils/photoMetadata.ts`.
   **Configuración Crítica:**
-- Debe estar habilitada la **"Geocoding API"** y la **"Places API" (New)** en la consola de Google Cloud.
+- Debe estar habilitada la **"Geocoding API"** y la **"Places API" (New)** en la consola de Google Cloud (o utilizar los fallbacks locales como OpenCage configurados en el entorno).
 - Por seguridad, en el código se usa un "fail-safe" que busca esta clave primero en el entorno (`import.meta.env`) y luego en las credenciales de Firebase como respaldo.
 
 ---
@@ -39,7 +39,7 @@ Este documento aclara la función de cada clave, dónde se encuentra y cómo se 
 **Ubicación:** `.env` y `vite.config.mjs`
 **Función:**
 
-- `GEMINI_API_KEY`: Para las funciones de Inteligencia Artificial que analizan el itinerario.
+- `GEMINI_API_KEY`: Para las funciones de Inteligencia Artificial que analizan el itinerario y ejecutan el puente del servidor MCP (utilizando la infraestructura gratuita de Google AI Studio).
 - `POLYGON_API_KEY` (opcional): Para tasas de cambio de moneda en tiempo real.
   **Configuración Crítica:**
 - Vite las inyecta a través del bloque `define` en `vite.config.mjs` para que el navegador pueda verlas.
@@ -61,5 +61,5 @@ Este documento aclara la función de cada clave, dónde se encuentra y cómo se 
 Si el geocoding deja de funcionar o la consola dice "MISSING API KEY":
 
 1. Verificar que el archivo `.env` exista y tenga la clave.
-2. Reiniciar el servidor con `npm run dev` (Vite no lee cambios de `.env` en caliente).
-3. Verificar permisos en Google Cloud Console para la clave específica.
+2. Reiniciar el servidor con `npm run dev` o el entorno MCP según corresponda (Node/Vite no leen cambios de `.env` en caliente).
+3. Verificar permisos en Google Cloud Console y acceso a los modelos en Google AI Studio para la clave específica.

@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:47:54.036Z",
+  "source_name": "Travel Reservation September 15 for MR ARIEL FLIER.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "COPENHAGEN, DENMARK",
+    "title": "COPENHAGEN, DENMARK",
+    "startDate": null,
+    "startTime": "13:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "COPENHAGEN, DENMARK",
+    "coordinates": {
+      "lat": 55.6867,
+      "lng": 12.5701
+    },
+    "h3_index": "891f058318fffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 227.67,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: COPENHAGEN, DENMARK"
+  }
+}

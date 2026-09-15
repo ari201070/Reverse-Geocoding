@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:54:19.280Z",
+  "source_name": "מקדמה- אריאל פליאר - G3211.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Aerol’i",
+    "title": "Aerol’i",
+    "startDate": null,
+    "startTime": "16:24",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Aerol’i",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1000,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Aerol’i"
+  }
+}

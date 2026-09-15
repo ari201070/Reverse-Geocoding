@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:44:53.364Z",
+  "source_name": "Arkia2ways_11036968.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Eilat Ramon Airport",
+    "title": "Eilat Ramon Airport",
+    "startDate": null,
+    "startTime": "06:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Eilat Ramon Airport",
+    "coordinates": {
+      "lat": 29.7266,
+      "lng": 35.0061
+    },
+    "h3_index": "893e68981afffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 60,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Eilat Ramon Airport"
+  }
+}

@@ -22,8 +22,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Ruta a la base de datos
-const DB_PATH = process.env.PHOTO_CATALOG_DB || 
-  path.join(__dirname, "..", "..", "..", "photo_catalog.db");
+function resolveDbPath(): string {
+  const raw = process.env.PHOTO_CATALOG_DB;
+  if (raw && raw.trim() !== "") {
+    return raw.replace(/\\/g, "/");
+  }
+  return path.join(__dirname, "..", "..", "..", "..", "data", "photo_catalog.db");
+}
+const DB_PATH = resolveDbPath();
 
 // Conexión a la base de datos
 let db: Database.Database;

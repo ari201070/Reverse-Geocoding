@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:44:01.853Z",
+  "source_name": "בלנדר מוט.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "אילת-ביג 232",
+    "title": "אילת-ביג 232",
+    "startDate": null,
+    "startTime": "09:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "אילת-ביג 232",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 239,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: אילת-ביג 232"
+  }
+}

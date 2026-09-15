@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T15:18:35.539Z",
+  "source_name": "mza-salta.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "mza-salta",
+    "title": "mza-salta",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "mza-salta",
+    "coordinates": {
+      "lat": -32.8832,
+      "lng": -68.8339
+    },
+    "h3_index": "89b2eea183bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: mza-salta"
+  }
+}

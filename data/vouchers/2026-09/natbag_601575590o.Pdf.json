@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:14:19.725Z",
+  "source_name": "natbag_601575590o.Pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "אינטרספייס בע",
+    "title": "אינטרספייס בע",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "אינטרספייס בע",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: אינטרספייס בע"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:47:13.833Z",
+  "source_name": "BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר",
+    "title": "BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר"
+  }
+}

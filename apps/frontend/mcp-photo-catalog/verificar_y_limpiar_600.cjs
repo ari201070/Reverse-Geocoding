@@ -13,7 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const ONEDRIVE_DIRS = [
   'C:/Users/flier/OneDrive/תמונות/Samsung Gallery/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images',
   'C:/Users/flier/OneDrive/תמונות/Samsung Gallery/DCIM',

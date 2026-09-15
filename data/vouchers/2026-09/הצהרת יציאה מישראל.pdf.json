@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:11:56.174Z",
+  "source_name": "הצהרת יציאה מישראל.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "ישראל",
+    "title": "ישראל",
+    "startDate": null,
+    "startTime": "07:34",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "ישראל",
+    "coordinates": {
+      "lat": 30.8124,
+      "lng": 34.8595
+    },
+    "h3_index": "893e6c86147ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: ישראל"
+  }
+}

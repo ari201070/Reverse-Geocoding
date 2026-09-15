@@ -661,16 +661,6 @@ export default function DriveScanner({
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 flex flex-col h-[580px] shadow-sm overflow-hidden" id="drive-scanner-panel">
-      {/* Tab Selectors */}
-      <div className="flex border-b border-slate-100 bg-slate-50/70 p-1 shrink-0">
-        <button
-          className="flex-1 flex items-center justify-center gap-2 py-2.5 text-xs font-bold rounded-xl transition-all cursor-default bg-white text-indigo-700 shadow-sm border border-slate-100"
-        >
-          <FileUp className="w-4 h-4 text-indigo-600" />
-          <span>Subir desde mi PC (Modo Local)</span>
-        </button>
-      </div>
-
       {activeTab === 'drive' && (
         // GOOGLE DRIVE SCANNING PANEL
         <div className="p-4 flex flex-col flex-1 min-h-0">

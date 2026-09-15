@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:25:52.045Z",
+  "source_name": "פוליסת ביטוח הראל.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "פוליסת ביטוח הראל",
+    "title": "פוליסת ביטוח הראל",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "פוליסת ביטוח הראל",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: פוליסת ביטוח הראל"
+  }
+}

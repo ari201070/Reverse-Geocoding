@@ -4,7 +4,7 @@ Este documento contiene información técnica detallada para implementar el sist
 
 ---
 
-## 1. OCR con Google Cloud Vision API
+## 1. OCR local con Ollama (`moondream`) — reemplaza a Google Cloud Vision API (paga, prohibida)
 
 ### ¿Qué es OCR en este contexto?
 OCR (Optical Character Recognition) en el sistema de Ingeniería Inversa Geográfica se usa para extraer texto legible de imágenes digitales. El texto detectado se convierte en la **"Huella Digital Semántica"** del lugar.
@@ -810,17 +810,17 @@ def geocodificar(foto):
     if resultado:
         return resultado, "CACHE"
     
-    # Nivel 2: Google Places API
-    resultado = buscar_en_google(foto)
+    # Nivel 2: FOSS (Photon / Overpass / Nominatim)
+    resultado = buscar_en_foss(foto)
     if resultado:
         guardar_en_cache(resultado)
-        return resultado, "GOOGLE"
-    
-    # Nivel 3: OpenCage
-    resultado = buscar_en_opencage(foto)
+        return resultado, "FOSS"
+
+    # Nivel 3: Geoapify free -> OpenCage free
+    resultado = buscar_en_fallback_gratuito(foto)
     if resultado:
         guardar_en_cache(resultado)
-        return resultado, "OPENCAGE"
+        return resultado, "FREEMIUM"
     
     return None, "FALLO_TOTAL"
 ```
@@ -1270,7 +1270,7 @@ requiresManualValidation: finalConfidence < 0.75
 | Endpoint | Descripción |
 |----------|------------|
 | POST /api/resolve-puzzle | Batch consensus con anchoring |
-| POST /api/analyze-image | Cloud Vision (labels, landmarks, texts) |
+| POST /api/analyze-image | OCR local + landmarks (Ollama `moondream`/`llama3.2`: labels, landmarks, texts) |
 | GET /api/memory | Spatial memory lookup |
 
 ---

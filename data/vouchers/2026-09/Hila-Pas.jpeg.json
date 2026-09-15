@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T14:58:17.077Z",
+  "source_name": "Hila-Pas.jpeg",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Hila-Pas.jpeg",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hila-Pas.jpeg",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Hila-Pas.jpeg"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:04:59.297Z",
+  "source_name": "Confirmación_Fuente Mayor Hotel Centro.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Fuente Mayor Hotel Centro",
+    "title": "Fuente Mayor Hotel Centro",
+    "startDate": null,
+    "startTime": "10:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Fuente Mayor Hotel Centro",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 195.24,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: Fuente Mayor Hotel Centro"
+  }
+}

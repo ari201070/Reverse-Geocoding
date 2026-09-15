@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:57:17.182Z",
+  "source_name": "Confirmation690546-1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Calma Spa",
+    "title": "Calma Spa",
+    "startDate": null,
+    "startTime": "08:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Calma Spa",
+    "coordinates": {
+      "lat": 39.5378,
+      "lng": 2.457
+    },
+    "h3_index": "89394260203ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 637.2,
+    "currency": "Shekel",
+    "details": null,
+    "summary": "Voucher detectado: Calma Spa"
+  }
+}

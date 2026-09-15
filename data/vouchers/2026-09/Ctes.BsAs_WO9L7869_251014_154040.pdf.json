@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T15:07:14.716Z",
+  "source_name": "Ctes.BsAs_WO9L7869_251014_154040.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Ctes.BsAs_WO9L7869_251014_154040",
+    "title": "Ctes.BsAs_WO9L7869_251014_154040",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Ctes.BsAs_WO9L7869_251014_154040",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: Ctes.BsAs_WO9L7869_251014_154040"
+  }
+}

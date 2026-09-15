@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:03:19.762Z",
+  "source_name": "ticket.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Ben Gurion Airport, Terminal 3",
+    "title": "Ben Gurion Airport, Terminal 3",
+    "startDate": null,
+    "startTime": "01:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Ben Gurion Airport, Terminal 3",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 205,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: Ben Gurion Airport, Terminal 3"
+  }
+}

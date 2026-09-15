@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:50:47.831Z",
+  "source_name": "vouchersHotel Astoria Bw Signature Collection-Copenhagen-20-Sep-flier.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Hotel Astoria Bw Signature Collection",
+    "title": "Hotel Astoria Bw Signature Collection",
+    "startDate": "2024-08-20",
+    "startTime": "00:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hotel Astoria Bw Signature Collection",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Hotel Astoria Bw Signature Collection"
+  }
+}

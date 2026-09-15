@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T11:56:49.694Z",
+  "source_name": "qrcode_www.lefrecce.it.png",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "qrcode_www.lefrecce.it.png",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "qrcode_www.lefrecce.it.png",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: qrcode_www.lefrecce.it.png"
+  }
+}

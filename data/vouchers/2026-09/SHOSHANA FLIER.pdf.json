@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T15:02:08.036Z",
+  "source_name": "SHOSHANA FLIER.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Addis Ababa, Bole International",
+    "title": "Addis Ababa, Bole International",
+    "startDate": null,
+    "startTime": "01:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Addis Ababa, Bole International",
+    "coordinates": {
+      "lat": 8.9792,
+      "lng": 38.7966
+    },
+    "h3_index": "89529b79213ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Addis Ababa, Bole International"
+  }
+}

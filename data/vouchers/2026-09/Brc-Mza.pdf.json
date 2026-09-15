@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T15:11:48.223Z",
+  "source_name": "Brc-Mza.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "MENDOZA",
+    "title": "MENDOZA",
+    "startDate": null,
+    "startTime": "13:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "MENDOZA",
+    "coordinates": {
+      "lat": -34.597,
+      "lng": -68.7305
+    },
+    "h3_index": "89b2eb7949bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 80480,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: MENDOZA"
+  }
+}

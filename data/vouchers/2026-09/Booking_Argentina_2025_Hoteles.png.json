@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T17:01:36.561Z",
+  "source_name": "Booking_Argentina_2025_Hoteles.png",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Hotel Actual",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hotel Actual",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Hotel Actual"
+  }
+}

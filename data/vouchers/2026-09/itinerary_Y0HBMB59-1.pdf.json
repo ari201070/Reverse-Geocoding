@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:07:37.105Z",
+  "source_name": "itinerary_Y0HBMB59-1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Salta → Iguazu",
+    "title": "Salta → Iguazu",
+    "startDate": null,
+    "startTime": "14:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Salta → Iguazu",
+    "coordinates": {
+      "lat": -23.1556,
+      "lng": -64.3185
+    },
+    "h3_index": "89b3429530fffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 5278,
+    "currency": "ILS",
+    "details": null,
+    "summary": "Voucher detectado: Salta → Iguazu"
+  }
+}

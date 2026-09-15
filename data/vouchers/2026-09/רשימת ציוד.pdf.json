@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:48:29.115Z",
+  "source_name": "רשימת ציוד.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "יוד",
+    "title": "יוד",
+    "startDate": null,
+    "startTime": "19:14",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "יוד",
+    "coordinates": {
+      "lat": 36.1386,
+      "lng": 139.4559
+    },
+    "h3_index": "892e749502bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 14,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: יוד"
+  }
+}

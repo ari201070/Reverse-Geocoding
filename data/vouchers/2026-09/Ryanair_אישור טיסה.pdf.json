@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:34:16.891Z",
+  "source_name": "Ryanair_אישור טיסה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Tel Aviv to Rome Fiumicino",
+    "title": "Tel Aviv to Rome Fiumicino",
+    "startDate": "2023-10-02",
+    "startTime": "11:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Tel Aviv to Rome Fiumicino",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 253.46,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: Tel Aviv to Rome Fiumicino"
+  }
+}

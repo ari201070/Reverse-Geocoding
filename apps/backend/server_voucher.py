@@ -3,12 +3,135 @@ from pydantic import BaseModel
 import ollama
 import json
 import re
+import os
+import base64
+import urllib.request
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
 app = FastAPI()
 
+VLM_TIMEOUT_S = 90
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+# Cuota CERO facturación: al agotarse, Gemini se desactiva solo hasta el día/mes siguiente
+GEMINI_FREE_DAILY_LIMIT = int(os.environ.get("GEMINI_FREE_DAILY_LIMIT", "200"))
+GEMINI_FREE_MONTHLY_LIMIT = int(os.environ.get("GEMINI_FREE_MONTHLY_LIMIT", "3000"))
+_QUOTA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".gemini_quota.json")
+
+
+def _quota_exhausted() -> bool:
+    try:
+        with open(_QUOTA_FILE) as f:
+            q = json.load(f)
+    except (OSError, ValueError):
+        q = {}
+    from datetime import date
+    today, month = str(date.today()), str(date.today())[:7]
+    if q.get("day") != today:
+        q = {"day": today, "used_day": 0, "month": month, "used_month": 0}
+    elif q.get("month") != month:
+        q["month"], q["used_month"] = month, 0
+    exhausted = (q["used_day"] >= GEMINI_FREE_DAILY_LIMIT
+                 or q["used_month"] >= GEMINI_FREE_MONTHLY_LIMIT)
+    if exhausted:
+        print(f"[CUOTA] Gemini free agotado (día {q['used_day']}/{GEMINI_FREE_DAILY_LIMIT}, "
+              f"mes {q['used_month']}/{GEMINI_FREE_MONTHLY_LIMIT}). Pausa hasta reset.")
+    return exhausted
+
+
+def _quota_consume():
+    from datetime import date
+    today, month = str(date.today()), str(date.today())[:7]
+    try:
+        with open(_QUOTA_FILE) as f:
+            q = json.load(f)
+    except (OSError, ValueError):
+        q = {}
+    if q.get("day") != today:
+        q = {"day": today, "used_day": 0, "month": month, "used_month": 0}
+    q["used_day"] += 1
+    q["used_month"] += 1
+    with open(_QUOTA_FILE, "w") as f:
+        json.dump(q, f)
+
 geolocator = Nominatim(user_agent="travel_booking_document_hub_local_v1")
+
+PLACEHOLDERS = {"", "...", "UNMAPPED", "N/A", "YYYY-MM-DD HH:MM"}
+
+
+def _valid_voucher(location_name: str) -> bool:
+    return bool(location_name and location_name.strip() not in PLACEHOLDERS
+                and "..." not in location_name)
+
+
+def _extract_json(raw_text: str) -> dict:
+    clean = raw_text[raw_text.find('{'):raw_text.rfind('}') + 1]
+    try:
+        return json.loads(clean)
+    except Exception:
+        return {}
+
+
+def _moondream_extract(image_bytes: bytes) -> dict:
+    client = ollama.Client(timeout=VLM_TIMEOUT_S)
+    res = client.chat(
+        model='moondream',
+        messages=[{
+            'role': 'user',
+            'content': ('Extract the place name and date/time printed on this travel '
+                        'document or receipt. Respond ONLY with JSON like '
+                        '{"location_name": "Hotel Actual", "datetime": "2025-10-10 13:00"}. '
+                        'Use real values from the image. If not visible write "UNMAPPED".'),
+            'images': [image_bytes],
+        }],
+        options={'temperature': 0.0, 'top_p': 0.1},
+    )
+    return _extract_json(res['message']['content'])
+
+
+def _gemini_extract(image_bytes: bytes, mime: str = 'image/jpeg') -> dict:
+    if not GEMINI_API_KEY or _quota_exhausted():
+        return {}
+    body = json.dumps({
+        "contents": [{
+            "parts": [
+                {"text": ('Extract ONLY: 1. location_name (specific establishment, hotel, '
+                          'airline or venue, never just a city). 2. datetime (YYYY-MM-DD HH:MM). '
+                          'Respond ONLY with the JSON object.')},
+                {"inline_data": {"mime_type": mime,
+                                 "data": base64.b64encode(image_bytes).decode()}},
+            ],
+        }],
+        "generationConfig": {"temperature": 0.0, "responseMimeType": "application/json"},
+    }).encode()
+    req = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}",
+        data=body, headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = json.load(r)
+    _quota_consume()
+    try:
+        text = data["candidates"][0]["content"]["parts"][0]["text"]
+    except (KeyError, IndexError):
+        return {}
+    return _extract_json(text)
+
+
+def extract_voucher_vlm(image_bytes: bytes, mime: str = 'image/jpeg') -> tuple:
+    try:
+        data = _moondream_extract(image_bytes)
+        if _valid_voucher(data.get("location_name", "")):
+            return data.get("location_name", ""), data.get("datetime", ""), "moondream"
+    except Exception as e:
+        print(f"[VLM] moondream falló ({e}), escalando a L4...")
+    try:
+        data = _gemini_extract(image_bytes, mime)
+        if _valid_voucher(data.get("location_name", "")):
+            return data.get("location_name", ""), data.get("datetime", ""), "gemini-l4"
+    except Exception as e:
+        print(f"[VLM] Gemini L4 falló: {e}")
+    return "", "", "none"
 
 CITY_FALLBACKS = {
     "buenos aires": (-34.5979, -58.3969),
@@ -61,34 +184,9 @@ async def health_check():
 @app.post("/api/extract-voucher")
 async def extract_voucher(file: UploadFile = File(...)):
     contents = await file.read()
-    
-    prompt = (
-        "Extract ONLY these two fields from this travel document or receipt (ticket, invoice, hotel booking, flight boarding pass, restaurant receipt):\n"
-        "1. location_name: The SPECIFIC establishment, restaurant, hotel, store, or service provider name (e.g. 'Pizzería Guerrín' or 'Café Delirac' - NOT just the generic city name).\n"
-        "2. datetime: The date and time of the event/transaction in format YYYY-MM-DD HH:MM (extract from the printed receipt text).\n"
-        "Return strictly a raw JSON object with these two keys, nothing else."
-    )
-    
-    response = ollama.chat(
-        model='qwen2.5vl:7b',
-        messages=[{
-            'role': 'user',
-            'content': prompt,
-            'images': [contents]
-        }]
-    )
-    
-    raw_text = response['message']['content']
-    clean_json = raw_text[raw_text.find('{'):raw_text.rfind('}')+1]
-    
-    try:
-        data = json.loads(clean_json)
-        location_name = data.get("location_name", "")
-        datetime_str = data.get("datetime", "")
-    except Exception:
-        location_name = ""
-        datetime_str = ""
-        print(f"[AVISO] No se pudo parsear JSON. Respuesta cruda: {raw_text}")
+
+    location_name, datetime_str, source = extract_voucher_vlm(contents, file.content_type or 'image/jpeg')
+    print(f"[VLM] fuente: {source} lugar: {location_name!r}")
 
     lat, lng = None, None
     if location_name:

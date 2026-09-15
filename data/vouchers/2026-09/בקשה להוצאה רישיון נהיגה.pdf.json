@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:40:52.146Z",
+  "source_name": "בקשה להוצאה רישיון נהיגה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "בקשה להוצאה רישיון נהיגה",
+    "title": "בקשה להוצאה רישיון נהיגה",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "בקשה להוצאה רישיון נהיגה",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: בקשה להוצאה רישיון נהיגה"
+  }
+}

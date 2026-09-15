@@ -1096,35 +1096,10 @@ export default function App() {
               {/* SPLIT LAYOUT: LEFT SIDE SCANNER/CHAT, RIGHT SIDE TIMELINE & CARDS */}
               <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start" id="split-layout">
                 
-                {/* LEFT COLUMN: Drive Scanner & Itinerary Assistant Chat */}
+                {/* LEFT COLUMN: Local Uploader only */}
                 <div className="xl:col-span-5 space-y-6">
-                  {/* View Selector inside desktop main area */}
-                  <div className="bg-white border border-slate-200 p-1 rounded-xl hidden md:flex shadow-sm" id="desktop-view-switcher">
-                    <button
-                      onClick={() => setActiveView('all-in-one')}
-                      className={`flex-1 text-center py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                        activeView === 'all-in-one' 
-                          ? 'bg-slate-950 text-white' 
-                          : 'text-slate-600 hover:text-slate-800'
-                      }`}
-                    >
-                      Búsqueda y Escáner de Drive
-                    </button>
-                    <button
-                      onClick={() => setActiveView('assistant')}
-                      className={`flex-1 text-center py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                        activeView === 'assistant' 
-                          ? 'bg-slate-950 text-white' 
-                          : 'text-slate-600 hover:text-slate-800'
-                      }`}
-                    >
-                      Asistente de Viaje
-                    </button>
-                  </div>
-
-                  {/* Render Scanner or Chat dynamically */}
+                  {/* Render Scanner directly */}
                   <div className="transition-all duration-300">
-                    {activeView === 'all-in-one' ? (
                       <DriveScanner
                         bookings={bookings}
                         isAnalyzing={isAnalyzing}
@@ -1137,9 +1112,6 @@ export default function App() {
                           }
                         }}
                       />
-                    ) : (
-                      <TravelChat bookings={bookings} trips={trips} />
-                    )}
                   </div>
                 </div>
 

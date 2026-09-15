@@ -2,7 +2,7 @@ import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
 
-const db = new Database('C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db');
+const db = new Database('C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db');
 
 // Get all photos
 const allPhotos = db.prepare('SELECT id, filename, file_size, file_path, is_duplicate FROM photos').all();

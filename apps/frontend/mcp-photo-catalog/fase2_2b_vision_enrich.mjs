@@ -15,7 +15,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const CHECKPOINT_PATH = './fase2_2b_checkpoint.json';
 const OUTPUT_PATH = './resumen_fase2_2b.json';
 const DELAY_MS = 2000;

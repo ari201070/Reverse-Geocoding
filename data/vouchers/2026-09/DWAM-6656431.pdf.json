@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:45:17.962Z",
+  "source_name": "DWAM-6656431.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Wizz Air Malta Limited",
+    "title": "Wizz Air Malta Limited",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Wizz Air Malta Limited",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 254.98,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: Wizz Air Malta Limited"
+  }
+}

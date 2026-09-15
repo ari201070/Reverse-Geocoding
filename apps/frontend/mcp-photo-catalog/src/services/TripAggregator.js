@@ -17,7 +17,7 @@ import PhotoRepository from "./PhotoRepository.js";
 import { KNOWN_TRIPS, getTripByDate } from "./KnownTrips.js";
 
 // Instancia del repositorio de fotos
-const photoRepository = new PhotoRepository('C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db');
+const photoRepository = new PhotoRepository('C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db');
 
 // Configuración por defecto
 const DEFAULT_CONFIG = {

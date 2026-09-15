@@ -15,10 +15,13 @@ Este documento resume los avances técnicos realizados en la arquitectura de **R
 - Se creó `memory-store.js`, una base de conocimiento persistente local.
 - **Herencia de Contexto**: Las cargas individuales ahora consultan esta memoria. Si una foto coincide espacialmente con un lote procesado anteriormente, hereda el nombre del lugar e hitos, superando la deriva del GPS en diferentes horarios o climas.
 
-### 3. Optimización de Costos y API New
+### 3. Optimización de Costos (100% local, cero Google pago)
 
-- Integración nativa con la nueva **Google Places API (New)**.
-- Implementación obligatoria del encabezado `X-Goog-FieldMask` para solicitar solo los campos necesarios (`displayName`, `formattedAddress`, `types`), evitando cargos de SKU Enterprise innecesarios.
+- **Prohibido** Google Places API (New) / Cloud Vision pagas: la cascada es
+  L1 caché H3 → L2 Photon/Overpass/Nominatim → L3 OCR local (Ollama
+  `moondream`/`llama3.2`) → L4 Geoapify free → L5 OpenCage free.
+- Solo se piden los campos necesarios (`location_name`, `address`, `city`,
+  `country`) para minimizar cuota de los tiers gratuitos.
 
 ### 4. Saneamiento de Datos (Anti-Stata Bug)
 

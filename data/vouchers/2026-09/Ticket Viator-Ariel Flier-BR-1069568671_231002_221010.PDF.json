@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:44:53.255Z",
+  "source_name": "Ticket Viator-Ariel Flier-BR-1069568671_231002_221010.PDF",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Viale Vaticano, 95, Viale Vaticano, 95, 00192 Roma RM, Italy",
+    "title": "Viale Vaticano, 95, Viale Vaticano, 95, 00192 Roma RM, Italy",
+    "startDate": null,
+    "startTime": "14:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Viale Vaticano, 95, Viale Vaticano, 95, 00192 Roma RM, Italy",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Viale Vaticano, 95, Viale Vaticano, 95, 00192 Roma RM, Italy"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:23:38.523Z",
+  "source_name": "מקדמה 23847 - אריאל פליאר - G3211.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "אדמה",
+    "title": "אדמה",
+    "startDate": null,
+    "startTime": "16:24",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "אדמה",
+    "coordinates": {
+      "lat": 8.544,
+      "lng": 39.2705
+    },
+    "h3_index": "897aca04a4fffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1000,
+    "currency": "ש",
+    "details": null,
+    "summary": "Voucher detectado: אדמה"
+  }
+}

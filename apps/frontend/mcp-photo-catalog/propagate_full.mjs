@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 
 const PATH_KEYWORDS = [
   { regex: /פיזה|pisa/i, city: 'Pisa', country: 'Italy' },

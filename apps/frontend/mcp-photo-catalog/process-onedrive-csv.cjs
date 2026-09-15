@@ -13,7 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const CSV_PATH = 'C:/Users/flier/GitHub/Travel-Booking-Document-Hub/onedrive-files.csv';
 const OUTPUT_DIR = 'C:/Users/flier/GitHub/Travel-Booking-Document-Hub/photo-import-output';
 

@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:35:04.435Z",
+  "source_name": "ספח תעודת זהות דיגיטלי-לירן.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Hotel Sheraton Buenos Aires",
+    "title": "Hotel Sheraton Buenos Aires",
+    "startDate": "2023-03-15",
+    "startTime": "20:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Hotel Sheraton Buenos Aires",
+    "coordinates": {
+      "lat": -38.0317,
+      "lng": -57.5399
+    },
+    "h3_index": "89c20360d4bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1500,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Hotel Sheraton Buenos Aires"
+  }
+}

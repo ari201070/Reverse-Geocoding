@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:38:58.868Z",
+  "source_name": "Reference number-80005684.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Best Western Hotel Hillerød",
+    "title": "Best Western Hotel Hillerød",
+    "startDate": null,
+    "startTime": "18:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Best Western Hotel Hillerød",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Best Western Hotel Hillerød"
+  }
+}

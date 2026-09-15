@@ -17,7 +17,7 @@ import path from 'path';
 import Database from 'better-sqlite3';
 
 // Configuración de Rutas Absolutas (Ruta segura '/' para Windows)
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const CSV_PATH = 'C:/Users/flier/GitHub/Travel-Booking-Document-Hub/onedrive-files.csv';
 const F_DRIVE_ROOT = 'F:/';
 

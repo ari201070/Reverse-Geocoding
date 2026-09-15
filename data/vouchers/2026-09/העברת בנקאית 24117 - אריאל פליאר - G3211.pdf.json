@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:22:48.123Z",
+  "source_name": "העברת בנקאית 24117 - אריאל פליאר - G3211.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Adama - Tours & Travel Ltd",
+    "title": "Adama - Tours & Travel Ltd",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Adama - Tours & Travel Ltd",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 2.032,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: Adama - Tours & Travel Ltd"
+  }
+}

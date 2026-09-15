@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:42:23.771Z",
+  "source_name": "בדיקה לרשיון נהיגה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Parque 3 de Febrero",
+    "title": "Parque 3 de Febrero",
+    "startDate": "2023-03-21",
+    "startTime": "10:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Parque 3 de Febrero",
+    "coordinates": {
+      "lat": -32.9515,
+      "lng": -60.6466
+    },
+    "h3_index": "89c2eba3103ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1234.56,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Parque 3 de Febrero"
+  }
+}

@@ -12,7 +12,7 @@
 import Database from 'better-sqlite3';
 import fs from 'fs';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const OUTPUT_PATH = './resumen_fase3_5.json';
 
 // Keywords for Argentina 2011 rescue

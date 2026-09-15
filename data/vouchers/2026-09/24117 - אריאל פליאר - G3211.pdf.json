@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:17:18.075Z",
+  "source_name": "24117 - אריאל פליאר - G3211.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "OHH Eur - אוצר החייל Eur",
+    "title": "OHH Eur - אוצר החייל Eur",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "OHH Eur - אוצר החייל Eur",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 2032,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: OHH Eur - אוצר החייל Eur"
+  }
+}

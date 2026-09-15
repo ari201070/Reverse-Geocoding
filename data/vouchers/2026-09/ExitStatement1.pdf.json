@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T14:05:43.496Z",
+  "source_name": "ExitStatement1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "ישראל",
+    "title": "ישראל",
+    "startDate": "2021-11-17",
+    "startTime": "18:47",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "ישראל",
+    "coordinates": {
+      "lat": 30.8124,
+      "lng": 34.8595
+    },
+    "h3_index": "893e6c86147ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: ישראל"
+  }
+}

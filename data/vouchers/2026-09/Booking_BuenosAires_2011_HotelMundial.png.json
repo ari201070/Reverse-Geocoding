@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T15:44:42.921Z",
+  "source_name": "Booking_BuenosAires_2011_HotelMundial.png",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Booking_BuenosAires_2011_HotelMundial.png",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Booking_BuenosAires_2011_HotelMundial.png",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Booking_BuenosAires_2011_HotelMundial.png"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T13:48:47.687Z",
+  "source_name": "vouchersBest Western Hotel Hillerod-Hillerod-16-Sep-FLIER.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Best Western Hotel Hillerod",
+    "title": "Best Western Hotel Hillerod",
+    "startDate": "2024-09-16",
+    "startTime": "00:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Best Western Hotel Hillerod",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 1200,
+    "currency": "DKK",
+    "details": null,
+    "summary": "Voucher detectado: Best Western Hotel Hillerod"
+  }
+}

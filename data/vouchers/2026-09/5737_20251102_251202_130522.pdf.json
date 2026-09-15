@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T15:26:39.626Z",
+  "source_name": "5737_20251102_251202_130522.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "5737_20251102_251202_130522",
+    "title": "5737_20251102_251202_130522",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "5737_20251102_251202_130522",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: 5737_20251102_251202_130522"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:53:42.287Z",
+  "source_name": "תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר",
+    "title": "תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:33:38.671Z",
+  "source_name": "Sun Moon_מבוטלת.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Sun Moon",
+    "title": "Sun Moon",
+    "startDate": "2023-09-28",
+    "startTime": "17:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Sun Moon",
+    "coordinates": {
+      "lat": 35.7507,
+      "lng": 139.7496
+    },
+    "h3_index": "892f5a30c2bffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 354.45,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Sun Moon"
+  }
+}

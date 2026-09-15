@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T13:10:23.994Z",
+  "source_name": "מפה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Parque Tres de Febrero",
+    "title": "Parque Tres de Febrero",
+    "startDate": "2023-03-15",
+    "startTime": "14:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Parque Tres de Febrero",
+    "coordinates": {
+      "lat": -38.3766,
+      "lng": -60.2762
+    },
+    "h3_index": "89c22c47603ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 10000,
+    "currency": "ARS",
+    "details": null,
+    "summary": "Voucher detectado: Parque Tres de Febrero"
+  }
+}

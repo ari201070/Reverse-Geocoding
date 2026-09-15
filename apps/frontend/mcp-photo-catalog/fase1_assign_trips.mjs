@@ -82,7 +82,7 @@ const KNOWN_TRIPS = [
   },
 ];
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const OUTPUT_PATH = './resumen_fase1.json';
 const MAPPING_PATH = './trip_mapping.json';
 

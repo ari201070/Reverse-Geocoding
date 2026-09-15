@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T12:43:45.253Z",
+  "source_name": "ZERCRG.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Italo - Nuovo Trasporto Viaggiatori S.p.A.",
+    "title": "Italo - Nuovo Trasporto Viaggiatori S.p.A.",
+    "startDate": null,
+    "startTime": "10:40",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Italo - Nuovo Trasporto Viaggiatori S.p.A.",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 98,
+    "currency": "EUR",
+    "details": null,
+    "summary": "Voucher detectado: Italo - Nuovo Trasporto Viaggiatori S.p.A."
+  }
+}

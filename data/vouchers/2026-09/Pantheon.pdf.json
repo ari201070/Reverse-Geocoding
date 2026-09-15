@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:41:34.338Z",
+  "source_name": "Pantheon.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Piazza Navona, 25",
+    "title": "Piazza Navona, 25",
+    "startDate": null,
+    "startTime": "11:30",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Piazza Navona, 25",
+    "coordinates": {
+      "lat": 41.8991,
+      "lng": 12.4728
+    },
+    "h3_index": "891e8050523ffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: Piazza Navona, 25"
+  }
+}

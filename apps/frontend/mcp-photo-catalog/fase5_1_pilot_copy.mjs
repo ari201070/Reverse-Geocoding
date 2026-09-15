@@ -13,7 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 const REORG_PLAN_PATH = './reorganization_plan.csv';
 const EXEC_LOG_PATH = './execution_log.csv';
 const BASE_TARGET = 'F:\\Fotos_Organizadas';

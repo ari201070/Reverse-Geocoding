@@ -1,0 +1,27 @@
+{
+  "vaulted_at": "2026-09-11T12:45:45.209Z",
+  "source_name": "Aeropuerto_hotel.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Rome Termini via Giolitti",
+    "title": "Rome Termini via Giolitti",
+    "startDate": null,
+    "startTime": "00:00",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Rome Termini via Giolitti",
+    "coordinates": {
+      "lat": 41.8987,
+      "lng": 12.5036
+    },
+    "h3_index": "891e8052a2fffff",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 12,
+    "currency": "€",
+    "details": null,
+    "summary": "Voucher detectado: Rome Termini via Giolitti"
+  }
+}

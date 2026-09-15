@@ -1,0 +1,23 @@
+{
+  "vaulted_at": "2026-09-11T16:09:29.133Z",
+  "source_name": "Booking_Slovenia_2015_ApartmentsZorc.png",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Booking_Slovenia_2015_ApartmentsZorc.png",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Booking_Slovenia_2015_ApartmentsZorc.png",
+    "coordinates": null,
+    "extraction_notes": "Extraído y geolocalizado localmente",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Evento/Voucher detectado: Booking_Slovenia_2015_ApartmentsZorc.png"
+  }
+}

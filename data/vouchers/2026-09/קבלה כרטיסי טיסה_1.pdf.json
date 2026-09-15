@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T14:14:43.314Z",
+  "source_name": "קבלה כרטיסי טיסה_1.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "Shoshana Flier",
+    "title": "Shoshana Flier",
+    "startDate": null,
+    "startTime": "28:43",
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "Shoshana Flier",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": 111678,
+    "currency": "₪",
+    "details": null,
+    "summary": "Voucher detectado: Shoshana Flier"
+  }
+}

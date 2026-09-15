@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-11T15:21:59.818Z",
+  "source_name": "סלטה ← יגואזו_Y0HBMB59_251014_162748.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "סלטה ← יגואזו_Y0HBMB59_251014_162748",
+    "title": "סלטה ← יגואזו_Y0HBMB59_251014_162748",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "סלטה ← יגואזו_Y0HBMB59_251014_162748",
+    "coordinates": null,
+    "h3_index": null,
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": "USD",
+    "details": null,
+    "summary": "Voucher detectado: סלטה ← יגואזו_Y0HBMB59_251014_162748"
+  }
+}

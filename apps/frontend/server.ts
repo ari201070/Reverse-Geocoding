@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
 import { exec } from "child_process";
@@ -8,11 +9,41 @@ import { getH3Index, checkLocationCache, updateSpatialCache } from "./src/spatia
 import { generateContentWithRetry, formatGeminiError } from "./src/gemini.js";
 import { PDFParse } from "pdf-parse";
 
-const LOCAL_VOUCHER_SERVICE = process.env.LOCAL_VOUCHER_SERVICE || "http://localhost:8000";
+const LOCAL_VOUCHER_SERVICE = process.env.LOCAL_VOUCHER_SERVICE || "http://127.0.0.1:8000";
 
 dotenv.config();
 
-const GEOCODE_API_URL = process.env.GEOCODE_API_URL || "http://localhost:3001/api/geocode";
+const GEOCODE_API_URL = process.env.GEOCODE_API_URL || "http://127.0.0.1:3001/api/geocode";
+
+// Bóveda de vouchers: conserva el archivo original + JSON parseado
+const VOUCHER_VAULT = path.join(process.cwd(), '..', '..', 'data', 'vouchers');
+
+function saveToVault(fileBuffer: Buffer, fileName: string, parsedResult: any): string | null {
+  try {
+    const now = new Date();
+    const dir = path.join(VOUCHER_VAULT,
+      `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`);
+    fs.mkdirSync(dir, { recursive: true });
+    const safe = fileName.replace(/[<>:"/\\|?*\x00-\x1F]/g, '_').slice(0, 120);
+    let dest = path.join(dir, safe);
+    let i = 1;
+    while (fs.existsSync(dest)) {
+      const ext = path.extname(safe);
+      dest = path.join(dir, `${path.basename(safe, ext)}_${i}${ext}`);
+      i++;
+    }
+    fs.writeFileSync(dest, fileBuffer);
+    fs.writeFileSync(dest + '.json', JSON.stringify({
+      vaulted_at: now.toISOString(),
+      source_name: fileName,
+      parsed: parsedResult,
+    }, null, 2));
+    return dest;
+  } catch (err: any) {
+    console.warn('[Vault] no se pudo guardar:', err.message);
+    return null;
+  }
+}
 
 const app = express();
 app.use(express.json({ limit: '20mb' }));
@@ -197,7 +228,7 @@ async function analyzeTextWithLlama(text: string): Promise<{
   amount?: number | string;
   currency?: string;
 }> {
-  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
+  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
   const prompt = `Analiza este texto extraído de un documento de viaje y extrae estrictamente un objeto JSON con los siguientes campos:
 - 'location_name': nombre del hotel, aerolínea, parque o lugar del evento.
 - 'datetime': fecha y hora del evento (YYYY-MM-DD HH:MM).
@@ -289,7 +320,26 @@ async function resolveLocationGeocoding(locationName: string) {
       }
     }
   } catch (geoErr: any) {
-    console.warn("[Geocoding] No se pudo geocodificar la ubicación:", geoErr.message);
+    console.warn("[Geocoding] Servicio local no disponible, usando Nominatim:", geoErr.message);
+  }
+
+  try {
+    const nominatimUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(locationName)}&format=json&limit=1`;
+    const nomRes = await fetch(nominatimUrl, {
+      headers: { "User-Agent": "Reverse-Geocoding-App/1.0" },
+    });
+    if (nomRes.ok) {
+      const nomData = await nomRes.json();
+      if (Array.isArray(nomData) && nomData.length > 0) {
+        const lat = parseFloat(Number(nomData[0].lat).toFixed(4));
+        const lng = parseFloat(Number(nomData[0].lon).toFixed(4));
+        const h3 = getH3Index(lat, lng);
+        updateSpatialCache(h3, locationName, lat, lng);
+        return { coordinates: { lat, lng }, h3_index: h3 };
+      }
+    }
+  } catch (nomErr: any) {
+    console.warn("[Geocoding] Nominatim falló:", nomErr.message);
   }
 
   return { coordinates: null, h3_index: null };
@@ -379,6 +429,8 @@ async function processPdfDocument(fileBuffer: Buffer, fileName: string): Promise
   } catch (dbErr: any) {
     console.warn("[DB] Error guardando anchor de PDF:", dbErr.message);
   }
+
+  saveToVault(fileBuffer, fileName, parsedResult);
 
   return parsedResult;
 }
@@ -592,6 +644,8 @@ app.post("/api/analyze-local", async (req, res) => {
       } catch (dbErr: any) {
         console.warn("[DB] Error registrando anchor en /api/analyze-local:", dbErr.message);
       }
+
+      saveToVault(fileBuffer, name, parsedResult);
 
       return res.json(parsedResult);
     } else {

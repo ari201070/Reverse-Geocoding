@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 
-const DB_PATH = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db';
+const DB_PATH = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db';
 
 // Keywords en hebreo, español e inglés para detectar país
 const COUNTRY_KEYWORDS = [
