@@ -1,0 +1,1747 @@
+[
+  {
+    "id": "REF-0001",
+    "coordinates": {
+      "lat": -27.461642,
+      "lng": -58.843469,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-05-12T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "High morning sun, sharp shadows on the pedestrian walkway"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Lapacho Rosado",
+      "graffiti": "Minimal",
+      "terrain": "Red paved sidewalk",
+      "urbanElements": {
+        "furniture": "Traditional cast iron street lamps",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Neoclassical monuments"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. COSTANERA",
+        "GRAL. SAN MARTIN"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:05:12 10:15:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 29.852371087213307,
+      "isOutlier": false,
+      "computedScore": 95,
+      "issues": [],
+      "h3Index": "89a96e7329bffff"
+    },
+    "h3Index": "89a96e7329bffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0002",
+    "coordinates": {
+      "lat": -27.461566,
+      "lng": -58.843793,
+      "corner": "West"
+    },
+    "timestamp": "2023-06-20T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West-Low",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting over the river railing"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Yataí Palm",
+      "graffiti": "None",
+      "terrain": "Stone railing edge",
+      "urbanElements": {
+        "furniture": "Concrete seating",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Modern Waterfront"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIO PARANA",
+        "PROHIBIDO PESCAR"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:06:20 17:45:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 26.520299278906933,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0003",
+    "coordinates": {
+      "lat": -27.461637,
+      "lng": -58.843699,
+      "corner": "Southwest"
+    },
+    "timestamp": "2023-08-10T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North-Zenith",
+      "shadowDirection": "South",
+      "shadowLength": "Minimum",
+      "description": "Harsh midday sun reflecting off the pavement"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground",
+      "shutterStyle": "Roll-up",
+      "treeType": "Jacarandá",
+      "graffiti": "Low",
+      "terrain": "Concrete tiles",
+      "urbanElements": {
+        "furniture": "Waste bins",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Mid-century residential"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "JUNIN",
+        "ALTURA 0-100"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 50mm F1.8 STM",
+      "dateTimeOriginal": "2023:08:10 14:20:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 28.105208069989978,
+      "isOutlier": false,
+      "computedScore": 88,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0004",
+    "coordinates": {
+      "lat": -27.46123,
+      "lng": -58.843424,
+      "corner": "Northeast"
+    },
+    "timestamp": "2023-09-05T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Soft morning light through tree canopies"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Tipas",
+      "graffiti": "None",
+      "terrain": "Grass and brick path",
+      "urbanElements": {
+        "furniture": "Playground equipment",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Landscape Park"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PLAZA DE LOS",
+        "CONSTITUYENTES"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 200,
+      "shutterSpeed": "1/1250",
+      "focalLength": "18mm",
+      "make": "Samsung",
+      "model": "SM-G998B",
+      "lensModel": "Ultra Wide",
+      "dateTimeOriginal": "2023:09:05 09:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 25.66861504701536,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89a96e7328bffff"
+    },
+    "h3Index": "89a96e7328bffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0005",
+    "coordinates": {
+      "lat": -27.461204,
+      "lng": -58.843722,
+      "corner": "West"
+    },
+    "timestamp": "2023-10-12T20:15:00Z",
+    "lighting": {
+      "sunPosition": "None",
+      "shadowDirection": "Radial",
+      "shadowLength": "Varies",
+      "description": "Artificial yellow lighting from faroles"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Metal Kiosk",
+      "treeType": "Ornamental Shrubs",
+      "graffiti": "Medium",
+      "terrain": "Interlocking pavers",
+      "urbanElements": {
+        "furniture": "Outdoor café tables",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Commercial Kiosk"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HELADOS",
+        "EL PISO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 7 Pro",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:10:12 20:15:00"
+    },
+    "category": "Restaurante",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 24.89743220048627,
+      "isOutlier": false,
+      "computedScore": 90,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0006",
+    "coordinates": {
+      "lat": -27.46141,
+      "lng": -58.843475,
+      "corner": "East"
+    },
+    "timestamp": "2023-11-20T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Direct tropical sun on the main boulevard"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Lapacho Amarillo",
+      "graffiti": "None",
+      "terrain": "Asphalt road",
+      "urbanElements": {
+        "furniture": "Traffic bollards",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Urban Corridor"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MAXIMA 40",
+        "PASEO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "70mm",
+      "make": "Nikon",
+      "model": "D850",
+      "lensModel": "24-120mm f/4",
+      "dateTimeOriginal": "2023:11:20 11:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 12.383233148573868,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0007",
+    "coordinates": {
+      "lat": -27.461208,
+      "lng": -58.843798,
+      "corner": "West"
+    },
+    "timestamp": "2023-01-15T18:30:00Z",
+    "lighting": {
+      "sunPosition": "Southwest",
+      "shadowDirection": "Northeast",
+      "shadowLength": "Long",
+      "description": "Sunset light hitting the riverbank"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Palmera",
+      "graffiti": "Low",
+      "terrain": "Sand-pavement transition",
+      "urbanElements": {
+        "furniture": "Iron railing",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Costanera Classic"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "COSTA",
+        "SUR"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 160,
+      "shutterSpeed": "1/1000",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X100V",
+      "lensModel": "23mm f2.0",
+      "dateTimeOriginal": "2023:01:15 18:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 28.938663698052355,
+      "isOutlier": false,
+      "computedScore": 88,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0008",
+    "coordinates": {
+      "lat": -27.461527,
+      "lng": -58.843481,
+      "corner": "South"
+    },
+    "timestamp": "2023-04-18T16:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Soft afternoon shadows on building facades"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low density",
+      "shutterStyle": "Wood shutters",
+      "treeType": "Ceibo",
+      "graffiti": "Low",
+      "terrain": "Red tiles",
+      "urbanElements": {
+        "furniture": "Signage pole",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Spanish Colonial Revival"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PELLEGRINI",
+        "100"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7CL",
+      "lensModel": "28-60mm F4-5.6",
+      "dateTimeOriginal": "2023:04:18 16:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 18.365183232481517,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89a96e7329bffff"
+    },
+    "h3Index": "89a96e7329bffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0009",
+    "coordinates": {
+      "lat": -27.461346,
+      "lng": -58.843884,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-07-22T08:15:00Z",
+    "lighting": {
+      "sunPosition": "East-Low",
+      "shadowDirection": "West",
+      "shadowLength": "Extra Long",
+      "description": "Sunrise mist shadows over the water"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Stone pier",
+      "urbanElements": {
+        "furniture": "Information totem",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Civil Engineering"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MIRADOR",
+        "DEL PARANA"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/125",
+      "focalLength": "16mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "14-30mm f/4 S",
+      "dateTimeOriginal": "2023:07:22 08:15:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 28.657180886917384,
+      "isOutlier": false,
+      "computedScore": 82,
+      "issues": [
+        "Entorno botánico genérico"
+      ],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 82,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0010",
+    "coordinates": {
+      "lat": -27.461383,
+      "lng": -58.843377,
+      "corner": "East"
+    },
+    "timestamp": "2023-03-30T13:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High vertical illumination on sidewalk cafés"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground",
+      "shutterStyle": "Glass front",
+      "treeType": "Palo Borracho",
+      "graffiti": "None",
+      "terrain": "Polished granite",
+      "urbanElements": {
+        "furniture": "Sun umbrellas",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Modern Retail"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CAFE",
+        "MARTINEZ"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/4000",
+      "focalLength": "23mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:03:30 13:45:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 22.083499393455103,
+      "isOutlier": false,
+      "computedScore": 91,
+      "issues": [],
+      "h3Index": "89a96e7329bffff"
+    },
+    "h3Index": "89a96e7329bffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0011",
+    "coordinates": {
+      "lat": -27.461223,
+      "lng": -58.843744,
+      "corner": "Southwest"
+    },
+    "timestamp": "2023-12-05T19:20:00Z",
+    "lighting": {
+      "sunPosition": "Southwest-Low",
+      "shadowDirection": "Northeast",
+      "shadowLength": "Long",
+      "description": "Orange dusk light washing the river walls"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Ibirá-pitá",
+      "graffiti": "Low",
+      "terrain": "Stone blocks",
+      "urbanElements": {
+        "furniture": "Concrete bench",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Public Infrastructure"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PUNTO",
+        "SALUDABLE"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 200,
+      "shutterSpeed": "1/180",
+      "focalLength": "52mm",
+      "make": "Xiaomi",
+      "model": "Mi 11 Ultra",
+      "lensModel": "Telephoto Lens",
+      "dateTimeOriginal": "2023:12:05 19:20:00"
+    },
+    "category": "Parque",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 24.27395809817983,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0012",
+    "coordinates": {
+      "lat": -27.461337,
+      "lng": -58.843759,
+      "corner": "West"
+    },
+    "timestamp": "2023-02-14T10:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light for joggers"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Ficus",
+      "graffiti": "None",
+      "terrain": "Anti-slip tiles",
+      "urbanElements": {
+        "furniture": "Hydraulic bollard",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Pedestrian Promenade"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BICISENDA",
+        "CORRIENTES"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 100,
+      "shutterSpeed": "1/1500",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30",
+      "lensModel": "Primary",
+      "dateTimeOriginal": "2023:02:14 10:00:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 17.18087536283497,
+      "isOutlier": false,
+      "computedScore": 92,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0013",
+    "coordinates": {
+      "lat": -27.461589,
+      "lng": -58.843705,
+      "corner": "North"
+    },
+    "timestamp": "2023-05-25T11:30:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Bright holiday morning with clear skies"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Lapacho",
+      "graffiti": "None",
+      "terrain": "Polished stone",
+      "urbanElements": {
+        "furniture": "Statue plinth",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Monumental"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MONUMENTO",
+        "GENERAL SAN MARTIN"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ZV-E10",
+      "lensModel": "16-50mm F3.5-5.6",
+      "dateTimeOriginal": "2023:05:25 11:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 23.430596061021152,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0014",
+    "coordinates": {
+      "lat": -27.461476,
+      "lng": -58.843798,
+      "corner": "West"
+    },
+    "timestamp": "2023-11-01T15:40:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Direct afternoon sun on river overlook"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Casuarina",
+      "graffiti": "Low",
+      "terrain": "Paved balcony",
+      "urbanElements": {
+        "furniture": "Binoculars stand",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Brutalist Balcony"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PASEO DE LAS",
+        "ESCULTURAS"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/2500",
+      "focalLength": "14mm",
+      "make": "Apple",
+      "model": "iPhone 15",
+      "lensModel": "Ultra Wide",
+      "dateTimeOriginal": "2023:11:01 15:40:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 21.285290845364965,
+      "isOutlier": false,
+      "computedScore": 88,
+      "issues": [],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0015",
+    "coordinates": {
+      "lat": -27.461485,
+      "lng": -58.843869,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-09-21T18:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Sunset glare reflecting off the Paraná River"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "None",
+      "graffiti": "High",
+      "terrain": "Reinforced concrete",
+      "urbanElements": {
+        "furniture": "Safety rail",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Functionalist Dock"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PELIGRO",
+        "ZONA DE MUELLES"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 87
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 640,
+      "shutterSpeed": "1/100",
+      "focalLength": "26mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Wide Angle",
+      "dateTimeOriginal": "2023:09:21 18:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Costanera de Corrientes",
+    "validation": {
+      "distanceFromCenter": 28.17374289009703,
+      "isOutlier": false,
+      "computedScore": 81,
+      "issues": [
+        "Entorno botánico genérico"
+      ],
+      "h3Index": "89a96e73283ffff"
+    },
+    "h3Index": "89a96e73283ffff",
+    "geocodingScore": 81,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0016",
+    "coordinates": {
+      "lat": -27.4583,
+      "lng": -58.838733,
+      "corner": "NW"
+    },
+    "timestamp": "2023-05-14T10:20:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Luz matutina clara con sombras definidas proyectadas por los monumentos históricos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Tipas y Lapachos centenarios",
+      "graffiti": "Leve en base de piedra",
+      "terrain": "Pavimento de adoquín y césped",
+      "urbanElements": {
+        "furniture": "Bancos de hierro forjado",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Monumento conmemorativo neoclásico"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MONUMENTO A",
+        "MITRE",
+        "CORRIENTES"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:05:14 10:20:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 22.989748094267497,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0017",
+    "coordinates": {
+      "lat": -27.458361,
+      "lng": -58.838266,
+      "corner": "SE"
+    },
+    "timestamp": "2023-06-10T15:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Luz de atardecer filtrada por el follaje denso del parque."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low",
+      "shutterStyle": "N/A",
+      "treeType": "Palo Borracho",
+      "graffiti": "None",
+      "terrain": "Sendero de hormigón peinado",
+      "urbanElements": {
+        "furniture": "Farolas de estilo colonial",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Infraestructura de parque urbano"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "PROHIBIDO ARROJAR",
+        "RESIDUOS"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 24-105mm f/4L",
+      "dateTimeOriginal": "2023:06:10 15:45:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 24.06412864377988,
+      "isOutlier": false,
+      "computedScore": 94,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0018",
+    "coordinates": {
+      "lat": -27.458033,
+      "lng": -58.838458,
+      "corner": "N"
+    },
+    "timestamp": "2023-08-22T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Minimal",
+      "shadowLength": "Very Short",
+      "description": "Sol de mediodía con iluminación cenital sobre los juegos infantiles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Especies mixtas autóctonas",
+      "graffiti": "Mural artístico en pared cercana",
+      "terrain": "Piso antigolpes de caucho",
+      "urbanElements": {
+        "furniture": "Juegos infantiles de metal",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Contemporáneo funcional"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PLAZA DE LOS NIÑOS"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D7500",
+      "lensModel": "18-140mm f/3.5-5.6G",
+      "dateTimeOriginal": "2023:08:22 12:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 29.976871331767015,
+      "isOutlier": false,
+      "computedScore": 92,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0019",
+    "coordinates": {
+      "lat": -27.458157,
+      "lng": -58.838496,
+      "corner": "E"
+    },
+    "timestamp": "2022-11-05T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Sombra proyectada por el faro hacia el interior del parque."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Palmeras Pindó",
+      "graffiti": "None",
+      "terrain": "Laja natural",
+      "urbanElements": {
+        "furniture": "Cartelería informativa de madera",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Faro decorativo y mirador"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARO PARQUE MITRE"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "50mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 18-55mm F2.8-4",
+      "dateTimeOriginal": "2022:11:05 09:15:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 15.905771838973218,
+      "isOutlier": false,
+      "computedScore": 94,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0020",
+    "coordinates": {
+      "lat": -27.458385,
+      "lng": -58.838451,
+      "corner": "Center"
+    },
+    "timestamp": "2023-09-12T11:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Iluminación uniforme sobre el área de césped central."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Lapacho Rosado",
+      "graffiti": "None",
+      "terrain": "Césped natural mantenido",
+      "urbanElements": {
+        "furniture": "Botes de basura metálicos",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Espacio abierto paisajístico"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUNICIPALIDAD DE",
+        "CORRIENTES"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:09:12 11:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 10.616354331172744,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0021",
+    "coordinates": {
+      "lat": -27.458325,
+      "lng": -58.838679,
+      "corner": "W"
+    },
+    "timestamp": "2023-04-18T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Sombras duras sobre la exhibición de cañones históricos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Jacarandá",
+      "graffiti": "None",
+      "terrain": "Base de piedra y cemento",
+      "urbanElements": {
+        "furniture": "Exhibición de artillería antigua",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Monumento histórico militar"
+      },
+      "temporalWindow": "2017-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "BATERIA DE",
+        "CAÑONES"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-70mm f/2.8L",
+      "dateTimeOriginal": "2023:04:18 14:20:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 17.87908203404184,
+      "isOutlier": false,
+      "computedScore": 87,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0022",
+    "coordinates": {
+      "lat": -27.458149,
+      "lng": -58.838362,
+      "corner": "NE"
+    },
+    "timestamp": "2023-07-02T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Luz baja de invierno resaltando texturas de la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High",
+      "shutterStyle": "N/A",
+      "treeType": "Arbustos ornamentales",
+      "graffiti": "Leve en cordón cuneta",
+      "terrain": "Asfalto y baldosa calcárea",
+      "urbanElements": {
+        "furniture": "Poste de señalización vial",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Vial urbano"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. GALLINO",
+        "GREGORIO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 800,
+      "shutterSpeed": "1/60s",
+      "focalLength": "28mm",
+      "make": "Nikon",
+      "model": "Z6",
+      "lensModel": "Z 24-70mm f/4 S",
+      "dateTimeOriginal": "2023:07:02 16:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 21.617610204244418,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0023",
+    "coordinates": {
+      "lat": -27.45825,
+      "lng": -58.838674,
+      "corner": "SW"
+    },
+    "timestamp": "2023-01-20T18:30:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Very Long",
+      "description": "Hora dorada estival con luz cálida sobre el club náutico."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Medium",
+      "shutterStyle": "Metal roll-up",
+      "treeType": "Eucaliptos",
+      "graffiti": "Graffiti institucional",
+      "terrain": "Baldosa y tierra",
+      "urbanElements": {
+        "furniture": "Muro perimetral de ladrillo",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Club social mediados siglo XX"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CLUB DE REGATAS",
+        "CORRIENTES"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/100s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A6400",
+      "lensModel": "E 35mm F1.8",
+      "dateTimeOriginal": "2023:01:20 18:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 18.046101299599382,
+      "isOutlier": false,
+      "computedScore": 94,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0024",
+    "coordinates": {
+      "lat": -27.458207,
+      "lng": -58.838237,
+      "corner": "S"
+    },
+    "timestamp": "2022-12-15T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Primera luz solar sobre el sector de ejercicios."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Tipas",
+      "graffiti": "None",
+      "terrain": "Tierra apisonada",
+      "urbanElements": {
+        "furniture": "Estación de gimnasia al aire libre",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Equipamiento deportivo moderno"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CIRCUITO DE",
+        "SALUD"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "16mm",
+      "make": "GoPro",
+      "model": "HERO10 Black",
+      "lensModel": "F2.8",
+      "dateTimeOriginal": "2022:12:15 08:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 27.934417798755103,
+      "isOutlier": false,
+      "computedScore": 90,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0025",
+    "coordinates": {
+      "lat": -27.458349,
+      "lng": -58.8384,
+      "corner": "Center"
+    },
+    "timestamp": "2023-10-30T13:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "Contraste alto por sol de mediodía bajo el follaje."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Gomero gigante",
+      "graffiti": "None",
+      "terrain": "Raíces expuestas y césped",
+      "urbanElements": {
+        "furniture": "Bancos circulares de hormigón",
+        "vegetationScore": 1,
+        "architectureStyle": "Paisajismo naturalista"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CUIDE LA",
+        "NATURALEZA"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "iPhone",
+      "model": "13 Pro",
+      "lensModel": "Main Camera 26mm",
+      "dateTimeOriginal": "2023:10:30 13:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 11.27125960199424,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0026",
+    "coordinates": {
+      "lat": -27.458128,
+      "lng": -58.838689,
+      "corner": "W"
+    },
+    "timestamp": "2023-03-05T07:45:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Luz rasante matutina sobre la parada de transporte."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High",
+      "shutterStyle": "N/A",
+      "treeType": "N/A",
+      "graffiti": "Stickers políticos",
+      "terrain": "Vereda de cemento",
+      "urbanElements": {
+        "furniture": "Refugio de colectivos",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Mobiliario urbano estandarizado"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "103",
+        "PARADA"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/1200s",
+      "focalLength": "26mm",
+      "make": "Samsung",
+      "model": "SM-G998B",
+      "lensModel": "Wide Camera",
+      "dateTimeOriginal": "2023:03:05 07:45:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 26.712296645015588,
+      "isOutlier": false,
+      "computedScore": 84,
+      "issues": [
+        "Entorno botánico genérico"
+      ],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0027",
+    "coordinates": {
+      "lat": -27.45832,
+      "lng": -58.838721,
+      "corner": "NW"
+    },
+    "timestamp": "2023-06-25T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Medium",
+      "description": "Luz cenital de invierno, cielo parcialmente nublado."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Tipas",
+      "graffiti": "Firmas con aerosol",
+      "terrain": "Piedra decorativa",
+      "urbanElements": {
+        "furniture": "Placa conmemorativa de bronce",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Monumento Cautivas Correntinas"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LAS CAUTIVAS",
+        "HOMENAJE"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/200s",
+      "focalLength": "40mm",
+      "make": "Canon",
+      "model": "EOS 90D",
+      "lensModel": "EF-S 18-135mm IS USM",
+      "dateTimeOriginal": "2023:06:25 11:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 21.918835662616065,
+      "isOutlier": false,
+      "computedScore": 95,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0028",
+    "coordinates": {
+      "lat": -27.458128,
+      "lng": -58.838688,
+      "corner": "W"
+    },
+    "timestamp": "2023-09-02T17:15:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Luz naranja intensa de atardecer en el borde del parque."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low",
+      "shutterStyle": "N/A",
+      "treeType": "Lapacho",
+      "graffiti": "None",
+      "terrain": "Baldosa de vereda",
+      "urbanElements": {
+        "furniture": "Puesto de venta de diarios",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Estructura metálica ligera"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "REVI-REVISTAS",
+        "DIARIOS"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 86
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 640,
+      "shutterSpeed": "1/50s",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "ZV-E10",
+      "lensModel": "E 16-50mm F3.5-5.6",
+      "dateTimeOriginal": "2023:09:02 17:15:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 26.643507970792665,
+      "isOutlier": false,
+      "computedScore": 85,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0029",
+    "coordinates": {
+      "lat": -27.458282,
+      "lng": -58.838642,
+      "corner": "S"
+    },
+    "timestamp": "2023-02-12T20:00:00Z",
+    "lighting": {
+      "sunPosition": "Night",
+      "shadowDirection": "Multiple",
+      "shadowLength": "Variable",
+      "description": "Iluminación artificial de las farolas del parque y carteles led."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low",
+      "shutterStyle": "Metal Mesh",
+      "treeType": "N/A",
+      "graffiti": "En persianas del carrito",
+      "terrain": "Asfalto",
+      "urbanElements": {
+        "furniture": "Carrito de comida (Pancho)",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Comercio ambulante"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "EL REY DEL",
+        "CHORIPAN"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 93
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 1600,
+      "shutterSpeed": "1/30s",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Main Wide",
+      "dateTimeOriginal": "2023:02:12 20:00:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 14.153159809048411,
+      "isOutlier": false,
+      "computedScore": 85,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0030",
+    "coordinates": {
+      "lat": -27.458218,
+      "lng": -58.83835,
+      "corner": "Center"
+    },
+    "timestamp": "2023-11-20T10:00:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Medium",
+      "description": "Sol brillante de primavera sobre los senderos principales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Ceibo",
+      "graffiti": "None",
+      "terrain": "Baldosa roja colonial",
+      "urbanElements": {
+        "furniture": "Bebedero público de cemento",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Neocolonial adaptado"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARQUE",
+        "BARTOLOME MITRE"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z5",
+      "lensModel": "Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2023:11:20 10:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Parque Mitre",
+    "validation": {
+      "distanceFromCenter": 17.383489251403866,
+      "isOutlier": false,
+      "computedScore": 98,
+      "issues": [],
+      "h3Index": "89a96e732c7ffff"
+    },
+    "h3Index": "89a96e732c7ffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  }
+]

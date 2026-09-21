@@ -1,0 +1,2439 @@
+[
+  {
+    "id": "REF-0001",
+    "coordinates": {
+      "lat": 41.9022,
+      "lng": 12.4573,
+      "corner": "Center"
+    },
+    "timestamp": "2023-05-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "East-Southeast",
+      "shadowDirection": "West-Northwest",
+      "shadowLength": "Short",
+      "description": "Bright morning light illuminating the travertine facade of St. Peter's Basilica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Fixed Wood Louvers",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Sanpietrini (Cobblestone)",
+      "urbanElements": {
+        "furniture": "Bernini Colonnade iron barriers, Vatican-crested trash bins",
+        "vegetationScore": 0.1,
+        "architectureStyle": "High Baroque and Renaissance"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PIAZZA S. PIETRO",
+        "POSTE VATICANE"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 35mm F1.4 GM",
+      "dateTimeOriginal": "2023:05:15 10:30:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0002",
+    "coordinates": {
+      "lat": 41.9065,
+      "lng": 12.4536,
+      "corner": "North"
+    },
+    "timestamp": "2023-06-20T14:45:00Z",
+    "lighting": {
+      "sunPosition": "South-Southwest",
+      "shadowDirection": "North-Northeast",
+      "shadowLength": "Moderate",
+      "description": "Strong afternoon sun casting shadows across the museum entrance ramp."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Pinus Pinea (Stone Pine)",
+      "graffiti": "None",
+      "terrain": "Smooth Paved Stone",
+      "urbanElements": {
+        "furniture": "Metal detector kiosks, turnstiles",
+        "vegetationScore": 0.3,
+        "architectureStyle": "1930s Monumental Portal"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MVSEI VATICANI",
+        "INGRESSO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-70mm F2.8 L",
+      "dateTimeOriginal": "2023:06:20 14:45:00"
+    },
+    "h3Index": "891e805058bffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0003",
+    "coordinates": {
+      "lat": 41.9021,
+      "lng": 12.4601,
+      "corner": "East"
+    },
+    "timestamp": "2023-04-12T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Golden hour light hitting the border markers between Italy and the Vatican."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Classical Rectangular",
+      "treeType": "Platanus",
+      "graffiti": "None",
+      "terrain": "Polished Basalt",
+      "urbanElements": {
+        "furniture": "Iron lampposts with globe fixtures, stone bollards",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Fascist Era Rationalist / Neoclassical"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "VIA DELLA CONCILIAZIONE",
+        "FARMACIA VATICANA"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850",
+      "lensModel": "AF-S Nikkor 50mm f/1.8G",
+      "dateTimeOriginal": "2023:04:12 09:15:00"
+    },
+    "h3Index": "891e8050503ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0004",
+    "coordinates": {
+      "lat": 41.9038,
+      "lng": 12.4497,
+      "corner": "West"
+    },
+    "timestamp": "2022-09-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Null",
+      "description": "Overhead sun in the gardens with minimal shadow depth."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Cupressus Sempervirens (Cypress)",
+      "graffiti": "None",
+      "terrain": "Gravel Path",
+      "urbanElements": {
+        "furniture": "Stone benches, fountain sculpture",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Renaissance Garden Architecture"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "GIARDINI VATICANI",
+        "ZONA RISERVATA"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 400,
+      "shutterSpeed": "1/200",
+      "focalLength": "16mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm F2.8 R LM WR",
+      "dateTimeOriginal": "2022:09:05 12:00:00"
+    },
+    "h3Index": "891e80505c3ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0005",
+    "coordinates": {
+      "lat": 41.9032,
+      "lng": 12.4519,
+      "corner": "Southwest"
+    },
+    "timestamp": "2023-07-10T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Harsh evening shadows stretching from the Governatore Palace."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Dark Green Wood",
+      "treeType": "Topiary Boxwood",
+      "graffiti": "None",
+      "terrain": "Flagstone",
+      "urbanElements": {
+        "furniture": "Swiss Guard sentry box, Gendarmerie booth",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Eclectic Neorenaissance"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "STATO DELLA CITTÀ DEL VATICANO",
+        "GOVERNATORATO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "85mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 85mm F1.8",
+      "dateTimeOriginal": "2023:07:10 16:20:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0006",
+    "coordinates": {
+      "lat": 41.9035,
+      "lng": 12.4548,
+      "corner": "Internal Court"
+    },
+    "timestamp": "2023-11-02T11:00:00Z",
+    "lighting": {
+      "sunPosition": "South",
+      "shadowDirection": "North",
+      "shadowLength": "Moderate",
+      "description": "Autumnal diffused light in the courtyard."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Arcaded Loggia",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Brick Herringbone",
+      "urbanElements": {
+        "furniture": "Swiss Guard ceremonial halberd racks",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Bramante / Raphael Loggias"
+      },
+      "temporalWindow": "2015-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORTILE DI SAN DAMASO"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 640,
+      "shutterSpeed": "1/125",
+      "focalLength": "24mm",
+      "make": "Leica",
+      "model": "M11",
+      "lensModel": "Summilux-M 35mm f/1.4 ASPH",
+      "dateTimeOriginal": "2023:11:02 11:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 80,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0007",
+    "coordinates": {
+      "lat": 41.9011,
+      "lng": 12.4541,
+      "corner": "South Gate"
+    },
+    "timestamp": "2023-01-20T13:00:00Z",
+    "lighting": {
+      "sunPosition": "South-Southwest",
+      "shadowDirection": "North-Northeast",
+      "shadowLength": "Long",
+      "description": "Winter sun creating sharp angles against high perimeter walls."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Security sensors only",
+      "shutterStyle": "Small barred windows",
+      "treeType": "Quercus Ilex",
+      "graffiti": "None",
+      "terrain": "Rough Cobble",
+      "urbanElements": {
+        "furniture": "Heavy iron-studded wood gates",
+        "vegetationScore": 0.15,
+        "architectureStyle": "Medieval/Renaissance Fortification"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CAMPO SANTO TEUTONICO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/2000",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2023:01:20 13:00:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 83,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0008",
+    "coordinates": {
+      "lat": 41.9061,
+      "lng": 12.4545,
+      "corner": "Museum Courtyard"
+    },
+    "timestamp": "2023-03-30T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Southeast",
+      "shadowDirection": "Northwest",
+      "shadowLength": "Moderate",
+      "description": "Morning sun reflecting off the bronze pinecone sculpture."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Potted Citrus",
+      "graffiti": "None",
+      "terrain": "Stone Slabs",
+      "urbanElements": {
+        "furniture": "Modern globe sculpture, information placards",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Classical Nicchio"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORTILE DELLA PIGNA"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "ZV-E10",
+      "lensModel": "E 10-18mm F4 OSS",
+      "dateTimeOriginal": "2023:03:30 10:00:00"
+    },
+    "h3Index": "891e805058bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0009",
+    "coordinates": {
+      "lat": 41.9008,
+      "lng": 12.4512,
+      "corner": "Railway Area"
+    },
+    "timestamp": "2023-08-15T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Early morning light skimming the railway tracks."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Catenary lines (railway)",
+      "shutterStyle": "Office Metal",
+      "treeType": "Mixed Mediterranean Shrubbery",
+      "graffiti": "None",
+      "terrain": "Ballast and Concrete",
+      "urbanElements": {
+        "furniture": "Railway signaling, small station clock",
+        "vegetationScore": 0.35,
+        "architectureStyle": "1930s Functionalist"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "STATO DELLA CITTÀ DEL VATICANO",
+        "FERROVIA VATICANA"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/100",
+      "focalLength": "50mm",
+      "make": "Hasselblad",
+      "model": "X2D 100C",
+      "lensModel": "XCD 55V",
+      "dateTimeOriginal": "2023:08:15 08:00:00"
+    },
+    "h3Index": "891e80505cfffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0010",
+    "coordinates": {
+      "lat": 41.9015,
+      "lng": 12.4528,
+      "corner": "Southwest Plaza"
+    },
+    "timestamp": "2023-05-22T17:00:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Long",
+      "description": "Late afternoon sun casting long shadows behind Santa Marta."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Modern Wood Panels",
+      "treeType": "Oleander",
+      "graffiti": "None",
+      "terrain": "Sanpietrini and Porphyry",
+      "urbanElements": {
+        "furniture": "Bronze lampposts, Gendarmerie security cameras",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Modern 20th Century Stone"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "DOMUS SANCTAE MARTHAE"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera 24mm",
+      "dateTimeOriginal": "2023:05:22 17:00:00"
+    },
+    "h3Index": "891e80505cfffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0011",
+    "coordinates": {
+      "lat": 41.9021,
+      "lng": 12.4573,
+      "corner": "SE"
+    },
+    "timestamp": "2023-05-14T09:15:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Medium",
+      "description": "Sharp morning light casting elongated shadows across the travertine pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Classical Wooden",
+      "treeType": "Pinus Pinea",
+      "graffiti": "None",
+      "terrain": "Flat paved",
+      "urbanElements": {
+        "furniture": "Wrought iron lampposts with Vatican crest",
+        "vegetationScore": 2.5,
+        "architectureStyle": "Bernini Baroque"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "POSTE VATICANE",
+        "PIAZZA SAN PIETRO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 24-70mm F2.8 GM II",
+      "dateTimeOriginal": "2023:05:14 09:15:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 121,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0012",
+    "coordinates": {
+      "lat": 41.9065,
+      "lng": 12.4531,
+      "corner": "NW"
+    },
+    "timestamp": "2023-06-21T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Short",
+      "description": "High intensity solar radiation with minimal shadows at solar noon."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Stone frames",
+      "treeType": "Cupressus",
+      "graffiti": "None",
+      "terrain": "Slight incline",
+      "urbanElements": {
+        "furniture": "High-security bronze bollards",
+        "vegetationScore": 1.8,
+        "architectureStyle": "Renaissance Fortress"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUSEI VATICANI",
+        "INGRESSO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 35mm F1.8 Macro IS STM",
+      "dateTimeOriginal": "2023:06:21 12:00:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 112,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0013",
+    "coordinates": {
+      "lat": 41.9042,
+      "lng": 12.4582,
+      "corner": "NE"
+    },
+    "timestamp": "2023-09-10T16:30:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Warm golden hour light hitting the Swiss Guard barracks."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Dark Green Timber",
+      "treeType": "Quercus Ilex",
+      "graffiti": "None",
+      "terrain": "Cobblestone",
+      "urbanElements": {
+        "furniture": "Bronze status plaques",
+        "vegetationScore": 3.2,
+        "architectureStyle": "Late Renaissance"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "PORTA SANT'ANNA",
+        "VIGILANZA"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:09:10 16:30:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 128,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0014",
+    "coordinates": {
+      "lat": 41.9028,
+      "lng": 12.4523,
+      "corner": "SW"
+    },
+    "timestamp": "2023-03-05T10:00:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Moderate",
+      "description": "Clear blue sky providing high contrast on the Governatore Palace facade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground",
+      "shutterStyle": "Arched Window",
+      "treeType": "Hedges",
+      "graffiti": "None",
+      "terrain": "Slightly elevated",
+      "urbanElements": {
+        "furniture": "Vatican coat of arms stone carvings",
+        "vegetationScore": 7.5,
+        "architectureStyle": "Neo-Renaissance"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "GOVERNATORATO",
+        "CITTA DEL VATICANO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 23mm F2 R WR",
+      "dateTimeOriginal": "2023:03:05 10:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 194,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0015",
+    "coordinates": {
+      "lat": 41.9008,
+      "lng": 12.4505,
+      "corner": "N"
+    },
+    "timestamp": "2023-11-12T14:45:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Moderate",
+      "description": "Diffused light filtering through tree canopy in the gardens."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Cedar of Lebanon",
+      "graffiti": "None",
+      "terrain": "Garden terrace",
+      "urbanElements": {
+        "furniture": "Marble garden benches",
+        "vegetationScore": 9.2,
+        "architectureStyle": "Eclectic Garden"
+      },
+      "temporalWindow": "2015-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "COLLEGIO ETIOPICO"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2023:11:12 14:45:00"
+    },
+    "h3Index": "891e80505cfffff",
+    "geocodingScore": 217,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0016",
+    "coordinates": {
+      "lat": 41.9015,
+      "lng": 12.4545,
+      "corner": "SE"
+    },
+    "timestamp": "2023-02-20T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Soft early light hitting the Teutonic Cemetery walls."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Iron Grates",
+      "treeType": "Cypress",
+      "graffiti": "None",
+      "terrain": "Paved flat",
+      "urbanElements": {
+        "furniture": "Religious signage in German and Latin",
+        "vegetationScore": 4.5,
+        "architectureStyle": "Medieval/Renaissance Overlay"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CAMPO SANTO TEUTONICO",
+        "ORATE PRO PAUPERIBUS"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 24-105mm F4",
+      "dateTimeOriginal": "2023:02:20 08:30:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 148,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0017",
+    "coordinates": {
+      "lat": 41.9055,
+      "lng": 12.4565,
+      "corner": "W"
+    },
+    "timestamp": "2023-07-30T11:20:00Z",
+    "lighting": {
+      "sunPosition": "South",
+      "shadowDirection": "North",
+      "shadowLength": "Short",
+      "description": "Harsh sunlight on the white stone of the Gendarmerie."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Standard Administrative",
+      "treeType": "Oleander",
+      "graffiti": "None",
+      "terrain": "Cobblestone slope",
+      "urbanElements": {
+        "furniture": "Security cameras on decorative poles",
+        "vegetationScore": 2.1,
+        "architectureStyle": "Functionalist Vatican"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORPO DELLA GENDARMERIA"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/1250",
+      "focalLength": "18mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2023:07:30 11:20:00"
+    },
+    "h3Index": "891e805058bffff",
+    "geocodingScore": 115,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0018",
+    "coordinates": {
+      "lat": 41.9023,
+      "lng": 12.4539,
+      "corner": "E"
+    },
+    "timestamp": "2023-04-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Moderate",
+      "description": "Side lighting emphasizing the texture of the Basilica's travertine."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Marble steps",
+      "urbanElements": {
+        "furniture": "Crowd control stanchions",
+        "vegetationScore": 0.5,
+        "architectureStyle": "High Renaissance"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BASILICA DI SAN PIETRO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "16mm",
+      "make": "Sony",
+      "model": "ILCE-7R4",
+      "lensModel": "FE 16-35mm F2.8 GM",
+      "dateTimeOriginal": "2023:04:15 15:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0019",
+    "coordinates": {
+      "lat": 41.9058,
+      "lng": 12.4535,
+      "corner": "N"
+    },
+    "timestamp": "2023-10-05T13:15:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Short",
+      "description": "Direct sun reflecting off the library windows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Traditional Roman",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Paved courtyard",
+      "urbanElements": {
+        "furniture": "Ancient manuscript display boards",
+        "vegetationScore": 1.2,
+        "architectureStyle": "Classical Library Architecture"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BIBLIOTECA APOSTOLICA VATICANA"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/640",
+      "focalLength": "35mm",
+      "make": "Hasselblad",
+      "model": "X1D II 50C",
+      "lensModel": "XCD 45mm F3.5",
+      "dateTimeOriginal": "2023:10:05 13:15:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 101,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0020",
+    "coordinates": {
+      "lat": 41.9038,
+      "lng": 12.4495,
+      "corner": "S"
+    },
+    "timestamp": "2023-08-12T17:50:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Extreme",
+      "description": "Sunset lighting creating deep orange hues on the brickwork."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Green shutters",
+      "treeType": "Magnolia",
+      "graffiti": "None",
+      "terrain": "Paved incline",
+      "urbanElements": {
+        "furniture": "Stone water fountain",
+        "vegetationScore": 8.8,
+        "architectureStyle": "Mannerist Pavillion"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "CASINA PIO IV"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 1600,
+      "shutterSpeed": "1/50",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ZV-E10",
+      "lensModel": "E 35mm F1.8 OSS",
+      "dateTimeOriginal": "2023:08:12 17:50:00"
+    },
+    "h3Index": "891e80505c3ffff",
+    "geocodingScore": 213,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0021",
+    "coordinates": {
+      "lat": 41.9022,
+      "lng": 12.4539,
+      "corner": "South-East"
+    },
+    "timestamp": "2021-06-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "High South",
+      "shadowDirection": "North",
+      "shadowLength": "Short",
+      "description": "Direct vertical sunlight typical of summer solstice at high noon."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Classical Wooden",
+      "treeType": "Stone Pine (Pinus pinea)",
+      "graffiti": "None",
+      "terrain": "Sampietrini Cobblestones",
+      "urbanElements": {
+        "furniture": "Iron Cast Lamp Post",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Bernini Baroque Colonnade"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "PIAZZA SAN PIETRO",
+        "STATO DELLA CITTÀ DEL VATICANO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7RM4",
+      "lensModel": "FE 24-70mm F2.8 GM",
+      "dateTimeOriginal": "2021:06:15 12:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0022",
+    "coordinates": {
+      "lat": 41.9065,
+      "lng": 12.4534,
+      "corner": "North-West"
+    },
+    "timestamp": "2022-04-10T10:30:00Z",
+    "lighting": {
+      "sunPosition": "East-South-East",
+      "shadowDirection": "West-North-West",
+      "shadowLength": "Medium",
+      "description": "Morning light hitting the Vatican Museum facade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal Undergrounded",
+      "shutterStyle": "Green Slatted Wood",
+      "treeType": "Cypress",
+      "graffiti": "None",
+      "terrain": "Paved Stone Archway",
+      "urbanElements": {
+        "furniture": "Brass Queue Barriers",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Renaissance-Modern Hybrid"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUSEI VATICANI",
+        "INGRESSO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 35mm f/1.8 Macro IS STM",
+      "dateTimeOriginal": "2022:04:10 10:30:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0023",
+    "coordinates": {
+      "lat": 41.9021,
+      "lng": 12.4545,
+      "corner": "East"
+    },
+    "timestamp": "2020-09-20T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West-South-West",
+      "shadowDirection": "East-North-East",
+      "shadowLength": "Long",
+      "description": "Late afternoon shadows stretching across the portico."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Iron Gate",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Travertine Marble",
+      "urbanElements": {
+        "furniture": "Wooden Bench with Papal Seal",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Renaissance Basilica"
+      },
+      "temporalWindow": "2018-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "BASILICA DI SAN PIETRO",
+        "SILENTIUM"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z7 II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2020:09:20 16:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 83,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0024",
+    "coordinates": {
+      "lat": 41.904,
+      "lng": 12.4571,
+      "corner": "North-East"
+    },
+    "timestamp": "2019-11-05T14:15:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Medium-Long",
+      "description": "Autumn sun casting soft light on the border wall."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Roll-up Metal (Commercial)",
+      "treeType": "London Plane Tree",
+      "graffiti": "Strictly Clean",
+      "terrain": "Asphalt and Stone Curb",
+      "urbanElements": {
+        "furniture": "Yellow Vatican Post Box",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Medieval Fortification Wall"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "POSTE VATICANE",
+        "VATICANO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/100",
+      "focalLength": "18mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF18-55mmF2.8-4 R LM OIS",
+      "dateTimeOriginal": "2019:11:05 14:15:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0025",
+    "coordinates": {
+      "lat": 41.9038,
+      "lng": 12.4514,
+      "corner": "Interior"
+    },
+    "timestamp": "2021-07-12T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light in the Vatican gardens."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Mediterranean Pine",
+      "graffiti": "None",
+      "terrain": "Gravel Path",
+      "urbanElements": {
+        "furniture": "Stone Fountain",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Mannerist Garden House"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "CASINA PIO IV"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "85mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 85mm F1.8",
+      "dateTimeOriginal": "2021:07:12 09:00:00"
+    },
+    "h3Index": "891e80505c3ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0026",
+    "coordinates": {
+      "lat": 41.9015,
+      "lng": 12.4518,
+      "corner": "South-West"
+    },
+    "timestamp": "2022-03-01T13:45:00Z",
+    "lighting": {
+      "sunPosition": "South",
+      "shadowDirection": "North-North-East",
+      "shadowLength": "Short-Medium",
+      "description": "Harsh midday sun bouncing off white limestone."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Blind Shutters",
+      "treeType": "Olive Tree",
+      "graffiti": "None",
+      "terrain": "Polished Stone Steps",
+      "urbanElements": {
+        "furniture": "Security Camera Mast",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Functionalist Ecclesiastic"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "DOMUS SANCTAE MARTHAE"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 20-60mm F3.5-5.6",
+      "dateTimeOriginal": "2022:03:01 13:45:00"
+    },
+    "h3Index": "891e80505cfffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0027",
+    "coordinates": {
+      "lat": 41.9031,
+      "lng": 12.4504,
+      "corner": "Center"
+    },
+    "timestamp": "2020-05-22T11:20:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Short",
+      "description": "Bright pre-noon light on administrative facade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Fixed Wood Panels",
+      "treeType": "Oak",
+      "graffiti": "None",
+      "terrain": "Manicured Lawn Edge",
+      "urbanElements": {
+        "furniture": "Flagpole",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Italian Renaissance Revival"
+      },
+      "temporalWindow": "2018-2020"
+    },
+    "ocr": {
+      "detectedText": [
+        "PALAZZO DEL GOVERNATORATO",
+        "SCV"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2020:05:22 11:20:00"
+    },
+    "h3Index": "891e80505c3ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0028",
+    "coordinates": {
+      "lat": 41.9048,
+      "lng": 12.4568,
+      "corner": "North-East"
+    },
+    "timestamp": "2021-12-10T15:30:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Long",
+      "description": "Low winter sun hitting the Swiss Guard barracks."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Heavy Timber Door",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Basalt Slabs",
+      "urbanElements": {
+        "furniture": "Striped Sentry Box",
+        "vegetationScore": 0,
+        "architectureStyle": "Military Renaissance"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "PONTIFICIA GUARDIA SVIZZERA",
+        "ALT"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2021:12:10 15:30:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0029",
+    "coordinates": {
+      "lat": 41.9022,
+      "lng": 12.458,
+      "corner": "South"
+    },
+    "timestamp": "2022-08-05T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Maximum",
+      "description": "Sunset golden hour on the wide avenue leading to St. Peter's."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Modern Glass Shopfront",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Large Stone Pavers",
+      "urbanElements": {
+        "furniture": "Obelisk-style Lamp Post",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Fascist Era Neoclassical"
+      },
+      "temporalWindow": "2020-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "LIBRERIA EDITRICE VATICANA",
+        "CONCILIAZIONE"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.4",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "35mm",
+      "make": "Sigma",
+      "model": "fp L",
+      "lensModel": "35mm F1.4 DG DN Art",
+      "dateTimeOriginal": "2022:08:05 17:45:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0030",
+    "coordinates": {
+      "lat": 41.9009,
+      "lng": 12.4511,
+      "corner": "South-West"
+    },
+    "timestamp": "2019-02-14T10:00:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Medium-Long",
+      "description": "Pale winter morning light on the railway platform."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead Railway Lines",
+      "shutterStyle": "Industrial Steel",
+      "treeType": "Wild Grass",
+      "graffiti": "None",
+      "terrain": "Gravel and Rail Tracks",
+      "urbanElements": {
+        "furniture": "Bronze Station Clock",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Early 20th Century Industrial"
+      },
+      "temporalWindow": "2018-2019"
+    },
+    "ocr": {
+      "detectedText": [
+        "STAZIONE VATICANA"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 200,
+      "shutterSpeed": "1/200",
+      "focalLength": "105mm",
+      "make": "Nikon",
+      "model": "D850",
+      "lensModel": "AF-S NIKKOR 24-120mm f/4G ED VR",
+      "dateTimeOriginal": "2019:02:14 10:00:00"
+    },
+    "h3Index": "891e80505cfffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0031",
+    "coordinates": {
+      "lat": 41.90222,
+      "lng": 12.4575,
+      "corner": "North-East"
+    },
+    "timestamp": "2022-05-14T10:45:00Z",
+    "lighting": {
+      "sunPosition": "East-South-East",
+      "shadowDirection": "West-North-West",
+      "shadowLength": "Medium-Short",
+      "description": "High solar altitude typical of late spring in Rome, casting sharp shadows on the colonnade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Italian Cypress",
+      "graffiti": "None",
+      "terrain": "Sampietrini cobblestones",
+      "urbanElements": {
+        "furniture": "Iron bollards and Vatican-branded trash bins",
+        "vegetationScore": 0.15,
+        "architectureStyle": "Bernini Baroque Colonnade"
+      },
+      "temporalWindow": "2015-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "BASILICA PAPALE",
+        "DI SAN PIETRO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2022:05:14 10:45:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0032",
+    "coordinates": {
+      "lat": 41.9062,
+      "lng": 12.4526,
+      "corner": "South-West"
+    },
+    "timestamp": "2021-09-20T14:30:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Medium",
+      "description": "Afternoon sun hitting the high Vatican walls, creating a large shadowed area across the pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal street lamp wiring",
+      "shutterStyle": "Green wooden shutters",
+      "treeType": "Stone Pine",
+      "graffiti": "None",
+      "terrain": "Asphalt with stone curbs",
+      "urbanElements": {
+        "furniture": "Vatican Gendarmerie sentry box",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Leonine Wall / Renaissance"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUSEI VATICANI",
+        "INGRESSO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-70mm F2.8 L",
+      "dateTimeOriginal": "2021:09:20 14:30:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0033",
+    "coordinates": {
+      "lat": 41.9038,
+      "lng": 12.4582,
+      "corner": "North"
+    },
+    "timestamp": "2023-02-10T09:15:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Long",
+      "description": "Winter morning sun low on the horizon, creating long shadows across the square entrance."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Sampietrini cobblestones",
+      "urbanElements": {
+        "furniture": "Mobile metal crowd control barriers",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Classicist"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "PIAZZA DEL",
+        "RISORGIMENTO"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "Nikkor Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:02:10 09:15:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 83,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0034",
+    "coordinates": {
+      "lat": 41.9015,
+      "lng": 12.4568,
+      "corner": "South-East"
+    },
+    "timestamp": "2020-07-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Shortest",
+      "description": "High noon in mid-summer; shadows are concentrated directly beneath objects."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Oleander bushes",
+      "graffiti": "None",
+      "terrain": "Stone slabs and cobblestones",
+      "urbanElements": {
+        "furniture": "Dark iron decorative lamp posts",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Fascist Era / Via della Conciliazione"
+      },
+      "temporalWindow": "2016-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "POSTE VATICANE",
+        "UFFICIO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "18mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 18-55mm F2.8-4 R",
+      "dateTimeOriginal": "2020:07:15 12:00:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0035",
+    "coordinates": {
+      "lat": 41.9021,
+      "lng": 12.4539,
+      "corner": "West"
+    },
+    "timestamp": "2019-11-05T15:45:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Long",
+      "description": "Late autumn afternoon with golden hour light reflecting off travertine surfaces."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Brown wooden blinds",
+      "treeType": "Potted Laurel",
+      "graffiti": "None",
+      "terrain": "Sampietrini and Travertine steps",
+      "urbanElements": {
+        "furniture": "Swiss Guard sentry post",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Renaissance / Vatican City State"
+      },
+      "temporalWindow": "2017-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACIA",
+        "VATICANA"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "85mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 85mm F1.8",
+      "dateTimeOriginal": "2019:11:05 15:45:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0036",
+    "coordinates": {
+      "lat": 41.9048,
+      "lng": 12.4542,
+      "corner": "North-West"
+    },
+    "timestamp": "2022-03-30T11:20:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Medium",
+      "description": "Clear spring morning with diffuse light in the courtyard areas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Manicured Boxwood hedges",
+      "graffiti": "None",
+      "terrain": "Gravel and marble paths",
+      "urbanElements": {
+        "furniture": "Vatican Museum signage totem",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Belvedere Courtyard / Bramante"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORTILE",
+        "DELLA PIGNA"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 160,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2022:03:30 11:20:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0037",
+    "coordinates": {
+      "lat": 41.9056,
+      "lng": 12.4501,
+      "corner": "Internal"
+    },
+    "timestamp": "2021-06-12T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning sun casting high-contrast shadows across the Vatican Gardens."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Cedar of Lebanon and Mediterranean Pine",
+      "graffiti": "None",
+      "terrain": "Earth and gravel paths",
+      "urbanElements": {
+        "furniture": "White stone garden benches",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Landscape Architecture"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "GIARDINI",
+        "VATICANI"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/320",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7R IV",
+      "lensModel": "FE 24-105mm F4 G OSS",
+      "dateTimeOriginal": "2021:06:12 08:00:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0038",
+    "coordinates": {
+      "lat": 41.901,
+      "lng": 12.4552,
+      "corner": "South"
+    },
+    "timestamp": "2022-10-18T16:50:00Z",
+    "lighting": {
+      "sunPosition": "West-South-West",
+      "shadowDirection": "East-North-East",
+      "shadowLength": "Very Long",
+      "description": "Late afternoon sun creating long horizontal shadows and warm hues on the brickwork."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Iron security bars on windows",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Narrow cobblestone street",
+      "urbanElements": {
+        "furniture": "Heavy iron gate",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Military/Utility Vatican"
+      },
+      "temporalWindow": "2016-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "AULA PAOLO VI"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2022:10:18 16:50:00"
+    },
+    "h3Index": "891e805051bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0039",
+    "coordinates": {
+      "lat": 41.9041,
+      "lng": 12.4586,
+      "corner": "East"
+    },
+    "timestamp": "2023-01-05T13:10:00Z",
+    "lighting": {
+      "sunPosition": "South",
+      "shadowDirection": "North",
+      "shadowLength": "Medium-Long",
+      "description": "Winter midday sun low in the sky, illuminating the facade of Sant'Anna Gate."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Sampietrini cobblestones",
+      "urbanElements": {
+        "furniture": "Vatican Gendarmerie checkpoint",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Renaissance / Gateway"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANT'ANNA",
+        "VATICANO"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 200,
+      "shutterSpeed": "1/200",
+      "focalLength": "40mm",
+      "make": "Hasselblad",
+      "model": "X1D II 50C",
+      "lensModel": "XCD 45mm f/3.5",
+      "dateTimeOriginal": "2023:01:05 13:10:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0040",
+    "coordinates": {
+      "lat": 41.9032,
+      "lng": 12.4518,
+      "corner": "North-West"
+    },
+    "timestamp": "2021-05-02T11:00:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Short",
+      "description": "Bright spring midday with strong direct lighting on the gravel yard."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "External fiber optic conduit on wall",
+      "shutterStyle": "Dark green metal shutters",
+      "treeType": "Oleander and Olive trees",
+      "graffiti": "None",
+      "terrain": "Gravel and stone paving",
+      "urbanElements": {
+        "furniture": "Service parking signage",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Administrative / Neoclassical"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "GOVERNATORATO",
+        "ANNONA"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 125,
+      "shutterSpeed": "1/640",
+      "focalLength": "35mm",
+      "make": "Pentax",
+      "model": "K-1 II",
+      "lensModel": "HD Pentax-D FA 35mm F2",
+      "dateTimeOriginal": "2021:05:02 11:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0041",
+    "coordinates": {
+      "lat": 41.9022,
+      "lng": 12.4533,
+      "corner": "SE"
+    },
+    "timestamp": "2023-05-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "High South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Short",
+      "description": "Direct vertical sunlight characteristic of late spring in Rome/Vatican, highlighting the texture of the travertine columns."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Sanpietrini cobblestones",
+      "urbanElements": {
+        "furniture": "Metal crowd control barriers, Bernini colonnade, stone fountains",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Baroque"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PIAZZA SAN PIETRO",
+        "POSTE VATICANE"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-105mm f/4L IS USM",
+      "dateTimeOriginal": "2023:05:15 10:30:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0042",
+    "coordinates": {
+      "lat": 41.9065,
+      "lng": 12.4536,
+      "corner": "NE"
+    },
+    "timestamp": "2022-09-12T14:15:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Medium",
+      "description": "Harsh shadows cast by the Leonine Walls onto the sidewalk of Viale Vaticano."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low-voltage security sensors",
+      "shutterStyle": "Reinforced metal gates",
+      "treeType": "Pinus Pinea",
+      "graffiti": "None",
+      "terrain": "Asphalt with stone curbing",
+      "urbanElements": {
+        "furniture": "Information kiosk, security cameras, bus stop sign",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Renaissance fortification"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUSEI VATICANI",
+        "INGRESSO",
+        "VATICAN MUSEUMS"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2022:09:12 14:15:00"
+    },
+    "h3Index": "891e805058bffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0043",
+    "coordinates": {
+      "lat": 41.9029,
+      "lng": 12.4566,
+      "corner": "W"
+    },
+    "timestamp": "2023-03-20T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Morning light illuminating the facade of Via della Conciliazione towards the Basilica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Timber shutters on residential upper floors",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Smooth paving stones",
+      "urbanElements": {
+        "furniture": "Cast iron lamp posts, marble benches",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Rationalist-Neoclassical"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LIBRERIA EDITRICE VATICANA",
+        "VIA DELLA CONCILIAZIONE"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/800",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:03:20 09:00:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0044",
+    "coordinates": {
+      "lat": 41.9038,
+      "lng": 12.4497,
+      "corner": "NW"
+    },
+    "timestamp": "2023-06-01T17:45:00Z",
+    "lighting": {
+      "sunPosition": "Low West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting filtering through the dense canopy of the Vatican Gardens."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Subtle garden lighting wires",
+      "shutterStyle": "Ornate wooden shutters",
+      "treeType": "Cupressus sempervirens, Quercus ilex",
+      "graffiti": "None",
+      "terrain": "Gravel paths and manicured lawns",
+      "urbanElements": {
+        "furniture": "Stone grotto, decorative urns, iron gates",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Mannerist/Renaissance"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CASINA PIO IV"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "70mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm F2.8 R LM WR",
+      "dateTimeOriginal": "2023:06:01 17:45:00"
+    },
+    "h3Index": "891e80505c3ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0045",
+    "coordinates": {
+      "lat": 41.9061,
+      "lng": 12.4548,
+      "corner": "C"
+    },
+    "timestamp": "2023-01-10T12:00:00Z",
+    "lighting": {
+      "sunPosition": "South",
+      "shadowDirection": "North",
+      "shadowLength": "Medium-Short",
+      "description": "Flat winter noon light in the Cortile della Pigna, minimal glare on bronze surfaces."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Topiary shrubs",
+      "graffiti": "None",
+      "terrain": "Large stone slabs",
+      "urbanElements": {
+        "furniture": "Sfera con sfera sculpture, giant bronze pinecone, museum signage",
+        "vegetationScore": 0.15,
+        "architectureStyle": "Classical/High Renaissance"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORTILE DELLA PIGNA",
+        "PONTIFICIA ACCADEMIA"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/200",
+      "focalLength": "18mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2023:01:10 12:00:00"
+    },
+    "h3Index": "891e805058bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0046",
+    "coordinates": {
+      "lat": 41.9042,
+      "lng": 12.4578,
+      "corner": "SW"
+    },
+    "timestamp": "2023-04-05T11:20:00Z",
+    "lighting": {
+      "sunPosition": "South-East",
+      "shadowDirection": "North-West",
+      "shadowLength": "Short",
+      "description": "Clear morning light bouncing off the travertine walls of Porta Sant'Anna."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead security wires",
+      "shutterStyle": "Vertical iron bars",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Cobblestones (Sanpietrini)",
+      "urbanElements": {
+        "furniture": "Guard booth, hydraulic bollards, Vatican flag pole",
+        "vegetationScore": 0.02,
+        "architectureStyle": "Renaissance/Military"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORPO DELLA GENDARMERIA",
+        "ANNONA"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "35mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 35mm F1.8",
+      "dateTimeOriginal": "2023:04:05 11:20:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 82,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0047",
+    "coordinates": {
+      "lat": 41.9048,
+      "lng": 12.4572,
+      "corner": "NE"
+    },
+    "timestamp": "2022-11-20T15:30:00Z",
+    "lighting": {
+      "sunPosition": "Low South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Long",
+      "description": "Soft afternoon light illuminating the entrance to the Vatican Pharmacy area."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Dark green wooden shutters",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Basalt paving",
+      "urbanElements": {
+        "furniture": "Wall-mounted street lamps, yellow mailbox, security scanner",
+        "vegetationScore": 0.05,
+        "architectureStyle": "Ecclesiastical Functional"
+      },
+      "temporalWindow": "2014-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACIA VATICANA",
+        "TELEFONI"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 320,
+      "shutterSpeed": "1/160",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2022:11:20 15:30:00"
+    },
+    "h3Index": "891e8050513ffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0048",
+    "coordinates": {
+      "lat": 41.9025,
+      "lng": 12.4522,
+      "corner": "W"
+    },
+    "timestamp": "2023-07-10T13:45:00Z",
+    "lighting": {
+      "sunPosition": "High South",
+      "shadowDirection": "North",
+      "shadowLength": "Very Short",
+      "description": "Intense summer sun, creating high-contrast shadows under the porticoes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Polished travertine and cobbles",
+      "urbanElements": {
+        "furniture": "Information board, audio guide kiosk, drinking fountain (nasone style)",
+        "vegetationScore": 0.01,
+        "architectureStyle": "Baroque Colonnade"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "INFO",
+        "PELLEGRINI",
+        "UFFICIO FILATELICO"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "16mm",
+      "make": "Sigma",
+      "model": "fp L",
+      "lensModel": "16-28mm F2.8 DG DN",
+      "dateTimeOriginal": "2023:07:10 13:45:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 81,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0049",
+    "coordinates": {
+      "lat": 41.9072,
+      "lng": 12.4515,
+      "corner": "N"
+    },
+    "timestamp": "2023-08-25T08:30:00Z",
+    "lighting": {
+      "sunPosition": "Low East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning light skimming the top of the northern Vatican wall near the helical ramp entrance."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High-security fiber optic lines",
+      "shutterStyle": "N/A",
+      "treeType": "Occasional ivy on walls",
+      "graffiti": "None",
+      "terrain": "Sidewalk asphalt",
+      "urbanElements": {
+        "furniture": "Steel traffic bollards, CCTV mast, directional sign",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Papal Fortification"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "VIALE VATICANO",
+        "CITTA DEL VATICANO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/320",
+      "focalLength": "24mm",
+      "make": "Hasselblad",
+      "model": "X2D 100C",
+      "lensModel": "XCD 38mm f/2.5",
+      "dateTimeOriginal": "2023:08:25 08:30:00"
+    },
+    "h3Index": "891e80505d7ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0050",
+    "coordinates": {
+      "lat": 41.9035,
+      "lng": 12.4538,
+      "corner": "C"
+    },
+    "timestamp": "2023-12-05T16:00:00Z",
+    "lighting": {
+      "sunPosition": "Very Low South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Extreme",
+      "description": "Winter twilight, the dome of St. Peter casts a massive shadow across the rooftops of the apostolic palace."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Lightning rods",
+      "shutterStyle": "Traditional Roman wood",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Roof tiling (terracotta)",
+      "urbanElements": {
+        "furniture": "Statues on balustrade, stone chimneys, balcony railings",
+        "vegetationScore": 0,
+        "architectureStyle": "Renaissance/Baroque"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "STATIO"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/60",
+      "focalLength": "85mm",
+      "make": "Sony",
+      "model": "ILCE-7RM4",
+      "lensModel": "FE 85mm F1.4 GM",
+      "dateTimeOriginal": "2023:12:05 16:00:00"
+    },
+    "h3Index": "891e80505c7ffff",
+    "geocodingScore": 80,
+    "isAnchor": false
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-16T12:10:55.000Z",
+  "source_name": "Trip Print _ TripIt.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "Trip Print _ TripIt",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "",
+    "coordinates": null,
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Ingestado desde: G:\\האחסון שלי\\גברים רעבים באיטליה\\Trip Print _ TripIt.pdf",
+    "source_path": "G:\\האחסון שלי\\גברים רעבים באיטליה\\Trip Print _ TripIt.pdf"
+  }
+}

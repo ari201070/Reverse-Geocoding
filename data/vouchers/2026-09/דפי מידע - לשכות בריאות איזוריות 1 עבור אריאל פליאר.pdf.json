@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-16T12:10:55.000Z",
+  "source_name": "דפי מידע - לשכות בריאות איזוריות 1 עבור אריאל פליאר.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "דפי מידע - לשכות בריאות איזוריות 1 עבור אריאל פליאר",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "",
+    "coordinates": null,
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Ingestado desde: G:\\האחסון שלי\\טיול לבוסניה והרצגובינה\\דפי מידע - לשכות בריאות איזוריות 1 עבור אריאל פליאר.pdf",
+    "source_path": "G:\\האחסון שלי\\טיול לבוסניה והרצגובינה\\דפי מידע - לשכות בריאות איזוריות 1 עבור אריאל פליאר.pdf"
+  }
+}

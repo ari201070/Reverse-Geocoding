@@ -1,0 +1,4608 @@
+[
+  {
+    "id": "REF-0001",
+    "coordinates": {
+      "lat": -41.056783,
+      "lng": -71.527753,
+      "corner": "NE"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Luz de media tarde con sombras suaves proyectadas sobre el pórtico de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Timber frame",
+      "treeType": "Ciprés de la Cordillera",
+      "graffiti": "None",
+      "terrain": "Hilly",
+      "urbanElements": {
+        "furniture": "Stone pillar",
+        "vegetationScore": 9.5,
+        "architectureStyle": "Alpine Patagonian Resort"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LLAO LLAO",
+        "RESORT & SPA",
+        "ENTRADA"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 35mm F1.4 GM",
+      "dateTimeOriginal": "2023:11:15 14:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 13.067830429506841,
+      "isOutlier": false,
+      "computedScore": 228,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 228,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0002",
+    "coordinates": {
+      "lat": -41.056516,
+      "lng": -71.528005,
+      "corner": "SW"
+    },
+    "timestamp": "2023-11-15T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Iluminación cenital sobre los senderos de ripio."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Fixed Wood Panels",
+      "treeType": "Coihue",
+      "graffiti": "None",
+      "terrain": "Sloped Garden",
+      "urbanElements": {
+        "furniture": "Wood bench",
+        "vegetationScore": 9.8,
+        "architectureStyle": "Rustic Patagonian"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SENDERO DE LOS LAGOS"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 24-70mm f/2.8L",
+      "dateTimeOriginal": "2023:11:15 10:15:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 25.38091321084613,
+      "isOutlier": false,
+      "computedScore": 226,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 226,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0003",
+    "coordinates": {
+      "lat": -41.056528,
+      "lng": -71.527547,
+      "corner": "E"
+    },
+    "timestamp": "2023-11-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Sombras alargadas sobre la fachada principal de piedra sanjuanina."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Decorative Wood",
+      "treeType": "Arrayán",
+      "graffiti": "None",
+      "terrain": "Flat terrace",
+      "urbanElements": {
+        "furniture": "Iron Lantern",
+        "vegetationScore": 8,
+        "architectureStyle": "Luxury Mountain Lodge"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "RESERVA NATURAL"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z7II",
+      "lensModel": "Nikkor Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:11:15 09:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 24.779884333277124,
+      "isOutlier": false,
+      "computedScore": 201,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 201,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0004",
+    "coordinates": {
+      "lat": -41.056794,
+      "lng": -71.527934,
+      "corner": "W"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Cálida luz de atardecer filtrada por las araucarias."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Solid Wood",
+      "treeType": "Araucaria",
+      "graffiti": "None",
+      "terrain": "Hillside",
+      "urbanElements": {
+        "furniture": "Flagpole",
+        "vegetationScore": 9,
+        "architectureStyle": "Patagonian Lodge"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BARILOCHE",
+        "ARGENTINA"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/125s",
+      "focalLength": "85mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 56mm f/1.2 R WR",
+      "dateTimeOriginal": "2023:11:15 16:45:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 19.248800067401618,
+      "isOutlier": false,
+      "computedScore": 220,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 220,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0005",
+    "coordinates": {
+      "lat": -41.056676,
+      "lng": -71.528034,
+      "corner": "NW"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimum",
+      "description": "Iluminación directa del mediodía sobre el acceso de vehículos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Slatted Wood",
+      "treeType": "Ciprés",
+      "graffiti": "None",
+      "terrain": "Asphalt Ramp",
+      "urbanElements": {
+        "furniture": "Wooden Bollard",
+        "vegetationScore": 7.5,
+        "architectureStyle": "Alpine Stone Architecture"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SOLO HUESPEDES"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 78
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "16mm",
+      "make": "Sony",
+      "model": "ILCE-7RM4",
+      "lensModel": "FE 16-35mm F2.8 GM",
+      "dateTimeOriginal": "2023:11:15 12:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 21.488322245501102,
+      "isOutlier": false,
+      "computedScore": 189,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 189,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0006",
+    "coordinates": {
+      "lat": -41.056594,
+      "lng": -71.527684,
+      "corner": "SE"
+    },
+    "timestamp": "2023-11-15T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Amanecer con neblina parcial en los valles del Nahuel Huapi."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Traditional Patagonian",
+      "treeType": "Maitén",
+      "graffiti": "None",
+      "terrain": "Lawn",
+      "urbanElements": {
+        "furniture": "Wood fence",
+        "vegetationScore": 9.9,
+        "architectureStyle": "Eco-luxury"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "GOLF COURSE"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 1600,
+      "shutterSpeed": "1/60s",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2023:11:15 08:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 11.314168291358405,
+      "isOutlier": false,
+      "computedScore": 226,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 226,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0007",
+    "coordinates": {
+      "lat": -41.056826,
+      "lng": -71.52779,
+      "corner": "N"
+    },
+    "timestamp": "2023-11-15T13:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "Sombra proyectada por la torre del reloj sobre el estacionamiento."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Heavy Timber",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Paved",
+      "urbanElements": {
+        "furniture": "Flower box",
+        "vegetationScore": 6.5,
+        "architectureStyle": "Grand Hotel Patagonia"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "VALET PARKING"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 24-105mm F4",
+      "dateTimeOriginal": "2023:11:15 13:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.70860086211411,
+      "isOutlier": false,
+      "computedScore": 181,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 181,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0008",
+    "coordinates": {
+      "lat": -41.056652,
+      "lng": -71.527743,
+      "corner": "S"
+    },
+    "timestamp": "2023-11-15T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Brillo solar intenso sobre la piedra volcánica de los muros."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Rustic wood",
+      "treeType": "Pino",
+      "graffiti": "None",
+      "terrain": "Stone stairs",
+      "urbanElements": {
+        "furniture": "Handrail wood",
+        "vegetationScore": 8.5,
+        "architectureStyle": "Patagonian Vernacular"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LOBBY"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/2500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7C",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:11:15 11:45:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 3.375537615909411,
+      "isOutlier": false,
+      "computedScore": 213,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 213,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0009",
+    "coordinates": {
+      "lat": -41.056411,
+      "lng": -71.527739,
+      "corner": "NE"
+    },
+    "timestamp": "2023-11-15T15:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Medium",
+      "description": "Sombras que se extienden hacia el jardín de rosas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Carved Timber",
+      "treeType": "Rose Bushes",
+      "graffiti": "None",
+      "terrain": "Manicured Lawn",
+      "urbanElements": {
+        "furniture": "Garden statue",
+        "vegetationScore": 9.2,
+        "architectureStyle": "French Patagonian Mix"
+      },
+      "temporalWindow": "2010-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "JARDIN DE ROSAS"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "70mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 70-200mm f/2.8L",
+      "dateTimeOriginal": "2023:11:15 15:20:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 28.653112651414585,
+      "isOutlier": false,
+      "computedScore": 218,
+      "issues": [],
+      "h3Index": "89ce80b6ad7ffff"
+    },
+    "h3Index": "89ce80b6ad7ffff",
+    "geocodingScore": 218,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0010",
+    "coordinates": {
+      "lat": -41.056596,
+      "lng": -71.527865,
+      "corner": "SW"
+    },
+    "timestamp": "2023-11-15T10:50:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Contraste marcado entre el cielo azul y el techo de tejas de alerce."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Slatted",
+      "treeType": "Ciprés",
+      "graffiti": "None",
+      "terrain": "Sloped Path",
+      "urbanElements": {
+        "furniture": "Trash bin wood",
+        "vegetationScore": 8.8,
+        "architectureStyle": "High-end Alpine"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BUSTILLO KM 25"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2023:11:15 10:50:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 10.749042306456236,
+      "isOutlier": false,
+      "computedScore": 215,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 215,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0011",
+    "coordinates": {
+      "lat": -41.056534,
+      "lng": -71.527822,
+      "corner": "C"
+    },
+    "timestamp": "2023-11-15T14:10:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Luz dura reflejada en los cristales de las ventanas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Solid Wood Frame",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Concrete walkway",
+      "urbanElements": {
+        "furniture": "Directional sign",
+        "vegetationScore": 7,
+        "architectureStyle": "Patagonian Commercial"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LOCALES COMERCIALES"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 86
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7R III",
+      "lensModel": "FE 24-105mm F4 G OSS",
+      "dateTimeOriginal": "2023:11:15 14:10:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 15.242153991969145,
+      "isOutlier": false,
+      "computedScore": 184,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 184,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0012",
+    "coordinates": {
+      "lat": -41.056906,
+      "lng": -71.527859,
+      "corner": "N"
+    },
+    "timestamp": "2023-11-15T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Sombras oblicuas sobre la zona de carga y descarga."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Industrial Timber",
+      "treeType": "Pine",
+      "graffiti": "None",
+      "terrain": "Paved",
+      "urbanElements": {
+        "furniture": "Metal post",
+        "vegetationScore": 5.5,
+        "architectureStyle": "Service Area Patagonia"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CARGA Y DESCARGA"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 80
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z6",
+      "lensModel": "Nikkor Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2023:11:15 16:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 27.429698532325926,
+      "isOutlier": false,
+      "computedScore": 160,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 160,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0013",
+    "coordinates": {
+      "lat": -41.056591,
+      "lng": -71.527536,
+      "corner": "E"
+    },
+    "timestamp": "2023-11-15T09:45:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Rayos de sol horizontales penetrando el bosque nativo."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Bosque de Coihues",
+      "graffiti": "None",
+      "terrain": "Forest floor",
+      "urbanElements": {
+        "furniture": "Wooden bridge",
+        "vegetationScore": 10,
+        "architectureStyle": "Nature trail"
+      },
+      "temporalWindow": "2008-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SENDERO LLAO LLAO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/100s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7S III",
+      "lensModel": "FE 24mm F1.4 GM",
+      "dateTimeOriginal": "2023:11:15 09:45:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 21.980607326189503,
+      "isOutlier": false,
+      "computedScore": 232,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 232,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0014",
+    "coordinates": {
+      "lat": -41.056657,
+      "lng": -71.527873,
+      "corner": "W"
+    },
+    "timestamp": "2023-11-15T11:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Iluminación equilibrada en el patio interno del hotel."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Rustic Timber",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Cobblestone",
+      "urbanElements": {
+        "furniture": "Fountain",
+        "vegetationScore": 6,
+        "architectureStyle": "Patagonian Courtyard"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PATIO DEL SOL"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "14mm",
+      "make": "Sigma",
+      "model": "fp L",
+      "lensModel": "14-24mm F2.8 DG DN",
+      "dateTimeOriginal": "2023:11:15 11:15:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 8.042767619568934,
+      "isOutlier": false,
+      "computedScore": 171,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 171,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0015",
+    "coordinates": {
+      "lat": -41.056527,
+      "lng": -71.527534,
+      "corner": "SE"
+    },
+    "timestamp": "2023-11-15T07:45:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Extremely Long",
+      "description": "Amanecer dorado iluminando las crestas de las montañas visibles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Alpine Wood",
+      "treeType": "Arrayán",
+      "graffiti": "None",
+      "terrain": "Rocky Outcrop",
+      "urbanElements": {
+        "furniture": "Viewing Telescope",
+        "vegetationScore": 9,
+        "architectureStyle": "Observation Deck"
+      },
+      "temporalWindow": "2016-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "VISTA NAHUEL HUAPI"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/125s",
+      "focalLength": "105mm",
+      "make": "Nikon",
+      "model": "Z9",
+      "lensModel": "Nikkor Z 105mm f/2.8 VR S",
+      "dateTimeOriginal": "2023:11:15 07:45:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 25.708079290974194,
+      "isOutlier": false,
+      "computedScore": 216,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 216,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0016",
+    "coordinates": {
+      "lat": -41.056698,
+      "lng": -71.527745,
+      "corner": "C"
+    },
+    "timestamp": "2023-11-15T13:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Cénit solar sobre la rotonda de ingreso principal."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Flowers",
+      "graffiti": "None",
+      "terrain": "Paved Circle",
+      "urbanElements": {
+        "furniture": "Welcome Sign",
+        "vegetationScore": 8.5,
+        "architectureStyle": "Grand Entrance Patagonian"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BIENVENIDOS",
+        "HOTEL LLAO LLAO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R",
+      "lensModel": "RF 24-105mm f/4L IS USM",
+      "dateTimeOriginal": "2023:11:15 13:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 4.420208476231824,
+      "isOutlier": false,
+      "computedScore": 213,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 213,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0017",
+    "coordinates": {
+      "lat": -41.056816,
+      "lng": -71.527991,
+      "corner": "NW"
+    },
+    "timestamp": "2023-11-15T15:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Medium",
+      "description": "Luz lateral resaltando la textura de la madera de alerce."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Log Cabin Style",
+      "treeType": "Pino",
+      "graffiti": "None",
+      "terrain": "Slope",
+      "urbanElements": {
+        "furniture": "Wooden bench",
+        "vegetationScore": 9.4,
+        "architectureStyle": "Traditional Mountain Cabin"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CABAÑAS LLAO LLAO"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 400,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-Pro3",
+      "lensModel": "XF 23mm f/1.4 R",
+      "dateTimeOriginal": "2023:11:15 15:45:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 24.361098879654733,
+      "isOutlier": false,
+      "computedScore": 220,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 220,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0018",
+    "coordinates": {
+      "lat": -41.056387,
+      "lng": -71.527881,
+      "corner": "SW"
+    },
+    "timestamp": "2023-11-15T12:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Iluminación directa sobre la zona del muelle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Louvered",
+      "treeType": "Sauce",
+      "graffiti": "None",
+      "terrain": "Lakeside",
+      "urbanElements": {
+        "furniture": "Wood Dock",
+        "vegetationScore": 9.1,
+        "architectureStyle": "Nautical Patagonian"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MUELLE LLAO LLAO"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "A7 IV",
+      "lensModel": "FE 28-60mm F4-5.6",
+      "dateTimeOriginal": "2023:11:15 12:30:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 32.31018777159911,
+      "isOutlier": false,
+      "computedScore": 221,
+      "issues": [],
+      "h3Index": "89ce80b6ad7ffff"
+    },
+    "h3Index": "89ce80b6ad7ffff",
+    "geocodingScore": 221,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0019",
+    "coordinates": {
+      "lat": -41.056426,
+      "lng": -71.527781,
+      "corner": "S"
+    },
+    "timestamp": "2023-11-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Luz matutina despejada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Stone and Wood",
+      "treeType": "Gramíneas",
+      "graffiti": "None",
+      "terrain": "Terraced Garden",
+      "urbanElements": {
+        "furniture": "Stone wall",
+        "vegetationScore": 8.9,
+        "architectureStyle": "Alpine Terraces"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AREA PROTEGIDA"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 87
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/400s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "D850",
+      "lensModel": "24-70mm f/2.8G ED",
+      "dateTimeOriginal": "2023:11:15 11:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 26.799157871648426,
+      "isOutlier": false,
+      "computedScore": 213,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 213,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0020",
+    "coordinates": {
+      "lat": -41.056693,
+      "lng": -71.528055,
+      "corner": "W"
+    },
+    "timestamp": "2023-11-15T17:15:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Baja intensidad lumínica bajo el follaje denso."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Dark Wood",
+      "treeType": "Bosque Nativo",
+      "graffiti": "None",
+      "terrain": "Uneven Forest Path",
+      "urbanElements": {
+        "furniture": "Trail markers",
+        "vegetationScore": 10,
+        "architectureStyle": "Wilderness Trail"
+      },
+      "temporalWindow": "2005-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CIRCUEITO CHICO"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 70
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 3200,
+      "shutterSpeed": "1/50s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7R V",
+      "lensModel": "FE 24-70mm F2.8 GM II",
+      "dateTimeOriginal": "2023:11:15 17:15:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.40504774728742,
+      "isOutlier": false,
+      "computedScore": 223,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 223,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0021",
+    "coordinates": {
+      "lat": -41.056534,
+      "lng": -71.527882,
+      "corner": "C"
+    },
+    "timestamp": "2023-11-15T14:45:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Sombra parcial sobre los ventanales de la cafetería."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Glass and Wood",
+      "treeType": "Flowers",
+      "graffiti": "None",
+      "terrain": "Flat Pavement",
+      "urbanElements": {
+        "furniture": "Table and Chairs",
+        "vegetationScore": 7.8,
+        "architectureStyle": "Mountain Café Exterior"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "WINTER GARDEN"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R3",
+      "lensModel": "RF 50mm f/1.2L",
+      "dateTimeOriginal": "2023:11:15 14:45:00"
+    },
+    "category": "Restaurante",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.16839077294638,
+      "isOutlier": false,
+      "computedScore": 200,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 200,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0022",
+    "coordinates": {
+      "lat": -41.056595,
+      "lng": -71.527781,
+      "corner": "NE"
+    },
+    "timestamp": "2023-11-15T13:15:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Claridad máxima en el centro del predio."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Traditional",
+      "treeType": "Ciprés",
+      "graffiti": "None",
+      "terrain": "Paved stone",
+      "urbanElements": {
+        "furniture": "Iron Bench",
+        "vegetationScore": 8.2,
+        "architectureStyle": "Patagonian Luxury Resort"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SALA DE ESTAR"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 84
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z8",
+      "lensModel": "24-120mm f/4 S",
+      "dateTimeOriginal": "2023:11:15 13:15:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 8.009985385992705,
+      "isOutlier": false,
+      "computedScore": 202,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 202,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0023",
+    "coordinates": {
+      "lat": -41.056437,
+      "lng": -71.527845,
+      "corner": "S"
+    },
+    "timestamp": "2023-11-15T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Sombras frescas de la mañana cerca del spa."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Modern Alpine",
+      "treeType": "Shrubs",
+      "graffiti": "None",
+      "terrain": "Stepped Pavement",
+      "urbanElements": {
+        "furniture": "Water Feature",
+        "vegetationScore": 8.7,
+        "architectureStyle": "Spa Patagonia Design"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SPA & WELLNESS"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/200s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A1",
+      "lensModel": "FE 12-24mm F2.8 GM",
+      "dateTimeOriginal": "2023:11:15 09:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 26.184572170129893,
+      "isOutlier": false,
+      "computedScore": 214,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 214,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0024",
+    "coordinates": {
+      "lat": -41.056732,
+      "lng": -71.52797,
+      "corner": "W"
+    },
+    "timestamp": "2023-11-15T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Cálido resplandor en la fachada de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Dark Stained Wood",
+      "treeType": "Coihue",
+      "graffiti": "None",
+      "terrain": "Gravel",
+      "urbanElements": {
+        "furniture": "Wooden Post",
+        "vegetationScore": 9,
+        "architectureStyle": "Mountain Lodge Entrance"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ESTACIONAMIENTO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/160s",
+      "focalLength": "50mm",
+      "make": "Panasonic",
+      "model": "GH6",
+      "lensModel": "LEICA DG 12-60mm",
+      "dateTimeOriginal": "2023:11:15 16:20:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.646781388988476,
+      "isOutlier": false,
+      "computedScore": 216,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 216,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0025",
+    "coordinates": {
+      "lat": -41.056684,
+      "lng": -71.527581,
+      "corner": "E"
+    },
+    "timestamp": "2023-11-15T08:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Sombras que cruzan el césped húmedo por el rocío."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Vertical Wood Panels",
+      "treeType": "Arrayán",
+      "graffiti": "None",
+      "terrain": "Soft Grass",
+      "urbanElements": {
+        "furniture": "Wood Signpost",
+        "vegetationScore": 9.9,
+        "architectureStyle": "Rustic Park"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HACIA EL LAGO"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/1.4",
+      "iso": 100,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7 IV",
+      "lensModel": "35mm f/1.4",
+      "dateTimeOriginal": "2023:11:15 08:15:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 16.625803527298455,
+      "isOutlier": false,
+      "computedScore": 226,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 226,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0026",
+    "coordinates": {
+      "lat": -41.056598,
+      "lng": -71.527719,
+      "corner": "C"
+    },
+    "timestamp": "2023-11-15T12:15:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimum",
+      "description": "Mediodía solar sin sombras laterales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Rustic",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Flat Stone",
+      "urbanElements": {
+        "furniture": "Bollard Stone",
+        "vegetationScore": 6,
+        "architectureStyle": "Stone Archway"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PASO PEATONAL"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "16mm",
+      "make": "Fujifilm",
+      "model": "X-T5",
+      "lensModel": "XF 10-24mm F4 R OIS WR",
+      "dateTimeOriginal": "2023:11:15 12:15:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 9.12904462414999,
+      "isOutlier": false,
+      "computedScore": 170,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 170,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0027",
+    "coordinates": {
+      "lat": -41.056532,
+      "lng": -71.527556,
+      "corner": "SE"
+    },
+    "timestamp": "2023-11-15T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Iluminación clara en el área de juegos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Timber",
+      "treeType": "Maitén",
+      "graffiti": "None",
+      "terrain": "Lawn",
+      "urbanElements": {
+        "furniture": "Swing set wood",
+        "vegetationScore": 9.3,
+        "architectureStyle": "Eco-friendly Play Area"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ZONA INFANTIL"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ZV-E1",
+      "lensModel": "FE 24mm F2.8 G",
+      "dateTimeOriginal": "2023:11:15 10:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.91292996214489,
+      "isOutlier": false,
+      "computedScore": 221,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 221,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0028",
+    "coordinates": {
+      "lat": -41.056788,
+      "lng": -71.528048,
+      "corner": "W"
+    },
+    "timestamp": "2023-11-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Medium",
+      "description": "Sombras filtradas por los grandes cipreses del camino."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Louvered Wood",
+      "treeType": "Ciprés",
+      "graffiti": "None",
+      "terrain": "Asphalt",
+      "urbanElements": {
+        "furniture": "Street Lamp Wood",
+        "vegetationScore": 8.4,
+        "architectureStyle": "Mountain Roadside"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "REDUZCA VELOCIDAD"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Zf",
+      "lensModel": "40mm f/2 (SE)",
+      "dateTimeOriginal": "2023:11:15 15:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 26.33521616343518,
+      "isOutlier": false,
+      "computedScore": 211,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 211,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0029",
+    "coordinates": {
+      "lat": -41.056814,
+      "lng": -71.527756,
+      "corner": "N"
+    },
+    "timestamp": "2023-11-15T11:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Brillo de alta intensidad sobre los tejados verdes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Ornamental Timber",
+      "treeType": "None",
+      "graffiti": "None",
+      "terrain": "Pavement",
+      "urbanElements": {
+        "furniture": "Main Gate",
+        "vegetationScore": 7.5,
+        "architectureStyle": "Grand Patagonian Entrance"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HOTEL LLAO LLAO",
+        "SINCE 1940"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/1250s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7R IV",
+      "lensModel": "24-70mm F2.8 GM",
+      "dateTimeOriginal": "2023:11:15 11:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 16.449411370116223,
+      "isOutlier": false,
+      "computedScore": 198,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 198,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0030",
+    "coordinates": {
+      "lat": -41.056413,
+      "lng": -71.527816,
+      "corner": "S"
+    },
+    "timestamp": "2023-11-15T14:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Luz del sol poniente sobre el ala Moreno del hotel."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Modern Wood Shutter",
+      "treeType": "Shrubs",
+      "graffiti": "None",
+      "terrain": "Stepped stone terrace",
+      "urbanElements": {
+        "furniture": "Outdoor Lantern",
+        "vegetationScore": 8.1,
+        "architectureStyle": "Modernized Patagonian"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ALA MORENO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R7",
+      "lensModel": "RF 35mm f/1.8 IS STM",
+      "dateTimeOriginal": "2023:11:15 14:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 28.422665617348805,
+      "isOutlier": false,
+      "computedScore": 205,
+      "issues": [],
+      "h3Index": "89ce80b6ad7ffff"
+    },
+    "h3Index": "89ce80b6ad7ffff",
+    "geocodingScore": 205,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0031",
+    "coordinates": {
+      "lat": -41.056616,
+      "lng": -71.527844,
+      "corner": "Entrada Principal Ala Bustillo"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Nordeste",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Media",
+      "description": "Luz matutina clara con sombras definidas proyectadas sobre el portico de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soterrados",
+      "shutterStyle": "Madera rústica patagónica",
+      "treeType": "Ciprés de las Guaitecas",
+      "graffiti": "Ninguno",
+      "terrain": "Irregular con pendiente leve",
+      "urbanElements": {
+        "furniture": "Bancos de troncos tallados",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Vernáculo patagónico de madera y piedra"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HOTEL LLAO LLAO",
+        "RECEPTION"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 24-70mm F2.8 GM",
+      "dateTimeOriginal": "2023:11:15 10:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 7.923646295195816,
+      "isOutlier": false,
+      "computedScore": 98,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0032",
+    "coordinates": {
+      "lat": -41.056582,
+      "lng": -71.527679,
+      "corner": "Sendero Jardín Central"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenit",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Corta",
+      "description": "Sol de mediodía sobre los jardines principales, sombras mínimas en la base de las plantas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Coihue",
+      "graffiti": "Ninguno",
+      "terrain": "Parquizado",
+      "urbanElements": {
+        "furniture": "Faroles de hierro forjado",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Paisajismo de montaña"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "JARDINES DEL LLAO LLAO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 35mm F1.8 Macro IS STM",
+      "dateTimeOriginal": "2023:11:15 12:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 12.579249912957987,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0033",
+    "coordinates": {
+      "lat": -41.056404,
+      "lng": -71.527717,
+      "corner": "Acceso Estacionamiento Oeste"
+    },
+    "timestamp": "2023-11-15T14:45:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Larga",
+      "description": "Luz de tarde acentuando las texturas de piedra de la fachada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Mínimos de baja tensión",
+      "shutterStyle": "Marcos de madera oscurecida",
+      "treeType": "Arrayán",
+      "graffiti": "Ninguno",
+      "terrain": "Asfalto y piedra",
+      "urbanElements": {
+        "furniture": "Postes indicadores de madera",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Funcional de montaña"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ESTACIONAMIENTO EXCLUSIVO",
+        "HUÉSPEDES"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:11:15 14:45:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 29.68816982616117,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89ce80b6ad7ffff"
+    },
+    "h3Index": "89ce80b6ad7ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0034",
+    "coordinates": {
+      "lat": -41.056573,
+      "lng": -71.527828,
+      "corner": "Mirador Nahuel Huapi"
+    },
+    "timestamp": "2023-11-15T17:30:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy Larga",
+      "description": "Atardecer con tonos cálidos y sombras estiradas hacia el lago."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Vidrio repartido",
+      "treeType": "Pino Oregón",
+      "graffiti": "Ninguno",
+      "terrain": "Rocoso",
+      "urbanElements": {
+        "furniture": "Baranda de madera y cable de acero",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Mirador panorámico"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MIRADOR DEL LAGO"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/60",
+      "focalLength": "16mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF16-55mmF2.8 R LM WR",
+      "dateTimeOriginal": "2023:11:15 17:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 11.26175693716175,
+      "isOutlier": false,
+      "computedScore": 94,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0035",
+    "coordinates": {
+      "lat": -41.05664,
+      "lng": -71.52762,
+      "corner": "Acceso Salon Llao Llao"
+    },
+    "timestamp": "2023-11-16T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Media",
+      "description": "Luz lateral suave destacando el relieve de las tejas de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soterrados",
+      "shutterStyle": "Persianas de madera maciza",
+      "treeType": "Ciprés",
+      "graffiti": "Ninguno",
+      "terrain": "Baldosa de piedra laja",
+      "urbanElements": {
+        "furniture": "Maceteros de piedra grande",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Gran Hotel 1940s"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SALON LLAO LLAO",
+        "EVENTOS"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/200",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2023:11:16 09:15:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 13.583866121792463,
+      "isOutlier": false,
+      "computedScore": 91,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0036",
+    "coordinates": {
+      "lat": -41.056842,
+      "lng": -71.527669,
+      "corner": "Lateral Ala Moreno"
+    },
+    "timestamp": "2023-11-16T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Iluminación directa sobre la fachada norte."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Madera pintada de verde oscuro",
+      "treeType": "Arces",
+      "graffiti": "Ninguno",
+      "terrain": "Césped cuidado",
+      "urbanElements": {
+        "furniture": "Aspersores de riego",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Neo-alpino"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ALA MORENO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera 24mm",
+      "dateTimeOriginal": "2023:11:16 11:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 21.49849796332867,
+      "isOutlier": false,
+      "computedScore": 99,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0037",
+    "coordinates": {
+      "lat": -41.056756,
+      "lng": -71.528032,
+      "corner": "Bajada a Puerto Pañuelo"
+    },
+    "timestamp": "2023-11-16T13:30:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Sol alto, visibilidad excelente del camino de descenso."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de telefonía visibles",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Bosque nativo mixto",
+      "graffiti": "Mínimo en señalética",
+      "terrain": "Pendiente pronunciada asfaltada",
+      "urbanElements": {
+        "furniture": "Guardrail de madera",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Infraestructura vial montaña"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PUERTO PAÑUELO",
+        "BARCO"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Samsung",
+      "model": "SM-G998B",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:11:16 13:30:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.484305461586818,
+      "isOutlier": false,
+      "computedScore": 91,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0038",
+    "coordinates": {
+      "lat": -41.056822,
+      "lng": -71.527521,
+      "corner": "Área de Servicio"
+    },
+    "timestamp": "2023-11-16T15:20:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Larga",
+      "description": "Luz tamizada por la arboleda densa."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de servicio",
+      "shutterStyle": "Metálicas de seguridad",
+      "treeType": "Pino",
+      "graffiti": "Ninguno",
+      "terrain": "Grava",
+      "urbanElements": {
+        "furniture": "Contenedores de residuos ocultos",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Utilitario industrial"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SOLO PERSONAL",
+        "AUTORIZADO"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "40mm",
+      "make": "Sony",
+      "model": "DSC-RX100M7",
+      "lensModel": "24-200mm F2.8-4.5",
+      "dateTimeOriginal": "2023:11:16 15:20:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 27.5935618256309,
+      "isOutlier": false,
+      "computedScore": 92,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0039",
+    "coordinates": {
+      "lat": -41.056518,
+      "lng": -71.527895,
+      "corner": "Rotonda Entrada"
+    },
+    "timestamp": "2023-11-17T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Nordeste",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Media",
+      "description": "Sombras que cruzan la calzada circular."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soterrados",
+      "shutterStyle": "Madera",
+      "treeType": "Flores estacionales",
+      "graffiti": "Ninguno",
+      "terrain": "Pavimento de adoquín",
+      "urbanElements": {
+        "furniture": "Mástiles con banderas",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Monumental"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LLAO LLAO",
+        "RESORT & GOLF"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 20-60mm F3.5-5.6",
+      "dateTimeOriginal": "2023:11:17 10:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 19.2546077176743,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0040",
+    "coordinates": {
+      "lat": -41.056458,
+      "lng": -71.527944,
+      "corner": "Camino al Campo de Golf"
+    },
+    "timestamp": "2023-11-17T12:30:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Luz cenital sobre el green."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Césped de golf",
+      "graffiti": "Ninguno",
+      "terrain": "Ondulado",
+      "urbanElements": {
+        "furniture": "Banderines de hoyo",
+        "vegetationScore": 1,
+        "architectureStyle": "Paisajismo deportivo"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HOYO 1",
+        "PAR 4"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 200,
+      "shutterSpeed": "1/1250",
+      "focalLength": "70mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 70-200mm f/2.8L IS III USM",
+      "dateTimeOriginal": "2023:11:17 12:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 27.0890524905049,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0041",
+    "coordinates": {
+      "lat": -41.056492,
+      "lng": -71.528005,
+      "corner": "Parada de Autobús Bustillo"
+    },
+    "timestamp": "2023-11-17T14:10:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Luz de tarde sobre el refugio de transporte."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas aéreas de media tensión",
+      "shutterStyle": "No aplica",
+      "treeType": "Arbustos bajos",
+      "graffiti": "Graffiti artístico local",
+      "terrain": "Banquina de ripio",
+      "urbanElements": {
+        "furniture": "Refugio de madera y vidrio",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Rústico institucional"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LINEA 20",
+        "CENTRO"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/3.5",
+      "iso": 160,
+      "shutterSpeed": "1/320",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D7500",
+      "lensModel": "AF-S DX 18-140mm f/3.5-5.6G ED VR",
+      "dateTimeOriginal": "2023:11:17 14:10:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 27.220015841926983,
+      "isOutlier": false,
+      "computedScore": 82,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 82,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0042",
+    "coordinates": {
+      "lat": -41.056917,
+      "lng": -71.527633,
+      "corner": "Terraza de Té"
+    },
+    "timestamp": "2023-11-17T16:00:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Luz dorada cálida sobre las mesas exteriores."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Toldos de lona beige",
+      "treeType": "Rosales",
+      "graffiti": "Ninguno",
+      "terrain": "Piso de madera (Deck)",
+      "urbanElements": {
+        "furniture": "Sombrillas y sillas de hierro",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Clásico europeo"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "WINTER GARDEN"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/4000",
+      "focalLength": "35mm",
+      "make": "Sigma",
+      "model": "fp L",
+      "lensModel": "35mm F2 DG DN",
+      "dateTimeOriginal": "2023:11:17 16:00:00"
+    },
+    "category": "Restaurante",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 30.34112395367854,
+      "isOutlier": false,
+      "computedScore": 94,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0043",
+    "coordinates": {
+      "lat": -41.0565,
+      "lng": -71.527897,
+      "corner": "Intersección Av. Bustillo y Acceso"
+    },
+    "timestamp": "2023-11-18T08:45:00Z",
+    "lighting": {
+      "sunPosition": "Sudeste",
+      "shadowDirection": "Noroeste",
+      "shadowLength": "Media",
+      "description": "Sombras proyectadas por los árboles hacia la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Postes de madera con transformador",
+      "shutterStyle": "No aplica",
+      "treeType": "Coihue centenario",
+      "graffiti": "Ninguno",
+      "terrain": "Asfalto",
+      "urbanElements": {
+        "furniture": "Cartel vial de madera",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Infraestructura vial"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CIRC_CHICO",
+        "LLA O LLAO"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 75
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "GoPro",
+      "model": "Hero 11",
+      "lensModel": "Fixed Lens",
+      "dateTimeOriginal": "2023:11:18 08:45:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 21.080477298618344,
+      "isOutlier": false,
+      "computedScore": 86,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0044",
+    "coordinates": {
+      "lat": -41.056815,
+      "lng": -71.527878,
+      "corner": "Estacionamiento de Personal"
+    },
+    "timestamp": "2023-11-18T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Corta",
+      "description": "Luz directa sobre los vehículos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Red eléctrica aérea",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Matorral nativo",
+      "graffiti": "Ninguno",
+      "terrain": "Ripio compactado",
+      "urbanElements": {
+        "furniture": "Barrera de acceso automática",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Funcional"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SOLO AUTORIZADOS"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "ZV-E10",
+      "lensModel": "16-50mm F3.5-5.6 OSS",
+      "dateTimeOriginal": "2023:11:18 10:15:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 18.46976094148971,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0045",
+    "coordinates": {
+      "lat": -41.056589,
+      "lng": -71.527708,
+      "corner": "Pasillo Externo Spa"
+    },
+    "timestamp": "2023-11-18T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenit",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Corta",
+      "description": "Luz intensa reflejada en ventanales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Lenga",
+      "graffiti": "Ninguno",
+      "terrain": "Baldosas térmicas",
+      "urbanElements": {
+        "furniture": "Hamacas paraguayas",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Moderno integrado"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SPA & HEALTH CLUB"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "24mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2023:11:18 12:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 10.472518402230087,
+      "isOutlier": false,
+      "computedScore": 92,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0046",
+    "coordinates": {
+      "lat": -41.056721,
+      "lng": -71.527784,
+      "corner": "Patio Interno Ala Bustillo"
+    },
+    "timestamp": "2023-11-18T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Media",
+      "description": "Patio sombreado parcialmente por las paredes del edificio."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Madera con herrajes",
+      "treeType": "Pino",
+      "graffiti": "Ninguno",
+      "terrain": "Piedra partida blanca",
+      "urbanElements": {
+        "furniture": "Fuente de agua de piedra",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Renacentista Alpino"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PATIO DE LOS CIPRESES"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/100",
+      "focalLength": "35mm",
+      "make": "Olympus",
+      "model": "E-M1 Mark III",
+      "lensModel": "M.Zuiko 12-40mm F2.8",
+      "dateTimeOriginal": "2023:11:18 14:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 6.025564570044659,
+      "isOutlier": false,
+      "computedScore": 84,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0047",
+    "coordinates": {
+      "lat": -41.05674,
+      "lng": -71.527528,
+      "corner": "Salida de Emergencia Sur"
+    },
+    "timestamp": "2023-11-19T09:00:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Luz rasante sobre la pared de piedra volcánica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soterrados",
+      "shutterStyle": "Puerta de metal contra incendios",
+      "treeType": "Matorral",
+      "graffiti": "Ninguno",
+      "terrain": "Escalera de hormigón",
+      "urbanElements": {
+        "furniture": "Luces estroboscópicas de emergencia",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Técnico"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SALIDA",
+        "EMERGENCIA"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "28mm",
+      "make": "Nikon",
+      "model": "Z5",
+      "lensModel": "24-50mm f/4-6.3",
+      "dateTimeOriginal": "2023:11:19 09:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 22.4786805086127,
+      "isOutlier": false,
+      "computedScore": 88,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0048",
+    "coordinates": {
+      "lat": -41.056671,
+      "lng": -71.527745,
+      "corner": "Hall de Distribución Externo"
+    },
+    "timestamp": "2023-11-19T11:45:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Corta",
+      "description": "Luz intensa en el espacio abierto central."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Sin persianas",
+      "treeType": "Plantas en maceta",
+      "graffiti": "Ninguno",
+      "terrain": "Mármol rústico",
+      "urbanElements": {
+        "furniture": "Sillones de mimbre",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Transicional"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LLAO LLAO SHOP"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A6400",
+      "lensModel": "16-50mm OSS",
+      "dateTimeOriginal": "2023:11:19 11:45:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 2.8024938089192157,
+      "isOutlier": false,
+      "computedScore": 86,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0049",
+    "coordinates": {
+      "lat": -41.056526,
+      "lng": -71.527679,
+      "corner": "Jardines de la Piscina"
+    },
+    "timestamp": "2023-11-19T14:00:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Brillo solar sobre el agua de la pileta externa."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Grandes ventanales",
+      "treeType": "Palmeras de montaña",
+      "graffiti": "Ninguno",
+      "terrain": "Deck y césped",
+      "urbanElements": {
+        "furniture": "Reposeras blancas de madera",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Recreativo"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PISCINA CLIMATIZADA"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS RP",
+      "lensModel": "RF 35mm F1.8",
+      "dateTimeOriginal": "2023:11:19 14:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.74035839701504,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0050",
+    "coordinates": {
+      "lat": -41.056705,
+      "lng": -71.527503,
+      "corner": "Acceso a Cocinas"
+    },
+    "timestamp": "2023-11-19T16:20:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Sombras que cubren la zona de carga."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Línea de datos visible",
+      "shutterStyle": "Metálicas de servicio",
+      "treeType": "Álamo",
+      "graffiti": "Etiqueta logística en puerta",
+      "terrain": "Hormigón armado",
+      "urbanElements": {
+        "furniture": "Rampa de carga",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Utilitario"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "RECEPCIÓN",
+        "MERCADERÍAS"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 400,
+      "shutterSpeed": "1/160",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:11:19 16:20:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.442063859671844,
+      "isOutlier": false,
+      "computedScore": 86,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0051",
+    "coordinates": {
+      "lat": -41.056477,
+      "lng": -71.527643,
+      "corner": "Sendero al Lago Moreno"
+    },
+    "timestamp": "2023-11-20T09:30:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Sol filtrándose por el bosque denso."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "No aplica",
+      "treeType": "Bosque de Coihues",
+      "graffiti": "Ninguno",
+      "terrain": "Tierra y raíces",
+      "urbanElements": {
+        "furniture": "Señalética de madera grabada",
+        "vegetationScore": 1,
+        "architectureStyle": "Naturalista"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "LAGO MORENO",
+        "SENDEROS"
+      ],
+      "confidence": 0.87,
+      "rapidFuzzScore": 80
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 640,
+      "shutterSpeed": "1/125",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "RX100V",
+      "lensModel": "Fixed Lens",
+      "dateTimeOriginal": "2023:11:20 09:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.96834765275382,
+      "isOutlier": false,
+      "computedScore": 92,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0052",
+    "coordinates": {
+      "lat": -41.056515,
+      "lng": -71.527927,
+      "corner": "Esquina Bustillo y Rotonda"
+    },
+    "timestamp": "2023-11-20T11:15:00Z",
+    "lighting": {
+      "sunPosition": "Nordeste",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Corta",
+      "description": "Luz clara sobre el cartel de bienvenida."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Postes de luz rústicos",
+      "shutterStyle": "No aplica",
+      "treeType": "Cipreses en hilera",
+      "graffiti": "Ninguno",
+      "terrain": "Pavimento",
+      "urbanElements": {
+        "furniture": "Cartel tallado grande de madera",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Patagónico Clásico"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BIENVENIDOS",
+        "BARILOCHE"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS 90D",
+      "lensModel": "18-135mm USM",
+      "dateTimeOriginal": "2023:11:20 11:15:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 21.01780416338944,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0053",
+    "coordinates": {
+      "lat": -41.056644,
+      "lng": -71.527553,
+      "corner": "Pasaje Lateral Ala Moreno"
+    },
+    "timestamp": "2023-11-20T13:45:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Media",
+      "description": "Luz directa sobre los balcones de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Balcones de madera tallada",
+      "treeType": "Pinos",
+      "graffiti": "Ninguno",
+      "terrain": "Baldosa de piedra",
+      "urbanElements": {
+        "furniture": "Maceteros colgantes con geranios",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Alpino Superior"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "HABITACIONES",
+        "501-520"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Zfc",
+      "lensModel": "28mm f/2.8 SE",
+      "dateTimeOriginal": "2023:11:20 13:45:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 19.038292601556414,
+      "isOutlier": false,
+      "computedScore": 89,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0054",
+    "coordinates": {
+      "lat": -41.056553,
+      "lng": -71.527687,
+      "corner": "Pérgola del Jardín"
+    },
+    "timestamp": "2023-11-20T16:00:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Sombras geométricas proyectadas por la pérgola."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Madera enrejada",
+      "treeType": "Glicinas",
+      "graffiti": "Ninguno",
+      "terrain": "Césped",
+      "urbanElements": {
+        "furniture": "Bancos de hierro forjado",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Romántico"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PÉRGOLA DE TÉ"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2500",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "A7C",
+      "lensModel": "FE 50mm F1.8",
+      "dateTimeOriginal": "2023:11:20 16:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 14.795462915400222,
+      "isOutlier": false,
+      "computedScore": 95,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0055",
+    "coordinates": {
+      "lat": -41.056863,
+      "lng": -71.527947,
+      "corner": "Acceso a Puerto Pañuelo (Superior)"
+    },
+    "timestamp": "2023-11-21T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Media",
+      "description": "Luz matutina sobre la zona de desembarque superior."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas de datos",
+      "shutterStyle": "No aplica",
+      "treeType": "Arrayanes",
+      "graffiti": "Mínimo en señales",
+      "terrain": "Asfalto",
+      "urbanElements": {
+        "furniture": "Señales de tránsito viales",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Infraestructura"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PUERTO",
+        "ACCESO"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "28mm",
+      "make": "iPhone",
+      "model": "13 Pro",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:11:21 10:00:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 25.99582728786617,
+      "isOutlier": false,
+      "computedScore": 85,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0056",
+    "coordinates": {
+      "lat": -41.056444,
+      "lng": -71.527761,
+      "corner": "Camino de Servicio Golf"
+    },
+    "timestamp": "2023-11-21T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Sol de mediodía sin sombras laterales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Red interna",
+      "shutterStyle": "No aplica",
+      "treeType": "Ciprés",
+      "graffiti": "Ninguno",
+      "terrain": "Ripio fino",
+      "urbanElements": {
+        "furniture": "Señal de 'Cuidado Carros de Golf'",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Funcional Paisajista"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CAUTION",
+        "GOLF CARTS"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "40mm",
+      "make": "Fujifilm",
+      "model": "X100V",
+      "lensModel": "23mm f/2.0",
+      "dateTimeOriginal": "2023:11:21 12:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 24.83740444392961,
+      "isOutlier": false,
+      "computedScore": 96,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0057",
+    "coordinates": {
+      "lat": -41.056851,
+      "lng": -71.527652,
+      "corner": "Acceso Ala Bustillo Noreste"
+    },
+    "timestamp": "2023-11-21T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Luz de tarde iluminando los aleros de madera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Madera teñida oscura",
+      "treeType": "Coihue",
+      "graffiti": "Ninguno",
+      "terrain": "Piedra volcánica roja",
+      "urbanElements": {
+        "furniture": "Ceniceros de piedra",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Alpino Clásico"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ALA BUSTILLO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 24-105mm f/4L IS USM",
+      "dateTimeOriginal": "2023:11:21 14:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.02652820371597,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0058",
+    "coordinates": {
+      "lat": -41.056739,
+      "lng": -71.527933,
+      "corner": "Estacionamiento Visitantes"
+    },
+    "timestamp": "2023-11-21T16:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy Larga",
+      "description": "Atardecer proyectando sombras de pinos sobre los autos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Red subterránea",
+      "shutterStyle": "No aplica",
+      "treeType": "Pino Oregón alto",
+      "graffiti": "Ninguno",
+      "terrain": "Asfalto con delimitación de madera",
+      "urbanElements": {
+        "furniture": "Carteles de madera con nombres de sectores",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Funcional Integrada"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SECTOR A",
+        "VISITANTES"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/80",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7R III",
+      "lensModel": "24-70mm GM",
+      "dateTimeOriginal": "2023:11:21 16:45:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 15.26442244979844,
+      "isOutlier": false,
+      "computedScore": 90,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0059",
+    "coordinates": {
+      "lat": -41.056627,
+      "lng": -71.527907,
+      "corner": "Acceso Principal Vehicular"
+    },
+    "timestamp": "2023-11-22T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Media",
+      "description": "Luz de mañana lateral resaltando el portal."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "Vigas de madera expuestas",
+      "treeType": "Pinos decorativos",
+      "graffiti": "Ninguno",
+      "terrain": "Adoquín de granito",
+      "urbanElements": {
+        "furniture": "Farolas de estilo antiguo",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Gran Entrada"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BIENVENIDOS",
+        "LLAO LLAO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "GH6",
+      "lensModel": "12-60mm Leica",
+      "dateTimeOriginal": "2023:11:22 09:15:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 11.69514549658646,
+      "isOutlier": false,
+      "computedScore": 91,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0060",
+    "coordinates": {
+      "lat": -41.056479,
+      "lng": -71.527603,
+      "corner": "Mirador de los Jardines Inferiores"
+    },
+    "timestamp": "2023-11-22T11:30:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Iluminación clara y directa sobre el mirador."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Ninguno",
+      "shutterStyle": "No aplica",
+      "treeType": "Arbustos con flores",
+      "graffiti": "Ninguno",
+      "terrain": "Césped en terrazas",
+      "urbanElements": {
+        "furniture": "Telescopio público de monedas",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Mirador rústico"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "VISTA PANORÁMICA"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "Z9",
+      "lensModel": "14-24mm f/2.8 S",
+      "dateTimeOriginal": "2023:11:22 11:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 25.540397431299915,
+      "isOutlier": false,
+      "computedScore": 93,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0061",
+    "coordinates": {
+      "lat": -41.056698,
+      "lng": -71.527829,
+      "corner": "Main Entrance Gate"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light with sharp contrast on stone textures"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground",
+      "shutterStyle": "Wooden Alpine",
+      "treeType": "Cypress and Coihue",
+      "graffiti": "None",
+      "terrain": "Mountainous Slope",
+      "urbanElements": {
+        "furniture": "Cypress wood benches",
+        "vegetationScore": 9.5,
+        "architectureStyle": "Patagonian Academicism"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Llao Llao Resort",
+        "Golf & Spa",
+        "Entrada Principal"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 24-70mm F2.8 GM II",
+      "dateTimeOriginal": "2023:11:15 10:30:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 5.492563584106461,
+      "isOutlier": false,
+      "computedScore": 226,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 226,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0062",
+    "coordinates": {
+      "lat": -41.056877,
+      "lng": -71.527586,
+      "corner": "South-East Wing Corner"
+    },
+    "timestamp": "2023-11-15T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High noon lighting illuminating the wooden facade"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Timber Frame",
+      "treeType": "Arrayán",
+      "graffiti": "None",
+      "terrain": "Sloped Garden",
+      "urbanElements": {
+        "furniture": "Cast iron lamp posts",
+        "vegetationScore": 9.2,
+        "architectureStyle": "Bustillo Style Alpine"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Ala Bustillo",
+        "Parking Exclusivo"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 35mm F1.8 Macro IS STM",
+      "dateTimeOriginal": "2023:11:15 11:45:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 28.362567789350198,
+      "isOutlier": false,
+      "computedScore": 218,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 218,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0063",
+    "coordinates": {
+      "lat": -41.056651,
+      "lng": -71.527636,
+      "corner": "Patio Interior Access"
+    },
+    "timestamp": "2023-11-15T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Long",
+      "description": "Afternoon golden hour starting to cast over the courtyard"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Rustic Wood",
+      "treeType": "Lupines",
+      "graffiti": "None",
+      "terrain": "Level Pavement",
+      "urbanElements": {
+        "furniture": "Stone planters",
+        "vegetationScore": 8.8,
+        "architectureStyle": "Stone and Timber"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Patio de los Cipreses",
+        "Silencio por favor"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2023:11:15 14:20:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 12.038562075754248,
+      "isOutlier": false,
+      "computedScore": 213,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 213,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0064",
+    "coordinates": {
+      "lat": -41.056463,
+      "lng": -71.527705,
+      "corner": "West Garden Path"
+    },
+    "timestamp": "2023-11-15T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Late afternoon sun hitting the western gardens"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground",
+      "shutterStyle": "Sliding Wood",
+      "treeType": "Coihue",
+      "graffiti": "None",
+      "terrain": "Steep Descent",
+      "urbanElements": {
+        "furniture": "Wooden trail markers",
+        "vegetationScore": 9.8,
+        "architectureStyle": "Landscape Integration"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Sendero al Lago",
+        "Dificultad Baja"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/125",
+      "focalLength": "16mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 10-24mm F4 R OIS WR",
+      "dateTimeOriginal": "2023:11:15 16:00:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.49507389007891,
+      "isOutlier": false,
+      "computedScore": 230,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 230,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0065",
+    "coordinates": {
+      "lat": -41.0567,
+      "lng": -71.527785,
+      "corner": "Main Lobby Front"
+    },
+    "timestamp": "2023-11-16T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Morning sun reflecting off large lobby windows"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Traditional Chalet",
+      "treeType": "Ornamental Flowers",
+      "graffiti": "None",
+      "terrain": "Flat Entryway",
+      "urbanElements": {
+        "furniture": "Brass stanchions",
+        "vegetationScore": 7.5,
+        "architectureStyle": "Luxury Resort Patagonian"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Llao Llao",
+        "Reception",
+        "Valet"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2",
+      "lensModel": "Summilux 28mm f/1.7 ASPH",
+      "dateTimeOriginal": "2023:11:16 09:00:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 3.716076770766644,
+      "isOutlier": false,
+      "computedScore": 197,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 197,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0066",
+    "coordinates": {
+      "lat": -41.056529,
+      "lng": -71.528035,
+      "corner": "North-West Terrace"
+    },
+    "timestamp": "2023-11-16T12:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Zenithal light highlighting structural timber beams"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Fixed Louver",
+      "treeType": "None (Paved)",
+      "graffiti": "None",
+      "terrain": "Terraced Deck",
+      "urbanElements": {
+        "furniture": "Outdoor wicker chairs",
+        "vegetationScore": 4,
+        "architectureStyle": "Patagonian Vernacular"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Terraza del Lago",
+        "Bar & Grill"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7R4",
+      "lensModel": "FE 24-105mm F4 G OSS",
+      "dateTimeOriginal": "2023:11:16 12:30:00"
+    },
+    "category": "Restaurante",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 26.454112836012094,
+      "isOutlier": false,
+      "computedScore": 142,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 142,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0067",
+    "coordinates": {
+      "lat": -41.056743,
+      "lng": -71.527914,
+      "corner": "Corridor Junction"
+    },
+    "timestamp": "2023-11-16T15:15:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Soft shadows from the gabled roof structure"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Heavy Timber",
+      "treeType": "Ferns",
+      "graffiti": "None",
+      "terrain": "Level Interior Path",
+      "urbanElements": {
+        "furniture": "Wrought iron signs",
+        "vegetationScore": 6,
+        "architectureStyle": "Rustic Elegance"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Ala Moreno",
+        "Habitaciones 100-150"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 35mm f/1.4L II USM",
+      "dateTimeOriginal": "2023:11:16 15:15:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 14.193344505734611,
+      "isOutlier": false,
+      "computedScore": 171,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 171,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0068",
+    "coordinates": {
+      "lat": -41.056608,
+      "lng": -71.528042,
+      "corner": "Viewpoint North"
+    },
+    "timestamp": "2023-11-16T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West-South-West",
+      "shadowDirection": "East-North-East",
+      "shadowLength": "Extreme",
+      "description": "Deep sunset shadows across the Nahuel Huapi horizon"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Old Growth Coihue",
+      "graffiti": "None",
+      "terrain": "Cliff Edge",
+      "urbanElements": {
+        "furniture": "Telescopic viewers",
+        "vegetationScore": 9.9,
+        "architectureStyle": "Natural Overlook"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Mirador Nahuel Huapi",
+        "Parque Nacional Nahuel Huapi"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/30",
+      "focalLength": "14mm",
+      "make": "Nikon",
+      "model": "D850",
+      "lensModel": "AF-S NIKKOR 14-24mm f/2.8G ED",
+      "dateTimeOriginal": "2023:11:16 17:45:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.087523951713724,
+      "isOutlier": false,
+      "computedScore": 232,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 232,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0069",
+    "coordinates": {
+      "lat": -41.056733,
+      "lng": -71.528035,
+      "corner": "Utility Access Road"
+    },
+    "timestamp": "2023-11-17T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East-South-East",
+      "shadowDirection": "West-North-West",
+      "shadowLength": "Long",
+      "description": "Cool morning light filtered through dense tree canopy"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Catenary lighting",
+      "shutterStyle": "Industrial Wood",
+      "treeType": "Pine",
+      "graffiti": "None",
+      "terrain": "Gravel Road",
+      "urbanElements": {
+        "furniture": "Waste bins (bear proof)",
+        "vegetationScore": 8.5,
+        "architectureStyle": "Service Wing Architecture"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Solo Personal Autorizado",
+        "Carga y Descarga"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "24mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera 24mm f/1.78",
+      "dateTimeOriginal": "2023:11:17 08:30:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 22.764262242621314,
+      "isOutlier": false,
+      "computedScore": 207,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 207,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0070",
+    "coordinates": {
+      "lat": -41.05682,
+      "lng": -71.527904,
+      "corner": "Spa Entrance"
+    },
+    "timestamp": "2023-11-17T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Direct overhead sun on stone walkway"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Glass Pane",
+      "treeType": "Lupines and Roses",
+      "graffiti": "None",
+      "terrain": "Terraced Garden",
+      "urbanElements": {
+        "furniture": "Stone water fountain",
+        "vegetationScore": 9,
+        "architectureStyle": "Modern Patagonian Spa"
+      },
+      "temporalWindow": "2016-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Spa & Wellness Center",
+        "Llao Llao"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1600",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7C",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:11:17 11:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 20.026259992564242,
+      "isOutlier": false,
+      "computedScore": 219,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 219,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0071",
+    "coordinates": {
+      "lat": -41.056741,
+      "lng": -71.527552,
+      "corner": "Bustillo Ave Frontage"
+    },
+    "timestamp": "2023-11-17T13:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Bright midday sun illuminating road signage"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Poplar",
+      "graffiti": "None",
+      "terrain": "Asphalt Roadside",
+      "urbanElements": {
+        "furniture": "Bus stop shelter (Wood)",
+        "vegetationScore": 7.2,
+        "architectureStyle": "Public Infrastructure"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Bustillo Km 25",
+        "Bus Stop",
+        "Bariloche Centro"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "50mm",
+      "make": "Samsung",
+      "model": "SM-S908B",
+      "lensModel": "Wide Camera 23mm f/1.8",
+      "dateTimeOriginal": "2023:11:17 13:45:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 20.658969788297224,
+      "isOutlier": false,
+      "computedScore": 189,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 189,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0072",
+    "coordinates": {
+      "lat": -41.056914,
+      "lng": -71.527622,
+      "corner": "South Parking Entry"
+    },
+    "timestamp": "2023-11-17T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Harsh contrast between shaded forest and sunny parking area"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Wooden Fence",
+      "treeType": "Cypress",
+      "graffiti": "None",
+      "terrain": "Paved Slope",
+      "urbanElements": {
+        "furniture": "Wooden bollards",
+        "vegetationScore": 6.5,
+        "architectureStyle": "Alpine Utility"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Estacionamiento Huéspedes",
+        "Llao Llao Resort"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 87
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "DC-S5",
+      "lensModel": "LUMIX S 20-60mm F3.5-5.6",
+      "dateTimeOriginal": "2023:11:17 16:20:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 30.42082019833586,
+      "isOutlier": false,
+      "computedScore": 177,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 177,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0073",
+    "coordinates": {
+      "lat": -41.056839,
+      "lng": -71.527948,
+      "corner": "Golf Club Link"
+    },
+    "timestamp": "2023-11-18T10:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Soft morning light on the green grass"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Manicured Turf and Fir",
+      "graffiti": "None",
+      "terrain": "Rolling Hills",
+      "urbanElements": {
+        "furniture": "Golf tee markers",
+        "vegetationScore": 10,
+        "architectureStyle": "Landscape Design"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Golf Course",
+        "Hoyo 1"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 93
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "70mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 70-200mm F4 G OSS",
+      "dateTimeOriginal": "2023:11:18 10:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.852983452871875,
+      "isOutlier": false,
+      "computedScore": 232,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 232,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0074",
+    "coordinates": {
+      "lat": -41.056876,
+      "lng": -71.527764,
+      "corner": "Convention Center Side"
+    },
+    "timestamp": "2023-11-18T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Zero",
+      "description": "Vertical sun over the large convention hall roof"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Large Glass Panels",
+      "treeType": "Decorative Pine",
+      "graffiti": "None",
+      "terrain": "Level Concrete",
+      "urbanElements": {
+        "furniture": "Digital signage totem",
+        "vegetationScore": 5.5,
+        "architectureStyle": "Grand Patagonian"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Centro de Convenciones",
+        "Gran Salón Llao Llao"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1250",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-70mm F2.8L IS USM",
+      "dateTimeOriginal": "2023:11:18 12:00:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 23.269367431303863,
+      "isOutlier": false,
+      "computedScore": 167,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 167,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0075",
+    "coordinates": {
+      "lat": -41.056785,
+      "lng": -71.527758,
+      "corner": "Central Fountain Square"
+    },
+    "timestamp": "2023-11-18T14:45:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Sun sparkling on fountain water surfaces"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Pansies and Petunias",
+      "graffiti": "None",
+      "terrain": "Stone Plinth",
+      "urbanElements": {
+        "furniture": "Tiered stone fountain",
+        "vegetationScore": 8,
+        "architectureStyle": "Classical Bustillo"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "1940",
+        "Fundación"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/1.4",
+      "iso": 100,
+      "shutterSpeed": "1/4000",
+      "focalLength": "35mm",
+      "make": "Sigma",
+      "model": "fp L",
+      "lensModel": "35mm F1.4 DG DN | Art",
+      "dateTimeOriginal": "2023:11:18 14:45:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 13.227730151929281,
+      "isOutlier": false,
+      "computedScore": 198,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 198,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0076",
+    "coordinates": {
+      "lat": -41.056619,
+      "lng": -71.528019,
+      "corner": "Kitchen Service Exit"
+    },
+    "timestamp": "2023-11-18T17:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Extreme",
+      "description": "Silhouette of the hotel wing against the evening sky"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Heavy Steel",
+      "treeType": "Elderberry",
+      "graffiti": "None",
+      "terrain": "Sloped Paving",
+      "urbanElements": {
+        "furniture": "Stainless steel bins",
+        "vegetationScore": 6.2,
+        "architectureStyle": "Utility Alpine"
+      },
+      "temporalWindow": "2014-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Salida de Emergencia",
+        "Cocina Central"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 86
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 1600,
+      "shutterSpeed": "1/100",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 7 Pro",
+      "lensModel": "Main 6.81mm f/1.85",
+      "dateTimeOriginal": "2023:11:18 17:00:00"
+    },
+    "category": "Otros",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 20.90029498927135,
+      "isOutlier": false,
+      "computedScore": 172,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 172,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0077",
+    "coordinates": {
+      "lat": -41.056616,
+      "lng": -71.527552,
+      "corner": "Lakeside Trailhead"
+    },
+    "timestamp": "2023-11-19T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Morning mist clearing under soft sunlight"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Arrayán Forest",
+      "graffiti": "None",
+      "terrain": "Dirt Path",
+      "urbanElements": {
+        "furniture": "Log steps",
+        "vegetationScore": 10,
+        "architectureStyle": "National Park Rustic"
+      },
+      "temporalWindow": "2010-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Sendero Los Arrayanes",
+        "Circuito Chico"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/200",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "Z50",
+      "lensModel": "NIKKOR Z DX 16-50mm f/3.5-6.3 VR",
+      "dateTimeOriginal": "2023:11:19 09:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 19.779947393718064,
+      "isOutlier": false,
+      "computedScore": 233,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 233,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0078",
+    "coordinates": {
+      "lat": -41.056743,
+      "lng": -71.527611,
+      "corner": "Outdoor Lounge Area"
+    },
+    "timestamp": "2023-11-19T11:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Bright, even lighting on the terrace furniture"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Wooden Pergola",
+      "treeType": "Lavender",
+      "graffiti": "None",
+      "terrain": "Wooden Decking",
+      "urbanElements": {
+        "furniture": "Luxury fire pits",
+        "vegetationScore": 7.8,
+        "architectureStyle": "Patagonian Chic"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Winter Garden",
+        "Fire Pit Lounge"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/3200",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V",
+      "lensModel": "23mm f/2.0 Fixed",
+      "dateTimeOriginal": "2023:11:19 11:30:00"
+    },
+    "category": "Restaurante",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 16.35505493686923,
+      "isOutlier": false,
+      "computedScore": 199,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 199,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0079",
+    "coordinates": {
+      "lat": -41.056598,
+      "lng": -71.527589,
+      "corner": "South Wing Garden"
+    },
+    "timestamp": "2023-11-19T14:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Sun filtering through tall cypress trees"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Louvered Wood",
+      "treeType": "Sequoya (Introduction)",
+      "graffiti": "None",
+      "terrain": "Stepped Garden",
+      "urbanElements": {
+        "furniture": "Statues of local fauna",
+        "vegetationScore": 9.4,
+        "architectureStyle": "Academic Neoclassical"
+      },
+      "temporalWindow": "2012-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Ala Lago Moreno",
+        "Silencio"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 84
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "ILCE-7M2",
+      "lensModel": "FE 50mm F1.8",
+      "dateTimeOriginal": "2023:11:19 14:00:00"
+    },
+    "category": "Atracción",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.60684234863894,
+      "isOutlier": false,
+      "computedScore": 220,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 220,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0080",
+    "coordinates": {
+      "lat": -41.056775,
+      "lng": -71.527935,
+      "corner": "West Forest Path Start"
+    },
+    "timestamp": "2023-11-19T16:30:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Golden hour light cutting through the trunks"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "N/A",
+      "treeType": "Maitén",
+      "graffiti": "None",
+      "terrain": "Organic Loam",
+      "urbanElements": {
+        "furniture": "Informativo Flora Local",
+        "vegetationScore": 10,
+        "architectureStyle": "Interpretative Trail"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bosque de Coihues",
+        "Preserve la Naturaleza"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 640,
+      "shutterSpeed": "1/80",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R",
+      "lensModel": "RF 24-105mm F4L IS USM",
+      "dateTimeOriginal": "2023:11:19 16:30:00"
+    },
+    "category": "Parque",
+    "locationContext": "Hotel Llao Llao, Bariloche",
+    "validation": {
+      "distanceFromCenter": 17.818816571678482,
+      "isOutlier": false,
+      "computedScore": 233,
+      "issues": [],
+      "h3Index": "89ce80b6e6fffff"
+    },
+    "h3Index": "89ce80b6e6fffff",
+    "geocodingScore": 233,
+    "isAnchor": true
+  }
+]

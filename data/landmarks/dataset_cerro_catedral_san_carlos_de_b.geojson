@@ -1,0 +1,2158 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.439298,
+          -41.170848
+        ]
+      },
+      "properties": {
+        "id": "REF-0001",
+        "coordinates": {
+          "lat": -41.170848,
+          "lng": -71.439298,
+          "corner": "NE"
+        },
+        "timestamp": "2023-07-15T10:30:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Long",
+          "description": "Clear morning light with long shadows characteristic of Andean winter."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Moderate concentration of lift cables overhead",
+          "shutterStyle": "Wood panel rustic",
+          "treeType": "Coihue and Pine",
+          "graffiti": "Minimal",
+          "terrain": "Paved near pedestrian plaza",
+          "urbanElements": {
+            "furniture": "Wooden benches and ski racks",
+            "vegetationScore": 0.4,
+            "architectureStyle": "Alpine-Patagonian stone and wood"
+          },
+          "temporalWindow": "2019-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PLAZA CATALINA REYNAL",
+            "BASE CATEDRAL",
+            "SKI RENTAL"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "ILCE-7M3",
+          "lensModel": "FE 24-105mm F4 G OSS",
+          "dateTimeOriginal": "2023:07:15 10:30:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Plaza Catalina Reynal",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 188.0028264598704,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 188m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.455496,
+          -41.189513
+        ]
+      },
+      "properties": {
+        "id": "REF-0002",
+        "coordinates": {
+          "lat": -41.189513,
+          "lng": -71.455496,
+          "corner": "NW"
+        },
+        "timestamp": "2022-08-20T14:15:00Z",
+        "lighting": {
+          "sunPosition": "Northwest",
+          "shadowDirection": "Southeast",
+          "shadowLength": "Medium",
+          "description": "Bright high-altitude sun reflecting off snow surfaces."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "High density near lift arrival station",
+          "shutterStyle": "Heavy duty metal for wind protection",
+          "treeType": "None - above tree line",
+          "graffiti": "None",
+          "terrain": "Rocky and snow-covered",
+          "urbanElements": {
+            "furniture": "Observation telescope and safety netting",
+            "vegetationScore": 0.05,
+            "architectureStyle": "Modern mountain shelter with stone base"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "REFUGIO LYNCH",
+            "ALTITUD 1900M",
+            "BAR DE MONTAÑA"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 98
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 200,
+          "shutterSpeed": "1/2000",
+          "focalLength": "35mm",
+          "make": "Canon",
+          "model": "EOS R6",
+          "lensModel": "RF 35mm f/1.8",
+          "dateTimeOriginal": "2022:08:20 14:15:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Refugio Lynch",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2615.318494509004,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2615m)"
+          ],
+          "h3Index": "89ce854c00bffff"
+        },
+        "h3Index": "89ce854c00bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438063,
+          -41.170751
+        ]
+      },
+      "properties": {
+        "id": "REF-0003",
+        "coordinates": {
+          "lat": -41.170751,
+          "lng": -71.438063,
+          "corner": "SW"
+        },
+        "timestamp": "2023-01-10T18:45:00Z",
+        "lighting": {
+          "sunPosition": "West",
+          "shadowDirection": "East",
+          "shadowLength": "Extreme",
+          "description": "Golden hour lighting with long horizontal shadows."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Underground power lines",
+          "shutterStyle": "Glass display windows",
+          "treeType": "Ornamental Pinus",
+          "graffiti": "Commercial signage only",
+          "terrain": "Brick paving",
+          "urbanElements": {
+            "furniture": "Outdoor restaurant seating",
+            "vegetationScore": 0.3,
+            "architectureStyle": "Commercial shopping mall with pitched roofs"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "LAS TERRAZAS",
+            "SHOPPING",
+            "CHOCOLATES DEL TURISTA"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 400,
+          "shutterSpeed": "1/250",
+          "focalLength": "50mm",
+          "make": "Nikon",
+          "model": "Z6 II",
+          "lensModel": "NIKKOR Z 50mm f/1.8 S",
+          "dateTimeOriginal": "2023:01:10 18:45:00"
+        },
+        "category": "Comercial",
+        "groundedFromAnchor": "Shopping Las Terrazas",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 85.30049571448575,
+          "isOutlier": false,
+          "computedScore": 90,
+          "issues": [],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 90,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.43812,
+          -41.172551
+        ]
+      },
+      "properties": {
+        "id": "REF-0004",
+        "coordinates": {
+          "lat": -41.172551,
+          "lng": -71.43812,
+          "corner": "SE"
+        },
+        "timestamp": "2023-09-05T11:00:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Direct midday sun on the base station facade."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Heavy cable car steel ropes",
+          "shutterStyle": "Industrial roller shutters",
+          "treeType": "Young fir trees",
+          "graffiti": "None",
+          "terrain": "Asphalt and gravel",
+          "urbanElements": {
+            "furniture": "Queue barriers and digital displays",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Modern industrial lift station"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "TELECABINA AMANCAY",
+            "ACCESO CABINAS",
+            "CATEDRAL ALTA PATAGONIA"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "28mm",
+          "make": "Apple",
+          "model": "iPhone 14 Pro",
+          "lensModel": "Main Camera 24mm",
+          "dateTimeOriginal": "2023:09:05 11:00:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Estación Base Telecabina Amancay",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 243.51722571426876,
+          "isOutlier": true,
+          "computedScore": 88,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 244m)"
+          ],
+          "h3Index": "89ce854c277ffff"
+        },
+        "h3Index": "89ce854c277ffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438942,
+          -41.169949
+        ]
+      },
+      "properties": {
+        "id": "REF-0005",
+        "coordinates": {
+          "lat": -41.169949,
+          "lng": -71.438942,
+          "corner": "NW"
+        },
+        "timestamp": "2022-12-15T15:30:00Z",
+        "lighting": {
+          "sunPosition": "West",
+          "shadowDirection": "East",
+          "shadowLength": "Short",
+          "description": "High summer sun illuminating historical structures."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Historic thicker steel cables",
+          "shutterStyle": "Traditional wooden shutters",
+          "treeType": "Large native conifers",
+          "graffiti": "Patrimonial plaque",
+          "terrain": "Compact soil and stone",
+          "urbanElements": {
+            "furniture": "Wrought iron fences and informational signs",
+            "vegetationScore": 0.5,
+            "architectureStyle": "1950s masonry and timber alpine"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "CABLE CARRIL",
+            "HISTORIA VIVA",
+            "ESTACION BASE"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 100,
+          "shutterSpeed": "1/4000",
+          "focalLength": "35mm",
+          "make": "Fujifilm",
+          "model": "X100V",
+          "lensModel": "23mm f/2.0",
+          "dateTimeOriginal": "2022:12:15 15:30:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Estación Base Cable Carril",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 165.9079442423838,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 166m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.452172,
+          -41.185771
+        ]
+      },
+      "properties": {
+        "id": "REF-0006",
+        "coordinates": {
+          "lat": -41.185771,
+          "lng": -71.452172,
+          "corner": "S"
+        },
+        "timestamp": "2023-08-12T13:20:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Intense mountain glare with snow reflection."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Chairlift cables in distance",
+          "shutterStyle": "Thermal insulated panels",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Snow terrace",
+          "urbanElements": {
+            "furniture": "Yellow wind-breakers and picnic tables",
+            "vegetationScore": 0,
+            "architectureStyle": "Modular wood and glass mountain lodge"
+          },
+          "temporalWindow": "2019-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "PUNTA NEVADA",
+            "SNACK BAR",
+            "COMBI"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/13",
+          "iso": 100,
+          "shutterSpeed": "1/3200",
+          "focalLength": "16mm",
+          "make": "GoPro",
+          "model": "Hero 11",
+          "lensModel": "Standard Lens",
+          "dateTimeOriginal": "2023:08:12 13:20:00"
+        },
+        "category": "Restaurante",
+        "groundedFromAnchor": "Parador Punta Nevada",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2115.3179249717637,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2115m)"
+          ],
+          "h3Index": "89ce854c07bffff"
+        },
+        "h3Index": "89ce854c07bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.458401,
+          -41.179852
+        ]
+      },
+      "properties": {
+        "id": "REF-0007",
+        "coordinates": {
+          "lat": -41.179852,
+          "lng": -71.458401,
+          "corner": "E"
+        },
+        "timestamp": "2023-03-22T09:45:00Z",
+        "lighting": {
+          "sunPosition": "East",
+          "shadowDirection": "West",
+          "shadowLength": "Long",
+          "description": "Morning backlight over the ridge."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Minor utility lines",
+          "shutterStyle": "None",
+          "treeType": "Stunted Lengas",
+          "graffiti": "Small tags on rocks",
+          "terrain": "Natural granite outcrop",
+          "urbanElements": {
+            "furniture": "Safety railing",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Natural viewpoint"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIEDRA DEL CONDOR",
+            "VISTA PANORAMICA"
+          ],
+          "confidence": 0.92,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/640",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "ILCE-7C",
+          "lensModel": "FE 28-60mm",
+          "dateTimeOriginal": "2023:03:22 09:45:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Piedra del Cóndor",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2063.933498249296,
+          "isOutlier": true,
+          "computedScore": 88,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 2064m)"
+          ],
+          "h3Index": "89ce854c39bffff"
+        },
+        "h3Index": "89ce854c39bffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.439146,
+          -41.170953
+        ]
+      },
+      "properties": {
+        "id": "REF-0008",
+        "coordinates": {
+          "lat": -41.170953,
+          "lng": -71.439146,
+          "corner": "W"
+        },
+        "timestamp": "2023-07-20T11:30:00Z",
+        "lighting": {
+          "sunPosition": "North-Northeast",
+          "shadowDirection": "South-Southwest",
+          "shadowLength": "Medium",
+          "description": "Diffuse light due to light snowfall."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Power lines for street lamps",
+          "shutterStyle": "Rustic wooden frames",
+          "treeType": "Pines with snow",
+          "graffiti": "Stickers on lamp posts",
+          "terrain": "Snow-cleared asphalt",
+          "urbanElements": {
+            "furniture": "Trash bins and map totem",
+            "vegetationScore": 0.35,
+            "architectureStyle": "Traditional Patagonian village style"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "BASE CATEDRAL",
+            "PLAZA REYNAL",
+            "INFORMES"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 96
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 200,
+          "shutterSpeed": "1/250",
+          "focalLength": "35mm",
+          "make": "Google",
+          "model": "Pixel 7 Pro",
+          "lensModel": "Main lens",
+          "dateTimeOriginal": "2023:07:20 11:30:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Plaza Catalina Reynal",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 178.50880170142958,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 179m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.455869,
+          -41.189001
+        ]
+      },
+      "properties": {
+        "id": "REF-0009",
+        "coordinates": {
+          "lat": -41.189001,
+          "lng": -71.455869,
+          "corner": "SW"
+        },
+        "timestamp": "2023-08-01T12:00:00Z",
+        "lighting": {
+          "sunPosition": "Zenith",
+          "shadowDirection": "None",
+          "shadowLength": "Minimal",
+          "description": "High noon at altitude, minimal shadowing."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Lift cables",
+          "shutterStyle": "Heavy shutters",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Icy rocks",
+          "urbanElements": {
+            "furniture": "Ski gear racks",
+            "vegetationScore": 0,
+            "architectureStyle": "Stone shelter"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "REFUGIO LYNCH",
+            "CERVEZA ARTESANAL"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/16",
+          "iso": 100,
+          "shutterSpeed": "1/4000",
+          "focalLength": "20mm",
+          "make": "Panasonic",
+          "model": "DC-GH5",
+          "lensModel": "Leica 12-60mm",
+          "dateTimeOriginal": "2023:08:01 12:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Refugio Lynch",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2588.3432592817167,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2588m)"
+          ],
+          "h3Index": "89ce854c00bffff"
+        },
+        "h3Index": "89ce854c00bffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.437971,
+          -41.170189
+        ]
+      },
+      "properties": {
+        "id": "REF-0010",
+        "coordinates": {
+          "lat": -41.170189,
+          "lng": -71.437971,
+          "corner": "E"
+        },
+        "timestamp": "2023-01-20T16:00:00Z",
+        "lighting": {
+          "sunPosition": "West-Northwest",
+          "shadowDirection": "East-Southeast",
+          "shadowLength": "Short",
+          "description": "Warm afternoon light hitting building facades."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Concealed cables",
+          "shutterStyle": "Folding wood slats",
+          "treeType": "Ornamental bushes",
+          "graffiti": "None",
+          "terrain": "Stone pavers",
+          "urbanElements": {
+            "furniture": "Planters and brand banners",
+            "vegetationScore": 0.25,
+            "architectureStyle": "Modern commercial alpine"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "BURTON STORE",
+            "TERRAZAS SHOPPING",
+            "CATEDRAL"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 100,
+          "shutterSpeed": "1/1600",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "ZV-E10",
+          "lensModel": "Sigma 16mm f1.4",
+          "dateTimeOriginal": "2023:01:20 16:00:00"
+        },
+        "category": "Comercial",
+        "groundedFromAnchor": "Shopping Las Terrazas",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 80.69092178444544,
+          "isOutlier": false,
+          "computedScore": 89,
+          "issues": [],
+          "h3Index": "89ce854c26fffff"
+        },
+        "h3Index": "89ce854c26fffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438157,
+          -41.172371
+        ]
+      },
+      "properties": {
+        "id": "REF-0011",
+        "coordinates": {
+          "lat": -41.172371,
+          "lng": -71.438157,
+          "corner": "N"
+        },
+        "timestamp": "2023-07-28T09:00:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Long",
+          "description": "Cold morning light, mist rising from valley."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Suspended cabin lines",
+          "shutterStyle": "Metal grids",
+          "treeType": "Douglas fir",
+          "graffiti": "None",
+          "terrain": "Wet asphalt",
+          "urbanElements": {
+            "furniture": "Turnstiles and electronic tickets",
+            "vegetationScore": 0.3,
+            "architectureStyle": "Functional engineering structure"
+          },
+          "temporalWindow": "2021-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "AMANCAY",
+            "ASCENSO",
+            "SOLO ESQUIADORES"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.5",
+          "iso": 800,
+          "shutterSpeed": "1/125",
+          "focalLength": "24mm",
+          "make": "Samsung",
+          "model": "S23 Ultra",
+          "lensModel": "Wide-angle",
+          "dateTimeOriginal": "2023:07:28 09:00:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Estación Base Telecabina Amancay",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 226.07597347164483,
+          "isOutlier": true,
+          "computedScore": 90,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 226m)"
+          ],
+          "h3Index": "89ce854c277ffff"
+        },
+        "h3Index": "89ce854c277ffff",
+        "geocodingScore": 90,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.439498,
+          -41.169833
+        ]
+      },
+      "properties": {
+        "id": "REF-0012",
+        "coordinates": {
+          "lat": -41.169833,
+          "lng": -71.439498,
+          "corner": "W"
+        },
+        "timestamp": "2023-02-14T10:00:00Z",
+        "lighting": {
+          "sunPosition": "East",
+          "shadowDirection": "West",
+          "shadowLength": "Medium",
+          "description": "Soft summer morning light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Thick steel lift cables",
+          "shutterStyle": "Dark wood slats",
+          "treeType": "Mixed mountain forest edge",
+          "graffiti": "Small artistic stencil",
+          "terrain": "Dirt and stones",
+          "urbanElements": {
+            "furniture": "Historical plaque on boulder",
+            "vegetationScore": 0.6,
+            "architectureStyle": "Rustic stone and log masonry"
+          },
+          "temporalWindow": "2017-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "BASE CABLE CARRIL",
+            "MONUMENTO HISTORICO"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/800",
+          "focalLength": "24mm",
+          "make": "Nikon",
+          "model": "D850",
+          "lensModel": "AF-S 24-70mm f/2.8",
+          "dateTimeOriginal": "2023:02:14 10:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Estación Base Cable Carril",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 213.983723759785,
+          "isOutlier": true,
+          "computedScore": 94,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 214m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 94,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.451881,
+          -41.185323
+        ]
+      },
+      "properties": {
+        "id": "REF-0013",
+        "coordinates": {
+          "lat": -41.185323,
+          "lng": -71.451881,
+          "corner": "NE"
+        },
+        "timestamp": "2023-08-15T14:30:00Z",
+        "lighting": {
+          "sunPosition": "Northwest",
+          "shadowDirection": "Southeast",
+          "shadowLength": "Medium",
+          "description": "Harsh afternoon sun reflecting on snow pack."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Triple chairlift line",
+          "shutterStyle": "Heavy exterior blinds",
+          "treeType": "None",
+          "graffiti": "Brand stickers",
+          "terrain": "Packed snow runway",
+          "urbanElements": {
+            "furniture": "Folding chairs and wind socks",
+            "vegetationScore": 0,
+            "architectureStyle": "High mountain prefab lodge"
+          },
+          "temporalWindow": "2019-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "PARADOR",
+            "PUNTA NEVADA",
+            "QUILMES"
+          ],
+          "confidence": 0.93,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 100,
+          "shutterSpeed": "1/5000",
+          "focalLength": "18mm",
+          "make": "Sony",
+          "model": "ZV-1",
+          "lensModel": "Built-in 24-70mm",
+          "dateTimeOriginal": "2023:08:15 14:30:00"
+        },
+        "category": "Restaurante",
+        "groundedFromAnchor": "Parador Punta Nevada",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2060.8333349531167,
+          "isOutlier": true,
+          "computedScore": 83,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2061m)"
+          ],
+          "h3Index": "89ce854c07bffff"
+        },
+        "h3Index": "89ce854c07bffff",
+        "geocodingScore": 83,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.458329,
+          -41.179656
+        ]
+      },
+      "properties": {
+        "id": "REF-0014",
+        "coordinates": {
+          "lat": -41.179656,
+          "lng": -71.458329,
+          "corner": "S"
+        },
+        "timestamp": "2023-11-10T17:00:00Z",
+        "lighting": {
+          "sunPosition": "West",
+          "shadowDirection": "East",
+          "shadowLength": "Long",
+          "description": "Sunset shadows deepening across the valley."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "None",
+          "treeType": "Andean shrubs",
+          "graffiti": "None",
+          "terrain": "Granite bedrock",
+          "urbanElements": {
+            "furniture": "Distance orientation dial",
+            "vegetationScore": 0.15,
+            "architectureStyle": "Alpine viewpoint platform"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "MIRADOR",
+            "PIEDRA DEL CONDOR",
+            "CUIDE EL MEDIO AMBIENTE"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/2.0",
+          "iso": 200,
+          "shutterSpeed": "1/400",
+          "focalLength": "23mm",
+          "make": "Fujifilm",
+          "model": "X-T4",
+          "lensModel": "XF 23mm f/2 R WR",
+          "dateTimeOriginal": "2023:11:10 17:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Piedra del Cóndor",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2047.8104963914511,
+          "isOutlier": true,
+          "computedScore": 87,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2048m)"
+          ],
+          "h3Index": "89ce854c39bffff"
+        },
+        "h3Index": "89ce854c39bffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.43926,
+          -41.17115
+        ]
+      },
+      "properties": {
+        "id": "REF-0015",
+        "coordinates": {
+          "lat": -41.17115,
+          "lng": -71.43926,
+          "corner": "S"
+        },
+        "timestamp": "2023-05-12T12:00:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Midday overcast autumn light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Street utility lines",
+          "shutterStyle": "Painted wood",
+          "treeType": "Lenga changing color",
+          "graffiti": "Moderate on concrete base",
+          "terrain": "Wet bricks",
+          "urbanElements": {
+            "furniture": "Public fountain and stone pillars",
+            "vegetationScore": 0.45,
+            "architectureStyle": "Mixed stone and timber"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "CATEDRAL",
+            "PLAZA CATALINA",
+            "ARGENTINA"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 400,
+          "shutterSpeed": "1/100",
+          "focalLength": "35mm",
+          "make": "Canon",
+          "model": "EOS 5D Mark IV",
+          "lensModel": "EF 35mm f/1.4L II",
+          "dateTimeOriginal": "2023:05:12 12:00:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Plaza Catalina Reynal",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 194.70807624476748,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 195m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.455573,
+          -41.189023
+        ]
+      },
+      "properties": {
+        "id": "REF-0016",
+        "coordinates": {
+          "lat": -41.189023,
+          "lng": -71.455573,
+          "corner": "NE"
+        },
+        "timestamp": "2023-07-30T10:45:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Long",
+          "description": "Crisp morning air with low sun angle."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Main lift cables",
+          "shutterStyle": "Heavy duty wind bars",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Granite blocks and snow",
+          "urbanElements": {
+            "furniture": "Emergency phone and lift controls",
+            "vegetationScore": 0,
+            "architectureStyle": "Exposed stone mountain architecture"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "LIFT STATION",
+            "REFUGIO LYNCH",
+            "EXIT"
+          ],
+          "confidence": 0.91,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "24mm",
+          "make": "iPhone",
+          "model": "13 Pro",
+          "lensModel": "Ultra Wide",
+          "dateTimeOriginal": "2023:07:30 10:45:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Refugio Lynch",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2575.3408125789383,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2575m)"
+          ],
+          "h3Index": "89ce854c00bffff"
+        },
+        "h3Index": "89ce854c00bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438477,
+          -41.170353
+        ]
+      },
+      "properties": {
+        "id": "REF-0017",
+        "coordinates": {
+          "lat": -41.170353,
+          "lng": -71.438477,
+          "corner": "W"
+        },
+        "timestamp": "2023-06-15T15:00:00Z",
+        "lighting": {
+          "sunPosition": "Northwest",
+          "shadowDirection": "Southeast",
+          "shadowLength": "Long",
+          "description": "Dim afternoon winter light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Building connecting lines",
+          "shutterStyle": "Rolling security shutters",
+          "treeType": "Ornamental conifers",
+          "graffiti": "Commercial mural",
+          "terrain": "Paved sidewalk",
+          "urbanElements": {
+            "furniture": "Outdoor heating lamps and menu boards",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Commercial facade with wooden cladding"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "LAS TERRAZAS",
+            "AV. CATEDRAL",
+            "LOCAL 4"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 200,
+          "shutterSpeed": "1/500",
+          "focalLength": "28mm",
+          "make": "Leica",
+          "model": "Q2",
+          "lensModel": "Summilux 28mm f/1.7",
+          "dateTimeOriginal": "2023:06:15 15:00:00"
+        },
+        "category": "Comercial",
+        "groundedFromAnchor": "Shopping Las Terrazas",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 116.41164211498065,
+          "isOutlier": false,
+          "computedScore": 88,
+          "issues": [],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438668,
+          -41.172528
+        ]
+      },
+      "properties": {
+        "id": "REF-0018",
+        "coordinates": {
+          "lat": -41.172528,
+          "lng": -71.438668,
+          "corner": "W"
+        },
+        "timestamp": "2023-08-25T11:45:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Flat lighting under cloud cover."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Pylon supports for gondola",
+          "shutterStyle": "Aluminum frames",
+          "treeType": "Cypress",
+          "graffiti": "Minimal on pylon base",
+          "terrain": "Asphalt road",
+          "urbanElements": {
+            "furniture": "Security booth and parking gates",
+            "vegetationScore": 0.25,
+            "architectureStyle": "Technical transport infrastructure"
+          },
+          "temporalWindow": "2021-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "ESTACION AMANCAY",
+            "BASE",
+            "ENTRADA"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/5.0",
+          "iso": 100,
+          "shutterSpeed": "1/200",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "A6400",
+          "lensModel": "E 18-135mm",
+          "dateTimeOriginal": "2023:08:25 11:45:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Estación Base Telecabina Amancay",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 260.9148594327619,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 261m)"
+          ],
+          "h3Index": "89ce854c277ffff"
+        },
+        "h3Index": "89ce854c277ffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.439083,
+          -41.170391
+        ]
+      },
+      "properties": {
+        "id": "REF-0019",
+        "coordinates": {
+          "lat": -41.170391,
+          "lng": -71.439083,
+          "corner": "S"
+        },
+        "timestamp": "2023-04-10T13:00:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Clear autumn noon."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Heavy lift lines",
+          "shutterStyle": "Solid wood planks",
+          "treeType": "Old growth forest edge",
+          "graffiti": "None",
+          "terrain": "Stone pavers and dirt",
+          "urbanElements": {
+            "furniture": "Interpretive history board",
+            "vegetationScore": 0.5,
+            "architectureStyle": "Early 20th century alpine masonry"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "BASE CABLE CARRIL",
+            "CATEDRAL 1950"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "50mm",
+          "make": "Canon",
+          "model": "EOS RP",
+          "lensModel": "RF 50mm f/1.8",
+          "dateTimeOriginal": "2023:04:10 13:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Estación Base Cable Carril",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 166.4239680322837,
+          "isOutlier": true,
+          "computedScore": 93,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 166m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 93,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.452051,
+          -41.185436
+        ]
+      },
+      "properties": {
+        "id": "REF-0020",
+        "coordinates": {
+          "lat": -41.185436,
+          "lng": -71.452051,
+          "corner": "W"
+        },
+        "timestamp": "2023-08-20T12:30:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Intense UV at high altitude."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Chairlift supports",
+          "shutterStyle": "Insulated commercial glass",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Groomed snow",
+          "urbanElements": {
+            "furniture": "Picnic benches and ski racks",
+            "vegetationScore": 0,
+            "architectureStyle": "Modern prefab mountain restaurant"
+          },
+          "temporalWindow": "2019-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "PUNTA NEVADA",
+            "RESTAURANTE",
+            "BAÑOS"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/14",
+          "iso": 100,
+          "shutterSpeed": "1/2000",
+          "focalLength": "24mm",
+          "make": "GoPro",
+          "model": "Hero 10 Black",
+          "lensModel": "Wide",
+          "dateTimeOriginal": "2023:08:20 12:30:00"
+        },
+        "category": "Restaurante",
+        "groundedFromAnchor": "Parador Punta Nevada",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2079.426244653011,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2079m)"
+          ],
+          "h3Index": "89ce854c07bffff"
+        },
+        "h3Index": "89ce854c07bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.457812,
+          -41.18
+        ]
+      },
+      "properties": {
+        "id": "REF-0021",
+        "coordinates": {
+          "lat": -41.18,
+          "lng": -71.457812,
+          "corner": "NW"
+        },
+        "timestamp": "2023-01-05T09:00:00Z",
+        "lighting": {
+          "sunPosition": "East",
+          "shadowDirection": "West",
+          "shadowLength": "Long",
+          "description": "Soft morning summer sun casting shadows over the ridge."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "None",
+          "treeType": "Shrubbery and moss",
+          "graffiti": "None",
+          "terrain": "Rocky outcrop",
+          "urbanElements": {
+            "furniture": "Steel viewpoint rail",
+            "vegetationScore": 0.1,
+            "architectureStyle": "Natural feature"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIEDRA DEL CONDOR",
+            "MIRADOR"
+          ],
+          "confidence": 0.93,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "A7 III",
+          "lensModel": "24-70mm GM",
+          "dateTimeOriginal": "2023:01:05 09:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Piedra del Cóndor",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2030.0164123846305,
+          "isOutlier": true,
+          "computedScore": 87,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2030m)"
+          ],
+          "h3Index": "89ce854c06fffff"
+        },
+        "h3Index": "89ce854c06fffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438619,
+          -41.170989
+        ]
+      },
+      "properties": {
+        "id": "REF-0022",
+        "coordinates": {
+          "lat": -41.170989,
+          "lng": -71.438619,
+          "corner": "E"
+        },
+        "timestamp": "2023-07-10T16:45:00Z",
+        "lighting": {
+          "sunPosition": "West-Northwest",
+          "shadowDirection": "East-Southeast",
+          "shadowLength": "Long",
+          "description": "Fading winter afternoon light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Street utility lines",
+          "shutterStyle": "None",
+          "treeType": "Pine trees",
+          "graffiti": "Minimal",
+          "terrain": "Asphalt",
+          "urbanElements": {
+            "furniture": "Traffic signs and street lights",
+            "vegetationScore": 0.3,
+            "architectureStyle": "Mountain urban road"
+          },
+          "temporalWindow": "2019-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "AV. CERRO CATEDRAL",
+            "PLAZA",
+            "STOP"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 85
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 400,
+          "shutterSpeed": "1/125",
+          "focalLength": "50mm",
+          "make": "Nikon",
+          "model": "D750",
+          "lensModel": "50mm f/1.8G",
+          "dateTimeOriginal": "2023:07:10 16:45:00"
+        },
+        "category": "Calle/Intersección",
+        "groundedFromAnchor": "Plaza Catalina Reynal",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 138.28245242531344,
+          "isOutlier": false,
+          "computedScore": 84,
+          "issues": [],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.455526,
+          -41.189368
+        ]
+      },
+      "properties": {
+        "id": "REF-0023",
+        "coordinates": {
+          "lat": -41.189368,
+          "lng": -71.455526,
+          "corner": "S"
+        },
+        "timestamp": "2023-08-05T13:00:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Harsh midday light at summit."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Lift cables",
+          "shutterStyle": "Heavy wood shutters",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Exposed stone",
+          "urbanElements": {
+            "furniture": "Weather station instruments",
+            "vegetationScore": 0,
+            "architectureStyle": "Mountain masonry"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "REFUGIO LYNCH",
+            "ESTACION METEOROLOGICA"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 100,
+          "shutterSpeed": "1/2000",
+          "focalLength": "24mm",
+          "make": "Canon",
+          "model": "EOS R",
+          "lensModel": "RF 24-105mm",
+          "dateTimeOriginal": "2023:08:05 13:00:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Refugio Lynch",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2603.789390285015,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2604m)"
+          ],
+          "h3Index": "89ce854c00bffff"
+        },
+        "h3Index": "89ce854c00bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.437847,
+          -41.170646
+        ]
+      },
+      "properties": {
+        "id": "REF-0024",
+        "coordinates": {
+          "lat": -41.170646,
+          "lng": -71.437847,
+          "corner": "S"
+        },
+        "timestamp": "2023-02-10T11:00:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Medium",
+          "description": "Clear summer morning light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Concealed underground",
+          "shutterStyle": "Awnings",
+          "treeType": "Garden flowers",
+          "graffiti": "None",
+          "terrain": "Stone walkway",
+          "urbanElements": {
+            "furniture": "Mall directories and benches",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Modern Patagonian commercial"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "LAS TERRAZAS",
+            "OUTDOOR SHOP",
+            "CATEDRAL"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "35mm",
+          "make": "Apple",
+          "model": "iPhone 13",
+          "lensModel": "Wide Camera",
+          "dateTimeOriginal": "2023:02:10 11:00:00"
+        },
+        "category": "Comercial",
+        "groundedFromAnchor": "Shopping Las Terrazas",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 64.59886305710363,
+          "isOutlier": false,
+          "computedScore": 88,
+          "issues": [],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4388,
+          -41.172474
+        ]
+      },
+      "properties": {
+        "id": "REF-0025",
+        "coordinates": {
+          "lat": -41.172474,
+          "lng": -71.4388,
+          "corner": "NW"
+        },
+        "timestamp": "2023-07-22T08:30:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Very Long",
+          "description": "Early morning blue hour transitions to sunrise."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Heavy chairlift cables",
+          "shutterStyle": "Heavy metal gates",
+          "treeType": "Pine",
+          "graffiti": "None",
+          "terrain": "Frozen asphalt",
+          "urbanElements": {
+            "furniture": "Digital clock/thermometer",
+            "vegetationScore": 0.35,
+            "architectureStyle": "Modern lift base"
+          },
+          "temporalWindow": "2021-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "AMANCAY",
+            "BASE",
+            "-2C"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 800,
+          "shutterSpeed": "1/60",
+          "focalLength": "24mm",
+          "make": "Google",
+          "model": "Pixel 6",
+          "lensModel": "Standard Wide",
+          "dateTimeOriginal": "2023:07:22 08:30:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Estación Base Telecabina Amancay",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 261.58501799155647,
+          "isOutlier": true,
+          "computedScore": 90,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 262m)"
+          ],
+          "h3Index": "89ce854c277ffff"
+        },
+        "h3Index": "89ce854c277ffff",
+        "geocodingScore": 90,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438906,
+          -41.169643
+        ]
+      },
+      "properties": {
+        "id": "REF-0026",
+        "coordinates": {
+          "lat": -41.169643,
+          "lng": -71.438906,
+          "corner": "NE"
+        },
+        "timestamp": "2023-03-15T16:00:00Z",
+        "lighting": {
+          "sunPosition": "Northwest",
+          "shadowDirection": "Southeast",
+          "shadowLength": "Medium",
+          "description": "Soft late summer afternoon light."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Legacy cable lines",
+          "shutterStyle": "Rustic wooden blinds",
+          "treeType": "Dense forest behind building",
+          "graffiti": "Patrimonial signage",
+          "terrain": "Natural compact soil",
+          "urbanElements": {
+            "furniture": "Low stone walls",
+            "vegetationScore": 0.6,
+            "architectureStyle": "Early alpine architecture"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "CABLE CARRIL",
+            "ESTACION 1"
+          ],
+          "confidence": 0.92,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/400",
+          "focalLength": "50mm",
+          "make": "Sony",
+          "model": "A7R IV",
+          "lensModel": "50mm f/1.2 GM",
+          "dateTimeOriginal": "2023:03:15 16:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Estación Base Cable Carril",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 178.69691508390977,
+          "isOutlier": true,
+          "computedScore": 92,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 179m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 92,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.451928,
+          -41.185362
+        ]
+      },
+      "properties": {
+        "id": "REF-0027",
+        "coordinates": {
+          "lat": -41.185362,
+          "lng": -71.451928,
+          "corner": "S"
+        },
+        "timestamp": "2023-08-10T12:00:00Z",
+        "lighting": {
+          "sunPosition": "North",
+          "shadowDirection": "South",
+          "shadowLength": "Minimal",
+          "description": "Noon light on a snowy ridge."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Chairlift cable system",
+          "shutterStyle": "Thermal glazing",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Ski run area",
+          "urbanElements": {
+            "furniture": "Outdoor grill and deck",
+            "vegetationScore": 0,
+            "architectureStyle": "Mountain lodge"
+          },
+          "temporalWindow": "2019-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "PARADOR",
+            "PUNTA NEVADA"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "14mm",
+          "make": "DJI",
+          "model": "Pocket 2",
+          "lensModel": "Standard",
+          "dateTimeOriginal": "2023:08:10 12:00:00"
+        },
+        "category": "Restaurante",
+        "groundedFromAnchor": "Parador Punta Nevada",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2066.662793840059,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2067m)"
+          ],
+          "h3Index": "89ce854c07bffff"
+        },
+        "h3Index": "89ce854c07bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.458395,
+          -41.179926
+        ]
+      },
+      "properties": {
+        "id": "REF-0028",
+        "coordinates": {
+          "lat": -41.179926,
+          "lng": -71.458395,
+          "corner": "SW"
+        },
+        "timestamp": "2023-01-25T18:00:00Z",
+        "lighting": {
+          "sunPosition": "West",
+          "shadowDirection": "East",
+          "shadowLength": "Very Long",
+          "description": "Deep summer twilight."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "None",
+          "treeType": "Native low shrubs",
+          "graffiti": "None",
+          "terrain": "Exposed stone peak",
+          "urbanElements": {
+            "furniture": "Iron lookout perimeter",
+            "vegetationScore": 0.1,
+            "architectureStyle": "Natural"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIEDRA DEL CONDOR",
+            "1800 M"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 400,
+          "shutterSpeed": "1/200",
+          "focalLength": "24mm",
+          "make": "Nikon",
+          "model": "Z7",
+          "lensModel": "24-70mm f/2.8 S",
+          "dateTimeOriginal": "2023:01:25 18:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Piedra del Cóndor",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2067.6577723254168,
+          "isOutlier": true,
+          "computedScore": 87,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2068m)"
+          ],
+          "h3Index": "89ce854c39bffff"
+        },
+        "h3Index": "89ce854c39bffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.438798,
+          -41.171432
+        ]
+      },
+      "properties": {
+        "id": "REF-0029",
+        "coordinates": {
+          "lat": -41.171432,
+          "lng": -71.438798,
+          "corner": "E"
+        },
+        "timestamp": "2023-05-20T10:30:00Z",
+        "lighting": {
+          "sunPosition": "Northeast",
+          "shadowDirection": "Southwest",
+          "shadowLength": "Medium",
+          "description": "Crisp autumn morning."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Overhead street cables",
+          "shutterStyle": "Wooden mountain style",
+          "treeType": "Arrayanes",
+          "graffiti": "None",
+          "terrain": "Stone tiles",
+          "urbanElements": {
+            "furniture": "Plaza monument and flower beds",
+            "vegetationScore": 0.4,
+            "architectureStyle": "Traditional Patagonian village"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PLAZA CATALINA",
+            "ESCULTURA",
+            "CATEDRAL"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 100,
+          "shutterSpeed": "1/400",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "Alpha 7C",
+          "lensModel": "35mm f/1.8",
+          "dateTimeOriginal": "2023:05:20 10:30:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Plaza Catalina Reynal",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 175.8967086618674,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 176m)"
+          ],
+          "h3Index": "89ce854c267ffff"
+        },
+        "h3Index": "89ce854c267ffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.455711,
+          -41.18926
+        ]
+      },
+      "properties": {
+        "id": "REF-0030",
+        "coordinates": {
+          "lat": -41.18926,
+          "lng": -71.455711,
+          "corner": "W"
+        },
+        "timestamp": "2023-08-30T15:00:00Z",
+        "lighting": {
+          "sunPosition": "Northwest",
+          "shadowDirection": "Southeast",
+          "shadowLength": "Long",
+          "description": "Afternoon mountain shadow falling over the parador."
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Chairlift lines",
+          "shutterStyle": "Heavy duty wooden shutters",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Rock and snow",
+          "urbanElements": {
+            "furniture": "Terrace railing and ski gear",
+            "vegetationScore": 0,
+            "architectureStyle": "Iconic high-altitude stone building"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "LYNCH",
+            "CERRO CATEDRAL",
+            "BAR"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "28mm",
+          "make": "Canon",
+          "model": "EOS R5",
+          "lensModel": "RF 28-70mm f/2L",
+          "dateTimeOriginal": "2023:08:30 15:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Refugio Lynch",
+        "locationContext": "Cerro Catedral, San Carlos de Bariloche, Argentina",
+        "validation": {
+          "distanceFromCenter": 2603.356997169002,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2603m)"
+          ],
+          "h3Index": "89ce854c00bffff"
+        },
+        "h3Index": "89ce854c00bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    }
+  ]
+}

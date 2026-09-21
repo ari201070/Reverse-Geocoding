@@ -1,0 +1,3637 @@
+[
+  {
+    "id": "IBERA-CP-001",
+    "coordinates": {
+      "lat": -28.5358,
+      "lng": -57.1724,
+      "corner": "Calle Yaguareté y Calle Tuyuyú"
+    },
+    "timestamp": "2023-11-12T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear morning light with shadows cast across the sandy road"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low density on wooden poles",
+      "shutterStyle": "Wooden rustic shutters",
+      "treeType": "Lapacho Rosado",
+      "graffiti": "None observed",
+      "terrain": "Compacted sand and grass",
+      "urbanElements": {
+        "furniture": "Hand-carved wooden bench",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Correntino colonial-rural"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle Yaguareté",
+        "Slow: Animals Crossing"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-002",
+    "coordinates": {
+      "lat": -28.5342,
+      "lng": -57.1715,
+      "corner": "Calle Guasuvirá y Calle Carpincho"
+    },
+    "timestamp": "2023-11-12T12:30:00Z",
+    "lighting": {
+      "sunPosition": "Near Zenith",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High noon sun, minimal shadows visible under eaves"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Traditional dark wood",
+      "treeType": "Palmera Caranday",
+      "graffiti": "Local artisan stencil",
+      "terrain": "Dirt path",
+      "urbanElements": {
+        "furniture": "Information totem (wood)",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Eco-lodge rustic"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Guasuvira",
+        "Hospedaje Ibera"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-003",
+    "coordinates": {
+      "lat": -28.5365,
+      "lng": -57.1738,
+      "corner": "Calle Lobito y Calle Espátula"
+    },
+    "timestamp": "2023-11-12T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting creating deep contrast"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line crossing",
+      "shutterStyle": "Metal bars over wood",
+      "treeType": "Jacarandá",
+      "graffiti": "Small Gauchito Gil sticker",
+      "terrain": "Sandy with low vegetation",
+      "urbanElements": {
+        "furniture": "Traditional iron trash receptacle",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Brick-exposed residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle Lobito",
+        "Vivero Local"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-004",
+    "coordinates": {
+      "lat": -28.5331,
+      "lng": -57.1702,
+      "corner": "Calle Ciervo de los Pantanos y Calle Aguará Guazú"
+    },
+    "timestamp": "2023-11-13T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Crisp morning shadows on textured ground"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead insulated cables",
+      "shutterStyle": "Painted white wood",
+      "treeType": "Ibirá-pitá",
+      "graffiti": "None",
+      "terrain": "Compacted soil",
+      "urbanElements": {
+        "furniture": "Solar powered street light",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Modern sustainable wood cabin"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Ciervo Pantanos",
+        "Zona Protegida"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-005",
+    "coordinates": {
+      "lat": -28.5372,
+      "lng": -57.1751,
+      "corner": "Calle Mainumbí y Calle Miriñay"
+    },
+    "timestamp": "2023-11-13T13:20:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Very Short",
+      "description": "Overhead sun with harsh highlights on clay tiles"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse wiring",
+      "shutterStyle": "No shutters, wide verandas",
+      "treeType": "Ceibo",
+      "graffiti": "Club Social y Deportivo logo",
+      "terrain": "Grassy shoulder",
+      "urbanElements": {
+        "furniture": "Bus stop wooden shelter",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Ranch-style galleried house"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Mainumbi",
+        "Despensa La Familia"
+      ],
+      "confidence": 0.87
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "28mm",
+      "make": "iPhone",
+      "model": "14 Pro"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-006",
+    "coordinates": {
+      "lat": -28.5325,
+      "lng": -57.1764,
+      "corner": "Calle Tacuarí e Iberá"
+    },
+    "timestamp": "2023-11-14T08:45:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Low angle sun illuminating front facades"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Old wooden posts",
+      "shutterStyle": "Green shutters",
+      "treeType": "Lapacho Amarillo",
+      "graffiti": "None",
+      "terrain": "Sandy surface",
+      "urbanElements": {
+        "furniture": "Bicycle rack (wood)",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Traditional plaster and tile"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Iberá",
+        "Entrada Reserva"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "35mm",
+      "make": "Panasonic",
+      "model": "Lumix GH5"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-007",
+    "coordinates": {
+      "lat": -28.5381,
+      "lng": -57.1711,
+      "corner": "Calle Chajá y Calle Garzas"
+    },
+    "timestamp": "2023-11-14T16:15:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium-Long",
+      "description": "Mellow afternoon light with soft shadows"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground)",
+      "shutterStyle": "Sliding wooden panels",
+      "treeType": "Sauce Criollo",
+      "graffiti": "Stencil of Ibera fauna",
+      "terrain": "Earth and gravel",
+      "urbanElements": {
+        "furniture": "Ceramic pot planters",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Contemporary vernacular"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Chaja",
+        "Artesanías El Estero"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "85mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276bdbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-008",
+    "coordinates": {
+      "lat": -28.535,
+      "lng": -57.17,
+      "corner": "Calle Carpincho y Calle Tuyuyú"
+    },
+    "timestamp": "2023-11-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short-Medium",
+      "description": "Strong vertical light with defined edges"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundled telecom wires",
+      "shutterStyle": "Rustic wooden gates",
+      "treeType": "Palo Borracho",
+      "graffiti": "None",
+      "terrain": "Sand and mixed grass",
+      "urbanElements": {
+        "furniture": "Public water fountain (stone)",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Hybrid brick and timber"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Carpincho",
+        "Agua Potable"
+      ],
+      "confidence": 0.9
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "18mm",
+      "make": "Pentax",
+      "model": "K-3 III"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-009",
+    "coordinates": {
+      "lat": -28.5348,
+      "lng": -57.1728,
+      "corner": "Calle Yaguareté y Calle Guasuvirá"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Medium",
+      "description": "Side lighting emphasizing architectural textures"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single electrical drop",
+      "shutterStyle": "Folding wood shutters",
+      "treeType": "Curupí",
+      "graffiti": "None",
+      "terrain": "Sandy crossroad",
+      "urbanElements": {
+        "furniture": "Signpost with arrows",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Colonial Correntino simplified"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Yaguareté",
+        "Centro de Visitantes"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 90D"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-010",
+    "coordinates": {
+      "lat": -28.5369,
+      "lng": -57.176,
+      "corner": "Calle Lobito y Calle Iberá"
+    },
+    "timestamp": "2023-11-16T18:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Sunset lighting with warm orange hues and stretched shadows"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Thick bundle on utility pole",
+      "shutterStyle": "Dark-stained oak",
+      "treeType": "Angico",
+      "graffiti": "None",
+      "terrain": "Grassy path edge",
+      "urbanElements": {
+        "furniture": "Low wooden fence",
+        "vegetationScore": 0.98,
+        "architectureStyle": "Traditional thatch roof cottage"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Lobito",
+        "Posada del Sol"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ZV-E10"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-001-CCP",
+    "coordinates": {
+      "lat": -28.534212,
+      "lng": -57.172456,
+      "corner": "Calle 6 y Calle 3"
+    },
+    "timestamp": "2023-11-15T10:45:00-03:00",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium-long",
+      "description": "Bright morning light with soft shadows cast by low-rise wooden structures."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, high-tension lines on wooden poles",
+      "shutterStyle": "Rustic wooden slats",
+      "treeType": "Lapacho Negro and Yatay Palms",
+      "graffiti": "Environmental conservation slogans",
+      "terrain": "Sandy reddish soil typical of the region",
+      "urbanElements": {
+        "furniture": "Hand-carved wooden benches",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Vernacular Correntino with clay tiles"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE 6",
+        "VIVERO IBERÁ",
+        "PRODUCTOS ARTESANALES"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-002-CCP",
+    "coordinates": {
+      "lat": -28.53589,
+      "lng": -57.17112,
+      "corner": "Calle Yaguareté y Calle Carpincho"
+    },
+    "timestamp": "2023-11-15T13:15:00-03:00",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday sun creating high contrast on the sandy road surface."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None, underground conduits near the lodge area",
+      "shutterStyle": "Woven reed mats",
+      "treeType": "Sauce Criollo",
+      "graffiti": "Small stencil of a Marsh Deer",
+      "terrain": "Compact sand and grass patches",
+      "urbanElements": {
+        "furniture": "Post-and-rail wooden fencing",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Eco-Lodge aesthetic with thatched roofs"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE YAGUARETÉ",
+        "POSADA DEL ESTERO"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-003-CCP",
+    "coordinates": {
+      "lat": -28.53215,
+      "lng": -57.17388,
+      "corner": "Av. General San Martín y Calle 1"
+    },
+    "timestamp": "2023-11-15T17:30:00-03:00",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Golden hour lighting with long shadows stretching across the wide unpaved avenue."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line crossing the intersection",
+      "shutterStyle": "Painted metal rollers",
+      "treeType": "Jacarandá",
+      "graffiti": "Club Atlético Mercedes emblem on a low wall",
+      "terrain": "Deep red earth",
+      "urbanElements": {
+        "furniture": "Stone curb markers",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Traditional brick masonry with galleries"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. GRAL. SAN MARTIN",
+        "ALMACEN EL GAUCHO",
+        "HIELO Y CARNADA"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a96276b57ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-004-CCP",
+    "coordinates": {
+      "lat": -28.53655,
+      "lng": -57.17452,
+      "corner": "Calle de la Laguna y Calle 5"
+    },
+    "timestamp": "2023-11-15T09:00:00-03:00",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Soft morning mist dissipating with side-lighting from the lagoon side."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, bundled near corner post",
+      "shutterStyle": "None, open veranda",
+      "treeType": "Ceibo (National Flower)",
+      "graffiti": "Hand-painted bird identification guide on a wall",
+      "terrain": "Wet sand and aquatic grass",
+      "urbanElements": {
+        "furniture": "Wooden bollards",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Stilt-house influence, elevated floors"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE DE LA LAGUNA",
+        "CENTRO DE INTERPRETACION"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/200s",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-005-CCP",
+    "coordinates": {
+      "lat": -28.53334,
+      "lng": -57.17022,
+      "corner": "Calle Ciervo de los Pantanos y Calle 2"
+    },
+    "timestamp": "2023-11-15T15:20:00-03:00",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Strong afternoon sun filtering through dense tree canopy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Suspended between tall palm trunks",
+      "shutterStyle": "Heavy wooden shutters with iron latches",
+      "treeType": "Espinitos and Ibira-pitá",
+      "graffiti": "Gauchito Gil red ribbons on a corner tree",
+      "terrain": "Dusty soil with dry leaves",
+      "urbanElements": {
+        "furniture": "Concrete power pole with light fixture",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Neocolonial rural house"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CIERVO DE LOS PANTANOS",
+        "DESPACIO NIÑOS JUGANDO"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "85mm",
+      "make": "Sony",
+      "model": "A7R IV"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-006-CCP",
+    "coordinates": {
+      "lat": -28.53101,
+      "lng": -57.17511,
+      "corner": "Calle Aguará Guazú y Calle 10"
+    },
+    "timestamp": "2023-11-15T11:50:00-03:00",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Direct vertical lighting, shadows concentrated under eaves."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Wrought iron grills",
+      "treeType": "Palo Borracho",
+      "graffiti": "Stencil of a Jabirú stork",
+      "terrain": "Grass-covered path",
+      "urbanElements": {
+        "furniture": "Public trash bin made of recycled wood",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Modern sustainable architecture, timber-framed"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE AGUARA GUAZU",
+        "ZONA DE RESERVA"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "35mm",
+      "make": "Panasonic",
+      "model": "LUMIX S5"
+    },
+    "h3Index": "89a96276b0bffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-007-CCP",
+    "coordinates": {
+      "lat": -28.53722,
+      "lng": -57.17289,
+      "corner": "Calle 4 y Calle 7"
+    },
+    "timestamp": "2023-11-15T18:45:00-03:00",
+    "lighting": {
+      "sunPosition": "West-Southwest",
+      "shadowDirection": "East-Northeast",
+      "shadowLength": "Infinite",
+      "description": "Twilight conditions with a purple-orange sky reflecting on windows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Two parallel wires overhead",
+      "shutterStyle": "Internal fabric curtains visible",
+      "treeType": "Ombú (isolated)",
+      "graffiti": "Small 'Iberá' logo in green paint",
+      "terrain": "Hard-packed clay",
+      "urbanElements": {
+        "furniture": "Wooden utility pole",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Simple rectangular adobe house with tin roof"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE 4",
+        "CALLE 7"
+      ],
+      "confidence": 0.78
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 1600,
+      "shutterSpeed": "1/60s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS 90D"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-008-CCP",
+    "coordinates": {
+      "lat": -28.53288,
+      "lng": -57.17188,
+      "corner": "Calle 8 y Av. San Martín"
+    },
+    "timestamp": "2023-11-15T07:30:00-03:00",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning light hitting the front of the local pharmacy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Converging at a transformer post",
+      "shutterStyle": "White painted wood",
+      "treeType": "Yellow Lapacho",
+      "graffiti": "Political poster for 'Intendente Pellegrini'",
+      "terrain": "Sand with drainage ditches on sides",
+      "urbanElements": {
+        "furniture": "Bicycle rack made of logs",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Early 20th-century rural commercial"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACIA PELLEGRINI",
+        "AV. SAN MARTIN",
+        "CALLE 8"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/160s",
+      "focalLength": "18mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276b57ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-009-CCP",
+    "coordinates": {
+      "lat": -28.53505,
+      "lng": -57.16955,
+      "corner": "Calle Garzas y Calle 2"
+    },
+    "timestamp": "2023-11-15T14:40:00-03:00",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short-Medium",
+      "description": "High afternoon temperature haze visible over the road surface."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal single strand",
+      "shutterStyle": "Aluminum silver frames",
+      "treeType": "Chañar",
+      "graffiti": "None",
+      "terrain": "Red sand and gravel",
+      "urbanElements": {
+        "furniture": "Hand-painted directional signpost",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Cottage style with brick chimneys"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE GARZAS",
+        "A LA LAGUNA ->"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A6400"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-010-CCP",
+    "coordinates": {
+      "lat": -28.53199,
+      "lng": -57.17622,
+      "corner": "Calle 9 y Calle 1"
+    },
+    "timestamp": "2023-11-15T16:10:00-03:00",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Medium-Long",
+      "description": "Warm light illuminating a corner store facade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle at corner",
+      "shutterStyle": "Dark green painted wood",
+      "treeType": "Paraíso",
+      "graffiti": "Logo of 'Club Social y Deportivo Carlos Pellegrini'",
+      "terrain": "Compacted earth",
+      "urbanElements": {
+        "furniture": "Iron mailbox",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Standard Corrientes provincial house with overhang"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE 9",
+        "ROTISERIA DOÑA ROSA",
+        "EMPANADAS"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Pentax",
+      "model": "K-3 III"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-001",
+    "coordinates": {
+      "lat": -28.5342,
+      "lng": -57.1721,
+      "corner": "Calle Yatay y Calle Miriñay"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear morning sky with high solar intensity typical of subtropical spring."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse overhead power lines on wooden poles",
+      "shutterStyle": "Traditional wooden shutters on brick masonry",
+      "treeType": "Mature Lapacho Negro in bloom",
+      "graffiti": "Hand-painted mural of a Yacaré",
+      "terrain": "Fine red sandy soil with grass verges",
+      "urbanElements": {
+        "furniture": "Rustic wooden street signpost",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Colonial Correntina with shaded galleries"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle Yatay",
+        "Calle Miriñay",
+        "Velocidad Max 20"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-002",
+    "coordinates": {
+      "lat": -28.5338,
+      "lng": -57.1745,
+      "corner": "Calle Iberá y Calle Guasú"
+    },
+    "timestamp": "2023-12-20T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting with long stretched shadows across the sandy road."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single fiber optic line crossing diagonally",
+      "shutterStyle": "Heavy timber shutters, dark stained",
+      "treeType": "Yatay Palm species",
+      "graffiti": "None, clean whitewashed walls",
+      "terrain": "Hard-packed earth and sand mix",
+      "urbanElements": {
+        "furniture": "Recycling bin with Ibera Park logo",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Modern rustic eco-lodge style"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Posada del Ibera",
+        "Calle Guasu"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-003",
+    "coordinates": {
+      "lat": -28.535,
+      "lng": -57.173,
+      "corner": "Calle Aguapey y Calle Tacuara"
+    },
+    "timestamp": "2023-06-12T12:15:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Midday winter sun, relatively low angle but direct vertical shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multiple utility lines clustered near transformer",
+      "shutterStyle": "White painted metal shutters",
+      "treeType": "Jacarandá with fern-like foliage",
+      "graffiti": "Small stencil of a Marsh Deer",
+      "terrain": "Red clay road surface",
+      "urbanElements": {
+        "furniture": "Stone bench under tree canopy",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Traditional thatch-roofed quincho nearby"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Aguapey",
+        "Artesanias Local"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "24mm",
+      "make": "Nikon",
+      "model": "Z7 II"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-004",
+    "coordinates": {
+      "lat": -28.5332,
+      "lng": -57.1715,
+      "corner": "Calle Miriñay y Calle Guasú"
+    },
+    "timestamp": "2023-09-05T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning light filtering through dense tree canopy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead lines obscured by tree branches",
+      "shutterStyle": "Green folding wooden blinds",
+      "treeType": "Ombú tree on the corner",
+      "graffiti": "Faded club logo of Mandiyú de Corrientes",
+      "terrain": "Slightly flooded sandy path",
+      "urbanElements": {
+        "furniture": "Low wooden fence boundary",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Simple brick bungalow"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Mirinay",
+        "Cuidado Animales Libres"
+      ],
+      "confidence": 0.87
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "85mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-005",
+    "coordinates": {
+      "lat": -28.5361,
+      "lng": -57.1752,
+      "corner": "Calle Tacuara y Calle Yatay"
+    },
+    "timestamp": "2023-02-10T14:20:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Harsh afternoon sun with high contrast and sharp shadow edges."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Clean skyline, underground services in this sector",
+      "shutterStyle": "Internal rollers visible through glass",
+      "treeType": "Flowering Ceibo",
+      "graffiti": "Welcome to Carlos Pellegrini sign",
+      "terrain": "Dry sand with tire tracks",
+      "urbanElements": {
+        "furniture": "Solar powered street light",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Minimalist concrete and glass tourist center"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Tacuara",
+        "Informacion Turistica"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-006",
+    "coordinates": {
+      "lat": -28.5375,
+      "lng": -57.1768,
+      "corner": "Calle Iberá y Calle Aguapey"
+    },
+    "timestamp": "2023-04-22T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Increasing",
+      "description": "Softening afternoon light with warm orange tones."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Two copper wires sagging slightly",
+      "shutterStyle": "Rustic shutters made of recycled timber",
+      "treeType": "Palo Borracho with thorny trunk",
+      "graffiti": "Local artisan cooperative logo",
+      "terrain": "Grassy path with central sand track",
+      "urbanElements": {
+        "furniture": "Hand-carved wooden trash bin",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Vernacular Corrientes ranch-style"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle Ibera",
+        "Cooperativa"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 200,
+      "shutterSpeed": "1/2000",
+      "focalLength": "50mm",
+      "make": "Olympus",
+      "model": "E-M1 Mark III"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-007",
+    "coordinates": {
+      "lat": -28.5325,
+      "lng": -57.1702,
+      "corner": "Calle Miriñay e Iberá"
+    },
+    "timestamp": "2023-08-15T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Medium",
+      "description": "Bright winter sun, high visibility, very few clouds."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Electrical riser on concrete pole",
+      "shutterStyle": "No shutters, wide porch instead",
+      "treeType": "Native citrus tree",
+      "graffiti": "Club Atletico Huracan Corrientes tag",
+      "terrain": "Packed dirt and scattered pebbles",
+      "urbanElements": {
+        "furniture": "Bus stop shelter with thatch roof",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Hybrid modern-rural brickwork"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Ibera",
+        "Bus Stop"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "18mm",
+      "make": "Sony",
+      "model": "A6400"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-008",
+    "coordinates": {
+      "lat": -28.5312,
+      "lng": -57.1689,
+      "corner": "Calle Guasú y Calle Tacuara"
+    },
+    "timestamp": "2023-10-30T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Clear blue sky, low morning sun causing glare on sandy surfaces."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cross-street tension wires",
+      "shutterStyle": "Dark blue painted shutters",
+      "treeType": "Bamboo thicket (Tacuara)",
+      "graffiti": "None",
+      "terrain": "Loose sand",
+      "urbanElements": {
+        "furniture": "Old iron water pump (decorative)",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Restored heritage building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Guasu",
+        "Tacuara",
+        "Calle Sin Salida"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "5D Mark IV"
+    },
+    "h3Index": "89a96276b43ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-009",
+    "coordinates": {
+      "lat": -28.5394,
+      "lng": -57.1781,
+      "corner": "Calle Yatay y Calle Aguapey"
+    },
+    "timestamp": "2023-01-05T13:00:00Z",
+    "lighting": {
+      "sunPosition": "Overhead",
+      "shadowDirection": "Minimal",
+      "shadowLength": "Very Short",
+      "description": "Extreme summer heat, vertical sun, minimal shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single insulated cable to house",
+      "shutterStyle": "Sliding wooden panels",
+      "treeType": "Young Lapacho Rosado",
+      "graffiti": "Wildlife conservation sticker",
+      "terrain": "Bleached white sand",
+      "urbanElements": {
+        "furniture": "Wooden bollards at corner",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Eco-friendly elevated structure"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Yatay",
+        "Aguapey"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/16.0",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "24mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276b9bffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CP-010",
+    "coordinates": {
+      "lat": -28.5408,
+      "lng": -57.1795,
+      "corner": "Acceso Carlos Pellegrini y Calle Iberá"
+    },
+    "timestamp": "2023-03-20T15:30:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium-Long",
+      "description": "Hazy afternoon sun due to humidity from the wetlands."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Main distribution lines on high poles",
+      "shutterStyle": "Black iron bars over windows",
+      "treeType": "Large Tipa tree",
+      "graffiti": "Welcome mural with Capybaras",
+      "terrain": "Paved access road meeting sandy street",
+      "urbanElements": {
+        "furniture": "Welcome portal structure (Wood/Stone)",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Gateway monumental architecture"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Colonia Carlos Pellegrini",
+        "Bienvenidos"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/160",
+      "focalLength": "16mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89a96276867ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": " Ibera-CCP-001",
+    "coordinates": {
+      "lat": -28.535278,
+      "lng": -57.172222,
+      "corner": "San Martin y Calle 12 de Octubre, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T10:45:00-03:00",
+    "lighting": {
+      "sunPosition": "Northeast at 42 degrees elevation",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "High contrast sunlight typical of late spring in the subtropics, casting sharp shadows on sandy roads."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse single-wire power lines with wooden poles",
+      "shutterStyle": "Rustic wooden blinds",
+      "treeType": "Lapacho Rosado in full foliage",
+      "graffiti": "Stencil of Gauchito Gil with red ribbons",
+      "terrain": "Compact red sandy soil (tierra colorada) with grass patches",
+      "urbanElements": {
+        "furniture": "Hand-painted wooden signpost with directional arrows",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Vernacular Correntina with deep galleries and wooden columns"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE SAN MARTIN",
+        "DESPENSA EL CIERVO",
+        "ARTESANIAS LOCALES"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CCP-002",
+    "coordinates": {
+      "lat": -28.536111,
+      "lng": -57.171389,
+      "corner": "Guarani y Belgrano, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T18:20:00-03:00",
+    "lighting": {
+      "sunPosition": "West-Northwest at 12 degrees elevation",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Very Long",
+      "description": "Golden hour lighting with warm amber tones reflecting off the sandy street surface."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low hanging telecommunication wires with bird deterrents",
+      "shutterStyle": "Traditional metal rolling gates for small shop",
+      "treeType": "Jacaranda with purple blossoms",
+      "graffiti": "Mandiyu football club logo in faded blue and white",
+      "terrain": "Soft sand with heavy vehicle tracks",
+      "urbanElements": {
+        "furniture": "Concrete waste bin with iron frame",
+        "vegetationScore": 0.72,
+        "architectureStyle": "Single-story brick house with exposed joints"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "PARADA COLECTIVO",
+        "PELLEGRINI-MERCEDES",
+        "QUEREMOS EL HUMEDAL"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CON-003",
+    "coordinates": {
+      "lat": -28.391667,
+      "lng": -57.886111,
+      "corner": "Sarmiento y 25 de Mayo, Concepcion del Yaguarete Cora"
+    },
+    "timestamp": "2023-11-16T12:00:00-03:00",
+    "lighting": {
+      "sunPosition": "Zenith-North at 82 degrees elevation",
+      "shadowDirection": "Minimal Southward",
+      "shadowLength": "Ultra Short",
+      "description": "Direct midday sun with vertical shadows, high heat distortion visible on horizons."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle of power lines near transformer pole",
+      "shutterStyle": "Painted wooden shutters in colonial yellow",
+      "treeType": "Ibirapita with dense green canopy",
+      "graffiti": "Leyes de los Esteros mural",
+      "terrain": "Mix of broken sidewalk tiles and red clay",
+      "urbanElements": {
+        "furniture": "Old cast iron street lamp pole",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Colonial revival with ornamental cornices"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE SARMIENTO",
+        "MUSEO HISTORICO",
+        "VIVA CORRIENTES"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a963ce88fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CCP-004",
+    "coordinates": {
+      "lat": -28.533889,
+      "lng": -57.174167,
+      "corner": "Itati y Las Garzas, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T07:30:00-03:00",
+    "lighting": {
+      "sunPosition": "East at 15 degrees elevation",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Soft morning light with misty atmosphere typical of the wetland vicinity."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None, underground service in this eco-zone segment",
+      "shutterStyle": "Rustic thatch screen curtains",
+      "treeType": "Yatay Palm with epiphytes",
+      "graffiti": "Protect the Aguara Guazu stencil",
+      "terrain": "Lush grass verge transitioning to sandy path",
+      "urbanElements": {
+        "furniture": "Carved stone bench near the trailhead",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Eco-lodge style with timber and local stone"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SENDEROS LAGUNA",
+        "SILENCIO POR FAVOR",
+        "ITUZAINGO 120KM"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 160,
+      "shutterSpeed": "1/200s",
+      "focalLength": "85mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-LOR-005",
+    "coordinates": {
+      "lat": -27.766667,
+      "lng": -57.266667,
+      "corner": "9 de Julio y Rivadavia, Loreto"
+    },
+    "timestamp": "2023-11-17T15:45:00-03:00",
+    "lighting": {
+      "sunPosition": "West at 35 degrees elevation",
+      "shadowDirection": "East",
+      "shadowLength": "Intermediate",
+      "description": "Strong afternoon sun with harsh glare from white-washed walls."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Twin copper wires on concrete poles",
+      "shutterStyle": "Iron security bars over wood shutters",
+      "treeType": "Large Palo Borracho with thorny trunk",
+      "graffiti": "Local political party acronym 'ECO'",
+      "terrain": "Old uneven pavement with weed growth",
+      "urbanElements": {
+        "furniture": "Public water tap in the corner for community use",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Simple brick structure with corrugated iron roof"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE 9 DE JULIO",
+        "PANADERIA DON LUIS",
+        "ABIERTOS"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89a94406a2bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CCP-006",
+    "coordinates": {
+      "lat": -28.537222,
+      "lng": -57.170278,
+      "corner": "Los Gauchos y Mercedes, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T11:15:00-03:00",
+    "lighting": {
+      "sunPosition": "Northeast at 55 degrees elevation",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "High sun intensity, saturating the colors of the local flora."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line fiber optic",
+      "shutterStyle": "None, open veranda style",
+      "treeType": "Ceibo (National flower) in bloom",
+      "graffiti": "Logo of the local cooperative",
+      "terrain": "Sandy road with clay edges",
+      "urbanElements": {
+        "furniture": "Information totem for Ibera Park",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Tourism info center with thatched roof (quincho)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CENTRO DE INTERPRETACION",
+        "IBERA ES VIDA",
+        "BIENVENIDOS"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "LUMIX S5"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-MER-007",
+    "coordinates": {
+      "lat": -29.183333,
+      "lng": -58.066667,
+      "corner": "Alvear y San Martin, Mercedes"
+    },
+    "timestamp": "2023-11-18T16:30:00-03:00",
+    "lighting": {
+      "sunPosition": "West at 25 degrees elevation",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Late afternoon sun filtering through dense urban trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Messy overhead cable bundles typical of larger towns",
+      "shutterStyle": "Heavy metal roller shutters",
+      "treeType": "Ancient Tipa trees along the sidewalk",
+      "graffiti": "Club Comunicaciones de Mercedes logo",
+      "terrain": "Grey concrete sidewalk and asphalt road",
+      "urbanElements": {
+        "furniture": "Steel traffic sign post with street names",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Spanish colonial with ornate plasterwork"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "ALVEAR 800",
+        "FARMACIA IBERA",
+        "TURISMO"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 200,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A6400"
+    },
+    "h3Index": "89a9601893bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CCP-008",
+    "coordinates": {
+      "lat": -28.538333,
+      "lng": -57.175556,
+      "corner": "Costanera y Calle Sin Nombre, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T19:00:00-03:00",
+    "lighting": {
+      "sunPosition": "West at 5 degrees elevation",
+      "shadowDirection": "East",
+      "shadowLength": "Extreme",
+      "description": "Sunset lighting, deep orange sky reflected in puddles after rain."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Wooden slats on a porch cabin",
+      "treeType": "Sauce Criollo (Native Willow)",
+      "graffiti": "Small carved initials on a wooden post",
+      "terrain": "Wet sand and marshy vegetation",
+      "urbanElements": {
+        "furniture": "Wooden lookout pier entrance",
+        "vegetationScore": 0.98,
+        "architectureStyle": "Elevated wooden stilt house"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "NAVEGACION TURISTICA",
+        "AVISTAJE DE AVES",
+        "PROHIBIDO PESCAR"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/60s",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CON-009",
+    "coordinates": {
+      "lat": -28.3925,
+      "lng": -57.887222,
+      "corner": "Belgrano y Itati, Concepcion del Yaguarete Cora"
+    },
+    "timestamp": "2023-11-16T14:20:00-03:00",
+    "lighting": {
+      "sunPosition": "Northwest at 60 degrees elevation",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "Harsh afternoon light, high ultraviolet presence."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Strung along white concrete poles",
+      "shutterStyle": "Wood with peeling green paint",
+      "treeType": "Paraiso tree providing dappled shade",
+      "graffiti": "VIVA EL CHAMAME",
+      "terrain": "Hard-packed red earth",
+      "urbanElements": {
+        "furniture": "Plastic chairs placed outside on the sidewalk",
+        "vegetationScore": 0.58,
+        "architectureStyle": "Continuous facade house with large central door"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE BELGRANO",
+        "TALLER MECANICO",
+        "HIELO"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "Z6"
+    },
+    "h3Index": "89a963ce88fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "Ibera-CCP-010",
+    "coordinates": {
+      "lat": -28.534444,
+      "lng": -57.173333,
+      "corner": "Santa Rita y Los combatientes, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T09:30:00-03:00",
+    "lighting": {
+      "sunPosition": "East-Northeast at 30 degrees elevation",
+      "shadowDirection": "West-Southwest",
+      "shadowLength": "Moderate-Long",
+      "description": "Clear morning light with vibrant greens in the surrounding gardens."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single insulated cable",
+      "shutterStyle": "None, screen mesh for insects",
+      "treeType": "Guaranina (Native shrub)",
+      "graffiti": "Protect the wetlands message in Guaraní",
+      "terrain": "Grass-covered residential path",
+      "urbanElements": {
+        "furniture": "Mailbox made of a recycled oil drum",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Modern eco-cottage with glass and wood"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "POSADA DE LA LAGUNA",
+        "INGRESO EXCLUSIVO",
+        "ESTACIONAMIENTO"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "40mm",
+      "make": "Olympus",
+      "model": "E-M1"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-001",
+    "coordinates": {
+      "lat": -28.5342,
+      "lng": -57.1764,
+      "corner": "Av. San Martín y Calle Gral. Paz, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T09:30:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 72, Elevation 41",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Clear morning light characteristic of early summer in Corrientes, casting soft shadows across the sandy road."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low-density single power line on wooden poles",
+      "shutterStyle": "Traditional rustic wood shutters (postigos)",
+      "treeType": "Lapacho Rosado in bloom",
+      "graffiti": "None; small stencil of a Yaguareté on a wooden post",
+      "terrain": "Sandy soil (tierra arenosa)",
+      "urbanElements": {
+        "furniture": "Hand-carved wooden bench",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Corrientes rural colonial with galleries"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. SAN MARTIN",
+        "POSADA DEL IBERA",
+        "BIENVENIDOS"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-002",
+    "coordinates": {
+      "lat": -28.5361,
+      "lng": -57.1755,
+      "corner": "Calle Carpincho y Yaguareté, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 285, Elevation 28",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting illuminating the facades; shadows stretching across the unpaved intersection."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None; underground service connection",
+      "shutterStyle": "Wrought iron bars (rejas) over wooden frames",
+      "treeType": "Ibirá-pitá with wide canopy",
+      "graffiti": "Faded sticker of 'Club Atlético Mercedes'",
+      "terrain": "Compact red earth and sand",
+      "urbanElements": {
+        "furniture": "Artisanal wooden waste bin",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Rustic wood and thatch (quincho) roofing"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CARPINCHO",
+        "ARTESANIAS LOCALES"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-CON-003",
+    "coordinates": {
+      "lat": -28.3912,
+      "lng": -57.8864,
+      "corner": "Sarmiento y San Martín, Concepción del Yaguareté Corá"
+    },
+    "timestamp": "2023-11-16T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 0, Elevation 78",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Minimal",
+      "description": "High noon solar position; harsh vertical lighting typical of Corrientes mid-day."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead cross-hatched telephone wires",
+      "shutterStyle": "Tall colonial wooden shutters",
+      "treeType": "Jacarandá",
+      "graffiti": "Gauchito Gil red ribbon on a corner tree",
+      "terrain": "Red clay sidewalk (vereda de ladrillo)",
+      "urbanElements": {
+        "furniture": "Old cast iron street lamp",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Neo-colonial Italianate"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SARMIENTO",
+        "ALMACEN DON LUIS",
+        "COCA-COLA"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "24mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a963ce8bbffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-004",
+    "coordinates": {
+      "lat": -28.5328,
+      "lng": -57.1772,
+      "corner": "Mburucuyá y Av. San Martín, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-16T08:15:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 85, Elevation 20",
+      "shadowDirection": "West",
+      "shadowLength": "Extremely Long",
+      "description": "Low angle early morning sun highlighting the texture of the Mburucuyá vines on the fences."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundle of 3 insulated cables",
+      "shutterStyle": "No shutters; large open glass with wood frames",
+      "treeType": "Timbó Blanco",
+      "graffiti": "None",
+      "terrain": "Sandy path with grass patches",
+      "urbanElements": {
+        "furniture": "National Park informative sign",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Sustainable eco-lodge style"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE MBURUCUYA",
+        "CENTRO DE INTERPRETACION"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 400,
+      "shutterSpeed": "1/2000",
+      "focalLength": "85mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-LOR-005",
+    "coordinates": {
+      "lat": -27.7685,
+      "lng": -57.2741,
+      "corner": "San Martín y Belgrano, Loreto"
+    },
+    "timestamp": "2023-11-17T17:30:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 260, Elevation 15",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Late afternoon shadows projecting long silhouettes of the chapel across the square."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Disorganized tangled copper wires",
+      "shutterStyle": "Painted blue wooden shutters",
+      "treeType": "Palmera Caranday",
+      "graffiti": "Electoral poster: 'Vota Corrientes'",
+      "terrain": "Dirt and sparse gravel",
+      "urbanElements": {
+        "furniture": "Cement square bench",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Simplified rural classic"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LORETO",
+        "MUNICIPALIDAD",
+        "CUIDE LA LIMPIEZA"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "28mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a94406bcbffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-006",
+    "coordinates": {
+      "lat": -28.535,
+      "lng": -57.174,
+      "corner": "Calle de la Laguna y Ciervo de los Pantanos, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-18T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 90, Elevation 50",
+      "shadowDirection": "West",
+      "shadowLength": "Short",
+      "description": "Bright direct sunlight reflecting off the nearby lagoon surface."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Rustic bamboo blinds",
+      "treeType": "Sauce Criollo",
+      "graffiti": "Small 'Iberá' logo sticker",
+      "terrain": "Soft sand and wetland grass",
+      "urbanElements": {
+        "furniture": "Wooden pier entrance railing",
+        "vegetationScore": 0.98,
+        "architectureStyle": "Elevated wooden structure (palafito style)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "ACCESO LAGUNA",
+        "SOLO PEATONAL"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "16mm",
+      "make": "Sony",
+      "model": "ILCE-7RM4"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-SM-007",
+    "coordinates": {
+      "lat": -27.9942,
+      "lng": -57.5891,
+      "corner": "9 de Julio y San Martín, San Miguel"
+    },
+    "timestamp": "2023-11-19T14:20:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 315, Elevation 55",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate",
+      "description": "Strong afternoon sun, creating high contrast between shaded galleries and sunlit street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low hanging power lines over the sidewalk",
+      "shutterStyle": "Green metal shutters",
+      "treeType": "Naranjo amargo",
+      "graffiti": "Stencil of a Guarani artisan",
+      "terrain": "Stone pavement (adoquín) and dirt",
+      "urbanElements": {
+        "furniture": "Wrought iron trash bin",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Early 20th century brick colonial"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "9 DE JULIO",
+        "FARMACIA SAN MIGUEL",
+        "TURISMO IBERA"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/3.5",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "40mm",
+      "make": "Panasonic",
+      "model": "LUMIX S5"
+    },
+    "h3Index": "89a944b2b37ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-008",
+    "coordinates": {
+      "lat": -28.5368,
+      "lng": -57.178,
+      "corner": "Gral. Paz y Ciervo de los Pantanos, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-20T11:15:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 30, Elevation 65",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Clear midday sky, intense light saturated colors of the local flora."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "Wooden slats (estilo campo)",
+      "treeType": "Aguaribay",
+      "graffiti": "None",
+      "terrain": "Pure white sand",
+      "urbanElements": {
+        "furniture": "Directional wooden arrow signs",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Contemporary eco-sustainable timber"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "GRAL. PAZ",
+        "CIERVO DE LOS PANTANOS"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "35mm",
+      "make": "Olympus",
+      "model": "E-M1III"
+    },
+    "h3Index": "89a96276b8bffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-009",
+    "coordinates": {
+      "lat": -28.5315,
+      "lng": -57.1805,
+      "corner": "Acceso RP 40 y Av. San Martín, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-21T18:00:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 250, Elevation 8",
+      "shadowDirection": "East",
+      "shadowLength": "Infinite",
+      "description": "Sunset phase, warm orange hues, the horizon is the main light source."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy power lines entering the town",
+      "shutterStyle": "Sliding wood panels",
+      "treeType": "Ceibo (National flower)",
+      "graffiti": "Hand-painted sign: 'Iberá Libre de Represas'",
+      "terrain": "Gravel and mud mix",
+      "urbanElements": {
+        "furniture": "Police checkpoint small cabin",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Functionalist brick"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RUTA PROVINCIAL 40",
+        "BIENVENIDOS A PELLEGRINI"
+      ],
+      "confidence": 0.87
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/60",
+      "focalLength": "24mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89a96276b17ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-PEL-010",
+    "coordinates": {
+      "lat": -28.5345,
+      "lng": -57.1725,
+      "corner": "Calle de los Pescadores y Av. San Martín, Colonia Carlos Pellegrini"
+    },
+    "timestamp": "2023-11-22T13:40:00Z",
+    "lighting": {
+      "sunPosition": "Azimuth 330, Elevation 70",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Very Short",
+      "description": "Early afternoon sun, high temperature haze visible on the sandy road."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimalist single wire",
+      "shutterStyle": "Foldable wood shutters",
+      "treeType": "Guayacán",
+      "graffiti": "Small emblem of 'Gobernación de Corrientes'",
+      "terrain": "Loose sand with dry leaves",
+      "urbanElements": {
+        "furniture": "Traditional horse hitching post (palenque)",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Modern lodge with local materials"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE DE LOS PESCADORES",
+        "PROHIBIDO CAZAR"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ZV-E10"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-001",
+    "coordinates": {
+      "lat": -28.53612,
+      "lng": -57.17154,
+      "corner": "Calle 10 y Calle 11"
+    },
+    "timestamp": "2023-11-15T09:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Bright morning light with clear sky, high contrast shadows on sandy ground."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low density, supported by weathered wooden poles",
+      "shutterStyle": "Rustic wooden blinds with iron hinges",
+      "treeType": "Lapacho Rosado in bloom",
+      "graffiti": "None, well-maintained lime-painted wall",
+      "terrain": "Reddish sandy soil with short grass edges",
+      "urbanElements": {
+        "furniture": "Rustic wooden bench made of local quebracho",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Traditional Correntinian colonial with deep galleries"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle 10",
+        "Posada del Iberá",
+        "Bienvenidos"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-002",
+    "coordinates": {
+      "lat": -28.53488,
+      "lng": -57.17321,
+      "corner": "San Martín y Gdor. Galván"
+    },
+    "timestamp": "2023-11-15T12:15:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "Directly South",
+      "shadowLength": "Short",
+      "description": "Midday sun casting vertical shadows under the eaves of the houses."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Organized clusters near the local cooperative transformer",
+      "shutterStyle": "Traditional vertical wooden slats, painted white",
+      "treeType": "Pindo Palm",
+      "graffiti": "Small stencil of Gauchito Gil on a corner post",
+      "terrain": "Hard-packed clay and sand mixture",
+      "urbanElements": {
+        "furniture": "Hand-painted ceramic garbage bin with floral motifs",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Mid-20th century brick construction with corrugated metal roof"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Martín",
+        "Despensa El Estero",
+        "Hielo"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 125,
+      "shutterSpeed": "1/1000",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-003",
+    "coordinates": {
+      "lat": -28.53745,
+      "lng": -57.17012,
+      "corner": "Calle 1 y Calle 8"
+    },
+    "timestamp": "2023-11-15T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting illuminating the facades with orange hues."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line crossing the intersection diagonally",
+      "shutterStyle": "None, large glass panes with mosquito nets",
+      "treeType": "Jacarandá",
+      "graffiti": "Club Atlético Mandiyú logo on a low fence",
+      "terrain": "Natural grassy path with tire tracks",
+      "urbanElements": {
+        "furniture": "Concrete vertical electricity pole",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Eco-lodge style using local stones and thatch roofing"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle 1",
+        "Artesanías del Payubre"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-004",
+    "coordinates": {
+      "lat": -28.53322,
+      "lng": -57.17544,
+      "corner": "Av. Iberá y Calle 12"
+    },
+    "timestamp": "2023-11-16T08:20:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Low sun piercing through dense tree canopy, creating dappled shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundled fiber optic cables on new wooden poles",
+      "shutterStyle": "Foldable heavy timber shutters",
+      "treeType": "Ibirá Pitá",
+      "graffiti": "None",
+      "terrain": "Loose sand with high moisture content from morning dew",
+      "urbanElements": {
+        "furniture": "Information totem for Iberá National Park",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Modern sustainable architecture with recycled wood"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Iberá",
+        "Centro de Visitantes",
+        "PN Iberá"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/320",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-005",
+    "coordinates": {
+      "lat": -28.53555,
+      "lng": -57.17288,
+      "corner": "Calle 5 y Calle 14"
+    },
+    "timestamp": "2023-11-16T15:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate",
+      "description": "Harsh afternoon sun, high glare on reflective surfaces."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multi-layered cables with visible tensioners",
+      "shutterStyle": "Metal roll-up doors for a small commercial corner",
+      "treeType": "Guayacán",
+      "graffiti": "Small 'Boca Unidos' sticker on a signpost",
+      "terrain": "Gravel and sand mix near a drainage ditch",
+      "urbanElements": {
+        "furniture": "Black painted wrought iron street lamp",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Functionalist stucco-finished house"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle 5",
+        "Minimercado 'La Amistad'"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/200",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-006",
+    "coordinates": {
+      "lat": -28.53691,
+      "lng": -57.17411,
+      "corner": "Calle 2 y Calle 15"
+    },
+    "timestamp": "2023-11-17T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-Northeast",
+      "shadowDirection": "South-Southwest",
+      "shadowLength": "Short-Moderate",
+      "description": "High sun intensity, almost no cloud cover."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Disorganized telephone wires hanging low",
+      "shutterStyle": "Fixed wooden louvers",
+      "treeType": "Chañar",
+      "graffiti": "None",
+      "terrain": "Dry sand with some scattered pebbles",
+      "urbanElements": {
+        "furniture": "Concrete bus stop shelter with wooden roof",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Raised foundation house to prevent flooding"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle 15",
+        "Parada 2"
+      ],
+      "confidence": 0.9
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "18mm",
+      "make": "Pentax",
+      "model": "K-3 III"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-007",
+    "coordinates": {
+      "lat": -28.53812,
+      "lng": -57.17222,
+      "corner": "Calle 9 y San Martín"
+    },
+    "timestamp": "2023-11-17T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Shadows of the Pindo palms stretching across the wide street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High voltage lines following the main street axis",
+      "shutterStyle": "Vibrant blue painted wooden shutters",
+      "treeType": "Ombú (isolated specimen)",
+      "graffiti": "Political campaign mural for local governor",
+      "terrain": "Well-compacted sand with sidewalk tiles made of stone",
+      "urbanElements": {
+        "furniture": "Fire hydrant painted bright red",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Neocolonial style with rounded arches"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Martín",
+        "Calle 9",
+        "Farmacia Iberá"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "40mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-008",
+    "coordinates": {
+      "lat": -28.53401,
+      "lng": -57.17655,
+      "corner": "Calle 4 y Av. Iberá"
+    },
+    "timestamp": "2023-11-18T10:30:00Z",
+    "lighting": {
+      "sunPosition": "East-Northeast",
+      "shadowDirection": "West-Southwest",
+      "shadowLength": "Moderate",
+      "description": "Clear atmosphere, very low humidity, sharp shadow edges."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Clean arrangement on concrete poles",
+      "shutterStyle": "Internal fabric curtains visible through glass",
+      "treeType": "Sauce Criollo",
+      "graffiti": "None",
+      "terrain": "Sand with patches of 'pasto horqueta'",
+      "urbanElements": {
+        "furniture": "Decorative wooden cart used as a planter",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Contemporary cabin-style residential with large decks"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Iberá",
+        "Hostería del Pantano"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Sigma",
+      "model": "fp L"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-009",
+    "coordinates": {
+      "lat": -28.53589,
+      "lng": -57.17099,
+      "corner": "Calle 7 y Calle 12"
+    },
+    "timestamp": "2023-11-18T14:45:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate",
+      "description": "High temperature visible through heat shimmer over the sandy path."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line of low-hanging electrical wire",
+      "shutterStyle": "Heavy iron security bars over windows",
+      "treeType": "Palo Borracho",
+      "graffiti": "Stencil of a Yaguareté (Jaguar)",
+      "terrain": "Uneven sandy terrain with small dunes formed by wind",
+      "urbanElements": {
+        "furniture": "Public tap for water access",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Simple brick and cement construction, unpainted"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Calle 12",
+        "Cuidado Niños"
+      ],
+      "confidence": 0.82
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/1250",
+      "focalLength": "20mm",
+      "make": "GoPro",
+      "model": "Hero 10 Black"
+    },
+    "h3Index": "89a96276bcbffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "IBERA-ARG-010",
+    "coordinates": {
+      "lat": -28.53277,
+      "lng": -57.17488,
+      "corner": "Gdor. Galván y Calle 6"
+    },
+    "timestamp": "2023-11-18T18:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Sunset conditions, the sun is just above the horizon line of the esteros."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Thick bundle of cables silhouetted against the sky",
+      "shutterStyle": "Closed wooden shutters on all openings",
+      "treeType": "Tipa blanca",
+      "graffiti": "Text 'Corrientes tiene Payé' on a side wall",
+      "terrain": "Dusty road with deep ruts from 4x4 vehicles",
+      "urbanElements": {
+        "furniture": "Old style wooden post box",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Ranch style with wide eaves supported by caranday poles"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Gdor. Galván",
+        "Calle 6",
+        "Almacén Don Juan"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-001",
+    "coordinates": {
+      "lat": -28.5352,
+      "lng": -57.1731,
+      "corner": "Calle Mburucuyá & Calle Yaguareté"
+    },
+    "timestamp": "2023-11-15T09:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Clear morning light highlighting the textures of the sandy road and clay walls."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal overhead power lines supported by wooden poles",
+      "shutterStyle": "Traditional wooden rustic shutters painted in colonial green",
+      "treeType": "Lapacho Rosado in partial bloom",
+      "graffiti": "Stencil of a Yaguareté and local environmental awareness slogan",
+      "terrain": "Sandy soil road with natural drainage ditches",
+      "urbanElements": {
+        "furniture": "Wooden signposts with carved letters and a stone bench",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Neocolonial Correntino with thatched roofs"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE MBURUCUYA",
+        "COLONIA CARLOS PELLEGRINI",
+        "POSADA DEL IBERA"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-002",
+    "coordinates": {
+      "lat": -28.5365,
+      "lng": -57.1718,
+      "corner": "Calle Carpincho & Calle Aguará Guazú"
+    },
+    "timestamp": "2023-11-15T13:20:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High midday sun creating harsh shadows beneath the galleries."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Exposed low-hanging service wires",
+      "shutterStyle": "Wrought iron bars over tall windows",
+      "treeType": "Large Timbó providing heavy shade",
+      "graffiti": "Hand-painted sign for local honey 'Miel de Esteros'",
+      "terrain": "Packed red earth and grass patches",
+      "urbanElements": {
+        "furniture": "Concrete bollards and a rustic wooden trash bin",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Rustic wood and brick construction"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AGUARA GUAZU",
+        "ARTESANIAS LOCALES",
+        "HIELO"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89a96276bc3ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-003",
+    "coordinates": {
+      "lat": -28.5341,
+      "lng": -57.1755,
+      "corner": "Calle Tuyuyú & Calle Ñandú"
+    },
+    "timestamp": "2023-11-15T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting with long shadows stretching across the dirt intersection."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line fiber optic cable visible",
+      "shutterStyle": "None, open gallery with pillars",
+      "treeType": "Palm trees (Butia yatay)",
+      "graffiti": "Small 'Iberá Libre' sticker on a post",
+      "terrain": "Uneven sandy path with small puddles",
+      "urbanElements": {
+        "furniture": "Cattle guard grid and wooden fence",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Sustainable eco-lodge aesthetic"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE TUYUYU",
+        "NANDU",
+        "CUIDE LA FAUNA"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6 II"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-004",
+    "coordinates": {
+      "lat": -28.5332,
+      "lng": -57.1702,
+      "corner": "Calle Irupé & Calle Jacana"
+    },
+    "timestamp": "2023-11-16T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Bright morning sun diffused by light high-altitude clouds."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None, underground utilities in this sector",
+      "shutterStyle": "Solid wooden folding shutters",
+      "treeType": "Ibirá Pitá with yellow flowers",
+      "graffiti": "None, well-maintained lime-washed walls",
+      "terrain": "Fine grey sand road surface",
+      "urbanElements": {
+        "furniture": "Information board about wetland birds",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Colonial revival with brick tile flooring"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE IRUPE",
+        "CIRCUITO TURISTICO",
+        "PARQUE IBERA"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-005",
+    "coordinates": {
+      "lat": -28.5378,
+      "lng": -57.1744,
+      "corner": "Calle Chaja & Calle Yacaré"
+    },
+    "timestamp": "2023-11-16T15:45:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate",
+      "description": "Afternoon light creating high contrast on the building facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Twisted pair telephone wires crossing the street",
+      "shutterStyle": "Rustic timber sliders",
+      "treeType": "Native bamboo grove on the corner",
+      "graffiti": "Signage for 'Club Social Pellegrini'",
+      "terrain": "Grassy verge with sandy vehicle tracks",
+      "urbanElements": {
+        "furniture": "Bicycle rack made of treated logs",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Traditional mud-brick (adobe) hybrid"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CHAJA",
+        "ALMACEN MANA",
+        "BEBIDAS"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 160,
+      "shutterSpeed": "1/200s",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-006",
+    "coordinates": {
+      "lat": -28.5321,
+      "lng": -57.1729,
+      "corner": "Av. de las Palmeras & Calle Ciervo de los Pantanos"
+    },
+    "timestamp": "2023-11-17T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Early morning light skimming the ground, accentuating road undulations."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Power lines with visible transformers",
+      "shutterStyle": "White painted wooden frames",
+      "treeType": "Pindó palms lining the avenue",
+      "graffiti": "Tourism board logo hand-painted on a wall",
+      "terrain": "Hard-packed clay road with some gravel",
+      "urbanElements": {
+        "furniture": "Low wooden fence with decorative ropes",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Modern lodge with glass and local stone"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. PALMERAS",
+        "CIERVO DE LOS PANTANOS",
+        "CENTRO DE INTERPRETACION"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7RM4"
+    },
+    "h3Index": "89a96276b57ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-007",
+    "coordinates": {
+      "lat": -28.5389,
+      "lng": -57.1761,
+      "corner": "Calle Lobito de Río & Calle Espátula Rosada"
+    },
+    "timestamp": "2023-11-17T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Flat lighting with vertical shadows, high intensity."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cable bundle crossing diagonally",
+      "shutterStyle": "Metal rolling doors on a small shop",
+      "treeType": "Young Jacarandá",
+      "graffiti": "Political campaign stencil 'Vota Corrientes'",
+      "terrain": "Sandy loose soil",
+      "urbanElements": {
+        "furniture": "Discarded tractor tire used as a planter",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Basic masonry with corrugated metal roof"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LOBITO DE RIO",
+        "KIOSCO LA ESQUINA",
+        "COCA-COLA"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-008",
+    "coordinates": {
+      "lat": -28.5348,
+      "lng": -57.1711,
+      "corner": "Calle Garza Mora & Calle Picaflor"
+    },
+    "timestamp": "2023-11-18T16:30:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Moderate-Long",
+      "description": "Warm orange light casting detailed shadows from the vegetation."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Isolated power drop to a residence",
+      "shutterStyle": "Antique carved wooden shutters",
+      "treeType": "Guayacán with dense foliage",
+      "graffiti": "None",
+      "terrain": "Natural grass cover on the roadside",
+      "urbanElements": {
+        "furniture": "Hand-made wooden mailbox",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Restored colonial house with wide veranda"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE GARZA MORA",
+        "PICAFLOR",
+        "PARE"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 200,
+      "shutterSpeed": "1/160s",
+      "focalLength": "40mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-009",
+    "coordinates": {
+      "lat": -28.5359,
+      "lng": -57.1749,
+      "corner": "Calle Tacuarita & Calle Federal"
+    },
+    "timestamp": "2023-11-18T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-Northeast",
+      "shadowDirection": "South-Southwest",
+      "shadowLength": "Short-Moderate",
+      "description": "Bright, direct morning light."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Parallel power lines along the main street",
+      "shutterStyle": "Internal fabric curtains visible through glass",
+      "treeType": "Ceibo (National flower) near the edge",
+      "graffiti": "Small 'Eco-Turismo' mural",
+      "terrain": "Compact sand and small river stones",
+      "urbanElements": {
+        "furniture": "Provincial police signpost",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Public service building with brick finish"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE FEDERAL",
+        "COMISARIA",
+        "TACUARITA"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "DC-S5"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "IBE-CCP-010",
+    "coordinates": {
+      "lat": -28.5338,
+      "lng": -57.1738,
+      "corner": "Calle Curupí & Calle Ceibo"
+    },
+    "timestamp": "2023-11-19T14:50:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate",
+      "description": "Harsh afternoon light with significant glare from the sandy road."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Old telegraph-style wooden poles",
+      "shutterStyle": "Weathered wood with peeling blue paint",
+      "treeType": "Tall Eucalyptus in the distance",
+      "graffiti": "Local football club initials 'CAP'",
+      "terrain": "Soft sand drift at the corner",
+      "urbanElements": {
+        "furniture": "Old style metal street lamp (not functioning)",
+        "vegetationScore": 0.84,
+        "architectureStyle": "Traditional rural dwelling with tin roof"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CURUPI",
+        "CEIBO",
+        "CUIDADO CON LOS ANIMALES"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Olympus",
+      "model": "E-M1 Mark III"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-001",
+    "coordinates": {
+      "lat": -28.5342,
+      "lng": -57.1721,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-15T10:45:00Z",
+    "lighting": {
+      "sunPosition": "High North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Bright morning light with high contrast and minimal shadows on sand paths."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single line on wooden poles",
+      "shutterStyle": "Traditional wooden louvered shutters in teal",
+      "treeType": "Lapacho Negro (Handroanthus heptaphyllus)",
+      "graffiti": "None",
+      "terrain": "Sandy unpaved street",
+      "urbanElements": {
+        "furniture": "Wooden rustic bench",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Neocolonial rural gallery"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE GUARANI",
+        "POSADA DEL ESTERO"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7 III"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-002",
+    "coordinates": {
+      "lat": -28.535,
+      "lng": -57.1735,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-15T17:20:00Z",
+    "lighting": {
+      "sunPosition": "Low West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting casting long shadows across the sandy intersection."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundle of three lines",
+      "shutterStyle": "White painted metal rollers",
+      "treeType": "Palmera Pindo (Syagrus romanzoffiana)",
+      "graffiti": "Small 'Iberá Libre' stencil",
+      "terrain": "Hard-packed red earth and sand",
+      "urbanElements": {
+        "furniture": "Concrete utility pole",
+        "vegetationScore": 0.72,
+        "architectureStyle": "Modern masonry with brick details"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE MATILDE",
+        "ARTESANIAS LOCALES"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89a96276bcfffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-003",
+    "coordinates": {
+      "lat": -28.5335,
+      "lng": -57.1708,
+      "corner": "North-East"
+    },
+    "timestamp": "2023-11-16T12:30:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "None",
+      "description": "Midday sun directly overhead causing harsh vertical shadows on facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse wiring",
+      "shutterStyle": "Dark wood folding shutters",
+      "treeType": "Jacaranda (Jacaranda mimosifolia)",
+      "graffiti": "None",
+      "terrain": "Grass-covered roadside",
+      "urbanElements": {
+        "furniture": "Woven wicker chair on porch",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Colonial Correntino with thatched roof extension"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE YACARE",
+        "CUIDE LA FAUNA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89a96276b53ffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-004",
+    "coordinates": {
+      "lat": -28.5361,
+      "lng": -57.1752,
+      "corner": "South-West"
+    },
+    "timestamp": "2023-11-16T08:15:00Z",
+    "lighting": {
+      "sunPosition": "Low East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium-Long",
+      "description": "Early morning light illuminating the eastern facades of the cottages."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Telephone lines on timber poles",
+      "shutterStyle": "Sliding glass doors with wooden frames",
+      "treeType": "Espinillo (Acacia caven)",
+      "graffiti": "Club Atletico Ibera logo in yellow",
+      "terrain": "Sandy track with vehicle ruts",
+      "urbanElements": {
+        "furniture": "Low wooden fence",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Vernacular brick and adobe mix"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CARPINCHO",
+        "VIVERO EL CEIBO"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89a96276bc7ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-005",
+    "coordinates": {
+      "lat": -28.5375,
+      "lng": -57.178,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-17T14:00:00Z",
+    "lighting": {
+      "sunPosition": "High North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short-Medium",
+      "description": "Harsh afternoon sun reflected off the light sandy ground."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground entry)",
+      "shutterStyle": "Heavy timber shutters",
+      "treeType": "Ivirá-pitá (Peltophorum dubium)",
+      "graffiti": "None",
+      "terrain": "Dry sand and gravel",
+      "urbanElements": {
+        "furniture": "Information board about wetlands",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Rustic stone and wood lodge"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CENTRO DE INTERPRETACION",
+        "PARQUE IBERA"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "18mm",
+      "make": "Sony",
+      "model": "A6400"
+    },
+    "h3Index": "89a96276b8bffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-006",
+    "coordinates": {
+      "lat": -28.5382,
+      "lng": -57.1712,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-17T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light with shadows falling across the corner porch."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low hanging power lines",
+      "shutterStyle": "Wrought iron bars over windows",
+      "treeType": "Sauce Criollo (Salix humboldtiana)",
+      "graffiti": "None",
+      "terrain": "Sandy path with scattered leaves",
+      "urbanElements": {
+        "furniture": "Cast iron street lamp (old style)",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Traditional Correntina house with continuous gallery"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE 13 DE JULIO",
+        "ALMACEN EL LOBITO"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "M10"
+    },
+    "h3Index": "89a96276bdbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-007",
+    "coordinates": {
+      "lat": -28.539,
+      "lng": -57.1745,
+      "corner": "North-East"
+    },
+    "timestamp": "2023-11-18T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West-South-West",
+      "shadowDirection": "East-North-East",
+      "shadowLength": "Medium-Long",
+      "description": "Softening afternoon light with orange hues typical of the wetlands."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Twin copper wires",
+      "shutterStyle": "Green wooden shutters",
+      "treeType": "Ceibo (Erythrina crista-galli)",
+      "graffiti": "None",
+      "terrain": "Sand and local weeds",
+      "urbanElements": {
+        "furniture": "Bird-shaped metal sculpture",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Guesthouse with wrap-around veranda"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CHAJA",
+        "HOSPEDAJE DONA TOTA"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 320,
+      "shutterSpeed": "1/160",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    },
+    "h3Index": "89a96276bd7ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-008",
+    "coordinates": {
+      "lat": -28.5321,
+      "lng": -57.1766,
+      "corner": "South-West"
+    },
+    "timestamp": "2023-11-18T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Clear sky morning light creating sharp edges on the sandy terrain."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead bundle",
+      "shutterStyle": "Fixed wooden blinds",
+      "treeType": "Aguaribay (Schinus molle)",
+      "graffiti": "None",
+      "terrain": "Sandy soil with tire tracks",
+      "urbanElements": {
+        "furniture": "Recycling bin (green)",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Simple brick construction"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE AGUARA GUAZU",
+        "PARADA TAXI"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/10",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7R IV"
+    },
+    "h3Index": "89a96276b1bffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-009",
+    "coordinates": {
+      "lat": -28.531,
+      "lng": -57.1728,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-19T13:15:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Very Short",
+      "description": "Intense midday sun over the wetland village center."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Single strand wire",
+      "shutterStyle": "Roll-up bamboo blinds",
+      "treeType": "Lapacho Amarillo (Handroanthus albus)",
+      "graffiti": "Stencil of a Jabiru stork",
+      "terrain": "Paved near entrance but sandy corner",
+      "urbanElements": {
+        "furniture": "Stone flower pot",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Boutique hotel with log walls"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CARAYA",
+        "ECO-LOGIA"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 5D IV"
+    },
+    "h3Index": "89a96276b57ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "COR-IBE-010",
+    "coordinates": {
+      "lat": -28.5402,
+      "lng": -57.1795,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-19T18:00:00Z",
+    "lighting": {
+      "sunPosition": "Horizon West",
+      "shadowDirection": "East",
+      "shadowLength": "Infinite",
+      "description": "Sunset light silhouetting trees and fences against the sky."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dark silhouettes of cables",
+      "shutterStyle": "Closed wooden shutters",
+      "treeType": "Timbo (Enterolobium contortisiliquum)",
+      "graffiti": "None",
+      "terrain": "Dusty sand",
+      "urbanElements": {
+        "furniture": "Rustic wooden post sign",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Low profile cabin with deck"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE LAS GARZAS",
+        "ESTANCIA SAN JUAN"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z6"
+    },
+    "h3Index": "89a96276b9bffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  }
+]

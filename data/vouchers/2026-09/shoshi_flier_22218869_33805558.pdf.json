@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-16T12:10:55.000Z",
+  "source_name": "shoshi_flier_22218869_33805558.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "shoshi_flier_22218869_33805558",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "",
+    "coordinates": null,
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Ingestado desde: G:\\האחסון שלי\\shoshi_flier_22218869_33805558.pdf",
+    "source_path": "G:\\האחסון שלי\\shoshi_flier_22218869_33805558.pdf"
+  }
+}

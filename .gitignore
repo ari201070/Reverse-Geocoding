@@ -26,3 +26,4 @@ Thumbs.db
 .local-dev.pid
 apps/frontend/dist/
 .backup/
+nul

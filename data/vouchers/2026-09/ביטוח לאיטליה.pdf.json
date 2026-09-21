@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-16T12:10:55.000Z",
+  "source_name": "ביטוח לאיטליה.pdf",
+  "parsed": {
+    "isTravelDocument": true,
+    "category": "activity",
+    "supplier": "",
+    "title": "ביטוח לאיטליה",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "",
+    "coordinates": null,
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Ingestado desde: G:\\האחסון שלי\\גברים רעבים באיטליה\\ביטוח לאיטליה.pdf",
+    "source_path": "G:\\האחסון שלי\\גברים רעבים באיטליה\\ביטוח לאיטליה.pdf"
+  }
+}

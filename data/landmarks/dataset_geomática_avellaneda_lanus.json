@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "1",
+    "coordinates": {
+      "lat": -34.662214,
+      "lng": -58.365123,
+      "corner": "Av. Mitre y Chacabuco, Avellaneda"
+    },
+    "timestamp": "2023-11-15T09:15:00",
+    "lighting": {
+      "sunPosition": "Este-Noreste",
+      "shadowDirection": "Oeste-Sudoeste",
+      "shadowLength": "Larga",
+      "description": "Sombras estiradas proyectadas por edificios bajos sobre las baldosas calcáreas de 9 panes; el sol de la mañana genera un contraste marcado en los bordes de la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables de fibra óptica y electricidad cruzando diagonalmente la intersección",
+      "shutterStyle": "Cortina metálica de enrollar gris en local de la esquina",
+      "treeType": "Fresno americano con follaje verde denso",
+      "graffiti": "Mural de Racing Club 'La Academia' en colores celeste y blanco",
+      "terrain": "Vereda de baldosas calcáreas amarillentas y asfalto con parches de hormigón"
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1200",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13"
+    }
+  },
+  {
+    "id": "2",
+    "coordinates": {
+      "lat": -34.708145,
+      "lng": -58.388512,
+      "corner": "9 de Julio y Oncativo, Lanús"
+    },
+    "timestamp": "2023-11-15T14:30:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Iluminación cenital oblicua que proyecta sombras moderadas de los postes de luz sobre el asfalto gastado."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de media tensión suspendidos con tensores oxidados",
+      "shutterStyle": "Persiana de madera tipo barrio pintada de marrón",
+      "treeType": "Paraíso podado",
+      "graffiti": "Escudo de Lanús con la leyenda 'Orgullo Granate'",
+      "terrain": "Vereda de mosaico granítico gris con algunas piezas faltantes"
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 50,
+      "shutterSpeed": "1/2000",
+      "focalLength": "13mm",
+      "make": "Samsung",
+      "model": "Galaxy S22"
+    }
+  },
+  {
+    "id": "3",
+    "coordinates": {
+      "lat": -34.664421,
+      "lng": -58.361533,
+      "corner": "Belgrano e Italia, Avellaneda"
+    },
+    "timestamp": "2023-11-15T07:45:00",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Muy Larga",
+      "description": "Luz rasante del amanecer que resalta las irregularidades del pavimento; sombras que cubren casi todo el ancho de la calle Italia."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de telecomunicaciones en desuso colgando cerca de la vereda",
+      "shutterStyle": "Persianas plásticas blancas en primer piso de vivienda",
+      "treeType": "Plátano con base de tronco rodeada de baldosas levantadas",
+      "graffiti": "Stencil con el escudo de Independiente 'Rey de Copas'",
+      "terrain": "Vereda de baldosas de 64 panes rojas y cordón de granito"
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    }
+  },
+  {
+    "id": "4",
+    "coordinates": {
+      "lat": -34.706567,
+      "lng": -58.394892,
+      "corner": "Hipólito Yrigoyen y 25 de Mayo, Lanús"
+    },
+    "timestamp": "2023-11-15T17:00:00",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Luz de atardecer cálida reflejada en las fachadas; sombras proyectadas por el flujo vehicular intenso sobre la avenida."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Haces de cables de gran diámetro sujetos con precintos",
+      "shutterStyle": "Grandes cortinas metálicas microperforadas en locales de electrodomésticos",
+      "treeType": "Sin arbolado inmediato en la esquina",
+      "graffiti": "Grafiti político sobre base blanca y pintadas de 'El Porve'",
+      "terrain": "Hormigón de alto tránsito y veredas de cemento alisado"
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    }
+  },
+  {
+    "id": "5",
+    "coordinates": {
+      "lat": -34.667822,
+      "lng": -58.371211,
+      "corner": "Alsina y Ameghino, Avellaneda"
+    },
+    "timestamp": "2023-11-15T12:00:00",
+    "lighting": {
+      "sunPosition": "Norte (Cenital)",
+      "shadowDirection": "Sur",
+      "shadowLength": "Mínima",
+      "description": "Sol de mediodía; sombras proyectadas directamente debajo de los balcones y marquesinas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruce de cables de alta tensión a gran altura",
+      "shutterStyle": "Persiana de madera tipo barrio color cedro",
+      "treeType": "Fresno joven con tutor de madera",
+      "graffiti": "Pintada de 'La Guardia Imperial'",
+      "terrain": "Baldosas calcáreas rojas con patrón de rombos"
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "50mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    }
+  },
+  {
+    "id": "6",
+    "coordinates": {
+      "lat": -34.712189,
+      "lng": -58.396345,
+      "corner": "Melo y 20 de Septiembre, Lanús"
+    },
+    "timestamp": "2023-11-15T11:00:00",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Corta-Media",
+      "description": "Luz clara de mañana tardía; sombras de las copas de los árboles proyectando un patrón moteado en el suelo."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables trenzados de baja tensión recorriendo la vereda impar",
+      "shutterStyle": "Portón de garage de chapa plegada",
+      "treeType": "Paraíso de gran porte con raíces visibles",
+      "graffiti": "Inscripción 'Lanús manda' en aerosol granate",
+      "terrain": "Vereda de baldosas calcáreas grises 'vainilla'"
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 125,
+      "shutterSpeed": "1/1600",
+      "focalLength": "23mm",
+      "make": "Xiaomi",
+      "model": "12 Pro"
+    }
+  },
+  {
+    "id": "7",
+    "coordinates": {
+      "lat": -34.685322,
+      "lng": -58.376455,
+      "corner": "Gral. Güemes y Agüero, Gerli"
+    },
+    "timestamp": "2023-11-15T15:50:00",
+    "lighting": {
+      "sunPosition": "Oeste-Noroeste",
+      "shadowDirection": "Este-Sudeste",
+      "shadowLength": "Moderada",
+      "description": "Sol descendente que ilumina las fachadas orientadas al oeste; sombras proyectadas por semáforos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Conexiones domiciliarias de TV por cable cruzando la calle",
+      "shutterStyle": "Persiana metálica antigua en esquina abandonada",
+      "treeType": "Palo Borracho con espinas en el tronco",
+      "graffiti": "Siglas 'C.A.I.' pintadas en rojo y blanco",
+      "terrain": "Asfalto con baches reparados con brea"
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    }
+  },
+  {
+    "id": "8",
+    "coordinates": {
+      "lat": -34.661102,
+      "lng": -58.366288,
+      "corner": "Sarmiento y French, Avellaneda"
+    },
+    "timestamp": "2023-11-15T10:20:00",
+    "lighting": {
+      "sunPosition": "Este-Noreste",
+      "shadowDirection": "Oeste-Sudoeste",
+      "shadowLength": "Media",
+      "description": "Luz solar directa sobre la vereda norte; sombras nítidas de los cables sobre la pared blanca."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Poste de madera inclinado con gran cantidad de cables",
+      "shutterStyle": "Persiana de madera de tres hojas en ventana",
+      "treeType": "Fresno americano con hojas amarillentas",
+      "graffiti": "Pintada 'Racing Positivo' en tipografía de cancha",
+      "terrain": "Baldosas de 9 panes amarillas y cordón de piedra"
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    }
+  },
+  {
+    "id": "9",
+    "coordinates": {
+      "lat": -34.695412,
+      "lng": -58.411233,
+      "corner": "Eva Perón y Máximo Paz, Lanús"
+    },
+    "timestamp": "2023-11-15T08:30:00",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Luz matutina que entra por las calles transversales; sombras de los edificios proyectadas sobre el pavimento asfáltico."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica arrollados en círculos sobre el poste",
+      "shutterStyle": "Cortina metálica de local de repuestos",
+      "treeType": "Plátano añoso de gran altura",
+      "graffiti": "Escudo de Lanús y la frase 'Barrio de Granates'",
+      "terrain": "Vereda de hormigón peinado con grietas térmicas"
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 64,
+      "shutterSpeed": "1/2500",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "Galaxy S23 Ultra"
+    }
+  },
+  {
+    "id": "10",
+    "coordinates": {
+      "lat": -34.663145,
+      "lng": -58.368566,
+      "corner": "Brandsen y Palaá, Avellaneda"
+    },
+    "timestamp": "2023-11-15T18:15:00",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy Larga",
+      "description": "Hora dorada; luz naranja intensa que proyecta sombras que cruzan toda la calle Brandsen."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de electricidad con aisladores cerámicos antiguos",
+      "shutterStyle": "Persiana de madera tipo barrio barnizada",
+      "treeType": "Naranjo amargo decorativo en la acera",
+      "graffiti": "Pintada de Independiente 'Orgullo Nacional'",
+      "terrain": "Baldosas calcáreas de 64 panes grises en buen estado"
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    }
+  },
+  {
+    "id": "11",
+    "coordinates": {
+      "lat": -34.6644,
+      "lng": -58.3842,
+      "corner": "Beguerestain y Rivadavia, Piñeyro"
+    },
+    "timestamp": "2023-11-15T09:30:00",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media-larga",
+      "description": "Sombras nítidas proyectadas sobre veredas de baldosa calcárea roja, con penumbra marcada por la baja altura solar de la mañana."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables coaxiales y eléctricos cruzando diagonalmente la intersección.",
+      "shutterStyle": "Persianas metálicas de enrollar galvanizadas en comercio de esquina.",
+      "treeType": "Fresnos americanos con poda de formación.",
+      "graffiti": "Escudo de Racing Club en stencil sobre pilar de luz.",
+      "terrain": "Asfalto con bacheo reciente y cordón de granito."
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    }
+  },
+  {
+    "id": "12",
+    "coordinates": {
+      "lat": -34.7075,
+      "lng": -58.3895,
+      "corner": "Oncativo y Anatole France, Lanús Este"
+    },
+    "timestamp": "2023-11-15T12:15:00",
+    "lighting": {
+      "sunPosition": "Cenital-Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Mínima",
+      "description": "Luz dura de mediodía produciendo sombras verticales cortas bajo los aleros de las casas tipo chorizo."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica agrupados con precintos plásticos negros visibles.",
+      "shutterStyle": "Persianas de madera tipo barrio pintadas de blanco con desgaste por sol.",
+      "treeType": "Plátanos de gran porte con raíces levantando la vereda.",
+      "graffiti": "Inscripción 'Granate Mandas' en aerosol granate y blanco.",
+      "terrain": "Veredas de mosaico vainilla amarillo con pendientes irregulares."
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    }
+  },
+  {
+    "id": "13",
+    "coordinates": {
+      "lat": -34.7001,
+      "lng": -58.3185,
+      "corner": "Las Flores y Guaminí, Wilde"
+    },
+    "timestamp": "2023-11-15T17:45:00",
+    "lighting": {
+      "sunPosition": "Oeste-Noroeste",
+      "shadowDirection": "Este-Sureste",
+      "shadowLength": "Muy larga",
+      "description": "Luz cálida de atardecer proyectando sombras estiradas que cubren casi todo el ancho de la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de baja tensión con aisladores de porcelana antiguos en postes de madera.",
+      "shutterStyle": "Rejas de hierro forjado superpuestas a ventanas con postigones.",
+      "treeType": "Paraísos con frutos esparcidos en el suelo.",
+      "graffiti": "Mural alusivo al Club Atlético Independiente cubriendo un paredón lateral.",
+      "terrain": "Hormigón armado con juntas de dilatación con brea."
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    }
+  },
+  {
+    "id": "14",
+    "coordinates": {
+      "lat": -34.6984,
+      "lng": -58.4062,
+      "corner": "25 de Mayo y Carlos Tejedor, Lanús Oeste"
+    },
+    "timestamp": "2023-11-15T15:30:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Media",
+      "description": "Iluminación lateral que resalta la textura de las paredes de ladrillo visto."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruces de cables de servicios de internet con bucles de reserva técnica.",
+      "shutterStyle": "Cortina metálica microperforada en local moderno.",
+      "treeType": "Fresnos jóvenes con tutores de madera.",
+      "graffiti": "Siglas 'C.A.E.P.' pintadas en blanco sobre fondo negro.",
+      "terrain": "Asfalto con demarcación horizontal de senda peatonal desgastada."
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "18mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    }
+  },
+  {
+    "id": "15",
+    "coordinates": {
+      "lat": -34.6533,
+      "lng": -58.3512,
+      "corner": "Leandro N. Alem y Debenedetti, Dock Sud"
+    },
+    "timestamp": "2023-11-15T08:00:00",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Sombras horizontales que atraviesan la avenida, proyectadas por los postes de alumbrado público."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Transformador eléctrico aéreo montado sobre plataforma de hormigón.",
+      "shutterStyle": "Persianas de plástico PVC gris con lamas faltantes.",
+      "treeType": "Ausencia de arbolado público, solo arbustos en macetas sobre la vereda.",
+      "graffiti": "Tag de 'Dock Sud' con aerosol azul y oro.",
+      "terrain": "Pavimento de hormigón de alto tránsito con grietas longitudinales."
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 200,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    }
+  },
+  {
+    "id": "16",
+    "coordinates": {
+      "lat": -34.7235,
+      "lng": -58.3958,
+      "corner": "Garay e Hipólito Yrigoyen, Remedios de Escalada"
+    },
+    "timestamp": "2023-11-15T11:00:00",
+    "lighting": {
+      "sunPosition": "Norte-Noreste",
+      "shadowDirection": "Sur-Suroeste",
+      "shadowLength": "Corta-Media",
+      "description": "Luz intensa sobre la avenida principal, sombras de vehículos proyectadas hacia el carril opuesto."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de alta tensión en torres metálicas visibles a lo lejos sobre el ferrocarril.",
+      "shutterStyle": "Portón de garage levadizo de chapa plegada.",
+      "treeType": "Tipas con follaje denso filtrando puntos de luz hacia el suelo.",
+      "graffiti": "Pintada política mezclada con escudo del Club Talleres.",
+      "terrain": "Asfalto con parches de hormigón y cordones pintados de amarillo."
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a6400"
+    }
+  },
+  {
+    "id": "17",
+    "coordinates": {
+      "lat": -34.6631,
+      "lng": -58.3644,
+      "corner": "Beruti y Belgrano, Avellaneda Centro"
+    },
+    "timestamp": "2023-11-15T14:15:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Media",
+      "description": "Luz de tarde rebotada en edificios de altura circundantes, suavizando las sombras en la esquina."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soportes de hierro amurados a fachadas para sostener cables de iluminación callejera.",
+      "shutterStyle": "Persianas de aluminio anodizado color bronce.",
+      "treeType": "Jacarandás con flores violetas cubriendo parcialmente la calzada.",
+      "graffiti": "Pequeños stickers de agrupaciones de Independiente en señales de tránsito.",
+      "terrain": "Veredas renovadas de baldosas graníticas grises antideslizantes."
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV"
+    }
+  },
+  {
+    "id": "18",
+    "coordinates": {
+      "lat": -34.6901,
+      "lng": -58.3755,
+      "corner": "Bustamante y Camino Gral. Belgrano, Gerli"
+    },
+    "timestamp": "2023-11-15T18:30:00",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Extrema",
+      "description": "Contraluz fuerte que siluetea el mobiliario urbano y los cables suspendidos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables colgantes con riesgo de desprendimiento y precintos sueltos.",
+      "shutterStyle": "Persianas de madera tipo 'barrio' con pintura descascarada.",
+      "treeType": "Fresnos adultos con troncos pintados de cal blanca en la base.",
+      "graffiti": "Stencil de 'El Porve' en color negro sobre fondo de ladrillos.",
+      "terrain": "Asfalto antiguo con piel de cocodrilo y restos de hojas secas."
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/80s",
+      "focalLength": "85mm",
+      "make": "Nikon",
+      "model": "Z6 II"
+    }
+  },
+  {
+    "id": "19",
+    "coordinates": {
+      "lat": -34.6782,
+      "lng": -58.3478,
+      "corner": "Brandsen y Supisiche, Sarandí"
+    },
+    "timestamp": "2023-11-15T10:45:00",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media-corta",
+      "description": "Luz clara de mañana con sombras oblicuas que definen la profundidad de los marcos de las ventanas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Conexiones domiciliarias de TV por cable bajando desde el poste principal.",
+      "shutterStyle": "Rejas tipo tijera en la puerta de acceso de un PH.",
+      "treeType": "Palo borracho en la esquina con espinas en el tronco.",
+      "graffiti": "Pintada de 'Arsenal' en letras celestes y rojas.",
+      "terrain": "Baldosas calcáreas con diseño de 'vainilla' y rampas de hormigón en esquinas."
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2"
+    }
+  },
+  {
+    "id": "20",
+    "coordinates": {
+      "lat": -34.6798,
+      "lng": -58.4201,
+      "corner": "Jean Jaures y Tuyutí, Valentín Alsina"
+    },
+    "timestamp": "2023-11-15T13:30:00",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Sol fuerte cayendo casi verticalmente, proyectando sombras duras bajo los capots de los autos estacionados."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Postes de luz inclinados por el peso de las bobinas de cable de fibra óptica.",
+      "shutterStyle": "Persianas de plástico marrón oscuro integradas en carpintería de aluminio.",
+      "treeType": "Fresnos con brotes nuevos de primavera.",
+      "graffiti": "Escudo de Lanús pintado en la persiana metálica de un almacén.",
+      "terrain": "Hormigón con marcas de neumáticos y manchas de aceite cerca del cordón."
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "16mm",
+      "make": "Sony",
+      "model": "Alpha a7R IV"
+    }
+  },
+  {
+    "id": "21",
+    "coordinates": {
+      "lat": -34.664444,
+      "lng": -58.368889,
+      "corner": "Adolfo Alsina y Colón, Avellaneda"
+    },
+    "timestamp": "2023-11-15T09:30:00",
+    "lighting": {
+      "sunPosition": "Noroeste bajo",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Larga",
+      "description": "Sombras estiradas proyectadas sobre baldosas calcáreas amarillas por el sol matutino de primavera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables de fibra óptica y electricidad cruzando la intersección en diagonal.",
+      "shutterStyle": "Persiana metálica de enrollar microperforada en local comercial de esquina.",
+      "treeType": "Fresno americano con follaje verde intenso.",
+      "graffiti": "Escudo de Racing Club con la leyenda 'La Academia' en aerosol celeste.",
+      "terrain": "Vereda de baldosas calcáreas con desniveles y asfalto con bacheo reciente."
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    }
+  },
+  {
+    "id": "22",
+    "coordinates": {
+      "lat": -34.706111,
+      "lng": -58.391111,
+      "corner": "9 de Julio y Oncativo, Lanús Este"
+    },
+    "timestamp": "2023-11-15T12:15:00",
+    "lighting": {
+      "sunPosition": "Cenital norte",
+      "shadowDirection": "Sur franco",
+      "shadowLength": "Muy corta",
+      "description": "Iluminación dura con sombras mínimas concentradas en la base de los objetos y árboles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de media tensión dispuestos verticalmente en postes de hormigón.",
+      "shutterStyle": "Persiana de madera tipo barrio en vivienda de planta alta.",
+      "treeType": "Plátanos de gran porte con desprendimiento de corteza.",
+      "graffiti": "Mural pintado con los colores de Lanús (Granate y Blanco) y la cara de Diego Maradona.",
+      "terrain": "Pavimento asfáltico desgastado con presencia de cordón cuneta de granito."
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a6400"
+    }
+  },
+  {
+    "id": "23",
+    "coordinates": {
+      "lat": -34.661667,
+      "lng": -58.366111,
+      "corner": "Avenida Belgrano e Italia, Avellaneda"
+    },
+    "timestamp": "2023-11-15T17:45:00",
+    "lighting": {
+      "sunPosition": "Oeste bajo",
+      "shadowDirection": "Este-Sudeste",
+      "shadowLength": "Extensa",
+      "description": "Luz cálida de atardecer creando contrastes fuertes y sombras que cruzan todo el ancho de la avenida."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables trenzados de telefonía antigua colgando con flechas pronunciadas.",
+      "shutterStyle": "Portón metálico de garaje con diseño geométrico de los años 70.",
+      "treeType": "Paraísos podados drásticamente dejando ver la estructura de las ramas.",
+      "graffiti": "Stencil de Independiente 'El Rey de Copas' en pilar de luz.",
+      "terrain": "Baldosones de cemento liso gris y rampas de accesibilidad de color rojo."
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    }
+  },
+  {
+    "id": "24",
+    "coordinates": {
+      "lat": -34.708333,
+      "lng": -58.373333,
+      "corner": "Eva Perón y Gral. Ferré, Lanús Este"
+    },
+    "timestamp": "2023-11-15T08:20:00",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Sombras proyectadas por la hilera de árboles hacia el centro de la calzada asfáltica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruce de cables coaxiales sujetos con grampas a fachadas de ladrillo visto.",
+      "shutterStyle": "Persianas de plástico tipo PVC en color blanco, algunas con lamas rotas.",
+      "treeType": "Fresno con brotes nuevos de primavera.",
+      "graffiti": "Grafiti de 'El Porve' en letras negras sobre fondo blanco.",
+      "terrain": "Vereda angosta con raíces de árboles levantando las baldosas vainilla."
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "Galaxy S23 Ultra"
+    }
+  },
+  {
+    "id": "25",
+    "coordinates": {
+      "lat": -34.669722,
+      "lng": -58.363056,
+      "corner": "Mitre y 12 de Octubre, Avellaneda"
+    },
+    "timestamp": "2023-11-15T15:10:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Sombras laterales que definen la textura del revoque de los edificios de media altura."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abrazaderas de acero sosteniendo múltiples mangueras de cables en postes de madera.",
+      "shutterStyle": "Cortina de hierro pesada en antigua panadería de barrio.",
+      "treeType": "Palo borracho con espinas visibles en el tronco.",
+      "graffiti": "Pintada política mezclada con un logo de Racing en aerosol negro.",
+      "terrain": "Calle de asfalto con parches de hormigón y rejillas de desagüe de hierro fundido."
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    }
+  },
+  {
+    "id": "26",
+    "coordinates": {
+      "lat": -34.701111,
+      "lng": -58.396389,
+      "corner": "Hipólito Yrigoyen y 25 de Mayo, Lanús Oeste"
+    },
+    "timestamp": "2023-11-15T11:00:00",
+    "lighting": {
+      "sunPosition": "Norte-Nordeste",
+      "shadowDirection": "Sur-Sudoeste",
+      "shadowLength": "Corta",
+      "description": "Luz cenital intensa que satura los colores de los carteles comerciales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tendido de cables de alta tensión sobre postes metálicos de alumbrado público.",
+      "shutterStyle": "Cerramientos de aluminio anodizado en locales de telefonía celular.",
+      "treeType": "Jacarandá con algunas flores violáceas empezando a caer.",
+      "graffiti": "Escudo de Lanús (C.A.L.) pintado en la base de un semáforo.",
+      "terrain": "Vereda de granito gris pulido y cordones amarillos de prohibido estacionar."
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/200s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D7500"
+    }
+  },
+  {
+    "id": "27",
+    "coordinates": {
+      "lat": -34.665556,
+      "lng": -34.665556,
+      "corner": "Ameghino y Berutti, Avellaneda"
+    },
+    "timestamp": "2023-11-15T07:15:00",
+    "lighting": {
+      "sunPosition": "Este muy bajo",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Muy larga",
+      "description": "Sombras rasantes que resaltan cada imperfección del terreno y la textura de las hojas caídas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de servicios de internet colgando a baja altura cerca de las copas de los árboles.",
+      "shutterStyle": "Persiana de madera pintada de verde oscuro en casa de estilo art decó.",
+      "treeType": "Fresnos alineados uniformemente en la cuadra.",
+      "graffiti": "Pintada de Independiente 'Orgullo Nacional' en la ochava.",
+      "terrain": "Vereda de baldosas calcáreas de 9 panes con manchas de humedad."
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 800,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    }
+  },
+  {
+    "id": "28",
+    "coordinates": {
+      "lat": -34.693333,
+      "lng": -58.378056,
+      "corner": "Mendoza y Veracruz, Lanús Oeste"
+    },
+    "timestamp": "2023-11-15T13:30:00",
+    "lighting": {
+      "sunPosition": "Norte pleno",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Sombras verticales proyectadas bajo los balcones y aleros de las casas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abundante cableado en desuso enrollado en forma de bucle sobre los postes.",
+      "shutterStyle": "Persianas enrollables de plástico color crema en ventanas de planta baja.",
+      "treeType": "Plátano con raíces que han fracturado la línea municipal de la vereda.",
+      "graffiti": "Inscripciones de 'El Porve' y corazones con iniciales en una pared blanca.",
+      "terrain": "Asfalto con restos de hojas de plátano y algo de basura acumulada en los sumideros."
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "40mm",
+      "make": "Xiaomi",
+      "model": "13 Pro"
+    }
+  },
+  {
+    "id": "29",
+    "coordinates": {
+      "lat": -34.674444,
+      "lng": -58.384167,
+      "corner": "Avenida Galicia y Pavón, Avellaneda"
+    },
+    "timestamp": "2023-11-15T18:45:00",
+    "lighting": {
+      "sunPosition": "Oeste muy bajo",
+      "shadowDirection": "Este",
+      "shadowLength": "Extrema",
+      "description": "Luz dorada del 'golden hour' bañando las fachadas de los edificios; sombras ocultando gran parte de la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Gran concentración de cables en la intersección debido a semáforos y cámaras de seguridad.",
+      "shutterStyle": "Portón de chapa plegada galvanizada en taller mecánico.",
+      "treeType": "Tipas con follaje denso cubriendo parcialmente la iluminación pública.",
+      "graffiti": "Mural de Racing con la cara de Diego Milito en una pared lateral de un galpón.",
+      "terrain": "Pavimento de hormigón con juntas de dilatación rellenas de brea."
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 1600,
+      "shutterSpeed": "1/60s",
+      "focalLength": "23mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    }
+  },
+  {
+    "id": "30",
+    "coordinates": {
+      "lat": -34.714167,
+      "lng": -58.381944,
+      "corner": "Madariaga y Arias, Lanús Este"
+    },
+    "timestamp": "2023-11-15T10:45:00",
+    "lighting": {
+      "sunPosition": "Nordeste",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Media-corta",
+      "description": "Sombras que empiezan a acortarse a medida que el sol sube hacia el norte."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soportes de hierro en fachadas para el paso de cables de red.",
+      "shutterStyle": "Persianas metálicas de seguridad tipo tijera en farmacia de esquina.",
+      "treeType": "Fresno americano con presencia de nidos de cotorras en la parte superior.",
+      "graffiti": "Tag de 'La 14' (hinchada de Lanús) en letras granates sobre una persiana.",
+      "terrain": "Baldosas rojas de 40 panes típicas de vereda residencial renovada."
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "30mm",
+      "make": "Olympus",
+      "model": "OM-D E-M10"
+    }
+  },
+  {
+    "id": "31",
+    "coordinates": {
+      "lat": -34.664121,
+      "lng": -58.364453,
+      "corner": "Av. Belgrano e Italia, Avellaneda"
+    },
+    "timestamp": "2023-11-15T08:45:00",
+    "lighting": {
+      "sunPosition": "Noreste (Baja elevación)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Larga",
+      "description": "Sombras estiradas proyectándose desde los edificios hacia el centro de la calzada asfáltica, con alto contraste en las veredas de baldosas calcáreas amarillas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables de fibra óptica y electricidad cruzando diagonalmente la intersección.",
+      "shutterStyle": "Persianas de madera tipo barrio pintadas de blanco en planta alta y cortinas metálicas de malla en comercios.",
+      "treeType": "Fresnos americanos con follaje verde denso cubriendo parcialmente la luminaria.",
+      "graffiti": "Escudo de Racing Club con inscripción 'La Guardia Imperial' en pilar de cemento.",
+      "terrain": "Veredas de baldosas calcáreas de 20x20 con baches por raíces de árboles."
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    }
+  },
+  {
+    "id": "32",
+    "coordinates": {
+      "lat": -34.706324,
+      "lng": -58.398112,
+      "corner": "25 de Mayo y Carlos Casares, Lanús Oeste"
+    },
+    "timestamp": "2023-11-15T13:15:00",
+    "lighting": {
+      "sunPosition": "Norte (Cenital)",
+      "shadowDirection": "Sur",
+      "shadowLength": "Muy corta",
+      "description": "Iluminación dura con sombras mínimas debajo de los balcones y árboles; asfalto con alta reflectancia térmica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de media tensión en postes de hormigón con transformador visible en la esquina.",
+      "shutterStyle": "Persianas plásticas grises integradas en ventanas de aluminio.",
+      "treeType": "Plátanos de gran porte con troncos descascarados característicos.",
+      "graffiti": "Mural granate con el rostro de un ídolo local y la frase 'Lanús manda'.",
+      "terrain": "Asfalto de bituminoso con reparaciones recientes de bacheo en hormigón gris."
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    }
+  },
+  {
+    "id": "33",
+    "coordinates": {
+      "lat": -34.668541,
+      "lng": -58.388721,
+      "corner": "Av. Rivadavia y Galicia, Piñeyro"
+    },
+    "timestamp": "2023-11-15T17:30:00",
+    "lighting": {
+      "sunPosition": "Noroeste (Atardecer)",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Muy larga",
+      "description": "Luz cálida dorada que genera sombras proyectadas a lo largo de toda la calle Galicia, cubriendo el pavimento de adoquines remanentes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas de baja tensión con múltiples bajadas domiciliarias precarias y gancheras de TV por cable.",
+      "shutterStyle": "Cortinas de enrollar metálicas galvanizadas en depósitos industriales antiguos.",
+      "treeType": "Paraísos antiguos con frutos secos caídos sobre el cordón cuneta.",
+      "graffiti": "Pintada roja y blanca 'CAI' con stencil del escudo de Independiente.",
+      "terrain": "Combinación de adoquín granítico y parches de asfalto negro."
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6 II"
+    }
+  },
+  {
+    "id": "34",
+    "coordinates": {
+      "lat": -34.708129,
+      "lng": -58.383345,
+      "corner": "9 de Julio y Oncativo, Lanús Este"
+    },
+    "timestamp": "2023-11-15T10:20:00",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Sombras nítidas de los mástiles de alumbrado público sobre la vereda par impar."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Soportes metálicos oxidados sosteniendo manojos de cables negros sin tensar.",
+      "shutterStyle": "Persianas de madera tipo celosía pintadas de barniz oscuro.",
+      "treeType": "Fresnos jóvenes con tutores de madera y protección de alambre.",
+      "graffiti": "Tag 'Grana' en aerosol negro sobre persiana metálica de kiosco.",
+      "terrain": "Veredas de baldosas de vainillas rojas con rampas de accesibilidad en las esquinas."
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    }
+  },
+  {
+    "id": "35",
+    "coordinates": {
+      "lat": -34.685211,
+      "lng": -58.348987,
+      "corner": "Gral. Madariaga y Supisiche, Sarandí"
+    },
+    "timestamp": "2023-11-15T15:45:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Media-Larga",
+      "description": "Sombras de la arboleda de la plaza cercana proyectándose sobre las fachadas de las casas bajas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables coaxiales de empresas locales de internet colgando a baja altura cerca de los árboles.",
+      "shutterStyle": "Persianas metálicas enrollables tipo comercial con candados de piso.",
+      "treeType": "Tipas con flores amarillas estacionales manchando las veredas.",
+      "graffiti": "Pintada política mezclada con escudo de Racing en colores celeste y blanco.",
+      "terrain": "Calzada de hormigón armado con juntas de dilatación rellenas de brea."
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 250,
+      "shutterSpeed": "1/320",
+      "focalLength": "18mm",
+      "make": "Lumix",
+      "model": "GH5"
+    }
+  },
+  {
+    "id": "36",
+    "coordinates": {
+      "lat": -34.673891,
+      "lng": -58.419223,
+      "corner": "Paso de Burgos y Av. Pte. Perón, Valentín Alsina"
+    },
+    "timestamp": "2023-11-15T12:00:00",
+    "lighting": {
+      "sunPosition": "Norte (Zenit local)",
+      "shadowDirection": "Sur franco",
+      "shadowLength": "Mínima",
+      "description": "Iluminación uniforme y cenital; ausencia de sombras laterales largas; visibilidad total de texturas de asfalto."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruces aéreos masivos de telefonía antigua en postes de madera curada.",
+      "shutterStyle": "Persianas pesadas de madera en casas de estilo art-decó residencial.",
+      "treeType": "Plátanos centenarios cuyas copas se tocan formando un túnel verde.",
+      "graffiti": "Mural alusivo al Porvenir con franjas verticales blancas y negras.",
+      "terrain": "Veredas antiguas de baldosas calcáreas con diseño de 'rombos'."
+    },
+    "exif": {
+      "fStop": "f/14.0",
+      "iso": 100,
+      "shutterSpeed": "1/200",
+      "focalLength": "24mm",
+      "make": "Leica",
+      "model": "Q2"
+    }
+  },
+  {
+    "id": "37",
+    "coordinates": {
+      "lat": -34.701102,
+      "lng": -58.318451,
+      "corner": "Las Flores y Guaminí, Wilde"
+    },
+    "timestamp": "2023-11-15T07:30:00",
+    "lighting": {
+      "sunPosition": "Este-Noreste",
+      "shadowDirection": "Oeste-Suroeste",
+      "shadowLength": "Extrema",
+      "description": "Sombras de los edificios de departamentos de la Av. Las Flores que cubren completamente la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica tensados con soportes de plástico amarillos.",
+      "shutterStyle": "Ventanas con rejas de hierro forjado y persianas de PVC blancas.",
+      "treeType": "Fresnos con poda de formación estricta bajo los cables.",
+      "graffiti": "Inscripción 'Wilde es de la Academia' en pared de ladrillo visto.",
+      "terrain": "Baldosas calcáreas rojas combinadas con cemento alisado en entradas de garage."
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/80",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    }
+  },
+  {
+    "id": "38",
+    "coordinates": {
+      "lat": -34.693452,
+      "lng": -58.375678,
+      "corner": "Bustamante y De la Peña, Gerli"
+    },
+    "timestamp": "2023-11-15T16:10:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Larga",
+      "description": "Sombras de los postes de luz cruzando la calle Bustamante de forma oblicua."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Grandes rollos de cable sobrante (loops) colgando de los postes en la esquina.",
+      "shutterStyle": "Persianas de aluminio inyectado modernas en viviendas renovadas.",
+      "treeType": "Paraísos con troncos pintados de blanco con cal hasta 1.5 metros.",
+      "graffiti": "Escudo de El Porvenir en blanco y negro sobre caja de servicios eléctricos.",
+      "terrain": "Cordón de granito antiguo con restos de musgo y humedad en las juntas."
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 160,
+      "shutterSpeed": "1/200",
+      "focalLength": "40mm",
+      "make": "Olympus",
+      "model": "OM-D E-M1"
+    }
+  },
+  {
+    "id": "39",
+    "coordinates": {
+      "lat": -34.654891,
+      "lng": -58.349102,
+      "corner": "Debenedetti y Huergo, Dock Sud"
+    },
+    "timestamp": "2023-11-15T11:50:00",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Mínima",
+      "description": "Luz intensa y vertical, reflejos metálicos fuertes en los techos de los vehículos estacionados."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruces de cables de alta tensión por la proximidad a zona portuaria.",
+      "shutterStyle": "Cortinas de hierro macizo enrollables en depósitos logísticos.",
+      "treeType": "Escasos fresnos en maceteros de cemento vandalizados.",
+      "graffiti": "Stencil de 'Dock Sud' y logos de Racing Club en azul sobre fondo gris.",
+      "terrain": "Pavimento de hormigón pesado para tránsito de camiones con grietas longitudinales."
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "20mm",
+      "make": "Nikon",
+      "model": "D850"
+    }
+  },
+  {
+    "id": "40",
+    "coordinates": {
+      "lat": -34.721456,
+      "lng": -58.395874,
+      "corner": "Hipólito Yrigoyen y 20 de Septiembre, Remedios de Escalada"
+    },
+    "timestamp": "2023-11-15T18:20:00",
+    "lighting": {
+      "sunPosition": "Oeste-Noroeste (Cerca del horizonte)",
+      "shadowDirection": "Este-Sureste",
+      "shadowLength": "Máxima",
+      "description": "Luz de 'hora dorada' con sombras que se pierden en la profundidad de la cuadra hacia el este."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña de cables telefónicos y de datos fluyendo hacia el centro de la ciudad.",
+      "shutterStyle": "Persianas de madera tipo americano en edificios de 3 plantas.",
+      "treeType": "Plátanos de sombra de gran porte con raíces levantando la vereda.",
+      "graffiti": "Pintada gigante 'Escalada es del Granate' en el muro perimetral ferroviario.",
+      "terrain": "Veredas de baldosas calcáreas amarillas con patrón de 'vainillas' desgastadas."
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/60",
+      "focalLength": "85mm",
+      "make": "Canon",
+      "model": "EOS 6D Mark II"
+    }
+  },
+  {
+    "id": "41",
+    "coordinates": {
+      "lat": -34.669812,
+      "lng": -58.368845,
+      "corner": "Brandsen y Zeballos, Avellaneda"
+    },
+    "timestamp": "2023-11-15T10:30:00",
+    "lighting": {
+      "sunPosition": "Noreste, elevación media",
+      "shadowDirection": "Sudoeste",
+      "shadowLength": "Media-corta",
+      "description": "Sombras nítidas proyectadas sobre baldosas calcáreas de 20x20. Contraste moderado-alto."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables coaxiales y de cobre cruzando en diagonal sobre la bocacalle.",
+      "shutterStyle": "Persianas metálicas de enrollar tipo barrio, pintadas de gris grafito con óxido en la base.",
+      "treeType": "Fresno americano con follaje verde denso.",
+      "graffiti": "Inscripción 'CAI' con aerosol rojo y blanco en la pared lateral.",
+      "terrain": "Asfalto con baches reparados y cordón de granito."
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    }
+  },
+  {
+    "id": "42",
+    "coordinates": {
+      "lat": -34.678121,
+      "lng": -58.362234,
+      "corner": "French y Marconi, Avellaneda"
+    },
+    "timestamp": "2023-11-15T16:45:00",
+    "lighting": {
+      "sunPosition": "Oeste-Noroeste, baja elevación",
+      "shadowDirection": "Este-Sudeste",
+      "shadowLength": "Larga y estirada",
+      "description": "Luz cálida de atardecer, sombras largas que cubren casi todo el ancho de la calzada asfáltica."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica agrupados con precintos negros colgando hacia el poste de madera.",
+      "shutterStyle": "Persianas de madera tipo 'barrio' con barniz descascarado.",
+      "treeType": "Plátano con corteza moteada y hojas secas en la vereda.",
+      "graffiti": "Escudo de Racing Club pintado a mano alzada en azul y blanco.",
+      "terrain": "Vereda de baldosas amarillas con vainilla, raíces levantando el pavimento."
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    }
+  },
+  {
+    "id": "43",
+    "coordinates": {
+      "lat": -34.710543,
+      "lng": -58.388867,
+      "corner": "Iberlucea y Aristóbulo del Valle, Lanús"
+    },
+    "timestamp": "2023-11-15T08:15:00",
+    "lighting": {
+      "sunPosition": "Este, baja elevación",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Extensa",
+      "description": "Luz lateral que resalta la textura rugosa del asfalto y los desniveles de la acera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de alta tensión en nivel superior y racimo de servicios hogareños debajo.",
+      "shutterStyle": "Puerta de garaje de chapa inyectada blanca con postigos de hierro.",
+      "treeType": "Paraíso podado con ramas nudosas visibles.",
+      "graffiti": "Tag 'Grana' en letras góticas color granate cerca de un kiosco.",
+      "terrain": "Hormigón armado con juntas de dilatación con brea."
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    }
+  },
+  {
+    "id": "44",
+    "coordinates": {
+      "lat": -34.71189,
+      "lng": -58.375543,
+      "corner": "Oncativo y Basavilbaso, Lanús"
+    },
+    "timestamp": "2023-11-15T13:00:00",
+    "lighting": {
+      "sunPosition": "Norte, cenital",
+      "shadowDirection": "Sur, muy corta",
+      "shadowLength": "Mínima",
+      "description": "Iluminación dura y directa, sombras concentradas bajo los árboles y balcones."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Poste de hormigón con transformador y maraña de cables de cobre.",
+      "shutterStyle": "Cortina metálica microperforada de local comercial en esquina.",
+      "treeType": "Fresno joven con tutor de madera.",
+      "graffiti": "Pintada política mezclada con un escudo borroso de El Porvenir.",
+      "terrain": "Baldosas rojas de 9 panes algo desgastadas por el tránsito peatonal."
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    }
+  },
+  {
+    "id": "45",
+    "coordinates": {
+      "lat": -34.665512,
+      "lng": -58.361245,
+      "corner": "General Paz y Alberdi, Avellaneda"
+    },
+    "timestamp": "2023-11-15T11:50:00",
+    "lighting": {
+      "sunPosition": "Norte, elevación alta",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Casi mediodía solar, sombras proyectadas verticalmente sobre el cordón de la vereda."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas telefónicas antiguas cruzando de un edificio a otro con cierta comba.",
+      "shutterStyle": "Persiana plástica blanca de ventana residencial tipo estándar.",
+      "treeType": "Tipa de gran porte con raíces visibles rompiendo el asfalto.",
+      "graffiti": "Stencil con el rostro de un ídolo local sobre pared de ladrillo visto.",
+      "terrain": "Empedrado antiguo cubierto con capa delgada de asfalto."
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "35mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    }
+  },
+  {
+    "id": "46",
+    "coordinates": {
+      "lat": -34.715567,
+      "lng": -58.390234,
+      "corner": "Anatole France e Ituzaingó, Lanús"
+    },
+    "timestamp": "2023-11-15T17:30:00",
+    "lighting": {
+      "sunPosition": "Oeste, muy baja",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy larga",
+      "description": "Sombras que cruzan toda la calle y se proyectan sobre las fachadas opuestas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cableado de televisión por cable desordenado atado con alambres a postes metálicos.",
+      "shutterStyle": "Portón de chapa plegada con ventilación superior.",
+      "treeType": "Paraíso con frutos amarillos caídos en la cuneta.",
+      "graffiti": "Mural de gran tamaño con los colores del Club Atlético Lanús.",
+      "terrain": "Baldosas calcáreas grises con parches de cemento alisado."
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/60s",
+      "focalLength": "24mm",
+      "make": "Leica",
+      "model": "Q2"
+    }
+  },
+  {
+    "id": "47",
+    "coordinates": {
+      "lat": -34.66089,
+      "lng": -58.363512,
+      "corner": "Italia y Colón, Avellaneda"
+    },
+    "timestamp": "2023-11-15T09:00:00",
+    "lighting": {
+      "sunPosition": "Este-Noreste",
+      "shadowDirection": "Oeste-Sudoeste",
+      "shadowLength": "Larga",
+      "description": "Luz matutina clara, sombras proyectadas por los edificios bajos sobre la calle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruces de cables eléctricos de baja tensión protegidos por vainas negras.",
+      "shutterStyle": "Persianas metálicas enrollables pesadas en esquina de antiguo almacén.",
+      "treeType": "Plátano de sombra con tronco grueso y marcas de poda.",
+      "graffiti": "Pintada 'La Academia' en letras celestes sobre fondo blanco.",
+      "terrain": "Asfalto liso reciente con señalización horizontal de senda peatonal borrosa."
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV"
+    }
+  },
+  {
+    "id": "48",
+    "coordinates": {
+      "lat": -34.698543,
+      "lng": -58.405567,
+      "corner": "Castro Barros y Gral. Villegas, Lanús"
+    },
+    "timestamp": "2023-11-15T14:20:00",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media",
+      "description": "Sol de tarde temprana, sombras diagonales que recortan los bordes de los techos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña central en el poste de luz con derivaciones hacia seis casas distintas.",
+      "shutterStyle": "Ventanas con rejas de hierro forjado y persianas de PVC detrás.",
+      "treeType": "Fresno americano con hojas amarilleando levemente.",
+      "graffiti": "Aerosol negro con la leyenda 'Gente de Lanús' en un pilar de luz.",
+      "terrain": "Vereda angosta con baldosas de vainilla vainilla color ocre."
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 200,
+      "shutterSpeed": "1/200s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "Z6 II"
+    }
+  },
+  {
+    "id": "49",
+    "coordinates": {
+      "lat": -34.685234,
+      "lng": -58.345678,
+      "corner": "Gral. Arredondo y Crisólogo Larralde, Avellaneda"
+    },
+    "timestamp": "2023-11-15T07:45:00",
+    "lighting": {
+      "sunPosition": "Este, muy baja",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Muy larga",
+      "description": "Luz rasante que genera un resplandor en el asfalto húmedo por el rocío."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica nuevos conviviendo con cables viejos cortados que cuelgan.",
+      "shutterStyle": "Persianas de chapa ondulada en un taller mecánico de esquina.",
+      "treeType": "Paraíso de copa ancha que cubre gran parte de la vereda.",
+      "graffiti": "Pequeños stencils de 'Independiente' en los postes de señalización.",
+      "terrain": "Cunetas profundas con acumulación de hojas secas y restos de poda."
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/80s",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "Alpha a6400"
+    }
+  },
+  {
+    "id": "50",
+    "coordinates": {
+      "lat": -34.707732,
+      "lng": -58.392212,
+      "corner": "25 de Mayo e Hipólito Yrigoyen, Lanús"
+    },
+    "timestamp": "2023-11-15T12:30:00",
+    "lighting": {
+      "sunPosition": "Norte, casi cenital",
+      "shadowDirection": "Sur",
+      "shadowLength": "Nula/Mínima",
+      "description": "Luz cenital intensa, colores saturados y ausencia casi total de sombras laterales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables ordenados en crucetas metálicas sobre postes de hormigón reforzado.",
+      "shutterStyle": "Fachada moderna con persianas de aluminio anodizado gris.",
+      "treeType": "Plátano joven podado geométricamente.",
+      "graffiti": "Grafiti artístico (muralismo) sin temática deportiva, tonos diversos.",
+      "terrain": "Asfalto de alto tránsito con baches señalizados con pintura blanca."
+    },
+    "exif": {
+      "fStop": "f/13",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "16mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    }
+  }
+]

@@ -1,0 +1,2172 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4691,
+          41.8892
+        ]
+      },
+      "properties": {
+        "id": "REF-0001",
+        "coordinates": {
+          "lat": 41.8892,
+          "lng": 12.4691,
+          "corner": "NW"
+        },
+        "timestamp": "2023-10-15T09:45:12Z",
+        "lighting": {
+          "sunPosition": "ESE",
+          "shadowDirection": "WNW",
+          "shadowLength": "medium",
+          "description": "Soft morning light illuminating travertine facades"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "moderate-messy",
+          "shutterStyle": "traditional-wooden-green",
+          "treeType": "mediterranean-cypress",
+          "graffiti": "low-stencil",
+          "terrain": "sanpietrini-cobblestone",
+          "urbanElements": {
+            "furniture": "cast-iron-bollards",
+            "vegetationScore": 0.4,
+            "architectureStyle": "renaissance-revival"
+          },
+          "temporalWindow": "morning"
+        },
+        "ocr": {
+          "detectedText": [
+            "VIA DELLA LUNGARETTA",
+            "TRATTORIA DA ENZO",
+            "APERTO"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 100,
+          "shutterSpeed": "1/1000s",
+          "focalLength": "26mm",
+          "make": "Apple",
+          "model": "iPhone 14 Pro",
+          "lensModel": "Main Camera",
+          "dateTimeOriginal": "2023:10:15 09:45:12"
+        },
+        "category": "historic-residential",
+        "groundedFromAnchor": "Trastevere",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1329.9747539757977,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1330m)"
+          ],
+          "h3Index": "891e805019bffff"
+        },
+        "h3Index": "891e805019bffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4922,
+          41.8902
+        ]
+      },
+      "properties": {
+        "id": "REF-0002",
+        "coordinates": {
+          "lat": 41.8902,
+          "lng": 12.4922,
+          "corner": "SE"
+        },
+        "timestamp": "2023-10-15T12:00:00Z",
+        "lighting": {
+          "sunPosition": "Zenith",
+          "shadowDirection": "Vertical",
+          "shadowLength": "short",
+          "description": "Harsh midday sun with minimal shadows on Colosseum walls"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "stone-pine",
+          "graffiti": "none",
+          "terrain": "excavated-earth-and-stone",
+          "urbanElements": {
+            "furniture": "tourist-barriers",
+            "vegetationScore": 0.2,
+            "architectureStyle": "flavian-amphitheatre"
+          },
+          "temporalWindow": "midday"
+        },
+        "ocr": {
+          "detectedText": [
+            "COLOSSEO",
+            "ENTRATA",
+            "PARCO ARCHEOLOGICO"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 64,
+          "shutterSpeed": "1/500s",
+          "focalLength": "14mm",
+          "make": "Sony",
+          "model": "ILCE-7RM4",
+          "lensModel": "FE 12-24mm G Master",
+          "dateTimeOriginal": "2023:10:15 12:00:00"
+        },
+        "category": "historic-monument",
+        "groundedFromAnchor": "Colosseum",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1016.064032002035,
+          "isOutlier": true,
+          "computedScore": 88,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1016m)"
+          ],
+          "h3Index": "891e8052a6bffff"
+        },
+        "h3Index": "891e8052a6bffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4833,
+          41.9009
+        ]
+      },
+      "properties": {
+        "id": "REF-0003",
+        "coordinates": {
+          "lat": 41.9009,
+          "lng": 12.4833,
+          "corner": "NE"
+        },
+        "timestamp": "2023-10-15T15:30:45Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "long",
+          "description": "Golden afternoon light reflecting off marble surfaces"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "underground",
+          "shutterStyle": "commercial-metal-rolling",
+          "treeType": "none",
+          "graffiti": "none",
+          "terrain": "smooth-marble-paving",
+          "urbanElements": {
+            "furniture": "ornate-street-lamps",
+            "vegetationScore": 0.1,
+            "architectureStyle": "baroque"
+          },
+          "temporalWindow": "afternoon"
+        },
+        "ocr": {
+          "detectedText": [
+            "FONTANA DI TREVI",
+            "GELATERIA",
+            "VIETATO TUFFARSI"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 200,
+          "shutterSpeed": "1/250s",
+          "focalLength": "35mm",
+          "make": "Canon",
+          "model": "EOS R6",
+          "lensModel": "RF 35mm f1.8",
+          "dateTimeOriginal": "2023:10:15 15:30:45"
+        },
+        "category": "tourist-hub",
+        "groundedFromAnchor": "Trevi Fountain",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 570.9464615583564,
+          "isOutlier": true,
+          "computedScore": 83,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 571m)"
+          ],
+          "h3Index": "891e8052a57ffff"
+        },
+        "h3Index": "891e8052a57ffff",
+        "geocodingScore": 83,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4645,
+          41.9062
+        ]
+      },
+      "properties": {
+        "id": "REF-0004",
+        "coordinates": {
+          "lat": 41.9062,
+          "lng": 12.4645,
+          "corner": "SW"
+        },
+        "timestamp": "2023-10-15T17:15:20Z",
+        "lighting": {
+          "sunPosition": "W",
+          "shadowDirection": "E",
+          "shadowLength": "very-long",
+          "description": "Deep sunset shadows across wide boulevards"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "minimal",
+          "shutterStyle": "modern-shutter-boxes",
+          "treeType": "london-plane",
+          "graffiti": "moderate-tagging",
+          "terrain": "asphalt-pavement",
+          "urbanElements": {
+            "furniture": "bus-stop-shelter-atac",
+            "vegetationScore": 0.6,
+            "architectureStyle": "umbertine"
+          },
+          "temporalWindow": "golden-hour"
+        },
+        "ocr": {
+          "detectedText": [
+            "VIA COLA DI RIENZO",
+            "BANCA NAZIONALE",
+            "COFFEE SHOP"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 88
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 400,
+          "shutterSpeed": "1/60s",
+          "focalLength": "50mm",
+          "make": "Nikon",
+          "model": "Z7II",
+          "lensModel": "Nikkor Z 50mm f/1.8 S",
+          "dateTimeOriginal": "2023:10:15 17:15:20"
+        },
+        "category": "commercial-district",
+        "groundedFromAnchor": "Prati",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1885.894382112575,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1886m)"
+          ],
+          "h3Index": "891e80505bbffff"
+        },
+        "h3Index": "891e80505bbffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4862,
+          41.8948
+        ]
+      },
+      "properties": {
+        "id": "REF-0005",
+        "coordinates": {
+          "lat": 41.8948,
+          "lng": 12.4862,
+          "corner": "E"
+        },
+        "timestamp": "2023-10-15T10:10:10Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "medium",
+          "description": "Direct morning light on narrow uphill alley"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "dense-overhead",
+          "shutterStyle": "wood-louvered",
+          "treeType": "potted-oleander",
+          "graffiti": "high-artistic-murals",
+          "terrain": "steep-cobblestone",
+          "urbanElements": {
+            "furniture": "parked-vespas",
+            "vegetationScore": 0.3,
+            "architectureStyle": "medieval-base-with-renaissance-additions"
+          },
+          "temporalWindow": "morning"
+        },
+        "ocr": {
+          "detectedText": [
+            "VIA PANISPERNA",
+            "RISTORANTE AI TRE SCALINI"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 98
+        },
+        "exif": {
+          "fStop": "f/2.0",
+          "iso": 100,
+          "shutterSpeed": "1/800s",
+          "focalLength": "28mm",
+          "make": "Ricoh",
+          "model": "GR III",
+          "lensModel": "Fixed 18.3mm",
+          "dateTimeOriginal": "2023:10:15 10:10:10"
+        },
+        "category": "bohemian-residential",
+        "groundedFromAnchor": "Monti",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 325.81009138903437,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 326m)"
+          ],
+          "h3Index": "891e8052a4fffff"
+        },
+        "h3Index": "891e8052a4fffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4764,
+          41.8761
+        ]
+      },
+      "properties": {
+        "id": "REF-0006",
+        "coordinates": {
+          "lat": 41.8761,
+          "lng": 12.4764,
+          "corner": "N"
+        },
+        "timestamp": "2023-10-15T13:45:00Z",
+        "lighting": {
+          "sunPosition": "SSW",
+          "shadowDirection": "NNE",
+          "shadowLength": "short",
+          "description": "High sun exposing industrial textures"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "utility-poles",
+          "shutterStyle": "industrial-metal",
+          "treeType": "none",
+          "graffiti": "very-high-street-art",
+          "terrain": "asphalt-and-brick",
+          "urbanElements": {
+            "furniture": "metal-refuse-bins",
+            "vegetationScore": 0.1,
+            "architectureStyle": "industrial-20th-century"
+          },
+          "temporalWindow": "afternoon"
+        },
+        "ocr": {
+          "detectedText": [
+            "TESTACCIO",
+            "MERCATO CENTRALE",
+            "STREET FOOD"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 90
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 125,
+          "shutterSpeed": "1/320s",
+          "focalLength": "24mm",
+          "make": "Fujifilm",
+          "model": "X-T4",
+          "lensModel": "XF 16-55mm f2.8",
+          "dateTimeOriginal": "2023:10:15 13:45:00"
+        },
+        "category": "post-industrial",
+        "groundedFromAnchor": "Testaccio",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 2247.990181719009,
+          "isOutlier": true,
+          "computedScore": 83,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2248m)"
+          ],
+          "h3Index": "891e8050173ffff"
+        },
+        "h3Index": "891e8050173ffff",
+        "geocodingScore": 83,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4731,
+          41.8992
+        ]
+      },
+      "properties": {
+        "id": "REF-0007",
+        "coordinates": {
+          "lat": 41.8992,
+          "lng": 12.4731,
+          "corner": "S"
+        },
+        "timestamp": "2023-10-15T11:20:00Z",
+        "lighting": {
+          "sunPosition": "S",
+          "shadowDirection": "N",
+          "shadowLength": "short",
+          "description": "Bright glare on fountain water and stone statues"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "wooden-arch-shutters",
+          "treeType": "none",
+          "graffiti": "none",
+          "terrain": "granite-slabs",
+          "urbanElements": {
+            "furniture": "stone-benches",
+            "vegetationScore": 0.05,
+            "architectureStyle": "high-baroque"
+          },
+          "temporalWindow": "midday"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIAZZA NAVONA",
+            "AMBASCIATA DEL BRASILE"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 96
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 100,
+          "shutterSpeed": "1/125s",
+          "focalLength": "16mm",
+          "make": "Leica",
+          "model": "Q2",
+          "lensModel": "Summilux 28mm f1.7 ASPH",
+          "dateTimeOriginal": "2023:10:15 11:20:00"
+        },
+        "category": "tourist-historic",
+        "groundedFromAnchor": "Piazza Navona",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 865.0025108807387,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 865m)"
+          ],
+          "h3Index": "891e8050523ffff"
+        },
+        "h3Index": "891e8050523ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4533,
+          41.9022
+        ]
+      },
+      "properties": {
+        "id": "REF-0008",
+        "coordinates": {
+          "lat": 41.9022,
+          "lng": 12.4533,
+          "corner": "W"
+        },
+        "timestamp": "2023-10-15T08:30:00Z",
+        "lighting": {
+          "sunPosition": "E",
+          "shadowDirection": "W",
+          "shadowLength": "long",
+          "description": "Early light casting long shadows across the square"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "clerestory-vatican-style",
+          "treeType": "none",
+          "graffiti": "none",
+          "terrain": "basalt-blocks",
+          "urbanElements": {
+            "furniture": "wooden-pilgrim-barriers",
+            "vegetationScore": 0,
+            "architectureStyle": "st-peters-basilica-classic"
+          },
+          "temporalWindow": "early-morning"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIAZZA SAN PIETRO",
+            "POSTE VATICANE"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 200,
+          "shutterSpeed": "1/400s",
+          "focalLength": "24mm",
+          "make": "Panasonic",
+          "model": "LUMIX S5",
+          "lensModel": "S 20-60mm",
+          "dateTimeOriginal": "2023:10:15 08:30:00"
+        },
+        "category": "religious-sovereign",
+        "groundedFromAnchor": "Vatican City",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 2519.337132758311,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 2519m)"
+          ],
+          "h3Index": "891e80505c7ffff"
+        },
+        "h3Index": "891e80505c7ffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4848,
+          41.8845
+        ]
+      },
+      "properties": {
+        "id": "REF-0009",
+        "coordinates": {
+          "lat": 41.8845,
+          "lng": 12.4848,
+          "corner": "C"
+        },
+        "timestamp": "2023-10-15T14:15:00Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "medium",
+          "description": "Sunlight highlighting ruins against the grass"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "pine-and-cypress",
+          "graffiti": "none",
+          "terrain": "grass-and-ancient-brick",
+          "urbanElements": {
+            "furniture": "information-plaques",
+            "vegetationScore": 0.8,
+            "architectureStyle": "ancient-roman-imperial"
+          },
+          "temporalWindow": "afternoon"
+        },
+        "ocr": {
+          "detectedText": [
+            "PALATINO",
+            "DOMUS FLAVIA"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 85
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/200s",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "Alpha 7C",
+          "lensModel": "FE 35mm f1.8",
+          "dateTimeOriginal": "2023:10:15 14:15:00"
+        },
+        "category": "archaeological-park",
+        "groundedFromAnchor": "Palatine Hill",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1270.8444882138522,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1271m)"
+          ],
+          "h3Index": "891e8050133ffff"
+        },
+        "h3Index": "891e8050133ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4848,
+          41.9125
+        ]
+      },
+      "properties": {
+        "id": "REF-0010",
+        "coordinates": {
+          "lat": 41.9125,
+          "lng": 12.4848,
+          "corner": "NW"
+        },
+        "timestamp": "2023-10-15T10:50:00Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "medium",
+          "description": "Dappled sunlight through dense canopy"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "centennial-pines",
+          "graffiti": "none",
+          "terrain": "gravel-path",
+          "urbanElements": {
+            "furniture": "marble-busts-on-pedestals",
+            "vegetationScore": 0.95,
+            "architectureStyle": "villa-gardens"
+          },
+          "temporalWindow": "morning"
+        },
+        "ocr": {
+          "detectedText": [
+            "VILLA BORGHESE",
+            "GALLERIA BORGHESE",
+            "TEMPIO DI ESCULAPIO"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 94
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 160,
+          "shutterSpeed": "1/500s",
+          "focalLength": "85mm",
+          "make": "Canon",
+          "model": "EOS R5",
+          "lensModel": "RF 85mm f1.2L",
+          "dateTimeOriginal": "2023:10:15 10:50:00"
+        },
+        "category": "park-recreational",
+        "groundedFromAnchor": "Villa Borghese",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1866.6852319502354,
+          "isOutlier": true,
+          "computedScore": 97,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1867m)"
+          ],
+          "h3Index": "891e8052a9bffff"
+        },
+        "h3Index": "891e8052a9bffff",
+        "geocodingScore": 97,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4764,
+          41.9092
+        ]
+      },
+      "properties": {
+        "id": "REF-0011",
+        "coordinates": {
+          "lat": 41.9092,
+          "lng": 12.4764,
+          "corner": "E"
+        },
+        "timestamp": "2023-10-15T12:45:00Z",
+        "lighting": {
+          "sunPosition": "S",
+          "shadowDirection": "N",
+          "shadowLength": "short",
+          "description": "High noon lighting on steep marble stairs"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "potted-azaleas",
+          "graffiti": "none",
+          "terrain": "travertine-steps",
+          "urbanElements": {
+            "furniture": "flower-vendors-stands",
+            "vegetationScore": 0.3,
+            "architectureStyle": "late-baroque-spanish"
+          },
+          "temporalWindow": "midday"
+        },
+        "ocr": {
+          "detectedText": [
+            "PIAZZA DI SPAGNA",
+            "KEATS-SHELLEY HOUSE"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 91
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/400s",
+          "focalLength": "24mm",
+          "make": "Nikon",
+          "model": "D850",
+          "lensModel": "24-70mm f/2.8G",
+          "dateTimeOriginal": "2023:10:15 12:45:00"
+        },
+        "category": "tourist-historic",
+        "groundedFromAnchor": "Spanish Steps",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1573.2125815768122,
+          "isOutlier": true,
+          "computedScore": 86,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1573m)"
+          ],
+          "h3Index": "891e8052e6bffff"
+        },
+        "h3Index": "891e8052e6bffff",
+        "geocodingScore": 86,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4768,
+          41.8986
+        ]
+      },
+      "properties": {
+        "id": "REF-0012",
+        "coordinates": {
+          "lat": 41.8986,
+          "lng": 12.4768,
+          "corner": "W"
+        },
+        "timestamp": "2023-10-15T13:10:00Z",
+        "lighting": {
+          "sunPosition": "S",
+          "shadowDirection": "N",
+          "shadowLength": "short",
+          "description": "Shaft of light through the oculus inside the structure"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "none",
+          "graffiti": "none",
+          "terrain": "marble-polychrome-floor",
+          "urbanElements": {
+            "furniture": "altar-railings",
+            "vegetationScore": 0,
+            "architectureStyle": "ancient-roman-dome"
+          },
+          "temporalWindow": "midday"
+        },
+        "ocr": {
+          "detectedText": [
+            "M.AGRIPPA.L.F.COS.TERTIUM.FECIT"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/1.4",
+          "iso": 800,
+          "shutterSpeed": "1/125s",
+          "focalLength": "20mm",
+          "make": "Sigma",
+          "model": "fp L",
+          "lensModel": "20mm f1.4 DG DN",
+          "dateTimeOriginal": "2023:10:15 13:10:00"
+        },
+        "category": "historic-landmark",
+        "groundedFromAnchor": "Pantheon",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 565.249082169325,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 565m)"
+          ],
+          "h3Index": "891e8050527ffff"
+        },
+        "h3Index": "891e8050527ffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4711,
+          41.8859
+        ]
+      },
+      "properties": {
+        "id": "REF-0013",
+        "coordinates": {
+          "lat": 41.8859,
+          "lng": 12.4711,
+          "corner": "SW"
+        },
+        "timestamp": "2023-10-15T18:00:00Z",
+        "lighting": {
+          "sunPosition": "WNW",
+          "shadowDirection": "ESE",
+          "shadowLength": "extreme",
+          "description": "Last rays of sun hitting the fountain of the Acqua Paola"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "minimal",
+          "shutterStyle": "wood-brown-shutters",
+          "treeType": "oak-and-pine",
+          "graffiti": "low",
+          "terrain": "asphalt-overlook",
+          "urbanElements": {
+            "furniture": "stone-lookout-wall",
+            "vegetationScore": 0.7,
+            "architectureStyle": "baroque-monumental"
+          },
+          "temporalWindow": "sunset"
+        },
+        "ocr": {
+          "detectedText": [
+            "GIANICOLO",
+            "FONTANONE"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 89
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 400,
+          "shutterSpeed": "1/100s",
+          "focalLength": "105mm",
+          "make": "Sony",
+          "model": "ILCE-7M3",
+          "lensModel": "FE 24-105mm F4 G OSS",
+          "dateTimeOriginal": "2023:10:15 18:00:00"
+        },
+        "category": "panoramic-viewpoint",
+        "groundedFromAnchor": "Gianicolo",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1449.925690492249,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 1450m)"
+          ],
+          "h3Index": "891e80501c7ffff"
+        },
+        "h3Index": "891e80501c7ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4828,
+          41.8967
+        ]
+      },
+      "properties": {
+        "id": "REF-0014",
+        "coordinates": {
+          "lat": 41.8967,
+          "lng": 12.4828,
+          "corner": "N"
+        },
+        "timestamp": "2023-10-15T11:00:00Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "medium",
+          "description": "Bright sun emphasizing white marble of the monument"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "none",
+          "shutterStyle": "none",
+          "treeType": "clipped-box-hedges",
+          "graffiti": "none",
+          "terrain": "marble-paving",
+          "urbanElements": {
+            "furniture": "honor-guard-stations",
+            "vegetationScore": 0.2,
+            "architectureStyle": "neo-classical-monumental"
+          },
+          "temporalWindow": "morning"
+        },
+        "ocr": {
+          "detectedText": [
+            "ALTARE DELLA PATRIA",
+            "VITTORIO EMANUELE II"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 98
+        },
+        "exif": {
+          "fStop": "f/11",
+          "iso": 100,
+          "shutterSpeed": "1/250s",
+          "focalLength": "35mm",
+          "make": "Hasselblad",
+          "model": "X1D II 50C",
+          "lensModel": "XCD 3,5/35mm",
+          "dateTimeOriginal": "2023:10:15 11:00:00"
+        },
+        "category": "government-historic",
+        "groundedFromAnchor": "Piazza Venezia",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 103.10988854150688,
+          "isOutlier": false,
+          "computedScore": 87,
+          "issues": [],
+          "h3Index": "891e8052a43ffff"
+        },
+        "h3Index": "891e8052a43ffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5005,
+          41.9015
+        ]
+      },
+      "properties": {
+        "id": "REF-0015",
+        "coordinates": {
+          "lat": 41.9015,
+          "lng": 12.5005,
+          "corner": "SE"
+        },
+        "timestamp": "2023-10-15T07:15:00Z",
+        "lighting": {
+          "sunPosition": "E",
+          "shadowDirection": "W",
+          "shadowLength": "long",
+          "description": "Cold blue early morning light near the station"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "tram-power-lines",
+          "shutterStyle": "commercial-glass-fronts",
+          "treeType": "sparse-ornamental-palms",
+          "graffiti": "very-high",
+          "terrain": "dirty-asphalt",
+          "urbanElements": {
+            "furniture": "tram-tracks-and-signs",
+            "vegetationScore": 0.15,
+            "architectureStyle": "rationalist-20th-century"
+          },
+          "temporalWindow": "dawn"
+        },
+        "ocr": {
+          "detectedText": [
+            "ROMA TERMINI",
+            "BINARIO 1",
+            "TRENITALIA"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 93
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 640,
+          "shutterSpeed": "1/200s",
+          "focalLength": "28mm",
+          "make": "iPhone",
+          "model": "iPhone 15 Pro",
+          "lensModel": "Main Camera",
+          "dateTimeOriginal": "2023:10:15 07:15:00"
+        },
+        "category": "transport-hub",
+        "groundedFromAnchor": "Termini Station",
+        "locationContext": "Roma",
+        "validation": {
+          "distanceFromCenter": 1618.9976884600126,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 1619m)"
+          ],
+          "h3Index": "891e8052a23ffff"
+        },
+        "h3Index": "891e8052a23ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.47051,
+          41.88932
+        ]
+      },
+      "properties": {
+        "id": "REF-0016",
+        "coordinates": {
+          "lat": 41.88932,
+          "lng": 12.47051,
+          "corner": "NE"
+        },
+        "timestamp": "2023-10-14T14:30:15Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "Medium",
+          "description": "Clear sky, harsh afternoon sun reflecting off ochre masonry"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Moderate fiber optic lines crossing narrow alley",
+          "shutterStyle": "Roman-style wooden slats, dark green",
+          "treeType": "None",
+          "graffiti": "Minimal political tags on travertine base",
+          "terrain": "Paved with Sampietrini (black basalt blocks)",
+          "urbanElements": {
+            "furniture": "Cast iron bollard and 'Nasone' public fountain",
+            "vegetationScore": 0.12,
+            "architectureStyle": "Medieval/Renaissance hybrid"
+          },
+          "temporalWindow": "Post-siesta, early afternoon"
+        },
+        "ocr": {
+          "detectedText": [
+            "RISTORANTE",
+            "VIA DELLA LUNGARETTA",
+            "MENU",
+            "VINI"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 98
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 100,
+          "shutterSpeed": "1/1000s",
+          "focalLength": "26mm",
+          "make": "Apple",
+          "model": "iPhone 14 Pro",
+          "lensModel": "Main Camera",
+          "dateTimeOriginal": "2023:10:14 14:30:15"
+        },
+        "category": "Historic Urban Center",
+        "groundedFromAnchor": "Trastevere District",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 8249.313134503052,
+          "isOutlier": true,
+          "computedScore": 86,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 8249m)"
+          ],
+          "h3Index": "891e805019bffff"
+        },
+        "h3Index": "891e805019bffff",
+        "geocodingScore": 86,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.45391,
+          41.90225
+        ]
+      },
+      "properties": {
+        "id": "REF-0017",
+        "coordinates": {
+          "lat": 41.90225,
+          "lng": 12.45391,
+          "corner": "SW"
+        },
+        "timestamp": "2023-10-14T09:15:00Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "Long",
+          "description": "Soft morning light with elongated shadows across the piazza"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None, underground utilities",
+          "shutterStyle": "Metal rolling shutters on commercial storefronts",
+          "treeType": "Platanus occidentalis",
+          "graffiti": "None, high-security zone",
+          "terrain": "Smooth basalt slabs and marble curbs",
+          "urbanElements": {
+            "furniture": "White marble benches and heavy security bollards",
+            "vegetationScore": 0.05,
+            "architectureStyle": "Baroque/Neoclassical"
+          },
+          "temporalWindow": "Morning tourist influx"
+        },
+        "ocr": {
+          "detectedText": [
+            "SOUVENIRS",
+            "VATIKAN",
+            "TABACCHI"
+          ],
+          "confidence": 0.92,
+          "rapidFuzzScore": 85
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 200,
+          "shutterSpeed": "1/500s",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "ILCE-7M3",
+          "lensModel": "FE 35mm F1.8",
+          "dateTimeOriginal": "2023:10:14 09:15:00"
+        },
+        "category": "Religious/Tourist Landmark",
+        "groundedFromAnchor": "Vatican Perimeter",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 9979.438065275828,
+          "isOutlier": true,
+          "computedScore": 80,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 9979m)"
+          ],
+          "h3Index": "891e80505c7ffff"
+        },
+        "h3Index": "891e80505c7ffff",
+        "geocodingScore": 80,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.47775,
+          41.87612
+        ]
+      },
+      "properties": {
+        "id": "REF-0018",
+        "coordinates": {
+          "lat": 41.87612,
+          "lng": 12.47775,
+          "corner": "SE"
+        },
+        "timestamp": "2023-10-14T11:45:22Z",
+        "lighting": {
+          "sunPosition": "Zenith",
+          "shadowDirection": "Vertical",
+          "shadowLength": "Minimal",
+          "description": "Noon sun, high contrast, vertical shadows"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Disorganized power lines near rooflines",
+          "shutterStyle": "Corrugated iron gates for market stalls",
+          "treeType": "Oleander shrubs in planters",
+          "graffiti": "Heavy urban art and stickers on metal surfaces",
+          "terrain": "Asphalt with heavy wear and concrete patches",
+          "urbanElements": {
+            "furniture": "Concrete waste bins and temporary metal fencing",
+            "vegetationScore": 0.18,
+            "architectureStyle": "Rationalist/Industrial"
+          },
+          "temporalWindow": "Peak market hours"
+        },
+        "ocr": {
+          "detectedText": [
+            "MERCATO TESTACCIO",
+            "BOX 12",
+            "CARNE",
+            "OFFERTA"
+          ],
+          "confidence": 0.88,
+          "rapidFuzzScore": 91
+        },
+        "exif": {
+          "fStop": "f/2.2",
+          "iso": 50,
+          "shutterSpeed": "1/2500s",
+          "focalLength": "4.3mm",
+          "make": "Google",
+          "model": "Pixel 7",
+          "lensModel": "Wide Angle",
+          "dateTimeOriginal": "2023:10:14 11:45:22"
+        },
+        "category": "Commercial/Market",
+        "groundedFromAnchor": "Testaccio Quarter",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 7435.664410449732,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 7436m)"
+          ],
+          "h3Index": "891e8050173ffff"
+        },
+        "h3Index": "891e8050173ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.51654,
+          41.89735
+        ]
+      },
+      "properties": {
+        "id": "REF-0019",
+        "coordinates": {
+          "lat": 41.89735,
+          "lng": 12.51654,
+          "corner": "NW"
+        },
+        "timestamp": "2023-10-14T17:50:40Z",
+        "lighting": {
+          "sunPosition": "W",
+          "shadowDirection": "E",
+          "shadowLength": "Very Long",
+          "description": "Golden hour, warm orange hues, deep shadows"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Dense tram wires overhead",
+          "shutterStyle": "Wooden shutters with peeling paint",
+          "treeType": "Pinus pinea (Umbrella Pine)",
+          "graffiti": "Extensive street art on railway underpass",
+          "terrain": "Mixed asphalt and large cobblestones",
+          "urbanElements": {
+            "furniture": "Electric scooter docking station and rusted railings",
+            "vegetationScore": 0.22,
+            "architectureStyle": "Art Nouveau/Liberty"
+          },
+          "temporalWindow": "Evening commute"
+        },
+        "ocr": {
+          "detectedText": [
+            "UNIVERSITA",
+            "STUDENTI",
+            "VIA DEI VOLSCI"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 89
+        },
+        "exif": {
+          "fStop": "f/1.6",
+          "iso": 400,
+          "shutterSpeed": "1/120s",
+          "focalLength": "24mm",
+          "make": "Samsung",
+          "model": "SM-S908B",
+          "lensModel": "Main Lens",
+          "dateTimeOriginal": "2023:10:14 17:50:40"
+        },
+        "category": "Academic/Bohemian",
+        "groundedFromAnchor": "San Lorenzo",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 5069.174952117562,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 5069m)"
+          ],
+          "h3Index": "891e8052b4fffff"
+        },
+        "h3Index": "891e8052b4fffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.46193,
+          41.90901
+        ]
+      },
+      "properties": {
+        "id": "REF-0020",
+        "coordinates": {
+          "lat": 41.90901,
+          "lng": 12.46193,
+          "corner": "N"
+        },
+        "timestamp": "2023-10-14T13:00:05Z",
+        "lighting": {
+          "sunPosition": "S",
+          "shadowDirection": "N",
+          "shadowLength": "Short",
+          "description": "Direct overhead light, minimal atmospheric haze"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None, strictly regulated district",
+          "shutterStyle": "Classic green external wooden blinds",
+          "treeType": "Manicured boxwood hedges",
+          "graffiti": "Strictly prohibited, clean walls",
+          "terrain": "Polished granite sidewalks and asphalt road",
+          "urbanElements": {
+            "furniture": "Designer street lamps and upscale retail signage",
+            "vegetationScore": 0.08,
+            "architectureStyle": "Umbertine/Late 19th Century"
+          },
+          "temporalWindow": "Lunch hour, high pedestrian traffic"
+        },
+        "ocr": {
+          "detectedText": [
+            "VIA COLA DI RIENZO",
+            "BOUTIQUE",
+            "SALDI"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/800s",
+          "focalLength": "50mm",
+          "make": "Canon",
+          "model": "EOS R6",
+          "lensModel": "RF 50mm F1.8",
+          "dateTimeOriginal": "2023:10:14 13:00:05"
+        },
+        "category": "Luxury Retail",
+        "groundedFromAnchor": "Prati District",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 9653.059974271093,
+          "isOutlier": true,
+          "computedScore": 86,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 9653m)"
+          ],
+          "h3Index": "891e8050587ffff"
+        },
+        "h3Index": "891e8050587ffff",
+        "geocodingScore": 86,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.52831,
+          41.88874
+        ]
+      },
+      "properties": {
+        "id": "REF-0021",
+        "coordinates": {
+          "lat": 41.88874,
+          "lng": 12.52831,
+          "corner": "SW"
+        },
+        "timestamp": "2023-10-14T20:10:00Z",
+        "lighting": {
+          "sunPosition": "None (Post-Sunset)",
+          "shadowDirection": "Multiple (Artificial)",
+          "shadowLength": "Variable",
+          "description": "Dusk light supplemented by warm LED street lamps"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Overhead low-voltage strings for outdoor seating",
+          "shutterStyle": "Metal pull-down grilles",
+          "treeType": "Ailanthus altissima (Tree of heaven) in cracks",
+          "graffiti": "High density spray paint on all accessible levels",
+          "terrain": "Uneven brickwork and patched concrete",
+          "urbanElements": {
+            "furniture": "Mismatched outdoor chairs and wooden pallets",
+            "vegetationScore": 0.15,
+            "architectureStyle": "Low-rise residential/Early 20th C"
+          },
+          "temporalWindow": "Nightlife beginning"
+        },
+        "ocr": {
+          "detectedText": [
+            "CIRCOLO",
+            "CRAFT BEER",
+            "PIGNETO"
+          ],
+          "confidence": 0.84,
+          "rapidFuzzScore": 76
+        },
+        "exif": {
+          "fStop": "f/1.2",
+          "iso": 1600,
+          "shutterSpeed": "1/60s",
+          "focalLength": "35mm",
+          "make": "Fujifilm",
+          "model": "X-T4",
+          "lensModel": "XF 23mm F1.4",
+          "dateTimeOriginal": "2023:10:14 20:10:00"
+        },
+        "category": "Nightlife/Gentrified",
+        "groundedFromAnchor": "Pigneto",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 3735.2587495112007,
+          "isOutlier": true,
+          "computedScore": 78,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 3735m)"
+          ],
+          "h3Index": "891e8050dc3ffff"
+        },
+        "h3Index": "891e8050dc3ffff",
+        "geocodingScore": 78,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48834,
+          41.86178
+        ]
+      },
+      "properties": {
+        "id": "REF-0022",
+        "coordinates": {
+          "lat": 41.86178,
+          "lng": 12.48834,
+          "corner": "Center"
+        },
+        "timestamp": "2023-10-14T15:20:12Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "Medium",
+          "description": "Mellow afternoon light filtered through trees"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Utility wires draped between courtyard buildings",
+          "shutterStyle": "Arched wooden shutters, yellow and red ochre",
+          "treeType": "Citrus trees in communal gardens",
+          "graffiti": "None, residential pride",
+          "terrain": "Earth and gravel paths within public housing lots",
+          "urbanElements": {
+            "furniture": "Wrought iron laundry racks and stone benches",
+            "vegetationScore": 0.45,
+            "architectureStyle": "Barocchetto Romano (Social Housing)"
+          },
+          "temporalWindow": "Afternoon quiet period"
+        },
+        "ocr": {
+          "detectedText": [
+            "LOTTO 12",
+            "SCALA B",
+            "VIETATO"
+          ],
+          "confidence": 0.91,
+          "rapidFuzzScore": 94
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 100,
+          "shutterSpeed": "1/400s",
+          "focalLength": "28mm",
+          "make": "Ricoh",
+          "model": "GR III",
+          "lensModel": "Fixed Lens",
+          "dateTimeOriginal": "2023:10:14 15:20:12"
+        },
+        "category": "Historic Residential",
+        "groundedFromAnchor": "Garbatella",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 6641.820668597284,
+          "isOutlier": true,
+          "computedScore": 89,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 6642m)"
+          ],
+          "h3Index": "891e8050e57ffff"
+        },
+        "h3Index": "891e8050e57ffff",
+        "geocodingScore": 89,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.46742,
+          41.82855
+        ]
+      },
+      "properties": {
+        "id": "REF-0023",
+        "coordinates": {
+          "lat": 41.82855,
+          "lng": 12.46742,
+          "corner": "NE"
+        },
+        "timestamp": "2023-10-14T10:45:00Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "Short-Medium",
+          "description": "Bright, even light reflecting off white marble surfaces"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None, high-end planned district",
+          "shutterStyle": "Hidden internal rollers",
+          "treeType": "Cypress trees (Cupressus sempervirens)",
+          "graffiti": "Zero tolerance, pristine white travertine",
+          "terrain": "Wide paved boulevards, perfectly level",
+          "urbanElements": {
+            "furniture": "Minimalist stone monolithic blocks and modern bus stops",
+            "vegetationScore": 0.1,
+            "architectureStyle": "Fascist Rationalism"
+          },
+          "temporalWindow": "Business hours"
+        },
+        "ocr": {
+          "detectedText": [
+            "PALAZZO DELLA CIVILTA",
+            "FENDI",
+            "EUR"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 99
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/250s",
+          "focalLength": "16mm",
+          "make": "Nikon",
+          "model": "Z7 II",
+          "lensModel": "14-24mm f/2.8",
+          "dateTimeOriginal": "2023:10:14 10:45:00"
+        },
+        "category": "Institutional/Rationalist",
+        "groundedFromAnchor": "EUR District",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 9582.707303152292,
+          "isOutlier": true,
+          "computedScore": 86,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 9583m)"
+          ],
+          "h3Index": "891e805188fffff"
+        },
+        "h3Index": "891e805188fffff",
+        "geocodingScore": 86,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48812,
+          41.89472
+        ]
+      },
+      "properties": {
+        "id": "REF-0024",
+        "coordinates": {
+          "lat": 41.89472,
+          "lng": 12.48812,
+          "corner": "W"
+        },
+        "timestamp": "2023-10-14T16:15:30Z",
+        "lighting": {
+          "sunPosition": "W",
+          "shadowDirection": "E",
+          "shadowLength": "Long",
+          "description": "Sun dipping below building lines, golden reflections"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Thin wires for holiday lights",
+          "shutterStyle": "Half-open wooden shutters with flower boxes",
+          "treeType": "Potted bougainvillea",
+          "graffiti": "Small stickers on drainpipes",
+          "terrain": "Narrow uphill Sampietrini street",
+          "urbanElements": {
+            "furniture": "Small bistro tables and menu chalkboards",
+            "vegetationScore": 0.25,
+            "architectureStyle": "Renaissance/Charming Alleyways"
+          },
+          "temporalWindow": "Aperitivo hour start"
+        },
+        "ocr": {
+          "detectedText": [
+            "ARTIGIANO",
+            "CAFFE",
+            "VIA DEI SERPENTI"
+          ],
+          "confidence": 0.93,
+          "rapidFuzzScore": 88
+        },
+        "exif": {
+          "fStop": "f/2.0",
+          "iso": 200,
+          "shutterSpeed": "1/320s",
+          "focalLength": "35mm",
+          "make": "Leica",
+          "model": "Q2",
+          "lensModel": "Summilux 28mm f/1.7",
+          "dateTimeOriginal": "2023:10:14 16:15:30"
+        },
+        "category": "Tourist/Artisan",
+        "groundedFromAnchor": "Monti District",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 7033.510043355458,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 7034m)"
+          ],
+          "h3Index": "891e8052a7bffff"
+        },
+        "h3Index": "891e8052a7bffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48005,
+          41.87002
+        ]
+      },
+      "properties": {
+        "id": "REF-0025",
+        "coordinates": {
+          "lat": 41.87002,
+          "lng": 12.48005,
+          "corner": "NW"
+        },
+        "timestamp": "2023-10-14T12:30:45Z",
+        "lighting": {
+          "sunPosition": "S",
+          "shadowDirection": "N",
+          "shadowLength": "Short",
+          "description": "Overhead sun creating high glare on metallic structures"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "High-tension lines near railway",
+          "shutterStyle": "Heavy steel industrial doors",
+          "treeType": "None",
+          "graffiti": "Large scale mural on side of warehouse",
+          "terrain": "Cracked asphalt and old rail tracks",
+          "urbanElements": {
+            "furniture": "Rusty dumpsters and chain-link fencing",
+            "vegetationScore": 0.02,
+            "architectureStyle": "Industrial/Converted Warehouses"
+          },
+          "temporalWindow": "Mid-day work cycle"
+        },
+        "ocr": {
+          "detectedText": [
+            "GAZOMETRO",
+            "ROMA",
+            "PERICOLO"
+          ],
+          "confidence": 0.89,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/2.4",
+          "iso": 100,
+          "shutterSpeed": "1/1600s",
+          "focalLength": "14mm",
+          "make": "GoPro",
+          "model": "Hero 11",
+          "lensModel": "Ultra Wide",
+          "dateTimeOriginal": "2023:10:14 12:30:45"
+        },
+        "category": "Industrial/Regenerated",
+        "groundedFromAnchor": "Ostiense",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 7234.185522588733,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 7234m)"
+          ],
+          "h3Index": "891e8050ed3ffff"
+        },
+        "h3Index": "891e8050ed3ffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.47642,
+          41.91074
+        ]
+      },
+      "properties": {
+        "id": "REF-0026",
+        "coordinates": {
+          "lat": 41.91074,
+          "lng": 12.47642,
+          "corner": "E"
+        },
+        "timestamp": "2023-10-14T08:30:00Z",
+        "lighting": {
+          "sunPosition": "E",
+          "shadowDirection": "W",
+          "shadowLength": "Long",
+          "description": "Early morning light silhouetting the obelisk"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "None (Public Square)",
+          "treeType": "Pinus pinea on the Pincio hill background",
+          "graffiti": "None",
+          "terrain": "Grand cobblestone circular plaza",
+          "urbanElements": {
+            "furniture": "Large stone fountains and tourist info kiosk",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Neoclassical Grandeur"
+          },
+          "temporalWindow": "Early morning exercise/tourist start"
+        },
+        "ocr": {
+          "detectedText": [
+            "CANOVA",
+            "PIAZZA DEL POPOLO",
+            "ADRIATICO"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 97
+        },
+        "exif": {
+          "fStop": "f/11.0",
+          "iso": 100,
+          "shutterSpeed": "1/125s",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "ILCE-7RM4",
+          "lensModel": "FE 24-70mm F2.8",
+          "dateTimeOriginal": "2023:10:14 08:30:00"
+        },
+        "category": "Public Square",
+        "groundedFromAnchor": "Piazza del Popolo",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 8677.708837165208,
+          "isOutlier": true,
+          "computedScore": 87,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 8678m)"
+          ],
+          "h3Index": "891e8052e6bffff"
+        },
+        "h3Index": "891e8052e6bffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.51862,
+          41.85461
+        ]
+      },
+      "properties": {
+        "id": "REF-0027",
+        "coordinates": {
+          "lat": 41.85461,
+          "lng": 12.51862,
+          "corner": "S"
+        },
+        "timestamp": "2023-10-14T14:00:00Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "Medium",
+          "description": "Open field lighting, no building cover"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Telegraph style wooden poles (historic)",
+          "shutterStyle": "None (Ruins)",
+          "treeType": "Cypress and Umbrella Pines lining the road",
+          "graffiti": "None",
+          "terrain": "Basalt 'Basoli' stones from Ancient Roman era",
+          "urbanElements": {
+            "furniture": "Low stone walls and wooden informative signs",
+            "vegetationScore": 0.85,
+            "architectureStyle": "Ancient Roman Infrastructure"
+          },
+          "temporalWindow": "Weekend recreation"
+        },
+        "ocr": {
+          "detectedText": [
+            "VIA APPIA ANTICA",
+            "PARCO",
+            "REGOLA"
+          ],
+          "confidence": 0.85,
+          "rapidFuzzScore": 82
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 100,
+          "shutterSpeed": "1/800s",
+          "focalLength": "35mm",
+          "make": "Panasonic",
+          "model": "DC-S5",
+          "lensModel": "20-60mm",
+          "dateTimeOriginal": "2023:10:14 14:00:00"
+        },
+        "category": "Archaeological/Park",
+        "groundedFromAnchor": "Appian Way",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 4474.126278555465,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 4474m)"
+          ],
+          "h3Index": "891e8050ab3ffff"
+        },
+        "h3Index": "891e8050ab3ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.49223,
+          41.89021
+        ]
+      },
+      "properties": {
+        "id": "REF-0028",
+        "coordinates": {
+          "lat": 41.89021,
+          "lng": 12.49223,
+          "corner": "N"
+        },
+        "timestamp": "2023-10-14T11:00:45Z",
+        "lighting": {
+          "sunPosition": "SE",
+          "shadowDirection": "NW",
+          "shadowLength": "Short",
+          "description": "Intense sun bouncing off white limestone and travertine"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "None",
+          "treeType": "None in immediate vicinity",
+          "graffiti": "None",
+          "terrain": "Polished stone paving",
+          "urbanElements": {
+            "furniture": "Green metal trash bins and 'No entry' signs",
+            "vegetationScore": 0.02,
+            "architectureStyle": "Flavian/Ancient Roman"
+          },
+          "temporalWindow": "Tourist peak"
+        },
+        "ocr": {
+          "detectedText": [
+            "COLOSSEO",
+            "VIA DEI FORI IMPERIALI",
+            "INFO"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/2.2",
+          "iso": 50,
+          "shutterSpeed": "1/4000s",
+          "focalLength": "13mm",
+          "make": "Apple",
+          "model": "iPhone 15 Pro",
+          "lensModel": "Ultra Wide Camera",
+          "dateTimeOriginal": "2023:10:14 11:00:45"
+        },
+        "category": "Historical Landmark",
+        "groundedFromAnchor": "Colosseum Area",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 6544.813491007383,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 6545m)"
+          ],
+          "h3Index": "891e8052a6bffff"
+        },
+        "h3Index": "891e8052a6bffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.46654,
+          41.93582
+        ]
+      },
+      "properties": {
+        "id": "REF-0029",
+        "coordinates": {
+          "lat": 41.93582,
+          "lng": 12.46654,
+          "corner": "W"
+        },
+        "timestamp": "2023-10-14T18:30:10Z",
+        "lighting": {
+          "sunPosition": "NW",
+          "shadowDirection": "SE",
+          "shadowLength": "Very Long",
+          "description": "Sun setting over the Tiber, lens flare probable"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Streetlight connections across bridge",
+          "shutterStyle": "None (Bridge)",
+          "treeType": "Plane trees lining the river banks",
+          "graffiti": "Padlocks attached to railings (Lucchetti)",
+          "terrain": "Asphalt and stone bridge walkway",
+          "urbanElements": {
+            "furniture": "Stone lamp posts and historical iron railings",
+            "vegetationScore": 0.3,
+            "architectureStyle": "Ancient/Modern Retrofit"
+          },
+          "temporalWindow": "Evening stroll (Passeggiata)"
+        },
+        "ocr": {
+          "detectedText": [
+            "PONTE MILVIO",
+            "ROMA",
+            "LUCCHETTI"
+          ],
+          "confidence": 0.9,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 800,
+          "shutterSpeed": "1/50s",
+          "focalLength": "26mm",
+          "make": "Google",
+          "model": "Pixel 6",
+          "lensModel": "Main Lens",
+          "dateTimeOriginal": "2023:10:14 18:30:10"
+        },
+        "category": "Bridge/Waterfront",
+        "groundedFromAnchor": "Ponte Milvio",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 10959.007103030788,
+          "isOutlier": true,
+          "computedScore": 88,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 10959m)"
+          ],
+          "h3Index": "891e805212bffff"
+        },
+        "h3Index": "891e805212bffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.50005,
+          41.89502
+        ]
+      },
+      "properties": {
+        "id": "REF-0030",
+        "coordinates": {
+          "lat": 41.89502,
+          "lng": 12.50005,
+          "corner": "SW"
+        },
+        "timestamp": "2023-10-14T15:45:00Z",
+        "lighting": {
+          "sunPosition": "SW",
+          "shadowDirection": "NE",
+          "shadowLength": "Medium",
+          "description": "Shadows from tall multi-story buildings covering the street"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Dense grid of trolleybus wires",
+          "shutterStyle": "Heavy wooden shutters and plastic AC units",
+          "treeType": "Hardy urban shrubs in pots",
+          "graffiti": "Stickers and tags on shop shutters",
+          "terrain": "Large gray basalt slabs",
+          "urbanElements": {
+            "furniture": "Newspaper kiosk and subway entrance (Line B)",
+            "vegetationScore": 0.05,
+            "architectureStyle": "Multi-ethnic/Commercial Mix"
+          },
+          "temporalWindow": "Afternoon rush"
+        },
+        "ocr": {
+          "detectedText": [
+            "ALBERGO",
+            "HOTEL",
+            "FARMACIA",
+            "TERMINI"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 91
+        },
+        "exif": {
+          "fStop": "f/1.8",
+          "iso": 125,
+          "shutterSpeed": "1/500s",
+          "focalLength": "24mm",
+          "make": "Samsung",
+          "model": "SM-G991B",
+          "lensModel": "Wide",
+          "dateTimeOriginal": "2023:10:14 15:45:00"
+        },
+        "category": "Transit Hub/Commercial",
+        "groundedFromAnchor": "Esquilino District",
+        "locationContext": "Italia",
+        "validation": {
+          "distanceFromCenter": 6136.356587332169,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 6136m)"
+          ],
+          "h3Index": "891e8052a67ffff"
+        },
+        "h3Index": "891e8052a67ffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    }
+  ]
+}

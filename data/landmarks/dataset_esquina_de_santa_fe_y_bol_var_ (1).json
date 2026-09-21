@@ -1,0 +1,1781 @@
+[
+  {
+    "id": "REF-0001",
+    "coordinates": {
+      "lat": -27.471654,
+      "lng": -58.831061,
+      "corner": "SE"
+    },
+    "timestamp": "2023-10-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-West",
+      "shadowDirection": "East",
+      "shadowLength": "Short",
+      "description": "Bright afternoon light casting sharp shadows towards the east."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate, typical of Corrientes downtown",
+      "shutterStyle": "Metal rolling shutters",
+      "treeType": "Lapacho rosado",
+      "graffiti": "Minimal tags on corner utility box",
+      "terrain": "Asphalt with some patching",
+      "urbanElements": {
+        "furniture": "Metal waste bin and traditional street signs",
+        "vegetationScore": 3,
+        "architectureStyle": "Neocolonial mixed with modern commercial"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "800",
+        "BOLIVAR"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 24-70mm f/2.8L",
+      "dateTimeOriginal": "2023-10-15T10:30:00-03:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 4.972493257806683,
+      "isOutlier": false,
+      "computedScore": 129,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 129,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0002",
+    "coordinates": {
+      "lat": -27.471642,
+      "lng": -58.831019,
+      "corner": "SW"
+    },
+    "timestamp": "2023-04-22T08:15:00Z",
+    "lighting": {
+      "sunPosition": "Low East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning sunlight with elongated shadows over the pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle crossing the street",
+      "shutterStyle": "Wooden colonial style",
+      "treeType": "Naranjo de calle",
+      "graffiti": "None",
+      "terrain": "Concrete sidewalk",
+      "urbanElements": {
+        "furniture": "Pedestrian crossing signs, streetlight pole",
+        "vegetationScore": 2,
+        "architectureStyle": "Republican facade"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Kiosco",
+        "Carga SUBE",
+        "BOLIVAR"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/200s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z6",
+      "lensModel": "Nikkor Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2023-04-22T05:15:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 6.162537711979589,
+      "isOutlier": false,
+      "computedScore": 109,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 109,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0003",
+    "coordinates": {
+      "lat": -27.47166,
+      "lng": -58.831126,
+      "corner": "NE"
+    },
+    "timestamp": "2022-11-10T17:45:00Z",
+    "lighting": {
+      "sunPosition": "Low West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Golden hour lighting with warm tones and long shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Scarce",
+      "shutterStyle": "Glass windows",
+      "treeType": "Palmera Pindo",
+      "graffiti": "Political stencil on wall",
+      "terrain": "Tiled sidewalk with tactile paving",
+      "urbanElements": {
+        "furniture": "Bus stop shelter, bench",
+        "vegetationScore": 4,
+        "architectureStyle": "Contemporary"
+      },
+      "temporalWindow": "2021-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARADA",
+        "LINEA 104",
+        "SANTA FE"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "A7 III",
+      "lensModel": "FE 50mm f/1.8",
+      "dateTimeOriginal": "2022-11-10T14:45:00-03:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.837971889225768,
+      "isOutlier": false,
+      "computedScore": 141,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 141,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0004",
+    "coordinates": {
+      "lat": -27.471588,
+      "lng": -58.831123,
+      "corner": "NW"
+    },
+    "timestamp": "2024-02-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "High Zenith",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Harsh midday summer light, almost no shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Visible power and telecom lines",
+      "shutterStyle": "Toldos de lona",
+      "treeType": "Chivato",
+      "graffiti": "Small sticker on post",
+      "terrain": "Asphalt with worn pedestrian crosswalk",
+      "urbanElements": {
+        "furniture": "Traffic light, corner ramp",
+        "vegetationScore": 5,
+        "architectureStyle": "Mid-century modern"
+      },
+      "temporalWindow": "2022-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "Panaderia",
+        "La Correntina",
+        "BOLIVAR 902"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm f/2.8",
+      "dateTimeOriginal": "2024-02-05T09:00:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 5.772750015814865,
+      "isOutlier": false,
+      "computedScore": 155,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 155,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0005",
+    "coordinates": {
+      "lat": -27.471566,
+      "lng": -58.831008,
+      "corner": "Mid-block East"
+    },
+    "timestamp": "2021-08-30T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Mid-East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Mid-morning clear sky light creating well-defined shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Telecom lines running parallel to facade",
+      "shutterStyle": "Iron bars rejas",
+      "treeType": "Ficus",
+      "graffiti": "Washed out tag on brickwork",
+      "terrain": "Cobblestone driveway entrance",
+      "urbanElements": {
+        "furniture": "Bollards, parking meter sign",
+        "vegetationScore": 2,
+        "architectureStyle": "Traditional residential"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "PROHIBIDO ESTACIONAR",
+        "GARAGE",
+        "SANTA FE 855"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 160,
+      "shutterSpeed": "1/400s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 35mm F1.8",
+      "dateTimeOriginal": "2021-08-30T07:00:00-03:00"
+    },
+    "category": "Otros",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.83271366201537,
+      "isOutlier": false,
+      "computedScore": 113,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 113,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0006",
+    "coordinates": {
+      "lat": -27.471649,
+      "lng": -58.831028,
+      "corner": "Sureste"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Corta",
+      "description": "Luz diurna intensa, sombras bien definidas proyectándose sobre la acera sureste."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderada densidad, cruzando la calle en diagonal",
+      "shutterStyle": "Persianas metálicas enrollables pintadas de gris",
+      "treeType": "Lapacho",
+      "graffiti": "Ausente",
+      "terrain": "Asfalto urbano estándar, veredas de baldosas calcáreas tradicionales",
+      "urbanElements": {
+        "furniture": "Poste nomenclador de calles negro con letras blancas",
+        "vegetationScore": 7.5,
+        "architectureStyle": "Residencial clásico argentino de mediados de siglo"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "BOLIVAR 1200"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "28mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF 24-105mm F4 L IS USM",
+      "dateTimeOriginal": "2023-11-15T14:30:00Z"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 5.997943051864995,
+      "isOutlier": false,
+      "computedScore": 196,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 196,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0007",
+    "coordinates": {
+      "lat": -27.471612,
+      "lng": -58.830991,
+      "corner": "Noreste"
+    },
+    "timestamp": "2022-06-10T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Larga",
+      "description": "Luz matinal de invierno, sombras alargadas desde los edificios comerciales hacia la calle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Alta densidad de cables de telecomunicaciones en el poste de la esquina",
+      "shutterStyle": "Frente de vidrio comercial",
+      "treeType": "Ausente en esta esquina exacta",
+      "graffiti": "Pequeño tag en la base del semáforo",
+      "terrain": "Vereda de concreto con rampas de accesibilidad pintadas de amarillo",
+      "urbanElements": {
+        "furniture": "Cesto de basura metálico, semáforo vehicular",
+        "vegetationScore": 2,
+        "architectureStyle": "Comercial moderno utilitario"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "KIOSCO",
+        "CARGA VIRTUAL",
+        "SANTA FE"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "NIKKOR Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2022-06-10T09:15:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.797038251337016,
+      "isOutlier": false,
+      "computedScore": 111,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 111,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0008",
+    "coordinates": {
+      "lat": -27.471652,
+      "lng": -58.831102,
+      "corner": "Suroeste"
+    },
+    "timestamp": "2023-03-21T17:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy Larga",
+      "description": "Atardecer cálido, fuerte resplandor lateral, sombras cubriendo gran parte de la intersección."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Escasos, línea de luz principal paralela a la fachada",
+      "shutterStyle": "Postigones de madera estilo colonial",
+      "treeType": "Chivato",
+      "graffiti": "Mural artístico en la pared lateral",
+      "terrain": "Vereda con parches de reparación en cemento alisado",
+      "urbanElements": {
+        "furniture": "Parada de colectivo metálica con techo",
+        "vegetationScore": 6,
+        "architectureStyle": "Colonial correntino conservado"
+      },
+      "temporalWindow": "2022-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACIA",
+        "TURNO",
+        "ABIERTO"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "ILCE-7M4",
+      "lensModel": "FE 50mm F1.8",
+      "dateTimeOriginal": "2023-03-21T17:45:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 5.637140083244856,
+      "isOutlier": false,
+      "computedScore": 168,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 168,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0009",
+    "coordinates": {
+      "lat": -27.471534,
+      "lng": -58.831118,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2021-08-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Muy Corta",
+      "description": "Mediodía despejado, sombras casi perpendiculares debajo de los aleros y árboles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica enrollados en el tensor",
+      "shutterStyle": "Rejas de seguridad forjadas",
+      "treeType": "Jacarandá joven",
+      "graffiti": "Pintada política descolorida en el muro bajo",
+      "terrain": "Asfalto con marcas de desgaste y cruce peatonal repintado",
+      "urbanElements": {
+        "furniture": "Banco de cemento en la entrada del local",
+        "vegetationScore": 5.5,
+        "architectureStyle": "Neoclásico modificado para uso comercial"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "PELUQUERIA",
+        "BOLIVAR"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "24mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm f/2.8 R LM WR",
+      "dateTimeOriginal": "2021-08-05T12:00:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.687175490480445,
+      "isOutlier": false,
+      "computedScore": 165,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 165,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0010",
+    "coordinates": {
+      "lat": -27.471587,
+      "lng": -58.831026,
+      "corner": "Centro-Norte"
+    },
+    "timestamp": "2024-01-10T08:30:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Media",
+      "description": "Mañana de verano brillante, alto contraste entre las fachadas iluminadas y la calle en sombra."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruce múltiple de distribución eléctrica de baja tensión",
+      "shutterStyle": "Cortinas metálicas tipo malla",
+      "treeType": "Ficus podado",
+      "graffiti": "Stencil de banda de rock local",
+      "terrain": "Calzada con senda peatonal blanca desgastada",
+      "urbanElements": {
+        "furniture": "Buzón de correo antiguo clausurado",
+        "vegetationScore": 4,
+        "architectureStyle": "Arquitectura genérica de los años 80"
+      },
+      "temporalWindow": "2023-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "BOLIVAR 1300",
+        "DESPENSA",
+        "BEBIDAS"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 160,
+      "shutterSpeed": "1/320s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 35mm F1.8 MACRO IS STM",
+      "dateTimeOriginal": "2024-01-10T08:30:00Z"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 5.038256527398985,
+      "isOutlier": false,
+      "computedScore": 141,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 141,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0011",
+    "coordinates": {
+      "lat": -27.471668,
+      "lng": -58.831043,
+      "corner": "Sureste"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Corta",
+      "description": "Luz de media tarde de primavera, sombras definidas proyectadas hacia la esquina sur."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Alta densidad de cableado eléctrico y coaxial cruzando la calle",
+      "shutterStyle": "Persianas metálicas enrollables típicas de comercio argentino",
+      "treeType": "Lapacho rosado (Handroanthus impetiginosus)",
+      "graffiti": "Graffiti político en esténcil sobre muro blanco",
+      "terrain": "Asfalto con parches de reparación y acera de baldosas vainilla",
+      "urbanElements": {
+        "furniture": "Cesto de basura metálico en poste y bolardos de cemento",
+        "vegetationScore": 3.5,
+        "architectureStyle": "Arquitectura comercial contemporánea mezclada con fachadas de los años 70"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "800",
+        "FARMACIA",
+        "24 HS"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "A7III",
+      "lensModel": "Sony FE 24-70mm f/2.8 GM",
+      "dateTimeOriginal": "2023-11-15T11:30:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 6.977748863635975,
+      "isOutlier": false,
+      "computedScore": 137,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 137,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0012",
+    "coordinates": {
+      "lat": -27.471658,
+      "lng": -58.831021,
+      "corner": "Noreste"
+    },
+    "timestamp": "2022-06-21T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Larga",
+      "description": "Luz matinal de invierno con sol bajo proyectando sombras alargadas sobre la fachada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas de distribución de baja tensión paralelas a la fachada",
+      "shutterStyle": "Celosías de madera pintadas de verde oscuro",
+      "treeType": "Ficus benjamina podado en forma esférica",
+      "graffiti": "Firmas con aerosol negro en caja de servicios",
+      "terrain": "Calle de asfalto liso con cordón cuneta de hormigón",
+      "urbanElements": {
+        "furniture": "Poste de alumbrado público de metal y cartel nomenclador verde",
+        "vegetationScore": 2,
+        "architectureStyle": "Neocolonial residencial en planta alta con local en planta baja"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "BOLIVAR",
+        "1200",
+        "KIOSCO",
+        "EL PASO"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 35mm f/1.4L II USM",
+      "dateTimeOriginal": "2022-06-21T07:15:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.201150248416494,
+      "isOutlier": false,
+      "computedScore": 112,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 112,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0013",
+    "coordinates": {
+      "lat": -27.471623,
+      "lng": -58.831098,
+      "corner": "Suroeste"
+    },
+    "timestamp": "2024-02-10T16:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Media",
+      "description": "Luz intensa de tarde de verano iluminando las fachadas orientadas al este."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Múltiples cables de fibra óptica enrollados en postes de madera",
+      "shutterStyle": "Fachada de vidrio con persianas americanas interiores",
+      "treeType": "Jacarandá mimosifolia sin floración",
+      "graffiti": "Inexistente, paredes limpias",
+      "terrain": "Acera con rampas de accesibilidad para sillas de ruedas pintadas de amarillo",
+      "urbanElements": {
+        "furniture": "Parada de colectivo metálica con asiento y techo de chapa",
+        "vegetationScore": 4,
+        "architectureStyle": "Racionalismo moderno adaptado para uso de oficinas"
+      },
+      "temporalWindow": "2023-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARADA",
+        "LINEA 104",
+        "108",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "NIKKOR Z 50mm f/1.8 S",
+      "dateTimeOriginal": "2024-02-10T13:45:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 3.1177439369043767,
+      "isOutlier": false,
+      "computedScore": 139,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 139,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0014",
+    "coordinates": {
+      "lat": -27.471664,
+      "lng": -58.831143,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2021-09-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Cenit",
+      "shadowDirection": "Sur",
+      "shadowLength": "Muy corta",
+      "description": "Iluminación dura y vertical de mediodía sin apenas sombras laterales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cableado telefónico estructurado y tensores metálicos",
+      "shutterStyle": "Cortinas metálicas de malla calada",
+      "treeType": "Naranjo agrio (Citrus aurantium) en la vereda",
+      "graffiti": "Pintada descolorida de un club de fútbol local (Mandiyú)",
+      "terrain": "Vereda de baldosas calcáreas con diseño de rombos",
+      "urbanElements": {
+        "furniture": "Semáforo peatonal y caja de distribución eléctrica verde",
+        "vegetationScore": 2.5,
+        "architectureStyle": "Comercial tradicional de techos altos y toldos rebatibles"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "BOLIVAR",
+        "SANTA FE",
+        "CARGAS SUBE",
+        "MAXIKIOSCO"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 400,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm f/2.8",
+      "dateTimeOriginal": "2021-09-05T09:00:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.376676336999642,
+      "isOutlier": false,
+      "computedScore": 118,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 118,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0015",
+    "coordinates": {
+      "lat": -27.471619,
+      "lng": -58.831069,
+      "corner": "Centro de intersección"
+    },
+    "timestamp": "2023-04-20T17:30:00Z",
+    "lighting": {
+      "sunPosition": "Oeste-Noroeste",
+      "shadowDirection": "Este-Sureste",
+      "shadowLength": "Muy larga",
+      "description": "Luz dorada de atardecer otoñal que resalta las texturas del pavimento."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruce denso de cables de semaforización y alumbrado en el centro de la calle",
+      "shutterStyle": "No aplica por ángulo de visión centrado en la vía",
+      "treeType": "Se divisa la copa de un Palo borracho a lo lejos",
+      "graffiti": "Mural de arte urbano en la medianera de un edificio visible de fondo",
+      "terrain": "Pavimento con senda peatonal tipo cebra algo desgastada",
+      "urbanElements": {
+        "furniture": "Semáforo vehicular colgante con carcasa amarilla y luminaria LED",
+        "vegetationScore": 1.5,
+        "architectureStyle": "Paisaje urbano mixto con edificios en altura de los años 80 y 90"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PANADERIA",
+        "LA CORRENTINA",
+        "OFERTA DEL DIA",
+        "CHIPA"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/125",
+      "focalLength": "85mm",
+      "make": "Sony",
+      "model": "A7R IV",
+      "lensModel": "Sony FE 85mm f/1.4 GM",
+      "dateTimeOriginal": "2023-04-20T14:30:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 1.005605469277441,
+      "isOutlier": false,
+      "computedScore": 108,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 108,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0016",
+    "coordinates": {
+      "lat": -27.471651,
+      "lng": -58.830984,
+      "corner": "Sureste"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Corta",
+      "description": "Luz diurna intensa típica de tarde primaveral en el litoral argentino, generando sombras duras sobre el asfalto."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abundantes cables de telecomunicaciones y suministro eléctrico cruzando la intersección.",
+      "shutterStyle": "Persianas metálicas enrollables en comercios de la esquina.",
+      "treeType": "Lapacho rosado (Handroanthus impetiginosus) joven",
+      "graffiti": "Tagging menor en la caja de luz municipal.",
+      "terrain": "Vereda con baldosas de vainilla tradicionales porteñas/argentinas y rampa de hormigón peinado.",
+      "urbanElements": {
+        "furniture": "Poste indicador de calles metálico de color verde oscuro, cesto de basura cilíndrico de metal.",
+        "vegetationScore": 3.5,
+        "architectureStyle": "Moderno de mediados de siglo con planta baja comercial y toldos fijos."
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "BOLIVAR",
+        "1000 - 1100"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 98.5
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 24-70mm f/2.8L II USM",
+      "dateTimeOriginal": "2023-11-15T14:30:00Z"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.631743062413792,
+      "isOutlier": false,
+      "computedScore": 137,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 137,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0017",
+    "coordinates": {
+      "lat": -27.471533,
+      "lng": -58.831089,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2022-06-20T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Larga",
+      "description": "Luz matinal rasante de invierno, proyección de sombras elongadas de los edificios sobre la calle Bolívar."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables agrupados en tensores que corren paralelos a la línea municipal.",
+      "shutterStyle": "Rejas de hierro forjado pintadas de negro sobre vidrieras comerciales.",
+      "treeType": "Ficus benjamina podado",
+      "graffiti": "Ausente, fachada recién pintada.",
+      "terrain": "Vereda de baldosones calcáreos grises, algo desgastados por el alto tránsito peatonal.",
+      "urbanElements": {
+        "furniture": "Buzón de correo antiguo rojo (residual), poste de tendido eléctrico de hormigón.",
+        "vegetationScore": 2,
+        "architectureStyle": "Ecléctico colonial con molduras en la cornisa superior."
+      },
+      "temporalWindow": "2021-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "KIOSCO",
+        "CARGAS VIRTUALES",
+        "SUBE",
+        "BOLIVAR 1520"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 87
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "D750",
+      "lensModel": "AF-S NIKKOR 35mm f/1.8G",
+      "dateTimeOriginal": "2022-06-20T09:15:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 8.76479662442154,
+      "isOutlier": false,
+      "computedScore": 110,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 110,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0018",
+    "coordinates": {
+      "lat": -27.47154,
+      "lng": -58.831133,
+      "corner": "Noroeste (Oeste sobre Bolívar)"
+    },
+    "timestamp": "2021-12-10T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Cenit, levemente al Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Casi nula",
+      "description": "Luz dura vertical de mediodía estival, ausencia casi total de sombras arrojadas laterales."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Maraña densa de cables de fibra óptica enrollados en el poste de luz.",
+      "shutterStyle": "Puerta de blindex y cortina metálica microperforada a medio subir.",
+      "treeType": "Chivato (Delonix regia) ofreciendo sombra densa.",
+      "graffiti": "Pintada política con esténcil en la pared medianera visible.",
+      "terrain": "Pavimento asfáltico en la calle con bache reparado recientemente, vereda con mosaicos rojos.",
+      "urbanElements": {
+        "furniture": "Parquímetro del Sistema de Estacionamiento Medido (SEM), cajón de verduras apoyado en la vereda.",
+        "vegetationScore": 4,
+        "architectureStyle": "Funcionalista utilitario de dos plantas."
+      },
+      "temporalWindow": "2020-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACIA",
+        "TURNO",
+        "OBRAS SOCIALES"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 91.5
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 50mm f/1.8",
+      "dateTimeOriginal": "2021-12-10T12:00:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.96071642872213,
+      "isOutlier": false,
+      "computedScore": 142,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 142,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0019",
+    "coordinates": {
+      "lat": -27.471589,
+      "lng": -58.831109,
+      "corner": "Suroeste"
+    },
+    "timestamp": "2024-03-05T17:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Muy larga",
+      "description": "Atardecer despejado, generando un tono dorado en las fachadas orientadas al este."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Conexión eléctrica bajando desde el poste a un caño corrugado exterior en la fachada.",
+      "shutterStyle": "Sin persianas, vidriera comercial completa protegida con bolardos.",
+      "treeType": "Naranjo de calle (Citrus × aurantium)",
+      "graffiti": "Restos de pegatinas de publicidad de espectáculos locales.",
+      "terrain": "Vereda de hormigón llaneado liso continuo, sin juntas de dilatación marcadas.",
+      "urbanElements": {
+        "furniture": "Bolardos de hormigón pintados de amarillo para evitar estacionamiento sobre la acera.",
+        "vegetationScore": 2.5,
+        "architectureStyle": "Renovación comercial moderna, frente vidriado con perfilería de aluminio negro."
+      },
+      "temporalWindow": "2023-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "LIBRERIA Y PAPELERIA",
+        "FOTOCOPIAS",
+        "SANTA FE 1035"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "28mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 23mm f/2 R WR",
+      "dateTimeOriginal": "2024-03-05T17:45:00Z"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 4.5007473815903625,
+      "isOutlier": false,
+      "computedScore": 118,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 118,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0020",
+    "coordinates": {
+      "lat": -27.4717,
+      "lng": -58.831051,
+      "corner": "Suroeste (Sur sobre Santa Fe)"
+    },
+    "timestamp": "2020-08-14T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Luz difusa por ligera nubosidad, sombras suaves pero direccionadas hacia el suroeste."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas de servicio eléctrico gruesas cruzando transversalmente la calle Santa Fe.",
+      "shutterStyle": "Ventanas residenciales en planta alta con cortinas de enrollar de PVC blanco.",
+      "treeType": "Jacarandá (Jacaranda mimosifolia) sin hojas (invierno)",
+      "graffiti": "Arte callejero (mural pequeño) en el muro lateral ciego.",
+      "terrain": "Vereda con parches de cemento tapando reparaciones de Aguas de Corrientes.",
+      "urbanElements": {
+        "furniture": "Poste de parada de colectivos de metal tubular azul, señalización vial indicando 'Prohibido Estacionar'.",
+        "vegetationScore": 1.5,
+        "architectureStyle": "Residencial/Comercial típico correntino de los años 80, fachadas revestidas en ladrillo a la vista."
+      },
+      "temporalWindow": "2018-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARADA",
+        "LINEA 104",
+        "RAMAL A",
+        "PROHIBIDO ESTACIONAR",
+        "TRANSPORTE PUBLICO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 95.2
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 160,
+      "shutterSpeed": "1/400",
+      "focalLength": "26mm (35mm equiv)",
+      "make": "Apple",
+      "model": "iPhone 11 Pro",
+      "lensModel": "Wide Camera 26mm f/1.8",
+      "dateTimeOriginal": "2020-08-14T10:30:00Z"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 10.181580195179727,
+      "isOutlier": false,
+      "computedScore": 106,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 106,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0021",
+    "coordinates": {
+      "lat": -27.471597,
+      "lng": -58.831042,
+      "corner": "Noreste"
+    },
+    "timestamp": "2023-04-12T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Media",
+      "description": "Luz de tarde con sombras proyectándose hacia las fachadas orientadas al sur."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abundantes, cruzando la intersección",
+      "shutterStyle": "Cortinas metálicas enrollables, algunas con rejas",
+      "treeType": "Lapacho, de mediano porte",
+      "graffiti": "Tags esporádicos en postes de luz",
+      "terrain": "Asfalto con baches menores, veredas de baldosas calcáreas",
+      "urbanElements": {
+        "furniture": "Poste de señalización vial, cesto de basura metálico",
+        "vegetationScore": 3.5,
+        "architectureStyle": "Comercial de una y dos plantas, estilo contemporáneo funcional"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "BOLIVAR",
+        "FARMACIA"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/8",
+      "iso": 100,
+      "shutterSpeed": "1/250",
+      "focalLength": "28mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 24-70mm f/2.8L II USM",
+      "dateTimeOriginal": "2023-04-12T11:30:00-03:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 3.117744225456003,
+      "isOutlier": false,
+      "computedScore": 136,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 136,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0022",
+    "coordinates": {
+      "lat": -27.47163,
+      "lng": -58.831119,
+      "corner": "Suroeste"
+    },
+    "timestamp": "2021-10-05T09:15:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Luz de mañana rasante, iluminando las fachadas orientadas al este."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderados, líneas de baja tensión",
+      "shutterStyle": "Postigos de madera en ventanas superiores",
+      "treeType": "Tipa",
+      "graffiti": "Ninguno visible",
+      "terrain": "Vereda angosta con mosaicos desgastados",
+      "urbanElements": {
+        "furniture": "Semáforo peatonal, pilar de luz",
+        "vegetationScore": 2,
+        "architectureStyle": "Residencial/Comercial antiguo, fachada de ladrillo revocado"
+      },
+      "temporalWindow": "2020-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "KIOSCO",
+        "CARGA VIRTUAL"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "D750",
+      "lensModel": "AF-S NIKKOR 35mm f/1.8G ED",
+      "dateTimeOriginal": "2021-10-05T06:15:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 5.32117668790254,
+      "isOutlier": false,
+      "computedScore": 110,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 110,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0023",
+    "coordinates": {
+      "lat": -27.471609,
+      "lng": -58.831091,
+      "corner": "Centro de la calzada"
+    },
+    "timestamp": "2019-02-20T16:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Media-larga",
+      "description": "Atardecer de verano, sombras pronunciadas cubriendo parte de la calle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cruce denso de cableado de telecomunicaciones",
+      "shutterStyle": "N/A",
+      "treeType": "N/A (vista a la calle)",
+      "graffiti": "N/A",
+      "terrain": "Pavimento asfáltico con líneas de senda peatonal borrosas",
+      "urbanElements": {
+        "furniture": "Semáforo vehicular",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Vista de los cuatro frentes, mezcla de moderno y tradicional"
+      },
+      "temporalWindow": "2018-2020"
+    },
+    "ocr": {
+      "detectedText": [
+        "MAXIKIOSCO",
+        "PAGO FACIL",
+        "780"
+      ],
+      "confidence": 0.78,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 400,
+      "shutterSpeed": "1/1000",
+      "focalLength": "18mm",
+      "make": "Sony",
+      "model": "Alpha a6000",
+      "lensModel": "E PZ 16-50mm F3.5-5.6 OSS",
+      "dateTimeOriginal": "2019-02-20T13:45:00-03:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 2.074769037124742,
+      "isOutlier": false,
+      "computedScore": 85,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0024",
+    "coordinates": {
+      "lat": -27.471659,
+      "lng": -58.831011,
+      "corner": "Sureste"
+    },
+    "timestamp": "2024-08-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Cenit (ligeramente al norte)",
+      "shadowDirection": "Sur",
+      "shadowLength": "Muy corta",
+      "description": "Luz dura de mediodía invernal."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Pocos visibles desde este ángulo",
+      "shutterStyle": "Vidrieras amplias sin persianas visibles",
+      "treeType": "Jacarandá",
+      "graffiti": "Pintadas políticas borroneadas en la pared lateral",
+      "terrain": "Vereda con baldosas táctiles para no videntes recientemente instaladas",
+      "urbanElements": {
+        "furniture": "Cartel publicitario iluminado, rampa para sillas de ruedas",
+        "vegetationScore": 4,
+        "architectureStyle": "Moderno, edificio de varios pisos con locales comerciales en planta baja"
+      },
+      "temporalWindow": "2023-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "PANADERIA",
+        "FACTURAS",
+        "BOLIVAR 802"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/4",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "50mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF35mmF2 R WR",
+      "dateTimeOriginal": "2024-08-15T09:00:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.972932882750057,
+      "isOutlier": false,
+      "computedScore": 144,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 144,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0025",
+    "coordinates": {
+      "lat": -27.471576,
+      "lng": -58.831135,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2020-05-10T17:30:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Atardecer, la esquina proyecta una sombra profunda sobre la calzada."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Líneas de teléfono y fibra óptica enredadas",
+      "shutterStyle": "Rejas de hierro forjado",
+      "treeType": "Ficus en macetón",
+      "graffiti": "Stickers en el poste del semáforo",
+      "terrain": "Vereda de cemento peinado",
+      "urbanElements": {
+        "furniture": "Buzón antiguo rojo (fuera de servicio), parada de colectivo cercana",
+        "vegetationScore": 1.5,
+        "architectureStyle": "Casona antigua adaptada para uso comercial"
+      },
+      "temporalWindow": "2019-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "VETERINARIA",
+        "ALIMENTOS",
+        "SANTA FE"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "Lumix GH5",
+      "lensModel": "LUMIX G X VARIO 12-35mm / F2.8 II ASPH. / POWER O.I.S.",
+      "dateTimeOriginal": "2020-05-10T14:30:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.444162373613736,
+      "isOutlier": false,
+      "computedScore": 104,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 104,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0026",
+    "coordinates": {
+      "lat": -27.471686,
+      "lng": -58.831043,
+      "corner": "Sureste"
+    },
+    "timestamp": "2026-05-07T12:35:00Z",
+    "lighting": {
+      "sunPosition": "Noreste (Azimut ~45°)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media-larga",
+      "description": "Luz matinal de otoño iluminando fachadas orientadas al norte, sombras alargadas hacia el suroeste [1.1]."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abundantes cruzando la calle",
+      "shutterStyle": "Persiana metálica cerrada",
+      "treeType": "Lapacho sin flores",
+      "graffiti": "Tags en caja de luz",
+      "terrain": "Baldosas calcáreas vainilla típicas de Corrientes",
+      "urbanElements": {
+        "furniture": "Señal de chapa verde con nombres de calles",
+        "vegetationScore": 3,
+        "architectureStyle": "Residencial de mediados del siglo XX"
+      },
+      "temporalWindow": "2024-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "BOLIVAR"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Canon",
+      "model": "EOS R5",
+      "lensModel": "RF24-70mm F2.8 L IS USM",
+      "dateTimeOriginal": "2026-05-07T09:35:00-03:00"
+    },
+    "category": "Calle/Intersección",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 8.860682698812816,
+      "isOutlier": false,
+      "computedScore": 130,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 130,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0027",
+    "coordinates": {
+      "lat": -27.471573,
+      "lng": -58.831128,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2026-05-07T12:35:00Z",
+    "lighting": {
+      "sunPosition": "Noreste (Azimut ~45°)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media-larga",
+      "description": "Esquina predominantemente en sombra debido al ángulo solar matinal y la edificación."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderados, paralelos a la fachada",
+      "shutterStyle": "Postigones de madera abiertos",
+      "treeType": "Ficus pequeño en cantero",
+      "graffiti": "Ausente",
+      "terrain": "Vereda estrecha con parches de cemento",
+      "urbanElements": {
+        "furniture": "Cesto basurero municipal de hierro",
+        "vegetationScore": 2,
+        "architectureStyle": "Comercial antiguo modificado"
+      },
+      "temporalWindow": "2020-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "PANADERIA",
+        "OFERTA DEL DIA",
+        "CHIPA"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 200,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "Z6 II",
+      "lensModel": "NIKKOR Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2026-05-07T09:36:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 7.047619532309333,
+      "isOutlier": false,
+      "computedScore": 112,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 112,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0028",
+    "coordinates": {
+      "lat": -27.471651,
+      "lng": -58.831075,
+      "corner": "Suroeste"
+    },
+    "timestamp": "2026-05-07T12:35:00Z",
+    "lighting": {
+      "sunPosition": "Noreste (Azimut ~45°)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Luz directa sobre la acera suroeste, alto contraste."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de fibra óptica y tendido eléctrico entrelazados",
+      "shutterStyle": "Rejas de hierro forjado",
+      "treeType": "Ausente",
+      "graffiti": "Stickers políticos en poste",
+      "terrain": "Cordón cuneta pintado de amarillo desgastado",
+      "urbanElements": {
+        "furniture": "Poste indicador de parada de colectivos",
+        "vegetationScore": 0,
+        "architectureStyle": "Funcional urbano"
+      },
+      "temporalWindow": "2023-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARADA",
+        "LINEA 105",
+        "109"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "A7 IV",
+      "lensModel": "FE 50mm F1.2 GM",
+      "dateTimeOriginal": "2026-05-07T09:37:00-03:00"
+    },
+    "category": "Transporte Público",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 4.5856009081860565,
+      "isOutlier": false,
+      "computedScore": 85,
+      "issues": [
+        "Entorno botánico genérico"
+      ],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0029",
+    "coordinates": {
+      "lat": -27.471606,
+      "lng": -58.831,
+      "corner": "Noreste"
+    },
+    "timestamp": "2026-05-07T12:35:00Z",
+    "lighting": {
+      "sunPosition": "Noreste (Azimut ~45°)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Fachada noreste fuertemente iluminada, proyectando sombra hacia la calle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Escasos en este tramo visual",
+      "shutterStyle": "Portón de chapa liso",
+      "treeType": "Naranjo de calle",
+      "graffiti": "Ausente",
+      "terrain": "Baldosas en buen estado, rampa para vehículos",
+      "urbanElements": {
+        "furniture": "Espejo parabólico de seguridad vial",
+        "vegetationScore": 4,
+        "architectureStyle": "Residencial tradicional correntino"
+      },
+      "temporalWindow": "2018-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "PROHIBIDO ESTACIONAR",
+        "GARAGE",
+        "DIA Y NOCHE"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/200s",
+      "focalLength": "24mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 16-55mm f/2.8",
+      "dateTimeOriginal": "2026-05-07T09:38:00-03:00"
+    },
+    "category": "Otros",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 6.920265705503887,
+      "isOutlier": false,
+      "computedScore": 144,
+      "issues": [],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 144,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0030",
+    "coordinates": {
+      "lat": -27.471552,
+      "lng": -58.831075,
+      "corner": "Noroeste"
+    },
+    "timestamp": "2026-05-07T12:35:00Z",
+    "lighting": {
+      "sunPosition": "Noreste (Azimut ~45°)",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Larga",
+      "description": "Luz difusa bajo toldo comercial, fondo iluminado por el sol matinal."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cables de tensión en la parte superior del encuadre",
+      "shutterStyle": "Toldo de lona verde retráctil",
+      "treeType": "Ausente",
+      "graffiti": "Pequeño stencil en la pared",
+      "terrain": "Vereda con alto tránsito, baldosas flojas",
+      "urbanElements": {
+        "furniture": "Pizarra de ofertas en la acera",
+        "vegetationScore": 0,
+        "architectureStyle": "Comercial contemporáneo modesto"
+      },
+      "temporalWindow": "2025-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "LIBRERIA",
+        "FOTOCOPIAS",
+        "IMPRESIONES",
+        "SANTA FE 1002"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2026-05-07T09:39:00-03:00"
+    },
+    "category": "Comercial",
+    "locationContext": "Esquina de Santa Fe y Bolívar, Ciudad de Corrientes, Argentina",
+    "validation": {
+      "distanceFromCenter": 6.468142895296536,
+      "isOutlier": false,
+      "computedScore": 83,
+      "issues": [
+        "Entorno botánico genérico"
+      ],
+      "h3Index": "89a96e7364bffff"
+    },
+    "h3Index": "89a96e7364bffff",
+    "geocodingScore": 83,
+    "isAnchor": false
+  }
+]

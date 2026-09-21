@@ -1,0 +1,4539 @@
+[
+  {
+    "id": "REF-0001",
+    "coordinates": {
+      "lat": -32.965412,
+      "lng": -60.658215,
+      "corner": "Boulevard Oroño y Córdoba"
+    },
+    "timestamp": "2023-10-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Mid-morning sunlight illuminating the historic facades on the south side of Oroño."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate bundle following the north sidewalk",
+      "shutterStyle": "White roller shutters (Persianas de enrollar)",
+      "treeType": "Tipuana tipu (Tipas) and Phoenix canariensis",
+      "graffiti": "Minimal sticker bombing on lampposts",
+      "terrain": "Flat urban grid",
+      "urbanElements": {
+        "furniture": "Sívori style white cast iron benches",
+        "vegetationScore": 0.85,
+        "architectureStyle": "French Eclecticism and Neoclassical"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. Oroño",
+        "Córdoba",
+        "700"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:10:15 10:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.562868709167025,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0002",
+    "coordinates": {
+      "lat": -32.964895,
+      "lng": -60.659102,
+      "corner": "Boulevard Oroño y Rioja"
+    },
+    "timestamp": "2023-11-20T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Late afternoon shadows stretching across the central pedestrian path."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground utilities near the intersection",
+      "shutterStyle": "Wooden shutters on historic balcony",
+      "treeType": "Platanus acerifolia (Palo Borracho nearby)",
+      "graffiti": "Stencil art on utility box",
+      "terrain": "Flat with asphalt pavement",
+      "urbanElements": {
+        "furniture": "Green Rosario Limpia waste bins",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Italianate with modern high-rise infill"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "2200",
+        "COTO"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Samsung",
+      "model": "SM-G991B",
+      "lensModel": "Wide-angle",
+      "dateTimeOriginal": "2023:11:20 16:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 102.48784543963328,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0003",
+    "coordinates": {
+      "lat": -32.966215,
+      "lng": -60.657542,
+      "corner": "Boulevard Oroño y San Lorenzo"
+    },
+    "timestamp": "2024-01-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith (North)",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High summer sun producing minimal vertical shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead distribution wiring",
+      "shutterStyle": "Aluminum roller blinds",
+      "treeType": "Phoenix canariensis palm",
+      "graffiti": "Political tag on masonry wall",
+      "terrain": "Standard paved sidewalk",
+      "urbanElements": {
+        "furniture": "Historic cast iron streetlight with dual globes",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Modernist brick and concrete buildings"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANATORIO PARQUE",
+        "URGENCIAS"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "50mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 50mm F1.8",
+      "dateTimeOriginal": "2024:01:05 12:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 105.0282987828525,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "San Lorenzo se encuentra a dos cuadras (~200m) de Córdoba; la coordenada es inconsistente."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0004",
+    "coordinates": {
+      "lat": -32.965754,
+      "lng": -60.658512,
+      "corner": "Boulevard Oroño 800 (Mid-block)"
+    },
+    "timestamp": "2023-09-12T08:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Soft morning light through Tipa tree canopy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low hanging telecommunication wires",
+      "shutterStyle": "Integrated blind systems in modern windows",
+      "treeType": "Tipuana tipu (dense canopy)",
+      "graffiti": "None visible",
+      "terrain": "Cantero central brick pathway",
+      "urbanElements": {
+        "furniture": "Cement bike rack",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Beaux-Arts mansion facade"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "FACULTAD",
+        "CIENCIAS ECONOMICAS"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF 24-70mm F2.8L",
+      "dateTimeOriginal": "2023:09:12 08:15:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 37.63793477881218,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La altura 800 (esquina San Lorenzo) está a dos cuadras; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0005",
+    "coordinates": {
+      "lat": -32.964321,
+      "lng": -60.657855,
+      "corner": "Boulevard Oroño y Santa Fe"
+    },
+    "timestamp": "2023-12-10T14:20:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "Intense early afternoon light reflecting off glass facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Concentrated bundles on timber poles",
+      "shutterStyle": "Storefront security grilles",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Commercial sticker on pole",
+      "terrain": "Tactile paving at crossing",
+      "urbanElements": {
+        "furniture": "Traffic signal box with local stickers",
+        "vegetationScore": 0.72,
+        "architectureStyle": "Early 20th century commercial"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "2200",
+        "OROÑO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "35mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:12:10 14:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 135.25918344561455,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0006",
+    "coordinates": {
+      "lat": -32.965125,
+      "lng": -60.658821,
+      "corner": "Boulevard Oroño 700 (Central Path)"
+    },
+    "timestamp": "2023-08-25T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Moderate",
+      "description": "Winter sun at meridian, low elevation angle."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (center of the street)",
+      "shutterStyle": "N/A",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Marker tag on park bench",
+      "terrain": "Red brick pavement (intertrabado)",
+      "urbanElements": {
+        "furniture": "Circular flower beds with petunias",
+        "vegetationScore": 0.98,
+        "architectureStyle": "Rosario Eclectic Heritage"
+      },
+      "temporalWindow": "2017-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "PROHIBIDO",
+        "ESTACIONAR",
+        "CANTERO"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 50,
+      "shutterSpeed": "1/4000",
+      "focalLength": "23mm",
+      "make": "Fujifilm",
+      "model": "X100V",
+      "lensModel": "23mm f/2.0",
+      "dateTimeOriginal": "2023:08:25 11:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 66.01663570374441,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La altura 700 (esquina Urquiza) está a tres cuadras; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0007",
+    "coordinates": {
+      "lat": -32.965882,
+      "lng": -60.658112,
+      "corner": "Boulevard Oroño y San Luis"
+    },
+    "timestamp": "2023-05-30T15:30:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Long",
+      "description": "Autumn afternoon light filtering through yellowing leaves."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density near the corner",
+      "shutterStyle": "Metal rolling shutters for shops",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "Political mural on construction hoarding",
+      "terrain": "Smooth asphalt with concrete curbs",
+      "urbanElements": {
+        "furniture": "Bus stop sign (Línea 102)",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Art Deco influence"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS",
+        "OROÑO",
+        "2100"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 320,
+      "shutterSpeed": "1/125",
+      "focalLength": "28mm",
+      "make": "Motorola",
+      "model": "Edge 30",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:05:30 15:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 45.91654400498481,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "San Luis se encuentra a dos cuadras (~200m) de Córdoba; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0008",
+    "coordinates": {
+      "lat": -32.964215,
+      "lng": -60.659352,
+      "corner": "Boulevard Oroño y San Juan"
+    },
+    "timestamp": "2023-03-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Direct morning sun illuminating the west-facing facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Messy cable loops on concrete poles",
+      "shutterStyle": "Barilochense style wood shutters",
+      "treeType": "Liquidambar styraciflua",
+      "graffiti": "Football club tag (CARC)",
+      "terrain": "Granitoid tile sidewalk",
+      "urbanElements": {
+        "furniture": "MuniRosario information totem",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Mid-century apartments"
+      },
+      "temporalWindow": "2018-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "BV. OROÑO",
+        "1000",
+        "SAN JUAN"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 100,
+      "shutterSpeed": "1/1500",
+      "focalLength": "26mm",
+      "make": "Xiaomi",
+      "model": "Mi 11",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:03:15 09:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 174.36727608731994,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Fuera del radio de 150m."
+    },
+    "h3Index": "89c2eba22cfffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0009",
+    "coordinates": {
+      "lat": -32.965312,
+      "lng": -60.658001,
+      "corner": "Boulevard Oroño y Rioja (North corner)"
+    },
+    "timestamp": "2023-07-12T13:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Moderate",
+      "description": "Overcast winter day with diffused shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Few cables near facade",
+      "shutterStyle": "No shutters, glass curtain wall",
+      "treeType": "Tipas",
+      "graffiti": "Sticker on traffic light pole",
+      "terrain": "Concrete tiles",
+      "urbanElements": {
+        "furniture": "Poste de parada de colectivos TUP",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Contemporary glass office building"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "2100",
+        "PARADA TUP"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 400,
+      "shutterSpeed": "1/60",
+      "focalLength": "30mm",
+      "make": "Nikon",
+      "model": "Z6",
+      "lensModel": "NIKKOR Z 35mm f/1.8 S",
+      "dateTimeOriginal": "2023:07:12 13:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 31.25198996886946,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Rioja se encuentra a una cuadra (~100m); la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0010",
+    "coordinates": {
+      "lat": -32.965992,
+      "lng": -60.657121,
+      "corner": "Boulevard Oroño y San Lorenzo (South Corner)"
+    },
+    "timestamp": "2023-11-05T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West-Southwest",
+      "shadowDirection": "East-Northeast",
+      "shadowLength": "Very Long",
+      "description": "Sunset golden hour lighting with high contrast."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Significant bundling on steel support",
+      "shutterStyle": "Horizontal metal slats",
+      "treeType": "Phoenix canariensis",
+      "graffiti": "Tag on low wall",
+      "terrain": "Brick pavers",
+      "urbanElements": {
+        "furniture": "Old style mailbox (Red)",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Classical revival"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "FARMACITY",
+        "OROÑO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 640,
+      "shutterSpeed": "1/50",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "Xperia 5",
+      "lensModel": "24mm Wide",
+      "dateTimeOriginal": "2023:11:05 17:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 120.23364815338999,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "San Lorenzo se encuentra a dos cuadras (~200m) de Córdoba; la coordenada es inconsistente."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0011",
+    "coordinates": {
+      "lat": -32.966452,
+      "lng": -60.658352,
+      "corner": "Boulevard Oroño y Córdoba (Central Path)"
+    },
+    "timestamp": "2023-04-20T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Bright morning light under clear skies."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None in the central path",
+      "shutterStyle": "N/A",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Minimal on bench supports",
+      "terrain": "Broken red brick path",
+      "urbanElements": {
+        "furniture": "Double-headed globe lamppost",
+        "vegetationScore": 0.99,
+        "architectureStyle": "N/A (Urban Park)"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "CIRCUITO",
+        "RECREATIVO"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS 90D",
+      "lensModel": "EF-S 18-55mm",
+      "dateTimeOriginal": "2023:04:20 11:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 107.45665256510496,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0012",
+    "coordinates": {
+      "lat": -32.964552,
+      "lng": -60.658661,
+      "corner": "Boulevard Oroño 850"
+    },
+    "timestamp": "2023-01-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "Hot summer sun causing harsh shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multiple vertical drops to buildings",
+      "shutterStyle": "White plastic shutters",
+      "treeType": "Fraxinus pennsylvanica",
+      "graffiti": "Football tag (CANOB)",
+      "terrain": "Tiled sidewalk with tree pit",
+      "urbanElements": {
+        "furniture": "Metal bollards at entrance",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Standard 1980s apartment"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ESTACIONAMIENTO",
+        "EXCLUSIVO"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/2500",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:01:15 15:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 110.61017576421503,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0013",
+    "coordinates": {
+      "lat": -32.965555,
+      "lng": -60.659221,
+      "corner": "Boulevard Oroño y San Juan (North Side)"
+    },
+    "timestamp": "2023-06-05T10:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Long",
+      "description": "Pale winter morning light."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy overhead bundles crossing San Juan",
+      "shutterStyle": "Heavy iron security shutters",
+      "treeType": "Tipas",
+      "graffiti": "Street art mural on side wall",
+      "terrain": "Concrete with storm drain grate",
+      "urbanElements": {
+        "furniture": "Pedestrian signal with timer",
+        "vegetationScore": 0.68,
+        "architectureStyle": "Rationalist corner building"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN JUAN",
+        "2100",
+        "STOP"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "40mm",
+      "make": "Ricoh",
+      "model": "GR III",
+      "lensModel": "18.3mm f/2.8",
+      "dateTimeOriginal": "2023:06:05 10:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 89.80868350405977,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "San Juan se encuentra a tres cuadras (~300m) de Córdoba; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0014",
+    "coordinates": {
+      "lat": -32.966332,
+      "lng": -60.657991,
+      "corner": "Boulevard Oroño 650"
+    },
+    "timestamp": "2023-02-12T19:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Blue hour dusk lighting."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Black cables silhouette against sky",
+      "shutterStyle": "Ornate wooden window shutters",
+      "treeType": "Phoenix canariensis",
+      "graffiti": "Small tags on base of statue",
+      "terrain": "Sidewalk with loose tiles",
+      "urbanElements": {
+        "furniture": "Decorative heritage lamppost (off)",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Palatial residence"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CONSULADO",
+        "ITALIA"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/1.4",
+      "iso": 1600,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7C",
+      "lensModel": "FE 35mm F1.4 GM",
+      "dateTimeOriginal": "2023:02:12 19:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 97.12016236574857,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La altura 650 se encuentra a más de tres cuadras; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0015",
+    "coordinates": {
+      "lat": -32.964998,
+      "lng": -60.657332,
+      "corner": "Boulevard Oroño y Santa Fe (South side)"
+    },
+    "timestamp": "2023-10-01T12:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Direct midday sun, vertical shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense fiber optic lines",
+      "shutterStyle": "Retail glass with metal grilles",
+      "treeType": "Jacarandas",
+      "graffiti": "Political campaign stickers",
+      "terrain": "Paved with ramp access",
+      "urbanElements": {
+        "furniture": "Shared bike station (Tu Bici)",
+        "vegetationScore": 0.74,
+        "architectureStyle": "Commercial Art Deco"
+      },
+      "temporalWindow": "2021-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "TU BICI",
+        "ESTACION",
+        "SANTA FE"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "52mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Telephoto Camera",
+      "dateTimeOriginal": "2023:10:01 12:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 102.45556241696866,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0016",
+    "coordinates": {
+      "lat": -32.965612,
+      "lng": -60.657882,
+      "corner": "Boulevard Oroño y Rioja (Center path)"
+    },
+    "timestamp": "2023-08-10T14:00:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "South-Southeast",
+      "shadowLength": "Moderate",
+      "description": "Crisp winter light with sharp shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None visible from center path",
+      "shutterStyle": "N/A",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Minimal sticker art on bin",
+      "terrain": "Red brick pavement",
+      "urbanElements": {
+        "furniture": "Double white Sívori bench",
+        "vegetationScore": 0.96,
+        "architectureStyle": "Mixed Urban Boulevard"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "2200"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/320",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D3500",
+      "lensModel": "18-55mm f/3.5-5.6",
+      "dateTimeOriginal": "2023:08:10 14:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 37.97910893678373,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Rioja se encuentra a una cuadra (~100m); la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0017",
+    "coordinates": {
+      "lat": -32.965252,
+      "lng": -60.659412,
+      "corner": "Boulevard Oroño 980"
+    },
+    "timestamp": "2023-12-28T07:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Early morning sun hitting the east-facing building facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Loose telecommunication wires dangling",
+      "shutterStyle": "Modern grey aluminum shutters",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "Stencil of a local artist",
+      "terrain": "Yellow tactile paving",
+      "urbanElements": {
+        "furniture": "Electrical transformer on pole",
+        "vegetationScore": 0.79,
+        "architectureStyle": "Brutalist residential tower"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "980",
+        "EDIFICIO",
+        "ALTO"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 125,
+      "shutterSpeed": "1/200",
+      "focalLength": "26mm",
+      "make": "Google",
+      "model": "Pixel 7",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:12:28 07:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 110.50123631072725,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0018",
+    "coordinates": {
+      "lat": -32.964712,
+      "lng": -60.657551,
+      "corner": "Boulevard Oroño y Santa Fe (North Corner)"
+    },
+    "timestamp": "2023-04-10T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour sunlight on the north-east side."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex node of wires near traffic light",
+      "shutterStyle": "Wooden rollers painted white",
+      "treeType": "Fraxinus",
+      "graffiti": "Present on electrical cabinet",
+      "terrain": "Standard sidewalk",
+      "urbanElements": {
+        "furniture": "Green newspaper kiosk (puesto de diarios)",
+        "vegetationScore": 0.71,
+        "architectureStyle": "Neoclassical Commercial"
+      },
+      "temporalWindow": "2018-2021"
+    },
+    "ocr": {
+      "detectedText": [
+        "DIARIOS",
+        "OROÑO",
+        "SANTA FE"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Xiaomi",
+      "model": "Redmi Note 11",
+      "lensModel": "Main Lens",
+      "dateTimeOriginal": "2023:04:10 16:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 108.86636159464553,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0019",
+    "coordinates": {
+      "lat": -32.966052,
+      "lng": -60.658991,
+      "corner": "Boulevard Oroño 750"
+    },
+    "timestamp": "2023-05-15T13:30:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "South-Southeast",
+      "shadowLength": "Moderate",
+      "description": "Bright autumn afternoon light."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tidy cabling along the facade line",
+      "shutterStyle": "Internal curtains visible through glass",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Clean facade",
+      "terrain": "Grey granite tiles",
+      "urbanElements": {
+        "furniture": "Cast iron tree grate",
+        "vegetationScore": 0.84,
+        "architectureStyle": "Modern luxury high-rise"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "OROÑO",
+        "RESIDENCE",
+        "750"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 50,
+      "shutterSpeed": "1/1200",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-S908B",
+      "lensModel": "Wide Lens",
+      "dateTimeOriginal": "2023:05:15 13:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 92.49379058680475,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La altura 750 se encuentra a casi tres cuadras; la coordenada es demasiado cercana."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0020",
+    "coordinates": {
+      "lat": -32.965482,
+      "lng": -60.658255,
+      "corner": "Boulevard Oroño y Córdoba (Center Intersection)"
+    },
+    "timestamp": "2023-09-30T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Morning sun illuminating the central statues and greenery."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Visible but high crossing the boulevard",
+      "shutterStyle": "N/A",
+      "treeType": "Phoenix canariensis and Tipas",
+      "graffiti": "Small marker tags on street signs",
+      "terrain": "Crosswalk with stripes",
+      "urbanElements": {
+        "furniture": "Rosario 360 Information board",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Historic Urban Core"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. Oroño",
+        "Córdoba",
+        "800"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/640",
+      "focalLength": "13mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Ultra Wide Camera",
+      "dateTimeOriginal": "2023:09:30 10:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 0.9579731041050356,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0021",
+    "coordinates": {
+      "lat": -32.9654886,
+      "lng": -60.6582616,
+      "corner": "Boulevard Oroño y Avenida Pellegrini"
+    },
+    "timestamp": "2023-10-12T15:45:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "High afternoon sun typical of spring in the southern hemisphere, casting distinct shadows across the central promenade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate density overhead cross-street cabling",
+      "shutterStyle": "Perforated metal roll-up for commercial fronts",
+      "treeType": "Tipuana tipu (Tipas) forming a dense green canopy",
+      "graffiti": "Low, mostly stickers on lamp posts",
+      "terrain": "Flat urban asphalt and paved pedestrian central walkway",
+      "urbanElements": {
+        "furniture": "Cast iron benches and green painted historic lampposts",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Neoclassical mansions mixed with mid-century modern apartments"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. PELLEGRINI",
+        "Bv. OROÑO",
+        "MC DONALD'S",
+        "PARE"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro",
+      "lensModel": "Main Camera 6.86mm f/1.78",
+      "dateTimeOriginal": "2023:10:12 15:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 0,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0022",
+    "coordinates": {
+      "lat": -32.9642886,
+      "lng": -60.6570616,
+      "corner": "Boulevard Oroño y Cochabamba"
+    },
+    "timestamp": "2023-11-05T10:20:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Bright morning light with high verticality, minimal shadow extension on the pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low, mostly concentrated at intersections",
+      "shutterStyle": "Traditional wood shutters on residential windows",
+      "treeType": "Platanus acerifolia near the sidewalk edges",
+      "graffiti": "Sporadic tag on utility box",
+      "terrain": "Paved with red tiles on the promenade",
+      "urbanElements": {
+        "furniture": "Standard Rosario municipal waste bins (green)",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Italianate eclectic style residential buildings"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "COCHABAMBA 2100",
+        "Bv. OROÑO",
+        "FARMACITY",
+        "ESTACIONAMIENTO EXCLUSIVO"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3",
+      "lensModel": "FE 35mm F1.8",
+      "dateTimeOriginal": "2023:11:05 10:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 174.17741396903492,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "La distancia excede el límite de 150m."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0023",
+    "coordinates": {
+      "lat": -32.9666886,
+      "lng": -60.6594616,
+      "corner": "Boulevard Oroño y Montevideo"
+    },
+    "timestamp": "2022-05-20T17:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting with long shadows stretching across the boulevard lanes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density near the clinic area",
+      "shutterStyle": "Aluminum security grilles",
+      "treeType": "Tipas with falling autumn leaves",
+      "graffiti": "None visible on primary facade",
+      "terrain": "Concrete asphalt with marked cycling lane",
+      "urbanElements": {
+        "furniture": "Newer design 'Rosario' ergonomic benches",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Modern clinical facilities with glass facades"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SANATORIO PARQUE",
+        "URGENCIAS",
+        "MONTEVIDEO",
+        "Bv. OROÑO 2100"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/500s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6",
+      "lensModel": "RF50mm F1.8 STM",
+      "dateTimeOriginal": "2022:05:20 17:10:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 174.17643657997547,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "La distancia excede el límite de 150m."
+    },
+    "h3Index": "89c2eba22c3ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0024",
+    "coordinates": {
+      "lat": -32.9658886,
+      "lng": -60.6578616,
+      "corner": "Boulevard Oroño (Mid-block between Pellegrini and Cochabamba)"
+    },
+    "timestamp": "2023-01-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Null",
+      "description": "Summer noon sun, very harsh lighting with shadows concentrated directly beneath objects."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground utilities primarily",
+      "shutterStyle": "Residential rolling shutters (Persianas)",
+      "treeType": "Massive Tipas canopy providing total shade",
+      "graffiti": "Political stencil on pavement",
+      "terrain": "Stone block walkway (Adoquines) on central strip",
+      "urbanElements": {
+        "furniture": "Drinking fountains (bebederos) in the promenade",
+        "vegetationScore": 0.95,
+        "architectureStyle": "French-influenced academicism"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2200",
+        "ESCUELA",
+        "REDUZCA VELOCIDAD"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-G998B",
+      "lensModel": "Ultra Wide 2.2mm f/2.2",
+      "dateTimeOriginal": "2023:01:15 12:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 58.05892079436546,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0025",
+    "coordinates": {
+      "lat": -32.9648886,
+      "lng": -60.6588616,
+      "corner": "Boulevard Oroño y Zeballos"
+    },
+    "timestamp": "2023-08-30T14:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Moderate-Long",
+      "description": "Winter afternoon sun, lower angle causing shadows to reach the street from the northern buildings."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense fiber optic bundles",
+      "shutterStyle": "Black iron bars on windows",
+      "treeType": "Deciduous trees with bare branches",
+      "graffiti": "Artistic mural on side of a building",
+      "terrain": "Standard sidewalk tiles (64 panes)",
+      "urbanElements": {
+        "furniture": "Bus stop shelter 'Refugio' style",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Art Deco residential block"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "ZEBALLOS",
+        "Bv. OROÑO",
+        "LINEA 102",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 160,
+      "shutterSpeed": "1/1250s",
+      "focalLength": "52mm",
+      "make": "Google",
+      "model": "Pixel 7 Pro",
+      "lensModel": "Telephoto 19mm f/3.5",
+      "dateTimeOriginal": "2023:08:30 14:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 87.08858481310106,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Zeballos se ubica a dos cuadras de Pellegrini; la distancia de 87m es incoherente."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0026",
+    "coordinates": {
+      "lat": -32.9650125,
+      "lng": -60.6584123,
+      "corner": "Avenida Pellegrini y Bv. Oroño (Northeast corner)"
+    },
+    "timestamp": "2024-02-10T19:30:00Z",
+    "lighting": {
+      "sunPosition": "West-Southwest",
+      "shadowDirection": "East-Northeast",
+      "shadowLength": "Very Long",
+      "description": "Sunset lighting, warm tones, orange hue hitting the building facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low",
+      "shutterStyle": "Modern folding glass",
+      "treeType": "Young Tipas",
+      "graffiti": "Clean surfaces",
+      "terrain": "Smooth concrete around fast food area",
+      "urbanElements": {
+        "furniture": "Outdoor restaurant tables and umbrellas",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Commercial modern"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "AUTO MAC",
+        "PELLEGRINI",
+        "ABIERTO 24 HS"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 800,
+      "shutterSpeed": "1/100s",
+      "focalLength": "24mm",
+      "make": "Xiaomi",
+      "model": "13 Ultra",
+      "lensModel": "23mm f/1.9",
+      "dateTimeOriginal": "2024:02:10 19:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 54.774944648499215,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0027",
+    "coordinates": {
+      "lat": -32.9659981,
+      "lng": -60.6575122,
+      "corner": "Boulevard Oroño y Avenida Pellegrini (Southwest corner)"
+    },
+    "timestamp": "2023-04-12T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Moderate",
+      "description": "Direct morning light on the west side of Pellegrini."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex distribution at intersection",
+      "shutterStyle": "Heavy metal shop shutters",
+      "treeType": "Large Tipas with dense foliage",
+      "graffiti": "Small tags on traffic light controller",
+      "terrain": "Standard asphalt",
+      "urbanElements": {
+        "furniture": "Traffic signal control box and pedestrian signals",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Mixed commercial/residential"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. PELLEGRINI 2100",
+        "Bv. OROÑO",
+        "P",
+        "TAXI"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "18mm",
+      "make": "Sony",
+      "model": "DSC-RX100M7",
+      "lensModel": "9.0-72.0mm f/2.8-4.5",
+      "dateTimeOriginal": "2023:04:12 09:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 89.98609204748875,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0028",
+    "coordinates": {
+      "lat": -32.9645012,
+      "lng": -60.6571234,
+      "corner": "Boulevard Oroño 2100 block"
+    },
+    "timestamp": "2023-06-15T13:00:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "South-Southeast",
+      "shadowLength": "Long",
+      "description": "Winter midday sun, relatively low in the sky, creating soft but long shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse",
+      "shutterStyle": "Rolling wooden blinds on balconies",
+      "treeType": "Platanus occidentalis",
+      "graffiti": "None",
+      "terrain": "Yellow tactile paving at corner",
+      "urbanElements": {
+        "furniture": "Fiberglass utility enclosure",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Rationalist apartment building"
+      },
+      "temporalWindow": "2019-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2150",
+        "VENTA",
+        "COOCHABAMBA"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 125,
+      "shutterSpeed": "1/3200s",
+      "focalLength": "28mm",
+      "make": "DJI",
+      "model": "Pocket 2",
+      "lensModel": "20mm f/1.8",
+      "dateTimeOriginal": "2023:06:15 13:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 152.74211887623213,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "La distancia excede los 150m y la numeración 2100 se encuentra a cuatro cuadras."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0029",
+    "coordinates": {
+      "lat": -32.9664121,
+      "lng": -60.6589921,
+      "corner": "Montevideo 2100 y Bv. Oroño"
+    },
+    "timestamp": "2023-12-01T11:00:00Z",
+    "lighting": {
+      "sunPosition": "East-Northeast",
+      "shadowDirection": "West-Southwest",
+      "shadowLength": "Short",
+      "description": "High summer sun, bright diffuse light due to thick leaf canopy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Significant across Montevideo street",
+      "shutterStyle": "Louvered wood",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Stencil on waste bin",
+      "terrain": "Grey mosaic tiles",
+      "urbanElements": {
+        "furniture": "TUP bus stop pole",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Classical Spanish colonial revival"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MONTEVIDEO",
+        "Bv. OROÑO",
+        "PROHIBIDO ARROJAR RESIDUOS"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensModel": "24mm f/1.78",
+      "dateTimeOriginal": "2023:12:01 11:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 123.24494215502826,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0030",
+    "coordinates": {
+      "lat": -32.9654,
+      "lng": -60.6582,
+      "corner": "Boulevard Oroño Promenade (near Pellegrini)"
+    },
+    "timestamp": "2024-03-22T16:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Equinox sun providing even lighting on both sides of the boulevard."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (buried in the central area)",
+      "shutterStyle": "None",
+      "treeType": "Historical Tipas",
+      "graffiti": "Low",
+      "terrain": "Historical bricks and gravel",
+      "urbanElements": {
+        "furniture": "Double-sided cast iron clock (ornamental)",
+        "vegetationScore": 0.98,
+        "architectureStyle": "Landscape urbanism"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PARQUE DE LA INDEPENDENCIA",
+        "A 100 MTS",
+        "ROSARIO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "14mm",
+      "make": "Fujifilm",
+      "model": "X-T4",
+      "lensModel": "XF 10-24mm F4 R OIS WR",
+      "dateTimeOriginal": "2024:03:22 16:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 11.405490480693953,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 100,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0031",
+    "coordinates": {
+      "lat": -32.9649987,
+      "lng": -60.6579982,
+      "corner": "Boulevard Oroño y Cochabamba (NW corner)"
+    },
+    "timestamp": "2023-09-10T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early spring morning, cool temperature light."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate",
+      "shutterStyle": "PVC slats",
+      "treeType": "Young Platanus",
+      "graffiti": "None",
+      "terrain": "Stone pavers",
+      "urbanElements": {
+        "furniture": "Fire hydrant (red)",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Contemporary high-rise"
+      },
+      "temporalWindow": "2021-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2100",
+        "COCHABAMBA",
+        "FARMACIA"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7C",
+      "lensModel": "28-60mm F4-5.6",
+      "dateTimeOriginal": "2023:09:10 08:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 59.760402611756746,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La distancia de 59m es insuficiente para alcanzar la esquina de Cochabamba."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0032",
+    "coordinates": {
+      "lat": -32.9660111,
+      "lng": -60.6586001,
+      "corner": "Boulevard Oroño 2200, near Zeballos"
+    },
+    "timestamp": "2022-11-20T18:00:00Z",
+    "lighting": {
+      "sunPosition": "South-West",
+      "shadowDirection": "North-East",
+      "shadowLength": "Long",
+      "description": "Late spring sunset casting shadows of trees across the whole street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High",
+      "shutterStyle": "Metal curtains",
+      "treeType": "Tipas in full bloom (yellow flowers)",
+      "graffiti": "Stickers on pole",
+      "terrain": "Asphalt",
+      "urbanElements": {
+        "furniture": "Advertising totem (Mupi)",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Eclectic mansions"
+      },
+      "temporalWindow": "2020-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2202",
+        "ZEBALLOS",
+        "SOLO BUS"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 640,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Wide angle lens",
+      "dateTimeOriginal": "2022:11:20 18:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 66.12708449752868,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Inconsistencia: la numeración 2200 no se encuentra cerca de la calle Zeballos (1500)."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0033",
+    "coordinates": {
+      "lat": -32.9656789,
+      "lng": -60.6592222,
+      "corner": "Montevideo y Oroño (North corner)"
+    },
+    "timestamp": "2023-05-10T14:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Diffuse lighting due to overcast sky common in autumn."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate",
+      "shutterStyle": "Venetian blinds",
+      "treeType": "Tipas",
+      "graffiti": "None",
+      "terrain": "Tiled sidewalk",
+      "urbanElements": {
+        "furniture": "Underground bin access",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Early 20th century residential"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MONTEVIDEO 2100",
+        "Bv. OROÑO",
+        "CUIDADO CON EL PERRO"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 80
+    },
+    "exif": {
+      "fStop": "f/4.5",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "55mm",
+      "make": "Nikon",
+      "model": "D3500",
+      "lensModel": "AF-P DX NIKKOR 18-55mm f/3.5-5.6G VR",
+      "dateTimeOriginal": "2023:05:10 14:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 92.08088663474423,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0034",
+    "coordinates": {
+      "lat": -32.9654111,
+      "lng": -60.6582111,
+      "corner": "Av. Pellegrini y Bv. Oroño (Crossing)"
+    },
+    "timestamp": "2024-01-30T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Very Short",
+      "description": "Intense summer light, very high contrast between sun and shade areas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex web of overhead lines",
+      "shutterStyle": "None",
+      "treeType": "Mature Tipas",
+      "graffiti": "Low level on pole bases",
+      "terrain": "Asphalt with white painted zebra crossing",
+      "urbanElements": {
+        "furniture": "Traffic light post (painted grey)",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Commercial facade"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO",
+        "AV. PELLEGRINI",
+        "PARE",
+        "30 KM/H"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/5000s",
+      "focalLength": "23mm",
+      "make": "Apple",
+      "model": "iPhone 13",
+      "lensModel": "Main camera f/1.6",
+      "dateTimeOriginal": "2024:01:30 11:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 9.821363618852166,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0035",
+    "coordinates": {
+      "lat": -32.9642886,
+      "lng": -60.6593616,
+      "corner": "Boulevard Oroño 2000 block"
+    },
+    "timestamp": "2023-07-20T15:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Long",
+      "description": "Cold winter afternoon lighting, low saturation."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate",
+      "shutterStyle": "Accordion metal gate",
+      "treeType": "Bare Platanus trees",
+      "graffiti": "Tags on construction barrier",
+      "terrain": "Broken tiles on part of the sidewalk",
+      "urbanElements": {
+        "furniture": "Mailbox (traditional blue/yellow)",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Beaux-Arts palace"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2050",
+        "OBRA EN CONSTRUCCION",
+        "ARQUITECTO"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 75
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 250,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Samsung",
+      "model": "SM-A536B",
+      "lensModel": "64MP f/1.8",
+      "dateTimeOriginal": "2023:07:20 15:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 168.33284570530188,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "La distancia excede los 150m y la numeración 2000 se encuentra a tres cuadras."
+    },
+    "h3Index": "89c2eba22cfffff",
+    "geocodingScore": 80,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0036",
+    "coordinates": {
+      "lat": -32.9654886,
+      "lng": -60.6582616,
+      "corner": "Oroño y Pellegrini (Center of intersection)"
+    },
+    "timestamp": "2024-04-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Balanced noon light, minimal shadows on the road."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead tramway cables (historical legacy style)",
+      "shutterStyle": "None",
+      "treeType": "Tipas",
+      "graffiti": "Clean",
+      "terrain": "High traffic asphalt intersection",
+      "urbanElements": {
+        "furniture": "Pedestrian refuge island with bollards",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Neo-Renaissance"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO",
+        "Av. PELLEGRINI",
+        "ROSARIO CIUDAD"
+      ],
+      "confidence": 1,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/8",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS 5D Mark IV",
+      "lensModel": "EF 35mm f/1.4L II USM",
+      "dateTimeOriginal": "2024:04:15 12:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 0,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0037",
+    "coordinates": {
+      "lat": -32.9665886,
+      "lng": -60.6583616,
+      "corner": "Montevideo street, near Oroño"
+    },
+    "timestamp": "2023-03-05T10:15:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Moderate",
+      "description": "Clear morning light illuminating the residential facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense web of service wires",
+      "shutterStyle": "Plastic roll-up shutters",
+      "treeType": "Orange trees (Naranjos)",
+      "graffiti": "Tag on low wall",
+      "terrain": "Stone pavement (Veredas)",
+      "urbanElements": {
+        "furniture": "Green trash container",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Standard apartment block"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MONTEVIDEO 2120",
+        "COCHERA"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "4.2mm",
+      "make": "Apple",
+      "model": "iPhone SE",
+      "lensModel": "Back Camera f/2.2",
+      "dateTimeOriginal": "2023:03:05 10:15:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 122.6696814902107,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0038",
+    "coordinates": {
+      "lat": -32.9645886,
+      "lng": -60.6575616,
+      "corner": "Boulevard Oroño 2100 (Central Promenade)"
+    },
+    "timestamp": "2023-11-25T16:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Moderate-Long",
+      "description": "Afternoon sun filtered through the dense 'Tipas' canopy, creating a dappled light effect."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None",
+      "shutterStyle": "None",
+      "treeType": "Ancient Tipuana tipu",
+      "graffiti": "Minimal",
+      "terrain": "Red brick walkway",
+      "urbanElements": {
+        "furniture": "Iron benches with wood slats",
+        "vegetationScore": 1,
+        "architectureStyle": "Park landscaping"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CIRCUITO AEROBICO",
+        "Bv. OROÑO",
+        "ESTACION COCHABAMBA"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/400s",
+      "focalLength": "16mm",
+      "make": "GoPro",
+      "model": "Hero 10 Black",
+      "lensModel": "Built-in ultra wide",
+      "dateTimeOriginal": "2023:11:25 16:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 119.49826252818292,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La numeración 2100 es incoherente con la cercanía geográfica a Pellegrini."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0039",
+    "coordinates": {
+      "lat": -32.9658886,
+      "lng": -60.6590616,
+      "corner": "Zeballos 2100 block"
+    },
+    "timestamp": "2024-05-02T13:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Autumn midday sun, clear sky with sharp definition."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Very high",
+      "shutterStyle": "Old wooden doors and shutters",
+      "treeType": "Deciduous Ash",
+      "graffiti": "Political spray paint on wall",
+      "terrain": "Old hexagonal tiles",
+      "urbanElements": {
+        "furniture": "Electric meter boxes on facade",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Standard 'Chorizo' house"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "ZEBALLOS 2145",
+        "ALQUILA"
+      ],
+      "confidence": 0.87,
+      "rapidFuzzScore": 82
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "5.4mm",
+      "make": "Google",
+      "model": "Pixel 4",
+      "lensModel": "28mm f/1.7",
+      "dateTimeOriginal": "2024:05:02 13:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 86.88200914758276,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Zeballos se ubica a dos cuadras de Pellegrini; la distancia de 86m es incoherente."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-0040",
+    "coordinates": {
+      "lat": -32.9651886,
+      "lng": -60.6578616,
+      "corner": "Oroño 2100 (near Medical Centers)"
+    },
+    "timestamp": "2023-08-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Winter afternoon, low sun angle illuminating building tops."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Significant clusters of fiber optics",
+      "shutterStyle": "Security shutters for clinics",
+      "treeType": "Tipas",
+      "graffiti": "None",
+      "terrain": "Asphalt with high traffic markings",
+      "urbanElements": {
+        "furniture": "Ambulance parking signs",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Modern medical center architecture"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. OROÑO 2100",
+        "ICR",
+        "CARDIOVASCULAR"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 200,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-S918B",
+      "lensModel": "Wide 23mm f/1.7",
+      "dateTimeOriginal": "2023:08:15 15:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 50.053446415030905,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "La numeración 2100 es incoherente con la cercanía geográfica a Pellegrini."
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0041",
+    "coordinates": {
+      "lat": -32.9654886,
+      "lng": -60.6582616,
+      "corner": "Boulevard Oroño y Salta"
+    },
+    "timestamp": "2024-05-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Golden hour lighting highlighting the neoclassical cornices"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead network",
+      "shutterStyle": "Traditional wooden shutters (Persianas)",
+      "treeType": "Platanus acerifolia (Palo borracho nearby)",
+      "graffiti": "Urban stickers on lampposts",
+      "terrain": "Flat paved boulevard with central parkway",
+      "urbanElements": {
+        "furniture": "Cast iron benches and green waste bins",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Early 20th-century European eclectic"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. Oroño",
+        "Salta 2200",
+        "Prohibido Estacionar"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Sony",
+      "model": "IMX689",
+      "lensModel": "Wide Angle 26mm f1.8",
+      "dateTimeOriginal": "2024:05:15 14:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 0,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0042",
+    "coordinates": {
+      "lat": -32.9649886,
+      "lng": -60.6578616,
+      "corner": "Boulevard Oroño entre Salta y Jujuy"
+    },
+    "timestamp": "2024-05-15T10:15:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Direct morning sunlight on the central pedestrian path"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tangled near street corners",
+      "shutterStyle": "Aluminum rolling shutters",
+      "treeType": "Palm trees (Phoenix canariensis)",
+      "graffiti": "Small tags on electrical boxes",
+      "terrain": "Asphalt with marble curbs",
+      "urbanElements": {
+        "furniture": "Wrought iron lampposts",
+        "vegetationScore": 0.78,
+        "architectureStyle": "French Academicism"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Oroño 150",
+        "Farmacia",
+        "Abierto"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "S21 Ultra",
+      "lensModel": "Primary Wide",
+      "dateTimeOriginal": "2024:05:15 10:15:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 66.95999196842834,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0043",
+    "coordinates": {
+      "lat": -32.9660886,
+      "lng": -60.6588616,
+      "corner": "Boulevard Oroño y Catamarca"
+    },
+    "timestamp": "2024-05-15T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Sunset casting long shadows across the double-lane avenue"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundled fiber optic cables",
+      "shutterStyle": "Slatted metal curtains",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Political stencil on low wall",
+      "terrain": "Paved with central bike lane",
+      "urbanElements": {
+        "furniture": "Modern concrete planters",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Art Nouveau details"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Catamarca 2100",
+        "Bv. Oroño 200",
+        "Cuidado Niños"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2024:05:15 17:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 87.08834046594271,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0044",
+    "coordinates": {
+      "lat": -32.9642886,
+      "lng": -60.6571616,
+      "corner": "Boulevard Oroño y Jujuy"
+    },
+    "timestamp": "2024-05-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Null",
+      "description": "High contrast midday light with minimal shadows"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal overhead visibility",
+      "shutterStyle": "Folding wood panels",
+      "treeType": "Large Tipuana tipu",
+      "graffiti": "Clean facades with minor marker tags",
+      "terrain": "Polished stone pedestrian area",
+      "urbanElements": {
+        "furniture": "Antique green benches",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Italianate Villa style"
+      },
+      "temporalWindow": "2018-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Jujuy 2200",
+        "Oroño",
+        "Velocidad Máxima 40"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/1500s",
+      "focalLength": "52mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Telephoto",
+      "dateTimeOriginal": "2024:05:15 12:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 168.332845705706,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el radio de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0045",
+    "coordinates": {
+      "lat": -32.9667886,
+      "lng": -60.6595616,
+      "corner": "Boulevard Oroño y Tucumán"
+    },
+    "timestamp": "2024-05-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Morning glow hitting the western building facades"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Power lines crossing the boulevard",
+      "shutterStyle": "White PVC shutters",
+      "treeType": "Evergreen shrubs",
+      "graffiti": "Mural on building side",
+      "terrain": "Standard urban asphalt",
+      "urbanElements": {
+        "furniture": "Public bike sharing station",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Rationalism"
+      },
+      "temporalWindow": "2022-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "Tucumán 2100",
+        "Mi Bici Tu Bici",
+        "Bv. Oroño"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 125,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Xiaomi",
+      "model": "Mi 11",
+      "lensModel": "Standard Wide",
+      "dateTimeOriginal": "2024:05:15 09:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 188.6910955093939,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el radio de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22c3ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0046",
+    "coordinates": {
+      "lat": -32.9657886,
+      "lng": -60.6579616,
+      "corner": "Boulevard Oroño 100 block"
+    },
+    "timestamp": "2024-05-15T15:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Diffused light due to heavy foliage cover"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Intertwined with tree branches",
+      "shutterStyle": "Dark painted iron shutters",
+      "treeType": "Oak (Quercus)",
+      "graffiti": "None",
+      "terrain": "Cobblestone gutters",
+      "urbanElements": {
+        "furniture": "Historical street signage",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Beaux-Arts"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Oroño 180",
+        "Consulado",
+        "España"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "26mm",
+      "make": "Sony",
+      "model": "Alpha A6400",
+      "lensModel": "16-50mm f/3.5-5.6",
+      "dateTimeOriginal": "2024:05:15 15:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 43.544200777178794,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0047",
+    "coordinates": {
+      "lat": -32.9651886,
+      "lng": -60.6585616,
+      "corner": "Boulevard Oroño y Salta (Northeast)"
+    },
+    "timestamp": "2024-05-15T11:40:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Bright overhead sun illuminating shop signs"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Street lighting cables",
+      "shutterStyle": "Storefront security grilles",
+      "treeType": "Platanus",
+      "graffiti": "Vandalism on phone booth",
+      "terrain": "Granite tile sidewalk",
+      "urbanElements": {
+        "furniture": "Newsstand",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Mixed modern/historic"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Kiosko",
+        "Diarios",
+        "Salta"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 88
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/1250s",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2024:05:15 11:40:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 43.544261863542324,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0048",
+    "coordinates": {
+      "lat": -32.9658886,
+      "lng": -60.6573616,
+      "corner": "Boulevard Oroño 200 block"
+    },
+    "timestamp": "2024-05-15T16:10:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Moderate",
+      "description": "Warm light hitting the upper floors of mansions"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Service drops to buildings",
+      "shutterStyle": "Wooden louvers",
+      "treeType": "Tipuana",
+      "graffiti": "Artistic stencil on pillar",
+      "terrain": "Brick paving in central island",
+      "urbanElements": {
+        "furniture": "Bollards at crossing",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Spanish Colonial Revival"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Bv. Oroño 245",
+        "Venta",
+        "Inmobiliaria"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 160,
+      "shutterSpeed": "1/400s",
+      "focalLength": "28mm",
+      "make": "Huawei",
+      "model": "P40 Pro",
+      "lensModel": "Leica Optics",
+      "dateTimeOriginal": "2024:05:15 16:10:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 95.01613651959546,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0049",
+    "coordinates": {
+      "lat": -32.9645886,
+      "lng": -60.6591616,
+      "corner": "Boulevard Oroño near Catamarca"
+    },
+    "timestamp": "2024-05-15T13:15:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "High contrast between sunlit road and shaded parkway"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Medium density",
+      "shutterStyle": "Hidden behind balconies",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "Sports club initials",
+      "terrain": "Cement sidewalks with textured tiles",
+      "urbanElements": {
+        "furniture": "Traffic signal poles",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Brutalist apartment block"
+      },
+      "temporalWindow": "2020-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "Pare",
+        "Catamarca",
+        "2150"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "24mm",
+      "make": "Oppo",
+      "model": "Find X5",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2024:05:15 13:15:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 130.6329688484407,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0050",
+    "coordinates": {
+      "lat": -32.9654886,
+      "lng": -60.6582616,
+      "corner": "Boulevard Oroño y Salta Center"
+    },
+    "timestamp": "2024-05-15T12:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Very Short",
+      "description": "Strong vertical illumination on the central monument"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Clean near center",
+      "shutterStyle": "Classic French shutters",
+      "treeType": "Palm trees",
+      "graffiti": "None on main structures",
+      "terrain": "Central gravel path",
+      "urbanElements": {
+        "furniture": "Drinking fountain",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Monumental"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Rosario",
+        "Ciudad",
+        "Oroño"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/3200s",
+      "focalLength": "26mm",
+      "make": "OnePlus",
+      "model": "9 Pro",
+      "lensModel": "Hasselblad Wide",
+      "dateTimeOriginal": "2024:05:15 12:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 0,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0051",
+    "coordinates": {
+      "lat": -32.9659886,
+      "lng": -60.6584616,
+      "corner": "Boulevard Oroño y Salta South"
+    },
+    "timestamp": "2024-05-15T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Soft morning light through dense canopy"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse",
+      "shutterStyle": "Rolling steel shutters on shops",
+      "treeType": "Ash (Fraxinus)",
+      "graffiti": "Sticker art on bin",
+      "terrain": "Stone slab paving",
+      "urbanElements": {
+        "furniture": "Information totem",
+        "vegetationScore": 0.87,
+        "architectureStyle": "Eclecticism"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Oroño 100-200",
+        "Farmacia"
+      ],
+      "confidence": 0.86,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 200,
+      "shutterSpeed": "1/125s",
+      "focalLength": "13mm",
+      "make": "Apple",
+      "model": "iPhone 14",
+      "lensModel": "Ultra Wide",
+      "dateTimeOriginal": "2024:05:15 08:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 58.64481764239808,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0052",
+    "coordinates": {
+      "lat": -32.9648886,
+      "lng": -60.6575616,
+      "corner": "Boulevard Oroño near Jujuy"
+    },
+    "timestamp": "2024-05-15T15:50:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Moderate",
+      "description": "Harsh side lighting on pedestrian walkway"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Messy telephone lines",
+      "shutterStyle": "Wooden blind shutters",
+      "treeType": "Palo Borracho",
+      "graffiti": "Small tag on wall base",
+      "terrain": "Asphalt pavement",
+      "urbanElements": {
+        "furniture": "Bus stop shelter",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Contemporary residential"
+      },
+      "temporalWindow": "2021-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "Linea 102",
+        "Jujuy",
+        "Oroño"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "A52",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2024:05:15 15:50:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 93.35887743073869,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0053",
+    "coordinates": {
+      "lat": -32.9652886,
+      "lng": -60.6592616,
+      "corner": "Boulevard Oroño y Catamarca West"
+    },
+    "timestamp": "2024-05-15T10:45:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Moderate",
+      "description": "Clear blue sky reflecting on glass building fronts"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Subterranean in some sections",
+      "shutterStyle": "No shutters (Glass curtain)",
+      "treeType": "Jacarandas",
+      "graffiti": "None",
+      "terrain": "Smooth concrete sidewalk",
+      "urbanElements": {
+        "furniture": "Digital advertising screen",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Modern Glass Facade"
+      },
+      "temporalWindow": "2022-2026"
+    },
+    "ocr": {
+      "detectedText": [
+        "Catamarca",
+        "Banco",
+        "Santa Fe"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/2500s",
+      "focalLength": "26mm",
+      "make": "Vivo",
+      "model": "X80 Pro",
+      "lensModel": "Zeiss Wide",
+      "dateTimeOriginal": "2024:05:15 10:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 95.9065125065267,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0054",
+    "coordinates": {
+      "lat": -32.9663886,
+      "lng": -60.6580616,
+      "corner": "Boulevard Oroño 300 block"
+    },
+    "timestamp": "2024-05-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Warm orange tones hitting the brickwork"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Hanging across street",
+      "shutterStyle": "Heavy oak shutters",
+      "treeType": "Platanus",
+      "graffiti": "Stencil on sidewalk",
+      "terrain": "Mixed stone and asphalt",
+      "urbanElements": {
+        "furniture": "Ornate iron railings",
+        "vegetationScore": 0.91,
+        "architectureStyle": "Tudor influence"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Oroño 312",
+        "Cuidado",
+        "Perro"
+      ],
+      "confidence": 0.87,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 320,
+      "shutterSpeed": "1/160s",
+      "focalLength": "28mm",
+      "make": "Sony",
+      "model": "Xperia 1 III",
+      "lensModel": "Standard",
+      "dateTimeOriginal": "2024:05:15 16:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 101.79993918683884,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0055",
+    "coordinates": {
+      "lat": -32.9644886,
+      "lng": -60.6589616,
+      "corner": "Boulevard Oroño mid-block"
+    },
+    "timestamp": "2024-05-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Direct sun highlighting street level textures"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Concentrated near poles",
+      "shutterStyle": "Retractable awnings",
+      "treeType": "Ornamental palms",
+      "graffiti": "Small mark on traffic light",
+      "terrain": "Tactile paving for visually impaired",
+      "urbanElements": {
+        "furniture": "Trash cans",
+        "vegetationScore": 0.84,
+        "architectureStyle": "Art Deco"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Oroño",
+        "Cafetería",
+        "Salta"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 93
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Realme",
+      "model": "GT2",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2024:05:15 11:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 128.95370797128996,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0056",
+    "coordinates": {
+      "lat": -32.9656886,
+      "lng": -60.6570616,
+      "corner": "Boulevard Oroño y Jujuy North"
+    },
+    "timestamp": "2024-05-15T14:10:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Sun filtered through large tree leaves"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense power cables",
+      "shutterStyle": "Internal blinds",
+      "treeType": "Tipuana tipu",
+      "graffiti": "None",
+      "terrain": "Grey tiles",
+      "urbanElements": {
+        "furniture": "Standardized city benches",
+        "vegetationScore": 0.93,
+        "architectureStyle": "Rationalist apartment"
+      },
+      "temporalWindow": "2019-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Jujuy 2100",
+        "Bv. Oroño"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 100,
+      "shutterSpeed": "1/1200s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 15",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2024:05:15 14:10:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 114.13823430858052,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0057",
+    "coordinates": {
+      "lat": -32.9665886,
+      "lng": -60.6574616,
+      "corner": "Boulevard Oroño near Catamarca"
+    },
+    "timestamp": "2024-05-15T12:50:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Very Short",
+      "description": "Almost noon light on building entrances"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High voltage lines visible",
+      "shutterStyle": "Manual wood shutters",
+      "treeType": "Ficus",
+      "graffiti": "Political posters",
+      "terrain": "Old stone curbs",
+      "urbanElements": {
+        "furniture": "Electric power box",
+        "vegetationScore": 0.76,
+        "architectureStyle": "Italianate"
+      },
+      "temporalWindow": "2017-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "Catamarca",
+        "Alquiler",
+        "Oroño"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 7",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2024:05:15 12:50:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 143.2863101423353,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0058",
+    "coordinates": {
+      "lat": -32.9647886,
+      "lng": -60.6583616,
+      "corner": "Boulevard Oroño y Salta corner"
+    },
+    "timestamp": "2024-05-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Moderate",
+      "description": "Even lighting on the central boulevard promenade"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cable bundles on corners",
+      "shutterStyle": "Iron decorative gates",
+      "treeType": "Palm pindó",
+      "graffiti": "Artist signature on mural",
+      "terrain": "Gravel and grass medians",
+      "urbanElements": {
+        "furniture": "Bike rack",
+        "vegetationScore": 0.89,
+        "architectureStyle": "French Neoclassical"
+      },
+      "temporalWindow": "2021-2025"
+    },
+    "ocr": {
+      "detectedText": [
+        "Salta",
+        "Boulevard",
+        "Oroño"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 80,
+      "shutterSpeed": "1/800s",
+      "focalLength": "26mm",
+      "make": "Sony",
+      "model": "Xperia 5",
+      "lensModel": "Standard",
+      "dateTimeOriginal": "2024:05:15 15:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 78.39354627753943,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0059",
+    "coordinates": {
+      "lat": -32.9653886,
+      "lng": -60.6594616,
+      "corner": "Boulevard Oroño near Tucumán"
+    },
+    "timestamp": "2024-05-15T17:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Late afternoon shadows stretching across the whole street"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex utility network",
+      "shutterStyle": "Wooden vertical shutters",
+      "treeType": "Jacaranda",
+      "graffiti": "Spray paint on construction fence",
+      "terrain": "Asphalt and tile",
+      "urbanElements": {
+        "furniture": "Concrete street lamps",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Functionalism"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "Tucumán",
+        "Obra en construcción",
+        "Bv. Oroño"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 500,
+      "shutterSpeed": "1/100s",
+      "focalLength": "23mm",
+      "make": "Fujifilm",
+      "model": "X100V",
+      "lensModel": "23mm f2",
+      "dateTimeOriginal": "2024:05:15 17:10:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 112.501776604962,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0060",
+    "coordinates": {
+      "lat": -32.9661886,
+      "lng": -60.6572616,
+      "corner": "Boulevard Oroño y Catamarca (Southeast)"
+    },
+    "timestamp": "2024-05-15T09:45:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Long",
+      "description": "Morning sun glancing off old building balconies"
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Hanging vertically to ground level",
+      "shutterStyle": "Aluminum rolling gates",
+      "treeType": "Platanus",
+      "graffiti": "Club stickers",
+      "terrain": "Standard sidewalk",
+      "urbanElements": {
+        "furniture": "Cast iron lamp posts",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Neoclassical Mansions"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "Catamarca 2100",
+        "Escribanía",
+        "Bv. Oroño"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS RP",
+      "lensModel": "50mm f1.8",
+      "dateTimeOriginal": "2024:05:15 09:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 121.49860388163401,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0061",
+    "coordinates": {
+      "lat": -32.9654215,
+      "lng": -60.6583124,
+      "corner": "Boulevard Oroño y San Luis"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "High NW",
+      "shadowDirection": "SE",
+      "shadowLength": "Short",
+      "description": "Harsh afternoon light typical of spring in the Southern Hemisphere, minimal shadows on the central promenade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead clusters typical of Rosario intersections",
+      "shutterStyle": "Metal rolling shutters on commercial ground floors",
+      "treeType": "Platanus x hispanica and Phoenix canariensis",
+      "graffiti": "Political stencil on utility boxes",
+      "terrain": "Flat urban asphalt and paved central walk",
+      "urbanElements": {
+        "furniture": "Cast iron benches, classic black lampposts, green trash bins",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Neoclassical and early 20th-century eclectic"
+      },
+      "temporalWindow": "2020-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS 2100",
+        "BV OROÑO",
+        "FARMACIA"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro",
+      "lensModel": "Main Camera",
+      "dateTimeOriginal": "2023:11:15 11:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 8.839102485739097,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0062",
+    "coordinates": {
+      "lat": -32.9661124,
+      "lng": -60.6592881,
+      "corner": "Boulevard Oroño y Mendoza"
+    },
+    "timestamp": "2022-05-10T10:15:00Z",
+    "lighting": {
+      "sunPosition": "Low NE",
+      "shadowDirection": "SW",
+      "shadowLength": "Long",
+      "description": "Morning autumn light creating long shadows across the cycle path."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tangled telecommunications wires",
+      "shutterStyle": "Wooden shutters on residential upper floors",
+      "treeType": "Large plane trees with golden autumn leaves",
+      "graffiti": "Football club tag (C.A.R.C.)",
+      "terrain": "Interlocking concrete pavers on promenade",
+      "urbanElements": {
+        "furniture": "Red bicycle lane markers, concrete bollards",
+        "vegetationScore": 0.78,
+        "architectureStyle": "Art Deco influences mixed with modern high-rises"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MENDOZA 2100",
+        "COLEGIO DANTE ALIGHIERI"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "Galaxy S21",
+      "lensModel": "Ultra Wide",
+      "dateTimeOriginal": "2022:05:10 07:15:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 118.24583955283946,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0063",
+    "coordinates": {
+      "lat": -32.9647552,
+      "lng": -60.6573229,
+      "corner": "Boulevard Oroño y Rioja"
+    },
+    "timestamp": "2024-01-20T19:00:00Z",
+    "lighting": {
+      "sunPosition": "Setting W",
+      "shadowDirection": "E",
+      "shadowLength": "Extended",
+      "description": "Golden hour with warm tones reflecting off modern glass facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate",
+      "shutterStyle": "Aluminum roller blinds",
+      "treeType": "Tall palms lining the central island",
+      "graffiti": "Street art mural on side wall",
+      "terrain": "Paved sidewalk with granite curbs",
+      "urbanElements": {
+        "furniture": "Modern bus stop shelter, digital advertising totem",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Modernist residential buildings with large balconies"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 2100",
+        "ZONA DE VELOCIDAD CONTROLADA"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Xperia 5 IV",
+      "lensModel": "Standard",
+      "dateTimeOriginal": "2024:01:20 16:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 119.66474669394417,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0064",
+    "coordinates": {
+      "lat": -32.9658211,
+      "lng": -60.6586543,
+      "corner": "Boulevard Oroño entre San Luis y San Juan"
+    },
+    "timestamp": "2023-08-12T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Minimal",
+      "description": "Flat midday light in winter, overcast sky diffusing shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse",
+      "shutterStyle": "Metal bars on ground level windows",
+      "treeType": "Deciduous plane trees without leaves",
+      "graffiti": "Clean walls, low vandalism",
+      "terrain": "Asphalt with some cobblestone patches near curbs",
+      "urbanElements": {
+        "furniture": "Drinking fountain on the walk, white painted curbs",
+        "vegetationScore": 0.6,
+        "architectureStyle": "French Academicism mansions"
+      },
+      "temporalWindow": "2018-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PROHIBIDO ESTACIONAR",
+        "BV. OROÑO 1000"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 125,
+      "shutterSpeed": "1/250",
+      "focalLength": "52mm",
+      "make": "Google",
+      "model": "Pixel 7",
+      "lensModel": "Telephoto",
+      "dateTimeOriginal": "2023:08:12 09:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 52.04937233801271,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0065",
+    "coordinates": {
+      "lat": -32.9651003,
+      "lng": -60.6578001,
+      "corner": "Boulevard Oroño y San Juan"
+    },
+    "timestamp": "2021-12-05T08:45:00Z",
+    "lighting": {
+      "sunPosition": "SE",
+      "shadowDirection": "NW",
+      "shadowLength": "Medium",
+      "description": "Bright morning light typical of a humid summer day in Rosario."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy bundles at corner poles",
+      "shutterStyle": "Perforated metal commercial gates",
+      "treeType": "Jacaranda mimosifolia and Tipuana tipu nearby",
+      "graffiti": "Political campaign posters",
+      "terrain": "Slightly uneven pavement due to tree roots",
+      "urbanElements": {
+        "furniture": "Yellow gas pipe markers, old style post boxes",
+        "vegetationScore": 0.82,
+        "architectureStyle": "Mixed 1970s apartments and restored heritage houses"
+      },
+      "temporalWindow": "2020-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN JUAN 2100",
+        "ESTACIONAMIENTO MEDIDO"
+      ],
+      "confidence": 0.85,
+      "rapidFuzzScore": 90
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 200,
+      "shutterSpeed": "1/2000",
+      "focalLength": "28mm",
+      "make": "Xiaomi",
+      "model": "Mi 11",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2021:12:05 05:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 60.974950530764104,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0066",
+    "coordinates": {
+      "lat": -32.9644122,
+      "lng": -60.6571025,
+      "corner": "Boulevard Oroño y Córdoba"
+    },
+    "timestamp": "2023-03-22T16:20:00Z",
+    "lighting": {
+      "sunPosition": "WNW",
+      "shadowDirection": "ESE",
+      "shadowLength": "Long",
+      "description": "Afternoon shadows stretching across the pedestrian boulevard."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate undergrounding in progress",
+      "shutterStyle": "Classic wooden shutters with vertical slats",
+      "treeType": "Century-old Platanus",
+      "graffiti": "Tagging on building base",
+      "terrain": "Polished granite tiles on pedestrian crossing",
+      "urbanElements": {
+        "furniture": "City map stand, high-end cafe outdoor tables",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Italianate and Beaux-Arts"
+      },
+      "temporalWindow": "2017-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA 2100",
+        "PASEO DEL SIGLO"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 80,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30",
+      "lensModel": "Main",
+      "dateTimeOriginal": "2023:03:22 13:20:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 161.30440282038157,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el límite de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0067",
+    "coordinates": {
+      "lat": -32.9659556,
+      "lng": -60.6588221,
+      "corner": "Boulevard Oroño 1100"
+    },
+    "timestamp": "2022-09-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "NE",
+      "shadowDirection": "SW",
+      "shadowLength": "Short",
+      "description": "Clear spring morning, high contrast between sunlit road and shaded promenade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density near transformers",
+      "shutterStyle": "Modern automated rolling shutters",
+      "treeType": "Flowering tipas",
+      "graffiti": "None",
+      "terrain": "Smooth asphalt",
+      "urbanElements": {
+        "furniture": "Municipal bike share station (Mi Bici Tu Bici)",
+        "vegetationScore": 0.88,
+        "architectureStyle": "High-end contemporary glass apartments"
+      },
+      "temporalWindow": "2021-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MI BICI TU BICI",
+        "ESTACION OROÑO"
+      ],
+      "confidence": 0.91,
+      "rapidFuzzScore": 94
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 100,
+      "shutterSpeed": "1/1500",
+      "focalLength": "26mm",
+      "make": "Huawei",
+      "model": "P40 Pro",
+      "lensModel": "Leica Standard",
+      "dateTimeOriginal": "2022:09:15 08:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 73.69388904048934,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0068",
+    "coordinates": {
+      "lat": -32.965311,
+      "lng": -60.6579995,
+      "corner": "Boulevard Oroño 900"
+    },
+    "timestamp": "2023-06-21T15:00:00Z",
+    "lighting": {
+      "sunPosition": "Low NW",
+      "shadowDirection": "SE",
+      "shadowLength": "Maximum",
+      "description": "Winter solstice lighting, very long shadows from the tall buildings on the north side."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy overhead distribution",
+      "shutterStyle": "Old wood foldable shutters",
+      "treeType": "Phoenix canariensis palms",
+      "graffiti": "Urban art stencil",
+      "terrain": "Red tiles on the central walkway",
+      "urbanElements": {
+        "furniture": "Wrought iron decorative fence, low shrubs",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Art Nouveau details on balconies"
+      },
+      "temporalWindow": "2015-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "FACULTAD DE DERECHO",
+        "UNR"
+      ],
+      "confidence": 0.88,
+      "rapidFuzzScore": 89
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 250,
+      "shutterSpeed": "1/250",
+      "focalLength": "28mm",
+      "make": "Apple",
+      "model": "iPhone SE",
+      "lensModel": "Back Camera",
+      "dateTimeOriginal": "2023:06:21 12:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 31.430722070618703,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0069",
+    "coordinates": {
+      "lat": -32.9649228,
+      "lng": -60.657551,
+      "corner": "Boulevard Oroño y San Juan (Norte)"
+    },
+    "timestamp": "2024-02-14T21:30:00Z",
+    "lighting": {
+      "sunPosition": "Night",
+      "shadowDirection": "Multiple",
+      "shadowLength": "Variable",
+      "description": "Artificial illumination from street farolas and shop signs."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Silhouetted against night sky",
+      "shutterStyle": "Closed metal shutters",
+      "treeType": "Dense canopy of plane trees",
+      "graffiti": "Small tags on utility poles",
+      "terrain": "Wet asphalt reflecting street lights",
+      "urbanElements": {
+        "furniture": "Illuminated advertising kiosks, outdoor heating lamps",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Mixed commercial ground floors"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "OPEN 24 HS",
+        "KIOSCO",
+        "OROÑO"
+      ],
+      "confidence": 0.82,
+      "rapidFuzzScore": 85
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 1600,
+      "shutterSpeed": "1/30",
+      "focalLength": "23mm",
+      "make": "Samsung",
+      "model": "Galaxy S23 Ultra",
+      "lensModel": "Standard Wide",
+      "dateTimeOriginal": "2024:02:14 18:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 91.39500527951705,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0070",
+    "coordinates": {
+      "lat": -32.9663219,
+      "lng": -60.6594552,
+      "corner": "Boulevard Oroño 1200"
+    },
+    "timestamp": "2023-10-30T10:00:00Z",
+    "lighting": {
+      "sunPosition": "E",
+      "shadowDirection": "W",
+      "shadowLength": "Moderate",
+      "description": "Direct morning light hitting building facades on the west side."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cleaned up for renovation",
+      "shutterStyle": "Internal blinds behind glass",
+      "treeType": "Young replacement saplings",
+      "graffiti": "None (recently painted building)",
+      "terrain": "New level pavement for accessibility",
+      "urbanElements": {
+        "furniture": "Tactile paving, grey concrete waste bins",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Brutalist architecture from 1980s"
+      },
+      "temporalWindow": "2023-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MENDOZA 2000",
+        "COLEGIO PROFESIONAL"
+      ],
+      "confidence": 0.95,
+      "rapidFuzzScore": 97
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "26mm",
+      "make": "Oppo",
+      "model": "Find X5",
+      "lensModel": "Main",
+      "dateTimeOriginal": "2023:10:30 07:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 144.86265012775954,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22c3ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0071",
+    "coordinates": {
+      "lat": -32.9656881,
+      "lng": -60.6581123,
+      "corner": "Boulevard Oroño y San Luis (Sur)"
+    },
+    "timestamp": "2022-07-04T13:45:00Z",
+    "lighting": {
+      "sunPosition": "N",
+      "shadowDirection": "S",
+      "shadowLength": "Medium",
+      "description": "Pale winter sun providing low-contrast shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense web across the crossing",
+      "shutterStyle": "Classic heavy steel shutters",
+      "treeType": "Empty branches of Platanus",
+      "graffiti": "Football stickers on poles",
+      "terrain": "Worn asphalt",
+      "urbanElements": {
+        "furniture": "Old style traffic light controllers, blue street name signs",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Spanish Colonial Revival influences"
+      },
+      "temporalWindow": "2016-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS 2000",
+        "DRUGSTORE"
+      ],
+      "confidence": 0.9,
+      "rapidFuzzScore": 93
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 200,
+      "shutterSpeed": "1/500",
+      "focalLength": "30mm",
+      "make": "Sony",
+      "model": "A6400",
+      "lensModel": "16-50mm",
+      "dateTimeOriginal": "2022:07:04 10:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 26.193640498216123,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0072",
+    "coordinates": {
+      "lat": -32.9645224,
+      "lng": -60.6570019,
+      "corner": "Boulevard Oroño y Rioja (Esquina)"
+    },
+    "timestamp": "2023-04-18T09:30:00Z",
+    "lighting": {
+      "sunPosition": "ENE",
+      "shadowDirection": "WSW",
+      "shadowLength": "Medium-Long",
+      "description": "Crisp autumn morning light, shadows falling across the street diagonally."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High tension lines nearby",
+      "shutterStyle": "Modern PVC rolling shutters",
+      "treeType": "Palm trees",
+      "graffiti": "Mural under renovation",
+      "terrain": "Stone curbs",
+      "urbanElements": {
+        "furniture": "Central flower beds with seasonal plants",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Rosario-style 'Racionalismo'"
+      },
+      "temporalWindow": "2020-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 2100",
+        "CENTRO MEDICO"
+      ],
+      "confidence": 0.87,
+      "rapidFuzzScore": 91
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 6",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2023:04:18 06:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 159.22878475218783,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el límite de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0073",
+    "coordinates": {
+      "lat": -32.965255,
+      "lng": -60.6585112,
+      "corner": "Boulevard Oroño 1000"
+    },
+    "timestamp": "2024-03-05T17:10:00Z",
+    "lighting": {
+      "sunPosition": "W",
+      "shadowDirection": "E",
+      "shadowLength": "Long",
+      "description": "Warm end-of-summer light, long shadows from the central promenade trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minor overhead lines",
+      "shutterStyle": "Wood shutters (Barrio style)",
+      "treeType": "Large plane trees",
+      "graffiti": "Clean heritage facade",
+      "terrain": "Interlocking pavers with grass in between",
+      "urbanElements": {
+        "furniture": "Statue/monument base, park benches",
+        "vegetationScore": 0.92,
+        "architectureStyle": "Academicism / Beaux-Arts Mansions"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "NICASIO OROÑO",
+        "PATRIMONIO URBANO"
+      ],
+      "confidence": 0.93,
+      "rapidFuzzScore": 96
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 160,
+      "shutterSpeed": "1/400",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 15",
+      "lensModel": "Main",
+      "dateTimeOriginal": "2024:03:05 14:10:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 34.88461623270856,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0074",
+    "coordinates": {
+      "lat": -32.9660117,
+      "lng": -60.6591024,
+      "corner": "Boulevard Oroño y Mendoza (Oeste)"
+    },
+    "timestamp": "2022-11-28T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "None",
+      "shadowLength": "Null",
+      "description": "High summer noon, sun directly overhead, minimal shade under trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Chaotic bundles at corner",
+      "shutterStyle": "Commercial security grills",
+      "treeType": "Jacaranda in late bloom",
+      "graffiti": "Tags on street lights",
+      "terrain": "Concrete sidewalks",
+      "urbanElements": {
+        "furniture": "Traffic lights with countdown timer, yellow pedestrian crossings",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Mid-century modern apartments"
+      },
+      "temporalWindow": "2019-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "MENDOZA 2100",
+        "OROÑO 1100"
+      ],
+      "confidence": 0.98,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2000",
+      "focalLength": "13mm",
+      "make": "Samsung",
+      "model": "Galaxy S22",
+      "lensModel": "Ultra Wide",
+      "dateTimeOriginal": "2022:11:28 09:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 97.65308054462768,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0075",
+    "coordinates": {
+      "lat": -32.9642551,
+      "lng": -60.6572118,
+      "corner": "Boulevard Oroño y Córdoba (Esquina Norte)"
+    },
+    "timestamp": "2023-01-10T07:45:00Z",
+    "lighting": {
+      "sunPosition": "E",
+      "shadowDirection": "W",
+      "shadowLength": "Long",
+      "description": "Early morning summer light, buildings on the east side glowing."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate",
+      "shutterStyle": "Classic wood shutters",
+      "treeType": "Phoenix palms and plane trees",
+      "graffiti": "Stencil art on phone booth",
+      "terrain": "Granite blocks and asphalt",
+      "urbanElements": {
+        "furniture": "Traditional black cast iron streetlights",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Eclectic/French style mansions"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "PASEO DEL SIGLO",
+        "CORDOBA 2000"
+      ],
+      "confidence": 0.94,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1250",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2023:01:10 04:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 168.53672159376666,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el límite de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0076",
+    "coordinates": {
+      "lat": -32.9655889,
+      "lng": -60.658211,
+      "corner": "Boulevard Oroño 800"
+    },
+    "timestamp": "2024-04-02T14:00:00Z",
+    "lighting": {
+      "sunPosition": "NNE",
+      "shadowDirection": "SSW",
+      "shadowLength": "Short",
+      "description": "Early autumn afternoon, gentle shadows on the boulevard's bike path."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense intersection wiring",
+      "shutterStyle": "Aluminum slats",
+      "treeType": "Large plátanos",
+      "graffiti": "Street tag on base of streetlight",
+      "terrain": "Red tiled central walk",
+      "urbanElements": {
+        "furniture": "Green municipal trash containers, bike racks",
+        "vegetationScore": 0.8,
+        "architectureStyle": "1940s apartment block"
+      },
+      "temporalWindow": "2022-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "BV OROÑO",
+        "SAN LUIS"
+      ],
+      "confidence": 0.96,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Moto G82",
+      "lensModel": "Standard",
+      "dateTimeOriginal": "2024:04:02 11:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 12.110742008485666,
+      "isOutlier": false,
+      "cornerMismatch": true,
+      "suspiciousReason": "Incoherencia: la altura 800 (Córdoba) no puede estar a 12m de San Luis (1000)"
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0077",
+    "coordinates": {
+      "lat": -32.9648112,
+      "lng": -60.6576224,
+      "corner": "Boulevard Oroño 900"
+    },
+    "timestamp": "2022-08-20T16:30:00Z",
+    "lighting": {
+      "sunPosition": "W",
+      "shadowDirection": "E",
+      "shadowLength": "Long",
+      "description": "Late winter afternoon, golden light filter through bare branches."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate complexity",
+      "shutterStyle": "Heavy wooden blinds",
+      "treeType": "Plane trees without foliage",
+      "graffiti": "Club related sticker",
+      "terrain": "Asphalt",
+      "urbanElements": {
+        "furniture": "Cast iron benches (Rosario model), bollards",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Historic mansions and high-rises"
+      },
+      "temporalWindow": "2018-2023"
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 2000",
+        "COLEGIO"
+      ],
+      "confidence": 0.89,
+      "rapidFuzzScore": 92
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 400,
+      "shutterSpeed": "1/200",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "D3500",
+      "lensModel": "18-55mm",
+      "dateTimeOriginal": "2022:08:20 13:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 96.07123226636209,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0078",
+    "coordinates": {
+      "lat": -32.9664115,
+      "lng": -60.6595221,
+      "corner": "Boulevard Oroño y Mendoza (Sur)"
+    },
+    "timestamp": "2023-12-22T12:30:00Z",
+    "lighting": {
+      "sunPosition": "High S",
+      "shadowDirection": "N",
+      "shadowLength": "Minimal",
+      "description": "Summer solstice midday, intense vertical lighting, high contrast."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Very dense near corner",
+      "shutterStyle": "Metal rolling shutters",
+      "treeType": "Dense tipas and palms",
+      "graffiti": "Small tags on mailbox",
+      "terrain": "Concrete tiles",
+      "urbanElements": {
+        "furniture": "New LED street lighting poles, traffic signs",
+        "vegetationScore": 0.88,
+        "architectureStyle": "Contemporary commercial/residential mix"
+      },
+      "temporalWindow": "2021-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "MENDOZA 2100",
+        "NO ESTACIONAR"
+      ],
+      "confidence": 0.92,
+      "rapidFuzzScore": 95
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/4000",
+      "focalLength": "26mm",
+      "make": "Google",
+      "model": "Pixel 8",
+      "lensModel": "Wide",
+      "dateTimeOriginal": "2023:12:22 09:30:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 156.07588418673365,
+      "isOutlier": true,
+      "cornerMismatch": true,
+      "suspiciousReason": "Excede el límite de 150m respecto al punto central"
+    },
+    "h3Index": "89c2eba22c3ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0079",
+    "coordinates": {
+      "lat": -32.9650114,
+      "lng": -60.6580119,
+      "corner": "Boulevard Oroño 1000 (Central)"
+    },
+    "timestamp": "2021-06-15T10:00:00Z",
+    "lighting": {
+      "sunPosition": "NE",
+      "shadowDirection": "SW",
+      "shadowLength": "Medium",
+      "description": "Cold winter morning, clear sky, distinct shadows on the pedestrian path."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse over the central walk",
+      "shutterStyle": "Not visible (central island)",
+      "treeType": "Tall Phoenix canariensis palms",
+      "graffiti": "Stencil on pavement",
+      "terrain": "Traditional red bricks",
+      "urbanElements": {
+        "furniture": "Wrought iron fences, historical monument pedestal",
+        "vegetationScore": 0.95,
+        "architectureStyle": "Gardenesque urban design"
+      },
+      "temporalWindow": "2015-2022"
+    },
+    "ocr": {
+      "detectedText": [
+        "NICASIO OROÑO",
+        "ROSARIO"
+      ],
+      "confidence": 0.99,
+      "rapidFuzzScore": 100
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "28mm",
+      "make": "Canon",
+      "model": "PowerShot G7X",
+      "lensModel": "Standard Zoom",
+      "dateTimeOriginal": "2021:06:15 07:00:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 57.950530323160386,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 99,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-0080",
+    "coordinates": {
+      "lat": -32.965755,
+      "lng": -60.6584112,
+      "corner": "Boulevard Oroño y San Luis (Oeste)"
+    },
+    "timestamp": "2024-05-01T15:45:00Z",
+    "lighting": {
+      "sunPosition": "NW",
+      "shadowDirection": "SE",
+      "shadowLength": "Medium-Long",
+      "description": "Afternoon autumn light, leaves starting to turn yellow, soft shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy bundles across intersection",
+      "shutterStyle": "Mixed metal and wood shutters",
+      "treeType": "Platanus x hispanica",
+      "graffiti": "None (recently cleaned corner)",
+      "terrain": "Paved with asphalt, granite curbs",
+      "urbanElements": {
+        "furniture": "Corner traffic light with pedestrian signal, silver waste bins",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Early 20th century multi-family housing"
+      },
+      "temporalWindow": "2023-2024"
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS 2100",
+        "OROÑO 900"
+      ],
+      "confidence": 0.97,
+      "rapidFuzzScore": 99
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 200,
+      "shutterSpeed": "1/640",
+      "focalLength": "24mm",
+      "make": "Xiaomi",
+      "model": "13 Ultra",
+      "lensModel": "Leica Summicron",
+      "dateTimeOriginal": "2024:05:01 12:45:00"
+    },
+    "locationContext": "Boulevard Oroño, Rosario, Santa Fe, Argentina",
+    "validation": {
+      "distanceFromCenter": 32.74548425728832,
+      "isOutlier": false,
+      "cornerMismatch": false,
+      "suspiciousReason": ""
+    },
+    "h3Index": "89c2eba22cbffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  }
+]

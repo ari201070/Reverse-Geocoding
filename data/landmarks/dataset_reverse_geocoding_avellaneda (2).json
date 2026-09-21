@@ -1,0 +1,2313 @@
+[
+  {
+    "id": "REF-001",
+    "coordinates": {
+      "lat": -34.581512,
+      "lng": -58.423045,
+      "corner": "Av. Santa Fe & Thames"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear sky, high solar angle typical of late spring in Buenos Aires. Temporal window: 2019-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead bundle along Thames",
+      "shutterStyle": "Perforated metal roll-up (commercial)",
+      "treeType": "Platanus acerifolia (Plátano)",
+      "graffiti": "Minimal on commercial facade",
+      "terrain": "Flat urban",
+      "urbanElements": {
+        "furniture": "Black metal waste bin, SUBE totem",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Eclectic late 19th century mixed with modern retail"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. SANTA FE 4200 (RapidFuzz: 98)",
+        "FARMACITY",
+        "THAMES"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13"
+    },
+    "h3Index": "89c2e311823ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-002",
+    "coordinates": {
+      "lat": -34.588521,
+      "lng": -58.434512,
+      "corner": "Gorriti & Thames"
+    },
+    "timestamp": "2023-12-01T17:15:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting, long shadows across cobblestones. Temporal window: 2018-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate, chaotic crossing at intersection",
+      "shutterStyle": "Wooden shutters on upper residential floors",
+      "treeType": "Fraxinus pennsylvanica (Fresno)",
+      "graffiti": "High-quality street art mural on corner",
+      "terrain": "Cobblestone street",
+      "urbanElements": {
+        "furniture": "Iron bollards, wooden restaurant deck",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Palermo Soho low-rise recycled warehouse"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "GORRITI 4800 (RapidFuzz: 100)",
+        "LA CABRERA",
+        "PARRILLA"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 250,
+      "shutterSpeed": "1/200",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-G991B"
+    },
+    "h3Index": "89c2e311d73ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-003",
+    "coordinates": {
+      "lat": -34.572412,
+      "lng": -58.411634,
+      "corner": "Av. del Libertador & Av. Sarmiento"
+    },
+    "timestamp": "2023-10-10T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday sun, high contrast. Temporal window: 2020-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground utilities area)",
+      "shutterStyle": "None (monumental architecture)",
+      "treeType": "Tipuana tipu (Tipa)",
+      "graffiti": "None",
+      "terrain": "Asphalt with wide boulevards",
+      "urbanElements": {
+        "furniture": "Historical street lamps, monument fence",
+        "vegetationScore": 0.85,
+        "architectureStyle": "French Neoclassical (Monument to the Magna Carta)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. DEL LIBERTADOR (RapidFuzz: 95)",
+        "AV. SARMIENTO",
+        "ZOO"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89c2e311bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-004",
+    "coordinates": {
+      "lat": -34.590833,
+      "lng": -58.428544,
+      "corner": "El Salvador & Gurruchaga"
+    },
+    "timestamp": "2023-09-21T15:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium-Long",
+      "description": "Soft spring light. Temporal window: 2017-2022."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Present, single line",
+      "shutterStyle": "Artistic painted metal shutters",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Tagging on utility boxes",
+      "terrain": "Redistricted pedestrian-first street",
+      "urbanElements": {
+        "furniture": "Concrete planters, designer benches",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Renovated early 20th century residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "GURRUCHAGA (RapidFuzz: 100)",
+        "EL SALVADOR",
+        "BOUTIQUE"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 160,
+      "shutterSpeed": "1/500",
+      "focalLength": "23mm",
+      "make": "Xiaomi",
+      "model": "M2101K6G"
+    },
+    "h3Index": "89c2e311d4fffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-005",
+    "coordinates": {
+      "lat": -34.584722,
+      "lng": -58.437911,
+      "corner": "Honduras & Bonpland"
+    },
+    "timestamp": "2023-08-05T09:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Long",
+      "description": "Low winter morning sun. Temporal window: 2021-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy bundles, telecommunications focus",
+      "shutterStyle": "Aluminum modern shutters",
+      "treeType": "Liquidambar styraciflua",
+      "graffiti": "Stencil art on brick wall",
+      "terrain": "Standard asphalt",
+      "urbanElements": {
+        "furniture": "Gray telecom cabinet, black light pole",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Palermo Hollywood industrial-loft conversion"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "HONDURAS 5600 (RapidFuzz: 97)",
+        "BONPLAND",
+        "ESTUDIO"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 320,
+      "shutterSpeed": "1/125",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2e311d67ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-006",
+    "coordinates": {
+      "lat": -34.579654,
+      "lng": -58.412122,
+      "corner": "Cerviño & Lafinur"
+    },
+    "timestamp": "2023-07-12T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Long",
+      "description": "Weak winter afternoon light. Temporal window: 2019-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tidy, mostly hidden",
+      "shutterStyle": "White plastic shutters (residential)",
+      "treeType": "Tilia cordata (Tilo)",
+      "graffiti": "None",
+      "terrain": "Paved street",
+      "urbanElements": {
+        "furniture": "Green waste container (GCBA), modern bus stop",
+        "vegetationScore": 0.7,
+        "architectureStyle": "High-end residential apartment towers (1980s)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CERVIÑO (RapidFuzz: 94)",
+        "LAFINUR 3100",
+        "ZENTRO"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 6"
+    },
+    "h3Index": "89c2e31186bffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-007",
+    "coordinates": {
+      "lat": -34.584112,
+      "lng": -58.441233,
+      "corner": "Fitz Roy & Nicaragua"
+    },
+    "timestamp": "2023-11-20T20:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Infinite",
+      "description": "Dusk, street lighting turning on. Temporal window: 2022-2025."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate height cables",
+      "shutterStyle": "Glass storefronts without shutters",
+      "treeType": "Palo Borracho",
+      "graffiti": "Large mural on side wall",
+      "terrain": "Asphalt",
+      "urbanElements": {
+        "furniture": "Bicycle parking rack, restaurant signage",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Modern office glass buildings and bars"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "FITZ ROY (RapidFuzz: 99)",
+        "NICARAGUA",
+        "CUCINA"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2e311993ffff",
+    "geocodingScore": 82,
+    "isAnchor": false
+  },
+  {
+    "id": "REF-008",
+    "coordinates": {
+      "lat": -34.589144,
+      "lng": -58.424611,
+      "corner": "Armenia & Costa Rica"
+    },
+    "timestamp": "2023-05-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear autumn day. Temporal window: 2018-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse",
+      "shutterStyle": "Classic wood 'Barrio' shutters",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "Stickers on street signs",
+      "terrain": "Level with square nearby",
+      "urbanElements": {
+        "furniture": "Plaza Armenia perimeter fence, fair stalls",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Low-rise residential/commercial mix"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "ARMENIA 1900 (RapidFuzz: 100)",
+        "COSTA RICA",
+        "PLAZA"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-S908E"
+    },
+    "h3Index": "89c2e3118bbffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-009",
+    "coordinates": {
+      "lat": -34.585299,
+      "lng": -58.407811,
+      "corner": "Av. Las Heras & Coronel Díaz"
+    },
+    "timestamp": "2023-01-10T13:30:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "South-Southeast",
+      "shadowLength": "Short",
+      "description": "Intense summer sun. Temporal window: 2020-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground utilities",
+      "shutterStyle": "Roll-up PVC shutters on apartments",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Political posters on construction hoarding",
+      "terrain": "Hilly near park edge",
+      "urbanElements": {
+        "furniture": "Traffic lights, park benches, kiosk",
+        "vegetationScore": 0.75,
+        "architectureStyle": "Rationalist and Art Deco towers"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. LAS HERAS (RapidFuzz: 96)",
+        "CORONEL DIAZ",
+        "SHOPPING"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 50,
+      "shutterSpeed": "1/4000",
+      "focalLength": "28mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2e31184fffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-010",
+    "coordinates": {
+      "lat": -34.593711,
+      "lng": -58.420322,
+      "corner": "Soler & Scalabrini Ortiz"
+    },
+    "timestamp": "2023-04-02T16:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Long",
+      "description": "Late afternoon shadows stretching across the avenue. Temporal window: 2019-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy power lines and fiber optic",
+      "shutterStyle": "Heavy metal security gates",
+      "treeType": "Fraxinus pennsylvanica",
+      "graffiti": "Extensive on abandoned facade",
+      "terrain": "Flat heavy traffic artery",
+      "urbanElements": {
+        "furniture": "Newspaper stand, large advertising billboard",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Mixed commercial/industrial 1950s style"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. R. SCALABRINI ORTIZ (RapidFuzz: 99)",
+        "SOLER",
+        "KOSHER"
+      ],
+      "confidence": 0.9
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "30mm",
+      "make": "Huawei",
+      "model": "P30 Pro"
+    },
+    "h3Index": "89c2e311893ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-011",
+    "coordinates": {
+      "lat": -34.5812,
+      "lng": -58.4254,
+      "corner": "Av. Santa Fe & Av. Juan B. Justo"
+    },
+    "timestamp": "2022-10-15T15:45:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium-Long",
+      "description": "High afternoon glare typical of mid-October in Buenos Aires, casting distinct shadows on the Metrobus structure."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead distribution with high-tension lines for San Martin railway viaduct.",
+      "shutterStyle": "Roll-up metallic commercial shutters on ground floor shops.",
+      "treeType": "Platanus acerifolia (Liquidambar) in large concrete planters.",
+      "graffiti": "Tags on railway pillars and political posters on construction hoardings.",
+      "terrain": "Flat urban asphalt; TemporalWindow: 2018-2023.",
+      "urbanElements": {
+        "furniture": "Metrobus Pacifico signage, grey metallic bins, high-intensity LED streetlights.",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Eclectic commercial mix with modern railway infrastructure. Zone: High Commercial."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. SANTA FE",
+        "AV. JUAN B. JUSTO",
+        "PACIFICO",
+        "FARMACITY",
+        "rapidFuzzScore: 98"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2e311837ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-012",
+    "coordinates": {
+      "lat": -34.5721,
+      "lng": -58.4115,
+      "corner": "Av. del Libertador & Av. Sarmiento"
+    },
+    "timestamp": "2023-01-20T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Mid-morning solar transit with high zenith, sharp shadows under the Monumento de los Españoles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, underground cabling in protected heritage zone.",
+      "shutterStyle": "None, high-end residential and park perimeter.",
+      "treeType": "Tipuana tipu (Tipas) and mature Jacaranda mimosifolia.",
+      "graffiti": "Negligible, high maintenance heritage area.",
+      "terrain": "Granite curbs and polished asphalt; TemporalWindow: 2020-2024.",
+      "urbanElements": {
+        "furniture": "Black classic cast-iron lampposts, green park benches, public orientation maps.",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Neoclassical French monumental and luxury high-rises. Zone: Park/Residential."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. DEL LIBERTADOR",
+        "AV. SARMIENTO",
+        "MONUMENTO DE LOS ESPAÑOLES",
+        "rapidFuzzScore: 100"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 50,
+      "shutterSpeed": "1/2500",
+      "focalLength": "13mm",
+      "make": "Samsung",
+      "model": "SM-G998B"
+    },
+    "h3Index": "89c2e311bcfffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-013",
+    "coordinates": {
+      "lat": -34.5885,
+      "lng": -58.4321,
+      "corner": "Gorriti & Thames"
+    },
+    "timestamp": "2021-06-12T16:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West (Low)",
+      "shadowDirection": "South-East",
+      "shadowLength": "Long",
+      "description": "Winter afternoon light with long shadows across narrow cobblestone streets."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex web of telecommunication and power lines across the street.",
+      "shutterStyle": "Artistic painted shutters on boutiques and bars.",
+      "treeType": "Platanus acerifolia pruned low.",
+      "graffiti": "Extensive muralism and street art on most surfaces.",
+      "terrain": "Traditional stone paving (Adoquines); TemporalWindow: 2015-2022.",
+      "urbanElements": {
+        "furniture": "Bollards, bicycle racks, outdoor restaurant seating (deckings).",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Recycled 'Casa Chorizo' into Gastronomic Hub. Zone: Commercial/Touristic."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "GORRITI",
+        "THAMES",
+        "LA PANERA ROSA",
+        "rapidFuzzScore: 94"
+      ],
+      "confidence": 0.88
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89c2e311d7bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-014",
+    "coordinates": {
+      "lat": -34.5912,
+      "lng": -58.4234,
+      "corner": "Soler & Armenia"
+    },
+    "timestamp": "2023-03-05T13:20:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Direct overhead light, minimal shadow projection on vertical planes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate, hanging low over narrow sidewalks.",
+      "shutterStyle": "Perforated metal roll-ups on clothing stores.",
+      "treeType": "Young Fraxinus pennsylvanica (Fresno).",
+      "graffiti": "Stickers and tags on street signs and utility boxes.",
+      "terrain": "Standard cement tile sidewalk; TemporalWindow: 2019-2024.",
+      "urbanElements": {
+        "furniture": "Yellow trash containers, solar-powered charging station.",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Low-rise residential buildings with ground floor retail. Zone: Soho Residential."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SOLER",
+        "ARMENIA",
+        "PALERMO SOHO",
+        "rapidFuzzScore: 91"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 80,
+      "shutterSpeed": "1/1500",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 6"
+    },
+    "h3Index": "89c2e311887ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-015",
+    "coordinates": {
+      "lat": -34.5898,
+      "lng": -58.4287,
+      "corner": "Costa Rica & Malabia"
+    },
+    "timestamp": "2020-11-22T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Morning light illuminating east-facing facades, high contrast in side alleys."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Intertwined fiber optic cables and older copper pairs.",
+      "shutterStyle": "Traditional wooden shutters (celosías) on upper floors.",
+      "treeType": "Large Tipas forming a green canopy.",
+      "graffiti": "Large-scale legal murals on the corner building.",
+      "terrain": "Dark asphalt with repairs; TemporalWindow: 2018-2021.",
+      "urbanElements": {
+        "furniture": "Black public bins, Eco-point recycling station nearby.",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Italianate-style early 20th century corner houses. Zone: Residential/Gastronomic."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "COSTA RICA",
+        "MALABIA",
+        "BIBLIOTECA",
+        "rapidFuzzScore: 97"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 125,
+      "shutterSpeed": "1/500",
+      "focalLength": "28mm",
+      "make": "Xiaomi",
+      "model": "Redmi Note 10"
+    },
+    "h3Index": "89c2e311d4fffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-016",
+    "coordinates": {
+      "lat": -34.5824,
+      "lng": -58.3976,
+      "corner": "Av. Figueroa Alcorta & Tagle"
+    },
+    "timestamp": "2023-05-10T14:00:00Z",
+    "lighting": {
+      "sunPosition": "North-North-West",
+      "shadowDirection": "South-South-East",
+      "shadowLength": "Medium",
+      "description": "Clear autumn light with high visibility; shadows from the ATC building are prominent."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Non-existent, all utilities are subterranean.",
+      "shutterStyle": "None, glass curtains and modern concrete finishes.",
+      "treeType": "Jacaranda mimosifolia and groomed lawn.",
+      "graffiti": "Strictly cleaned, zero presence.",
+      "terrain": "Smooth paving and wide concrete sidewalks; TemporalWindow: 2021-2024.",
+      "urbanElements": {
+        "furniture": "Stainless steel bollards, modern bus stop with digital display.",
+        "vegetationScore": 0.9,
+        "architectureStyle": "Brutalist and Contemporary (Malba/Canal 7). Zone: Cultural/High-End."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. FIGUEROA ALCORTA",
+        "TAGLE",
+        "ATC",
+        "MALBA",
+        "rapidFuzzScore: 99"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/800",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2e311a13ffff",
+    "geocodingScore": 98,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-017",
+    "coordinates": {
+      "lat": -34.5861,
+      "lng": -58.4272,
+      "corner": "Borges & Nicaragua"
+    },
+    "timestamp": "2022-09-30T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Extremely Long",
+      "description": "Golden hour lighting illuminating the Plaza Serrano vicinity."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate, often used to hang decorative lights between poles.",
+      "shutterStyle": "Wood and glass folding doors (typical of cafes).",
+      "treeType": "Old Platanus acerifolia with thick trunks.",
+      "graffiti": "Very high, includes stencil art and stickers.",
+      "terrain": "Cobblestones around the circular plaza; TemporalWindow: 2017-2023.",
+      "urbanElements": {
+        "furniture": "Artisan stalls, decorative cast iron fences, heavy foot traffic.",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Late 19th century converted commercial. Zone: Touristic Commercial."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "J. L. BORGES",
+        "NICARAGUA",
+        "PLAZA SERRANO",
+        "rapidFuzzScore: 93"
+      ],
+      "confidence": 0.85
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 640,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    },
+    "h3Index": "89c2e3118a3ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-018",
+    "coordinates": {
+      "lat": -34.5855,
+      "lng": -58.4354,
+      "corner": "Fitz Roy & Honduras"
+    },
+    "timestamp": "2023-02-14T12:30:00Z",
+    "lighting": {
+      "sunPosition": "North-North-East",
+      "shadowDirection": "South-South-West",
+      "shadowLength": "Short",
+      "description": "Intense summer sun, high contrast between asphalt and sidewalk shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Highly organized fiber bundles for TV studios.",
+      "shutterStyle": "Modern security grilles and glass storefronts.",
+      "treeType": "Fraxinus excelsior (Fresno europeo).",
+      "graffiti": "Moderate, mainly brand-related wheatpastes.",
+      "terrain": "Asphalt with painted bike lanes; TemporalWindow: 2021-2024.",
+      "urbanElements": {
+        "furniture": "Telecom utility cabinets, digital advertising screens.",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Modern lofts and AV production studios. Zone: Palermo Hollywood."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "FITZ ROY",
+        "HONDURAS",
+        "KZO",
+        "rapidFuzzScore: 96"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 50,
+      "shutterSpeed": "1/2000",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2e311d63ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-019",
+    "coordinates": {
+      "lat": -34.5878,
+      "lng": -58.4061,
+      "corner": "Av. Coronel Díaz & French"
+    },
+    "timestamp": "2021-12-05T08:45:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long-Medium",
+      "description": "Early morning light hitting the upper floors of high-rise apartment buildings."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low, mostly underground except for intersection drops.",
+      "shutterStyle": "Plastic roller blinds (persianas) on residential balconies.",
+      "treeType": "Tilia cordata (Tilo).",
+      "graffiti": "Very low, mostly minor marker tags on light poles.",
+      "terrain": "Tiled sidewalk (Veredas de 40 panes); TemporalWindow: 2019-2022.",
+      "urbanElements": {
+        "furniture": "Newsstand, black metal waste bins, taxi stand signage.",
+        "vegetationScore": 0.5,
+        "architectureStyle": "High-density residential towers (1970s-1990s). Zone: High Residential."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. CORONEL DIAZ",
+        "FRENCH",
+        "ALTO PALERMO",
+        "rapidFuzzScore: 98"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "26mm",
+      "make": "Huawei",
+      "model": "P30 Pro"
+    },
+    "h3Index": "89c2e31185bffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-020",
+    "coordinates": {
+      "lat": -34.5832,
+      "lng": -58.4377,
+      "corner": "Arévalo & El Salvador"
+    },
+    "timestamp": "2023-08-25T10:15:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Crisp winter morning light, shadows elongating towards the south-west corner."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Abundant, crossing diagonally at the intersection.",
+      "shutterStyle": "Dark grey metallic rolling doors.",
+      "treeType": "Deciduous trees with bare branches (winter).",
+      "graffiti": "Heavy presence of street art and commercial murals.",
+      "terrain": "Uneven sidewalk with tree root damage; TemporalWindow: 2020-2023.",
+      "urbanElements": {
+        "furniture": "Concrete anti-parking bollards, internet service boxes.",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Former industrial warehouses converted to lofts. Zone: Industrial/Creative."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AREVALO",
+        "EL SALVADOR",
+        "MERCADO DE PULGAS",
+        "rapidFuzzScore: 90"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 200,
+      "shutterSpeed": "1/800",
+      "focalLength": "23mm",
+      "make": "OPPO",
+      "model": "Find X5"
+    },
+    "h3Index": "89c2e31199bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-021",
+    "coordinates": {
+      "lat": -34.5811,
+      "lng": -58.4233,
+      "corner": "Av. Santa Fe y Thames"
+    },
+    "timestamp": "2021-10-15T14:30:00Z (Window 2018-2022)",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Afternoon light typical of spring in Buenos Aires, cast by a 45-degree solar altitude."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead power lines and fiber optics",
+      "shutterStyle": "Galvanized steel roller shutters on commercial premises",
+      "treeType": "Platanus x hispanica (Plátano)",
+      "graffiti": "Tags on lower masonry and stencil art on utility boxes",
+      "terrain": "Flat urban asphalt with concrete sidewalks",
+      "urbanElements": {
+        "furniture": "Black metal 'BGH' style bus stop, grey concrete litter bins",
+        "vegetationScore": 4.5,
+        "architectureStyle": "Rationalist mixed with modern retail fronts"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Santa Fe",
+        "3900",
+        "Farmacity"
+      ],
+      "confidence": 94.2
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 12"
+    },
+    "h3Index": "89c2e311823ffff",
+    "geocodingScore": 3881,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-022",
+    "coordinates": {
+      "lat": -34.5885,
+      "lng": -58.4282,
+      "corner": "Gorriti y Armenia"
+    },
+    "timestamp": "2022-03-20T10:15:00Z (Window 2019-2023)",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Long",
+      "description": "Morning shadows stretching across the cobblestone street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Medium density, horizontal crossing",
+      "shutterStyle": "Wooden shutters on residential upper floors",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "High-quality mural art on building facade",
+      "terrain": "Granite cobblestones (Adoquines)",
+      "urbanElements": {
+        "furniture": "Cast iron bollards, outdoor cafe seating",
+        "vegetationScore": 7.2,
+        "architectureStyle": "Italianate low-rise (Ph reciclado)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Gorriti",
+        "1500",
+        "Plaza Armenia"
+      ],
+      "confidence": 88.5
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-G991B"
+    },
+    "h3Index": "89c2e3118b7ffff",
+    "geocodingScore": 3693,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-023",
+    "coordinates": {
+      "lat": -34.5715,
+      "lng": -58.4112,
+      "corner": "Av. del Libertador y Av. Sarmiento"
+    },
+    "timestamp": "2020-11-05T12:00:00Z (Window 2015-2021)",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Minimal",
+      "description": "Noon lighting with high contrast and vertical shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (Underground utilities)",
+      "shutterStyle": "None (Curtain walls and large glass panes)",
+      "treeType": "Tipuana tipu (Tipa)",
+      "graffiti": "None",
+      "terrain": "Multi-lane high-quality asphalt",
+      "urbanElements": {
+        "furniture": "Public bike sharing station (EcoBici), traffic lights with yellow paint",
+        "vegetationScore": 9.1,
+        "architectureStyle": "Monumental/French Neoclassical (Eco-Park side)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. del Libertador",
+        "Sarmiento",
+        "Monumento de los Españoles"
+      ],
+      "confidence": 97.8
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 64,
+      "shutterSpeed": "1/2500",
+      "focalLength": "23mm",
+      "make": "Google",
+      "model": "Pixel 5"
+    },
+    "h3Index": "89c2e311bcfffff",
+    "geocodingScore": 4094,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-024",
+    "coordinates": {
+      "lat": -34.5841,
+      "lng": -58.4361,
+      "corner": "Fitz Roy y Honduras"
+    },
+    "timestamp": "2019-06-12T16:45:00Z (Window 2017-2020)",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Very Long",
+      "description": "Golden hour lighting illuminating the red brick facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Chaotic cluster on wooden poles",
+      "shutterStyle": "Industrial roll-up metal doors",
+      "treeType": "Fraxinus pennsylvanica (Fresno)",
+      "graffiti": "Political posters and sticker-bombing on lampposts",
+      "terrain": "Patchy asphalt with concrete repairs",
+      "urbanElements": {
+        "furniture": "Black 'CABA' waste containers, yellow painted curbs",
+        "vegetationScore": 3.8,
+        "architectureStyle": "Repurposed Industrial / Brick Loft"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Fitz Roy",
+        "Honduras",
+        "Live Media"
+      ],
+      "confidence": 82.3
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 400,
+      "shutterSpeed": "1/125",
+      "focalLength": "52mm",
+      "make": "Sony",
+      "model": "DSC-RX100M7"
+    },
+    "h3Index": "89c2e311d6fffff",
+    "geocodingScore": 3394,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-025",
+    "coordinates": {
+      "lat": -34.5834,
+      "lng": -58.4042,
+      "corner": "Av. Gral. Las Heras y Bulnes"
+    },
+    "timestamp": "2023-01-10T09:00:00Z (Window 2020-2024)",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Moderate",
+      "description": "Clear summer morning light reflecting off high-rise balconies."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Few, mostly tucked into building edges",
+      "shutterStyle": "Plastic 'Barrio' shutters on residential apartments",
+      "treeType": "Ceiba speciosa (Palo Borracho)",
+      "graffiti": "Minimal, localized near ground-level utility doors",
+      "terrain": "Smooth asphalt and red tiles (Vereda de vainillas rojas)",
+      "urbanElements": {
+        "furniture": "Grey telephone booth remains, 'Parada' sign for Line 60",
+        "vegetationScore": 6.5,
+        "architectureStyle": "Rationalist High-rise (1970s)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Las Heras",
+        "3100",
+        "Línea 60"
+      ],
+      "confidence": 91
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 125,
+      "shutterSpeed": "1/800",
+      "focalLength": "28mm",
+      "make": "Xiaomi",
+      "model": "Redmi Note 10"
+    },
+    "h3Index": "89c2e311ab3ffff",
+    "geocodingScore": 3783,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-026",
+    "coordinates": {
+      "lat": -34.5902,
+      "lng": -58.4265,
+      "corner": "El Salvador y Gurruchaga"
+    },
+    "timestamp": "2021-08-30T15:20:00Z (Window 2018-2023)",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium-Long",
+      "description": "Winter afternoon light, low angle causing soft shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Overhead criss-cross pattern typical of Palermo Soho",
+      "shutterStyle": "Decorative iron grills on old windows",
+      "treeType": "Lagerstroemia indica",
+      "graffiti": "Street art 'SOHO' branding",
+      "terrain": "Mixed concrete and old cobblestones",
+      "urbanElements": {
+        "furniture": "Decorative black lamp posts, vertical garden on corner",
+        "vegetationScore": 5.8,
+        "architectureStyle": "Early 20th Century Spanish Colonial Revival"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "El Salvador",
+        "4700",
+        "La Panadería"
+      ],
+      "confidence": 89.7
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    },
+    "h3Index": "89c2e3118b3ffff",
+    "geocodingScore": 3720,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-027",
+    "coordinates": {
+      "lat": -34.5861,
+      "lng": -58.4312,
+      "corner": "Nicaragua y Thames"
+    },
+    "timestamp": "2022-12-05T13:00:00Z (Window 2020-2024)",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High summer sun casting very short, dark shadows directly below objects."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavily bundled cables at intersection",
+      "shutterStyle": "Modern automated rolling grills for bars",
+      "treeType": "Platanus x hispanica",
+      "graffiti": "Dense sticker tags on back of traffic signs",
+      "terrain": "Standard grey sidewalk tiles (Vereda de vainillas)",
+      "urbanElements": {
+        "furniture": "Orange traffic cones, green garbage bins (campanas verdes)",
+        "vegetationScore": 4.1,
+        "architectureStyle": "Mixed: Colonial shells with modern glass interiors"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Nicaragua",
+        "Thames",
+        "Don Julio"
+      ],
+      "confidence": 93.4
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 80,
+      "shutterSpeed": "1/3200",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2e311d6bffff",
+    "geocodingScore": 3843,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-028",
+    "coordinates": {
+      "lat": -34.5795,
+      "lng": -58.4063,
+      "corner": "Jerónimo Salguero y Cerviño"
+    },
+    "timestamp": "2018-05-22T11:10:00Z (Window 2016-2019)",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Autumn morning with soft diffused light due to light cloud cover."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Mostly subterranean, few drops to older buildings",
+      "shutterStyle": "Wood panel blinds in high-end apartments",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Very clean, virtually absent graffiti",
+      "terrain": "High-maintenance concrete and stone entrance ramps",
+      "urbanElements": {
+        "furniture": "Police surveillance camera on white pole, stainless steel waste bin",
+        "vegetationScore": 8.5,
+        "architectureStyle": "Brutalist and International Style towers"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Salguero",
+        "Cerviño",
+        "Sanatorio Mater Dei"
+      ],
+      "confidence": 95.1
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2e311aafffff",
+    "geocodingScore": 3977,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-029",
+    "coordinates": {
+      "lat": -34.5832,
+      "lng": -58.4411,
+      "corner": "Niceto Vega y Humboldt"
+    },
+    "timestamp": "2021-02-14T19:30:00Z (Window 2019-2022)",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Extremely Long",
+      "description": "Sunset light with long silhouettes and orange hue."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy, including overhead street lighting cables",
+      "shutterStyle": "Aesthetic rusted-metal sliding gates",
+      "treeType": "Fraxinus americana",
+      "graffiti": "Extensive 'throw-ups' on industrial warehouse walls",
+      "terrain": "Worn asphalt with visible expansion joints",
+      "urbanElements": {
+        "furniture": "Metal 'P' parking signs, neon club signage",
+        "vegetationScore": 2.2,
+        "architectureStyle": "Industrial Warehouse / Nightclub conversion"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Niceto Vega",
+        "Humboldt",
+        "Niceto Club"
+      ],
+      "confidence": 86.8
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "26mm",
+      "make": "Samsung",
+      "model": "SM-G980F"
+    },
+    "h3Index": "89c2e311993ffff",
+    "geocodingScore": 3550,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-030",
+    "coordinates": {
+      "lat": -34.5912,
+      "lng": -58.4294,
+      "corner": "Guatemala y Serrano"
+    },
+    "timestamp": "2023-04-18T08:45:00Z (Window 2021-2024)",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning light hitting the east-facing facades of Plaza Cortázar."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense web at the intersection pole",
+      "shutterStyle": "Hand-painted artistic rolling shutters",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Tagging on the base of the street signs",
+      "terrain": "Pedestrianized cobblestone zone (Intertrabado)",
+      "urbanElements": {
+        "furniture": "Stone benches, artisan fair structure (temporary)",
+        "vegetationScore": 6.9,
+        "architectureStyle": "Colonial-Modern Eclecticism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Guatemala",
+        "Serrano",
+        "Plaza Cortazar"
+      ],
+      "confidence": 92.6
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 160,
+      "shutterSpeed": "1/2000",
+      "focalLength": "23mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2e311d43ffff",
+    "geocodingScore": 3853,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-031",
+    "coordinates": {
+      "lat": -34.5805,
+      "lng": -58.4283,
+      "corner": "Av. Santa Fe and Av. Juan B. Justo"
+    },
+    "timestamp": "2023-11-15T10:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Harsh morning light typical of late spring in Buenos Aires, emphasizing high-contrast vertical edges of the railway bridge."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density near Metrobus nodes",
+      "shutterStyle": "Roll-up commercial steel shutters",
+      "treeType": "Platanus acerifolia (Palo Borracho near intersection)",
+      "graffiti": "Tagging on bridge pillars",
+      "terrain": "Flat asphalt with concrete Metrobus lane",
+      "urbanElements": {
+        "furniture": "Yellow Metrobus stations, black GCBA waste containers",
+        "vegetationScore": 3.5,
+        "architectureStyle": "Eclectic commercial and infrastructure"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. SANTA FE 4800",
+        "METROBUS",
+        "PACIFICO"
+      ],
+      "confidence": 94.2
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Sony",
+      "model": "IMX586"
+    },
+    "h3Index": "89c2e3119cbffff",
+    "geocodingScore": 3866,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-032",
+    "coordinates": {
+      "lat": -34.5892,
+      "lng": -58.4314,
+      "corner": "Thames and Honduras"
+    },
+    "timestamp": "2023-10-12T16:20:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting accentuating textures on low-rise brick walls."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Medium, messy crossing at corners",
+      "shutterStyle": "Ornate wooden French shutters",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Street art murals (Palermo Soho style)",
+      "terrain": "Granite cobblestone (adoquines)",
+      "urbanElements": {
+        "furniture": "Wrought iron cafe chairs, cast iron bollards",
+        "vegetationScore": 6.8,
+        "architectureStyle": "Italianate 'Casa Chorizo' renovated for retail"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "THAMES 1600",
+        "HONDURAS",
+        "DESIGN STORE"
+      ],
+      "confidence": 88.5
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2e311d7bffff",
+    "geocodingScore": 3687,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-033",
+    "coordinates": {
+      "lat": -34.5751,
+      "lng": -58.4145,
+      "corner": "Av. del Libertador and Av. Sarmiento"
+    },
+    "timestamp": "2023-09-05T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Solar noon; shadows directly beneath objects, high vertical illumination on the monument."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground utilities)",
+      "shutterStyle": "Minimal (large glass panels)",
+      "treeType": "Tipuana tipu (Tipas)",
+      "graffiti": "Absent",
+      "terrain": "Poured concrete and manicured park grass",
+      "urbanElements": {
+        "furniture": "Standardized park benches (GCBA style), white marble monument base",
+        "vegetationScore": 9.2,
+        "architectureStyle": "Beaux-Arts and Monumentalism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. DEL LIBERTADOR",
+        "MONUMENTO",
+        "SARMIENTO"
+      ],
+      "confidence": 97.1
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 64,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89c2e311bd7ffff",
+    "geocodingScore": 4067,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-034",
+    "coordinates": {
+      "lat": -34.5908,
+      "lng": -58.4251,
+      "corner": "El Salvador and Armenia"
+    },
+    "timestamp": "2023-12-20T14:30:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short-Moderate",
+      "description": "High summer sun; dappled light through dense tree canopy."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High, bundle attached to facade corners",
+      "shutterStyle": "PVC roller shutters (Residential)",
+      "treeType": "Tipuana tipu (forming a tunnel effect)",
+      "graffiti": "Political stencil art",
+      "terrain": "Asphalt with repair patches",
+      "urbanElements": {
+        "furniture": "Gray concrete waste bins, playground fencing nearby",
+        "vegetationScore": 8.5,
+        "architectureStyle": "Mid-century modern low-rise residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "EL SALVADOR",
+        "PLAZA ARMENIA",
+        "HELADERIA"
+      ],
+      "confidence": 91.3
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 125,
+      "shutterSpeed": "1/800s",
+      "focalLength": "28mm",
+      "make": "Samsung",
+      "model": "S21 Ultra"
+    },
+    "h3Index": "89c2e311887ffff",
+    "geocodingScore": 3825,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-035",
+    "coordinates": {
+      "lat": -34.5764,
+      "lng": -58.4012,
+      "corner": "Jer3nimo Salguero and Av. Figueroa Alcorta"
+    },
+    "timestamp": "2023-08-15T15:45:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Moderate-Long",
+      "description": "Winter afternoon sun reflecting off glass facades of the shopping mall."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Very low (buried primary lines)",
+      "shutterStyle": "Glass curtain walls",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Pristine, negligible tagging",
+      "terrain": "Smooth asphalt and polished granite entryway",
+      "urbanElements": {
+        "furniture": "Brushed steel signage, modern architectural LED poles",
+        "vegetationScore": 5.4,
+        "architectureStyle": "Contemporary High-Tech / Corporate"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "ALCORTA SHOPPING",
+        "SALGUERO",
+        "FIGUEROA ALCORTA"
+      ],
+      "confidence": 95.8
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "52mm",
+      "make": "Google",
+      "model": "Pixel 6"
+    },
+    "h3Index": "89c2e311a23ffff",
+    "geocodingScore": 3958,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-036",
+    "coordinates": {
+      "lat": -34.5823,
+      "lng": -58.4411,
+      "corner": "Gorriti and Ar3valo"
+    },
+    "timestamp": "2023-11-02T11:15:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Moderate",
+      "description": "Clear sky, side lighting highlighting the brickwork of old production lofts."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy, multiple fiber optic crossings",
+      "shutterStyle": "Industrial folding metal doors",
+      "treeType": "Fraxinus pennsylvanica",
+      "graffiti": "High-quality street murals (Palermo Hollywood)",
+      "terrain": "Older asphalt with visible brick sub-layer",
+      "urbanElements": {
+        "furniture": "Security guard booths, valet parking signs",
+        "vegetationScore": 4.2,
+        "architectureStyle": "Repurposed industrial warehouse"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AREVALO 1400",
+        "GORRITI",
+        "ESTUDIOS"
+      ],
+      "confidence": 89.9
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 250,
+      "shutterSpeed": "1/1200s",
+      "focalLength": "23mm",
+      "make": "Xiaomi",
+      "model": "Mi 11"
+    },
+    "h3Index": "89c2e311993ffff",
+    "geocodingScore": 3704,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-037",
+    "coordinates": {
+      "lat": -34.5841,
+      "lng": -58.4082,
+      "corner": "Av. Las Heras and Coronel D3az"
+    },
+    "timestamp": "2023-07-10T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Long",
+      "description": "Low winter sun; deep shadows cast by high-density residential towers."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Medium, mostly secondary service lines",
+      "shutterStyle": "Persiana de enrollar (Plastic/Wood)",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "Stickers on traffic signal poles",
+      "terrain": "High-quality asphalt, wide concrete sidewalks",
+      "urbanElements": {
+        "furniture": "Newspaper kiosk (green metal), bus stop shelter",
+        "vegetationScore": 7.1,
+        "architectureStyle": "High-density residential Brutalism and Modernism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. LAS HERAS",
+        "CORONEL DIAZ",
+        "PARQUE"
+      ],
+      "confidence": 93.5
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2e31184fffff",
+    "geocodingScore": 3892,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-038",
+    "coordinates": {
+      "lat": -34.5845,
+      "lng": -58.4356,
+      "corner": "Fitz Roy and Nicaragua"
+    },
+    "timestamp": "2023-05-22T13:20:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short-Moderate",
+      "description": "Overcast sky; diffused lighting with soft, indistinct shadows."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Very high, industrial-grade bundles",
+      "shutterStyle": "Minimal (modern restaurants)",
+      "treeType": "Fraxinus excelsior",
+      "graffiti": "Frequent commercial branding as art",
+      "terrain": "Asphalt and cement tiles",
+      "urbanElements": {
+        "furniture": "Wooden deck extensions on street, bicycle racks",
+        "vegetationScore": 4.8,
+        "architectureStyle": "Modern low-rise (Gastronomic Hub)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "FITZ ROY 1600",
+        "NICARAGUA",
+        "CERVECERIA"
+      ],
+      "confidence": 87.2
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/125s",
+      "focalLength": "30mm",
+      "make": "Samsung",
+      "model": "A52"
+    },
+    "h3Index": "89c2e311d6fffff",
+    "geocodingScore": 3605,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-039",
+    "coordinates": {
+      "lat": -34.5885,
+      "lng": -58.4277,
+      "corner": "Malabia and Costa Rica"
+    },
+    "timestamp": "2023-04-18T09:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Long",
+      "description": "Early morning light penetrating the narrow streets of Palermo Viejo."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Messy, crossing at mid-block",
+      "shutterStyle": "Security bars over wooden shutters",
+      "treeType": "Lagerstroemia indica (Reseda)",
+      "graffiti": "Tagging on utility boxes",
+      "terrain": "Cobblestones with grass growth between cracks",
+      "urbanElements": {
+        "furniture": "Antique-style street lamps, green GCBA recycle bins",
+        "vegetationScore": 6.2,
+        "architectureStyle": "Early 20th century Spanish Colonial Revival"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MALABIA",
+        "COSTA RICA",
+        "1800"
+      ],
+      "confidence": 90.1
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "35mm",
+      "make": "Nikon",
+      "model": "D3500"
+    },
+    "h3Index": "89c2e3118b3ffff",
+    "geocodingScore": 3742,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-040",
+    "coordinates": {
+      "lat": -34.5819,
+      "lng": -58.4048,
+      "corner": "Bulnes and Cervi3o"
+    },
+    "timestamp": "2023-11-28T17:10:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Very Long",
+      "description": "Sunset light casting elongated shadows across the residential corridor."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low, neatly managed",
+      "shutterStyle": "Modern automated aluminum shutters",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Clean facades, minimal tagging",
+      "terrain": "Polished concrete sidewalk tiles",
+      "urbanElements": {
+        "furniture": "Private security booths on sidewalk, modern planters",
+        "vegetationScore": 5.9,
+        "architectureStyle": "High-end contemporary residential apartments"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "BULNES 2600",
+        "CERVI&O",
+        "PARQUE"
+      ],
+      "confidence": 92.4
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 320,
+      "shutterSpeed": "1/100s",
+      "focalLength": "24mm",
+      "make": "Apple",
+      "model": "iPhone 14"
+    },
+    "h3Index": "89c2e311aa3ffff",
+    "geocodingScore": 3830,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-041",
+    "coordinates": {
+      "lat": -34.5891,
+      "lng": -58.4315,
+      "corner": "Honduras and Thames"
+    },
+    "timestamp": "2023-11-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Mid-afternoon spring light, high contrast on brick facades. Temporal Window: 2018-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead mesh characteristic of Palermo Soho",
+      "shutterStyle": "Wood roller shutters (persianas) on upper floors",
+      "treeType": "Platanus acerifolia (London Plane)",
+      "graffiti": "High presence of street art on commercial gates",
+      "terrain": "Flat asphalt with grey concrete sidewalk tiles (baldosas vainillas)",
+      "urbanElements": {
+        "furniture": "Black metal anti-parking bollards",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Refurbished low-rise industrial warehouses (Commercial)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "THAMES 1500 (rapidFuzzScore: 100)",
+        "SARKIS",
+        "HONDURAS"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13"
+    },
+    "h3Index": "89c2e311d7bffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-042",
+    "coordinates": {
+      "lat": -34.5862,
+      "lng": -58.4161,
+      "corner": "Av. Santa Fe and Aráoz"
+    },
+    "timestamp": "2023-06-21T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Long",
+      "description": "Winter solstice solar noon, long shadows from high-rise buildings. Temporal Window: 2020-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground utilities, minimal aerial wiring",
+      "shutterStyle": "Metal commercial roll-up doors",
+      "treeType": "Fraxinus pennsylvanica (Green Ash)",
+      "graffiti": "Low, restricted to utility boxes",
+      "terrain": "Red textured tactile paving at corners",
+      "urbanElements": {
+        "furniture": "Standardized BA bus stop signage",
+        "vegetationScore": 0.3,
+        "architectureStyle": "High-density residential with commercial ground floor"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. SANTA FE 3600 (rapidFuzzScore: 100)",
+        "FARMACITY",
+        "ARÁOZ"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-G991B"
+    },
+    "h3Index": "89c2e311803ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-043",
+    "coordinates": {
+      "lat": -34.5905,
+      "lng": -58.4255,
+      "corner": "Costa Rica and Malabia"
+    },
+    "timestamp": "2023-10-10T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Short",
+      "description": "Soft morning light through tree canopy. Temporal Window: 2017-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate cross-street cabling",
+      "shutterStyle": "Classic wooden shutters with green paint",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Artistic murals on boutique walls",
+      "terrain": "Stone cobblestones (Adoquines) with modern patches",
+      "urbanElements": {
+        "furniture": "Outdoor wooden restaurant seating",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Late 19th-century 'Casa Chorizo' (Residential/Boutique)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MALABIA (rapidFuzzScore: 95)",
+        "COSTA RICA",
+        "BOUTIQUE"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 125,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M4"
+    },
+    "h3Index": "89c2e311d4bffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-044",
+    "coordinates": {
+      "lat": -34.5895,
+      "lng": -58.4325,
+      "corner": "Nicaragua and Gurruchaga"
+    },
+    "timestamp": "2023-12-05T20:00:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Extremely Long",
+      "description": "Golden hour twilight. Temporal Window: 2019-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Interconnected fiber optic bundles",
+      "shutterStyle": "Contemporary glass storefronts",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Clean facades with minimal tagging",
+      "terrain": "Smooth asphalt, wide sidewalks",
+      "urbanElements": {
+        "furniture": "Grey waste containers (Campanas Verdes)",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Modern gastronomic hub (Commercial)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "DON JULIO (rapidFuzzScore: 88)",
+        "GURRUCHAGA",
+        "NICARAGUA"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/60s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2e311d47ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-045",
+    "coordinates": {
+      "lat": -34.5718,
+      "lng": -58.4182,
+      "corner": "Av. del Libertador and Bullrich"
+    },
+    "timestamp": "2023-08-12T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Clear winter morning, bright exposure on open avenue. Temporal Window: 2015-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Absent (buried infrastructure)",
+      "shutterStyle": "None (Glass/Concrete office style)",
+      "treeType": "Ceiba speciosa (Palo Borracho)",
+      "graffiti": "None (High maintenance area)",
+      "terrain": "Multi-lane heavy traffic asphalt",
+      "urbanElements": {
+        "furniture": "Electronic traffic signaling screens",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Monumental infrastructure and parks (Transit)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. DEL LIBERTADOR (rapidFuzzScore: 100)",
+        "BULLRICH",
+        "PASEO ALCORTA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "70mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89c2e311b13ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-046",
+    "coordinates": {
+      "lat": -34.5842,
+      "lng": -58.4361,
+      "corner": "Gorriti and Fitz Roy"
+    },
+    "timestamp": "2023-05-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Long",
+      "description": "Late autumn shadows stretching across the intersection. Temporal Window: 2021-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Very dense, low-hanging service wires",
+      "shutterStyle": "Perforated metal security shutters",
+      "treeType": "Fraxinus americana",
+      "graffiti": "Stencil art on brick walls",
+      "terrain": "Granite blocks (Adoquines) with asphalt infill",
+      "urbanElements": {
+        "furniture": "Bicycle parking racks (Eco-Bici style)",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Palermo Hollywood Media Lofts (Commercial/Industrial)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "FITZ ROY (rapidFuzzScore: 100)",
+        "GORRITI 5500",
+        "KUARZO"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2e311d6fffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-047",
+    "coordinates": {
+      "lat": -34.5815,
+      "lng": -58.4121,
+      "corner": "Cerviño and Lafinur"
+    },
+    "timestamp": "2023-09-21T13:00:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "High sun in early spring. Dappled light through leaves. Temporal Window: 2016-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, high altitude line runs",
+      "shutterStyle": "French-style wooden window shutters",
+      "treeType": "Liquidambar styraciflua",
+      "graffiti": "Clean, high-end residential maintenance",
+      "terrain": "Polished stone entryway thresholds",
+      "urbanElements": {
+        "furniture": "Ornate black cast-iron street lamps",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Academic French / Art Deco (Residential High-End)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CERVIÑO 3800 (rapidFuzzScore: 100)",
+        "LAFINUR"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "52mm",
+      "make": "Xiaomi",
+      "model": "12 Pro"
+    },
+    "h3Index": "89c2e31187bffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-048",
+    "coordinates": {
+      "lat": -34.5855,
+      "lng": -58.4332,
+      "corner": "Humboldt and El Salvador"
+    },
+    "timestamp": "2023-04-01T10:30:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Bright morning light on modern glass balconies. Temporal Window: 2022-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Thick bundles at corner poles",
+      "shutterStyle": "Aluminum silver shutters",
+      "treeType": "Ficus benjamina",
+      "graffiti": "Tagging on construction site hoarding",
+      "terrain": "New concrete sidewalk sections",
+      "urbanElements": {
+        "furniture": "Black metal trash bins on poles",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Contemporary Minimalist apartments (Residential)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "HUMBOLDT (rapidFuzzScore: 100)",
+        "EL SALVADOR",
+        "OBRA EN CONSTRUCCION"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 160,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "24mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2e311d6bffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-049",
+    "coordinates": {
+      "lat": -34.5871,
+      "lng": -58.4092,
+      "corner": "Juncal and Coronel Díaz"
+    },
+    "timestamp": "2023-07-10T15:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Long",
+      "description": "Afternoon shadows from high-rise towers. Temporal Window: 2018-2024."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Discreet, running along building facades",
+      "shutterStyle": "Plastic roller shutters (beige)",
+      "treeType": "Tilia cordata (Linden)",
+      "graffiti": "Negligible",
+      "terrain": "Grey mosaic tiles (64 panes pattern)",
+      "urbanElements": {
+        "furniture": "Kiosk (Diarios y Revistas) in green metal",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Brutalist and Rationalist towers (Residential)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORONEL DIAZ (rapidFuzzScore: 98)",
+        "JUNCAL",
+        "ALTO PALERMO"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 250,
+      "shutterSpeed": "1/400s",
+      "focalLength": "30mm",
+      "make": "Huawei",
+      "model": "P40 Pro"
+    },
+    "h3Index": "89c2e311843ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "REF-050",
+    "coordinates": {
+      "lat": -34.5832,
+      "lng": -58.4385,
+      "corner": "Soler and Bonpland"
+    },
+    "timestamp": "2023-11-28T12:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Very Short",
+      "description": "High summer sun, harsh vertical lighting. Temporal Window: 2019-2023."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Chaotic distribution at pole junctions",
+      "shutterStyle": "Sliding iron gates",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "High density of stickers and tags",
+      "terrain": "Asphalt with visible repair patches",
+      "urbanElements": {
+        "furniture": "Yellow-painted curbs at corner",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Transitional Industrial-Residential Lofts"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "BONPLAND (rapidFuzzScore: 100)",
+        "SOLER",
+        "CERVECERIA"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14"
+    },
+    "h3Index": "89c2e31199bffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  }
+]

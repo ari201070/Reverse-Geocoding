@@ -1,0 +1,3702 @@
+[
+  {
+    "id": "ROS-001-MNB",
+    "coordinates": {
+      "lat": -32.947512,
+      "lng": -60.630245,
+      "corner": "Av. Belgrano y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium-long",
+      "description": "Clear morning light hitting the facade of the historic buildings facing the river."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle crossing the intersection towards the river side",
+      "shutterStyle": "Roll-up metal shutters on ground floor commercial units",
+      "treeType": "Large Tipas with high canopy",
+      "graffiti": "Stencil of 'CARC' in blue and yellow on the lower corner wall",
+      "terrain": "Paved with traditional grey granite blocks near the curb",
+      "urbanElements": {
+        "furniture": "Black cast iron waste bin and standard Rosario bus stop sign",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Neoclassical residential with high ceilings"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BELGRANO 600",
+        "JUAN MANUEL DE ROSAS 500",
+        "ESTACIONAMIENTO EXCLUSIVO",
+        "ZONA II"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2eba3383ffff",
+    "geocodingScore": 93,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-002-MNB",
+    "coordinates": {
+      "lat": -32.94689,
+      "lng": -60.63212,
+      "corner": "Santa Fe y Laprida"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour with long shadows stretching towards the Cathedral."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Limited, mostly underground in this historical sector",
+      "shutterStyle": "Wood shutters (persianas) on upper floors",
+      "treeType": "Jacaranda with purple flowers on the sidewalk",
+      "graffiti": "Political mural partially erased on the corner building",
+      "terrain": "Red 'vainilla' style cement tiles",
+      "urbanElements": {
+        "furniture": "Concrete bollards protecting the pedestrian corner",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Academicism / Beaux-Arts"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE 800",
+        "LAPRIDA 700",
+        "BANCO MUNICIPAL",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "A7 III"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-003-MNB",
+    "coordinates": {
+      "lat": -32.94821,
+      "lng": -60.63155,
+      "corner": "Cordoba y 1 de Mayo"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Minimal",
+      "description": "High overhead sun creating harsh contrast on the pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate complexity, mostly telecommunications wires",
+      "shutterStyle": "Modern security grilles on retail windows",
+      "treeType": "Ash trees (Fresnos) with green foliage",
+      "graffiti": "Small 'NOB' tag in red and black",
+      "terrain": "Grey tactile paving for visual impairment at the ramp",
+      "urbanElements": {
+        "furniture": "Green newspaper kiosk nearby and a blue mailbox",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Modernist apartment block from the 70s"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA 600",
+        "1 DE MAYO 800",
+        "KIOSCO",
+        "DIARIOS"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-004-MNB",
+    "coordinates": {
+      "lat": -32.94634,
+      "lng": -60.6338,
+      "corner": "Rioja y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T08:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Early morning light, the street canyon of Rioja is mostly in shade."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Old copper wires tangled near an electrical transformer",
+      "shutterStyle": "Classic balcony doors with iron railings",
+      "treeType": "Ornamental orange trees (Naranjos)",
+      "graffiti": "Street art mural depicting local icons",
+      "terrain": "Stone cobbles visible through worn asphalt",
+      "urbanElements": {
+        "furniture": "Standard TUP (Transporte Urbano de Pasajeros) sign",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Art Deco residential building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 800",
+        "BUENOS AIRES 900",
+        "COLEGIO",
+        "SILENCIO"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 200,
+      "shutterSpeed": "1/250s",
+      "focalLength": "50mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-005-MNB",
+    "coordinates": {
+      "lat": -32.9472,
+      "lng": -60.6311,
+      "corner": "San Lorenzo y Maipu"
+    },
+    "timestamp": "2023-11-15T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "Afternoon light reflecting off glass facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density near the corner lighting pole",
+      "shutterStyle": "Anodized aluminum window frames",
+      "treeType": "Young Platanus",
+      "graffiti": "Clean wall with anti-graffiti paint coating",
+      "terrain": "Yellow 'vainilla' tiles in good condition",
+      "urbanElements": {
+        "furniture": "Modern black parking meter and public bicycle dock",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Contemporary glass and concrete"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 800",
+        "MAIPU 600",
+        "MI BICI TU BICI",
+        "ESTACION"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "14mm",
+      "make": "Samsung",
+      "model": "S22 Ultra"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-006-MNB",
+    "coordinates": {
+      "lat": -32.9491,
+      "lng": -60.6298,
+      "corner": "Av. Belgrano y Sargento Cabral"
+    },
+    "timestamp": "2023-11-15T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Extremely Long",
+      "description": "Dusk light over the Paraná river, high contrast on the slopes."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, high voltage lines further away",
+      "shutterStyle": "Historic wooden gates of the customs building",
+      "treeType": "Palo Borracho with thorny trunk",
+      "graffiti": "Decorative mural on the tunnel entrance",
+      "terrain": "Poured concrete on the bike path",
+      "urbanElements": {
+        "furniture": "Cast iron benches and vintage street lamps",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Industrial/Port architecture"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BELGRANO",
+        "SARGENTO CABRAL",
+        "ADUANA DE ROSARIO",
+        "SENTIDO OBLIGATORIO"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 800,
+      "shutterSpeed": "1/100s",
+      "focalLength": "28mm",
+      "make": "Nikon",
+      "model": "Z6"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-007-MNB",
+    "coordinates": {
+      "lat": -32.9455,
+      "lng": -60.6345,
+      "corner": "Santa Fe y San Martin"
+    },
+    "timestamp": "2023-11-15T11:15:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Direct sunlight on the pedestrian mall area."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Strictly underground, pedestrianized zone",
+      "shutterStyle": "Heavy accordion metal shop doors",
+      "treeType": "Potted ornamental shrubs",
+      "graffiti": "Small sticker bombs on the back of traffic signs",
+      "terrain": "Interlocking concrete pavers in gray and red",
+      "urbanElements": {
+        "furniture": "Spherical concrete bollards and public water fountain",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Commercial Eclecticism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "PEATONAL SAN MARTIN",
+        "SANTA FE 900",
+        "SOLO PEATONES",
+        "ZONA CENTRO"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-008-MNB",
+    "coordinates": {
+      "lat": -32.9488,
+      "lng": -60.6322,
+      "corner": "Rioja y 1 de Mayo"
+    },
+    "timestamp": "2023-11-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Soft morning light through the leaves of the Tipas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Numerous black cables connecting across the street",
+      "shutterStyle": "Sliding glass doors with security bars",
+      "treeType": "Very tall Tipas forming a green tunnel",
+      "graffiti": "Football club mural 'Leproso de Cuna'",
+      "terrain": "Traditional 9-square pattern cement tiles",
+      "urbanElements": {
+        "furniture": "A yellow mailbox and a street name post in blue",
+        "vegetationScore": 0.85,
+        "architectureStyle": "Italianate residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 600",
+        "1 DE MAYO 900",
+        "REDUZCA VELOCIDAD",
+        "ESCUELA"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 125,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "23mm",
+      "make": "Xiaomi",
+      "model": "Mi 11 Ultra"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-009-MNB",
+    "coordinates": {
+      "lat": -32.9478,
+      "lng": -60.6329,
+      "corner": "Cordoba y Laprida"
+    },
+    "timestamp": "2023-11-15T13:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday sun illuminating the corner of the Post Office."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Few cables, well-maintained infrastructure",
+      "shutterStyle": "Heavy wooden doors of historic buildings",
+      "treeType": "No trees on this specific corner, wide sidewalks",
+      "graffiti": "Tags on the base of the street light pole",
+      "terrain": "Polished granite slabs",
+      "urbanElements": {
+        "furniture": "Information totem for tourists and traffic lights with countdown",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Palatial / Monumentalism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA 700",
+        "LAPRIDA 800",
+        "CORREO ARGENTINO",
+        "PALACIO DE CORREOS"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "18mm",
+      "make": "Pentax",
+      "model": "K-3 III"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-010-MNB",
+    "coordinates": {
+      "lat": -32.9461,
+      "lng": -60.6318,
+      "corner": "San Lorenzo y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Afternoon sun casting shadows of the residential towers across the street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Organized bundles running parallel to the street",
+      "shutterStyle": "External PVC roller shutters on balcony windows",
+      "treeType": "Ligustrum (Paraísos)",
+      "graffiti": "Clean white walls with some faded posters for concerts",
+      "terrain": "Mix of old grey tiles and new grey cement repair patches",
+      "urbanElements": {
+        "furniture": "Fire hydrant and a small electricity substation box",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Rationalist residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 900",
+        "BUENOS AIRES 700",
+        "FARMACIA",
+        "DESCUENTOS"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 160,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "52mm",
+      "make": "Huawei",
+      "model": "P40 Pro"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-001",
+    "coordinates": {
+      "lat": -32.947512,
+      "lng": -60.630545,
+      "corner": "Cordoba y Primero de Mayo"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear morning light, shadows cast across the historical facade of the Cathedral."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead power lines at intersection",
+      "shutterStyle": "Metal rolling shutters on ground floor shops",
+      "treeType": "Tilia cordata (Tilo)",
+      "graffiti": "Small stencil of Rosario Central shield on light pole",
+      "terrain": "Flat granite curbs with aged concrete",
+      "urbanElements": {
+        "furniture": "Green metal waste bins (Sumar)",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Neoclassical / Academicism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA",
+        "700",
+        "1 DE MAYO",
+        "900",
+        "CATEDRAL"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-002",
+    "coordinates": {
+      "lat": -32.946822,
+      "lng": -60.632211,
+      "corner": "San Lorenzo y Laprida"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Long",
+      "description": "Late afternoon golden hour, long shadows stretching towards the river."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sparse telecommunication lines",
+      "shutterStyle": "Wooden shutters on residential windows",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "NOB (Newell's Old Boys) initials in red and black spray",
+      "terrain": "Yellow 'vainilla' textured tiles",
+      "urbanElements": {
+        "furniture": "Cast iron street lamps (vintage style)",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Art Deco residential"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO",
+        "800",
+        "LAPRIDA",
+        "PARADA COLECTIVO"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/250",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-003",
+    "coordinates": {
+      "lat": -32.944211,
+      "lng": -60.628533,
+      "corner": "Av. Belgrano y Sargento Cabral"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High midday sun, minimal shadows beneath trees and cars."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground utilities)",
+      "shutterStyle": "Glass curtain walls",
+      "treeType": "Handroanthus impetiginosus (Lapacho)",
+      "graffiti": "Political stencil on concrete barrier",
+      "terrain": "Paved asphalt with painted bicycle lane",
+      "urbanElements": {
+        "furniture": "Modern concrete benches",
+        "vegetationScore": 0.8,
+        "architectureStyle": "International Style / Modernist"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BELGRANO",
+        "SGT CABRAL",
+        "CALLE RECREATIVA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Canon",
+      "model": "EOS R5"
+    },
+    "h3Index": "89c2eba338fffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-004",
+    "coordinates": {
+      "lat": -32.946345,
+      "lng": -60.633512,
+      "corner": "Santa Fe y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Morning side-lighting hitting the east-facing balconies."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate overhead bundle",
+      "shutterStyle": "White PVC roller shutters",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "None (clean heritage area)",
+      "terrain": "Red ceramic tiles (baldosas rojas)",
+      "urbanElements": {
+        "furniture": "Traffic lights with yellow support poles",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Spanish Colonial Revival"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "BUENOS AIRES",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/800",
+      "focalLength": "50mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-005",
+    "coordinates": {
+      "lat": -32.948811,
+      "lng": -60.631844,
+      "corner": "Rioja y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T14:20:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "Direct afternoon sun with high contrast between sunlit road and shadowed doorways."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy bundles across the intersection",
+      "shutterStyle": "Old iron gates (portones)",
+      "treeType": "Fraxinus pennsylvanica",
+      "graffiti": "Large 'CARC' mural on brick wall",
+      "terrain": "Worn asphalt with visible potholes",
+      "urbanElements": {
+        "furniture": "Smart bin sensor unit",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Eclecticism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "J.M. DE ROSAS",
+        "700"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-006",
+    "coordinates": {
+      "lat": -32.947722,
+      "lng": -60.634111,
+      "corner": "San Juan y Laprida"
+    },
+    "timestamp": "2023-11-15T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Bright vertical lighting, shadows pooled directly under parked vehicles."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low hanging fiber optic cables",
+      "shutterStyle": "Perforated security grilles",
+      "treeType": "Liquidambar styraciflua",
+      "graffiti": "Tagging 'ROSARIO' in silver chrome",
+      "terrain": "Granite blocks (adoquines) visible under asphalt",
+      "urbanElements": {
+        "furniture": "Yellow fire hydrant",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Brutalist residential towers"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN JUAN",
+        "1100",
+        "LAPRIDA",
+        "FARMACIA"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/1200",
+      "focalLength": "13mm",
+      "make": "Samsung",
+      "model": "Galaxy S23 Ultra"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-007",
+    "coordinates": {
+      "lat": -32.945511,
+      "lng": -60.634222,
+      "corner": "Maipu y Santa Fe"
+    },
+    "timestamp": "2023-11-15T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Extremely Long",
+      "description": "Dawn light, long shadows crossing the entire width of Maipu street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tangled utility wires attached to old insulators",
+      "shutterStyle": "Canvas awnings on cafes",
+      "treeType": "None",
+      "graffiti": "Stickers of local rock bands on street sign post",
+      "terrain": "Grey concrete tiles with anti-slip patterns",
+      "urbanElements": {
+        "furniture": "Newspaper kiosk (yellow and green)",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Rationalism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MAIPU",
+        "SANTA FE",
+        "Kiosko El Monumento"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 800,
+      "shutterSpeed": "1/60",
+      "focalLength": "35mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "ROS-MB-008",
+    "coordinates": {
+      "lat": -32.948255,
+      "lng": -60.631211,
+      "corner": "Primero de Mayo y Rioja"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Medium",
+      "description": "Sun lighting the western facades of the high-rise apartment blocks."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Uniform cable trays along building sides",
+      "shutterStyle": "Aluminum rolling shutters",
+      "treeType": "Acer negundo",
+      "graffiti": "Red and black Newell's colors on base of building",
+      "terrain": "Tactile paving for visually impaired at corner",
+      "urbanElements": {
+        "furniture": "Bus stop shelter with glass panels",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Contemporary High-rise"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "1 DE MAYO",
+        "1000",
+        "RIOJA",
+        "LINEA K"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 125,
+      "shutterSpeed": "1/500",
+      "focalLength": "24mm",
+      "make": "Xiaomi",
+      "model": "13 Ultra"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-009",
+    "coordinates": {
+      "lat": -32.946522,
+      "lng": -60.631555,
+      "corner": "Laprida y Cordoba"
+    },
+    "timestamp": "2023-11-15T13:10:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday light reflecting off the white marble of nearby monuments."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimalist cable runs between street lamps",
+      "shutterStyle": "Ornate wrought iron window protectors",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Small anarchist symbol near base of wall",
+      "terrain": "Stone pavers typical of pedestrian zones",
+      "urbanElements": {
+        "furniture": "Drinking fountain (metal)",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Beaux-Arts"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LAPRIDA",
+        "CORDOBA",
+        "PEATONAL"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 100,
+      "shutterSpeed": "1/200",
+      "focalLength": "16mm",
+      "make": "Nikon",
+      "model": "Z7 II"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-010",
+    "coordinates": {
+      "lat": -32.945822,
+      "lng": -60.632844,
+      "corner": "Buenos Aires y San Lorenzo"
+    },
+    "timestamp": "2023-11-15T17:50:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Extreme",
+      "description": "Sun sinking below horizon, shadows covering the entire street level."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense messy wiring near corner transformer",
+      "shutterStyle": "Heavy steel security doors",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Stencil 'Nunca Mas' on wall",
+      "terrain": "Patchy cement and old tile mix",
+      "urbanElements": {
+        "furniture": "Dark grey public waste bins",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Modernist / 1960s Apartments"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "BUENOS AIRES",
+        "SAN LORENZO",
+        "800",
+        "LIBRERIA"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/1.4",
+      "iso": 1600,
+      "shutterSpeed": "1/125",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-001",
+    "coordinates": {
+      "lat": -32.948215,
+      "lng": -60.630122,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-14T10:15:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light with shadows projected across the asphalt of Av. Belgrano."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate density overhead power lines with street lighting taps.",
+      "shutterStyle": "Gray roll-up security shutters on a street-level commercial local.",
+      "treeType": "Tipuana tipu (Tipa) with characteristic yellow flowering remnants on the ground.",
+      "graffiti": "Stencil of Rosario Central logo (blue and yellow) on a concrete pillar.",
+      "terrain": "Flat urban terrain with traditional gray granite 64-tile pattern sidewalks.",
+      "urbanElements": {
+        "furniture": "Cast iron bench, green waste bin with 'Municipalidad de Rosario' logo.",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Early 20th-century French-influenced residential building."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BELGRANO 600",
+        "LAPRIDA 400",
+        "ESTACIONAMIENTO MEDIDO"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-002",
+    "coordinates": {
+      "lat": -32.947532,
+      "lng": -60.632211,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-14T14:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "Harsh afternoon sun typical of Rosario's spring, creating high contrast."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Low density, modern underground cabling transition point.",
+      "shutterStyle": "Wooden shutters (persianas) on second-floor balconies.",
+      "treeType": "Jacaranda mimosifolia with purple blossoms.",
+      "graffiti": "Political campaign stencil 'Vota' on a temporary construction hoarding.",
+      "terrain": "Paved with standard yellow tactile paving for accessibility at the ramp.",
+      "urbanElements": {
+        "furniture": "Yellow and black painted bus stop pole (Línea 115).",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Modernist high-rise apartment with glass balconies."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CÓRDOBA 700",
+        "JUAN MANUEL DE ROSAS 800",
+        "PUNTO SUBE"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "14mm",
+      "make": "Samsung",
+      "model": "SM-G998B"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-003",
+    "coordinates": {
+      "lat": -32.949102,
+      "lng": -60.631554,
+      "corner": "South-West"
+    },
+    "timestamp": "2023-11-14T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting with long shadows stretching towards the Parana river."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense fiber optic bundles across the intersection.",
+      "shutterStyle": "White PVC rolling shutters in residential windows.",
+      "treeType": "Fraxinus pennsylvanica (Fresno americano).",
+      "graffiti": "'NOB' red and black spray paint on a utility box.",
+      "terrain": "Old cobblestones visible through cracked asphalt near the gutter.",
+      "urbanElements": {
+        "furniture": "Standard black street sign pole, vintage-style street lamp.",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Mid-century rationalist brick building."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "BUENOS AIRES 800",
+        "SANTA FE 600",
+        "PANADERÍA LA ESPIGA"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "IMX766"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-004",
+    "coordinates": {
+      "lat": -32.946821,
+      "lng": -60.631012,
+      "corner": "North-East"
+    },
+    "timestamp": "2023-11-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning sun reflecting off the marble surfaces of the Monumento."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tidy, parallel cable runs along the building facade.",
+      "shutterStyle": "Metal folding gate (reja tijera) on a corner pharmacy.",
+      "treeType": "Platanus x acerifolia (Plátano) with significant bark shedding.",
+      "graffiti": "Artistic mural representing the Argentine flag on a side wall.",
+      "terrain": "Granite curbs with slightly weathered edges.",
+      "urbanElements": {
+        "furniture": "Blue mailbox (Correo Argentino style), traffic light with pedestrian countdown.",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Neo-classical monumental style with thick stone walls."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 700",
+        "MAIPÚ 500",
+        "FARMACIA LÍDER"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "26mm",
+      "make": "Google",
+      "model": "Pixel 6"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-005",
+    "coordinates": {
+      "lat": -32.950144,
+      "lng": -60.628876,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Solar noon with vertical shadows directly beneath objects."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex intersection of power and data lines with multiple transformers.",
+      "shutterStyle": "None; large open glass display for a café.",
+      "treeType": "Young Jacaranda protected by a wooden stake cage.",
+      "graffiti": "Small 'stencil art' of a local cultural figure on a lamp post.",
+      "terrain": "Polished cement sidewalk with red brick borders.",
+      "urbanElements": {
+        "furniture": "Orange public telephone booth (disconnected), café tables on sidewalk.",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Modern glass and steel commercial building."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "1 DE MAYO 700",
+        "RIOJA 400",
+        "BAR EL MONUMENTO"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "52mm",
+      "make": "Xiaomi",
+      "model": "Mi 11 Ultra"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-006",
+    "coordinates": {
+      "lat": -32.947111,
+      "lng": -60.634123,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-15T15:20:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium-Long",
+      "description": "Direct sunlight hitting the primary residential facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Sagging telecommunication wires crossing the street diagonally.",
+      "shutterStyle": "Integrated aluminum shutters in a modern building facade.",
+      "treeType": "Liquidambar styraciflua with star-shaped leaves.",
+      "graffiti": "Faded '74' tag on a utility meter cover.",
+      "terrain": "Asphalt street with white pedestrian crossing stripes (sendas peatonales).",
+      "urbanElements": {
+        "furniture": "New gray 'Cesto de basura' from the city municipality.",
+        "vegetationScore": 0.45,
+        "architectureStyle": "International style apartment block from the 1970s."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN MARTÍN 500",
+        "SAN LORENZO 800",
+        "KIOSCO 24HS"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 125,
+      "shutterSpeed": "1/2500s",
+      "focalLength": "23mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-007",
+    "coordinates": {
+      "lat": -32.948888,
+      "lng": -60.632999,
+      "corner": "South-East"
+    },
+    "timestamp": "2023-11-16T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Soft morning light illuminating the east-facing brickwork."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multiple drop wires for residential internet connections.",
+      "shutterStyle": "Heavy iron roller shutter for a garage entrance.",
+      "treeType": "Citrus aurantium (Naranjo amargo) typical of old Rosario streets.",
+      "graffiti": "Clean wall with 'Prohibido Pegar Carteles' stencil.",
+      "terrain": "Traditional granite tiles with some moss in the crevices.",
+      "urbanElements": {
+        "furniture": "Green electrical transformer box with safety stickers.",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Italianate style single-story 'Casa Chorizo' renovated."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LAPRIDA 800",
+        "SANTA FE 700",
+        "CENTRO MÉDICO"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "28mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-008",
+    "coordinates": {
+      "lat": -32.946222,
+      "lng": -60.629555,
+      "corner": "North-East"
+    },
+    "timestamp": "2023-11-16T11:45:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short",
+      "description": "Intense pre-noon light bouncing off riverfront buildings."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Modernized aerial infrastructure on high-tension poles.",
+      "shutterStyle": "Fixed metallic louvers for ventilation in a basement.",
+      "treeType": "Large Tipa providing significant canopy cover over the street.",
+      "graffiti": "'MESSI' written in small marker on a traffic sign post.",
+      "terrain": "Smooth asphalt with fresh thermoplastic road markings.",
+      "urbanElements": {
+        "furniture": "Bicycle parking rack (Rosario en Bici), steel bollards.",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Eclectic luxury apartment tower with ornate balconies."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. LIBERTAD 200",
+        "MAIPÚ 100",
+        "PARQUE A LA BANDERA"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/3200s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "SM-S908E"
+    },
+    "h3Index": "89c2eba3383ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-009",
+    "coordinates": {
+      "lat": -32.949555,
+      "lng": -60.633555,
+      "corner": "South-West"
+    },
+    "timestamp": "2023-11-16T16:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Medium-Long",
+      "description": "Warm orange hue typical of the late afternoon in Santa Fe province."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Old ceramic insulators still visible on some corner brackets.",
+      "shutterStyle": "External blinds (celosías) made of dark-stained wood.",
+      "treeType": "Sturdy Fresno with trimmed lower branches.",
+      "graffiti": "Large mural of a local artist on the blind side of the building.",
+      "terrain": "Sidewalk with patches of different tile patterns from repairs.",
+      "urbanElements": {
+        "furniture": "Newspaper stand (puesto de diarios) painted in traditional green.",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Art Deco residential building with geometric ornamentation."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SARMIENTO 600",
+        "SAN LORENZO 900",
+        "ESTACIONAMIENTO 24HS"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 160,
+      "shutterSpeed": "1/400s",
+      "focalLength": "16mm",
+      "make": "Huawei",
+      "model": "P40 Pro"
+    },
+    "h3Index": "89c2eba315bffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MNB-010",
+    "coordinates": {
+      "lat": -32.948001,
+      "lng": -60.631888,
+      "corner": "North-West"
+    },
+    "timestamp": "2023-11-16T13:45:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Short",
+      "description": "Bright midday sun, few areas of shade available on the sidewalk."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Bundled 'Preensamblado' electrical cables.",
+      "shutterStyle": "Motorized metal rolling door for a high-end boutique.",
+      "treeType": "Small Palm tree (Phoenix canariensis) in a sidewalk planter.",
+      "graffiti": "'NOB' and 'RC' rivalry tags on the same utility pole.",
+      "terrain": "Dark gray pavers with high slip resistance.",
+      "urbanElements": {
+        "furniture": "Shared bike station (Mi bici tu bici) nearby.",
+        "vegetationScore": 0.25,
+        "architectureStyle": "Ultra-modern minimalist concrete and glass structure."
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CÓRDOBA 800",
+        "BUENOS AIRES 700",
+        "MUNICIPALIDAD"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 50,
+      "shutterSpeed": "1/5000s",
+      "focalLength": "24mm",
+      "make": "Apple",
+      "model": "iPhone 15 Pro"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-001",
+    "coordinates": {
+      "lat": -32.9463,
+      "lng": -60.6318,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-10-15T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Long",
+      "description": "Strong morning side-lighting hitting the neo-classical facades of the Cathedral vicinity."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate density overhead cross-street lines",
+      "shutterStyle": "Traditional grey rolling steel shutters on corner store",
+      "treeType": "Tipuana tipu (Tipa) with high canopy",
+      "graffiti": "Stencil of 'CARC' in blue and yellow on the lower wall",
+      "terrain": "Flat urban pavement with traditional Rosario '64-pane' granite tiles",
+      "urbanElements": {
+        "furniture": "Cast iron 'Rosario' style street lamp and orange recycling bin",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Academicism/Neo-classical residential building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE LAPRIDA",
+        "CORDOBA 700",
+        "BAR DE LA PLAZA"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ILCE-7M3"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-002",
+    "coordinates": {
+      "lat": -32.9478,
+      "lng": -60.6333,
+      "corner": "Southeast"
+    },
+    "timestamp": "2023-10-15T12:15:00Z",
+    "lighting": {
+      "sunPosition": "Zenith-North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday sun creating high contrast shadows directly beneath balconies."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Subterranean utilities with minimal visible wires",
+      "shutterStyle": "Modern white aluminum rolling shutters",
+      "treeType": "Jacaranda mimosifolia with purple blossoms",
+      "graffiti": "Small 'NOB' tag in red and black near the drainpipe",
+      "terrain": "Modern concrete pavers with tactile yellow signaling",
+      "urbanElements": {
+        "furniture": "Stainless steel bus stop shelter with 'Ente de la Movilidad' logo",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Modern 1970s apartment block with concrete balconies"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "BUENOS AIRES 900",
+        "KIOSCO 24HS"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/11",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-003",
+    "coordinates": {
+      "lat": -32.9488,
+      "lng": -60.6305,
+      "corner": "Northeast"
+    },
+    "timestamp": "2023-10-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Very Long",
+      "description": "Golden hour lighting stretching across the street toward the Paraná river."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density messy bundles near the transformer",
+      "shutterStyle": "Perforated metal gate for a garage entrance",
+      "treeType": "Handroanthus impetiginosus (Lapacho Rosado)",
+      "graffiti": "Mural of Lionel Messi on a brick side wall",
+      "terrain": "Traditional cobblestones visible under worn asphalt patches",
+      "urbanElements": {
+        "furniture": "Concrete bollards protecting the corner sidewalk",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Italianate style townhouse with iron railings"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE",
+        "1° DE MAYO",
+        "ESTACIONAMIENTO"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 400,
+      "shutterSpeed": "1/200s",
+      "focalLength": "50mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "ROS-MON-004",
+    "coordinates": {
+      "lat": -32.9508,
+      "lng": -60.6318,
+      "corner": "Southwest"
+    },
+    "timestamp": "2023-10-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Medium",
+      "description": "Clear sky illumination with distinct shadow edges on the pavement."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Clean arrangement of fiber optic lines along the facade",
+      "shutterStyle": "Wooden 'Barrio' style shutters on second floor",
+      "treeType": "Fraxinus pennsylvanica (Fresno Americano)",
+      "graffiti": "Political stencil 'Vota Lista...' partially removed",
+      "terrain": "Grey cement tiles with some cracks and root lifting",
+      "urbanElements": {
+        "furniture": "Green TUP (Transporte Urbano de Pasajeros) sign post",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Art Deco residential building with vertical geometry"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS 600",
+        "JUAN MANUEL DE ROSAS",
+        "FARMACIA"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "28mm",
+      "make": "Nikon",
+      "model": "Z6 II"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-005",
+    "coordinates": {
+      "lat": -32.9472,
+      "lng": -60.6325,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-10-15T08:15:00Z",
+    "lighting": {
+      "sunPosition": "Low East",
+      "shadowDirection": "Long West",
+      "shadowLength": "Extremely Long",
+      "description": "Sun rising over the river, casting dramatic shadows from the Monumental tower."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Tangled telephone wires near the corner pole",
+      "shutterStyle": "Heavy iron shutters on a traditional corner store",
+      "treeType": "Platanus acerifolia (Plátano)",
+      "graffiti": "Small white '74' tag",
+      "terrain": "Polished granite tiles near building entrance",
+      "urbanElements": {
+        "furniture": "Standard Rosario dark green metal trash can",
+        "vegetationScore": 0.15,
+        "architectureStyle": "Beaux-Arts institutional building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CALLE CORDOBA",
+        "BUENOS AIRES",
+        "MUSEO ESTEVEZ"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-006",
+    "coordinates": {
+      "lat": -32.9449,
+      "lng": -60.6309,
+      "corner": "Northeast"
+    },
+    "timestamp": "2023-10-15T14:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Harsh afternoon light reflecting off glass building surfaces."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground cable access covers visible on sidewalk",
+      "shutterStyle": "Modern automated rolling shutters in black",
+      "treeType": "Young Liquidambar styraciflua in tree grate",
+      "graffiti": "Newell's Old Boys shield sticker on light pole",
+      "terrain": "New basaltic paving stones",
+      "urbanElements": {
+        "furniture": "Black metal bicycle rack (Rosio-bici style)",
+        "vegetationScore": 0.25,
+        "architectureStyle": "Contemporary glass-fronted office building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 800",
+        "LAPRIDA",
+        "PAGO FACIL"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "18mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-007",
+    "coordinates": {
+      "lat": -32.9497,
+      "lng": -60.6314,
+      "corner": "Southwest"
+    },
+    "timestamp": "2023-10-15T10:00:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Bright morning light illuminating the street perpendicular to the river."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Diagonal crossing of power lines over the intersection",
+      "shutterStyle": "Traditional green wooden shutters",
+      "treeType": "Sturdy Tipa with low hanging branches",
+      "graffiti": "Graffiti 'Central Manda' in yellow paint",
+      "terrain": "Old red brick sidewalk sections mixed with cement",
+      "urbanElements": {
+        "furniture": "Public telephone booth shell used as advertising space",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Spanish colonial revival house"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA 600",
+        "1 DE MAYO",
+        "CUIDADO CON EL PERRO"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/9.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-008",
+    "coordinates": {
+      "lat": -32.9474,
+      "lng": -60.6331,
+      "corner": "Northwest"
+    },
+    "timestamp": "2023-10-15T13:40:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Sun slightly past peak, shadows starting to lengthen toward the south."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense web of cables fixed to building corners",
+      "shutterStyle": "PVC rolling shutters on residential windows",
+      "treeType": "Lagerstroemia indica (Crespón)",
+      "graffiti": "Clean wall with anti-graffiti paint coating",
+      "terrain": "Standard Rosario grey tiles with drainage grates",
+      "urbanElements": {
+        "furniture": "Yellow painted curb for 'No Parking' zone",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Mid-century rationalist apartment building"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LUIS 800",
+        "CALLE LAPRIDA",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/7.1",
+      "iso": 200,
+      "shutterSpeed": "1/640s",
+      "focalLength": "40mm",
+      "make": "Sony",
+      "model": "ZV-E10"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-009",
+    "coordinates": {
+      "lat": -32.9452,
+      "lng": -60.6334,
+      "corner": "Southeast"
+    },
+    "timestamp": "2023-10-15T15:50:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Warm afternoon light hitting the street corner from the city center side."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Vertical cable conduits running down the facade",
+      "shutterStyle": "Ornate wrought iron window protectors",
+      "treeType": "Fraxinus pennsylvanica (Fresno)",
+      "graffiti": "Political stencil of 'Evita' in purple",
+      "terrain": "Worn granite tiles with some loose pieces",
+      "urbanElements": {
+        "furniture": "Municipal information totem (black and white)",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Early 20th century 'casa chorizo' adaptation"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MAIPU",
+        "CALLE CORDOBA 800",
+        "PENSION RESIDENCIAL"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "28mm",
+      "make": "Olympus",
+      "model": "E-M10 IV"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-010",
+    "coordinates": {
+      "lat": -32.9468,
+      "lng": -60.6288,
+      "corner": "East"
+    },
+    "timestamp": "2023-10-15T07:45:00Z",
+    "lighting": {
+      "sunPosition": "Low East-South-East",
+      "shadowDirection": "West-North-West",
+      "shadowLength": "Maximum",
+      "description": "Dawn light coming directly from the river, silhouetting waterfront trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (underground infrastructure area)",
+      "shutterStyle": "None (large glass window of a modern lobby)",
+      "treeType": "Palm trees (Phoenix canariensis) near the park",
+      "graffiti": "Small sticker of 'La Gloriosa 22'",
+      "terrain": "High-quality porphyry stone paving",
+      "urbanElements": {
+        "furniture": "Modern LED street lamps and park benches",
+        "vegetationScore": 0.8,
+        "architectureStyle": "High-end contemporary skyscraper base"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AVENIDA BELGRANO",
+        "BUENOS AIRES",
+        "PARQUE A LA BANDERA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/60s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    },
+    "h3Index": "89c2eba3383ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-001",
+    "coordinates": {
+      "lat": -32.9469,
+      "lng": -60.6345,
+      "corner": "Santa Fe y Laprida"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Medium",
+      "description": "Clear morning light with sharp shadows cast from the historic building of the Correo Argentino."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle crossing diagonally above the intersection",
+      "shutterStyle": "Heavy iron rolling shutters and wooden blinds (persianas de madera)",
+      "treeType": "Tipas (Tipuana tipu) with yellow flowers",
+      "graffiti": "Stencil of 'RC' (Rosario Central) on a concrete pole",
+      "terrain": "Flat, granite tile sidewalk (baldosa calcárea 40x40)",
+      "urbanElements": {
+        "furniture": "Black cast iron trash bin, green metal bus stop sign",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Neoclassical/Eclectic"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Santa Fe 800",
+        "Laprida 600",
+        "Farmacia del Monumento"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-002",
+    "coordinates": {
+      "lat": -32.9476,
+      "lng": -60.6331,
+      "corner": "San Lorenzo y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T14:15:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Short",
+      "description": "High afternoon sun causing harsh vertical shadows in the narrow street canyon."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, underground infrastructure area",
+      "shutterStyle": "Modern aluminum shutters on upper floors",
+      "treeType": "Jacarandá with purple bloom remnants",
+      "graffiti": "Small spray-painted 'OBRC' near the base of a lamppost",
+      "terrain": "Red granite tiles near the municipal palace entrance",
+      "urbanElements": {
+        "furniture": "Grey modern benches, bicycle parking racks",
+        "vegetationScore": 0.2,
+        "architectureStyle": "French Academicism (Palacio de los Leones nearby)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Lorenzo 800",
+        "Buenos Aires 900",
+        "Municipalidad de Rosario"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "Galaxy S22 Ultra"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-003",
+    "coordinates": {
+      "lat": -32.9482,
+      "lng": -60.6322,
+      "corner": "Córdoba y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T18:45:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Golden hour light reflecting off the Paraná river with elongated shadows across the street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderate complexity, mostly telecommunications lines",
+      "shutterStyle": "Traditional wooden shutters (estilo Barrio)",
+      "treeType": "Plátanos (Platanus x acerifolia) providing heavy canopy",
+      "graffiti": "Mural depicting a local figure on a side wall",
+      "terrain": "Uneven sidewalk with some roots lifting tiles",
+      "urbanElements": {
+        "furniture": "Yellow painted curb, public lighting pole with double lamp",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Early 20th century residential apartments"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Córdoba 600",
+        "J.M. de Rosas 800",
+        "Maxikiosco 24hs"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/1.6",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 IV"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-004",
+    "coordinates": {
+      "lat": -32.9458,
+      "lng": -60.6305,
+      "corner": "Avenida Belgrano y Domínguez"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "None/Neutral",
+      "shadowLength": "Minimal",
+      "description": "Midday sun directly overhead, minimal shadows near the park area."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "None (Underground utilities)",
+      "shutterStyle": "Glass curtain walls on modern riverside buildings",
+      "treeType": "Palm trees (Pindo) and native shrubs",
+      "graffiti": "Clean stone walls, no visible graffiti",
+      "terrain": "Interlocking concrete pavers (adoquines de hormigón)",
+      "urbanElements": {
+        "furniture": "Large concrete spheres (bolardos), drinking fountain",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Contemporary / Landscape park"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Belgrano",
+        "Parque a la Bandera",
+        "Prohibido Estacionar"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89c2eba3383ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-005",
+    "coordinates": {
+      "lat": -32.9495,
+      "lng": -60.6358,
+      "corner": "Rioja y Primero de Mayo"
+    },
+    "timestamp": "2023-11-15T09:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Low morning sun creating strong contrast between the sunlit street side and the shadowed facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy overhead wiring with several transformers",
+      "shutterStyle": "Metal vertical blinds and security grilles",
+      "treeType": "Fresno Americano (Fraxinus pennsylvanica)",
+      "graffiti": "Red and black tag 'NOB' (Newell's Old Boys)",
+      "terrain": "Traditional grey mosaic tiles",
+      "urbanElements": {
+        "furniture": "Blue newspaper stand, orange fiber optic marker",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Mid-century Rationalism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Rioja 700",
+        "1 de Mayo 1000",
+        "Cuidado con el Perro"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2eba315bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-006",
+    "coordinates": {
+      "lat": -32.9455,
+      "lng": -60.6338,
+      "corner": "San Lorenzo y San Martín"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Warm afternoon light with shadows stretching across the pedestrian-heavy area."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Mixed overhead and underground wiring",
+      "shutterStyle": "Ornate wrought iron balconies",
+      "treeType": "Small ornamental trees in planters",
+      "graffiti": "Political posters partially peeled off (pegatinas)",
+      "terrain": "Paved pedestrian street (peatonal) with drainage channel",
+      "urbanElements": {
+        "furniture": "Standard Rosario street clock, cast iron bollards",
+        "vegetationScore": 0.1,
+        "architectureStyle": "Art Deco / Beaux-Arts"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Lorenzo 900",
+        "San Martín 700",
+        "Banco Nación"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 100,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "35mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-007",
+    "coordinates": {
+      "lat": -32.9463,
+      "lng": -60.6352,
+      "corner": "Maipú y Santa Fe"
+    },
+    "timestamp": "2023-11-15T11:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Bright direct light on the north-facing facades, high visibility."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Complex web of cable TV and internet wires",
+      "shutterStyle": "Plastic roll-up shutters (persianas de PVC)",
+      "treeType": "None (pavement to pavement corner)",
+      "graffiti": "Abrasive cleaning marks on the base of the building",
+      "terrain": "Anti-slip yellow tactile paving at the ramp",
+      "urbanElements": {
+        "furniture": "Bus stop shelter for lines 115, 142, 101",
+        "vegetationScore": 0.05,
+        "architectureStyle": "International Style / Brutalist influence"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Maipú 700",
+        "Santa Fe 700",
+        "Kiosco El Monumento"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/640s",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 84,
+    "isAnchor": false
+  },
+  {
+    "id": "ROS-MON-008",
+    "coordinates": {
+      "lat": -32.9478,
+      "lng": -60.6355,
+      "corner": "Laprida y Rioja"
+    },
+    "timestamp": "2023-11-15T16:20:00Z",
+    "lighting": {
+      "sunPosition": "West-Northwest",
+      "shadowDirection": "East-Southeast",
+      "shadowLength": "Long",
+      "description": "Sun setting behind tall buildings creates a deep shadow corridor."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Orderly cable trays along the facade",
+      "shutterStyle": "Slotted wooden blinds (estilo veneciano)",
+      "treeType": "Young Ibirá-pitá in protected cages",
+      "graffiti": "Street art mural on a parking lot gate",
+      "terrain": "Dark grey granite tiles",
+      "urbanElements": {
+        "furniture": "Green mail box (Correo Argentino), taxi stand sign",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Art Nouveau accents"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Laprida 700",
+        "Rioja 800",
+        "Estacionamiento Privado"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 320,
+      "shutterSpeed": "1/250s",
+      "focalLength": "24mm",
+      "make": "Xiaomi",
+      "model": "12 Pro"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-009",
+    "coordinates": {
+      "lat": -32.9485,
+      "lng": -60.6335,
+      "corner": "Buenos Aires y Córdoba"
+    },
+    "timestamp": "2023-11-15T08:00:00Z",
+    "lighting": {
+      "sunPosition": "East-Southeast",
+      "shadowDirection": "West-Northwest",
+      "shadowLength": "Very Long",
+      "description": "Early morning light illuminating the Cathedral tower, long shadows across the square."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Subterranean cabling (historical zone preservation)",
+      "shutterStyle": "Heavy wooden doors and internal blinds",
+      "treeType": "Large Plátanos with white-spotted bark",
+      "graffiti": "Clean heritage facades (protected zone)",
+      "terrain": "Porphyry stone (pórfido) on the street crossing",
+      "urbanElements": {
+        "furniture": "Ornamental cast iron lampposts (farolas), tourist info totem",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Colonial / Renaissance Revival (Cathedral and Post Office)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Buenos Aires 700",
+        "Córdoba 700",
+        "Plaza 25 de Mayo"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "13mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-010",
+    "coordinates": {
+      "lat": -32.9501,
+      "lng": -60.6342,
+      "corner": "San Juan y Primero de Mayo"
+    },
+    "timestamp": "2023-11-15T13:45:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Minimal",
+      "description": "Strong overhead sun with very dark, short shadows directly underneath parked cars."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Disorganized overhead lines with service loops",
+      "shutterStyle": "Standard grey metal shutters",
+      "treeType": "Palo Borracho (Ceiba speciosa) with spiked trunk",
+      "graffiti": "White paint marker signatures on utility boxes",
+      "terrain": "Damaged mosaic tiles with some gravel exposure",
+      "urbanElements": {
+        "furniture": "Cement utility pole, metal barrier for construction",
+        "vegetationScore": 0.25,
+        "architectureStyle": "1970s Brick apartments"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Juan 600",
+        "1 de Mayo 1100",
+        "Fiambrería"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 64,
+      "shutterSpeed": "1/3200s",
+      "focalLength": "23mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2eba315bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-001",
+    "coordinates": {
+      "lat": -32.947412,
+      "lng": -60.630325,
+      "corner": "Av. Belgrano y Laprida"
+    },
+    "timestamp": "2023-11-15T09:45:00Z",
+    "lighting": {
+      "sunPosition": "East-North-East",
+      "shadowDirection": "West-South-West",
+      "shadowLength": "Moderate",
+      "description": "Crisp morning light with defined shadows stretching across the asphalt toward the Monument base."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense overhead power and fiber optic lines common in old Rosario sectors",
+      "shutterStyle": "Metal rolling shutters on ground-floor commercial premises",
+      "treeType": "Tipuana tipu (Tipa) providing significant canopy cover",
+      "graffiti": "RC (Rosario Central) stencil in blue and yellow on utility pole",
+      "terrain": "Sloped toward the Parana river",
+      "urbanElements": {
+        "furniture": "Grey municipal waste container and classic cast iron street lamp",
+        "vegetationScore": 0.65,
+        "architectureStyle": "French Academicism mixed with mid-century modernism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Belgrano",
+        "Laprida 500",
+        "CUIDE LA HIGIENE"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 13 Pro"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-002",
+    "coordinates": {
+      "lat": -32.948215,
+      "lng": -60.632147,
+      "corner": "Cordoba y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T13:20:00Z",
+    "lighting": {
+      "sunPosition": "High Overhead",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "Harsh midday sun with minimal shadowing, high contrast on limestone facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cleaned up underground cabling in some sections near the Cathedral",
+      "shutterStyle": "Heavy wooden shutters on heritage residential windows",
+      "treeType": "Jacaranda mimosifolia showing purple blooms",
+      "graffiti": "Political stickers on traffic light pole base",
+      "terrain": "Flat urban plateau",
+      "urbanElements": {
+        "furniture": "Green plastic waste bin and tactile paving for visually impaired",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Neo-Renaissance (Palacio Vasallo vicinity)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Cordoba 700",
+        "J.M. de Rosas",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2500s",
+      "focalLength": "13mm",
+      "make": "Samsung",
+      "model": "SM-G998B"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-003",
+    "coordinates": {
+      "lat": -32.947105,
+      "lng": -60.633588,
+      "corner": "Santa Fe y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T18:10:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Warm golden hour light casting long shadows across the Plaza 25 de Mayo."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multiple drop wires to historic buildings",
+      "shutterStyle": "Folding iron gates (tijera) on local shops",
+      "treeType": "Platanus acerifolia (Palo Borracho nearby)",
+      "graffiti": "Small 'NOB' tag in red and black on a junction box",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "Black ornate benches and tourist information signage",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Eclectic with Italianate influences"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Santa Fe 800",
+        "Buenos Aires",
+        "MUSEO ESTEVEZ"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/1.5",
+      "iso": 400,
+      "shutterSpeed": "1/120s",
+      "focalLength": "24mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-004",
+    "coordinates": {
+      "lat": -32.946124,
+      "lng": -60.631555,
+      "corner": "San Lorenzo y 1 de Mayo"
+    },
+    "timestamp": "2023-11-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "North-East",
+      "shadowDirection": "South-West",
+      "shadowLength": "Short-Medium",
+      "description": "Indirect lighting reflecting off high-rise glass balconies."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Standard bundle of telecomm wires crossing the intersection",
+      "shutterStyle": "Modern aluminum roller shutters on apartment blocks",
+      "treeType": "Fraxinus pennsylvanica (Fresno americano)",
+      "graffiti": "Urban art mural on a side wall partially obscured by foliage",
+      "terrain": "Mild descent toward the river",
+      "urbanElements": {
+        "furniture": "Modern LED street light and stainless steel bollards",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Brutalist residential and contemporary apartments"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "1 de Mayo",
+        "San Lorenzo 800",
+        "PUNTO DE ENCUENTRO"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 125,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "ILCE-7M4"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-005",
+    "coordinates": {
+      "lat": -32.949312,
+      "lng": -60.634221,
+      "corner": "Rioja y Laprida"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium",
+      "description": "Clear sky, harsh diagonal shadows cutting across the narrow street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Messy loops of unused copper wire on utility poles",
+      "shutterStyle": "White PVC roller shutters on upper floors",
+      "treeType": "Citrus aurantium (Naranjo amargo) characteristic of the area",
+      "graffiti": "Social protest stencil on the base of a brick building",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "Yellow hydrant and standard metal waste bin",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Rationalist and Art Deco transition"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Rioja 800",
+        "Laprida 800",
+        "FARMACIA"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 200,
+      "shutterSpeed": "1/800s",
+      "focalLength": "23mm",
+      "make": "Xiaomi",
+      "model": "2201116SG"
+    },
+    "h3Index": "89c2eba315bffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-006",
+    "coordinates": {
+      "lat": -32.944255,
+      "lng": -60.633112,
+      "corner": "Maipu y San Lorenzo"
+    },
+    "timestamp": "2023-11-15T10:15:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Moderate",
+      "description": "Sunlight entering the urban canyon of Maipu street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy cable bundles supported by concrete poles",
+      "shutterStyle": "Slotted metal shutters for storefronts",
+      "treeType": "Liquambar styraciflua",
+      "graffiti": "Fresh spray-painted numbers on a sidewalk tile",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "TUP (Transporte Urbano de Pasajeros) bus stop sign",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Academicism with commercial ground floors"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Maipu 600",
+        "San Lorenzo 900",
+        "PARADA 102 144"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/1250s",
+      "focalLength": "28mm",
+      "make": "Huawei",
+      "model": "VOG-L29"
+    },
+    "h3Index": "89c2eba33b3ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-007",
+    "coordinates": {
+      "lat": -32.950123,
+      "lng": -60.630876,
+      "corner": "Av. de la Libertad y San Juan"
+    },
+    "timestamp": "2023-11-15T17:45:00Z",
+    "lighting": {
+      "sunPosition": "West-North-West",
+      "shadowDirection": "East-South-East",
+      "shadowLength": "Very Long",
+      "description": "Late afternoon sun illuminating the tops of trees in Parque a la Bandera."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground transition zone, fewer overhead wires",
+      "shutterStyle": "Large glass windows with internal curtains for high-end apartments",
+      "treeType": "Large Tipas and Ombu nearby in the park",
+      "graffiti": "Minimalist geometric street art on a utility box",
+      "terrain": "Steep slope toward the riverside drive",
+      "urbanElements": {
+        "furniture": "Concrete park benches and bike lane dividers (green)",
+        "vegetationScore": 0.9,
+        "architectureStyle": "High-rise Modernism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Av. Libertad",
+        "San Juan 400",
+        "CICLOVIA"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 640,
+      "shutterSpeed": "1/60s",
+      "focalLength": "26mm",
+      "make": "Motorola",
+      "model": "Edge 30"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-008",
+    "coordinates": {
+      "lat": -32.946555,
+      "lng": -60.635112,
+      "corner": "Sarmiento y Santa Fe"
+    },
+    "timestamp": "2023-11-15T08:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Long",
+      "description": "Early morning light diffused by the narrowness of Sarmiento street."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Intertwined fiber cables and old telegraph lines",
+      "shutterStyle": "Wooden blinds (persianas de madera) typical of mid-century flats",
+      "treeType": "Young Jacarandas",
+      "graffiti": "Hand-written marker tags on the back of a street sign",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "Old style mail box and new digital advertising totem",
+        "vegetationScore": 0.35,
+        "architectureStyle": "Neoclassical and Beaux-Arts (near Bolsa de Comercio)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Sarmiento 600",
+        "Santa Fe 1100",
+        "ESTACIONAMIENTO"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 250,
+      "shutterSpeed": "1/200s",
+      "focalLength": "52mm",
+      "make": "Nikon",
+      "model": "D750"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-009",
+    "coordinates": {
+      "lat": -32.945432,
+      "lng": -60.634001,
+      "corner": "San Martin y San Lorenzo"
+    },
+    "timestamp": "2023-11-15T14:40:00Z",
+    "lighting": {
+      "sunPosition": "North-West",
+      "shadowDirection": "South-East",
+      "shadowLength": "Medium-Short",
+      "description": "Direct afternoon sun hitting the pedestrian mall entrance."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High density of cross-street cables",
+      "shutterStyle": "Security grilles on jewelry store windows",
+      "treeType": "Limited planters with small shrubs",
+      "graffiti": "Club Atletico Rosario Central stickers on a drainpipe",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "Cast iron bollards and granite pavement",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Commercial Eclecticism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "San Martin 600",
+        "San Lorenzo 1000",
+        "PEATONAL"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 80,
+      "shutterSpeed": "1/3200s",
+      "focalLength": "24mm",
+      "make": "Panasonic",
+      "model": "DMC-LX100"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 88,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MON-010",
+    "coordinates": {
+      "lat": -32.945001,
+      "lng": -60.636222,
+      "corner": "Cordoba y Maipu"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Negligible",
+      "description": "Vertical sun position at solar noon, illuminating the center of the intersection."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Organized cable trays on building exteriors",
+      "shutterStyle": "Modern vertical slats",
+      "treeType": "Fraxinus excelsior (Fresno)",
+      "graffiti": "Small 'ROS' tag on the base of a newsstand",
+      "terrain": "Flat",
+      "urbanElements": {
+        "furniture": "Green newspaper kiosk and digital parking meter",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Mixed use residential-commercial blocks"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "Cordoba 900",
+        "Maipu 800",
+        "DIARIOS"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/4000s",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89c2eba314fffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-001",
+    "coordinates": {
+      "lat": -32.9463,
+      "lng": -60.6328,
+      "corner": "Cordoba y Laprida"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "West-Southwest",
+      "shadowDirection": "East-Northeast",
+      "shadowLength": "Long",
+      "description": "Golden hour lighting with high contrast against building facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense bundle crossing Laprida street",
+      "shutterStyle": "Black iron roller shutters on commercial ground floor",
+      "treeType": "Platanus acerifolia",
+      "graffiti": "C.A.R.C. stencil on utility box",
+      "terrain": "Flat with grey 'vainilla' pattern tiles",
+      "urbanElements": {
+        "furniture": "Green cast iron trash bin, Municipal style",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Neoclassical/Academicism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA 700",
+        "LAPRIDA 800",
+        "MUSEO ESTEVEZ",
+        "ZONA CALMADA"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Sony",
+      "model": "Alpha 7 IV"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-002",
+    "coordinates": {
+      "lat": -32.9472,
+      "lng": -60.6341,
+      "corner": "Santa Fe y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenith",
+      "shadowDirection": "Vertical",
+      "shadowLength": "Minimal",
+      "description": "Harsh overhead light typical of solar noon."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Minimal, underground service area",
+      "shutterStyle": "Wooden blinds on upper residential floors",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Small 'NOB' tag on drainage pipe",
+      "terrain": "Red granite paving near the Cathedral",
+      "urbanElements": {
+        "furniture": "Yellow bus stop sign (TUP)",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Art Deco/Colonial Revival"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SANTA FE 600",
+        "BUENOS AIRES 800",
+        "CATEDRAL",
+        "LINEA 115"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "35mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-003",
+    "coordinates": {
+      "lat": -32.9485,
+      "lng": -60.6322,
+      "corner": "San Lorenzo y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T09:30:00Z",
+    "lighting": {
+      "sunPosition": "East",
+      "shadowDirection": "West",
+      "shadowLength": "Medium",
+      "description": "Clear morning light illuminating the eastern facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "High tension wires running parallel to San Lorenzo",
+      "shutterStyle": "Modern PVC grey shutters",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Political stencil 'Rosario Siempre'",
+      "terrain": "Grey concrete tiles with yellow tactile paving",
+      "urbanElements": {
+        "furniture": "Black metal bollards on corner",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Modernist/Functionalist"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 600",
+        "J. M. DE ROSAS 700",
+        "ESTACIONAMIENTO 24HS"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 100,
+      "shutterSpeed": "1/250s",
+      "focalLength": "50mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-004",
+    "coordinates": {
+      "lat": -32.9461,
+      "lng": -60.6345,
+      "corner": "Laprida y Rioja"
+    },
+    "timestamp": "2023-11-15T18:15:00Z",
+    "lighting": {
+      "sunPosition": "Low West",
+      "shadowDirection": "East",
+      "shadowLength": "Very Long",
+      "description": "Deep shadows covering the street level."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Cluttered telecommunications wiring",
+      "shutterStyle": "Ornate wrought iron balcony railings",
+      "treeType": "Fraxinus pennsylvanica",
+      "graffiti": "Street art mural on side wall",
+      "terrain": "Standard 4x4 'vainilla' tiles",
+      "urbanElements": {
+        "furniture": "Standard green garbage container",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Italianate eclecticism"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LAPRIDA 900",
+        "RIOJA 800",
+        "KIOSCO 24H",
+        "FARMACIA"
+      ],
+      "confidence": 0.89
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 800,
+      "shutterSpeed": "1/60s",
+      "focalLength": "24mm",
+      "make": "Fujifilm",
+      "model": "X-T4"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 85,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-005",
+    "coordinates": {
+      "lat": -32.9481,
+      "lng": -60.6289,
+      "corner": "Av. Belgrano y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T15:00:00Z",
+    "lighting": {
+      "sunPosition": "Northwest",
+      "shadowDirection": "Southeast",
+      "shadowLength": "Medium",
+      "description": "Bright direct sunlight near the riverfront."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Underground utilities only",
+      "shutterStyle": "Not applicable (Open park area)",
+      "treeType": "Phoenix canariensis",
+      "graffiti": "Clean, no graffiti visible",
+      "terrain": "Interlocking concrete pavers",
+      "urbanElements": {
+        "furniture": "Concrete bench, Monumento style",
+        "vegetationScore": 0.8,
+        "architectureStyle": "Rationalist (Monumento a la Bandera)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AVENIDA BELGRANO",
+        "PROHIBIDO CIRCULAR",
+        "ZONA PORTUARIA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/11.0",
+      "iso": 100,
+      "shutterSpeed": "1/200s",
+      "focalLength": "16mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 97,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-006",
+    "coordinates": {
+      "lat": -32.9512,
+      "lng": -60.6335,
+      "corner": "1 de Mayo y San Juan"
+    },
+    "timestamp": "2023-11-15T10:45:00Z",
+    "lighting": {
+      "sunPosition": "Northeast",
+      "shadowDirection": "Southwest",
+      "shadowLength": "Short",
+      "description": "Soft morning light diffused by trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Multiple service drops to old houses",
+      "shutterStyle": "Traditional wooden 'Persianas' painted white",
+      "treeType": "Citrus aurantium",
+      "graffiti": "Newell's Old Boys flag painted on curb",
+      "terrain": "Uneven sidewalk with tree root uplift",
+      "urbanElements": {
+        "furniture": "Fiberglass internet service box",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Early 20th Century Terrace"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "1 DE MAYO 1000",
+        "SAN JUAN 500",
+        "DESPENSA ANA"
+      ],
+      "confidence": 0.91
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 400,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Panasonic",
+      "model": "Lumix S5"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-007",
+    "coordinates": {
+      "lat": -32.9452,
+      "lng": -60.6351,
+      "corner": "Maipu y San Lorenzo"
+    },
+    "timestamp": "2023-11-15T13:30:00Z",
+    "lighting": {
+      "sunPosition": "North",
+      "shadowDirection": "South",
+      "shadowLength": "Short",
+      "description": "High sun position creating high contrast in building recessed areas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Heavy overhead wiring for trolleybus lines",
+      "shutterStyle": "Vertical plastic slats on balconies",
+      "treeType": "Fraxinus excelsior",
+      "graffiti": "Stencil 'Justicia por...' on bank wall",
+      "terrain": "Polished granite slabs in front of office building",
+      "urbanElements": {
+        "furniture": "Public telephone booth (defunct)",
+        "vegetationScore": 0.2,
+        "architectureStyle": "Brutalist/Modern Office"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MAIPU 600",
+        "SAN LORENZO 800",
+        "BANCO MUNICIPAL",
+        "CAJERO AUTOMATICO"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/6.3",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "28mm",
+      "make": "Ricoh",
+      "model": "GR III"
+    },
+    "h3Index": "89c2eba33b3ffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-008",
+    "coordinates": {
+      "lat": -32.9479,
+      "lng": -60.6335,
+      "corner": "Cordoba y Buenos Aires"
+    },
+    "timestamp": "2023-11-15T08:00:00Z",
+    "lighting": {
+      "sunPosition": "Low East",
+      "shadowDirection": "West",
+      "shadowLength": "Very Long",
+      "description": "Soft blue hour transition to morning light."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Zero visibility, heritage conservation zone",
+      "shutterStyle": "Heavy decorative bronze doors",
+      "treeType": "Lagerstroemia indica",
+      "graffiti": "Clean heritage site",
+      "terrain": "Cobblestone street with granite curbs",
+      "urbanElements": {
+        "furniture": "Victorian-style street lamps",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Beaux-Arts (Palacio de los Leones)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "CORDOBA 800",
+        "BUENOS AIRES 700",
+        "MUNICIPALIDAD DE ROSARIO"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 1600,
+      "shutterSpeed": "1/30s",
+      "focalLength": "35mm",
+      "make": "Hasselblad",
+      "model": "X1D"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-009",
+    "coordinates": {
+      "lat": -32.9467,
+      "lng": -60.6338,
+      "corner": "Laprida y Santa Fe"
+    },
+    "timestamp": "2023-11-15T14:20:00Z",
+    "lighting": {
+      "sunPosition": "North-Northwest",
+      "shadowDirection": "South-Southeast",
+      "shadowLength": "Short-Medium",
+      "description": "Bright afternoon light reflecting off glass facades."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Standard overhead distribution",
+      "shutterStyle": "Aluminum roller shutters on shops",
+      "treeType": "Jacaranda mimosifolia",
+      "graffiti": "Tag 'La 22' on base of pole",
+      "terrain": "Grey vainilla tiles with patches of repair",
+      "urbanElements": {
+        "furniture": "Metal bicycle rack, Rosario style (U-inverted)",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Commercial/Residential Mix"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "LAPRIDA 700",
+        "SANTA FE 800",
+        "PARADA 122",
+        "PAGO FACIL"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/5.0",
+      "iso": 100,
+      "shutterSpeed": "1/320s",
+      "focalLength": "24mm",
+      "make": "Sony",
+      "model": "ZV-1"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 87,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-M-010",
+    "coordinates": {
+      "lat": -32.9492,
+      "lng": -60.6315,
+      "corner": "San Lorenzo y 1 de Mayo"
+    },
+    "timestamp": "2023-11-15T17:30:00Z",
+    "lighting": {
+      "sunPosition": "West",
+      "shadowDirection": "East",
+      "shadowLength": "Long",
+      "description": "Warm sunset light creating silhouettes of trees."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Dense fiber optic clusters",
+      "shutterStyle": "Old style wooden shutters with adjustable slats",
+      "treeType": "Tipuana tipu",
+      "graffiti": "Small 'Frente de Izquierda' poster remnants",
+      "terrain": "Red ceramic tiles on building entrance",
+      "urbanElements": {
+        "furniture": "Concrete power pole with transformer",
+        "vegetationScore": 0.6,
+        "architectureStyle": "Spanish Colonial Revival / Modern Apartment"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO 500",
+        "1 DE MAYO 800",
+        "EDIFICIO ESCORPIO"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 200,
+      "shutterSpeed": "1/80s",
+      "focalLength": "40mm",
+      "make": "Olympus",
+      "model": "OM-D E-M1"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 91,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-001",
+    "coordinates": {
+      "lat": -32.9472,
+      "lng": -60.6305,
+      "corner": "Av. Belgrano y Santa Fe"
+    },
+    "timestamp": "2023-11-15T10:30:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Luz dura de mañana con sombras proyectadas sobre la explanada del Monumento."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderado",
+      "shutterStyle": "Persiana plástica blanca",
+      "treeType": "Jacarandá",
+      "graffiti": "Stencil de Central (Canalla) en base de semáforo",
+      "terrain": "Plano con ligera pendiente hacia el río",
+      "urbanElements": {
+        "furniture": "Contenedor de residuos verde metálico",
+        "vegetationScore": 0.65,
+        "architectureStyle": "Racionalismo y monumentales de mármol"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. BELGRANO",
+        "SANTA FE",
+        "PROHIBIDO ESTACIONAR"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/1.8",
+      "iso": 100,
+      "shutterSpeed": "1/1000s",
+      "focalLength": "26mm",
+      "make": "Apple",
+      "model": "iPhone 14 Pro"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 94,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-002",
+    "coordinates": {
+      "lat": -32.9468,
+      "lng": -60.6331,
+      "corner": "Córdoba y Primero de Mayo"
+    },
+    "timestamp": "2023-11-15T17:15:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sureste",
+      "shadowLength": "Larga",
+      "description": "Luz dorada de atardecer filtrada por edificios altos."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Escaso (soterrado parcial)",
+      "shutterStyle": "Cortina metálica de local comercial",
+      "treeType": "Tipa",
+      "graffiti": "Grafiti 'NOB' en caja de servicio eléctrico",
+      "terrain": "Ascendente hacia el oeste",
+      "urbanElements": {
+        "furniture": "Banco de plaza estilo histórico",
+        "vegetationScore": 0.4,
+        "architectureStyle": "Academicismo Francés y Neoclásico"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "1 DE MAYO",
+        "CÓRDOBA",
+        "KIOSCO EL MONUMENTO"
+      ],
+      "confidence": 0.94
+    },
+    "exif": {
+      "fStop": "f/2.8",
+      "iso": 400,
+      "shutterSpeed": "1/250s",
+      "focalLength": "35mm",
+      "make": "Sony",
+      "model": "Alpha a7 III"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-003",
+    "coordinates": {
+      "lat": -32.9478,
+      "lng": -60.6322,
+      "corner": "Buenos Aires y Santa Fe"
+    },
+    "timestamp": "2023-11-15T12:00:00Z",
+    "lighting": {
+      "sunPosition": "Zenital Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Iluminación vertical intensa, sombras mínimas bajo cornisas."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Denso",
+      "shutterStyle": "Persianas de madera tipo barrio",
+      "treeType": "Palo Borracho",
+      "graffiti": "Limpio",
+      "terrain": "Plano",
+      "urbanElements": {
+        "furniture": "Parada de colectivo línea 115",
+        "vegetationScore": 0.3,
+        "architectureStyle": "Edificios de renta década de 1950"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "BUENOS AIRES",
+        "SANTA FE 700",
+        "CATEDRAL"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/2.2",
+      "iso": 50,
+      "shutterSpeed": "1/2000s",
+      "focalLength": "24mm",
+      "make": "Samsung",
+      "model": "S22 Ultra"
+    },
+    "h3Index": "89c2eba3397ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-004",
+    "coordinates": {
+      "lat": -32.9455,
+      "lng": -60.6318,
+      "corner": "San Lorenzo y Laprida"
+    },
+    "timestamp": "2023-11-15T09:00:00Z",
+    "lighting": {
+      "sunPosition": "Este",
+      "shadowDirection": "Oeste",
+      "shadowLength": "Larga",
+      "description": "Sombras alargadas cruzando la calle Laprida."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderado",
+      "shutterStyle": "Metálica microperforada",
+      "treeType": "Fresno Americano",
+      "graffiti": "Aerosol negro ilegible",
+      "terrain": "Pendiente descendente al río",
+      "urbanElements": {
+        "furniture": "Poste de luz de fundición antiguo",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Ecléctico con balcones de hierro forjado"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN LORENZO",
+        "LAPRIDA",
+        "COCHERÍA"
+      ],
+      "confidence": 0.92
+    },
+    "exif": {
+      "fStop": "f/4.0",
+      "iso": 200,
+      "shutterSpeed": "1/500s",
+      "focalLength": "50mm",
+      "make": "Canon",
+      "model": "EOS R6"
+    },
+    "h3Index": "89c2eba3387ffff",
+    "geocodingScore": 89,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-005",
+    "coordinates": {
+      "lat": -32.9485,
+      "lng": -60.6338,
+      "corner": "Rioja y Juan Manuel de Rosas"
+    },
+    "timestamp": "2023-11-15T15:30:00Z",
+    "lighting": {
+      "sunPosition": "Noroeste",
+      "shadowDirection": "Sudeste",
+      "shadowLength": "Media-Larga",
+      "description": "Contraste alto entre fachadas iluminadas y calle en sombra."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Muy denso",
+      "shutterStyle": "Persiana de enrollar plástica",
+      "treeType": "Jacarandá",
+      "graffiti": "RC 1889",
+      "terrain": "Plano",
+      "urbanElements": {
+        "furniture": "Puesto de diarios metálico azul",
+        "vegetationScore": 0.55,
+        "architectureStyle": "Art Déco y moderno tardío"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "RIOJA",
+        "J.M. DE ROSAS",
+        "ESTACIONAMIENTO 24HS"
+      ],
+      "confidence": 0.96
+    },
+    "exif": {
+      "fStop": "f/1.7",
+      "iso": 125,
+      "shutterSpeed": "1/800s",
+      "focalLength": "23mm",
+      "make": "Fujifilm",
+      "model": "X100V"
+    },
+    "h3Index": "89c2eba315bffff",
+    "geocodingScore": 92,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-006",
+    "coordinates": {
+      "lat": -32.9491,
+      "lng": -60.6288,
+      "corner": "Av. de la Libertad y San Juan"
+    },
+    "timestamp": "2023-11-15T08:15:00Z",
+    "lighting": {
+      "sunPosition": "Este-Noreste",
+      "shadowDirection": "Oeste-Suroeste",
+      "shadowLength": "Muy larga",
+      "description": "Luz rasante desde el río Paraná."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Nulo (zona costera)",
+      "shutterStyle": "Vidriado sin persiana",
+      "treeType": "Palmeras Pindó",
+      "graffiti": "Escudo de Rosario Central en pared de contención",
+      "terrain": "Pendiente pronunciada",
+      "urbanElements": {
+        "furniture": "Baranda de acero inoxidable",
+        "vegetationScore": 0.8,
+        "architectureStyle": "High-tech (Torres de alta gama)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "AV. DE LA LIBERTAD",
+        "PARQUE A LA BANDERA"
+      ],
+      "confidence": 0.97
+    },
+    "exif": {
+      "fStop": "f/5.6",
+      "iso": 100,
+      "shutterSpeed": "1/400s",
+      "focalLength": "18mm",
+      "make": "Nikon",
+      "model": "D850"
+    },
+    "h3Index": "89c2eba3393ffff",
+    "geocodingScore": 96,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-007",
+    "coordinates": {
+      "lat": -32.9442,
+      "lng": -60.6355,
+      "corner": "Maipú y San Lorenzo"
+    },
+    "timestamp": "2023-11-15T11:00:00Z",
+    "lighting": {
+      "sunPosition": "Norte",
+      "shadowDirection": "Sur",
+      "shadowLength": "Corta",
+      "description": "Luz cenital que resalta texturas de piedra París."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Moderado",
+      "shutterStyle": "Madera tipo postigón",
+      "treeType": "Tipa",
+      "graffiti": "Grafitis políticos recientes",
+      "terrain": "Plano",
+      "urbanElements": {
+        "furniture": "Semáforo con repetidor peatonal LED",
+        "vegetationScore": 0.45,
+        "architectureStyle": "Neorenacentista italiano"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MAIPÚ",
+        "SAN LORENZO",
+        "SOLO BUS"
+      ],
+      "confidence": 0.95
+    },
+    "exif": {
+      "fStop": "f/2.0",
+      "iso": 100,
+      "shutterSpeed": "1/1600s",
+      "focalLength": "28mm",
+      "make": "Google",
+      "model": "Pixel 7"
+    },
+    "h3Index": "89c2eba33b3ffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-008",
+    "coordinates": {
+      "lat": -32.9431,
+      "lng": -60.6302,
+      "corner": "Sargento Cabral y Av. Belgrano"
+    },
+    "timestamp": "2023-11-15T16:45:00Z",
+    "lighting": {
+      "sunPosition": "Oeste",
+      "shadowDirection": "Este",
+      "shadowLength": "Larga",
+      "description": "Sombras proyectadas hacia el edificio de la Aduana."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Escaso",
+      "shutterStyle": "No posee (oficinas)",
+      "treeType": "Ibirá-pitá",
+      "graffiti": "Limpio (zona patrimonial)",
+      "terrain": "Pendiente hacia el bajo",
+      "urbanElements": {
+        "furniture": "Bolardos de fundición gris",
+        "vegetationScore": 0.7,
+        "architectureStyle": "Beaux-Arts (Aduana de Rosario)"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SARGENTO CABRAL",
+        "ADUANA",
+        "BAJADA"
+      ],
+      "confidence": 0.99
+    },
+    "exif": {
+      "fStop": "f/8.0",
+      "iso": 200,
+      "shutterSpeed": "1/125s",
+      "focalLength": "35mm",
+      "make": "Leica",
+      "model": "Q2"
+    },
+    "h3Index": "89c2eba338fffff",
+    "geocodingScore": 95,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-009",
+    "coordinates": {
+      "lat": -32.9498,
+      "lng": -60.6315,
+      "corner": "Mendoza y Primero de Mayo"
+    },
+    "timestamp": "2023-11-15T14:00:00Z",
+    "lighting": {
+      "sunPosition": "Norte-Noroeste",
+      "shadowDirection": "Sur-Sureste",
+      "shadowLength": "Corta-Media",
+      "description": "Luz intensa de siesta, rebote de luz en veredas claras."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Denso",
+      "shutterStyle": "Persianas de aluminio gris",
+      "treeType": "Fresno",
+      "graffiti": "'Lepra' en color rojo y negro",
+      "terrain": "Plano",
+      "urbanElements": {
+        "furniture": "Caja de correo antigua (fuera de uso)",
+        "vegetationScore": 0.5,
+        "architectureStyle": "Propiedad horizontal estándar"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "MENDOZA",
+        "1 DE MAYO",
+        "LIBRERÍA"
+      ],
+      "confidence": 0.93
+    },
+    "exif": {
+      "fStop": "f/1.9",
+      "iso": 160,
+      "shutterSpeed": "1/1200s",
+      "focalLength": "26mm",
+      "make": "Xiaomi",
+      "model": "13 Pro"
+    },
+    "h3Index": "89c2eba302fffff",
+    "geocodingScore": 90,
+    "isAnchor": true
+  },
+  {
+    "id": "ROS-MB-010",
+    "coordinates": {
+      "lat": -32.9461,
+      "lng": -60.6342,
+      "corner": "San Martín y Santa Fe"
+    },
+    "timestamp": "2023-11-15T10:00:00Z",
+    "lighting": {
+      "sunPosition": "Noreste",
+      "shadowDirection": "Suroeste",
+      "shadowLength": "Media",
+      "description": "Iluminación clara en zona peatonal."
+    },
+    "microPhysiognomy": {
+      "aerialCables": "Nulo (Peatonal)",
+      "shutterStyle": "Vidriera comercial con reja tijera",
+      "treeType": "Ninguno (maceteros)",
+      "graffiti": "Ilegible en persiana",
+      "terrain": "Plano",
+      "urbanElements": {
+        "furniture": "Cesto de basura circular perforado",
+        "vegetationScore": 0.15,
+        "architectureStyle": "Comercial principios de siglo XX"
+      }
+    },
+    "ocr": {
+      "detectedText": [
+        "SAN MARTÍN",
+        "SANTA FE",
+        "PEATONAL"
+      ],
+      "confidence": 0.98
+    },
+    "exif": {
+      "fStop": "f/2.4",
+      "iso": 100,
+      "shutterSpeed": "1/500s",
+      "focalLength": "52mm",
+      "make": "Apple",
+      "model": "iPhone 13 mini"
+    },
+    "h3Index": "89c2eba314bffff",
+    "geocodingScore": 86,
+    "isAnchor": true
+  }
+]

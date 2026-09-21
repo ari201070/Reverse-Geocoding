@@ -1,0 +1,24 @@
+{
+  "vaulted_at": "2026-09-16T12:10:55.000Z",
+  "source_name": "herramientas-IA-Version2-0-joaquin-barbera.pdf",
+  "parsed": {
+    "isTravelDocument": false,
+    "category": "document",
+    "supplier": "",
+    "title": "herramientas-IA-Version2-0-joaquin-barbera",
+    "startDate": null,
+    "startTime": null,
+    "endDate": null,
+    "endTime": null,
+    "confirmationNumber": null,
+    "location": "",
+    "coordinates": null,
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "passengerOrGuestName": null,
+    "price": null,
+    "currency": null,
+    "details": null,
+    "summary": "Ingestado desde: G:\\האחסון שלי\\צילומי מסמכים\\herramientas-IA-Version2-0-joaquin-barbera.pdf",
+    "source_path": "G:\\האחסון שלי\\צילומי מסמכים\\herramientas-IA-Version2-0-joaquin-barbera.pdf"
+  }
+}

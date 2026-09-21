@@ -1,0 +1,2155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.038387,
+          -50.496523
+        ]
+      },
+      "properties": {
+        "id": "REF-0001",
+        "coordinates": {
+          "lat": -50.496523,
+          "lng": -73.038387,
+          "corner": "North-East"
+        },
+        "timestamp": "2023-01-15T12:30:00Z",
+        "lighting": {
+          "sunPosition": "High-Noon",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Bright direct sunlight hitting the ice wall"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Ice/Glacial",
+          "urbanElements": {
+            "furniture": "Steel Catwalk",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Glaciar Perito Moreno",
+            "Area Protegida"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "A7R IV",
+          "lensModel": "FE 24-70mm F2.8 GM",
+          "dateTimeOriginal": "2023:01:15 12:30:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Perito Moreno",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 55622.05454879964,
+          "isOutlier": true,
+          "computedScore": 83,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 55622m)"
+          ],
+          "h3Index": "89cf1349dabffff"
+        },
+        "h3Index": "89cf1349dabffff",
+        "geocodingScore": 83,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.042804,
+          -49.271295
+        ]
+      },
+      "properties": {
+        "id": "REF-0002",
+        "coordinates": {
+          "lat": -49.271295,
+          "lng": -73.042804,
+          "corner": "South-West"
+        },
+        "timestamp": "2022-11-20T08:15:00Z",
+        "lighting": {
+          "sunPosition": "Low-East",
+          "shadowDirection": "West",
+          "shadowLength": "Long",
+          "description": "Golden hour lighting on granite peaks"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga",
+          "graffiti": "None",
+          "terrain": "Granite/Rock",
+          "urbanElements": {
+            "furniture": "Wooden Trail Marker",
+            "vegetationScore": 0.3,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "Fitz Roy Trail",
+            "Senda al Monte"
+          ],
+          "confidence": 0.92,
+          "rapidFuzzScore": 88
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 200,
+          "shutterSpeed": "1/250",
+          "focalLength": "24mm",
+          "make": "Canon",
+          "model": "EOS R5",
+          "lensModel": "RF 24-105mm F4 L",
+          "dateTimeOriginal": "2022:11:20 08:15:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Monte Fitz Roy",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 81290.1309945289,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 81290m)"
+          ],
+          "h3Index": "89cfa8bb42fffff"
+        },
+        "h3Index": "89cfa8bb42fffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.29834,
+          -49.851442
+        ]
+      },
+      "properties": {
+        "id": "REF-0003",
+        "coordinates": {
+          "lat": -49.851442,
+          "lng": -73.29834,
+          "corner": "North"
+        },
+        "timestamp": "2023-02-10T14:45:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Clear sky with strong UV reflection from water"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Glacial Lake",
+          "urbanElements": {
+            "furniture": "Catamaran Railing",
+            "vegetationScore": 0,
+            "architectureStyle": "Maritime"
+          },
+          "temporalWindow": "2010-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Glaciar Upsala",
+            "Navegacion"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/11.0",
+          "iso": 100,
+          "shutterSpeed": "1/800",
+          "focalLength": "50mm",
+          "make": "Nikon",
+          "model": "Z7 II",
+          "lensModel": "Z 50mm f/1.8 S",
+          "dateTimeOriginal": "2023:02:10 14:45:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Upsala",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 20307.57904840856,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 20308m)"
+          ],
+          "h3Index": "89cfadc9567ffff"
+        },
+        "h3Index": "89cfadc9567ffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.425178,
+          -50.273952
+        ]
+      },
+      "properties": {
+        "id": "REF-0004",
+        "coordinates": {
+          "lat": -50.273952,
+          "lng": -73.425178,
+          "corner": "West"
+        },
+        "timestamp": "2023-03-05T10:00:00Z",
+        "lighting": {
+          "sunPosition": "Morning-NorthEast",
+          "shadowDirection": "SouthWest",
+          "shadowLength": "Medium",
+          "description": "Partial cloud cover softening glacier shadows"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Ñire",
+          "graffiti": "None",
+          "terrain": "Steep Ice",
+          "urbanElements": {
+            "furniture": "Safety Signage",
+            "vegetationScore": 0.1,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2020-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Glaciar Spegazzini",
+            "Frente de Glaciar"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 94
+        },
+        "exif": {
+          "fStop": "f/9.0",
+          "iso": 400,
+          "shutterSpeed": "1/400",
+          "focalLength": "85mm",
+          "make": "Fujifilm",
+          "model": "X-T4",
+          "lensModel": "XF 16-55mm F2.8 R",
+          "dateTimeOriginal": "2023:03:05 10:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Spegazzini",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 36885.97292048184,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 36886m)"
+          ],
+          "h3Index": "89cf1368657ffff"
+        },
+        "h3Index": "89cf1368657ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.099794,
+          -49.292434
+        ]
+      },
+      "properties": {
+        "id": "REF-0005",
+        "coordinates": {
+          "lat": -49.292434,
+          "lng": -73.099794,
+          "corner": "East"
+        },
+        "timestamp": "2022-12-12T16:20:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-West",
+          "shadowDirection": "East",
+          "shadowLength": "Long",
+          "description": "Sun setting behind the needle of Cerro Torre"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Talus Slope",
+          "urbanElements": {
+            "furniture": "Piling Rocks",
+            "vegetationScore": 0.05,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2015-2025"
+        },
+        "ocr": {
+          "detectedText": [
+            "Laguna Torre",
+            "Parque Nacional"
+          ],
+          "confidence": 0.89,
+          "rapidFuzzScore": 85
+        },
+        "exif": {
+          "fStop": "f/13.0",
+          "iso": 100,
+          "shutterSpeed": "1/125",
+          "focalLength": "16mm",
+          "make": "Leica",
+          "model": "Q2",
+          "lensModel": "Summilux 28mm f/1.7",
+          "dateTimeOriginal": "2022:12:12 16:20:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Cerro Torre",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 78714.79572336648,
+          "isOutlier": true,
+          "computedScore": 80,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 78715m)"
+          ],
+          "h3Index": "89cfa8ba44fffff"
+        },
+        "h3Index": "89cfa8ba44fffff",
+        "geocodingScore": 80,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.583398,
+          -50.232919
+        ]
+      },
+      "properties": {
+        "id": "REF-0006",
+        "coordinates": {
+          "lat": -50.232919,
+          "lng": -72.583398,
+          "corner": "Center"
+        },
+        "timestamp": "2023-04-02T11:30:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Strong breeze causing ripples and light scattering"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Mata Negra",
+          "graffiti": "None",
+          "terrain": "Pebbled Beach",
+          "urbanElements": {
+            "furniture": "Log Bench",
+            "vegetationScore": 0.2,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2012-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Brazo Rico",
+            "Lago Argentino"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 91
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "35mm",
+          "make": "Panasonic",
+          "model": "Lumix S5",
+          "lensModel": "20-60mm F3.5-5.6",
+          "dateTimeOriginal": "2023:04:02 11:30:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Lago Argentino",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 46992.29752313382,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 46992m)"
+          ],
+          "h3Index": "89cfac10dc7ffff"
+        },
+        "h3Index": "89cfac10dc7ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.885902,
+          -49.335598
+        ]
+      },
+      "properties": {
+        "id": "REF-0007",
+        "coordinates": {
+          "lat": -49.335598,
+          "lng": -72.885902,
+          "corner": "Entrance"
+        },
+        "timestamp": "2023-05-15T09:45:00Z",
+        "lighting": {
+          "sunPosition": "Morning-NorthEast",
+          "shadowDirection": "SouthWest",
+          "shadowLength": "Medium",
+          "description": "Soft morning light on timber structure"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Low-voltage power lines",
+          "shutterStyle": "Rustic wood",
+          "treeType": "Cultivated Pine",
+          "graffiti": "None",
+          "terrain": "Flat/Compacted Earth",
+          "urbanElements": {
+            "furniture": "Tourist Map Board",
+            "vegetationScore": 0.6,
+            "architectureStyle": "Patagonian Vernacular"
+          },
+          "temporalWindow": "2010-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Centro de Informes",
+            "Ceferino Fonzo",
+            "APN"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 800,
+          "shutterSpeed": "1/60",
+          "focalLength": "28mm",
+          "make": "Sony",
+          "model": "A6400",
+          "lensModel": "E 16-50mm F3.5-5.6 PZ",
+          "dateTimeOriginal": "2023:05:15 09:45:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Centro de Informes Guardaparque Ceferino Fonzo",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 75993.73441132107,
+          "isOutlier": true,
+          "computedScore": 94,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 75994m)"
+          ],
+          "h3Index": "89cfa88e667ffff"
+        },
+        "h3Index": "89cfa88e667ffff",
+        "geocodingScore": 94,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.038341,
+          -50.496649
+        ]
+      },
+      "properties": {
+        "id": "REF-0008",
+        "coordinates": {
+          "lat": -50.496649,
+          "lng": -73.038341,
+          "corner": "Lower-Balcony"
+        },
+        "timestamp": "2023-01-20T13:00:00Z",
+        "lighting": {
+          "sunPosition": "High-Noon",
+          "shadowDirection": "South",
+          "shadowLength": "None",
+          "description": "Zenithal lighting on ice crevices"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Ice Peak",
+          "urbanElements": {
+            "furniture": "Observation Deck Rail",
+            "vegetationScore": 0,
+            "architectureStyle": "Functionalist Metal"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "MIRADOR INFERIOR",
+            "PERITO MORENO"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 93
+        },
+        "exif": {
+          "fStop": "f/10.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "70mm",
+          "make": "Sony",
+          "model": "A7 III",
+          "lensModel": "FE 70-200mm F4 G",
+          "dateTimeOriginal": "2023:01:20 13:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Perito Moreno",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 55636.357443176326,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 55636m)"
+          ],
+          "h3Index": "89cf1349dabffff"
+        },
+        "h3Index": "89cf1349dabffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.043003,
+          -49.270754
+        ]
+      },
+      "properties": {
+        "id": "REF-0009",
+        "coordinates": {
+          "lat": -49.270754,
+          "lng": -73.043003,
+          "corner": "North-Face"
+        },
+        "timestamp": "2022-11-25T11:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "High contrast on vertical granite faces"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Rock Wall",
+          "urbanElements": {
+            "furniture": "Climbing Bolt",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2000-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Fitz Roy Summit",
+            "3405m"
+          ],
+          "confidence": 0.85,
+          "rapidFuzzScore": 80
+        },
+        "exif": {
+          "fStop": "f/7.1",
+          "iso": 100,
+          "shutterSpeed": "1/1600",
+          "focalLength": "35mm",
+          "make": "GoPro",
+          "model": "Hero 10",
+          "lensModel": "Built-in",
+          "dateTimeOriginal": "2022:11:25 11:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Monte Fitz Roy",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 81348.94953610931,
+          "isOutlier": true,
+          "computedScore": 77,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 81349m)"
+          ],
+          "h3Index": "89cfa8bb42fffff"
+        },
+        "h3Index": "89cfa8bb42fffff",
+        "geocodingScore": 77,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.298483,
+          -49.851261
+        ]
+      },
+      "properties": {
+        "id": "REF-0010",
+        "coordinates": {
+          "lat": -49.851261,
+          "lng": -73.298483,
+          "corner": "Terminal-Face"
+        },
+        "timestamp": "2023-02-15T10:30:00Z",
+        "lighting": {
+          "sunPosition": "Morning-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Direct light reflecting off deep blue ice"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Glacial Front",
+          "urbanElements": {
+            "furniture": "Life Buoy on Boat",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Ruta del Hielo",
+            "Upsala Glacier"
+          ],
+          "confidence": 0.91,
+          "rapidFuzzScore": 89
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/2000",
+          "focalLength": "100mm",
+          "make": "Canon",
+          "model": "EOS 5D Mark IV",
+          "lensModel": "EF 100-400mm L IS II",
+          "dateTimeOriginal": "2023:02:15 10:30:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Upsala",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 20329.917839292717,
+          "isOutlier": true,
+          "computedScore": 81,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 20330m)"
+          ],
+          "h3Index": "89cfadc9567ffff"
+        },
+        "h3Index": "89cfadc9567ffff",
+        "geocodingScore": 81,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.425468,
+          -50.273837
+        ]
+      },
+      "properties": {
+        "id": "REF-0011",
+        "coordinates": {
+          "lat": -50.273837,
+          "lng": -73.425468,
+          "corner": "Dock"
+        },
+        "timestamp": "2023-03-10T12:00:00Z",
+        "lighting": {
+          "sunPosition": "High-Noon",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Glare on the glacier surface"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Ñire",
+          "graffiti": "None",
+          "terrain": "Rocky Coastline",
+          "urbanElements": {
+            "furniture": "Mooring Post",
+            "vegetationScore": 0.1,
+            "architectureStyle": "Docking Facility"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Puerto Spegazzini",
+            "Los Glaciares"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 96
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/400",
+          "focalLength": "24mm",
+          "make": "Nikon",
+          "model": "D850",
+          "lensModel": "24-70mm f/2.8E",
+          "dateTimeOriginal": "2023:03:10 12:00:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Glaciar Spegazzini",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 36887.08954737215,
+          "isOutlier": true,
+          "computedScore": 85,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 36887m)"
+          ],
+          "h3Index": "89cf1368657ffff"
+        },
+        "h3Index": "89cf1368657ffff",
+        "geocodingScore": 85,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.099109,
+          -49.292344
+        ]
+      },
+      "properties": {
+        "id": "REF-0012",
+        "coordinates": {
+          "lat": -49.292344,
+          "lng": -73.099109,
+          "corner": "Lagoon-Edge"
+        },
+        "timestamp": "2022-12-15T09:00:00Z",
+        "lighting": {
+          "sunPosition": "Low-East",
+          "shadowDirection": "West",
+          "shadowLength": "Long",
+          "description": "Atmospheric haze over the mountain range"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga",
+          "graffiti": "None",
+          "terrain": "Moraine/Ice",
+          "urbanElements": {
+            "furniture": "Trail Stake",
+            "vegetationScore": 0.1,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2010-2022"
+        },
+        "ocr": {
+          "detectedText": [
+            "Cerro Torre",
+            "Vistas Panoramicas"
+          ],
+          "confidence": 0.93,
+          "rapidFuzzScore": 90
+        },
+        "exif": {
+          "fStop": "f/11.0",
+          "iso": 200,
+          "shutterSpeed": "1/250",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "RX100 VII",
+          "lensModel": "Built-in 24-200mm",
+          "dateTimeOriginal": "2022:12:15 09:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Cerro Torre",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 78726.32677705526,
+          "isOutlier": true,
+          "computedScore": 83,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 78726m)"
+          ],
+          "h3Index": "89cfa8ba44fffff"
+        },
+        "h3Index": "89cfa8ba44fffff",
+        "geocodingScore": 83,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.583015,
+          -50.233156
+        ]
+      },
+      "properties": {
+        "id": "REF-0013",
+        "coordinates": {
+          "lat": -50.233156,
+          "lng": -72.583015,
+          "corner": "Shore"
+        },
+        "timestamp": "2023-04-10T15:30:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-North",
+          "shadowDirection": "SouthEast",
+          "shadowLength": "Medium",
+          "description": "Sky reflecting turquoise on the water surface"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Mata Negra",
+          "graffiti": "None",
+          "terrain": "Gravel beach",
+          "urbanElements": {
+            "furniture": "Interpretative Sign",
+            "vegetationScore": 0.15,
+            "architectureStyle": "Park Signage"
+          },
+          "temporalWindow": "2016-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Lago Argentino",
+            "Cuidado Ambiental"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/6.3",
+          "iso": 100,
+          "shutterSpeed": "1/800",
+          "focalLength": "50mm",
+          "make": "Canon",
+          "model": "EOS RP",
+          "lensModel": "RF 50mm F1.8 STM",
+          "dateTimeOriginal": "2023:04:10 15:30:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Lago Argentino",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 47029.527362069624,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 47030m)"
+          ],
+          "h3Index": "89cfac10dc7ffff"
+        },
+        "h3Index": "89cfac10dc7ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.885853,
+          -49.335708
+        ]
+      },
+      "properties": {
+        "id": "REF-0014",
+        "coordinates": {
+          "lat": -49.335708,
+          "lng": -72.885853,
+          "corner": "Main-Desk"
+        },
+        "timestamp": "2023-05-20T11:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Interior light supplemented by large windows"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Telephone wire",
+          "shutterStyle": "Fixed wood slats",
+          "treeType": "None (Paved)",
+          "graffiti": "None",
+          "terrain": "Pavement/Interior",
+          "urbanElements": {
+            "furniture": "Reception Desk",
+            "vegetationScore": 0.1,
+            "architectureStyle": "Mountain Cabin"
+          },
+          "temporalWindow": "2010-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "REGISTRO DE TREKKERS",
+            "EL CHALTEN"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 1600,
+          "shutterSpeed": "1/100",
+          "focalLength": "24mm",
+          "make": "Apple",
+          "model": "iPhone 13 Pro",
+          "lensModel": "Main Wide",
+          "dateTimeOriginal": "2023:05:20 11:00:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Centro de Informes Guardaparque Ceferino Fonzo",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 75982.66532552274,
+          "isOutlier": true,
+          "computedScore": 87,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 75983m)"
+          ],
+          "h3Index": "89cfa88e667ffff"
+        },
+        "h3Index": "89cfa88e667ffff",
+        "geocodingScore": 87,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.03865,
+          -50.496371
+        ]
+      },
+      "properties": {
+        "id": "REF-0015",
+        "coordinates": {
+          "lat": -50.496371,
+          "lng": -73.03865,
+          "corner": "Central-Catwalk"
+        },
+        "timestamp": "2023-01-25T14:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Hard sunlight on the glacier front"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga (Distant)",
+          "graffiti": "None",
+          "terrain": "Cliff/Ice",
+          "urbanElements": {
+            "furniture": "Wooden Handrail",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Infrastructure"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PROHIBIDO PASAR",
+            "DANGER"
+          ],
+          "confidence": 0.97,
+          "rapidFuzzScore": 95
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "A7C",
+          "lensModel": "FE 28-60mm F4-5.6",
+          "dateTimeOriginal": "2023:01:25 14:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Perito Moreno",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 55603.011922560414,
+          "isOutlier": true,
+          "computedScore": 86,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 55603m)"
+          ],
+          "h3Index": "89cf1349dabffff"
+        },
+        "h3Index": "89cf1349dabffff",
+        "geocodingScore": 86,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.042907,
+          -49.270788
+        ]
+      },
+      "properties": {
+        "id": "REF-0016",
+        "coordinates": {
+          "lat": -49.270788,
+          "lng": -73.042907,
+          "corner": "Ridge"
+        },
+        "timestamp": "2022-11-28T14:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Unobstructed high-altitude solar exposure"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Granite Spire",
+          "urbanElements": {
+            "furniture": "Fixed Rope Anchor",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2000-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Fitz Roy",
+            "Expedition"
+          ],
+          "confidence": 0.82,
+          "rapidFuzzScore": 75
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 100,
+          "shutterSpeed": "1/4000",
+          "focalLength": "14mm",
+          "make": "Insta360",
+          "model": "One RS",
+          "lensModel": "4K Boost",
+          "dateTimeOriginal": "2022:11:28 14:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Monte Fitz Roy",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 81345.73395651334,
+          "isOutlier": true,
+          "computedScore": 75,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 81346m)"
+          ],
+          "h3Index": "89cfa8bb42fffff"
+        },
+        "h3Index": "89cfa8bb42fffff",
+        "geocodingScore": 75,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.298766,
+          -49.850823
+        ]
+      },
+      "properties": {
+        "id": "REF-0017",
+        "coordinates": {
+          "lat": -49.850823,
+          "lng": -73.298766,
+          "corner": "Iceberg-Area"
+        },
+        "timestamp": "2023-02-18T16:00:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-West",
+          "shadowDirection": "East",
+          "shadowLength": "Medium",
+          "description": "Sun lighting up floating icebergs"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Water/Ice",
+          "urbanElements": {
+            "furniture": "Boat Deck",
+            "vegetationScore": 0,
+            "architectureStyle": "Maritime"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Brazo Upsala",
+            "Icebergs"
+          ],
+          "confidence": 0.9,
+          "rapidFuzzScore": 88
+        },
+        "exif": {
+          "fStop": "f/6.3",
+          "iso": 200,
+          "shutterSpeed": "1/1250",
+          "focalLength": "55mm",
+          "make": "Sony",
+          "model": "A6000",
+          "lensModel": "E 55-210mm F4.5-6.3 OSS",
+          "dateTimeOriginal": "2023:02:18 16:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Upsala",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 20381.35499188677,
+          "isOutlier": true,
+          "computedScore": 80,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 20381m)"
+          ],
+          "h3Index": "89cfadc9567ffff"
+        },
+        "h3Index": "89cfadc9567ffff",
+        "geocodingScore": 80,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.425311,
+          -50.273291
+        ]
+      },
+      "properties": {
+        "id": "REF-0018",
+        "coordinates": {
+          "lat": -50.273291,
+          "lng": -73.425311,
+          "corner": "Refuge"
+        },
+        "timestamp": "2023-03-15T13:30:00Z",
+        "lighting": {
+          "sunPosition": "High-Noon",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Clear mountain air with high contrast"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "Double hung wood",
+          "treeType": "Lenga Forest",
+          "graffiti": "None",
+          "terrain": "Forest Floor/Dirt",
+          "urbanElements": {
+            "furniture": "Picnic Table",
+            "vegetationScore": 0.8,
+            "architectureStyle": "Eco-friendly Wood"
+          },
+          "temporalWindow": "2021-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Puesto de Control",
+            "Spegazzini"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 94
+        },
+        "exif": {
+          "fStop": "f/5.0",
+          "iso": 100,
+          "shutterSpeed": "1/200",
+          "focalLength": "18mm",
+          "make": "Nikon",
+          "model": "Z50",
+          "lensModel": "Z DX 16-50mm f/3.5-6.3",
+          "dateTimeOriginal": "2023:03:15 13:30:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Glaciar Spegazzini",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 36830.73312272256,
+          "isOutlier": true,
+          "computedScore": 95,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 36831m)"
+          ],
+          "h3Index": "89cf1368657ffff"
+        },
+        "h3Index": "89cf1368657ffff",
+        "geocodingScore": 95,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.099356,
+          -49.29275
+        ]
+      },
+      "properties": {
+        "id": "REF-0019",
+        "coordinates": {
+          "lat": -49.29275,
+          "lng": -73.099356,
+          "corner": "Viewpoint"
+        },
+        "timestamp": "2022-12-20T12:00:00Z",
+        "lighting": {
+          "sunPosition": "High-Noon",
+          "shadowDirection": "South",
+          "shadowLength": "None",
+          "description": "Full sun, vertical illumination of the spire"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Low Shrubs",
+          "graffiti": "None",
+          "terrain": "Stone/Tundra",
+          "urbanElements": {
+            "furniture": "Compass Plate",
+            "vegetationScore": 0.2,
+            "architectureStyle": "Stone Masonry"
+          },
+          "temporalWindow": "2015-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "Cerro Torre Viewpoint",
+            "Elevation"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 90
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "50mm",
+          "make": "Canon",
+          "model": "EOS 6D",
+          "lensModel": "EF 50mm f/1.8 STM",
+          "dateTimeOriginal": "2022:12:20 12:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Cerro Torre",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 78680.64854952703,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 78681m)"
+          ],
+          "h3Index": "89cfa8ba44fffff"
+        },
+        "h3Index": "89cfa8ba44fffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.583238,
+          -50.233661
+        ]
+      },
+      "properties": {
+        "id": "REF-0020",
+        "coordinates": {
+          "lat": -50.233661,
+          "lng": -72.583238,
+          "corner": "Inlet"
+        },
+        "timestamp": "2023-04-15T10:00:00Z",
+        "lighting": {
+          "sunPosition": "Morning-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Cool morning tones with misty horizon"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Water",
+          "urbanElements": {
+            "furniture": "Floating Buoy",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "LAGO ARGENTINO",
+            "PROFUNDIDAD"
+          ],
+          "confidence": 0.88,
+          "rapidFuzzScore": 85
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/4000",
+          "focalLength": "200mm",
+          "make": "Nikon",
+          "model": "D750",
+          "lensModel": "70-200mm f/2.8",
+          "dateTimeOriginal": "2023:04:15 10:00:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Lago Argentino",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 47047.07687605143,
+          "isOutlier": true,
+          "computedScore": 79,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 47047m)"
+          ],
+          "h3Index": "89cfac10dc7ffff"
+        },
+        "h3Index": "89cfac10dc7ffff",
+        "geocodingScore": 79,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.886127,
+          -49.33589
+        ]
+      },
+      "properties": {
+        "id": "REF-0021",
+        "coordinates": {
+          "lat": -49.33589,
+          "lng": -72.886127,
+          "corner": "Parking"
+        },
+        "timestamp": "2023-05-25T14:30:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-NorthWest",
+          "shadowDirection": "SouthEast",
+          "shadowLength": "Medium",
+          "description": "Late afternoon sun reflecting off visitor cars"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Steel Utility Poles",
+          "shutterStyle": "N/A",
+          "treeType": "Ornamental Poplar",
+          "graffiti": "None",
+          "terrain": "Asphalt",
+          "urbanElements": {
+            "furniture": "Trash Bin (Bear Proof)",
+            "vegetationScore": 0.4,
+            "architectureStyle": "Civil Engineering"
+          },
+          "temporalWindow": "2012-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "PARKING",
+            "SOLO VEHICULOS AUTORIZADOS"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/125",
+          "focalLength": "28mm",
+          "make": "Google",
+          "model": "Pixel 6",
+          "lensModel": "Main Wide",
+          "dateTimeOriginal": "2023:05:25 14:30:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Centro de Informes Guardaparque Ceferino Fonzo",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 75958.36337319082,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 75958m)"
+          ],
+          "h3Index": "89cfa88e667ffff"
+        },
+        "h3Index": "89cfa88e667ffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.038075,
+          -50.496983
+        ]
+      },
+      "properties": {
+        "id": "REF-0022",
+        "coordinates": {
+          "lat": -50.496983,
+          "lng": -73.038075,
+          "corner": "South-Catwalk"
+        },
+        "timestamp": "2023-01-30T10:00:00Z",
+        "lighting": {
+          "sunPosition": "Morning-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Direct sun revealing texture of glacier ice"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga (Stunted)",
+          "graffiti": "None",
+          "terrain": "Steep Earth",
+          "urbanElements": {
+            "furniture": "Observation Platform",
+            "vegetationScore": 0.4,
+            "architectureStyle": "Park Infrastructure"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "ACCESO SUD",
+            "GLACIAR"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/9.0",
+          "iso": 100,
+          "shutterSpeed": "1/500",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "A1",
+          "lensModel": "FE 35mm F1.4 GM",
+          "dateTimeOriginal": "2023:01:30 10:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Perito Moreno",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 55675.516891888976,
+          "isOutlier": true,
+          "computedScore": 88,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 55676m)"
+          ],
+          "h3Index": "89cf1349dbbffff"
+        },
+        "h3Index": "89cf1349dbbffff",
+        "geocodingScore": 88,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0434,
+          -49.270753
+        ]
+      },
+      "properties": {
+        "id": "REF-0023",
+        "coordinates": {
+          "lat": -49.270753,
+          "lng": -73.0434,
+          "corner": "Base-Camp"
+        },
+        "timestamp": "2022-12-01T07:00:00Z",
+        "lighting": {
+          "sunPosition": "Early-East",
+          "shadowDirection": "West",
+          "shadowLength": "Very Long",
+          "description": "Alpenglow hitting the granite summits"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Scree/Boulders",
+          "urbanElements": {
+            "furniture": "Tent Platform",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2010-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "Campamento",
+            "Base Fitz Roy"
+          ],
+          "confidence": 0.87,
+          "rapidFuzzScore": 84
+        },
+        "exif": {
+          "fStop": "f/2.8",
+          "iso": 800,
+          "shutterSpeed": "1/50",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "A7S III",
+          "lensModel": "FE 24mm F1.4 GM",
+          "dateTimeOriginal": "2022:12:01 07:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Monte Fitz Roy",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 81346.77930056886,
+          "isOutlier": true,
+          "computedScore": 79,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 81347m)"
+          ],
+          "h3Index": "89cfa8bb42fffff"
+        },
+        "h3Index": "89cfa8bb42fffff",
+        "geocodingScore": 79,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.298505,
+          -49.850795
+        ]
+      },
+      "properties": {
+        "id": "REF-0024",
+        "coordinates": {
+          "lat": -49.850795,
+          "lng": -73.298505,
+          "corner": "Side-Lateral"
+        },
+        "timestamp": "2023-02-22T11:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "High glare from ice-filled water"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Ice/Moraine",
+          "urbanElements": {
+            "furniture": "Helideck (Boat)",
+            "vegetationScore": 0,
+            "architectureStyle": "Maritime"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "ESTANCIA CRISTINA",
+            "UPSALA"
+          ],
+          "confidence": 0.94,
+          "rapidFuzzScore": 91
+        },
+        "exif": {
+          "fStop": "f/11.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "24mm",
+          "make": "Canon",
+          "model": "EOS R6",
+          "lensModel": "RF 24-70mm F2.8 L",
+          "dateTimeOriginal": "2023:02:22 11:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Upsala",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 20373.04180794285,
+          "isOutlier": true,
+          "computedScore": 81,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 20373m)"
+          ],
+          "h3Index": "89cfadc9567ffff"
+        },
+        "h3Index": "89cfadc9567ffff",
+        "geocodingScore": 81,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.425446,
+          -50.273261
+        ]
+      },
+      "properties": {
+        "id": "REF-0025",
+        "coordinates": {
+          "lat": -50.273261,
+          "lng": -73.425446,
+          "corner": "Forest-Edge"
+        },
+        "timestamp": "2023-03-20T15:00:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-NorthWest",
+          "shadowDirection": "SouthEast",
+          "shadowLength": "Long",
+          "description": "Light filtering through dense Lenga canopy"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga",
+          "graffiti": "None",
+          "terrain": "Mossy Earth",
+          "urbanElements": {
+            "furniture": "Rustic Bench",
+            "vegetationScore": 0.9,
+            "architectureStyle": "Organic"
+          },
+          "temporalWindow": "2018-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Senda del Bosque",
+            "Spegazzini"
+          ],
+          "confidence": 0.96,
+          "rapidFuzzScore": 93
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 400,
+          "shutterSpeed": "1/125",
+          "focalLength": "35mm",
+          "make": "Fujifilm",
+          "model": "X-Pro3",
+          "lensModel": "XF 23mm F2 R WR",
+          "dateTimeOriginal": "2023:03:20 15:00:00"
+        },
+        "category": "Parque",
+        "groundedFromAnchor": "Glaciar Spegazzini",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 36833.42200484648,
+          "isOutlier": true,
+          "computedScore": 96,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 36833m)"
+          ],
+          "h3Index": "89cf1368657ffff"
+        },
+        "h3Index": "89cf1368657ffff",
+        "geocodingScore": 96,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.099393,
+          -49.292281
+        ]
+      },
+      "properties": {
+        "id": "REF-0026",
+        "coordinates": {
+          "lat": -49.292281,
+          "lng": -73.099393,
+          "corner": "Ice-Field"
+        },
+        "timestamp": "2022-12-25T13:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Blinding light on snow-covered glacier"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Permanent Ice",
+          "urbanElements": {
+            "furniture": "Crampon Track",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2000-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "Campo de Hielo",
+            "Patagonico Sur"
+          ],
+          "confidence": 0.8,
+          "rapidFuzzScore": 70
+        },
+        "exif": {
+          "fStop": "f/16.0",
+          "iso": 100,
+          "shutterSpeed": "1/2000",
+          "focalLength": "20mm",
+          "make": "Nikon",
+          "model": "Z9",
+          "lensModel": "Z 14-24mm f/2.8 S",
+          "dateTimeOriginal": "2022:12:25 13:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Cerro Torre",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 78732.69141585293,
+          "isOutlier": true,
+          "computedScore": 73,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 78733m)"
+          ],
+          "h3Index": "89cfa8ba44fffff"
+        },
+        "h3Index": "89cfa8ba44fffff",
+        "geocodingScore": 73,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.58318,
+          -50.233331
+        ]
+      },
+      "properties": {
+        "id": "REF-0027",
+        "coordinates": {
+          "lat": -50.233331,
+          "lng": -72.58318,
+          "corner": "Pier"
+        },
+        "timestamp": "2023-04-20T12:00:00Z",
+        "lighting": {
+          "sunPosition": "High-North",
+          "shadowDirection": "South",
+          "shadowLength": "Short",
+          "description": "Sun directly overhead reflecting on the pier"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Water/Wood",
+          "urbanElements": {
+            "furniture": "Pier Railing",
+            "vegetationScore": 0,
+            "architectureStyle": "Maritime Wood"
+          },
+          "temporalWindow": "2014-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "Embarcadero",
+            "Lago Argentino"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 97
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "35mm",
+          "make": "Sony",
+          "model": "A7R III",
+          "lensModel": "FE 35mm F1.8",
+          "dateTimeOriginal": "2023:04:20 12:00:00"
+        },
+        "category": "Transporte Público",
+        "groundedFromAnchor": "Lago Argentino",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 47030.38447511226,
+          "isOutlier": true,
+          "computedScore": 84,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 47030m)"
+          ],
+          "h3Index": "89cfac10dc7ffff"
+        },
+        "h3Index": "89cfac10dc7ffff",
+        "geocodingScore": 84,
+        "isAnchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.885817,
+          -49.335968
+        ]
+      },
+      "properties": {
+        "id": "REF-0028",
+        "coordinates": {
+          "lat": -49.335968,
+          "lng": -72.885817,
+          "corner": "Rear-Entrance"
+        },
+        "timestamp": "2023-05-30T16:00:00Z",
+        "lighting": {
+          "sunPosition": "Afternoon-West",
+          "shadowDirection": "East",
+          "shadowLength": "Long",
+          "description": "Deep shadows from the ranger station building"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "Insulated power line",
+          "shutterStyle": "Natural wood",
+          "treeType": "Ñire",
+          "graffiti": "None",
+          "terrain": "Gravel",
+          "urbanElements": {
+            "furniture": "Fire Extinguisher Box",
+            "vegetationScore": 0.5,
+            "architectureStyle": "National Park Modern"
+          },
+          "temporalWindow": "2010-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "GUARDAPARQUES",
+            "EMERGENCIAS"
+          ],
+          "confidence": 0.99,
+          "rapidFuzzScore": 100
+        },
+        "exif": {
+          "fStop": "f/4.0",
+          "iso": 200,
+          "shutterSpeed": "1/125",
+          "focalLength": "50mm",
+          "make": "Apple",
+          "model": "iPhone 14 Pro",
+          "lensModel": "Main Wide",
+          "dateTimeOriginal": "2023:05:30 16:00:00"
+        },
+        "category": "Otros",
+        "groundedFromAnchor": "Centro de Informes Guardaparque Ceferino Fonzo",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 75955.15680990857,
+          "isOutlier": true,
+          "computedScore": 93,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 75955m)"
+          ],
+          "h3Index": "89cfa88e667ffff"
+        },
+        "h3Index": "89cfa88e667ffff",
+        "geocodingScore": 93,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.038137,
+          -50.496697
+        ]
+      },
+      "properties": {
+        "id": "REF-0029",
+        "coordinates": {
+          "lat": -50.496697,
+          "lng": -73.038137,
+          "corner": "Upper-Walk"
+        },
+        "timestamp": "2023-01-31T11:00:00Z",
+        "lighting": {
+          "sunPosition": "Morning-North",
+          "shadowDirection": "South",
+          "shadowLength": "Medium",
+          "description": "Crisp morning air with no cloud cover"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "Lenga",
+          "graffiti": "None",
+          "terrain": "Rock and Soil",
+          "urbanElements": {
+            "furniture": "Trail Direction Sign",
+            "vegetationScore": 0.5,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2015-2024"
+        },
+        "ocr": {
+          "detectedText": [
+            "BALCON SUPERIOR",
+            "MIRADOR"
+          ],
+          "confidence": 0.98,
+          "rapidFuzzScore": 96
+        },
+        "exif": {
+          "fStop": "f/8.0",
+          "iso": 100,
+          "shutterSpeed": "1/800",
+          "focalLength": "24mm",
+          "make": "Sony",
+          "model": "A7 IV",
+          "lensModel": "FE 24-70mm F2.8 GM II",
+          "dateTimeOriginal": "2023:01:31 11:00:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Glaciar Perito Moreno",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 55643.41753606897,
+          "isOutlier": true,
+          "computedScore": 91,
+          "issues": [
+            "Anomalía Geográfica (Desvío de 55643m)"
+          ],
+          "h3Index": "89cf1349dabffff"
+        },
+        "h3Index": "89cf1349dabffff",
+        "geocodingScore": 91,
+        "isAnchor": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.043103,
+          -49.270974
+        ]
+      },
+      "properties": {
+        "id": "REF-0030",
+        "coordinates": {
+          "lat": -49.270974,
+          "lng": -73.043103,
+          "corner": "West-Face"
+        },
+        "timestamp": "2022-12-30T09:30:00Z",
+        "lighting": {
+          "sunPosition": "Morning-East",
+          "shadowDirection": "West",
+          "shadowLength": "Medium",
+          "description": "Low angle light highlighting rock texture"
+        },
+        "microPhysiognomy": {
+          "aerialCables": "None",
+          "shutterStyle": "N/A",
+          "treeType": "None",
+          "graffiti": "None",
+          "terrain": "Granite Rock",
+          "urbanElements": {
+            "furniture": "Survey Marker",
+            "vegetationScore": 0,
+            "architectureStyle": "N/A"
+          },
+          "temporalWindow": "2018-2023"
+        },
+        "ocr": {
+          "detectedText": [
+            "MONTE FITZ ROY",
+            "PATAGONIA"
+          ],
+          "confidence": 0.95,
+          "rapidFuzzScore": 92
+        },
+        "exif": {
+          "fStop": "f/5.6",
+          "iso": 100,
+          "shutterSpeed": "1/1000",
+          "focalLength": "16mm",
+          "make": "Canon",
+          "model": "EOS R3",
+          "lensModel": "RF 15-35mm F2.8 L",
+          "dateTimeOriginal": "2022:12:30 09:30:00"
+        },
+        "category": "Atracción",
+        "groundedFromAnchor": "Monte Fitz Roy",
+        "locationContext": "Parque Nacional Los Glaciares",
+        "validation": {
+          "distanceFromCenter": 81323.9881552808,
+          "isOutlier": true,
+          "computedScore": 82,
+          "issues": [
+            "Entorno botánico genérico",
+            "Anomalía Geográfica (Desvío de 81324m)"
+          ],
+          "h3Index": "89cfa8bb42fffff"
+        },
+        "h3Index": "89cfa8bb42fffff",
+        "geocodingScore": 82,
+        "isAnchor": false
+      }
+    }
+  ]
+}
