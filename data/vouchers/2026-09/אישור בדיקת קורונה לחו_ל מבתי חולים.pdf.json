@@ -17,7 +17,7 @@
       "lng": 34.8815
     },
     "h3_index": "892db05608fffff",
-    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama) | EXTRACTION_FAILED (guardrail sin fecha/coords) | OCR visual fallback (511 chars capa texto)",
     "passengerOrGuestName": null,
     "price": null,
     "currency": "null",

@@ -13,7 +13,7 @@
     "confirmationNumber": null,
     "location": "Booking_Slovenia_2015_HotelKrim.png",
     "coordinates": null,
-    "extraction_notes": "Extraído y geolocalizado localmente",
+    "extraction_notes": "Extraído y geolocalizado localmente | EXTRACTION_FAILED (guardrail sin fecha/coords) | OCR visual fallback (0 chars capa texto)",
     "passengerOrGuestName": null,
     "price": null,
     "currency": null,

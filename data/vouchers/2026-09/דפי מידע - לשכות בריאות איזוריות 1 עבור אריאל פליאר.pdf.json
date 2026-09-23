@@ -13,7 +13,7 @@
     "confirmationNumber": null,
     "location": "",
     "coordinates": null,
-    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion | EXTRACTION_FAILED (guardrail sin fecha/coords) | OCR visual fallback (3125 chars capa texto)",
     "passengerOrGuestName": null,
     "price": null,
     "currency": null,

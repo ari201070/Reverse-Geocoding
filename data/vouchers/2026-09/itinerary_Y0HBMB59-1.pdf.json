@@ -6,7 +6,7 @@
     "category": "activity",
     "supplier": "Salta → Iguazu",
     "title": "Salta → Iguazu",
-    "startDate": null,
+    "startDate": "2025-10-14",
     "startTime": "14:00",
     "endDate": null,
     "endTime": null,
@@ -17,7 +17,7 @@
       "lng": -64.3185
     },
     "h3_index": "89b3429530fffff",
-    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama) | OCR visual fallback (10321 chars capa texto)",
     "passengerOrGuestName": null,
     "price": 5278,
     "currency": "ILS",

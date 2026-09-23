@@ -14,7 +14,7 @@
     "location": "Best Western Hotel Hillerod",
     "coordinates": null,
     "h3_index": null,
-    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama) | EXTRACTION_FAILED (guardrail sin fecha/coords) | OCR visual fallback (2747 chars capa texto)",
     "passengerOrGuestName": null,
     "price": 1200,
     "currency": "DKK",

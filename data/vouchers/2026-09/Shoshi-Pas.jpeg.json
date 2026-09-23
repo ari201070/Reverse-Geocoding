@@ -13,7 +13,7 @@
     "confirmationNumber": null,
     "location": "Hotel Actual",
     "coordinates": null,
-    "extraction_notes": "Extraído y geolocalizado localmente",
+    "extraction_notes": "Extraído y geolocalizado localmente | OCR visual fallback (0 chars capa texto)",
     "passengerOrGuestName": null,
     "price": null,
     "currency": null,

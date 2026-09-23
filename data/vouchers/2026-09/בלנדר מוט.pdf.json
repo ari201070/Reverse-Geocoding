@@ -14,7 +14,7 @@
     "location": "אילת-ביג 232",
     "coordinates": null,
     "h3_index": null,
-    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama) | EXTRACTION_FAILED (guardrail sin fecha/coords) | OCR visual fallback (741 chars capa texto)",
     "passengerOrGuestName": null,
     "price": 239,
     "currency": "ARS",

@@ -6,19 +6,23 @@
     "category": "activity",
     "supplier": "",
     "title": "pdf24-Trip Print _ TripIt",
-    "startDate": null,
-    "startTime": null,
+    "startDate": "2023-10-02",
+    "startTime": "10:00",
     "endDate": null,
     "endTime": null,
     "confirmationNumber": null,
-    "location": "",
-    "coordinates": null,
-    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion",
+    "location": "Viale Vaticano, 84, 00165 Roma RM, Italy",
+    "coordinates": {
+      "lat": 41.9074,
+      "lng": 12.455
+    },
+    "extraction_notes": "Ingesta manual 2026-09-15; geocodificacion pendiente de verificacion | OCR visual fallback (18012 chars capa texto)",
     "passengerOrGuestName": null,
     "price": null,
-    "currency": null,
+    "currency": "EUR",
     "details": null,
     "summary": "Ingestado desde: G:\\האחסון שלי\\pdf24-Trip Print _ TripIt.pdf",
-    "source_path": "G:\\האחסון שלי\\pdf24-Trip Print _ TripIt.pdf"
+    "source_path": "G:\\האחסון שלי\\pdf24-Trip Print _ TripIt.pdf",
+    "h3_index": "891e805058bffff"
   }
 }

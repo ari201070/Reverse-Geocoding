@@ -6,7 +6,7 @@
     "category": "activity",
     "supplier": "Rome Termini via Giolitti",
     "title": "Rome Termini via Giolitti",
-    "startDate": null,
+    "startDate": "2023-09-30",
     "startTime": "00:00",
     "endDate": null,
     "endTime": null,
@@ -17,10 +17,10 @@
       "lng": 12.5036
     },
     "h3_index": "891e8052a2fffff",
-    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama)",
+    "extraction_notes": "Extraído localmente vía PDF-Parse + Llama 3.2 (Ollama) | OCR visual fallback (2776 chars capa texto)",
     "passengerOrGuestName": null,
     "price": 12,
-    "currency": "€",
+    "currency": "EUR",
     "details": null,
     "summary": "Voucher detectado: Rome Termini via Giolitti"
   }
