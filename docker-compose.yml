@@ -1,17 +1,19 @@
 version: '3.8'
+
 services:
+  # Servicio 1: Base de Datos Geoespacial Activa
   spatial-db:
     image: postgis/postgis:16-3.4-alpine
     container_name: reverse_geocoding_db
     environment:
       - POSTGRES_USER=ariel_geodev
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD} # Interpolación aislada de tu .env:10
       - POSTGRES_DB=photo_catalog_pg
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./migrations:/docker-entrypoint-initdb.d
+      - ./migrations:/docker-entrypoint-initdb.d # Inicialización idempotente automática
     command: >
       postgres 
       -c shared_buffers=512MB 
@@ -23,6 +25,25 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+
+  # Servicio 2: Entorno Aislado de Ejecución para mejor-sqlite3 y scripts
+  migration-runner:
+    image: node:20-alpine
+    container_name: vatican_migration_runner
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    depends_on:
+      spatial-db:
+        condition: service_healthy # No arranca hasta que PostGIS esté 100% operativo
+    # Guardrail de entrada: Instala herramientas de compilación de Linux e instala las dependencias de forma nativa
+    command: >
+      sh -c "apk add --no-cache make gcc g++ python3 && 
+             npm install better-sqlite3 h3-js && 
+             node scripts/migrate-to-postgres.js"
+
 volumes:
   pgdata:
     driver: local
