@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  spatial-db:
+    image: postgis/postgis:16-3.4-alpine
+    container_name: reverse_geocoding_db
+    environment:
+      - POSTGRES_USER=ariel_geodev
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=photo_catalog_pg
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d
+    command: >
+      postgres 
+      -c shared_buffers=512MB 
+      -c maintenance_work_mem=256MB 
+      -c work_mem=64MB 
+      -c max_connections=50
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ariel_geodev -d photo_catalog_pg"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+volumes:
+  pgdata:
+    driver: local
