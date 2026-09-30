@@ -1,6 +1,6 @@
 # Informe Resolucion Visual OCR + POI - 04-Abril 2023
 
-**Fotos pending escaneadas:** 64 en `F:\2023\04-Abril`
+**Fotos pending escaneadas:** 65 en `F:\2023\04-Abril`
 **OCR local:** `easyocr`/`qwen2.5-vl:7b` (Ollama) para carteles/placas + descripcion POI
 **Geocodificacion:** `SpatialCache` + `Nominatim` local
 
@@ -22,7 +22,7 @@
 | *ninguna* | - | - | - | - | - | - |
 
 ## Pendientes restantes
-- Fotos que permanecen `pending_osint` (sin cartel/POI y sin ancla <15min): **64**
+- Fotos que permanecen `pending_osint` (sin cartel/POI y sin ancla <15min): **65**
 - Se mantiene `place_name=pending_osint`, `latitude=NULL`, `h3_index=NULL` (cero coordenadas inventadas)
 
 ## Validacion
