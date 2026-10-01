@@ -1,0 +1,110 @@
+[
+ {
+  "file": "B&B Marbò Florence_ אישור.pdf.json",
+  "startDate": "2023-10-05",
+  "startTime_raw": "13:30",
+  "startTime24": "13:30:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "B&B Marbò Florence",
+  "lat": null,
+  "lng": null,
+  "h3": null
+ },
+ {
+  "file": "Boarding pass.pdf.json",
+  "startDate": "2023-10-02",
+  "startTime_raw": "11:30",
+  "startTime24": "11:30:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "LIRAN",
+  "lat": 32.6475,
+  "lng": 54.5644,
+  "h3": "89432c0d0cbffff"
+ },
+ {
+  "file": "Capilla Sixtina y los Museos Vaticanos.pdf.json",
+  "startDate": "2023-10-03",
+  "startTime_raw": "14:30",
+  "startTime24": "14:30:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Viale Vaticano, 95, 00192 Roma RM, Italia",
+  "lat": 41.9074,
+  "lng": 12.455,
+  "h3": "891e805058bffff"
+ },
+ {
+  "file": "Colosseum, Forum, and Palatine Hill Tour.pdf.json",
+  "startDate": "2023-10-04",
+  "startTime_raw": "02:30",
+  "startTime24": "02:30:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Arch of Constantine",
+  "lat": 41.8898,
+  "lng": 12.4907,
+  "h3": "891e80501a7ffff"
+ },
+ {
+  "file": "DWAM-6656431.pdf.json",
+  "startDate": "2023-10-16",
+  "startTime_raw": null,
+  "startTime24": null,
+  "endDate": null,
+  "endTime": null,
+  "location": "Wizz Air Malta Limited",
+  "lat": null,
+  "lng": null,
+  "h3": null
+ },
+ {
+  "file": "Fiumicino Airport to Rome Termini.pdf.json",
+  "startDate": "2023-10-02",
+  "startTime_raw": "00:00",
+  "startTime24": "00:00:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Rome Termini via Giolitti",
+  "lat": 41.8987,
+  "lng": 12.5036,
+  "h3": "891e8052a2fffff"
+ },
+ {
+  "file": "Ryanair_אישור טיסה.pdf.json",
+  "startDate": "2023-10-02",
+  "startTime_raw": "11:30",
+  "startTime24": "11:30:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Tel Aviv to Rome Fiumicino",
+  "lat": null,
+  "lng": null,
+  "h3": null
+ },
+ {
+  "file": "Sun Moon_חדש אישור.pdf.json",
+  "startDate": "2023-10-17",
+  "startTime_raw": "12:00",
+  "startTime24": "12:00:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Sun Moon",
+  "lat": 35.7507,
+  "lng": 139.7496,
+  "h3": "892f5a30c2bffff"
+ },
+ {
+  "file": "pdf24-Trip Print _ TripIt.pdf.json",
+  "startDate": "2023-10-02",
+  "startTime_raw": "10:00",
+  "startTime24": "10:00:00",
+  "endDate": null,
+  "endTime": null,
+  "location": "Viale Vaticano, 84, 00165 Roma RM, Italy",
+  "lat": 41.9074,
+  "lng": 12.455,
+  "h3": "891e805058bffff"
+ }
+]
