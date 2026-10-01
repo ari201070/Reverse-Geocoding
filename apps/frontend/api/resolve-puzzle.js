@@ -19,6 +19,34 @@ import { MASTER_PROMPTS, cleanJSONResponse } from './utils/prompts.js';
 // Fast in-memory caching to bypass external rate limits and ensure identical coordinates get identical results
 const coordinateResolutionCache = new Map();
 
+// PROHIBICION ABSOLUTA DE VAULTED_AT: `vaulted_at` es fecha tecnica de archivado
+// del JSON (p. ej. 2026-09-11T...), jamas ancla temporal del acontecimiento.
+// Unico anclaje valido: parsed.startDate/startTime/endDate/endTime, horarios de
+// transporte y dias de ingreso a hitos. Toda funcion que reciba vouchers debe
+// sanitizarlos con sanitizeVoucherTemporal() antes de indexar perimetros diarios.
+const FORBIDDEN_TEMPORAL_FIELDS = Object.freeze(['vaulted_at', 'archived_at', 'stored_at', 'file_created_at']);
+function sanitizeVoucherTemporal(voucher) {
+    if (!voucher || typeof voucher !== 'object') return voucher;
+    const clean = { ...voucher };
+    for (const f of FORBIDDEN_TEMPORAL_FIELDS) delete clean[f];
+    if (clean.parsed && typeof clean.parsed === 'object') {
+        const p = { ...clean.parsed };
+        for (const f of FORBIDDEN_TEMPORAL_FIELDS) delete p[f];
+        clean.parsed = p;
+    }
+    return clean;
+}
+function getVoucherEventDate(voucher) {
+    const v = sanitizeVoucherTemporal(voucher);
+    const p = (v && v.parsed) || v || {};
+    return {
+        startDate: p.startDate || p.fecha_reserva || p.fecha || null,
+        startTime: p.startTime || p.hora_salida || p.horario || null,
+        endDate: p.endDate || null,
+        endTime: p.endTime || p.hora_llegada || null,
+    };
+}
+
 function isGenericPhotoName(name) {
     if (!name) return true;
     const nameLower = name.trim().toLowerCase();
@@ -123,12 +151,17 @@ function enforceRigidBurstContinuity(validated, anonymizedPhotos) {
         if (bestNeighbor && minTimeDiff <= INHERIT_WINDOW_MS) {
             console.log(`[Herencia Radical] Foto pendiente ${current.result.photoId} heredó de vecina confirmada ${bestNeighbor.result.photoId} (diff: ${(minTimeDiff/1000).toFixed(1)}s) => POI: "${bestNeighbor.result.name}"`);
             
-            current.result.lat = bestNeighbor.result.lat;
-            current.result.lng = bestNeighbor.result.lng;
+            // Herencia simbiotica completa: 4 decimales + descriptor + H3, pisa score visual
+            current.result.lat = bestNeighbor.result.lat !== null ? Math.round(bestNeighbor.result.lat * 10000) / 10000 : null;
+            current.result.lng = bestNeighbor.result.lng !== null ? Math.round(bestNeighbor.result.lng * 10000) / 10000 : null;
             current.result.name = bestNeighbor.result.name;
             current.result.evidence = 'TIME_PROXIMITY';
             current.result.source = 'INHERITED';
             if (bestNeighbor.result.place_id) current.result.place_id = bestNeighbor.result.place_id;
+            if (bestNeighbor.result.h3_index) current.result.h3_index = bestNeighbor.result.h3_index;
+            else if (current.result.lat !== null && current.result.lng !== null) {
+                try { current.result.h3_index = latLngToCell(current.result.lat, current.result.lng, 9); } catch (_) {}
+            }
         } else {
             // Si queda vacía o no resuelta y no tiene vecino confirmado a menos de 15 minutos, forzar marcador vacío descriptivo
             if (!current.result.name || current.result.name === 'UNRESOLVED' || current.result.name === '- - -') {

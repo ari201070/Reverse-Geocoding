@@ -33,6 +33,9 @@ function saveToVault(fileBuffer: Buffer, fileName: string, parsedResult: any): s
       i++;
     }
     fs.writeFileSync(dest, fileBuffer);
+    // NOTA RIGIDA: `vaulted_at` es SOLO marca tecnica de archivado. PROHIBIDO usarlo
+    // como ancla temporal del acontecimiento. Fechas reales: parsed.startDate/
+    // startTime/endDate/endTime (ver sanitizeVoucherTemporal en api/resolve-puzzle.js).
     fs.writeFileSync(dest + '.json', JSON.stringify({
       vaulted_at: now.toISOString(),
       source_name: fileName,
