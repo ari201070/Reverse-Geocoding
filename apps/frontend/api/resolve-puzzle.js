@@ -1,5 +1,8 @@
 // api/resolve-puzzle.js - Agentic Batch Consensus Orchestrator (v5.1 - Industrial Grade)
 import 'dotenv/config';
+import { exec } from 'child_process';
+import { promisify } from 'util';
+const execAsync = promisify(exec);
 import memoryStore from './memory-store.js';
 import findPoiHandler from './find-poi.js';
 import { sanitizeString as sanitize, reconcileName, calculateConsensus, reconcileOcrDb } from './python-service.js';
@@ -23,10 +26,120 @@ function isGenericPhotoName(name) {
            nameLower === 'lote de fotos' || 
            nameLower === 'heurísticas locales' || 
            nameLower === 'local heuristics' ||
+           nameLower === '- - -' ||
            nameLower.endsWith('.jpg') ||
            nameLower.endsWith('.jpeg') ||
            nameLower.endsWith('.png') ||
            /^\d+\.\d+,\s*\d+\.\d+$/.test(nameLower);
+}
+
+async function invokeStayOpenScript() {
+    const pythonExe = "C:\\Python313\\python.exe";
+    const scriptPath = "C:\\Users\\flier\\GitHub\\Reverse-Geocoding\\sync_exif_october_stayopen.py";
+    const command = `"${pythonExe}" "${scriptPath}"`;
+    console.log(`[StayOpen Invocation] Ejecutando script de stay_open con rutas absolutas de Windows: ${command}`);
+    try {
+        const { stdout, stderr } = await execAsync(command);
+        console.log(`[StayOpen Invocation] STDOUT:\n${stdout}`);
+        if (stderr) console.warn(`[StayOpen Invocation] STDERR:\n${stderr}`);
+    } catch (err) {
+        console.error(`[StayOpen Invocation] Error al ejecutar el script stay_open:`, err.message);
+    }
+}
+
+function enforceRigidBurstContinuity(validated, anonymizedPhotos) {
+    if (!validated || !validated.results || validated.results.length === 0) return;
+
+    // 1. Asociar metadatos temporales
+    const resultsWithMeta = validated.results.map(r => {
+        const photo = anonymizedPhotos.find(p => p.id === r.photoId);
+        return {
+            result: r,
+            photo: photo,
+            timestamp: photo ? (photo.timestamp || 0) : 0
+        };
+    });
+
+    // Ordenar cronológicamente
+    resultsWithMeta.sort((a, b) => a.timestamp - b.timestamp);
+
+    const isConfirmed = (r) => {
+        if (!r) return false;
+        if (r.lat === null || r.lng === null || r.lat === 0 || r.lng === 0) return false;
+        if (!r.name || r.name === '- - -' || r.name.toLowerCase() === 'unresolved' || isGenericPhotoName(r.name)) return false;
+        return true;
+    };
+
+    // 2. Primera pasada: Evitar alternar métodos / POIs de forma secuencial en una misma ráfaga de tiempo (< 10 minutos)
+    // "Queda estrictamente prohibido que el motor intente adivinar o alternar entre métodos de forma secuencial en una misma ráfaga de tiempo (como mezclar marcas genéricas con rangos de itinerario en intervalos de menos de 10 minutos)."
+    // Si hay fotos confirmadas a menos de 10 minutos de distancia con POIs diferentes, unificamos al de mayor prioridad/confianza
+    const MAX_ALTERNATION_WINDOW_MS = 10 * 60 * 1000; // 10 minutos
+    for (let i = 0; i < resultsWithMeta.length; i++) {
+        const current = resultsWithMeta[i];
+        if (!isConfirmed(current.result)) continue;
+
+        for (let j = i + 1; j < resultsWithMeta.length; j++) {
+            const other = resultsWithMeta[j];
+            if (!isConfirmed(other.result)) continue;
+
+            const timeDiff = Math.abs(current.timestamp - other.timestamp);
+            if (timeDiff <= MAX_ALTERNATION_WINDOW_MS) {
+                if (current.result.name !== other.result.name) {
+                    console.log(`[Anti-Alternación Veto] Alternación detectada dentro de ${timeDiff/1000}s entre "${current.result.name}" y "${other.result.name}". Forzando coherencia determinista radical.`);
+                    other.result.name = current.result.name;
+                    other.result.lat = current.result.lat;
+                    other.result.lng = current.result.lng;
+                    other.result.source = current.result.source;
+                    other.result.evidence = 'CONSENSO_VECINDARIO';
+                    if (current.result.place_id) other.result.place_id = current.result.place_id;
+                }
+            }
+        }
+    }
+
+    // 3. Segunda pasada: HERENCIA RADICAL EN RÁFAGAS (15 minutos = 900000 ms)
+    // "Si la diferencia de tiempo (DateTimeOriginal) entre una foto pendiente (o que devolvió vacío - - -) y la foto inmediatamente anterior o posterior es MENOR a 15 minutos, el script debe HEREDAR OBLIGATORIAMENTE Y SIN EXCEPCIONES la latitud, longitud, landmark y celda H3 exacta de su vecina confirmada."
+    for (let i = 0; i < resultsWithMeta.length; i++) {
+        const current = resultsWithMeta[i];
+        if (isConfirmed(current.result)) continue; // Ya confirmada con éxito, no se altera
+
+        // Buscar el vecino confirmado más cercano
+        let bestNeighbor = null;
+        let minTimeDiff = Infinity;
+
+        for (let j = 0; j < resultsWithMeta.length; j++) {
+            if (i === j) continue;
+            const candidate = resultsWithMeta[j];
+            if (!isConfirmed(candidate.result)) continue;
+
+            const timeDiff = Math.abs(current.timestamp - candidate.timestamp);
+            if (timeDiff < minTimeDiff) {
+                minTimeDiff = timeDiff;
+                bestNeighbor = candidate;
+            }
+        }
+
+        const INHERIT_WINDOW_MS = 15 * 60 * 1000; // 15 minutos
+        if (bestNeighbor && minTimeDiff <= INHERIT_WINDOW_MS) {
+            console.log(`[Herencia Radical] Foto pendiente ${current.result.photoId} heredó de vecina confirmada ${bestNeighbor.result.photoId} (diff: ${(minTimeDiff/1000).toFixed(1)}s) => POI: "${bestNeighbor.result.name}"`);
+            
+            current.result.lat = bestNeighbor.result.lat;
+            current.result.lng = bestNeighbor.result.lng;
+            current.result.name = bestNeighbor.result.name;
+            current.result.evidence = 'TIME_PROXIMITY';
+            current.result.source = 'INHERITED';
+            if (bestNeighbor.result.place_id) current.result.place_id = bestNeighbor.result.place_id;
+        } else {
+            // Si queda vacía o no resuelta y no tiene vecino confirmado a menos de 15 minutos, forzar marcador vacío descriptivo
+            if (!current.result.name || current.result.name === 'UNRESOLVED' || current.result.name === '- - -') {
+                current.result.name = '- - -';
+                current.result.lat = null;
+                current.result.lng = null;
+                current.result.source = 'UNRESOLVED';
+                current.result.evidence = 'NONE';
+            }
+        }
+    }
 }
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
@@ -1663,6 +1776,12 @@ export default async function (req, res) {
         // Aplicar Consenso de Vecindario y Propagación Agresiva (ContextGeoIntegrator)
         applyNeighborhoodConsensusAndPropagation(validated, anonymizedPhotos);
 
+        // === REGLA DE CONTINUIDAD RADICAL EN RÁFAGAS (15 minutos / sin excepciones) ===
+        // Si una foto pendiente (o vacía / - - -) está dentro de 15 min de una vecina confirmada,
+        // debe heredar obligatoriamente lat, lng, landmark y H3 exactos de su vecina,
+        // con prioridad absoluta sobre cualquier inferencia probabilística del modelo visual.
+        enforceRigidBurstContinuity(validated, anonymizedPhotos);
+
         // PASO 7 DETERMINÍSTICO: Regla matemática exacta de herencia de 15 minutos en la misma celda H3
         const anchorResult = validated.results.find(r => r.isAnchor);
         const anchorPhoto = anonymizedPhotos.find(p => p.id === anchorResult?.photoId) || anonymizedPhotos[0];
@@ -1759,6 +1878,7 @@ export default async function (req, res) {
             }
         }
         
+        await invokeStayOpenScript();
         await memoryStore.saveClusterResult(clusterHash, validated);
         return res.json(validated);
 
@@ -1947,6 +2067,7 @@ export default async function (req, res) {
                 console.error('[Puzzle Fallback] Cache save failed:', cacheErr.message);
             }
             
+            await invokeStayOpenScript();
             return res.status(200).json(fallbackResult);
         } catch (fallbackErr) {
             console.error('[Puzzle Agent] Critical Fallback Error:', fallbackErr);
