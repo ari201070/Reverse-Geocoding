@@ -36,15 +36,85 @@ function sanitizeVoucherTemporal(voucher) {
     }
     return clean;
 }
+// PARSING ESTRICTO DE HORA DE VOUCHER (conversion matematica AM/PM -> 24h).
+// Fuente Unica de Verdad L0/L1: el string del comprobante manda. "2:30 PM" =>
+// "14:30:00"; "02:30" (formato 24h sin sufijo) se respeta tal cual. Sin
+// predicciones ni aproximaciones: formato irreconocible devuelve null.
+function parseVoucherTimeStrict(raw) {
+    if (raw === null || raw === undefined) return null;
+    const s = String(raw).trim().toUpperCase().replace(/\./g, '');
+    const m = s.match(/^(\d{1,2})(?::(\d{2}))?(?::(\d{2}))?\s*([AP])\.?\s*M\.?$/);
+    if (m) {
+        let hh = parseInt(m[1], 10);
+        const mm = m[2] !== undefined ? parseInt(m[2], 10) : 0;
+        const ss = m[3] !== undefined ? parseInt(m[3], 10) : 0;
+        const isPM = m[4] === 'P';
+        if (hh < 1 || hh > 12 || mm > 59 || ss > 59) return null;
+        if (isPM && hh !== 12) hh += 12;
+        if (!isPM && hh === 12) hh = 0;
+        return String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0') + ':' + String(ss).padStart(2, '0');
+    }
+    const m24 = s.match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?$/);
+    if (m24) {
+        const hh = parseInt(m24[1], 10);
+        const mm = parseInt(m24[2], 10);
+        const ss = m24[3] !== undefined ? parseInt(m24[3], 10) : 0;
+        if (hh > 23 || mm > 59 || ss > 59) return null;
+        return String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0') + ':' + String(ss).padStart(2, '0');
+    }
+    return null;
+}
 function getVoucherEventDate(voucher) {
     const v = sanitizeVoucherTemporal(voucher);
     const p = (v && v.parsed) || v || {};
-    return {
-        startDate: p.startDate || p.fecha_reserva || p.fecha || null,
-        startTime: p.startTime || p.hora_salida || p.horario || null,
-        endDate: p.endDate || null,
-        endTime: p.endTime || p.hora_llegada || null,
-    };
+    const startDate = p.startDate || p.fecha_reserva || p.fecha || null;
+    const endDate = p.endDate || startDate || null;
+    const startTime24 = parseVoucherTimeStrict(p.startTime ?? p.startTime24h ?? p.hora_salida ?? p.horario ?? null);
+    const endTime24 = parseVoucherTimeStrict(p.endTime ?? p.hora_llegada ?? null);
+    let windowStartMs = null;
+    let windowEndMs = null;
+    if (startDate && startTime24) {
+        const t = Date.parse(startDate + 'T' + startTime24);
+        if (!Number.isNaN(t)) windowStartMs = t;
+    }
+    if (endDate && endTime24) {
+        const t = Date.parse(endDate + 'T' + endTime24);
+        if (!Number.isNaN(t)) windowEndMs = t;
+    } else if (windowStartMs !== null) {
+        windowEndMs = windowStartMs; // ventana puntual: solo inicio validado
+    }
+    return { startDate, startTime24, endDate, endTime24, windowStartMs, windowEndMs };
+}
+// BLOQUE DE METADATOS EXACTO DEL COMPROBANTE (cero mapeos genericos).
+// Extrae obligatoriamente: string exacto del punto (location/Redemption Point/
+// supplier/title), coordinates.lat/lng del hito (4 decimales) y celda H3 res 9
+// (la del voucher o calculada). Prohibido devolver etiquetas genericas.
+function buildVoucherMetadataBlock(voucher) {
+    const v = sanitizeVoucherTemporal(voucher);
+    const p = (v && v.parsed) || v || {};
+    const place = p.location || p.redemption_point || p.redemptionPoint || p.supplier || p.title || null;
+    const coords = p.coordinates || {};
+    const latRaw = coords.lat ?? p.lat ?? null;
+    const lngRaw = coords.lng ?? p.lng ?? null;
+    if (place === null || latRaw === null || lngRaw === null) return null;
+    const lat = Math.round(Number(latRaw) * 10000) / 10000;
+    const lng = Math.round(Number(lngRaw) * 10000) / 10000;
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+    let h3 = p.h3_index || p.h3Index || null;
+    if (!h3) {
+        try { h3 = latLngToCell(lat, lng, 9); } catch (_) { h3 = null; }
+    }
+    return { place, lat, lng, h3_index: h3, source: 'VOUCHER_STRICT' };
+}
+// CRUCE EXACTO FOTO<->VENTANA DEL ACONTECIMIENTO (DateTimeOriginal en ms).
+// toleranceMinMs cubre la rafaga posterior al inicio (herencia simbiotica del
+// bloque exacto; jamas celdas vacias dentro de la ventana).
+function photoInVoucherWindow(photoTimestampMs, voucherEvent, toleranceMinMs) {
+    if (photoTimestampMs === null || photoTimestampMs === undefined) return false;
+    if (!voucherEvent || voucherEvent.windowStartMs === null) return false;
+    const tol = toleranceMinMs !== undefined ? toleranceMinMs : 0;
+    return photoTimestampMs >= voucherEvent.windowStartMs
+        && photoTimestampMs <= (voucherEvent.windowEndMs + tol);
 }
 
 function isGenericPhotoName(name) {
