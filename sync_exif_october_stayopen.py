@@ -67,7 +67,7 @@ class ExifSession:
         self.__init__()
 
 
-def write_group(sess, files, lat, lng, city, h3_idx, place=None):
+def write_group(sess, files, lat, lng, city, h3_idx, place=None, url=None):
     ref_lat = 'N' if lat >= 0 else 'S'
     ref_lng = 'E' if lng >= 0 else 'W'
     label = place or city
@@ -76,6 +76,12 @@ def write_group(sess, files, lat, lng, city, h3_idx, place=None):
         json.dumps({"place": label, "evento": "viaje_italia_2023",
                     "metodo": "VOUCHER_STRICT"},
                    ensure_ascii=False))
+    
+    # Base URL opcional
+    base_url_arg = []
+    if url:
+        base_url_arg = ['-XMP-xmp:BaseURL=' + url]
+    
     ok, fail = 0, []
     for i in range(0, len(files), 8):
         part = files[i:i + 8]
@@ -86,7 +92,11 @@ def write_group(sess, files, lat, lng, city, h3_idx, place=None):
                 '-GPSLongitudeRef=' + ref_lng,
                 '-GPSVersionID=2 3 0 0',
                 '-ImageDescription=' + label,
-                '-UserComment=' + user_comment] + part
+                '-UserComment=' + user_comment] + base_url_arg + part
+        try:
+            out = sess.run(args, timeout=60)
+            # ... (rest of function)
+
         try:
             out = sess.run(args, timeout=60)
             if 'updated' in out.lower() and "weren't" not in out.lower():
