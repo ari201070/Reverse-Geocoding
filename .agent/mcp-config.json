@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "webfetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

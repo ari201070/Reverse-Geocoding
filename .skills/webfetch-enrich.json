@@ -1,0 +1,41 @@
+{
+  "id": "webfetch-enrich",
+  "name": "Enriquecimiento Documental de Metadatos Web",
+  "description": "Orquesta de manera determinista la validación de URLs (GitHub, comprobantes, POIs) vía WebFetch y coordina la persistencia e inyección física de -XMP-xmp:BaseURL en archivos .jpg.",
+  "triggers": [
+    "validar repositorio de control",
+    "extraer urls de comprobantes",
+    "scrapear informacion de hoteles o restaurantes",
+    "inyectar xmp baseurl"
+  ],
+  "pipeline": {
+    "step_1_validation": {
+      "tool": "webfetch",
+      "action": "fetch",
+      "description": "Extrae el contenido de la URL objetivo sanitizado en Markdown para validar la legitimidad del documento o POI."
+    },
+    "step_2_persistence": {
+      "endpoint": "/api/resolve-puzzle.js",
+      "method": "POST",
+      "payload": {
+        "photo_name": "{{context.image_path}}",
+        "validated_url": "{{step_1_validation.url}}",
+        "status": "VALIDATED"
+      },
+      "description": "Registra la URL verificada en la tabla spatial_cache de la base de datos local SQLite (photo_catalog.db)."
+    },
+    "step_3_automation": {
+      "script": "python sync_exif_october_stayopen.py",
+      "args": [
+        "--db", "photo_catalog.db",
+        "--image", "{{context.image_path}}"
+      ],
+      "description": "Invoca el script pesado de Python en Windows para ejecutar la inyección del metadato físico mediante ExifTool."
+    }
+  },
+  "constraints": {
+    "os": "windows",
+    "required_tags": ["-XMP-xmp:BaseURL"],
+    "concurrency": "sequential"
+  }
+}
