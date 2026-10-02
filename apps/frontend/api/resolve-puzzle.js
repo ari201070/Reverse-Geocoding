@@ -96,6 +96,7 @@ function buildVoucherMetadataBlock(voucher) {
     const coords = p.coordinates || {};
     const latRaw = coords.lat ?? p.lat ?? null;
     const lngRaw = coords.lng ?? p.lng ?? null;
+    const url = p.url || p.link || p.voucher_url || null;
     if (place === null || latRaw === null || lngRaw === null) return null;
     const lat = Math.round(Number(latRaw) * 10000) / 10000;
     const lng = Math.round(Number(lngRaw) * 10000) / 10000;
@@ -104,7 +105,7 @@ function buildVoucherMetadataBlock(voucher) {
     if (!h3) {
         try { h3 = latLngToCell(lat, lng, 9); } catch (_) { h3 = null; }
     }
-    return { place, lat, lng, h3_index: h3, source: 'VOUCHER_STRICT' };
+    return { place, lat, lng, h3_index: h3, source: 'VOUCHER_STRICT', voucher_url: url };
 }
 // CRUCE EXACTO FOTO<->VENTANA DEL ACONTECIMIENTO (DateTimeOriginal en ms).
 // toleranceMinMs cubre la rafaga posterior al inicio (herencia simbiotica del
