@@ -157,7 +157,7 @@ def main():
     cur = con.cursor()
     cur.execute('''
         SELECT filename, latitude, longitude, city, location_name,
-               h3_index, location_source
+               h3_index, location_source, voucher_url
         FROM photos
         WHERE date_taken LIKE '2023-10-%'
           AND latitude IS NOT NULL AND longitude IS NOT NULL
@@ -176,7 +176,7 @@ def main():
     clusters = {}
     force = set()
     no_fisico = no_jpg = 0
-    for fn, lat, lng, city, loc_name, h3_db, src in rows:
+    for fn, lat, lng, city, loc_name, h3_db, src, vurl in rows:
         if not fn.lower().endswith(('.jpg', '.jpeg')):
             no_jpg += 1
             continue
@@ -191,7 +191,7 @@ def main():
             continue
         place = loc_name or city or 'Italy'
         key = (round(lat, 4), round(lng, 4), city or 'Italy', place,
-               h3_db)
+               h3_db, vurl)
         clusters.setdefault(key, []).append(fp)
         if src == 'VOUCHER_STRICT':
             force.add(os.path.normcase(fp))
@@ -236,7 +236,7 @@ def main():
 
         actualizados = omitidos = 0
         fallidos = []
-        for n, ((lat, lng, city, place, h3_db), fpaths) in enumerate(
+        for n, ((lat, lng, city, place, h3_db, vurl), fpaths) in enumerate(
                 sorted(clusters.items()), 1):
             todo = [f for f in fpaths
                     if os.path.normcase(f) not in have
@@ -249,7 +249,7 @@ def main():
                 continue
             h3_idx = h3_db or h3.latlng_to_cell(lat, lng, 9)
             ok, fail = write_group(sess, todo, lat, lng, city, h3_idx,
-                                   place)
+                                   place, url=vurl)
             actualizados += ok
             fallidos.extend(fail)
             print('[{}/{}] {} {} -> {} ok, {} fail'.format(
@@ -262,14 +262,14 @@ def main():
             time.sleep(2)
             by_c = {}
             for f in fallidos:
-                for (la, ln, ci, pl, hdb), lst in clusters.items():
+                for (la, ln, ci, pl, hdb, vu), lst in clusters.items():
                     if f in lst:
-                        by_c.setdefault((la, ln, ci, pl, hdb), []).append(f)
+                        by_c.setdefault((la, ln, ci, pl, hdb, vu), []).append(f)
                         break
             retry_fail = []
-            for (la, ln, ci, pl, hdb), lst in by_c.items():
+            for (la, ln, ci, pl, hdb, vu), lst in by_c.items():
                 h3_idx = hdb or h3.latlng_to_cell(la, ln, 9)
-                ok, fail = write_group(sess, lst, la, ln, ci, h3_idx, pl)
+                ok, fail = write_group(sess, lst, la, ln, ci, h3_idx, pl, url=vu)
                 actualizados += ok
                 retry_fail.extend(fail)
                 print('  retry {} -> {} ok, {} fail'.format(pl[:40], ok,
