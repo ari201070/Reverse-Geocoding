@@ -95,20 +95,14 @@ def write_group(sess, files, lat, lng, city, h3_idx, place=None, url=None):
                 '-UserComment=' + user_comment] + base_url_arg + part
         try:
             out = sess.run(args, timeout=60)
-            # ... (rest of function)
-
-        try:
-            out = sess.run(args, timeout=60)
             if 'updated' in out.lower() and "weren't" not in out.lower():
                 ok += len(part)
             elif 'were' in out and "weren't" not in out.lower():
                 ok += len(part)
             else:
-                # cuenta individual
                 n_ok = sum(1 for l in out.splitlines()
                            if 'updated' in l.lower() and
                            "weren't" not in l.lower())
-                # fallback: si hay cualquier 'updated' sin negacion, asume ok
                 if 'files updated' in out.lower() and "weren't" not in out.lower():
                     ok += len(part)
                 else:
@@ -118,7 +112,6 @@ def write_group(sess, files, lat, lng, city, h3_idx, place=None, url=None):
             if 'timeout' in str(e).lower():
                 sess.restart()
                 print('    sesion reiniciada')
-            # reintento archivo por archivo dentro del chunk
             for f in part:
                 single = args[:len(args) - len(part)] + [f]
                 try:

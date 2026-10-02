@@ -222,12 +222,15 @@ function enforceRigidBurstContinuity(validated, anonymizedPhotos) {
         if (bestNeighbor && minTimeDiff <= INHERIT_WINDOW_MS) {
             console.log(`[Herencia Radical] Foto pendiente ${current.result.photoId} heredó de vecina confirmada ${bestNeighbor.result.photoId} (diff: ${(minTimeDiff/1000).toFixed(1)}s) => POI: "${bestNeighbor.result.name}"`);
             
-            // Herencia simbiotica completa: 4 decimales + descriptor + H3, pisa score visual
+            // Herencia simbiotica completa: 4 decimales + descriptor + H3 + voucher_url, pisa score visual
             current.result.lat = bestNeighbor.result.lat !== null ? Math.round(bestNeighbor.result.lat * 10000) / 10000 : null;
             current.result.lng = bestNeighbor.result.lng !== null ? Math.round(bestNeighbor.result.lng * 10000) / 10000 : null;
             current.result.name = bestNeighbor.result.name;
             current.result.evidence = 'TIME_PROXIMITY';
             current.result.source = 'INHERITED';
+            current.result.isAnchor = false;
+            current.result.inheritedFrom = bestNeighbor.result.photoId;
+            if (bestNeighbor.result.voucher_url) current.result.voucher_url = bestNeighbor.result.voucher_url;
             if (bestNeighbor.result.place_id) current.result.place_id = bestNeighbor.result.place_id;
             if (bestNeighbor.result.h3_index) current.result.h3_index = bestNeighbor.result.h3_index;
             else if (current.result.lat !== null && current.result.lng !== null) {
