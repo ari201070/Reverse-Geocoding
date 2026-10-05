@@ -1,0 +1,10 @@
+{
+  "name": "reverse-geocoding",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reverse Geocoding & Consensus Truth Engine - monorepo raiz",
+  "scripts": {
+    "dev": "vercel dev --port 4096 --cwd apps/frontend",
+    "dev:frontend": "vercel dev --port 4096 --cwd apps/frontend"
+  }
+}

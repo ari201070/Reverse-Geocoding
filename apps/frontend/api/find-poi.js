@@ -25,6 +25,10 @@ function formatResponse(name, address, lat, lng, source, confidence, placeId, is
 }
 
 export default async function handler(req, res) {
+    // Cabecera JSON explicita: evita que el catch-all de la SPA devuelva HTML
+    if (res && typeof res.setHeader === 'function') {
+        res.setHeader('Content-Type', 'application/json');
+    }
     if (req.method && req.method !== 'POST') {
         return res.status(405).json({ success: false, error: 'Method not allowed' });
     }
