@@ -2,7 +2,7 @@
 # Reads CSV directly - no Hebrew corruption from Node.js
 $ErrorActionPreference = 'Continue'
 $csvPath = 'C:/Users/flier/GitHub/Travel-Booking-Document-Hub/onedrive-files.csv'
-$dbPath = 'C:/Users/flier/.gemini/antigravity/scratch/photo_catalog.db'
+$dbPath = 'C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db'
 
 # Load CSV
 $csv = Import-Csv $csvPath

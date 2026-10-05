@@ -9,6 +9,30 @@
       "env": {
         "NODE_ENV": "production"
       }
+    },
+    "photo-catalog": {
+      "command": "node",
+      "args": [
+        "mcp-photo-catalog/index.js"
+      ],
+      "cwd": "C:/Users/flier/GitHub/Reverse-Geocoding",
+      "env": {
+        "PHOTO_CATALOG_DB": "C:/Users/flier/GitHub/Reverse-Geocoding/data/photo_catalog.db"
+      }
+    },
+    "notebooklm-mcp-frontend": {
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "cwd": "C:/Users/flier/GitHub/Reverse-Geocoding/apps/frontend/notebooklm-mcp"
+    },
+    "notebooklm-mcp-tools": {
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "cwd": "C:/Users/flier/GitHub/Reverse-Geocoding/tools/notebooklm-mcp"
     }
   }
 }

@@ -326,23 +326,29 @@ async function resolveLocationGeocoding(locationName: string) {
     console.warn("[Geocoding] Servicio local no disponible, usando Nominatim:", geoErr.message);
   }
 
+  // PURGADO Fase C: Nominatim bloqueado (Access denied). Geoapify es la
+  // primera linea externa activa (requiere GEOAPIFY_API_KEY en el entorno).
   try {
-    const nominatimUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(locationName)}&format=json&limit=1`;
-    const nomRes = await fetch(nominatimUrl, {
-      headers: { "User-Agent": "Reverse-Geocoding-App/1.0" },
-    });
-    if (nomRes.ok) {
-      const nomData = await nomRes.json();
-      if (Array.isArray(nomData) && nomData.length > 0) {
-        const lat = parseFloat(Number(nomData[0].lat).toFixed(4));
-        const lng = parseFloat(Number(nomData[0].lon).toFixed(4));
-        const h3 = getH3Index(lat, lng);
-        updateSpatialCache(h3, locationName, lat, lng);
-        return { coordinates: { lat, lng }, h3_index: h3 };
+    const geoapifyKey = process.env.GEOAPIFY_API_KEY;
+    if (geoapifyKey) {
+      const geoUrl = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(locationName)}&lang=es&limit=1&apiKey=${geoapifyKey}`;
+      const geoRes = await fetch(geoUrl);
+      if (geoRes.ok) {
+        const geoData = await geoRes.json();
+        const feat = geoData?.features?.[0]?.properties;
+        if (feat) {
+          const lat = parseFloat(Number(feat.lat).toFixed(4));
+          const lng = parseFloat(Number(feat.lon).toFixed(4));
+          const h3 = getH3Index(lat, lng);
+          updateSpatialCache(h3, feat.name || locationName, lat, lng);
+          return { coordinates: { lat, lng }, h3_index: h3 };
+        }
       }
+    } else {
+      console.warn("[Geocoding] Geoapify omitido (sin GEOAPIFY_API_KEY).");
     }
-  } catch (nomErr: any) {
-    console.warn("[Geocoding] Nominatim falló:", nomErr.message);
+  } catch (geoErr: any) {
+    console.warn("[Geocoding] Geoapify falló:", geoErr.message);
   }
 
   return { coordinates: null, h3_index: null };

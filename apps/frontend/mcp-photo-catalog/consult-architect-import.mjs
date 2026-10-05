@@ -29,7 +29,7 @@ const importScript = fs.readFileSync(
 
 // Read the architect proposal for context
 const architectProposal = fs.readFileSync(
-  "C:/Users/flier/.gemini/antigravity/scratch/Reverse-Geocoding/architect_proposal.md",
+  "C:/Users/flier/GitHub/Reverse-Geocoding/architect_proposal.md",
   "utf8"
 );
 

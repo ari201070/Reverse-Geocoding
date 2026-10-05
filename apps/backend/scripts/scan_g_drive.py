@@ -233,12 +233,7 @@ def extract_date_from_filename(filename):
     return None
 
 def geocode_nominatim(name):
-    if not name: return None, None
-    try:
-        geo = Nominatim(user_agent="scan-g-drive-8000")
-        loc = geo.geocode(name, timeout=5)
-        if loc: return round(loc.latitude, 6), round(loc.longitude, 6)
-    except: pass
+    # PURGADO Fase C: Nominatim bloqueado -> deshabilitado, solo cache local.
     return None, None
 
 def city_from_coords(lat, lng):

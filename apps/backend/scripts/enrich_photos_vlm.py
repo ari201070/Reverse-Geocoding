@@ -48,11 +48,7 @@ def geocode_spatial_or_nominatim(name):
             j=r.json()
             return j.get("lat"), j.get("lng")
     except: pass
-    try:
-        g=Nominatim(user_agent="enrich-vlm")
-        loc=g.geocode(name, timeout=8)
-        if loc: return round(loc.latitude,6), round(loc.longitude,6)
-    except: pass
+    # PURGADO Fase C: Nominatim bloqueado -> deshabilitado (solo spatial_cache).
     return None, None
 
 def is_camera_native(fn):

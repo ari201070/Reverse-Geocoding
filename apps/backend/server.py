@@ -168,21 +168,11 @@ def _extract_exif_pillow(file_path: str):
         return {}
 
 def _geocode_nominatim(location_name: str):
+    # PURGADO Fase C: Nominatim bloqueado (Access denied) -> solo fallback local.
+    # Primera linea externa activa: Geoapify (ver api/geoapify-handler.js).
     if not location_name:
         return None
-    fb = _fallback_coords(location_name)
-    if fb:
-        # intentar geopy primero, fallback a diccionario
-        pass
-    try:
-        from geopy.geocoders import Nominatim
-        geolocator = Nominatim(user_agent="viaje-argentina-8000")
-        loc = geolocator.geocode(location_name, timeout=5)
-        if loc:
-            return (loc.latitude, loc.longitude)
-    except Exception:
-        pass
-    return fb
+    return _fallback_coords(location_name)
 
 
 # Cuota CERO facturación Gemini (L4 solo con free tier disponible)
