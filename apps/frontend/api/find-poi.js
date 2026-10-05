@@ -4,6 +4,7 @@ import 'dotenv/config';
 import memoryStore from './memory-store.js';
 import * as h3 from 'h3-js';
 import { contextualizeLandmarkName } from './utils/landmark-context.js';
+import { reverseGeocodeGeoapify } from './geoapify-handler.js';
 
 function formatResponse(name, address, lat, lng, source, confidence, placeId, isCached) {
     return {
@@ -77,6 +78,25 @@ export default async function handler(req, res) {
         }
     } catch (e) {
         console.warn('[QA] Level 1.5 Spatial Radius Failure:', e.message);
+    }
+
+    // LEVEL 1.7: Geoapify Reverse (primera linea externa activa; Nominatim purgado por bloqueo)
+    try {
+        const GEOAPIFY_KEY = process.env.GEOAPIFY_API_KEY;
+        if (GEOAPIFY_KEY) {
+            const geo = await reverseGeocodeGeoapify(targetLat, targetLng, GEOAPIFY_KEY);
+            if (geo && geo.location_name && geo.location_name !== 'Unknown POI') {
+                const finalName = contextualizeLandmarkName(geo.location_name, geo.address || '', targetLat, targetLng);
+                console.log(`[QA] Level 1.7 Hit (Geoapify): ${finalName}`);
+                return res.json(formatResponse(
+                    finalName, geo.address || '', targetLat, targetLng, 'GEOAPIFY', 0.97, null, false
+                ));
+            }
+        } else {
+            console.log('[QA] Level 1.7 Geoapify omitido (sin GEOAPIFY_API_KEY).');
+        }
+    } catch (e) {
+        console.warn('[QA] Level 1.7 Geoapify Failure:', e.message);
     }
 
     // LEVEL 2: FOSS External — Photon + Overpass

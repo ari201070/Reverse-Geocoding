@@ -5,7 +5,7 @@ import { open } from 'sqlite';
 import http from 'http';
 import { URL } from 'url';
 
-const DB_PATH = 'C:\\Users\\flier\\.gemini\\antigravity\\scratch\\photo_catalog.db';
+const DB_PATH = 'C:\\Users\\flier\\GitHub\\Reverse-Geocoding\\data\\photo_catalog.db';
 const PORT = 4500;
 
 // 📂 CARPETAS RAÍZ GENERALES

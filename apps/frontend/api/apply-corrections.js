@@ -5,7 +5,7 @@ import { open } from 'sqlite';
 import { GoogleGenAI } from '@google/genai';
 
 // ⚙️ Configuración del entorno y Base de Datos
-const DB_PATH = 'C:\\Users\\flier\\.gemini\\antigravity\\scratch\\photo_catalog.db';
+const DB_PATH = 'C:\\Users\\flier\\GitHub\\Reverse-Geocoding\\data\\photo_catalog.db';
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 // Función auxiliar para pausar la ejecución

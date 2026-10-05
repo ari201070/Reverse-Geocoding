@@ -2,6 +2,7 @@ import 'dotenv/config';
 import memoryStore from '../memory-store.js';
 import * as h3 from 'h3-js';
 import { contextualizeLandmarkName } from './landmark-context.js';
+import { reverseGeocodeGeoapify } from '../geoapify-handler.js';
 
 export async function performGeocodingCascade(lat, lng, radius = 50, keywords = "") {
     const roundedLat = Math.round(lat * 10000) / 10000;
@@ -22,6 +23,23 @@ export async function performGeocodingCascade(lat, lng, radius = 50, keywords = 
             };
         }
     } catch (e) { console.warn('[Cascade] L1 Cache Failure:', e.message); }
+
+    // LEVEL 1.7: Geoapify Reverse (primera linea externa activa; Nominatim purgado por bloqueo)
+    try {
+        const GEOAPIFY_KEY = process.env.GEOAPIFY_API_KEY;
+        if (GEOAPIFY_KEY) {
+            const geo = await reverseGeocodeGeoapify(lat, lng, GEOAPIFY_KEY);
+            if (geo && geo.location_name && geo.location_name !== 'Unknown POI') {
+                const name = contextualizeLandmarkName(geo.location_name, geo.address || '', lat, lng);
+                return {
+                    name, address: geo.address, source: 'GEOAPIFY',
+                    confidence: 0.97, place_id: null, cached: false
+                };
+            }
+        } else {
+            console.log('[Cascade INFO] Geoapify omitido (sin GEOAPIFY_API_KEY).');
+        }
+    } catch (e) { console.warn('[Cascade] Level 1.7 Geoapify Failure:', e.message); }
 
     // LEVEL 2: Google Places API New
     const GOOGLE_KEY = process.env.GOOGLE_CLOUD_API_KEY || process.env.GOOGLE_MAPS_API_KEY;
