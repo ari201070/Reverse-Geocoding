@@ -1,0 +1,213 @@
+# Inventario vouchers/tickets/bookings/flights/reservas/pasajes + json logisticos | C=201 F=11
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\backend\scripts\enrich_from_master_vouchers.py | 22647 | 1791399853
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\backend\server_voucher.py | 7359 | 1791399863
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\backend\src\data\initialBookings.json | 15736 | 1791463504
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\mcp-photo-catalog\src\services\BookingDocumentParser.js | 9687 | 1791399872
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\photo-import-output\travel_bookings_import_1784055575458.json | 890142 | 1791399879
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\photo-import-output\travel_bookings_import_1784057394349.json | 539563 | 1791399879
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\photo-import-output\travel_bookings_import_1784108653140.json | 884459 | 1791399879
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\photo-import-output\travel_bookings_import_1784659825716.json | 279508 | 1791399880
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\photo-import-output\travel_bookings_import_1784659840011.json | 279508 | 1791399880
+C:/Users/flier/GitHub/Reverse-Geocoding\apps\frontend\src\components\BookingCard.tsx | 12993 | 1791463505
+C:/Users/flier/GitHub/Reverse-Geocoding\data\execution_temporal_voucher_fix.md | 8249 | 1791463505
+C:/Users/flier/GitHub/Reverse-Geocoding\data\final_strict_voucher_geolocate_04_abril_report.md | 9898 | 1791463505
+C:/Users/flier/GitHub/Reverse-Geocoding\data\italy_vouchers_precision_report.md | 3271 | 1791399893
+C:/Users/flier/GitHub/Reverse-Geocoding\data\voucher_windows_oct.json | 2600 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\2010-07-04 21.09.14_mapofmontenegro_big.jpg.json | 694 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20251021_183644.heic.json | 671 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142606.jpg.json | 1320 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142650.jpg.json | 1191 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142726.jpg.json | 1204 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142802.jpg.json | 1903 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142908.jpg.json | 1231 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_142942.jpg.json | 1249 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_143022.jpg.json | 1440 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\20261009_143330.jpg.json | 1202 | 1791566918
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\24009-אריאל פליאר.pdf.json | 790 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\24117 - אריאל פליאר - G3211.pdf.json | 887 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\5737_20251102_251202_130522.pdf.json | 852 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\6691122.pdf.json | 744 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ARIEL RUBEN FLIER.pdf.json | 913 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Aeropuerto_hotel.pdf.json | 846 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ari-Pas.jpeg.json | 663 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ari_NTTZSH47_251007_180046.pdf.json | 742 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Arkia2ways_11036968.pdf.json | 866 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\B&B Marbò Florence_ אישור.pdf.json | 825 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\BIH 2304 טבלת מלונות וטיסות עבור אריאל פליאר.pdf.json | 894 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 TXX עבור אריאל פליאר.pdf.json | 1193 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\BIH 2304 לבוסניה-הרצגובינה טקסט טיול 2 עבור אריאל פליאר.pdf.json | 1173 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\BLeumi_20221218152738_69956142_TeudatNeche.pdf.json | 828 | 1791463506
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Boarding pass.pdf.json | 716 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Boardingpass_IZ802.pdf.json | 812 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Argentina_2025_Hoteles.png | 133851 | 1791399928
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Argentina_2025_Hoteles.png.json | 685 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Argentina_2025_Traslado.png | 28704 | 1791399928
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Argentina_2025_Traslado.png.json | 686 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_BuenosAires_2011_HotelMundial.png | 66613 | 1791399928
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_BuenosAires_2011_HotelMundial.png.json | 828 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Italia_2023_Hoteles.png | 79014 | 1791399928
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Italia_2023_Hoteles.png.json | 740 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_ApartmentsZorc.png | 98094 | 1791399929
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_ApartmentsZorc.png.json | 824 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_GarniHotelAzur.png | 117758 | 1791399929
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_GarniHotelAzur.png.json | 691 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_HotelKrim.png | 106427 | 1791399929
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_HotelKrim.png.json | 804 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_HotelSavica.png | 99261 | 1791399929
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Booking_Slovenia_2015_HotelSavica.png.json | 688 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Brc-Mza.pdf.json | 769 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\BsAs-Ros.jpg.json | 663 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\CAR RENTAL VOUCHER.pdf | 119111 | 1791399931
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\CAR RENTAL VOUCHER.pdf.json | 802 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Capilla Sixtina y los Museos Vaticanos.pdf.json | 932 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\CheckMyTrip-1.pdf.json | 879 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Colosseum, Forum, and Palatine Hill Tour.pdf.json | 930 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Confirmación_Fuente Mayor Hotel Centro.pdf.json | 852 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Confirmation690546-1.pdf.json | 790 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Confirmation690911-1.pdf.json | 775 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ctes.BsAs_WO9L7869_251014_154040.pdf.json | 879 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\DWAM-6656431.pdf.json | 817 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\E-Ticket.pdf | 70463 | 1791399932
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\E-Ticket.pdf.json | 777 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Electronic ticket receipt, September 15 for MR ARIEL FLIER.pdf | 55450 | 1791399933
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Electronic ticket receipt, September 15 for MR ARIEL FLIER.pdf.json | 873 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ExitStatement1.pdf.json | 740 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Fiumicino Airport to Rome Termini.pdf.json | 817 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Foss - Israeli customer convention (005).pdf.json | 782 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\HILA FLIER.pdf.json | 906 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Hila-Pas.jpeg.json | 716 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Hila_NTTZSH47.pdf.json | 833 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Hotel Soperga_ אישור.pdf.json | 798 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\LIRAN FLIER.pdf.json | 907 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Liran-Pas.jpeg.json | 665 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Liran_NTTZSH47.pdf.json | 730 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Miran.jpg.json | 700 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Montenegro-06.2010.pdf.json | 859 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Museo Leonardo da Vinci.pdf.json | 842 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Pantheon.pdf.json | 849 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Pasaporte.jpg.json | 716 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Reference number-80005684.pdf.json | 847 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Res4122467.pdf.json | 869 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ryanair_אישור טיסה.pdf.json | 851 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\SHOSHANA FLIER.pdf.json | 910 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Shoshi-Pas.jpeg.json | 666 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Shoshi_NTTZSH47.pdf.json | 731 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Sincerandome.pdf.json | 993 | 1791463507
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Sun Moon_ אישור.pdf.json | 741 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Sun Moon_חדש אישור.pdf.json | 747 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Sun Moon_מבוטלת.pdf.json | 742 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ticket Viator-Ariel Flier-BR-1069568671_231002_221010.PDF | 339160 | 1791399938
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Ticket Viator-Ariel Flier-BR-1069568671_231002_221010.PDF.json | 1065 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Travel Reservation September 15 for MR ARIEL FLIER.pdf | 38467 | 1791399938
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Travel Reservation September 15 for MR ARIEL FLIER.pdf.json | 901 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\Trip Print _ TripIt.pdf.json | 978 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ZERCRG.pdf.json | 883 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ari_flier_22218869_33805559.pdf.json | 909 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\boarding-pass-Y0HBMB59-1.pdf.json | 804 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\caa75838-6d84-44e2-b158-1f018076a2fb_signed.pdf.json | 805 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\complaintAboutTourismServices@tourism.gov.il_1688643143329.pdf.json | 1073 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\constancia-cuil.pdf.json | 793 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\files_circulars_food_Food_05-008.pdf.json | 980 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\global-services-phone-numbers_230925_173402.pdf.json | 890 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\harel_308667088_13-9-58.pdf.json | 797 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\herramientas-IA-Version2-0-joaquin-barbera.pdf.json | 1082 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\hila_flier_22218869_33805561.pdf.json | 913 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\itinerary_Y0HBMB59-1.pdf.json | 819 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\itinp11036968 (002).html.pdf.json | 822 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\liran_flier_22218869_33805560.pdf.json | 917 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\mza-salta.pdf.json | 780 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\natbag_601575590o.Pdf.json | 835 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\pdf24-Trip Print _ TripIt.pdf.json | 964 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\qrcode_www.lefrecce.it.png.json | 768 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\roma_arrival_terravision_sunmoon.json | 1133 | 1791580368
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\shoshi_flier_22218869_33805558.pdf.json | 921 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket (1).pdf | 154112 | 1791399943
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket (1).pdf.json | 940 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket.pdf | 154399 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket.pdf.json | 836 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_1.pdf | 154112 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_1.pdf.json | 818 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_3.pdf | 154112 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_3.pdf.json | 849 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_NTTZSH47.pdf | 178725 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ticket_NTTZSH47.pdf.json | 731 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\transaction_NTTZSH47.pdf.json | 867 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersBest Western Hotel Hillerod-Hillerod-16-Sep-FLIER.pdf | 55136 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersBest Western Hotel Hillerod-Hillerod-16-Sep-FLIER.pdf.json | 884 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersHotel Astoria Bw Signature Collection-Copenhagen-15-Sep-flier.pdf | 47185 | 1791399944
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersHotel Astoria Bw Signature Collection-Copenhagen-15-Sep-flier.pdf.json | 925 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersHotel Astoria Bw Signature Collection-Copenhagen-20-Sep-flier.pdf | 51031 | 1791399945
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\vouchersHotel Astoria Bw Signature Collection-Copenhagen-20-Sep-flier.pdf.json | 936 | 1791463508
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\yd_conf_heb_pt2318803732.pdf.json | 871 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\אישור בדיקת קורונה לחו_ל מבתי חולים.pdf.json | 929 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\בדיקה לרשיון נהיגה.pdf.json | 844 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ביטוח לאיטליה.pdf.json | 949 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\בלנדר מוט.pdf.json | 802 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\בקשה להוצאה רישיון נהיגה.pdf.json | 941 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\דוח אריאל פליאר.pdf.json | 814 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\דפי מידע - לשכות בריאות איזוריות 1 עבור אריאל פליאר.pdf.json | 1232 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\דרקון לירן.jpg.json | 756 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\העברת בנקאית 24117 - אריאל פליאר - G3211.pdf.json | 884 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\הצהרת יציאה מישראל.pdf.json | 806 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\כניסה לארץ.pdf.json | 791 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\לוגו אוטובוס.jpg.json | 678 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\מפגש בשדה התעופה עבור אריאל פליאר.pdf.json | 815 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\מפה.pdf.json | 826 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\מפות _Google__.pdf.json | 796 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\מקדמה 23847 - אריאל פליאר - G3211.pdf.json | 809 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\מקדמה- אריאל פליאר - G3211.pdf.json | 796 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\נתבג_כ.מכ'.pdf.json | 1077 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\סדנת בשרים ובירה.pdf.json | 858 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\סלטה ← יגואזו_Y0HBMB59_251014_162748.pdf.json | 959 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\ספח תעודת זהות דיגיטלי-לירן.pdf.json | 889 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\פוליסת ביטוח הראל.pdf.json | 877 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\קבלה כרטיסי טיסה_1.pdf.json | 808 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\רשימת ציוד.pdf.json | 765 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\רשימת קשר  - BIH 2304 לבוסניה והרצוגובינה 4 עבור אריאל פליאר.pdf.json | 956 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\תדפיס הזמנת מלון  - 4300080795.pdf.json | 937 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\תנאים כלליים לטיולי אדמה 1 עבור אריאל פליאר.pdf.json | 1102 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers\2026-09\תשלום חידוש דרכון.pdf.json | 853 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\data\vouchers_quality_audit_report.md | 14188 | 1791463509
+C:/Users/flier/GitHub/Reverse-Geocoding\temporal_voucher_fix.py | 9239 | 1791399971
+C:/Users/flier/GitHub/Reverse-Geocoding\tools\scratch_legacy_scripts\extract_booking_blocks.py | 716 | 1791399975
+C:/Users/flier/GitHub/Reverse-Geocoding\tools\scratch_legacy_scripts\verify_html_bookings.py | 1589 | 1791399980
+C:/Users/flier/GitHub/Reverse-Geocoding\vouchers_fast_fix.py | 10514 | 1791399982
+C:/Users/flier/GitHub/Reverse-Geocoding\vouchers_quality_fix.py | 2480 | 1791561999
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\mcp-photo-catalog\src\services\BookingDocumentParser.js | 9687 | 1784766312
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\photo-import-output\travel_bookings_import_1784055575458.json | 890142 | 1784766314
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\photo-import-output\travel_bookings_import_1784057394349.json | 539563 | 1784766314
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\photo-import-output\travel_bookings_import_1784108653140.json | 884459 | 1784766314
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\photo-import-output\travel_bookings_import_1784659825716.json | 279508 | 1784766314
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\photo-import-output\travel_bookings_import_1784659840011.json | 279508 | 1784766314
+C:/Users/flier/GitHub/Travel-Booking-Document-Hub\src\components\BookingCard.tsx | 12993 | 1784766315
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\mcp-photo-catalog\src\services\BookingDocumentParser.js | 9687 | 1787843871
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\gallery\4\screenshot-20251011-142528-bookingcom.webp | 103468 | 1787243566
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\gallery\4\thumbs\screenshot-20251011-142528-bookingcom.webp | 27142 | 1787243566
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\gallery\5\screenshot-20251018-181403-bookingcom.webp | 83006 | 1787243571
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\gallery\5\thumbs\screenshot-20251018-181403-bookingcom.webp | 24784 | 1787243571
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\travel-documents\Booking_Argentina_2025_Hoteles.png | 133851 | 1787243658
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\travel-documents\Screenshot_20251011_142528_Bookingcom.jpg | 575141 | 1787243658
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\travel-documents\Screenshot_20251018_181403_Bookingcom.jpg | 393069 | 1787243658
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\public\travel-documents\ticket_NTTZSH47.pdf | 178725 | 1787243658
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\server_voucher.py | 3576 | 1788724975
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\components\vouchers\VoucherDashboard.jsx | 10639 | 1787673414
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\components\vouchers\VoucherForm.jsx | 9883 | 1787243659
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\components\vouchers\VoucherList.jsx | 6236 | 1787243659
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\components\vouchers\VoucherViewer.jsx | 6471 | 1787508195
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\data\initialBookings.json | 25636 | 1787754194
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\data\vouchers.json | 3589 | 1787243659
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\imports\booking-hub\src\components\BookingCard.tsx | 12993 | 1786092488
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\imports\viajefamiliar30dias\Documentos\ticket.pdf | 154112 | 1786092055
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\imports\viajefamiliar30dias\src\components\home\FlightTickets.tsx | 6946 | 1786092432
+C:/Users/flier/GitHub/viaje-argentina-octubre-2025\src\imports\viajefamiliar30dias\src\components\home\Reservations.tsx | 4042 | 1786092432
+F:/2025\10-Octubre\bookings.json | 11242 | 1787412500
+F:/גברים רעבים באיטליה\Ticket Viator-Ariel Flier-BR-1069568671_231002_221010.PDF | 339160 | 1790021204
+F:/כנס פוס\2021\E-Ticket.gdoc | 0 | 1790021192
+F:/כנס פוס\2021\E-Ticket.pdf | 70463 | 1790021190
+F:/כנס פוס\2021\FW  Reservation Confirmation for Kfar Maccabiah Hotel & suites.eml | 129655 | 1790021189
+F:/כנס פוס\2024\Electronic ticket receipt, September 15 for MR ARIEL FLIER.pdf | 55450 | 1790021183
+F:/כנס פוס\2024\Travel Reservation September 15 for MR ARIEL FLIER.pdf | 38467 | 1790021183
+F:/כנס פוס\2024\vouchersBest Western Hotel Hillerod-Hillerod-16-Sep-FLIER.pdf | 55136 | 1790021183
+F:/כנס פוס\2024\vouchersHotel Astoria Bw Signature Collection-Copenhagen-15-Sep-flier.pdf | 47185 | 1790021183
+F:/כנס פוס\2024\vouchersHotel Astoria Bw Signature Collection-Copenhagen-20-Sep-flier.pdf | 51031 | 1790021183
+F:/צילומי מסמכים\CAR RENTAL VOUCHER.pdf | 119111 | 1790021206
