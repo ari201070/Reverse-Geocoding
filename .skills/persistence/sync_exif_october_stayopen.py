@@ -11,10 +11,11 @@ import time
 import sqlite3
 import subprocess
 import h3
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 ROOT = r'F:\2023\10-Octubre'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, 'data', 'photo_catalog.db')
+DB_PATH = r"C:\Users\flier\GitHub\Reverse-Geocoding\data\photo_catalog.db"
 EXIFTOOL = r'C:\Users\flier\AppData\Local\Programs\ExifTool\exiftool.exe'
 
 
@@ -147,6 +148,12 @@ def bulk_have_gps(sess, files, chunk=150):
 
 def main():
     con = sqlite3.connect(DB_PATH, timeout=30)
+    cursor = con.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='spatial_cac9185';")
+    if not cursor.fetchone():
+        print("❌ ALERTA CRITICA: base obsoleta o de scratch. Ejecucion abortada.")
+        import sys
+        sys.exit(1)
     cur = con.cursor()
     cur.execute('''
         SELECT filename, latitude, longitude, city, location_name,
