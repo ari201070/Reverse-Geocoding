@@ -33,3 +33,20 @@ En alineación con `.agent/skills/` y `.skills/`:
 2. **L1 (Herencia Espacio-Temporal):** Vínculo por rango de fechas de itinerarios (`initialBookings.json`) y celdas H3 Res 9.
 3. **L2 (Puntos de Interés Verificados):** Cruce determinista con colecciones GeoJSON (`data/landmarks/`).
 4. **L3 (Visión Local de Excepción):** Análisis visual multimodal con Ollama (`moondream` / `llama3.2`) reservado exclusivamente para fotos de carteles y documentos sin geolocalización previa.
+
+---
+
+# REGLAS COMPORTAMENTALES MÁSTER - REVERSE-GEOCODING & ROBOFLOW
+
+## 1. GOBERNANZA ABSOLUTA DE ARCHIVOS (ANTI-DISPERSIÓN)
+- Todo nuevo archivo o script generado (.py, .js, .json, .geojson) debe ser ubicado prioritariamente dentro de las 8 subcarpetas preexistentes de la taxonomía '.skills/' según su funcionalidad.
+- Si no aplica a ninguna capacidad específica, el archivo debe quedar alojado estrictamente en la raíz o carpetas estándar del proyecto 'C:\Users\flier\GitHub\Reverse-Geocoding\'.
+- Queda terminantemente PROHIBIDO dejar archivos sueltos en el disco duro F:/ o en la carpeta caché scratch, a menos que sean archivos utilitarios exclusivos del almacenamiento binario de imágenes.
+
+## 2. CAPA DE CONTROL DE CALIDAD ROBOFLOW (METADATOS REALES)
+- El agente tiene prohibido ignorar las discrepancias entre la base de datos y el disco físico. 
+- En el lote de Octubre 2023, las cabeceras EXIF físicas leídas por ExifTool en F:/ (que contienen descripciones ricas nativas como 'Milán Centro' o 'Chiesa di Orsanmichele') son la fuente de verdad absoluta de contenido frente a los campos vacíos de 'place_name' en la DB. Toda actualización debe sincronizar la DB hacia arriba respetando la precisión nativa del disco.
+
+## 3. PROTECCIÓN DE PERSISTENCIA MÁSTER (SSOT)
+- La única base de datos viva real es el archivo enriquecido de 30 columnas 'C:\Users\flier\GitHub\Reverse-Geocoding\data\photo_catalog.db'.
+- Todo proceso que abra una conexión SQLite debe incorporar el guardrail obligatorio de validación de presencia de la tabla 'spatial_cache'. Si la firma no coincide, el script debe ejecutar un 'sys.exit(1)' inmediato para abortar la corrupción de datos.
