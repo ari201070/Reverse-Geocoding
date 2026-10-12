@@ -1,0 +1,16 @@
+{
+  "project_name": "Reverse-Geocoding",
+  "root_path": "C:\\Users\\flier\\GitHub\\Reverse-Geocoding\\",
+  "routing_policy": "Strict-Hierarchical",
+  "primary_container": ".skills",
+  "subfolders": [
+    "analysis", "capture", "consensus", "extraction",
+    "heritage", "persistence", "physiognomy", "processing"
+  ],
+  "enforcement_rules": {
+    "rule_1_skills_first": "Cualquier nuevo archivo py, js, json o geojson debe ser alojado prioritariamente en su subcarpeta correspondiente dentro de .skills/ según su utilidad lógica.",
+    "rule_2_repo_fallback": "De no existir una subcarpeta adecuada en .skills/, el archivo debe quedar estrictamente dentro del árbol del proyecto C:\\Users\\flier\\GitHub\\Reverse-Geocoding\\.",
+    "rule_3_f_disk_exclusivity": "Queda prohibido crear o dispersar archivos de código en la unidad F:/ o en carpetas scratch, a menos que sean componentes exclusivos de la gestión física de almacenamiento de ese disco.",
+    "rule_4_anti_scatter": "No se permite la dispersión automática de scripts entre proyectos externos."
+  }
+}
